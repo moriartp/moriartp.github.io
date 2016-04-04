@@ -19,12 +19,19 @@ var Ah = []; //fade in
 var Ax = []; //x position
 var Ay = []; //y position
 
+var aRed = [];
+var aGreen = [];
+var aBlue = [];
+
+
 function preload() {
   tableRatings = loadTable("tableA.txt", "csv", "header");
 }
 
 function setup() {
+  // bg = loadImage("http://www.intrawallpaper.com/static/images/Alien_Ink_2560X1600_Abstract_Background_AgLbDjN.jpg")
   createCanvas(windowWidth, windowHeight); //canvas
+  textFont("Helvetica");
 
   //junk
   for (var i = 0; i < cities.length; i++) {
@@ -36,21 +43,23 @@ function setup() {
     Af[i] = random(height * 0.3, height * 0.7); // fixed y
     Ag[i] = random(0, 255); //diameter growth
     Ah[i] = 0; //fade in starting point
-    //    Ai[i] = tableRatings.getNum(0);
-
     Ax[i] = random(width * 0.36, width * 0.67); //random(0, 255); //x position
     Ay[i] = random(height * 0.36, height * 0.67); //random(0, 255); //y position
 
+    aRed[i] = random(0,255);
+    aGreen[i] = random(0,255);
+    aBlue[i] = random(0,255);        
   }
 
 }
 
 function draw() {
   //basics
-  background(255);
+  // background(bg);
   noStroke();
   fill(5, 144, 144);
-  textFont('Lato');
+  textFont("Helvetica");
+  textSize(11);
 
   //SHAPE BEHAVIOR
   //GATHER SHAPES AROUND A PRESED MOUSE neds a conditioonal statement for each 'quadrant'
@@ -85,7 +94,8 @@ function draw() {
       Ad[i] = Ad[i] * -1;
     }
     //DRAW ACTUAL SHAPE
-    fill(255, Ax[i] / 10 + 50, Ay[i] / 10 + 50, Ab[i]);
+    // fill(255, Ax[i] / 10 + 50, Ay[i] / 10 + 50, Ab[i]);
+    fill(aRed[i], aGreen[i], aBlue[i]);
     rectMode(CENTER, CENTER);
     rect(Ax[i], Ay[i], Aa[i], Aa[i], 11);
     fill(0);
