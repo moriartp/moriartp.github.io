@@ -13,6 +13,8 @@ var dRadius = 222;
 var diagBuf = 111; //diagonal buffer to allow to push just up, or just left...
 var counter = 0;
 
+var pusher = false; //conditional display of text based on mouse interaction
+
 
 function setup() {
 
@@ -23,19 +25,20 @@ function draw() {
   background(246, 247, 235);
   noStroke();
 
-  fill(63, 136, 197);
-  text(counter, 10, 10);
+  textAlign(CENTER,CENTER);
+  textSize(dRadius/5);
 
   //BLUE CIRCLE
   fill(63, 136, 197);
   ellipse(dX, dY, cRadius, cRadius);
-  textAlign(CENTER,CENTER);
-  fill(255,255,255);
-  textSize(dRadius/5);
-  text("Grab Me",dX,dY);
   if (mouseIsPressed && mouseX > dX - 50 && mouseX < dX + 50 && mouseY > dY - 50 && mouseY < dY + 50) {
     dX = mouseX;
     dY = mouseY;
+    pusher = true;
+  }
+  if (pusher === false){
+    fill(255,255,255);
+    text("Grab Me",dX,dY);
   }
 
 
@@ -59,8 +62,10 @@ function draw() {
   if (dX <= cX + cRadius / 1.33 && dX >= cX - cRadius / 1.33 && dY <= cY - 11 && dY >= cY - cRadius / 1.33) {
     cY = cY + 4;
   }
+  if (pusher === true){
   fill(255,255,255);
   text("Push Me",cX,cY);
+  }
 
 
   ///GREEN Circle 'b'
@@ -83,12 +88,15 @@ function draw() {
   if (dX <= bX + bRadius / 1.33 && dX >= bX - bRadius / 1.33 && dY <= bY - 11 && dY >= bY - bRadius / 1.33) {
     bY = bY + 5;
   }
+  if (pusher === true){
   fill(255,255,255);
   text("Push Me",bX,bY);
+  }
 }
 
 function mouseReleased() {
   counter = counter + 1;
   fill(111);
   rect(bX, bY, 2222, 2222);
+  pusher = false;
 }
