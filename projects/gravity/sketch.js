@@ -4,7 +4,8 @@ var toggle2 = 0;
 
 var heads = 255; ///experimental value
 var counter = 0; //can be used to create a pulse animation
-var cities = ["Hydrogen", "Helium", "Beryllium", "Boron", "Carbon", "Nitrogen", "Oxygen", "Fluorine", "Neon", "Sodium", "Magnesium", "Aluminium", "Silicon", "Phosphorus"];
+// var cities = ["Hydrogen", "Helium", "Beryllium", "Boron", "Carbon", "Nitrogen", "Oxygen", "Fluorine", "Neon", "Sodium", "Magnesium", "Aluminium", "Silicon", "Phosphorus"];
+// var cities = ["Hydrogen", "Helium", "Beryllium", "Boron", "Carbon", "Nitrogen", "Oxygen", "Fluorine", "Neon", "Sodium", "Magnesium", "Aluminium", "Silicon", "Phosphorus"];
 var elementType = ["Nonmetal", "Noble Gas", "Alkaklai Metal", "Alkaline Earth Metal", "Metalloid", "Nonmetal", "Nonmetal", "Nonmetal", "Halogen", "Noble Gas", "Alkaklai Metal", "Alkaline Earth Metal", "Post-Transition Metal", "Metalloid", "Nonmetal", "Nonmetal", "Halogen", "Noble Gas"];
 var tableRatings = [];
 
@@ -34,7 +35,7 @@ function setup() {
   textFont("Helvetica");
 
   //junk
-  for (var i = 0; i < cities.length; i++) {
+  for (var i = 0; i < 22; i++) {//cities.length; i++) {
     Aa[i] = random(133, 134); // length or diameter
     Ab[i] = random(22, 111); // tranparency
     Ac[i] = random(-1, 1); // x movement 
@@ -63,7 +64,7 @@ function draw() {
 
   //SHAPE BEHAVIOR
   //GATHER SHAPES AROUND A PRESED MOUSE neds a conditioonal statement for each 'quadrant'
-  for (var i = 0; i < cities.length; i++) {
+  for (var i = 0; i < 22; i++) {//cities.length; i++) {
     if (mouseIsPressed && mouseX <= Ax[i] && mouseY <= Ay[i]) {
       Ax[i] = Ax[i] + ((mouseX - Ax[i]) / 100);
       Ay[i] = Ay[i] + ((mouseY - Ay[i]) / 100);
@@ -101,7 +102,7 @@ function draw() {
     fill(0);
     textAlign(CENTER, CENTER);
     textSize(12);
-    text(cities[i], Ax[i], Ay[i]);
+    // text(cities[i], Ax[i], Ay[i]);
   }
 }
 
