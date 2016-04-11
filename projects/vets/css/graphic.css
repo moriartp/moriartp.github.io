@@ -1,0 +1,90 @@
+body, html{
+	margin:0;padding:0;
+	padding:0px;
+	font-family: "Helvetica", sans-serif;
+	font-size: 1.2em;
+	background-color: black;
+	font-family: 'Mate SC', serif;
+}
+
+section{
+	max-width: 999px;
+	width: 66%;
+	margin: 0px auto 15px;
+	padding: 35px;
+	background-color: white;
+	border: black;
+/*	display: inline-block;*/
+}
+
+div{
+	background-color: #284B63;
+	padding:10px;
+	border-style: solid;
+	border-radius: 5px;
+	border-width: 1px;
+}
+
+h2{
+	font-size: 40px;
+	padding-bottom: none;
+	color:#D9D9D9;
+}
+h3{
+	font-size: 22px;
+}
+
+p{
+	font-family: 'Helvetica';
+	font-size: 20px;
+}
+
+.svgbox {
+	background-color: #F0EDEE;
+	border-color: black;
+	border-style: solid;
+	border-width: 1px;
+}
+
+
+.counties {
+  fill: none;
+}
+.counties path:hover{
+	stroke: #111;
+}
+.state-borders {
+  fill: none;
+  stroke: #fff;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.q0-9 { fill:#ffffd9; }
+.q1-9 { fill:#edf8b1; }
+.q2-9 { fill:#c7e9b4; }
+.q3-9 { fill:#7fcdbb; }
+.q4-9 { fill:#41b6c4; }
+.q5-9 { fill:#1d91c0; }
+.q6-9 { fill:#225ea8; }
+.q7-9 { fill:#253494; }
+.q8-9 { fill:#081d58; }
+
+
+.tooltip{
+	position: absolute;
+	padding: 3px 8px;
+	border: 1px solid #bbb;
+/*	background-color: rgba(255,255,255,0.8);*/
+	background-color: rgba(0,0,0,0.8);
+	font-size: 16px;
+	color: white;
+	font-family: 'Helvetica';
+	pointer-events: none;
+	display: none;
+	top: 0px;
+	left: 0px;
+}
+.tooltip.show{
+	display: block;
+}
