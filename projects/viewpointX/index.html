@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>VIEWPOINT</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS to (overwrite Bootstrap) -->
+    <link href="css/graphic.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/stylescatter.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+  
+  </head>
+
+
+      <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand scrollbtn" href="#home">Federal Employee Viewpoint Survey</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a class="scrollbtn" href="#home">Home</a></li>
+            <li><a class="scrollbtn" href="#about">Survey Overview</a></li>
+            <li><a class="scrollbtn" href="#scatter">What Satisfies Us?</a></li>
+            <li><a class="scrollbtn" href="#contact">Satisfaction Trends</a></li>
+<!--             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a class="scrollbtn" href="#home">Home</a></li>
+                <li><a class="scrollbtn" href="#about">Overview</a></li>
+                <li><a class="scrollbtn" href="#contact">Contact</a></li>
+              </ul> -->
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>  
+
+    <h1 class="absoluted"><span class="textHighlight"></span></h1>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-anchor="home">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+              <div class="carousel-caption">
+                <h3>The 2015 Federal Employee Viewpoint Survey collected 0ver 400,000 responses from federal employees to learn about the culture, work environments, and levels of overall satisfaction experience by agency employees.</h3>
+              </div>
+          </div>
+          <div class="item">
+            <div class="carousel-caption">
+                <h3>By aggregating information provided by  individual employees we can understand the  organizational strengths and weaknesses throughout the government and understand what factors contribute to employment satisfaction.</h3>
+              </div>
+          </div>
+          <div class="item">
+            <div class="carousel-caption">
+                <h3>With this information, strategic decisions may be made that will address organizational shortcomings as identified by the very people who make up our administrative offices, and work to increase overal levels of satisfaction with federal agencies.</h3>
+              </div>
+          </div>
+        </div>
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="fullheight grade_blue" data-anchor="about">
+      <h1>OVERVIEW!</h1>
+      <p class="pSun">Heres a summary of responses to the survey questions/statements, with yellow indicated higher proportion of positive responses, and green indicating unfavorable responses. 
+      <div id="sunburst"></div>
+    </div>
+
+
+
+    <div class="fullheight grade_orange" data-anchor="scatter">
+      <h1>What Satisfies Us?</h1>
+       <p class="pSun">What factors contribute to work satisfaction in US federal executive departments? Here we examine measurements of cultural factors collected in the survey, as well as additional factors such as funding and proximity to presidential power.</p>
+      <!-- UI DIVS -->
+      <div class="uis">
+      <div>
+      <p><b>Independent Index Variable (X Axis)</b></p>
+      <select id="ind">
+      <option value="ENGAG_INDX_2015" label="Effective, Meaningful Goals">Effective, Meaningful Goals</option>
+      <option value="HCAAF_LEAD_2015" label="Respect for Leadership">Respect for Leadership</option>
+      <option value="HCAAF_RSLT_2015" label="Culture of Constant Improvement">Culture of Constant Improvement</option>
+      <option value="HCAAF_TLNT_2015" label="The Right Team">The Right Team</option>
+      <option value="HCAAF_SATF_2015" label="Gratifying Work">Gratifying Work</option>
+      <option value="NEWIQ_INDX_2015" label="Inclusive Environment">Inclusive Environment</option>
+      <option value="ENGAG_LEAD_2015" label="Integrity of Leadership">Integrity of Leadership</option>
+      <option value="ENGAG_SUPV_2015" label="Supervisory Relationship">Supervisory Relationship</option>
+      <option value="NEWIQ_FAIR_2015" label="Equitable Treatment">Equitable Treatment</option>
+      <option value="NEWIQ_OPEN_2015" label="Diversity">Diversity</option>
+      <option value="TotalFedFundB" label="Total Funding (Billions)">Total Funding (Billions)</option>
+      <option value="numberofEmployees" label="Number of Employees">Number of Employees</option>
+      <option value="age" label="Department Age">Department Age</option>
+      <option value="successionOrder" label="Order of Presidential Succession">Order of Presidential Succession</option>
+      <option value="fundingPerEmployee" label="Funding Per Employee (Millions)">Funding Per Employee (Millions)</option>
+ 
+
+      
+      </select>
+      </div>
+<!--       <div>
+      <input id="slider" type="range" min="2011" max="2015" value="2011" step="1" />
+      <span id="range">2011</span>
+      </div><div>
+      <button name="play" id="play">Play</button>
+      </div> -->
+      </div>
+      <!-- END UI DIVS -->  
+      <div id="chart"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="fullheight grade_orange" data-anchor="contact">
+      <h1>Satisfaction Trends</h1>
+      <select id="countries">
+      <option selected disabled value=''>Choose an Agency</option>
+    </select>
+      <div id="lines" class="svgbox"></div>
+    </div>    
+
+
+
+
+
+  <body>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="js/nav.js"></script>
+
+
+    <!-- D3 -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+
+    <!-- sunburst script with labels-->
+    <script type="text/javascript" src="js/sunburst.js"></script>
+
+    <!-- sunburst script with labels-->
+    <script type="text/javascript" src="js/scatter.js"></script>
+
+
+    <!-- sunburst script with labels-->
+    <script type="text/javascript" src="js/lines.js"></script>    
+
+    <!-- Stats library -->
+    <script src="js/simple_statistics.min.js"></script>
+
+
+
+
+
+
+  </body>
+</html>

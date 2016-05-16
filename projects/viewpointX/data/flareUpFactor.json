@@ -1,0 +1,199 @@
+{
+    "name": "Overall",
+    "parent": "null",
+    "size": 10,
+    "approval": 61.30,
+    "type": "black",
+    "level": "red",
+    "statement": "The overall score is derived from the cummulative average of percent of positive responses to all statement/questions in the Viewpoint Survey.",
+    "children": [
+      {
+        "name": "Employee Engagement Index",
+        "parent": "Top Level",
+        "size": 1,
+        "approval": 53.65,
+        "type": "grey",
+        "level": "55%",
+        "statement": "Score derived from cummulative average of all statements in this section.",
+        "children": [
+          {
+            "name": "Leaders Lead",
+            "parent": "Level 2: A",
+            "size": 1,
+            "approval": 62.9,
+            "type": "steelblue",
+            "level": "orange",
+            "statement": "Supervisors work well with employees of different backgrounds."
+          },
+          {
+            "name": "Supervisors",
+            "parent": "Level 2: A",
+            "size": 1,
+            "approval": 59.1,
+            "type": "steelblue",
+            "level": "red",
+            "statement": "Managers communicate the goals and priorities of the organization."
+          },
+          {
+            "name": "Intrinsic Work Experience",
+            "parent": "Level 2: A",
+            "size": 1,
+            "approval": 58.8,
+            "type": "steelblue",
+            "level": "red",
+            "statement": "Managers review and evaluate the organization's progress toward meeting its goals and objectives."
+          }         
+        ]
+      },
+      {
+        "name": "Global Satisfaction Index",
+        "parent": "Top Level",
+        "size": 1,
+        "approval": 55.06,
+        "type": "grey",
+        "level": "red",
+        "statement": "Score derived from cummulative average of all statements in this section.",
+        "children": [
+          {
+            "name": "Positive Work Environment",
+            "parent": "Level 2: A",
+            "size": 1,
+            "approval": 62.7,
+            "type": "steelblue",
+            "level": "red",
+            "statement": "I recommend my organization as a good place to work."
+          },
+          {
+            "name": "Work",
+            "parent": "Level 2: A",
+            "size": 1,
+            "approval": 65.20,
+            "type": "steelblue",
+            "level": "orange",
+            "statement": "Considering everything, how satisfied are you with your job?"
+          },
+          {
+            "name": "Pay",
+            "parent": "Level 2: A",
+            "size": 1,
+            "approval": 57.1,
+            "type": "steelblue",
+            "level": "red",
+            "statement": "Considering everything, how satisfied are you with your pay?"
+          },
+          {
+            "name": "Organization",
+            "parent": "Level 2: A",
+            "size": 1,
+            "approval": 55.7,
+            "type": "steelblue",
+            "level": "red",
+            "statement": "Considering everything, how satisfied are you with your organization?"
+          }         
+        ]
+      },
+      {
+        "name": "New IQ Index",
+        "parent": "Top Level",
+        "size": 1,
+        "approval": 49.80,
+        "type": "grey",
+        "level": "red",
+        "statement": "Score derived from cummulative average of all statements in this section.",
+        "children": [
+          {
+            "name": "Fair",
+            "parent": "Level 2: A",
+            "size": 1,
+            "approval": 65.20,
+            "type": "steelblue",
+            "level": "orange",
+            "statement": "has children"
+          },
+          {
+            "name": "Open",
+            "parent": "Level 2: A",
+            "size": 1,
+            "approval": 57.1,
+            "type": "steelblue",
+            "level": "red",
+            "statement": "has children"
+          },
+          {
+            "name": "Cooperative",
+            "parent": "Level 2: A",
+            "size": 1,
+            "approval": 55.7,
+            "type": "steelblue",
+            "level": "red",
+            "statement": "has children"
+          },
+          {
+            "name": "Supportive",
+            "parent": "Level 2: A",
+            "size": 1,
+            "approval": 51.60,
+            "type": "steelblue",
+            "level": "red",
+            "statement": "has children"
+          },
+          {
+            "name": "Empowered",
+            "parent": "Level 2: A",
+            "size": 1,
+            "approval": 49.60,
+            "type": "steelblue",
+            "level": "red",
+            "statement": "has children"
+          }
+        ]
+      },
+      {
+        "name": "HCAAF Indicies",
+        "parent": "Top Level",
+        "size": 1,
+        "approval": 69.88,
+        "type": "grey",
+        "level": "red",
+        "statement": "Score derived from cummulative average of all statements in this section.",
+        "children": [
+          {
+            "name": "Leadership and Knowledge Management",
+            "parent": "Level 2: A",
+            "size": 1,
+            "approval": 80.90,
+            "type": "steelblue",
+            "level": "orange",
+            "statement": "has children"
+          },
+          {
+            "name": "Results Oriented Performance Culture",
+            "parent": "Level 2: A",
+            "size": 1,
+            "approval": 77.80,
+            "type": "steelblue",
+            "level": "red",
+            "statement": "has children."
+          },
+          {
+            "name": "Talent Management",
+            "parent": "Level 2: A",
+            "size": 1,
+            "approval": 77.5,
+            "type": "steelblue",
+            "level": "red",
+            "statement": "has children."
+          },
+          {
+            "name": "Job Satisfaction",
+            "parent": "Level 2: A",
+            "size": 1,
+            "approval": 75.70,
+            "type": "steelblue",
+            "level": "red",
+            "statement": "has children"
+          }
+        ]
+      }
+    ]
+  }
