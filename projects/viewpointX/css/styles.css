@@ -114,12 +114,12 @@ div.tooltip:before{
 }
 .countrygroup path{
     fill: none;
-    stroke:green;
-    stroke-width: 3px;
+    stroke:#5ab4ac;
+    stroke-width: 5px;
 }
 
 #lines .axis line{
-	stroke: #ddd;
+	stroke: #696969	;
 	stroke-dasharray: 4,4;
 }
 
@@ -128,7 +128,7 @@ div.tooltip:before{
 }
 
 #lines .x.axis .domain{
-	stroke: #ddd;
+	stroke: black;
 	stroke-dasharray: 4,4;
 	display: none;
 }
