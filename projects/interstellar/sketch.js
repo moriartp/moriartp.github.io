@@ -356,43 +356,43 @@ function draw() {
       rectMode(CENTER);
 
 
-      //UI zoom in crosshairs box to trigger star action
+      // //UI zoom in crosshairs box to trigger star action
       noFill();
       rect(mouseX, mouseY, shrinker, shrinker);
-      if (mouseIsPressed) {
-        if (shrinker > 30) {
-          shrinker = shrinker - 10;
-        }
-        //starwarsify
-        if (shrinker <= 30 && grow < width * 0.2) {
-          for (var j = 0; j < 100; j++) {
-            bs[j] = bs[j] + bi[j]; //increases size of star as it passes
-            noStroke();
-            fill(222); // sets star color
-            // textAlign(CENTER, CENTER);
-            // textSize(bh[j]); //sets text size to randomlyu assigned value
-            //text(place[i],bx[j],by[j]);
-            ellipse(bx[j], by[j], bs[j], bs[j]);
-            //explode, reset
-            if (bx[j] >= width + 100 || bx[j] <= 0 - 100, by[j] >= height + 100 || by[j] <= 0 - 100) { //wider range b/c inactive text can run well off screen befor reversing course.
-              bs[j] = 0;
-              bx[j] = random(0, width); //start position for x
-              by[j] = random(0, height); //verticle positioning of text
-            }
-            ///animate passign motion of stars
-            if (bx[j] <= width / 2) {
-              bx[j] = bx[j] - bj[j];
-            } else {
-              bx[j] = bx[j] + bj[j];
-            }
-            if (by[j] <= height / 2) {
-              by[j] = by[j] - bj[j];
-            } else {
-              by[j] = by[j] + bj[j];
-            }
-          }
-        }
-      }
+      // if (mouseIsPressed) {
+      //   if (shrinker > 30) {
+      //     shrinker = shrinker - 10;
+      //   }
+      //   //starwarsify
+      //   if (shrinker <= 30 && grow < width * 0.2) {
+      //     for (var j = 0; j < 100; j++) {
+      //       bs[j] = bs[j] + bi[j]; //increases size of star as it passes
+      //       noStroke();
+      //       fill(222); // sets star color
+      //       // textAlign(CENTER, CENTER);
+      //       // textSize(bh[j]); //sets text size to randomlyu assigned value
+      //       //text(place[i],bx[j],by[j]);
+      //       ellipse(bx[j], by[j], bs[j], bs[j]);
+      //       //explode, reset
+      //       if (bx[j] >= width + 100 || bx[j] <= 0 - 100, by[j] >= height + 100 || by[j] <= 0 - 100) { //wider range b/c inactive text can run well off screen befor reversing course.
+      //         bs[j] = 0;
+      //         bx[j] = random(0, width); //start position for x
+      //         by[j] = random(0, height); //verticle positioning of text
+      //       }
+      //       ///animate passign motion of stars
+      //       if (bx[j] <= width / 2) {
+      //         bx[j] = bx[j] - bj[j];
+      //       } else {
+      //         bx[j] = bx[j] + bj[j];
+      //       }
+      //       if (by[j] <= height / 2) {
+      //         by[j] = by[j] - bj[j];
+      //       } else {
+      //         by[j] = by[j] + bj[j];
+      //       }
+      //     }
+      //   }
+      // }
 
       ///SLIDE COUNTER & UI ELEMENTS
       ///slide counter
