@@ -56,9 +56,8 @@ function setColor(_recency) {
   return interpolatedColor;
 }
 
-function parseSource(data) {
-//  for (var i = 1; i < data.length; i++) {
-  for (var i = 8450 - 1; i > 1; i--) {    
+function parseSource(data) { 
+  for (var i = 1; i < data.length-1; i++) {    
     var row = split(data[i], ","); // split every row by the comma
     mags[i] = row[4] * row[4];
     date[i] = row[0];
