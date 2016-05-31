@@ -33,25 +33,6 @@ function setup() {
   txt.id("top-bg");
   txt.position(0, 0);
 
-  // // UI slider
-  // slider = createSlider(0, 10, 1);
-  // slider.id("top");
-  // slider.position(width - 450, 25);
-
-  // // slider numeric feedback
-  // magnitude = createDiv('Min magnitude: ' + slider.value());
-  // magnitude.id("top");
-  // magnitude.position(width - 250, 35);
-  
-  // //checkbox
-  // checkbox = createCheckbox('Significant Earthquakes Only', false);
-  // checkbox.id("top");
-  // checkbox.position(width - 450, 25);
-  // checkbox.changed(myCheckedEvent);
-  
-  // significant = createDiv('significant');
-  // significant.id("top");
-  // significant.position(width - 250, 35);
 }
 
 function draw() {
@@ -61,26 +42,27 @@ function draw() {
       console.log(month());
     if ((new Date(row[0]).getMonth()+1) < 11){
       quakes[i].setRadius(0);
-    } else
+    } else {
       quakes[i].setRadius(mags[i]);
+    }
   }
   //magnitude.html("Magnitude > " + slider.value() + " RS");
 }
 
 function setColor(_recency) {
-  var startColor = color(0, 204, 255);//(0, 204, 255);
-  var endColor = color(255, 51, 0);//(0, 175, 175);//(255, 51, 0);
+  var startColor = color(255, 51, 0);//(0, 204, 255);
+  var endColor = color(0, 204, 255)//color(255, 51, 0);//(0, 175, 175);//(255, 51, 0);
   var interpolatedColor = lerpColor(startColor, endColor, _recency / 30);
   return interpolatedColor;
 }
 
 function parseSource(data) {
 //  for (var i = 1; i < data.length; i++) {
-  for (var i = 5001 - 1; i > 1; i--) {    
+  for (var i = 8450 - 1; i > 1; i--) {    
     var row = split(data[i], ","); // split every row by the comma
     mags[i] = row[4] * row[4];
     date[i] = row[0];
-    recency[i] = day() - (new Date(row[0]).getDate());
+    recency[i] = row[3];//day() - (new Date(row[0]).getDate());
     // create custom leaflet marker
     quakes[i] = L.circleMarker([row[1], row[2]], {
       stroke: true,
