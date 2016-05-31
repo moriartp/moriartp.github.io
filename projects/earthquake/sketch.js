@@ -38,13 +38,14 @@ function setup() {
 function draw() {
   // hide and show individual quakes by checking against slider threshold
   for (var i = 1; i < mags.length; i++) {
+    quakes[i].setRadius(0);
       console.log(new Date(row[0]).getMonth());
       console.log(month());
-    if ((new Date(row[0]).getMonth()+1) < 11){
-      quakes[i].setRadius(0);
-    } else {
-      quakes[i].setRadius(mags[i]);
-    }
+    // if ((new Date(row[0]).getMonth()+1) < 11){
+    //   quakes[i].setRadius(0);
+    // } else {
+    //   quakes[i].setRadius(mags[i]);
+    // }
   }
   //magnitude.html("Magnitude > " + slider.value() + " RS");
 }
@@ -75,7 +76,7 @@ function parseSource(data) {
     var place = row[13].substr(1);
 
     quakes[i].addTo(map).setRadius(mags[i]).bindPopup("Magnitude: " +
-      row[4] + "<br>Depth: " + row[3] + "km<br>" + "Type: " + row[15] + "<br>Date: " + (new Date(row[0]).getMonth()+1) +"/" + (new Date(row[0]).getDay()) +"/" + (new Date(row[0]).getYear()+1900)); // make new labeled markers at lat, lon, 
+      row[4] + "<br>Depth: " + row[3] + "km<br>")// + "Type: " + row[15] + "<br>Date: " + (new Date(row[0]).getMonth()+1) +"/" + (new Date(row[0]).getDay()) +"/" + (new Date(row[0]).getYear()+1900)); // make new labeled markers at lat, lon, 
   }
 }
 
