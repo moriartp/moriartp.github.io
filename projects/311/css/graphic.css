@@ -121,5 +121,13 @@ section {
 	font-size: 12px;
 }
 
+img{
+	float: right;
+	border: 1px solid #000;
+	margin: 5px;
+	padding: 5px 
+
+}
+
 
 
