@@ -91,7 +91,8 @@ $(document).ready(function()  {
         .attr("x", width)
         .attr("y", -6)
         .style("text-anchor", "end")
-        .text($('#ind option:selected').attr('label'));//"Independent Variable");
+        // .text($('#ind option:selected').attr('label'));//"Independent Variable");
+        .text("Selected Variable");
         console.log(indepDisplay)
 
     //y axis
@@ -104,7 +105,7 @@ $(document).ready(function()  {
         .attr("y", 6)
         .attr("dy", ".71em")
         .style("text-anchor", "end")
-        .text("Dependent Variable")
+        .text("Global Satisfaction Index")
 
     //circles
     var dots = svg.selectAll(".dot")
