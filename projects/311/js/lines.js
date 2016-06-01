@@ -48,7 +48,7 @@ var margin = {top: 20, right: 130, bottom: 30, left: 70},
     height = 400 - margin.top - margin.bottom
 
 var xScale = d3.scale.linear()
-    .range([0, width])
+    .range([0, width*0.95])
     .domain( [1, 24] )
 
 var yScale = d3.scale.linear()
