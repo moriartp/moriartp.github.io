@@ -1,6 +1,8 @@
 body, html{
 	margin:0;padding:0;
 	font-size: 1.2em;
+	font-family: Arial;
+	background-color: lightgray;
 }
 
 section{
@@ -8,19 +10,22 @@ section{
 	width: 88%;
 	margin: 5px auto 40px;
 	border: 1px solid #333;
+	border-radius: 5px;
 }
 
 h2{
-	font-size: 56px;
-	background-color: white;
+	font-size: 77px;
+	background-color: none;
 	width:800px;
-	font-family: 'Pompiere', cursive;
+	font-family: 'Arimo', sans-serif;
 	text-align: center;
+	padding: 6px;
+	margin:6px;
 }
 
 h3{
 	margin: 2px 0;
-	font-family: 'Pompiere', cursive;
+	font-family: 'Arimo', sans-serif;
 	font-size: 28px;
 }
 
@@ -126,6 +131,12 @@ img{
 	border: 1px solid #000;
 	margin: 5px;
 	padding: 5px 
+
+}
+
+.title-space{
+	background-color: none;
+	color: none;
 
 }
 
