@@ -5,7 +5,7 @@ function preload() {
 }
 
 function setup() {
-  bg = loadImage("assets/festival.jpg");
+  // bg = loadImage("assets/festival.jpg");
   createCanvas(windowWidth, 6500);
   textAlign(CENTER,CENTER);
 }
@@ -17,7 +17,7 @@ function parseData(){
 }
 
 function draw() {
-  background(bg);
+  background(255);
   
   // fill(222,22,222);
   // rect(90,mouseY,1111,20);
