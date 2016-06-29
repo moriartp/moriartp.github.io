@@ -1,7 +1,7 @@
 roomType,bldgCode,roomNum,OS,pcQty,macQty,softwarePackage,avDevices,ext,supportContact,specialHardware,address,bldgName,note
-Classroom,A,1,Mac & Windows PC,0,1,Mac Standard Software,Blu-ray; DVD; VHS; HD Projector ,None,IT Service Desk 212.229.5300 x4357,,bldgAddress,bldgName,
-Classroom,A,2,Mac & Windows PC,0,1,Mac Standard Software,DVD; VHS ,None,IT Service Desk 212.229.5300 x4357,,66 West 12th Street,ALVIN JOHNSON/J.M. KAPLAN HALL,
-Event Space,A,1,Connect Your Laptop,0,0,None,DVD; VHS ,None,Media Services 212.229.5300 x2310,,66 West 12th Street,ALVIN JOHNSON/J.M. KAPLAN HALL,SVGA Only
+Classroom,A,001,Mac & Windows PC,0,1,Mac Standard Software,Blu-ray; DVD; VHS; HD Projector ,None,IT Service Desk 212.229.5300 x4357,,bldgAddress,bldgName,
+Classroom,A,002,Mac & Windows PC,0,1,Mac Standard Software,DVD; VHS ,None,IT Service Desk 212.229.5300 x4357,,66 West 12th Street,ALVIN JOHNSON/J.M. KAPLAN HALL,
+Event Space,A,001,Connect Your Laptop,0,0,None,DVD; VHS ,None,Media Services 212.229.5300 x2310,,66 West 12th Street,ALVIN JOHNSON/J.M. KAPLAN HALL,SVGA Only
 Classroom,A,306,Connect Your Laptop,0,0,None,DVD; VHS ,None,Media Services 212.229.5300 x2310,,66 West 12th Street,ALVIN JOHNSON/J.M. KAPLAN HALL,SVGA Only
 Classroom,A,403,Connect Your Laptop,0,0,None,DVD; VHS ,None,Media Services 212.229.5300 x2310,,66 West 12th Street,ALVIN JOHNSON/J.M. KAPLAN HALL,SVGA Only
 Classroom,A,404,Mac,0,1,Mac Standard Software,DVD; VHS ,None,IT Service Desk 212.229.5300 x4357,,66 West 12th Street,ALVIN JOHNSON/J.M. KAPLAN HALL,
