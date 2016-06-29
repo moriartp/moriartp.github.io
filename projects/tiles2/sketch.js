@@ -19,7 +19,7 @@ function preload() {
 function setup() {
 
   createCanvas(windowWidth, windowHeight); //also in draw() so that it adjusts live to window change
-  textFont('Yantramanav');
+  textFont('Ariel');
 
 
   // ///test select...highlights if index value is divisible by selected value
