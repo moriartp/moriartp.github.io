@@ -21,53 +21,6 @@ function setup() {
      createCanvas(windowWidth, windowHeight); //also in draw() so that it adjusts live to window change
      textFont('Yantramanav');
 
-
-     // ///test select...highlights if index value is divisible by selected value
-     // selb = createSelect();
-     // selb.position(5, 20); //windowHeight * 0.015);
-     // selb.option(' ');
-     // selb.option('A');
-     // selb.option('B');
-     // selb.option('D');
-     // selb.option('E');
-     // selb.option('G');
-     // selb.option('H');
-     // selb.option('i');
-     // selb.option('L');
-     // selb.option('M');
-     // selb.option('N');
-     // selb.option('U');
-     // selb.option('W');
-     // selb.changed(mySelectEvent);
-
-     // //SOFTWAREPACKAGE SELECT ELEMENT
-     // selc = createSelect();
-     // selc.position(50, 20); //windowHeight * 0.015);
-     // selc.option('None');
-     // selc.option('Audio Suite Software');
-     // selc.option('CEA Content');
-     // selc.option('Display Content');
-     // selc.option('Mac & Windows PC Standard Software');
-     // selc.option('Mac Advanced Audio Software');
-     // selc.option('Mac Express Software');
-     // selc.option('Mac Help Kiosk Software');
-     // selc.option('Mac Standard Software');
-     // selc.option('Mac Standard Software + Avid');
-     // selc.option('Mac Standard Software + Pro Tools & Avid');
-     // selc.option('Windows PC Express Software');
-     // selc.option('Windows PC Standard & Accessibility Software');
-     // selc.option('Windows PC Standard Software');
-     // selc.option('Various');
-     // selc.changed(mySelectEvent);
-
-
-
-
-
-
-
-
-
      //ROOM TYPE SELECT ELEMENT
      selb = createSelect();
      selb.position(65, 20); //windowHeight * 0.015);
@@ -109,21 +62,6 @@ function setup() {
      rowInput = createInput();
      rowInput.position(570, 20);
 
-     // //SOFTWARE PACKAGE SELECT ELEMENT
-     // selSW = createSelect();
-     // selSW.position(65, height - 20); //windowHeight * 0.015);
-     // selSW.option('Select');
-     // selSW.option('Windows PC Express Software');
-     // selSW.option('Windows PC Standard Software');
-     // selSW.option('Mac Express Software');
-     // selSW.option('Mac Help Kiosk Software');
-     // selSW.option('Mac Standard 1');
-     // selSW.option('Mac Standard Software');
-     // selSW.option('Mac Standard Software + Pro Tools');
-     // selSW.option('Mac Advanced Audio Software');
-     // selSW.option('Audio Suite Software');
-     // selSW.changed(mySelectEvent);
-
      //SOFTWARE SELECT ELEMENT
      swInput = createInput();
      swInput.position(65, height - 35);
@@ -147,7 +85,7 @@ function parseData() {
           var specialHardware = currentRow.getString(10);
           var address = currentRow.getString(11);
           var bldgName = currentRow.getString(12);
-          var note = currentRow.getString(13);    
+          var note = currentRow.getString(13);
 
 
      }
@@ -242,18 +180,6 @@ function draw() {
           var rowV = floor(i % tablingValue);
           var colH = floor(i / tablingValue);
 
-
-
-          // //RUN THROUGH THE DATASET!!!!!!!!!!!!!!!!!!!!!!!!!!
-          // for (var i = 0; i <= dataset; i++) { //will eventually be replaced by preloaded dataset via dataset.length
-          //   var rowV = floor(i % tablingValue);
-          //   var colH = floor(i / tablingValue);
-          //   var X1 = (marginH + colH * (intervalH)); //for mouse hover, captures pixel range for each tile
-          //   var X2 = (marginH + colH * (intervalH * 2)); //for mouse hover, captures pixel range for each tile
-          //   var Y1 = 40 + (marginV + rowV * (intervalV)); //for mouse hover, captures pixel range for each tile
-          //   var Y2 = 40 + (marginV + rowV * (intervalV * 2)); //for mouse hover, captures pixel range for each tile
-
-
           //ENSURE TEXT IS ALIGNED WITH THE TILE
           textAlign(CENTER, CENTER);
           rectMode(CENTER, CENTER);
@@ -262,43 +188,23 @@ function draw() {
           fill(102, 102, 102); //drakGray
 
           //SET CONDITIONAL TO HIGHLIGHT TILES MATCHING SET CONDITION VIA SELECT ELEMENT
-          // if (softwarePackage === selc.value() &&i % selb.value() === 0 && i >= input.value() && rowV >= rowInput.value() && colH >= colInput.value()) {
           if (OS === selOS.value() && roomType === selb.value() && pcQty >= input.value() && macQty >= rowInput.value()) { //softwarePackage === selc.value()
-               // fill(63, 136, 197); //myBlue
-               fill(68, 187, 164); //mygreen
-               // fill(232, 47, 33); //parsonsRed
-               // fill(68, 187, 164); //mygreen
-               // fill(9, 148, 121);//myDarkGreen
                fill(233, 79, 55); //myred
-               // stroke(57, 62, 65); //myblack
                rect(marginH * 1.5 + colH * intervalH, (marginV * 1.5 + rowV * intervalV), intervalH * 0.90, intervalV * 0.90);
                fill(255);
           } else {
 
-               // fill(57, 62, 65); //myblack
-               // fill(144, 192, 231); //lightBlue
                fill(246, 247, 235); //myWhite
-               // fill(102, 102, 102); //darkestGray
-               // fill(232, 232, 232); //gray
-               // fill(159, 233, 219); //lightgreen
-               // fill(68, 187, 164); //mygreen
-               // fill(255, 244, 215); //beige
-               // fill(63, 136, 197); //myBlue
                rect(marginH * 1.5 + colH * intervalH, (marginV * 1.5 + rowV * intervalV), intervalH * 0.90, intervalV * 0.90);
                fill(0);
 
           }
 
           //draw text (Room ID over the tiles)
-          // fill(68, 187, 164); //mygreen
-          // fill(57, 62, 65); //myblack
-          // fill(246, 247, 235);//myWhite
-          // fill(255);
           text(bldgCode + roomNum, marginH * 1.5 + colH * intervalH, (marginV * 1.5 + rowV * intervalV));
      }
 
      //TOOLTIP ---RUN THROUGH THE DATASET!!!!!!!!!!!!!!!!!!!!!!!!!!
-     // for (var j = 0; j <= dataset; j++) { //will eventually be replaced by preloaded dataset via dataset.length
      //Get the data
      for (var j = 0; j < table.getRowCount() - 1; j++) {
           var tool_currentRow = table.getRow(j);
@@ -327,7 +233,6 @@ function draw() {
           if (mouseX < (marginH * 1.5 + tool_colH * intervalH) + intervalH / 2 && mouseX > (marginH * 1.5 + tool_colH * intervalH) - intervalH / 2 && mouseY < (marginV * 1.5 + tool_rowV * intervalV) + intervalV / 2 && mouseY > (marginV * 1.5 + tool_rowV * intervalV) - intervalV / 2) {
                noFill();
                strokeWeight(3);
-               // stroke(68, 187, 164); //mygreen
                stroke(57, 62, 65); //myblack
                rect(marginH * 1.5 + tool_colH * intervalH, (marginV * 1.5 + tool_rowV * intervalV), intervalH * 0.90, intervalV * 0.90); //highlights current active tile
                if (value === 0) {
@@ -349,14 +254,6 @@ function draw() {
                          text("Rm: " + tool_bldgCode + tool_roomNum + "\n" + tool_roomType + "\n" + tool_pcQty + " PCs, " + tool_macQty + " Macs" + "\nCol: " + tool_colH + ", Row: " + tool_rowV + "\nX: " + mouseX + "," + "Y: " + mouseY, (marginH * 1.5 + tool_colH * intervalH), (marginV * 1.5 + tool_rowV * intervalV) + intervalV * 1.25);
                     }
                } else {
-                    // var leftWall = (marginH * 1.5 + tool_colH * intervalH)-intervalH/2;
-                    // var rightWall = (marginH * 1.5 + tool_colH * intervalH)+intervalH/2;
-                    // var bottomWall = (marginV * 1.5 + tool_rowV * intervalV) - intervalV / 2;
-                    // var topWall = (marginV * 1.5 + tool_rowV * intervalV) + intervalV / 2;
-                    // var xm = mouseX;
-                    // var ym = mouseY;
-                    // var xc = constrain(mouseX,leftWall,rightWall);
-                    // var yc = constrain(mouseY,topWall,bottomWall);
 
                     fill(57, 62, 65, 250); //myblack
                     noStroke();
@@ -370,33 +267,6 @@ function draw() {
                     textSize(intervalV * 2);
                     text(tool_bldgCode + tool_roomNum, marginH, marginV);
                }
-
-               // ///GET SOFTWARE TABLE DATA FOR TOOLTIP DISPLAY
-               // for (var t = 0; t < swTable.getRowCount(); t++) {
-               //   var tool_currentSWRow = swTable.getRow(t);
-               //   var tool_softwareCat = currentSWRow.getString(0);
-               //   var tool_softwareName = currentSWRow.getString(1);
-               //   var tool_softwareVersion = currentSWRow.getString(2);
-               //   var tool_winEXP = currentSWRow.getString(3);
-               //   // var winST1 = currentSWRow.getString(3);
-               //   var tool_winSTD = currentSWRow.getString(5);
-               //   var tool_winSAT = currentSWRow.getString(6);
-               //   var tool_macEXP = currentSWRow.getString(7);
-               //   var tool_macHLP = currentSWRow.getString(8);
-               //   var tool_macST1 = currentSWRow.getString(9);
-               //   var tool_macSTD = currentSWRow.getString(10);
-               //   var vmacPROTOOLS = currentSWRow.getString(11);
-               //   var tool_macADVAUDIO = currentSWRow.getString(12);
-               //   var tool_macAUDIOSUITE = currentSWRow.getString(13);
-               //   var tool_macSAT = currentSWRow.getString(14);
-
-               //   if (tool_softwarePackage){
-               //     text(softwareName,width/2,height*0.2);
-
-               //   }
-               // }
-
-
           }
      }
      // fill(68, 187, 164); //mygreen
@@ -404,46 +274,45 @@ function draw() {
      textSize(windowHeight / 4);
      text(value, windowWidth - 300, 300);
 
-     ///GET SOFTWARE TABLE DATA FOR SOFTWARE SEARCH INPUT
-     for (var s = 0; s < swTable.getRowCount(); s++) {
-          var currentSWRow = swTable.getRow(s);
-          var softwareCat = currentSWRow.getString(0);
-          var softwareName = currentSWRow.getString(1);
-          var softwareVersion = currentSWRow.getString(2);
-          var winEXP = currentSWRow.getString(3);
-          // var winST1 = currentSWRow.getString(3);
-          var winSTD = currentSWRow.getString(5);
-          var winSAT = currentSWRow.getString(6);
-          var macEXP = currentSWRow.getString(7);
-          var macHLP = currentSWRow.getString(8);
-          var macST1 = currentSWRow.getString(9);
-          var macSTD = currentSWRow.getString(10);
-          var macPROTOOLS = currentSWRow.getString(11);
-          var macADVAUDIO = currentSWRow.getString(12);
-          var macAUDIOSUITE = currentSWRow.getString(13);
-          var macSAT = currentSWRow.getString(14);
+     // ///GET SOFTWARE TABLE DATA FOR SOFTWARE SEARCH INPUT
+     // for (var s = 0; s < swTable.getRowCount(); s++) {
+     //      var currentSWRow = swTable.getRow(s);
+     //      var softwareCat = currentSWRow.getString(0);
+     //      var softwareName = currentSWRow.getString(1);
+     //      var softwareVersion = currentSWRow.getString(2);
+     //      var winEXP = currentSWRow.getString(3);
+     //      // var winST1 = currentSWRow.getString(3);
+     //      var winSTD = currentSWRow.getString(5);
+     //      var winSAT = currentSWRow.getString(6);
+     //      var macEXP = currentSWRow.getString(7);
+     //      var macHLP = currentSWRow.getString(8);
+     //      var macST1 = currentSWRow.getString(9);
+     //      var macSTD = currentSWRow.getString(10);
+     //      var macPROTOOLS = currentSWRow.getString(11);
+     //      var macADVAUDIO = currentSWRow.getString(12);
+     //      var macAUDIOSUITE = currentSWRow.getString(13);
+     //      // var macSAT = currentSWRow.getString(14);
 
-          if (swInput.value() === softwareName) {
-               fill(57, 62, 65, 250); //myblack
-               rectMode(CORNERS);
-               rect(0, 0, windowWidth, windowHeight);
-               textAlign(LEFT, TOP);
-               fill(68, 187, 164);
-               textSize(height / 11);
-               text(softwareName + " " + softwareVersion, marginH, marginV);
-               textSize(height / 33);
-               text(softwareCat, marginH, marginV * 3);
-               fill(255);
-               textSize(33);
-               text("Windows PC Express Software: " + winEXP + "\nWindows PC Standard Software: " + winSTD + "\nMac Express Software: " + macEXP + "\nMac Help Kiosk Software: " + macHLP + "\nMac Standard 1: " + macST1 + "\nMac Standard Software: " + macSTD + "\nMac Standard Software + Pro Tools: " + macPROTOOLS + "\nMac Advanced Audio Software: " + macADVAUDIO + "\nAudio Suite Software: " + macAUDIOSUITE, marginH, marginV * 4);
-          }
-     }
+     //      if (swInput.value() === softwareName) {
+     //           fill(57, 62, 65, 250); //myblack
+     //           rectMode(CORNERS);
+     //           rect(0, 0, windowWidth, windowHeight);
+     //           textAlign(LEFT, TOP);
+     //           fill(68, 187, 164);
+     //           textSize(height / 11);
+     //           text(softwareName + " " + softwareVersion, marginH, marginV);
+     //           textSize(height / 33);
+     //           text(softwareCat, marginH, marginV * 3);
+     //           fill(255);
+     //           textSize(33);
+     //           text("Windows PC Express Software: " + winEXP + "\nWindows PC Standard Software: " + winSTD + "\nMac Express Software: " + macEXP + "\nMac Help Kiosk Software: " + macHLP + "\nMac Standard 1: " + macST1 + "\nMac Standard Software: " + macSTD + "\nMac Standard Software + Pro Tools: " + macPROTOOLS + "\nMac Advanced Audio Software: " + macADVAUDIO + "\nAudio Suite Software: " + macAUDIOSUITE, marginH, marginV * 4);
+     //      }
+     // }
 }
 
 
 
 function mySelectEvent() {
-     // var item = selb.value();
 }
 
 function mouseReleased() {
