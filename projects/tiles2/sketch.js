@@ -280,13 +280,13 @@ function draw() {
           var softwareCat = currentSWRow.getString(0);
           var softwareName = currentSWRow.getString(1);
           var softwareVersion = currentSWRow.getString(2);
-          var winEXP = currentSWRow.getString(3);
+          // var winEXP = currentSWRow.getString(3);
           // var winST1 = currentSWRow.getString(3);
           var winSTD = currentSWRow.getString(5);
           var winSAT = currentSWRow.getString(6);
           var macEXP = currentSWRow.getString(7);
           var macHLP = currentSWRow.getString(8);
-          var macST1 = currentSWRow.getString(9);
+          // var macST1 = currentSWRow.getString(9);
           var macSTD = currentSWRow.getString(10);
           var macPROTOOLS = currentSWRow.getString(11);
           var macADVAUDIO = currentSWRow.getString(12);
@@ -305,7 +305,7 @@ function draw() {
                text(softwareCat, marginH, marginV * 3);
                fill(255);
                textSize(33);
-               text("Windows PC Express Software: " + winEXP + "\nWindows PC Standard Software: " + winSTD + "\nMac Express Software: " + macEXP + "\nMac Help Kiosk Software: " + macHLP + "\nMac Standard 1: " + macST1 + "\nMac Standard Software: " + macSTD + "\nMac Standard Software + Pro Tools: " + macPROTOOLS + "\nMac Advanced Audio Software: " + macADVAUDIO + "\nAudio Suite Software: " + macAUDIOSUITE, marginH, marginV * 4);
+               text("\nWindows PC Standard Software: " + winSTD + "\nMac Help Kiosk Software: " + macHLP + "\nMac Standard Software: " + macSTD + "\nMac Standard Software + Pro Tools: " + macPROTOOLS + "\nMac Advanced Audio Software: " + macADVAUDIO + "\nAudio Suite Software: " + macAUDIOSUITE, marginH, marginV * 4);
           }
      }
 }
@@ -316,11 +316,11 @@ function mySelectEvent() {
 }
 
 function mouseReleased() {
-     if (value === 0 && mouseY > 100 && mouseY < height - 100) {
+     if (value === 0 && mouseY >= 100 && mouseY < windowHeight - 100) {
           value = 1;
      } else {
           value = 0;
-          rectGrowX = 0;
-          rectGrowY = 0;
+          // rectGrowX = 0;
+          // rectGrowY = 0;
      }
 }
