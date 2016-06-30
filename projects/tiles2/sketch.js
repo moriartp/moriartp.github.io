@@ -274,40 +274,40 @@ function draw() {
      textSize(windowHeight / 4);
      text(value, windowWidth - 300, 300);
 
-     // ///GET SOFTWARE TABLE DATA FOR SOFTWARE SEARCH INPUT
-     // for (var s = 0; s < swTable.getRowCount(); s++) {
-     //      var currentSWRow = swTable.getRow(s);
-     //      var softwareCat = currentSWRow.getString(0);
-     //      var softwareName = currentSWRow.getString(1);
-     //      var softwareVersion = currentSWRow.getString(2);
-     //      var winEXP = currentSWRow.getString(3);
-     //      // var winST1 = currentSWRow.getString(3);
-     //      var winSTD = currentSWRow.getString(5);
-     //      var winSAT = currentSWRow.getString(6);
-     //      var macEXP = currentSWRow.getString(7);
-     //      var macHLP = currentSWRow.getString(8);
-     //      var macST1 = currentSWRow.getString(9);
-     //      var macSTD = currentSWRow.getString(10);
-     //      var macPROTOOLS = currentSWRow.getString(11);
-     //      var macADVAUDIO = currentSWRow.getString(12);
-     //      var macAUDIOSUITE = currentSWRow.getString(13);
-     //      // var macSAT = currentSWRow.getString(14);
+     ///GET SOFTWARE TABLE DATA FOR SOFTWARE SEARCH INPUT
+     for (var s = 0; s < swTable.getRowCount(); s++) {
+          var currentSWRow = swTable.getRow(s);
+          var softwareCat = currentSWRow.getString(0);
+          var softwareName = currentSWRow.getString(1);
+          var softwareVersion = currentSWRow.getString(2);
+          var winEXP = currentSWRow.getString(3);
+          // var winST1 = currentSWRow.getString(3);
+          var winSTD = currentSWRow.getString(5);
+          var winSAT = currentSWRow.getString(6);
+          var macEXP = currentSWRow.getString(7);
+          var macHLP = currentSWRow.getString(8);
+          var macST1 = currentSWRow.getString(9);
+          var macSTD = currentSWRow.getString(10);
+          var macPROTOOLS = currentSWRow.getString(11);
+          var macADVAUDIO = currentSWRow.getString(12);
+          var macAUDIOSUITE = currentSWRow.getString(13);
+          // var macSAT = currentSWRow.getString(14);
 
-     //      if (swInput.value() === softwareName) {
-     //           fill(57, 62, 65, 250); //myblack
-     //           rectMode(CORNERS);
-     //           rect(0, 0, windowWidth, windowHeight);
-     //           textAlign(LEFT, TOP);
-     //           fill(68, 187, 164);
-     //           textSize(height / 11);
-     //           text(softwareName + " " + softwareVersion, marginH, marginV);
-     //           textSize(height / 33);
-     //           text(softwareCat, marginH, marginV * 3);
-     //           fill(255);
-     //           textSize(33);
-     //           text("Windows PC Express Software: " + winEXP + "\nWindows PC Standard Software: " + winSTD + "\nMac Express Software: " + macEXP + "\nMac Help Kiosk Software: " + macHLP + "\nMac Standard 1: " + macST1 + "\nMac Standard Software: " + macSTD + "\nMac Standard Software + Pro Tools: " + macPROTOOLS + "\nMac Advanced Audio Software: " + macADVAUDIO + "\nAudio Suite Software: " + macAUDIOSUITE, marginH, marginV * 4);
-     //      }
-     // }
+          if (swInput.value() === softwareName) {
+               fill(57, 62, 65, 250); //myblack
+               rectMode(CORNERS);
+               rect(0, 0, windowWidth, windowHeight);
+               textAlign(LEFT, TOP);
+               fill(68, 187, 164);
+               textSize(height / 11);
+               text(softwareName + " " + softwareVersion, marginH, marginV);
+               textSize(height / 33);
+               text(softwareCat, marginH, marginV * 3);
+               fill(255);
+               textSize(33);
+               text("Windows PC Express Software: " + winEXP + "\nWindows PC Standard Software: " + winSTD + "\nMac Express Software: " + macEXP + "\nMac Help Kiosk Software: " + macHLP + "\nMac Standard 1: " + macST1 + "\nMac Standard Software: " + macSTD + "\nMac Standard Software + Pro Tools: " + macPROTOOLS + "\nMac Advanced Audio Software: " + macADVAUDIO + "\nAudio Suite Software: " + macAUDIOSUITE, marginH, marginV * 4);
+          }
+     }
 }
 
 
