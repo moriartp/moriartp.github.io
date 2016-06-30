@@ -19,7 +19,7 @@ function preload() {
 function setup() {
 
      createCanvas(windowWidth, windowHeight); //also in draw() so that it adjusts live to window change
-     textFont('Yantramanav');
+     textFont('Kanit');
 
      //ROOM TYPE SELECT ELEMENT
      selb = createSelect();
