@@ -59,7 +59,7 @@ function draw() {
   image(logo, 0, 0, logo.width / 12, logo.height / 12);
   noStroke();
   fill(255, 255, 255, 229);
-  rect(0, windowHeight * 0.25, windowWidth, windowHeight * 0.33);
+  rect(0, windowHeight * 0.25, windowWidth, windowHeight * 0.5);
   // rect((windowWidth / 5) * 1, (windowHeight / 3.1),165, 22);
 
   //F
@@ -83,11 +83,20 @@ function draw() {
 
 
   fill(0);
-  textSize(windowWidth*0.015);
+  textSize(windowWidth*0.01);
   text("FUND", (windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight / 3.1);
-  text("ORG", (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 3.1);
+  text("ORGANIZATION", (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 3.1);
   text("ACCOUNT", (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 3.1);
   text("PROGRAM", (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight / 3.1);
+
+  text("FUND/GRANT/GIFT/PROJECT", (windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight / 2);
+  text("COST CENTER", (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 2);
+  // text("SPEND CATEGORY", (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 2);
+  text("PROGRAM", (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight / 2);
+
+
+
+
 
   for (var f = 0; f < tableF.getRowCount(); f++) {
     var currentFRow = tableF.getRow(f);
@@ -95,7 +104,7 @@ function draw() {
     var wd_fund = currentFRow.getString(1);
 
     if (fund === inputF.value()) {
-      text(wd_fund, (windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight / 2.5);
+      text(wd_fund, (windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight / 1.9);
     }
 
 
@@ -108,7 +117,14 @@ function draw() {
     var wd_org = currentORow.getString(1);
 
     if (org === inputO.value()) {
-      text(wd_org, (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 2.5);
+      // fill(255);
+      // strokeWeight(0.35);
+      // stroke(0);
+      // rectMode(CORNER);
+      // rect((windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 1.975,windowWidth * 0.15, windowHeight * 0.03);
+      // fill(0);
+      // noStroke();
+      text(wd_org, (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 1.9);
     }
 
 
@@ -120,7 +136,7 @@ function draw() {
     var wd_program = currentPRow.getString(1);
 
     if (program === inputP.value()) {
-      text(wd_program, (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight / 2.5);
+      text(wd_program, (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight / 1.9);
     }
   }
   for (var a = 0; a < tableA.getRowCount(); a++) {
@@ -135,7 +151,7 @@ function draw() {
   }
   var rows = tableA.findRows(inputA.value(), 0);
   // textSize(windowWidth*0.025);
-  text("Spend Cats: " + rows.length, (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 2.6);
+  text("SPEND CATEGORY: " + rows.length, (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 2);
   if (rows.length > 0) {
     // textSize(18);
     // text("Use the Spending Category most appropriate to your purchase.", (windowWidth / 5) * 3-(windowWidth*0.075), windowHeight / 3 + 50);
@@ -143,8 +159,8 @@ function draw() {
 
   var matches = tableA.matchRows(inputA.value(), 0);
   for (var i = 0; i < rows.length; i++) {
-    textSize(18);
-    text(matches[i].getString(1) + " " + matches[i].getString(2), (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 2.6 + 25 + i * 25);
+    // textSize(18);
+    text(matches[i].getString(1) + " " + matches[i].getString(2), (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 1.9 + i * 27.5);
   }
   fill(0, 0, 0, fader);
   textSize(windowWidth * 0.075);
@@ -152,6 +168,9 @@ function draw() {
   text("What is my FDM?", width / 2, height / 9);
   textSize(windowWidth * 0.025);
   text("Enter your FOAP in the below fields", width / 2, height / 4.75);
+  
+  
+  
 }
 
 function windowResized() {
