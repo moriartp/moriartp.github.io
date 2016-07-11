@@ -83,7 +83,7 @@ function draw() {
      if(windowWidth >= windowHeight){
           textSize(windowWidth * 0.01);
      } else {
-          textSize(windowHeight * 0.01);
+          textSize(windowHeight * 0.015);
      }
 
 
@@ -93,7 +93,7 @@ function draw() {
      text("ACCOUNT", (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 3.1);
      text("PROGRAM", (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight / 3.1);
 
-     text("FUND/GRANT/GIFT/PROJECT", (windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight / 2);
+     text("FUND WORKTAG", (windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight / 2);
      text("COST CENTER", (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 2);
      // text("SPEND CATEGORY", (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 2);
      text("PROGRAM", (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight / 2);
