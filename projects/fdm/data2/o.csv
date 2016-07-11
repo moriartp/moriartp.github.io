@@ -1,0 +1,690 @@
+Banner Org,Banner Org Description,MyDay ID,MyDay Description,Related Program Code
+10001,Dean's Office PS,CC10001,Dean's Office PS,PG3700
+10002,Dean's Research Fund PS,CC10002,Executive Dean's Research Fund PS,PG3700
+10003,Faculty Research Fund_PS,CC10003,Faculty Research Fund - Parsons,PG3500
+10008,"Academic Dev Fund, General PS",CC10008,"Academic Dev Fund, Provost's Office PS",PG3700
+10009,"Student Assts, Faculty Research PS",CC10009,Faculty Student Research Assistant Fund PS,PG3700
+10020,Academic & Educational Programs PS,CC10020,Academic & Educational Programs PS,PG3700
+10021,Faculty Affairs,CC10021,Faculty Affairs PS,PG3700
+10022,Academic Advising PS,CC10022,Academic Advising PS,PG3700
+10025,Parsons Festival,CC10025,Parsons Festival PS,PG3700
+10040,Academic Facilities Resources PSD,CC10040,Academic Facilities Resources PS,PG3700
+10041,Budget Control PS,CC10041,Budget Control PS,PG3700
+10043,Parsons International,CC10043,Parsons International,PG3700
+10044,IDCR - Anne Gaines,CC10011,IDCR - Parsons,PG6005
+10045,IDCR - James Hunt,CC10011,IDCR - Parsons,PG6005
+10046,IDCR - Katherine Moriwaki,CC10011,IDCR - Parsons,PG6005
+10047,IDCR - Michie Pagulayan,CC10011,IDCR - Parsons,PG6005
+10048,IDCR - Eduardo Staszowski,CC10011,IDCR - Parsons,PG6005
+10049,IDCR - Jessica Walker,CC10011,IDCR - Parsons,PG6005
+10050,IDCR - Alison Mears,CC10011,IDCR - Parsons,PG6005
+10060,Development PS,CC10060,Development PS,PG6005
+10062,Parsons Fashion Benefit,CC10062,Parsons Fashion Benefit PS,PG6005
+10100,Admissions and Recruitment PS,CC88841,Undergraduate Admission,PG3802
+10140,Career Services,CC10140,Career Services,PG3802
+10160,Disability Services PS,CC10160,Disability Services PS,PG3802
+10176,ALTOS,CC10176,Affiliations other,PG3700
+10190,Exhibitions and Public Programs,CC10190,Exhibitions and Public Programs PS,PG3700
+10200,Scholarship PS BFA,CC10200,Scholarship PS BFA,
+10201,Architectural Design PS BFA,CC10201,Architectural Design PS BFA,PG3008
+10203,Communication Design PS BFA,CC10203,Communication Design PS BFA,PG3008
+10204,Fashion Design PS BFA,CC10204,Fashion Design PS BFA,PG3008
+10205,Fine Arts PS BFA,CC10205,Fine Arts PS BFA,PG3008
+10206,Foundation PS BFA,CC10206,Foundation PS BFA,PG3008
+10207,Illustration PS BFA,CC10207,Illustration PS BFA,PG3008
+10208,Integrated Design Curclm. PS BFA,CC10208,Integrated Design Curriculum PS BFA,PG3008
+10209,Interior Design PS BFA,CC10209,Interior Design PS BFA,PG3008
+10210,Photography PS BFA,CC10210,Photography PS BFA,PG3008
+10211,Product Design PS BFA,CC10211,Product Design PS BFA,PG3008
+10213,Design and Technology PS BFA,CC10213,Design and Technology PS BFA,PG3008
+10221,Scholarship PS BBA,CC10221,Scholarship PS BBA,
+10222,Design & Management PS BBA,CC10222,Strategic Design & Management PS BBA,PG3008
+10230,Student Affairs PS,CC10230,Student Affairs PS,PG3700
+10231,Scholarship PS AAS,CC10231,Scholarship PS AAS,
+10232,Fashion PS AAS,CC10232,Fashion PS AAS,PG3008
+10233,Fashion Marketing PS AAS,CC10233,Fashion Marketing PS AAS,PG3008
+10234,General Studio PS AAS,CC10234,General Studio PS AAS,PG3008
+10235,Graphic Design PS AAS,CC10235,Graphic Design PS AAS,PG3008
+10236,Interior Design PS AAS,CC10236,Interior Design PS AAS,PG3008
+10255,Digital Design PS,CC10255,Digital Design PS,PG3008
+10264,Program Admin PS ADS,CC10264,Program Admin PS ADS,PG3700
+10265,Art/Design History/ Theory,CC10265,Art/Design History/ Theory PS,PG3008
+10267,Humanities PS,CC10267,Humanities PS,PG3008
+10290,Environmental Studies PS BS BA,CC10290,Environmental Studies PS BS BA,PG3008
+10293,Urban Design PS BS,CC10293,Urban Design PS BS,PG3008
+10400,Graduate Scholarship PS MFA,CC10400,Graduate Scholarship PS MFA,
+10401,Design and Technology PS MFA,CC10401,Design and Technology PS MFA,PG3008
+10402,Information Design PS MFA,CC10402,Information Design PS MFA,PG3008
+10406,Imaging and New Media PS MFA,CC10406,Photography PS MFA,PG3008
+10407,Fine Arts PS MFA,CC10407,Fine Arts PS MFA,PG3008
+10408,Architecture/Lighting Design,CC10408,Architecture/Lighting Design PS MRCH/MFA,PG3008
+10409,Fashion Design and Society PS MFA,CC10409,Fashion Design and Society PS MFA,PG3008
+10410,Interior Design PS MFA,CC10410,Interior Design PS MFA,PG3008
+10420,Architecture PS MA,CC10420,Architecture PS MRCH,PG3008
+10440,Cooper-Hewitt/New York PS,CC10440,History Design Curatorial Studies Cooper-Hewitt PS MA,PG3008
+10460,Lighting Design PS MFA,CC10460,Lighting Design PS MFA,PG3008
+10500,Program Adminstration Budget: AMT,CC10500,"School Art, Media & Tech: Program Admin Budget",PG3008
+10501,Parsons School of Art Media & Tech,CC10501,"School of Art, Media & Tech: Electives PS",PG3008
+10502,Program admin budget MS DV,CC10502,Data Visualization PS MS,PG3008
+10510,Program Adminstration Budget Fashio,CC10510,School of Fashion: Program Admin Budget,PG3008
+10511,Parsons School of Fashion,CC10511,School of Fashion Electives PS,PG3008
+10520,Program Admin Budget Constructed En,CC10520,School of Constructed Environments: Program Admin Budget,PG3008
+10521,Parson Sch of Constructive Environ.,CC10521,School of Constructed Environments Electives PS,PG3008
+10522,MFA ID/LD,CC10522,Interior Design/Lighting Design PS MFA,PG3008
+10523,Program admin MFA IDD,CC10523,Industrial Design PS MFA,PG3008
+10530,Program Admin Budget Art/Design His,CC10530,School of Art & Design History & Theory: Program Admin Budget,PG3008
+10531,Fashion Studies MA PS,CC10531,Fashion Studies PS MA,PG3008
+10532,MA Design Studies,CC10532,Design Studies PS MA,PG3008
+10540,Program Admin Budget Design Strateg,CC10540,School of Design Strategies: Program Admin Budget,PG3008
+10541,Transdisciplinary Design MFA PS,CC10541,Transdisciplinary Design PS MFA,PG3008
+10542,Parsons Sch. of Design Strategies,CC10542,School of Design Strategies Electives PS,PG3008
+10543,MS in Design & Urban Ecologies_PS,CC10543,Design & Urban Ecologies PS MS,PG3008
+10544,MA in Theories of Urban Practice_PS,CC10544,Theories of Urban Practice PS MA,PG3008
+10545,MS Strategic Dsgn/Mgmt & Cert Prog,CC10545,Strategic Design & Management PS MS,PG3008
+10550,Parsons First Year,CC10550,Parsons First Year PS,PG3008
+10600,Program Administration PS CE,CC10600,Program Administration PS CE,PG3700
+10601,Digital Design PS CE,CC10601,Digital Design PS CE,PG3008
+10602,Fashion Studies PS CE,CC10602,Fashion Studies PS CE,PG3008
+10603,Fine Art PS CE,CC10603,Fine Art PS CE,PG3008
+10605,Graphic Design PS CE,CC10605,Graphic Design PS CE,PG3008
+10606,Interior Design & Arch. PS CE,CC10606,Interior Design & Arch. PS CE,PG3008
+10630,Program Admin. Spec. Prog. PS,CC10630,SPACE: Program Admin Budget,PG3008
+10632,Lawrence Scholars,CC10632,Lawrence Scholars,PG3008
+10633,Parsons Continuing Educ Spec. Prog,CC10633,Parsons Continuing Educ Spec. Prog,PG3008
+10640,Bank Street MS Program PS,CC10640,Bank Street MS Program PS,PG3008
+10650,Foundation Prep. Summer Program PS,CC10650,Foundation Prep. Summer Program PS,PG3008
+10660,Parsons Academy,CC10660,Parsons Academy,PG3008
+10661,Summer Pre-Architecture Program,CC10661,Summer Pre-Architecture Program,PG3008
+10670,ESL + D,CC10670,ESL + D,PG3008
+10690,NY Program PS,CC10690,NY Summer Program PS,PG3008
+10691,International Summer Program PS,CC10691,International Summer Program PS,PG3008
+10700,Parsons Design Lab (PDL),CC10700,Parsons Design Lab (PDL),PG3008
+15001,Dean's Office,CC15001,Dean's Office - Executive,PG3700
+15041,Budget and Planning,CC15041,Budget and Planning,PG3700
+15042,IDCR - Laura Auricchio,CC15002,IDCR - SPE,PG6005
+15043,IDCR - Robert Buckley,CC15002,IDCR - SPE,PG6005
+15044,IDCR - Michael Cohen,CC15002,IDCR - SPE,PG6005
+15045,IDCR - Clara Hemphill,CC15002,IDCR - SPE,PG6005
+15046,IDCR - Michele Kahane,CC15002,IDCR - SPE,PG6005
+15047,IDCR - Paul McPhearson,CC15002,IDCR - SPE,PG6005
+15048,IDCR - Robert Polito,CC15002,IDCR - SPE,PG6005
+15049,IDCR - Lisa Servon,CC15002,IDCR - SPE,PG6005
+15050,Academic Affairs,CC15050,Academic Affairs,PG3700
+15052,Faculty Research Funds,CC15052,Faculty Research Fund - SPE,PG3700
+15053,Faculty Development Fund,CC15053,Faculty Development Fund,PG3700
+15054,"Faculty Academic Events, ADP",CC15054,"Faculty Academic Events, ADP",PG3700
+15055,"Innovations in Educ., ADF",CC15055,"Innovations in Educ., ADF",PG3700
+15057,"Academic Dev Fund, General",CC15057,"Academic Dev Fund, General",PG3700
+15058,"Student Asst, Faculty Research",CC15058,"Student Assistance Fund, Faculty Research",PG3700
+15059,IDCR - Darrick Hamilton,CC15002,IDCR - SPE,PG6005
+15060,Development,CC15060,Development,PG6005
+15062,IDCR - Anne Balsamo,CC15002,IDCR - SPE,PG6005
+15064,Special Programs,CC15064,Special Programs,PG6005
+15065,IDCR - K Morse Dir CNYCA,CC15002,IDCR - SPE,PG6005
+15200,Dean's Office - Undrgrad. Studies,CC15200,Dean's Office - SUS,PG3700
+15201,BA revenue Adult Education,CC15201,BA revenue Adult Education,
+15202,CE revenue Adult Education,CC15202,CE revenue Adult Education,
+15204,NSPE Cost Share,CC15204,HAL Cost Share,PG3850
+15211,Business and Management NSGS,CC15211,Business and Management Undergrad.,PG3008
+15220,Cohort 21,CC15220,Cohort 21,PG3008
+15230,Department Admin. Comm. & Film NSGS,CC15230,Department Admin. Comm. & Film NSGS,PG3700
+15232,UG Media Studies Curriculum,CC15232,Media Studies Undergrad.,PG3008
+15233,Film,CC15233,Film,PG3008
+15234,Screenwriting,CC15234,Screenwriting,PG3008
+15235,SMS Pre-College,CC15235,SMS Pre-College,PG3008
+15270,Departmnt Admin. Food Stiudie NSGS,CC15270,Food Studies Admin,PG3008
+15271,Food Studies Curriculum,CC15271,Food Studies Curriculum,PG3008
+15290,Department Administration ESL,CC15290,English Language Studies Dept. Admin,PG3700
+15291,English as a Second Language,CC15291,English as a Second Language,PG3008
+15293,English Language Teaching,CC15293,English Language Teaching,PG3008
+15295,TESOL Summer Institute,CC15295,TESOL Summer Institute,PG3008
+15296,TESOL Summer Institute CE Revenue,CC15296,TESOL Summer Institute CE Revenue,PG1000
+15297,English Language Studies -Parsons,CC15297,English Language Studies -Parsons,PG3008
+15310,Department Admin. Fine Arts,CC15310,Department Admin. Fine Arts,PG3700
+15320,Dept. Admin. Foreign Languages,CC15320,Foreign Languages Dept. Admin,PG3700
+15321,French,CC15321,French,PG3008
+15322,German,CC15322,German,PG3008
+15323,Italian,CC15323,Italian,PG3008
+15324,Spanish,CC15324,Spanish,PG3008
+15325,Other Languages,CC15325,Other Languages,PG3008
+15326,Arabic,CC15326,Arabic,PG3008
+15327,Japanese,CC15327,Japanese,PG3008
+15328,Chinese,CC15328,Chinese,PG3008
+15329,"Foreign Language, General Curr",CC15329,"Foreign Language, General Curr",PG3008
+15330,"Dept Admin, Liberal Arts, SUS, NSPE",CC15330,Liberal Arts Dept. Admin,PG3700
+15331,Art and Architecture,CC15331,Art and Architecture,PG3008
+15332,Literature,CC15332,Literature,PG3008
+15333,Philosophy,CC15333,Philosophy,PG3008
+15334,Religion,CC15334,Religion,PG3008
+15335,Cultural Studies,CC15335,Cultural Studies,PG3008
+15336,Music,CC15336,Music,PG3008
+15370,Department Admin. Writing NSGS,CC15370,Department Admin. Writing NSGS,PG3700
+15371,Writing,CC15371,Writing Undergrad.,PG3008
+15372,Summer Writers Colony,CC15372,Summer Writers Colony,PG3008
+15380,Department Admin. Soc. Sci.,CC15380,Liberal Arts Dept. Admin,PG3700
+15382,Anthropology and Archaeology,CC15382,Anthropology and Archaeology,PG3008
+15383,Creative Arts Health,CC15383,Creative Arts Health,PG3008
+15384,Economics,CC15384,Economics,PG3008
+15385,History,CC15385,History,PG3008
+15386,Political Science (incl. Law),CC15386,Political Science (incl. Law),PG3008
+15387,Psychology,CC15387,Psychology,PG3008
+15388,Society and Culture NSGS,CC15388,Society and Culture,PG3008
+15389,Sociology NSGS,CC15389,Sociology SPE,PG3008
+15400,Program Admin. MFA Writing,CC15400,Dean's Office - Writing,PG3700
+15401,Children's Literature MFA,CC15401,"Writing for Children YA, MFA",PG3008
+15402,Fiction MFA,CC15402,Fiction MFA,PG3008
+15403,Non-fiction MFA,CC15403,Non-fiction MFA,PG3008
+15404,Poetry MFA,CC15404,Poetry MFA,PG3008
+15405,Writing & Publishing NSPE MFA,CC15405,Writing & Publishing MFA,PG3008
+15430,"Sch of Media Studies, Deans Office",CC15430,Dean's Office - Media Studies,PG3700
+15431,Media Studies MA,CC15431,Media Studies MA,PG3008
+15432,Media Management CCT,CC15432,Media Management CCT,PG3008
+15433,"Creative Technologies, SMS",CC15433,Creative Technologies,PG3008
+15434,D. Hirshon Film Festival,CC15434,Hirshon Film Festival,PG3500
+15435,Documentary Studies,CC15435,Documentary Studies,PG3008
+15436,Media Management MS,CC15436,Media Management MS,PG3008
+15437,"Red Dog Productions, SMS",CC15437,Red Dog Productions,PG3700
+15460,Program Admin. NSGS MST Teach.,CC15460,Program Admin. NSGS MST Teach.,PG3700
+15470,MATESOL dept administration,CC15470,MATESOL dept administration,PG3700
+15471,MATESOL curriculum,CC15471,MATESOL Curriculum,PG3008
+15480,Int'l Affairs Program Admin MA,CC15480,International Affairs Administration,PG3700
+15481,Int'l Affairs Curriculum MA,CC15481,International Affairs Curriculum,PG3008
+15482,Int'l Affairs Overseas Summer,CC15482,International Field Program (IFP),PG3008
+15700,Institute for Retired Professionals,CC15700,Institute for Retired Professionals,PG3008
+15730,Vera List Center,CC15730,Vera List Center,PG3008
+20001,Dean's Office NSSR,CC20001,Dean's Office NSSR,PG3700
+20002,GIDEST Support_NSSR,CC20002,GIDEST Support_NSSR,PG3850
+20020,Curriculum Development NSSR,CC20020,Faculty Research Fund - NSSR,PG3700
+20021,Faculty Development NSSR,CC20021,Faculty Development Awards NSSR,PG3700
+20022,Academic Advising NSSR,CC20022,Student Academic Affairs NSSR,PG3700
+20023,Student Conference and Research,CC20023,Student Conference and Research,PG3700
+20041,Budget and Planning NSSR,CC20041,Operations NSSR,PG3700
+20042,IDCR - Wendy D'Andrea,CC25003,IDCR - NSSR,PG6005
+20043,IDCR - Duncan Foley,CC25003,IDCR - NSSR,PG6005
+20044,IDCR - Teresa Ghilarducci,CC25003,IDCR - NSSR,PG6005
+20045,IDCR - Jeremy Ginges,CC25003,IDCR - NSSR,PG6005
+20046,IDCR - Lawrence Hirschfeld,CC25003,IDCR - NSSR,PG6005
+20047,IDCR - William Hirst,CC25003,IDCR - NSSR,PG6005
+20048,IDCR - Eiko Ikegami,CC25003,IDCR - NSSR,PG6005
+20049,IDCR - Willi Semmler,CC25003,IDCR - NSSR,PG6005
+20050,IDCR - Howard Steele,CC25003,IDCR - NSSR,PG6005
+20051,IDCR - Mirriam Steele,CC25003,IDCR - NSSR,PG6005
+20060,Development NSSR,CC20060,Development NSSR,PG6005
+20120,General Student Activities NSSR,CC20120,Student Organizations NSSR,PG3802
+20122,Student Newsletter NSSR,CC20122,Student Newsletter NSSR,PG3802
+20124,Student Research NSSR,CC20124,Student Research and Travel NSSR,PG3802
+20140,Career Development NSSR,CC20140,Career Development NSSR,PG3802
+20180,Special Programs NSSR,CC20180,Summer and Winter Teaching NSSR,PG3700
+20400,Program Administration NSSR,CC20400,Student Funding NSSR,PG3700
+20401,Anthropology NSSR,CC20401,Anthropology NSSR,PG3008
+20402,Economics NSSR,CC20402,Economics NSSR,PG3008
+20403,History NSSR,CC20403,History NSSR,PG3008
+20404,Philosophy NSSR,CC20404,Philosophy NSSR,PG3008
+20405,Political Science NSSR,CC20405,Political Science NSSR,PG3008
+20406,Psychology NSSR,CC20406,Psychology NSSR,PG3008
+20407,Sociology NSSR,CC20407,Sociology NSSR,PG3008
+20408,Liberal Studies NSSR,CC20408,Liberal Studies NSSR,PG3008
+20409,Psychoanalytic Studies NSSR,CC20409,Psychoanalytic Studies NSSR,PG3008
+20411,Gender & Sexuality Studies Cert.,CC20411,Gender & Sexuality Studies Cert.,PG3700
+20412,MA Creative Pub & Crit Journalism,CC20412,MA Creative Pub & Crit Journalism,PG3008
+20450,TCDS Wroclaw Program,CC20450,TCDS Wroclaw Program,PG3008
+20451,TCDS Johannesburg Program,CC20451,TCDS Johannesburg Program,PG3008
+20500,Center for Economic Policy Analysis,CC20500,Center for Economic Policy Analysis,PG3008
+20502,Migration Ethnicity & Ctznshp Cntr,CC20502,Migration Ethnicity & Ctznshp Cntr,PG3008
+20503,Psychology Research NSSR,CC20503,Psychology Research NSSR,PG3008
+20505,Center for Public Scholarship_NSSR,CC20505,Center for Public Scholarship,PG3008
+20800,Journal Donation Project,CC20800,Journal Donation Project,PG3008
+20803,Janey Latin American Studies Prog.,CC20803,Janey Program in Latin American Studies,PG3008
+20804,TCDS Operating Funds,CC20804,TCDS,PG3008
+20805,"MS Applied Economics,Politics & Law",CC20805,Applied Economics,PG3008
+20806,Center for Attachment,CC20806,Center for Attachment,PG3008
+20807,Political Concepts,CC20807,Political Concepts,PG3008
+20901,Constellations NSSR,CC20901,Constellations NSSR,PG3008
+20903,Philosophy Journal NSSR,CC20903,Philosophy Journal NSSR,PG3008
+20905,Social Research Journal NSSR,CC20905,Social Research Journal NSSR,PG3008
+20908,New School Psychology Bulletin,CC20908,New School Psychology Bulletin,PG3008
+25001,Dean's Office LC,CC25001,Dean's Office & General Exp. LC,PG3700
+25002,Dean's Travel and Research Fund LC,CC25002,Dean's Travel and Research Fund LC,PG3700
+25021,"Faculty Research/Travel/RA, LC",CC25021,Faculty Research Fund - Lang,PG3700
+25022,Academic Advising LC,CC25022,Student Affairs & Global Initiatives LC,PG3700
+25023,Academic Affiars LC,CC25023,Academic Affairs and Planning LC,PG3700
+25024,Faculty Development_LC,CC25024,"Faculty Development/Research from PO, LC",PG3700
+25025,Innovations in Education_LC,CC25025,"Innovations in Education from PO, LC",PG3700
+25029,Student Assistants for Faculty_LC,CC25029,"Student Assistants for Faculty from PO, LC",PG3700
+25040,"General Administration, LC",CC25040,"General Administration, LC",PG3700
+25041,Budget and Planning LC,CC25041,Budget and Planning LC,PG6005
+25042,IDCR - Stephanie Browner,CC25004,IDCR - Lang,PG6005
+25060,Development LC,CC25060,Development LC,PG6005
+25100,Admissions and Recruitment LC,CC88841,Undergraduate Admission,PG3802
+25120,General Student Activities LC,CC25120,General Student Activities LC,PG3802
+25121,Orientation LC,CC25121,Orientation LC,PG3802
+25123,"Graduation, LC",CC25123,"Graduation, LC",PG3802
+25180,Special Programs LC,CC25180,Special Programs LC,PG3700
+25181,Lang off-campus programs LC,CC25181,Lang Off-Campus Programs/Non-Specific LC,PG3008
+25182,"Italy Program, LC",CC25182,"Italy Program, LC",PG3008
+25183,"Germany Program, LC",CC25183,"Germany Program, LC",PG3008
+25184,"Scotland Program, LC",CC25184,"Scotland Program, LC",PG3008
+25186,"Cambodia Program, LC",CC25186,"Cambodia Program, LC",PG3008
+25187,"Tibet Program, LC",CC25187,"Tibet Program, LC",PG3008
+25189,"Global Citizen Year Program, LC",CC25189,"Global Citizen Year Program, LC",PG3008
+25190,"France Program, LC",CC25190,"France and AUP Programs, LC",PG3008
+25191,"Argentina Program, LC",CC25191,"Argentina Program, LC",PG3008
+25192,"China Program, LC",CC25192,"China Program, LC",PG3008
+25193,"Rwanda Program, LC",CC25193,"Rwanda Program, LC",PG3008
+25194,"Guyana Program, LC",CC25194,"Guyana Program, LC",PG3008
+25200,Program Administration LC,CC25200,"Tuition and Scholarship-General, LC",PG3700
+25201,"Summer Intensive, LC",CC25201,"Summer Intensive, LC",PG3008
+25220,First Year Program LC,CC25220,First Year Program LC,PG3008
+25240,Dept. Admin. Mind/Nature/Value LC,CC25240,Dept. Admin. Mind/Nature/Value LC,PG3700
+25241,Religious Studies LC,CC25241,Religious Studies LC,PG3008
+25242,Philosophy LC,CC25242,Philosophy LC,PG3008
+25243,Psychology LC,CC25243,Psychology LC,PG3008
+25244,Science Technology and Society LC,CC25244,Science Technology and Society LC,PG3008
+25245,Wellness Classes LC,CC25245,Wellness Classes LC,PG3008
+25246,"Jewish Studies, LC",CC25246,"Jewish Studies, LC",PG3008
+25247,"Race & Ethnicity, LC",CC25247,"Race & Ethnicity, LC",PG3008
+25248,University Center Science Labs,CC25248,University Center Science Labs,PG3008
+25260,Dept. Admin. Cultural Studies LC,CC25260,Dept. Admin. Cultural Studies LC,PG3700
+25261,Education Studies LC,CC25261,Education Studies LC,PG3008
+25262,Cultural Studies and Media LC,CC25262,Cultural Studies and Media LC,PG3008
+25263,"Screen Studies, LC",CC25263,"Screen Studies, LC",PG3008
+25264,"Gender Studies, LC",CC25264,"Gender Studies, LC",PG3008
+25280,Dept. Admin. General Arts LC,CC25280,Dept. Admin. General Arts LC,PG3700
+25281,Literature LC,CC25281,Literature LC,PG3008
+25282,Writing LC,CC25282,Writing LC,PG3008
+25283,Theater LC,CC25283,Theater LC,PG3008
+25284,Arts in Context LC,CC25284,Arts in Context LC,PG3008
+25285,Dance LC,CC25285,Dance LC,PG3008
+25286,"New School Newspaper, LC",CC25286,"New School Newspaper, LC",PG3008
+25287,"Journalism + Design, LC",CC25287,"Journalism + Design, LC",PG3008
+25288,"Music, LC",CC25288,"Music, LC",PG3008
+25290,"Visual Studies, LC",CC25290,"Visual Studies, LC",PG3008
+25300,Urban Studies LC,CC25300,Urban Studies LC,PG3008
+25321,History LC,CC25321,History LC,PG3008
+25322,Sociology LC,CC25322,Sociology LC,PG3008
+25323,Political Science LC,CC25323,Political Science LC,PG3008
+25324,Economics LC,CC25324,Economics LC,PG3008
+25325,Anthropology LC,CC25325,Anthropology LC,PG3008
+25340,Public School Collaborative LC,CC25340,Outside K-12 Collaborative LC,PG3008
+25350,Inst. Pract. Arts & Citizenship LC,CC25350,"Civic Engagement, LC",PG3008
+25361,Special Electives LC,CC25361,Special Electives LC,PG3008
+30002,ULEC Administration,CC30002,ULEC Administration,PG3700
+30300,Program Admin. LA,CC30300,Program Admin. LA,PG3700
+30350,Anthropology LA,CC30350,Anthropology LA,PG3008
+30351,Economics LA,CC30351,Economics LA,PG3008
+30352,Historical Studies LA,CC30352,Historical Studies LA,PG3008
+30353,Humanities and Literature LA,CC30353,Humanities and Literature LA,PG3008
+30354,Liberal Studies LA,CC30354,Liberal Studies LA,PG3008
+30356,Philosophy LA,CC30356,Philosophy LA,PG3008
+30357,Political Science LA,CC30357,Political Science LA,PG3008
+30358,Psychology LA,CC30358,Psychology LA,PG3008
+30359,Science LA,CC30359,Science LA,PG3008
+30360,Sociology LA,CC30360,Sociology LA,PG3008
+30361,Writing LA,CC30361,Writing LA,PG3008
+30362,Social Sciences LA,CC30362,Social Sciences LA,PG3008
+40001,Dean's Office Milano,CC40001,Dean's Office - Milano,PG3700
+40010,Dean's Discretionary UNR NSPE,CC40010,Dean's Discretionary UNR SPE,PG3700
+40060,Development MM,CC40060,Development MM,PG6005
+40110,Student Scholarship Office MM,CC40110,Student Scholarship Office MM,PG3802
+40141,Student Programs MM,CC40141,Student Programs Milano,PG3802
+40162,Korea study abroad Lang-NSPE,CC40162,Korea Study Abroad - Lang/SPE,PG3802
+40400,Milano Campus Revenue,CC40400,Milano Campus Revenue,
+40410,Management MM,CC40410,Management Milano,PG3008
+40440,Environ Policy & Sustain Mgmt,CC40440,Environmental Policy and Sustainability Management,PG3008
+40460,Mngmt. Core Campus Admin. MM,CC40460,Mngmt. Core Campus Admin. MM,PG3700
+40490,Urban Policy MM,CC40490,Urban Policy Milano,PG3008
+40492,Milano PhD Program,CC40492,Public and Urban Policy PhD Milano,PG3008
+40540,"Milano Curriculum, General",CC40540,Milano Curriculum - General,PG3008
+40802,Center for New Yrk City Affairs MM,CC40802,Center for New York City Affairs,PG3008
+40803,Leadership Center/Prof Dvlpmnt MM,CC40803,Leadership Center/Prof Dvlpmnt MM,PG3008
+40805,Social Innovation Initiative,CC40805,Social Innovation Initiative,PG3700
+45001,Dean's Office MA,CC45001,Dean's Office - Mannes,PG3700
+45040,General Administration MA,CC45040,General Administration - Mannes,PG3700
+45043,Business Office MA,CC45040,General Administration - Mannes,PG3700
+45046,Audio Studio MA,CC45046,Technical Services - Mannes,PG3700
+45047,Technical Services MA,CC45046,Technical Services - Mannes,PG3700
+45048,Piano Technicians MA,CC45046,Technical Services - Mannes,PG3700
+45060,Development MA,CC45060,Development - Mannes,PG6005
+45063,Mannes Concert Office,CC45063,Mannes Concert Office,PG3700
+45064,Mannes Yearlong Festival,CC45064,Mannes Year long Festival,PG3700
+45100,Admissions and Recruitment Perf Art,CC88841,Undergraduate Admission,PG3802
+45200,College Division,CC45200,College Division,PG3700
+45201,Undergraduate Revenue MA,CC45201,Undergraduate Revenue - Mannes,
+45202,Graduate Revenue MA,CC45202,Graduate Revenue - Mannes,
+45203,Professional Revenue MA,CC45203,Professional Revenue - Mannes,
+45204,Classical Diploma Revenue MA,CC45204,Classical Diploma Revenue - Mannes,
+45205,ESL Revenue MA,CC45205,ESL Revenue - Mannes,
+45210,Faculty Research Fund_MA,CC45210,Faculty Research Fund - College of Performing Arts,PG3700
+45220,English as a Second Language MA,CC45220,English as a Second Language - Mannes,PG3008
+45221,Liberal Arts Courses MA,CC45221,Liberal Arts Courses - Mannes,PG3008
+45240,"Classes, College Division",CC45240,"Classes, College Division",PG3008
+45260,"Chamber Music, College Division",CC45260,"Chamber Music, College Division",PG3008
+45280,"Private Lessons, College Division",CC45280,"Private Lessons, College Division",PG3008
+45300,Other Music Master Classes MA,CC45300,Master Classes - Mannes,PG3008
+45301,String MA,CC45300,Master Classes - Mannes,PG3008
+45302,Voice MA,CC45300,Master Classes - Mannes,PG3008
+45303,Wind and Brass MA,CC45300,Master Classes - Mannes,PG3008
+45304,Piano MA,CC45300,Master Classes - Mannes,PG3008
+45320,Orchestra MA,CC45320,Orchestra - Mannes,PG3008
+45380,Opera Program,CC45380,Opera Program,PG3700
+45381,January Production MA,CC45381,January Production - Mannes,PG3008
+45383,May Production MA,CC45383,May Production - Mannes,PG3008
+45390,New School Concerts,CC45390,New School Concerts,PG3008
+45392,Community Outreach MA,CC45392,Community Outreach - Mannes,PG3851
+45610,Admin. Office MA Extension,CC45610,Administrative Office - Mannes Continuing Education,PG3700
+45630,"Music Courses, Extension Division",CC45630,Music Courses - Mannes Continuing Education,PG3008
+45631,Private Lessons MA Extension,CC45631,Private Lessons - Mannes Continuing Education,PG3008
+45644,Mannes Summer Institutes,CC45644,Mannes Summer Institutes,PG3008
+45800,Administrative Office MA Prep.,CC45800,Administrative Office - Mannes Prep Division,PG3700
+45810,"Music Courses, Prep Division",CC45810,Music Courses - Mannes Prep Division,PG3008
+45830,"Private Lessons, Prep Division",CC45830,Private Lessons - Mannes Prep Division,PG3008
+50001,Dean's Office DR,CC50001,Dean's Office - Drama,PG3700
+50002,Faculty Research Fund - DR,CC50002,Faculty Research Fund - Drama,PG3700
+50060,Development DR,CC50060,Development - Drama,PG6005
+50140,Career Development DR,CC50140,Career Development - Drama,PG3802
+50161,Student Resources DR,CC50161,Student Resources - Drama,PG3802
+50180,Productions DR,CC50180,Productions - Drama,PG3700
+50181,Summer Programs DR,CC50181,Summer Programs - Drama,PG3700
+50300,UG Program Administration DR,CC50300,Undergraduate Program Administration - Drama,PG3008
+50301,UG Acting Technique DR,CC50301,Undergraduate Acting Technique - Drama,PG3008
+50302,UG Directing Technique DR,CC50302,Undergraduate Directing Technique - Drama,PG3008
+50303,UG Playwriting Technique DR,CC50303,Undergraduate Playwriting Technique - Drama,PG3008
+50304,UG Critical Inquiry DR,CC50304,Undergraduate Critical Inquiry - Drama,PG3008
+50305,UG Creative Technologies DR,CC50305,Undergraduate Creative Technologies - Drama,PG3008
+50306,UG Civic Engagement DR,CC50306,Undergraduate Civic Engagement - Drama,PG3008
+50307,UG Directed Research DR,CC50307,Undergraduate Directed Research - Drama,PG3008
+50400,GR Program Administration DR,CC50400,Graduate Program Administration - Drama,PG3008
+50401,GR Acting Technique DR,CC50401,Graduate Acting Technique - Drama,PG3008
+50402,GR Directing Technique DR,CC50402,Graduate Directing Technique - Drama,PG3008
+50403,GR Playwriting Technique DR,CC50403,Graduate Playwriting Technique - Drama,PG3008
+50404,GR Voice & Speech Technique DR,CC50404,Graduate Voice & Speech Technique - Drama,PG3008
+50405,GR Theater History & Drama Lit,CC50405,Graduate Theater History & Drama Literature,PG3008
+50406,GR Movement DR,CC50406,Graduate Movement - Drama,PG3008
+50407,GR Theater Arts General DR,CC50407,Graduate Theater Arts General - Drama,PG3008
+50500,Creative Arts and Healing,CC50500,Creative Arts and Healing,PG3008
+55001,Dean's Office JZ,CC55001,Dean's Office - School of Jazz,PG3700
+55002,Technical Services JZ,CC55002,Technical Services,PG3700
+55003,Faculty Research Fund_JZ,CC55003,Faculty Research Fund - Jazz,PG3700
+55004,"Student Assts, Faculty Research_JZ",CC55004,Student Assistants - Faculty Research,PG3700
+55005,"Academic Development Fund, Gen'l_JZ",CC55005,"Academic Development Fund, General",PG3700
+55060,Development JZ,CC55060,Development - Jazz,PG6005
+55200,Program Administration JZ,CC55200,Program Administration - Jazz,PG3700
+55201,Music Courses JZ,CC55201,Music Courses,PG3008
+55202,In-Proficiency Lessons JZ,CC55202,In-Proficiency Lessons,PG3008
+55203,Out-of-Proficiency Lessons JZ,CC55203,Out of Proficiency Lessons,PG3008
+55204,Master Classes JZ,CC55204,Master Classes - Jazz,PG3008
+55800,Special Programs JZ,CC55800,Special Programs - Jazz,PG3008
+65200,Global Studies Program Admin,CC65200,Global Studies Program Admin,PG3700
+65201,Global Studies,CC65201,Global Studies,PG3008
+65202,Urban Studies and Design Curric,CC65202,Urban Studies and Design Curriculum,PG3008
+65203,Urban Studies and Design Program Ad,CC65203,Urban Studies and Design Program Admin,PG3700
+65204,University Wide Shared Program Admi,CC65204,University Wide Shared Program Admin,PG3700
+68000,Performing Arts,CC68000,Performing Arts,PG3700
+70200,President's Office,CC70200,President's Office,PG6005
+70201,President's Residence,CC70201,Facilities Management - President's Residence,PG6500
+72200,Provost's Office,CC72200,Provost's Office,PG3700
+72201,"Cost of Education Project, Provost",CC72201,"Cost of Education Project, Provost",PG3700
+72202,VP Distributed & Global Education,CC72202,DGCE General Operating,
+72204,"Academic Orientation, Provost",CC72204,"Academic Orientation, Provost",PG3700
+72205,Research - Provost,CC72205,Research - Provost,PG3700
+72206,Distributed Education,CC72206,Online Education,PG3700
+72207,"Distributed Initiatives, Customized",CC72207,Executive Education,PG3700
+72208,Global Exec MS SDM (SIteline-PP),CC72208,Global Exec MS SDM (SIteline-PP),PG3700
+72210,Art Collection Department,CC72210,Art Collection Department,PG3700
+72220,University Learning Center,CC72220,University Learning Center,PG3700
+72230,Faculty Affairs,CC72230,Faculty Affairs,PG3700
+72235,New Full Time Faculty Funds Provost,CC72235,New Full Time Faculty Funds Provost,PG3700
+72250,Academic Planning,CC72250,Academic Planning,PG3700
+72251,Curriculm and Learning Provost,CC72251,Curriculum and Learning Provost,PG3700
+72252,Academic Development Provost,CC72252,Academic Development Provost,PG3700
+72255,New Program Funds Provost,CC72255,New Program Funds Provost,PG3700
+72261,Electronic Learning Portfolios,CC72261,Electronic Learning Portfolios,PG3700
+72262,Shared Capacities Initiatives,CC72262,Shared Capacities Initiatives,PG3700
+72263,Assessment of Student learning,CC72263,Assessment of Student Learning,PG3700
+72264,Academic Program Reviews,CC72264,Academic Program Reviews,PG3700
+72265,Online State Registration Comp,CC72265,Online State Registration Comp,PG3700
+72266,Transdisciplinary labs,CC72266,Transdisciplinary Labs,PG3700
+72267,Spine Curricular Initiative,CC72267,Spine Curricular Initiative,PG3700
+72268,Educational Opportunity,CC72268,Educational Opportunity,PG3700
+72269,Distinguished Teaching Award,CC72269,Distinguished Teaching Award,PG3700
+72270,Social Justice,CC72270,Social Justice,PG3700
+72271,Dir. of Social Justice Prof Dev,CC72271,Dir. of Social Justice Prof Dev,PG3700
+72280,Faculty Research Fund,CC72280,Faculty Research Fund,PG3700
+72281,Faculty Research Support Initiative,CC72281,Faculty Research Support Initiative,PG3700
+72282,Faculty Research Support - PO,CC72282,Faculty Research Support - PO,PG3700
+72283,"Academic Support, Provost",CC72283,"Academic Support, Provost",PG3700
+72284,Faculty Resource Center UC,CC72284,Faculty Resource Center UC,PG3700
+72290,Goldberger research fund,CC72290,Goldberger Research Fund PS,PG3700
+72292,"Assoc PO, Curriculum & Learning",CC72292,"Assoc PO, Curriculum & Learning",PG3700
+72293,Deputy provost research fund,CC72293,Deputy Provost Research Fund,PG3700
+72295,"Global Initiatives, Paris",CC72295,"Global Initiatives, Paris",PG3700
+72299,Green Fund Award,CC72299,Green Fund Award,PG3700
+72300,University Faculty,CC72300,University Faculty,PG3700
+72301,University Faculty - Research Fund,CC72301,University Faculty - Research Fund,PG3700
+72302,President Emeritus,CC72302,President Emeritus,PG6005
+72304,Special Advisor to the President,CC72304,Special Advisor to the President,PG6005
+72305,Public Programming,CC72305,Public Programming,PG6005
+72306,Pres. Strategic Academic Initiative,CC72306,Pres. Strategic Academic Initiative,PG3852
+72307,President Initiative Restricted,CC72307,President Initiative Restricted,PG3852
+72308,Provost,CC72308,Provost,PG6005
+72500,Office of the Librarian,CC72500,Office of the Librarian,PG3700
+72501,Fogelman Library,CC72501,Fogelman Library,PG3700
+72502,Gimbel Library,CC72502,Gimbel Library,PG3700
+72503,Scherman Library,CC72503,Scherman Library,PG3700
+73200,Paris PUN First Year,CC73200,Paris First Year,
+73201,Paris Fashion Design BFA,CC73201,Paris Fashion Design BFA,
+73202,Paris AMT BFA,CC73202,Paris AMT BFA,
+73203,Paris SDM BBA,CC73203,Paris SDM BBA,
+73204,Paris Visiting Study Abroad,CC73204,Paris Visiting Study Abroad,
+73205,Paris DT MFA,CC73205,Paris HDCS MA,
+73206,Paris Dec Arts MA,CC73206,Paris SDM MS,
+73207,Paris Design Studies MA,CC73207,Paris Design Studies MA,
+73208,Paris Fashion Studies MA,CC73208,Paris Fashion Studies MA,
+73209,Paris Revenue,CC73209,Paris Revenue,
+73210,Paris Administration exp,CC73210,Paris Administration,PG3700
+73211,Paris Faculty Research & Travel,CC73211,Faculty Research Fund - Paris,
+73212,Paris Summer Intensives,CC73212,Paris Summer Intensives,PG3008
+73213,Paris Student Life exp,CC73213,Paris Student Life €,PG3900
+73214,Paris Academic Affairs exp,CC73214,Paris Academic Affairs Exp,PG3700
+73219,Paris NYC exp,CC73219,Paris NYC Exp $,
+73220,Gallery and Public Events,CC73220,Gallery and Public Events,PG3700
+73221,Paris Admissions & Recruitment,CC73221,Paris Tech and Lab,PG3802
+73222,Paris Dean Office,CC73222,Paris Dean Office,PG3700
+73223,Parsons Paris Academic Techology,CC73223,Parsons Paris Academic Techology,PG3700
+73224,Paris Global Exec MS,CC73224,Paris Global Exec MS,PG3700
+73300,Global Campus Mumbai,CC73300,Global Campus Mumbai,PG3700
+73400,Global Campus China,CC73400,Global Campus China,PG3700
+73600,NY- LON Dual City,CC73600,NY- LON Dual City,PG3700
+73601,CE-Marketing,CC73601,"Marketing, Continuing Ed",PG3700
+74100,VP for Finance and Business,CC74100,VP for Finance and Business,PG6005
+74200,Chief Operating Officer,CC74200,Chief Operating Officer,PG6005
+74201,Payment Processing Fees,CC74201,Payment Processing Fees,PG6005
+74300,Accounting and Accounts Payable,CC74300,Accounting and Accounts Payable,PG6005
+74303,Responsible Investing,CC74303,Responsible Investing,PG6005
+74305,Financial Systems,CC74305,Financial Systems,PG6005
+74306,Data warehouse UR,CC74306,Data and Reporting Group,PG6005
+74500,Security Office,CC74500,Security,PG6500
+74600,Tax Compliance,CC74600,Tax Compliance,PG6005
+74800,Chief Development Officer,CC92200,Office of the Chief Development Officer,PG6005
+74900,Special Expenses,CC74900,Special Expenses,PG3700
+76200,Office of Budget and Planning,CC76200,Budget and Planning,PG6005
+76201,Institutional Research,CC76201,Institutional Research,PG3700
+80200,General Institutional Support,CC80200,General Institutional Activity,PG6005
+80205,Campus Card Services,CC80205,Card Services,PG6005
+80210,Annuity and Life Income,CC80210,Annuity and Life Income,PG6005
+80220,Pledge and gift Income,CC80220,Pledge and Gift Income,PG6005
+80230,Retroactive Payments,CC80230,Retroactive Payments,
+80250,Virtual Offices,CC80250,Virtual Offices,PG3008
+80251,Audit and Tax Services,CC74100,VP for Finance and Business,PG6005
+80252,University Dues & Memberships,CC80252,University Dues & Memberships,PG6005
+80253,CWSP & SEOG Capital Contributions,CC80253,CWSP & SEOG Capital Contributions,PG6005
+80254,Bad Debt Expense,CC80200,General Institutional Activity,PG6005
+80255,Professional Services,CC80200,General Institutional Activity,PG6005
+80256,Governmental Relations,CC80256,Governmental Relations,PG6005
+80257,General Business Insurance,CC80257,General Business Insurance,PG6005
+80258,D&O Insurance,CC80258,Officers and Directors Insurance,PG6005
+80259,Banking & Related Fees,CC80200,General Institutional Activity,PG6005
+80261,2014 WaterMain Break,CC80261,2014 WaterMain Break,PG6203
+80301,Environmental Studies,CC80301,Environmental Studies,PG3008
+80400,Debt Service and Equipment Leases,CC80400,Debt Service,PG8000
+80401,Budget Contingencies,CC80401,Budget Contingencies,PG6005
+80403,Compensation Pools,CC80403,Compensation Pools,PG6005
+80404,Vacancy Savings,CC80404,Vacancy Savings,PG6005
+80500,Process Improvement Office,CC80500,Process Improvement Office,PG6005
+80501,Document Management,CC80501,Document Management,PG6005
+80600,Student Fee Revenue,CC80200,General Institutional Activity,PG6005
+80601,Perkins Loan,CC80601,Perkins Loan,PG6005
+80605,NYS Bundy Payments,CC80605,New York State Student Aid,PG3802
+80606,NYSED Foster care youth college success,CC80606,NYSED Foster care youth college success,PG3802
+80607,Investment Income,CC80200,General Institutional Activity,PG6005
+80608,Indirect Cost Recovery,CC80608,Indirect Cost Recovery,PG6005
+80609,Other Income,CC80200,General Institutional Activity,PG6005
+82200,Secretary,CC92300,Board of Trustees Administration,PG6005
+82202,Commencement,CC82202,Commencement,PG3802
+82210,Wolfson Public Programming,CC82210,Wolfson Public Programming,PG3008
+84200,Business Operations,CC84200,Business Operations,PG6005
+84350,Capital Construction,CC84350,Capital Construction,PG6500
+84351,Unrestricted Capital Construction,CC84351,Unrestricted Capital Construction,PG7000
+84353,Technology Capital,CC84353,Technology Capital,PG6500
+84354,Facilities Capital,CC84354,Facilities Capital,PG6500
+84360,University Center,CC84360,University Center Project Construction,PG6500
+84370,University Center _ FF&E,CC84370,University Center Project FF&E,PG6500
+84380,Data warehouse project,CC84380,Data warehouse project,PG6500
+84400,Procurement,CC84400,Procurement,PG6005
+84401,Mail room,CC84401,Mail Room,PG6005
+84403,Telephone Services,CC84403,Telecommunications,PG6005
+84406,Concur,CC84400,Procurement,PG6005
+84407,eProcurement,CC84400,Procurement,PG6005
+84500,Facilities Management,CC84500,Facilities Management - Central Expenses,PG6500
+84552,Cleaning Supplies,CC84552,Cleaning Supplies,PG6500
+84553,Environmental Health/Safety,CC84553,Facilities Management - Environmental Health/Safety,PG6500
+84600,Albert List Academic Cntr. (65 5th),CC84600,Albert List Academic Cntr. (65 5th),PG6500
+84601,66 West 12th & 65 West 11th Street,CC84601,Facilities Management - 66 West 12th & 65 West 11th Street,PG6500
+84602,560 and 566 Seventh Avenue,CC84609,Facilities Management - 55 West 13th Street,PG6500
+84604,Theresa Lang Student Cntr. (64W11),CC84604,Facilities Management - Theresa Lang Student Cntr. (64W11),PG6500
+84607,2 West 13th Street,CC84607,Facilities Management - 2 West 13th Street,PG6500
+84608,25 East 13th Street,CC84608,Facilities Management - 25 East 13th Street,PG6500
+84609,55 West 13th Street,CC84609,Facilities Management - 55 West 13th Street,PG6500
+84610,66 and 70 Fifth Avenue,CC84610,Facilities Management - 66 and 70 Fifth Avenue,PG6500
+84611,68 Fifth Avenue,CC84611,Facilities Management - 68 Fifth Avenue,PG6500
+84612,79 Fifth Avenue,CC84612,Facilities Management - 79 Fifth Avenue,PG6500
+84613,72 Fifth Avenue,CC84613,Facilities Management - 72 Fifth Avenue,PG6500
+84614,80 Fifth Avenue,CC84614,Facilities Management - 80 Fifth Avenue,PG6500
+84615,Mannes College of Music (150W85),CC84615,Mannes College of Music (150W85),PG6500
+84616,37 West 65th Street,CC84616,37 West 65th Street,PG6500
+84620,SFAS 13 Lease Expense,CC84620,SFAS 13 Lease Expense,PG6500
+84621,Westbeth,CC84621,Facilities Management - Westbeth (Drama),PG6500
+84622,1 Irving Place,CC84622,Facilities Management - 1 Irving Place,PG6500
+84624,72 Fifth Avenue 1st and 2nd Flr.,CC84624,Facilities Management - 72 Fifth Avenue 1st and 2nd Flr.,PG6500
+84625,71 Fifth Avenue,CC84625,Facilities Management - 71 Fifth Avenue,PG6500
+84628,113 University Place,CC84628,Facilities Management - 113 University Place,PG6500
+84630,University Center Academic Building,CC84630,Facilities Management - University Center Academic Building,PG6500
+84700,Dining Services,CC84700,Dining Services,PG3900
+84701,Other Auxiliary,CC84701,Other Auxiliary,PG6005
+84702,Student Meal Plans,CC84700,Dining Services,PG3900
+84800,Real Estate,CC84800,Office of Real Estate,PG6005
+84904,Theresa Lang Student Ctr (64W 11),CC84904,Space Lease & Assoc Costs - Theresa Lang Student Ctr (64W 11),PG6500
+84905,5 East 13th Street,CC84905,Associated Costs - 5 East 13th Street Investment,PG6500
+84908,25 East 13th Street,CC84908,Associated Costs - 25 East 13th Street,PG6500
+84909,55 West 13th Street,CC84909,Space Lease & Assoc Costs - 55 West 13th Street,PG6500
+84911,68 Fifth Avenue,CC84911,Space Lease & Assoc Costs - 68 Fifth Avenue,PG6500
+84912,79 Fifth Avenue,CC84912,Space Lease & Assoc Costs - 79 Fifth Avenue,PG6500
+84913,72 Fifth Ave,CC84913,Space Lease & Assoc Costs - 72 Fifth Ave,PG6500
+84914,80 Fifth Avenue,CC84914,Space Lease & Assoc Costs - 80 Fifth Avenue,PG6500
+84916,37 West 65th Street,CC84916,37 West 65th Street,PG6500
+84921,Westbeth,CC84921,Space Lease & Assoc Costs - Westbeth (Drama),PG6500
+84924,72 Fifth Ave-1st & 2nd Flrs,CC84924,Space Lease & Assoc Costs - 72 Fifth Ave-1st & 2nd Flrs,PG6500
+84925,71 Fifth Avenue,CC84925,Space Lease & Assoc Costs - 71 Fifth Avenue,PG6500
+84928,113 University Place,CC84928,Space Lease & Assoc Costs - 113 University Place,PG6500
+84930,University Center Retail,CC84930,Space Lease & Assoc Revenue - University Center Retail,PG6500
+84944,Misc Dorms,CC84944,Space Lease & Assoc Costs - Miscellaneous Dorms,PG3900
+84949,Stuy Park Residences,CC84949,Space Lease & Assoc Costs - Stuy Park Residences,PG3900
+86200,VP of Information Technology,CC86200,VP of Information Technology,PG6005
+86300,Enterprise Applications,CC86300,Enterprise Applications,PG6005
+86301,Project Management,CC86301,Project Management Office,PG6005
+86400,"Systems, Network & Security",CC86400,Enterprise Infrastructure,PG6005
+86402,Physical Access Technology,CC86402,Physical Security Systems,PG6005
+86500,Academic Technology,CC86500,edu Services,PG3700
+86501,Media Services,CC86501,Events IT,PG3700
+86504,UCC/KU Administrative,CC86504,UCC/KU Administrative,PG3700
+86505,Help Desk & Technical Support,CC86505,IT Central,PG6005
+88100,Student Success,CC88100,Student Success,PG3802
+88101,Student Advising,CC88101,Student Advising,
+88102,Experiential Opportunities,CC88102,Experiential Opportunities,PG3802
+88120,Student Development and Activities,CC88120,Student Development and Activities,PG3802
+88121,Orientation Student Services,CC88121,Orientation,PG3802
+88122,Student Organiztns. Student Srvcs.,CC88122,Student Organizations,PG3802
+88123,Recreation Student Services,CC88123,Recreation,PG3802
+88140,Career Services,CC88140,Career Services,PG3802
+88160,Student Disability Services,CC88160,Student Disability Services,PG3802
+88161,Student Rights & Responsibilities,CC88161,Student Rights & Responsibilities,PG3802
+88162,International Student Services,CC88162,ISSS,PG3802
+88200,Senior VP Student Services Office,CC88200,Senior VP Student Services Office,PG3802
+88201,Uniwide Misc,CC88201,Uniwide Misc,
+88205,Student Senate,CC88205,University Student Senate,PG3802
+88210,Athletics and Recreation,CC88210,Athletics and Recreation,PG3802
+88300,Housing Office,CC88300,Housing Office,PG3802
+88400,Loeb (135 East 12th Street),CC88400,Loeb,PG3900
+88403,University leased apartments,CC88404,Miscellaneous dorms,PG3900
+88404,Miscellaneous dorms,CC88404,Miscellaneous dorms,PG3900
+88405,William Street,CC88405,William Street,PG3900
+88407,13th Street Dormitory,CC88407,13th Street Dormitory,PG3900
+88408,20th Street Dormitory,CC88408,20th Street Dormitory,PG3900
+88410,Stuyvesant Park Residences,CC88410,Stuyvesant Park Residences,PG3900
+88411,Dormitory Maintenance Staff,CC88411,Dormitory Maintenance Staff,PG3900
+88413,Paris Off- Campus Dormitory,CC88413,Paris Off-Campus Dormitory,PG3900
+88430,University Center Dormitory,CC88430,University Center Dormitory,PG3900
+88500,Student Health Services,CC88500,Student Health Services,PG3900
+88600,HEOP Administration,CC88600,HEOP,PG3802
+88800,Enrollment Systems,CC88800,Enrollment Systems,PG3802
+88801,Enrollment Center Services,CC88801,Enrollment Center Services,PG3802
+88802,Enrollment Events,CC88802,Enrollment Events,PG3802
+88810,SFS Student Accounts,CC88810,Student Accounts,PG6005
+88820,SFS Financial Aid,CC88820,Financial Aid,PG3802
+88830,Registrar's Office,CC88830,Registrar,PG3802
+88840,Strategic Enrollment Mgmt,CC88840,VP Strategic Enrollment Mgmt - Admin,PG3802
+88841,Undergraduate Admission,CC88841,Undergraduate Admission,PG3802
+88842,Undergraduate Admission Operations,CC88842,Undergraduate Admission Operations,PG3802
+88843,International Admission,CC88843,International Admission,PG3802
+88844,Graduate Admission Operations,CC88844,Graduate Admission Operations,PG3802
+88845,Graduate Admissions,CC88845,Graduate Admissions,PG3802
+88846,Recruiting Marketing,CC88846,Admission Communications,PG3802
+88850,Sr. VP Enrollment Mngmt &Career Svr,CC88850,Chief Enrollment and Success Officer - Admin,PG3802
+90200,Vice President & General Counsel,CC90200,Office of the Chief Legal Officer,PG6005
+92200,Office of the VP for Development,CC92200,Office of the Chief Development Officer,PG6005
+92201,Annual Fund & Individual Giving,CC92201,Individual Giving Administration,PG6005
+92202,Advancement Services,CC92202,Advancement Services,PG6005
+92203,Annual Fund,CC92203,Annual Fund Administration,PG6005
+92400,Corp/Found/Gov Grants & Plan Giving,CC92400,"Corporate, Foundation, and Government Grants Administration",PG6005
+92800,Special Events,CC92800,Special Events,PG6005
+92801,Alumni Activities,CC92801,Alumni Relations,PG6005
+92802,Alumni sponsorship activities,CC92801,Alumni Relations,PG6005
+94200,Office of the Chief Mktg Officer,CC94200,Office of the Chief Marketing Officer - Operations,PG6005
+94207,Strategic Marketing Department,CC94207,Strategic Marketing Department,PG6005
+94208,Creative Department,CC94208,Creative Department,PG6005
+94217,Marketing Initiatives,CC94217,Marketing Initiatives,PG6005
+94218,Venue Leasing,CC94218,Venue Leasing,PG6005
+95001,Financial Statement Reporting,CC95001,Financial Statement Reporting,
+95002,Expense reallocation,CC95002,Expense Reallocation,
+95003,Financial Statement Parsons,CC95003,Financial Statement Parsons PS,
+95005,Financial Statement Lang,CC95005,"Financial Statement, T&S, Lang",
+95006,Financial Statement Mannes,CC95006,Financial Statement Adjustments - Mannes,
+95007,Financial Statement Milano,CC95007,Financial Statement Milano,
+95008,Financial Statement NSSR,CC95008,Financial Statement NSSR,
+95009,Financial Statement Jazz,CC95009,Financial Statement Adjustments - Jazz,
+95010,Financial Statement IRP,CC95010,Financial Statement IRP,
+95011,Financial Statement SFS,CC95011,Financial Statement SFS,
+95012,Financial Statement NSPE,CC95012,Financial Statement SPE,
+95013,Financial Statement Drama,CC95013,Financial Statement Adjustments - Drama,
+96000,Human Resources Office,CC96000,Human Resources Office,PG6005
+96001,Payroll Office,CC96000,Human Resources Office,PG6005
+96003,Fringe Benefits,CC96003,Fringe Benefits,PG6005
+96005,Staff Events/Recreation Program,CC96000,Human Resources Office,PG6005
+96006,Fringe Benefit Charge-out,CC96006,Fringe Benefit Charge-Out,PG6005
+98000,PIIM,CC98000,PIIM,PG3850
+98002,India China Institute admin.,CC98002,India China Institute admin.,PG3008
+98004,ICI - US,CC98004,ICI - US,PG3850
+98005,ICI - India,CC98005,ICI - India,PG3850
+98006,ICI - China,CC98006,ICI - China,PG3850
+98011,PIIM R & D,CC98011,PIIM R & D,PG3850
+99000,Office of Design & Construction VP,CC99000,Buildings,PG6500

@@ -3,10 +3,10 @@ var H1;
 var W1;
 
 function preload() {
-     tableF = loadTable("data/F.csv", "csv", "header");
-     tableO = loadTable("data/O.csv", "csv", "header");
-     tableA = loadTable("data/A.csv", "csv", "header");
-     tableP = loadTable("data/P.csv", "csv", "header");
+     tableF = loadTable("data2/f.csv", "csv", "header");
+     tableO = loadTable("data2/o.csv", "csv", "header");
+     tableA = loadTable("data2/a.csv", "csv", "header");
+     tableP = loadTable("data2/p.csv", "csv", "header");
 }
 
 
@@ -59,7 +59,7 @@ function draw() {
      image(logo, 0, 0, logo.width / 12, logo.height / 12);
      noStroke();
      fill(255, 255, 255, 229);
-     rect(0, windowHeight * 0.25, windowWidth, windowHeight * 0.5);
+     rect(0, windowHeight * 0.25, windowWidth, windowHeight * 0.65);
      // rect((windowWidth / 5) * 1, (windowHeight / 3.1),165, 22);
 
      //F
@@ -105,7 +105,7 @@ function draw() {
      for (var f = 0; f < tableF.getRowCount(); f++) {
           var currentFRow = tableF.getRow(f);
           var fund = currentFRow.getString(0);
-          var wd_fund = currentFRow.getString(1);
+          var wd_fund = currentFRow.getString(3);
 
           if (fund === inputF.value()) {
                fill(99);
@@ -119,7 +119,7 @@ function draw() {
      for (var o = 0; o < tableO.getRowCount(); o++) {
           var currentORow = tableO.getRow(o);
           var org = currentORow.getString(0);
-          var wd_org = currentORow.getString(1);
+          var wd_org = currentORow.getString(2);
 
           if (org === inputO.value()) {
                // fill(255);
@@ -149,8 +149,8 @@ function draw() {
      for (var a = 0; a < tableA.getRowCount(); a++) {
           var currentARow = tableA.getRow(a);
           var account = currentARow.getString(0);
-          var wd_spendCat = currentARow.getString(1);
-          var desc = currentARow.getString(2);
+          var wd_spendCat = currentARow.getString(2);
+          var desc = currentARow.getString(8);
 
           // if(account === inputA.value()){
           //   text(wd_spendCat,(windowWidth / 5) * 3, windowHeight / 3 + 50);
@@ -160,16 +160,19 @@ function draw() {
      // textSize(windowWidth*0.025);
      fill(0);
      text("SPEND CATEGORY: " + rows.length, (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 2);
-     if (rows.length > 0) {
-          // textSize(18);
-          // text("Use the Spending Category most appropriate to your purchase.", (windowWidth / 5) * 3-(windowWidth*0.075), windowHeight / 3 + 50);
-     }
+     
+     
 
      var matches = tableA.matchRows(inputA.value(), 0);
      for (var i = 0; i < rows.length; i++) {
-          // textSize(18);
-          fill(22);
-          text(matches[i].getString(1) + " " + matches[i].getString(2), (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 1.9 + i * 27.5);
+          // textSize(windowWidth * 0.01);
+          fill(99);
+          text(matches[i].getString(2)+ " "+matches[i].getString(8), (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 1.9 + i * (windowHeight * 0.0175));
+     }
+     if (rows.length > 0) {
+          textSize(windowWidth * 0.0075);
+          fill(232, 46, 33);
+          text("Use the 'Related Expense Item'"+"\nappropriate to your purchase."+"\nIf your purchase does not match,"+"\ncall...so and so.", (windowWidth / 5) * 3-(windowWidth*0.075), windowHeight / 3 + 50);
      }
      fill(0, 0, 0, fader);
      textSize(windowWidth * 0.075);
