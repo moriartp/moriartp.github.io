@@ -160,6 +160,7 @@ function draw() {
           var currentARow = tableA.getRow(a);
           var account = currentARow.getString(0);
           var wd_spendCat = currentARow.getString(2);
+          var wd_workCat = currentARow.getString(7);
           var desc = currentARow.getString(8);
 
           // if(account === inputA.value()){
@@ -177,7 +178,7 @@ function draw() {
      for (var i = 0; i < rows.length; i++) {
           // textSize(windowWidth * 0.01);
           fill(99);
-          text(matches[i].getString(2)+ " "+matches[i].getString(8), (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 1.9 + i * (windowHeight * 0.0175));
+          text(matches[i].getString(7)+ " "+matches[i].getString(8), (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 1.9 + i * (windowHeight * 0.0175));
      }
      if (rows.length > 0) {
           textSize(windowWidth * 0.0075);
