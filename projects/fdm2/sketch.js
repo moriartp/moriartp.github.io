@@ -105,11 +105,21 @@ function draw() {
      for (var f = 0; f < tableF.getRowCount(); f++) {
           var currentFRow = tableF.getRow(f);
           var fund = currentFRow.getString(0);
+          var wd_type = currentFRow.getString(2);
           var wd_fund = currentFRow.getString(3);
+          var wd_desc =  currentFRow.getString(4);
 
           if (fund === inputF.value()) {
                fill(99);
-               text(wd_fund, (windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight / 1.9);
+               text("Type: "+wd_type+ "\nID: "+wd_fund, (windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight / 1.9);
+               // if(mouseX>(windowWidth / 5) * 1 - (windowWidth * 0.075) && mouseX<(windowWidth / 5) && mouseY> windowHeight / 1.9 && mouseY <windowHeight / 1.8){
+               // fill(12,12,88,222);
+               // // rectMode(CENTER,CENTER);
+               // rect(mouseX,mouseY,windowWidth*0.33,windowHeight*0.033, 5);
+               // textAlign(LEFT,TOP);
+               // fill(255);
+               // text("MyDay ID: "+wd_desc, mouseX,mouseY);
+               // }
           }
 
 
