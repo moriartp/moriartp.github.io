@@ -164,13 +164,13 @@ function draw() {
      var matches = tableA.matchRows(inputA.value(), 0);
      for (var i = 0; i < rows.length; i++) {
           // textSize(18);
-          fill(99);
+          fill(22);
           text(matches[i].getString(1) + " " + matches[i].getString(2), (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 1.9 + i * 27.5);
      }
      fill(0, 0, 0, fader);
      textSize(windowWidth * 0.075);
      textAlign(CENTER, CENTER);
-     text("What is my FDM?", width / 2, height / 9);
+     text("FDM Crosswalk", width / 2, height / 9);
      textSize(windowWidth * 0.025);
      text("Enter your FOAP in the below fields", width / 2, height / 4.75);
 
