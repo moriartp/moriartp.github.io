@@ -108,10 +108,11 @@ function draw() {
           var wd_type = currentFRow.getString(2);
           var wd_fund = currentFRow.getString(3);
           var wd_desc =  currentFRow.getString(4);
+          var wd_predCC =  currentFRow.getString(9);
 
           if (fund === inputF.value()) {
                fill(99);
-               text("Type: "+wd_type+ "\nID: "+wd_fund, (windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight / 1.9);
+               text("Type: "+wd_type+ "\nID: "+wd_fund+"\nPRED CC: "+wd_predCC, (windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight / 1.9);
                // if(mouseX>(windowWidth / 5) * 1 - (windowWidth * 0.075) && mouseX<(windowWidth / 5) && mouseY> windowHeight / 1.9 && mouseY <windowHeight / 1.8){
                // fill(12,12,88,222);
                // // rectMode(CENTER,CENTER);
@@ -121,11 +122,8 @@ function draw() {
                // text("MyDay ID: "+wd_desc, mouseX,mouseY);
                // }
           }
-
-
-
-
      }
+
      for (var o = 0; o < tableO.getRowCount(); o++) {
           var currentORow = tableO.getRow(o);
           var org = currentORow.getString(0);
@@ -141,8 +139,10 @@ function draw() {
                // noStroke();
                fill(99);
                text(wd_org, (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 1.9);
+               if(wd_org !== wd_predCC){
+                    text("YOUR ORG SELECT DOES NOT MATCH THE\nCOSTCENTER ON RECORD FOR THIS WORKTAG,\nPLEASE CONTACT SO AND SO...!!!", (windowWidth / 5) * 1 - (windowWidth * 0.075),windowHeight*0.4);
+               }
           }
-
 
 
      }
