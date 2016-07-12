@@ -140,7 +140,7 @@ function draw() {
                fill(99);
                text(wd_org, (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 1.9);
                if(wd_org !== wd_predCC){
-                    text("YOUR ORG SELECT DOES NOT MATCH THE\nCOSTCENTER ON RECORD FOR THIS WORKTAG,\nPLEASE CONTACT SO AND SO...!!!", (windowWidth / 5) * 1 - (windowWidth * 0.075),windowHeight*0.4);
+                    text("YOUR ORG SELECTION DOES NOT MATCH THE\nCOSTCENTER ON RECORD FOR THIS WORKTAG,\nPLEASE CONTACT SO AND SO...!!!", (windowWidth / 5) * 1 - (windowWidth * 0.075),windowHeight*0.4);
                }
           }
 
