@@ -80,7 +80,7 @@ function draw() {
 
 
 
-     if(windowWidth >= windowHeight){
+     if (windowWidth >= windowHeight) {
           textSize(windowWidth * 0.01);
      } else {
           textSize(windowHeight * 0.015);
@@ -107,20 +107,12 @@ function draw() {
           var fund = currentFRow.getString(0);
           var wd_type = currentFRow.getString(2);
           var wd_fund = currentFRow.getString(3);
-          var wd_desc =  currentFRow.getString(4);
-          var wd_predCC =  currentFRow.getString(9);
+          var wd_desc = currentFRow.getString(4);
+          var wd_predCC = currentFRow.getString(9);
 
           if (fund === inputF.value()) {
                fill(99);
-               text("Type: "+wd_type+ "\nID: "+wd_fund+"\nPRED CC: "+wd_predCC, (windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight / 1.9);
-               // if(mouseX>(windowWidth / 5) * 1 - (windowWidth * 0.075) && mouseX<(windowWidth / 5) && mouseY> windowHeight / 1.9 && mouseY <windowHeight / 1.8){
-               // fill(12,12,88,222);
-               // // rectMode(CENTER,CENTER);
-               // rect(mouseX,mouseY,windowWidth*0.33,windowHeight*0.033, 5);
-               // textAlign(LEFT,TOP);
-               // fill(255);
-               // text("MyDay ID: "+wd_desc, mouseX,mouseY);
-               // }
+               text("Type: " + wd_type + "\nID: " + wd_fund, (windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight / 1.9);
           }
      }
 
@@ -130,22 +122,39 @@ function draw() {
           var wd_org = currentORow.getString(2);
 
           if (org === inputO.value()) {
-               // fill(255);
-               // strokeWeight(0.35);
-               // stroke(0);
-               // rectMode(CORNER);
-               // rect((windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 1.975,windowWidth * 0.15, windowHeight * 0.03);
-               // fill(0);
-               // noStroke();
                fill(99);
                text(wd_org, (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 1.9);
-               if(wd_org !== wd_predCC){
-                    text("YOUR ORG SELECTION DOES NOT MATCH THE\nCOSTCENTER ON RECORD FOR THIS WORKTAG,\nPLEASE CONTACT SO AND SO...!!!", (windowWidth / 5) * 1 - (windowWidth * 0.075),windowHeight*0.4);
-               }
+               
+          //      ///TEST FOR MISMATCH
+          //      if (wd_org === wd_predCC) {
+          //           text(wd_org + " " + wd_predCC + "\nYOUR ORG SELECTION MATCHES THE\nCOSTCENTER ON RECORD", (windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight * 0.4);
+          //      } else {
+          //           text("THIS DOESNT MATCH!!!", (windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight * 0.4);
+
+          //      }
           }
-
-
      }
+     
+     ///LOOK FOR MATCH!!!!!!!
+     var F_CC = tableF.matchRow(inputF.value(), 0);
+     // fill(0);
+     // text(F_CC.getString(9), 222, 222);
+     
+     var O_CC = tableO.matchRow(inputO.value(), 0);
+     // fill(0);
+     // text(O_CC.getString(2), 222, 255);
+     text(inputO.value().length, (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 3.25);
+     
+
+     // if (inputO.value().length === 5 && NULL &&F_CC.getString(9) != O_CC.getString(2)) {
+     if (inputO.value().length === 5 && F_CC.getString(9) != O_CC.getString(2)) {     
+          fill(0);
+          text("The Cost Center you specified does\nnot match the related Cost Center.\nPlease contact _______________\nto resolve this.",(windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight * 0.4);
+     }
+
+     ///END LOOK FOR MATCH!!!!!!!
+
+
      for (var p = 0; p < tableP.getRowCount(); p++) {
           var currentPRow = tableP.getRow(p);
           var program = currentPRow.getString(0);
@@ -168,22 +177,21 @@ function draw() {
           // }
      }
      var rows = tableA.findRows(inputA.value(), 0);
-     // textSize(windowWidth*0.025);
      fill(0);
      text("SPEND CATEGORY: " + rows.length, (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 2);
-     
-     
 
+
+     ///ID MATCHING ROWS
      var matches = tableA.matchRows(inputA.value(), 0);
      for (var i = 0; i < rows.length; i++) {
           // textSize(windowWidth * 0.01);
           fill(99);
-          text(matches[i].getString(7)+ " "+matches[i].getString(8), (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 1.9 + i * (windowHeight * 0.0175));
+          text(matches[i].getString(7) + " " + matches[i].getString(8), (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 1.9 + i * (windowHeight * 0.0175));
      }
      if (rows.length > 0) {
-          textSize(windowWidth * 0.0075);
-          fill(232, 46, 33);
-          text("Use the 'Related Expense Item'"+"\nappropriate to your purchase."+"\nIf your purchase does not match,"+"\ncall...so and so.", (windowWidth / 5) * 3-(windowWidth*0.075), windowHeight / 3 + 50);
+          // textSize(windowWidth * 0.0075);
+          // fill(232, 46, 33);
+          text("Use the 'Related Expense Item'" + "\nappropriate to your purchase." + "\nIf your purchase does not match," + "\ncall...so and so.", (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 3 + 50);
      }
      fill(0, 0, 0, fader);
      textSize(windowWidth * 0.075);
@@ -191,9 +199,6 @@ function draw() {
      text("FDM Crosswalk", width / 2, height / 9);
      textSize(windowWidth * 0.025);
      text("Enter your FOAP in the below fields", width / 2, height / 4.75);
-
-
-
 }
 
 function windowResized() {
