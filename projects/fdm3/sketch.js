@@ -107,6 +107,7 @@ function draw() {
         }
         fill(0);
         textStyle(NORMAL);
+        textAlign(LEFT, CENTER);
         ///validate inputs
         var F_input = tableF.findRows(inputF.value(), 0);
         var O_input = tableO.findRows(inputO.value(), 0);
@@ -127,7 +128,7 @@ function draw() {
                         var F_DS = F_.getString(4);
                         text(F_TP + "\n" + F_ID, (windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight / 1.8);
                 } else {
-                        text("Fund not found.\nPlease enter a valid fund.", (windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight * 0.4);
+                        text("Fund not found.\nPlease enter a valid fund.", (windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight * 0.39);
                 }
                 if (mouseX > (windowWidth / 5) * 1 - (windowWidth * 0.075) && mouseX < (windowWidth / 5) * 1 + (windowWidth * 0.075) && mouseY > windowHeight / 1.8 - windowHeight * 0.1 && mouseY < windowHeight / 1.8 + windowHeight * 0.1) {
                         rectMode(CENTER, CENTER);
@@ -147,29 +148,29 @@ function draw() {
                 if (F_input.length > 0 && O_input.length > 0) {
                         var F_CC = F_.getString(9);
                         var O_CC = O_.getString(2);
-                        if (F_CC !== null) {
+                        if (F_CC !== 'null') {
                                 text(F_CC, (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 1.8);
-                        } else if (F_CC === null) {
+                        } else if (O_CC !== null) {
                                 text(O_CC, (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 1.8);
                         }
                 } else {
-                        text("This Org is not found.\nPlease enter a valid Org.", (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.4);
+                        text("This Org is not found.\nPlease enter a valid Org.", (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.39);
                 }
         } else if (inputO.value().length > inputF.value().length) {
-                text("Please first enter a valid FUND value", (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.4);
+                text("Please first enter a valid FUND value", (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.39);
         }
 
         ///FUND/ORG COST CENTER MISMATCH ALERT!!!!!!!!!!!!!!!!
         if (inputO.value().length === 5 && F_CC !== O_CC) {
                 fill(0);
-                text(F_CC + " " + O_CC + "\nThe derived Cost Center doesnot match\nthe related Cost Center for this Org. \nPlease contact mydayhelp@newschool.edu\nto resolve this.", (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.4);
+                text("The derived Cost Center doesnot match\nthe related Cost Center for this Org. \nPlease contact mydayhelp@newschool.edu\nto resolve this.", (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.39);
         }
 
         ///ACCOUNT -> SPEND CAT
         var rows = tableA.findRows(inputA.value(), 0);
 
         if (rows.length === 0 && inputA.value().length === 5) {
-                text("Account not found.\nPlease enter a valid Account.", (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight * 0.4);
+                text("Account not found.\nPlease enter a valid Account.", (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight * 0.39);
 
         }
 
@@ -184,32 +185,33 @@ function draw() {
         if (rows.length > 0) {
                 // textSize(windowWidth * 0.0075);
                 // fill(232, 46, 33);
-                text("Use the 'Related Expense Item'" + "\nappropriate to your purchase." + "\nIf your purchase does not match," + "\ncall...so and so.", (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 3 + 50);
+                text("If your purchase doesn't match\na 'Related Expense Item' please" + "\ncontact mydayhelp@newschool.edu.", (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight * 0.39);
         }
 
 
         ///PROGRAM -> PROGRAM
-        if (inputP.value().length === 4) {
+
+        if (inputP.value().length === 4 && inputF.value().length === 5) {
                 if (F_input.length > 0 && P_input.length > 0) {
                         var F_PG = F_.getString(11);
-                        var P_PG = P_.getString(1);
-                        if (F_CC !== null) {
-                                text(F_PG, (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight / 1.9);
-                        } else if (P_PG !== null) {
-                                text(P_PG, (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight / 1.9);
+                        var O_PG = O_.getString(1);
+                        if (F_PG !== 'null') {
+                                text(F_PG, (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 1.8);
+                        } else if (O_PG !== null) {
+                                text(O_PG, (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 1.8);
                         }
                 } else {
-                        text("NO MATCHES ON RECORD!!!", 333, 355);
+                        text("This Program is not found.\nPlease enter a valid Program.", (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.39);
                 }
         } else if (inputP.value().length > inputF.value().length) {
-                text("Please first enter a valid FUND value", (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.4);
+                text("Please first enter a valid FUND value", (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.39);
         }
 
 
         // ///PROGRAM MISMATCH ALERT!!!!!!!!!!!!!!!!
         if (inputP.value().length === 4 && F_PG !== P_PG) {
                 fill(0);
-                text("The Program you specified does\nnot match the record.\nPlease contact _______________\nto resolve this.", (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.4);
+                text("The Program you specified does\nnot match the record.\nPlease contact _______________\nto resolve this.", (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.35);
         }
 
 
