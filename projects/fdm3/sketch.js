@@ -25,8 +25,8 @@ function setup() {
 
         var divvy = createDiv(' ');
         divvy.html('<a href="mailto:mydayhelp@newschool.edu">Get Help</a>');
-        //      divvy.position(width - 200, 0);
-        //      divvy.size(200, 150);
+        divvy.position(width - 200, 0);
+        divvy.size(200, 150);
 
 
 
@@ -83,20 +83,30 @@ function draw() {
         if (windowWidth >= windowHeight) {
                 textSize(windowWidth * 0.01);
         } else {
-                textSize(windowHeight * 0.015);
+                textSize(windowHeight * 0.01);
         }
 
-        fill(0);
+        fill(102, 102, 102);
+        textStyle(BOLD);
         text("FUND", (windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight / 3.1);
-        text("ORGANIZATION", (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 3.1);
+        text("ORG", (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 3.1);
         text("ACCOUNT", (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 3.1);
         text("PROGRAM", (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight / 3.1);
 
         text("FUND", (windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight / 2);
-        text("COST CENTER", (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 2);
-        text("SPEND CATEGORY", (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 2);
+        text("COST\nCENTER", (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 2);
+        text("SPEND CAT/\nEXPENSE ITEM", (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 2);
         text("PROGRAM", (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight / 2);
 
+
+
+        if (windowWidth >= windowHeight) {
+                textSize(windowWidth * 0.0075);
+        } else {
+                textSize(windowHeight * 0.0075);
+        }
+        fill(0);
+        textStyle(NORMAL);
         ///validate inputs
         var F_input = tableF.findRows(inputF.value(), 0);
         var O_input = tableO.findRows(inputO.value(), 0);
@@ -114,11 +124,23 @@ function draw() {
                 if (F_input.length > 0) {
                         var F_TP = F_.getString(2);
                         var F_ID = F_.getString(3);
-                        text(F_TP + "\n" + F_ID, (windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight / 1.9);
+                        var F_DS = F_.getString(4);
+                        text(F_TP + "\n" + F_ID, (windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight / 1.8);
                 } else {
                         text("Fund not found.\nPlease enter a valid fund.", (windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight * 0.4);
                 }
+                if (mouseX > (windowWidth / 5) * 1 - (windowWidth * 0.075) && mouseX < (windowWidth / 5) * 1 + (windowWidth * 0.075) && mouseY > windowHeight / 1.8 - windowHeight * 0.1 && mouseY < windowHeight / 1.8 + windowHeight * 0.1) {
+                        rectMode(CENTER, CENTER);
+                        textAlign(CENTER, BOTTOM);
+                        fill(222, 55, 55, 244);
+                        rect(mouseX, mouseY, (windowWidth / 5) * 1 + (windowWidth * 0.025), windowHeight * 0.1, 5);
+                        fill(255);
+                        text("Desc: " + F_DS, mouseX, mouseY);
+                }
+
         }
+
+
 
         ////ORG -> COSTCENTER
         if (inputO.value().length === 5 && inputF.value().length === 5) {
@@ -126,9 +148,9 @@ function draw() {
                         var F_CC = F_.getString(9);
                         var O_CC = O_.getString(2);
                         if (F_CC !== null) {
-                                text(F_CC, (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 1.9);
-                        } else if (O_CC !== null) {
-                                text(O_CC, (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 1.9);
+                                text(F_CC, (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 1.8);
+                        } else if (F_CC === null) {
+                                text(O_CC, (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 1.8);
                         }
                 } else {
                         text("This Org is not found.\nPlease enter a valid Org.", (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.4);
@@ -140,7 +162,7 @@ function draw() {
         ///FUND/ORG COST CENTER MISMATCH ALERT!!!!!!!!!!!!!!!!
         if (inputO.value().length === 5 && F_CC !== O_CC) {
                 fill(0);
-                text("The derived Cost Center doesnot match\nthe related Cost Center for this Org. \nPlease contact mydayhelp@newschool.edu\nto resolve this.", (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.4);
+                text(F_CC + " " + O_CC + "\nThe derived Cost Center doesnot match\nthe related Cost Center for this Org. \nPlease contact mydayhelp@newschool.edu\nto resolve this.", (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.4);
         }
 
         ///ACCOUNT -> SPEND CAT
@@ -156,7 +178,7 @@ function draw() {
         var matches = tableA.matchRows(inputA.value(), 0);
 
         for (var i = 0; i < rows.length; i++) {
-                text(matches[i].getString(7) + " " + matches[i].getString(8), (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 1.9 + i * (windowHeight * 0.0175));
+                text(matches[i].getString(7) + "      " + matches[i].getString(8), (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 1.8 + i * (windowHeight * 0.0175));
         }
 
         if (rows.length > 0) {
