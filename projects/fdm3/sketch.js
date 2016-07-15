@@ -2,7 +2,8 @@ var fader = 255;
 var H1;
 var W1;
 nada = null;
-
+var divvy;
+var getHelp;
 
 function preload() {
         tableF = loadTable("data2/f.csv", "csv", "header");
@@ -23,16 +24,7 @@ function setup() {
         inputA = createInput();
         inputP = createInput();
 
-        var divvy = createDiv(' ');
-        divvy.html('<a href="mailto:mydayhelp@newschool.edu">Get Help</a>');
-        divvy.position(width - 200, 0);
-        divvy.size(200, 150);
-
-
-
-
-
-
+        getHelp = createA('mailto:mydayhelp@newschol.edu', 'Help');
 }
 
 function parseData() {
@@ -56,12 +48,18 @@ function parseData() {
 
 function draw() {
         background(img);
-        image(logo, 0, 0, logo.width / 15, logo.height / 15);
+        image(logo, 0, 0, windowWidth*0.07, windowWidth*0.05);
+
 
         noStroke();
         fill(255, 255, 255, 229);
         rect(0, windowHeight * 0.25, windowWidth, windowHeight * 0.65);
 
+        ///HELP BUTTON
+        getHelp.position(windowWidth/2,0);
+        getHelp.size(windowWidth * 0.05, windowHeight * 0.01);
+        getHelp.style("font-size", windowWidth * 0.015+"px");
+        
         //F
         inputF.position((windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight / 3);
         inputF.size(windowWidth * 0.15, windowHeight * 0.0175);
