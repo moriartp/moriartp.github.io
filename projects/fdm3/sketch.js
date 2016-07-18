@@ -209,7 +209,8 @@ function draw() {
         // ///PROGRAM MISMATCH ALERT!!!!!!!!!!!!!!!!
         if (inputP.value().length === 4 && F_PG !== P_PG) {
                 fill(0);
-                text("The derived Program does not match\nthe related Program worktag. \nPlease contact mydayhelp@newschool.edu\nto resolve this.", (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.35);
+                textAlign(LEFT, BOTTOM);
+                text("The derived Program does not match\nthe related Program worktag. \nPlease contact mydayhelp@newschool.edu\nto resolve this.", (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.39);
         }
 
 
