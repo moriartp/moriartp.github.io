@@ -72,7 +72,7 @@ function draw() {
         // paragraph.size(windowWidth - windowWidth / 3);
 
         // //LINK
-z        // link.position(windowWidth / 5, windowHeight *0.9);
+        // link.position(windowWidth / 5, windowHeight *0.9);
         // link.size(windowWidth - windowWidth / 3);
 
         ///HELP BUTTON
