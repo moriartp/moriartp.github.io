@@ -192,11 +192,11 @@ function draw() {
         if (inputP.value().length === 4 && inputF.value().length === 5) {
                 if (F_input.length > 0 && P_input.length > 0) {
                         var F_PG = F_.getString(11);
-                        var O_PG = O_.getString(1);
+                        var P_PG = P_.getString(1);
                         if (F_PG !== 'null') {
-                                text(F_PG, (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 1.8);
-                        } else if (O_PG !== null) {
-                                text(O_PG, (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 1.8);
+                                text(F_PG, (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight / 1.8);
+                        } else if (P_PG !== 'null') {
+                                text(P_PG, (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight / 1.8);
                         }
                 } else {
                         text("This Program is not found.\nPlease enter a valid Program.", (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.39);
