@@ -161,7 +161,7 @@ function draw() {
         ///FUND/ORG COST CENTER MISMATCH ALERT!!!!!!!!!!!!!!!!
         if (inputO.value().length === 5 && F_CC !== O_CC) {
                 fill(0);
-                text("The derived Cost Center doesnot match\nthe related Cost Center for this Org. \nPlease contact mydayhelp@newschool.edu\nto resolve this.", (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.39);
+                text("The derived Cost Center does not match\nthe related Cost Center for this Org. \nPlease contact mydayhelp@newschool.edu\nto resolve this.", (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.39);
         }
 
         ///ACCOUNT -> SPEND CAT
@@ -209,7 +209,7 @@ function draw() {
         // ///PROGRAM MISMATCH ALERT!!!!!!!!!!!!!!!!
         if (inputP.value().length === 4 && F_PG !== P_PG) {
                 fill(0);
-                text("The Program you specified does\nnot match the record.\nPlease contact _______________\nto resolve this.", (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.35);
+                text("The derived Program does not match\nthe related Program worktag. \nPlease contact mydayhelp@newschool.edu\nto resolve this.", (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.35);
         }
 
 
