@@ -19,8 +19,6 @@ function setup() {
         createCanvas(windowWidth, windowHeight);
         img = loadImage("assets/foap_bg.jpg"); // Load the image
         logo = loadImage("assets/tns.png"); // Load the image
-        ALERT = loadImage("assets/alert.png"); // Load the image
-        INFO = loadImage("assets/info.png"); // Load the image
 
         //CREATE FOAP INPUTS
         inputF = createInput();
@@ -28,7 +26,18 @@ function setup() {
         inputA = createInput();
         inputP = createInput();
 
-        getHelp = createA('mailto:mydayhelp@newschol.edu', 'Help');
+        labelF = createP('FUND');
+        labelO = createP('ORG');
+        labelA = createP('ACCOUNT');
+        labelP = createP('PROGRAM');
+        
+        labelF2 = createP('FUND');
+        labelO2 = createP('COST CENTER');
+        labelA2 = createP('SPEND CATEGORY / EXPENSE ITEM');
+        labelP2 = createP('PROGRAM');        
+        
+
+        getHelp = createA('mailto:mydayhelp@newschol.edu', 'HELP');
         divvy = createDiv('<h1>FOAP to MyDay Worktag Converter</h1><p>MyDay Finance has replaced Banner for key finance functions. One of the most significant changes is the MyDay Financial Data Model (FDM). The FDM is further broken down into MyDay ”Worktags” that have replaced the University’s traditional chart of accounts and the rigid FOAP structure. To easily convert your old FOAPs to MyDay Worktags simply enter your old FOAPs to convert them to MyDay Worktags. For additional resources about MyDay Finance, please visit the <a href="https://myday-project.newschool.edu/training/finance/" target="_blank">MyDay Finance Training</a> page.</p>');
         conflictAlert = createDiv("The value you entered above does not match the related value for this Fund. Please use the below code and notify <a href='mailto:mydayhelp.newschool.edu'>MyDayHelp</a> of the conflict.");
         noMatch = createDiv("No match found.");
@@ -81,10 +90,26 @@ function draw() {
                 divvy.style("font-size", windowWidth * 0.01 + "px");
                 conflictAlert.style("font-size", windowWidth * 0.0075 + "px");
                 noMatch.style("font-size", windowWidth * 0.0075 + "px");
+                labelF.style("font-size", windowWidth * 0.0075 + "px");
+                labelO.style("font-size", windowWidth * 0.0075 + "px");
+                labelA.style("font-size", windowWidth * 0.0075 + "px");
+                labelP.style("font-size", windowWidth * 0.0075 + "px");
+                labelF2.style("font-size", windowWidth * 0.0075 + "px");
+                labelO2.style("font-size", windowWidth * 0.0075 + "px");
+                labelA2.style("font-size", windowWidth * 0.0075 + "px");
+                labelP2.style("font-size", windowWidth * 0.0075 + "px");                
         } else {
                 divvy.style("font-size", windowHeight * 0.01 + "px");
                 conflictAlert.style("font-size", windowHeight * 0.0075 + "px");
-                noMatch.style("font-size", windowWidth * 0.0075 + "px");
+                noMatch.style("font-size", windowHeight * 0.0075 + "px");
+                labelF.style("font-size", windowHeight * 0.0075 + "px");
+                labelO.style("font-size", windowHeight * 0.0075 + "px");
+                labelA.style("font-size", windowHeight * 0.0075 + "px");
+                labelP.style("font-size", windowHeight * 0.0075 + "px");
+                labelF2.style("font-size", windowHeight * 0.0075 + "px");
+                labelO2.style("font-size", windowHeight * 0.0075 + "px");
+                labelA2.style("font-size", windowHeight * 0.0075 + "px");
+                labelP2.style("font-size", windowHeight * 0.0075 + "px");
         }
 
         //INPUT ELEMENTS
@@ -115,15 +140,42 @@ function draw() {
         //INPUT LABELS
         fill(102, 102, 102);
         textStyle(BOLD);
-        text("FUND", (windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight / 3.1);
-        text("ORG", (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 3.1);
-        text("ACCOUNT", (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 3.1);
-        text("PROGRAM", (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight / 3.1);
+        // text("FUND", (windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight / 3.1);
+        // text("ORG", (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 3.1);
+        // text("ACCOUNT", (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 3.1);
+        // text("PROGRAM", (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight / 3.1);
 
-        text("FUND", (windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight / 2);
-        text("COST\nCENTER", (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 2);
-        text("SPEND CAT/\nEXPENSE ITEM", (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 2);
-        text("PROGRAM", (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight / 2);
+        labelF.position((windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight * 0.3);
+        labelO.position((windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.3);
+        labelA.position((windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight * 0.3);
+        labelP.position((windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.3);
+        
+        labelF.style('font-weight', 'bold');
+        labelO.style('font-weight', 'bold');
+        labelA.style('font-weight', 'bold');
+        labelP.style('font-weight', 'bold');
+        
+        labelF2.style('font-weight', 'bold');
+        labelO2.style('font-weight', 'bold');
+        labelA2.style('font-weight', 'bold');
+        labelP2.style('font-weight', 'bold');        
+        
+
+        // text("FUND", (windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight / 2);
+        // text("COST\nCENTER", (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 2);
+        // text("SPEND CAT/\nEXPENSE ITEM", (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 2);
+        // text("PROGRAM", (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight / 2);
+
+        labelF2.position((windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight * 0.5);
+        labelO2.position((windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.5);
+        labelA2.position((windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight * 0.5);
+        labelP2.position((windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.5);    
+        
+        labelF2.size(windowWidth * 0.15);
+        labelO2.size(windowWidth * 0.15);
+        labelA2.size(windowWidth * 0.15);
+        labelP2.size(windowWidth * 0.15);
+        
 
 
 
@@ -137,7 +189,7 @@ function draw() {
         textStyle(NORMAL);
         textAlign(LEFT, CENTER);
 
-        ///VALIDATE INPUT CODES
+        ///INPUT CODE VALIDATION
         var F_input = tableF.findRows(inputF.value(), 0);
         var O_input = tableO.findRows(inputO.value(), 0);
         var A_input = tableA.findRows(inputA.value(), 0);
@@ -155,7 +207,7 @@ function draw() {
                         var F_TP = F_.getString(2);
                         var F_ID = F_.getString(3);
                         var F_DS = F_.getString(4);
-                        text(F_TP + "\n" + F_ID + "\n" + F_DS, (windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight / 1.8);
+                        text(F_TP + "\n" + F_ID + "\n" + F_DS, (windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight / 1.85);
                 } else {
                         noMatch.show();
                         noMatch.position((windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight * 0.37);
@@ -272,9 +324,9 @@ function draw() {
 
                 conflictAlert.show();
                 conflictAlert.position((windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.37);
-                conflictAlert.size((windowWidth / 5) * 1 - (windowWidth * 0.06));                
-                
-                
+                conflictAlert.size((windowWidth / 5) * 1 - (windowWidth * 0.06));
+
+
         }
 
 
