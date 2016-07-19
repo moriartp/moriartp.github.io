@@ -279,10 +279,17 @@ function draw() {
 
 
 
+
+        // var A_SC = tableA.findRow(inputA.value(),0);
+        // text(tableA[0].getString(7),666,10);
+        
+        var found = tableA.findRow(inputA.value(), 0);
+        
         var matches = tableA.matchRows(inputA.value(), 0);
 
         for (var i = 0; i < rows.length; i++) {
-                text(matches[i].getString(7) + "/" + matches[i].getString(8), (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 1.8 + i * (windowHeight * 0.0175));
+                text("Spend Category: \n"+matches[i].getString(7), (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 1.8);
+                text(matches[i].getString(8), (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 1.8 + i * (windowHeight * 0.0175)+(windowHeight * 0.0175)*5);
         }
 
         if (rows.length > 0) {
