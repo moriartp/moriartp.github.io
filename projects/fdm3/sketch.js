@@ -30,16 +30,17 @@ function setup() {
         labelO = createP('ORG');
         labelA = createP('ACCOUNT');
         labelP = createP('PROGRAM');
-        
+
         labelF2 = createP('FUND');
         labelO2 = createP('COST CENTER');
         labelA2 = createP('SPEND CATEGORY / EXPENSE ITEM');
-        labelP2 = createP('PROGRAM');        
-        
+        labelP2 = createP('PROGRAM');
+
 
         getHelp = createA('mailto:mydayhelp@newschol.edu', 'HELP');
         divvy = createDiv('<h1>FOAP to MyDay Worktag Converter</h1><p>MyDay Finance has replaced Banner for key finance functions. One of the most significant changes is the MyDay Financial Data Model (FDM). The FDM is further broken down into MyDay ”Worktags” that have replaced the University’s traditional chart of accounts and the rigid FOAP structure. To easily convert your old FOAPs to MyDay Worktags simply enter your old FOAPs to convert them to MyDay Worktags. For additional resources about MyDay Finance, please visit the <a href="https://myday-project.newschool.edu/training/finance/" target="_blank">MyDay Finance Training</a> page.</p>');
         conflictAlert = createDiv("The value you entered above does not match the related value for this Fund. Please use the below code and notify <a href='mailto:mydayhelp.newschool.edu'>MyDayHelp</a> of the conflict.");
+        expenseAlert = createDiv("If your purchase doesn't match an 'Expense Item' from the list below, please contact <a href='mailto:mydayhelp.newschool.edu'>MyDayHelp</a>.");
         noMatch = createDiv("No match found.");
 
 }
@@ -79,6 +80,7 @@ function draw() {
 
         conflictAlert.hide();
         noMatch.hide();
+        expenseAlert.hide();
 
         getHelp.position(windowWidth * 0.99 - (windowWidth * 0.06), 0);
         getHelp.size(windowWidth * 0.07, windowWidth * 0.025);
@@ -89,6 +91,7 @@ function draw() {
         if (windowWidth >= windowHeight) {
                 divvy.style("font-size", windowWidth * 0.01 + "px");
                 conflictAlert.style("font-size", windowWidth * 0.0075 + "px");
+                expenseAlert.style("font-size", windowWidth * 0.0075 + "px");
                 noMatch.style("font-size", windowWidth * 0.0075 + "px");
                 labelF.style("font-size", windowWidth * 0.0075 + "px");
                 labelO.style("font-size", windowWidth * 0.0075 + "px");
@@ -97,10 +100,11 @@ function draw() {
                 labelF2.style("font-size", windowWidth * 0.0075 + "px");
                 labelO2.style("font-size", windowWidth * 0.0075 + "px");
                 labelA2.style("font-size", windowWidth * 0.0075 + "px");
-                labelP2.style("font-size", windowWidth * 0.0075 + "px");                
+                labelP2.style("font-size", windowWidth * 0.0075 + "px");
         } else {
                 divvy.style("font-size", windowHeight * 0.01 + "px");
                 conflictAlert.style("font-size", windowHeight * 0.0075 + "px");
+                expenseAlert.style("font-size", windowHeight * 0.0075 + "px");
                 noMatch.style("font-size", windowHeight * 0.0075 + "px");
                 labelF.style("font-size", windowHeight * 0.0075 + "px");
                 labelO.style("font-size", windowHeight * 0.0075 + "px");
@@ -149,17 +153,17 @@ function draw() {
         labelO.position((windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.3);
         labelA.position((windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight * 0.3);
         labelP.position((windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.3);
-        
+
         labelF.style('font-weight', 'bold');
         labelO.style('font-weight', 'bold');
         labelA.style('font-weight', 'bold');
         labelP.style('font-weight', 'bold');
-        
+
         labelF2.style('font-weight', 'bold');
         labelO2.style('font-weight', 'bold');
         labelA2.style('font-weight', 'bold');
-        labelP2.style('font-weight', 'bold');        
-        
+        labelP2.style('font-weight', 'bold');
+
 
         // text("FUND", (windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight / 2);
         // text("COST\nCENTER", (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 2);
@@ -169,13 +173,13 @@ function draw() {
         labelF2.position((windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight * 0.5);
         labelO2.position((windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.5);
         labelA2.position((windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight * 0.5);
-        labelP2.position((windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.5);    
-        
+        labelP2.position((windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.5);
+
         labelF2.size(windowWidth * 0.15);
         labelO2.size(windowWidth * 0.15);
         labelA2.size(windowWidth * 0.15);
         labelP2.size(windowWidth * 0.15);
-        
+
 
 
 
@@ -283,7 +287,15 @@ function draw() {
                 // textSize(windowWidth * 0.0075);
                 // fill(232, 46, 33);
                 // image(INFO,(windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight * 0.375,windowWidth * 0.075, windowHeight * 0.075);
-                text("If your purchase doesn't match\na 'Expense Item' please" + "\ncontact mydayhelp@newschool.edu.", (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight * 0.39);
+                // text("If your purchase doesn't match\na 'Expense Item' please" + "\ncontact mydayhelp@newschool.edu.", (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight * 0.39);
+
+                expenseAlert.show();
+                expenseAlert.position((windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight * 0.37);
+                expenseAlert.size((windowWidth / 5) * 1 - (windowWidth * 0.06));
+
+
+
+
         }
 
 
