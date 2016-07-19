@@ -30,7 +30,7 @@ function setup() {
 
         getHelp = createA('mailto:mydayhelp@newschol.edu', 'Help');
         divvy = createDiv('<h1>FOAP to MyDay Worktag Converter</h1><p>MyDay Finance has replaced Banner for key finance functions. One of the most significant changes is the MyDay Financial Data Model (FDM). The FDM is further broken down into MyDay ”Worktags” that have replaced the University’s traditional chart of accounts and the rigid FOAP structure. To easily convert your old FOAPs to MyDay Worktags simply enter your old FOAPs to convert them to MyDay Worktags. For additional resources about MyDay Finance, please visit the <a href="https://myday-project.newschool.edu/training/finance/" target="_blank">MyDay Finance Training</a> page.</p>');
-        orgAlert = createDiv("The Org you entered does not match the related Cost Center for this Fund. Please use the below Cost Center code and notify <a href='mailto:mydayhelp.newschool.edu'>MyDayHelp</a> of the conflict.");
+        conflictAlert = createDiv("The value you entered above does not match the related value for this Fund. Please use the below code and notify <a href='mailto:mydayhelp.newschool.edu'>MyDayHelp</a> of the conflict.");
         noMatch = createDiv("No match found.");
 
 }
@@ -63,33 +63,31 @@ function draw() {
         fill(255, 255, 255, 229);
         rect(0, windowHeight * 0.25, windowWidth, windowHeight * 0.65);
 
+
+        ///HTML ELEMENTS
         divvy.position(windowWidth / 7, windowHeight * 0.01);
         divvy.size(windowWidth - windowWidth / 3);
 
-        orgAlert.hide();
+        conflictAlert.hide();
         noMatch.hide();
 
-        if (windowWidth >= windowHeight) {
-                divvy.style("font-size", windowWidth * 0.01 + "px");
-                orgAlert.style("font-size", windowWidth * 0.0075 + "px");
-                noMatch.style("font-size", windowWidth * 0.0075 + "px");
-        } else {
-                divvy.style("font-size", windowHeight * 0.01 + "px");
-                orgAlert.style("font-size", windowHeight * 0.0075 + "px");
-                noMatch.style("font-size", windowWidth * 0.0075 + "px");
-        }
-
-
-
-        // ///PARAGRAPH
-        // paragraph.position(windowWidth / 7, windowHeight *0.05);
-        // paragraph.size(windowWidth - windowWidth / 3);
-
-        ///HELP BUTTON
-        // getHelp.position(windowWidth / 2 - (windowWidth * 0.07), 0);
         getHelp.position(windowWidth * 0.99 - (windowWidth * 0.06), 0);
         getHelp.size(windowWidth * 0.07, windowWidth * 0.025);
         getHelp.style("font-size", windowWidth * 0.015 + "px");
+
+
+        ///RESPONSIVE CSS FONT-SIZES
+        if (windowWidth >= windowHeight) {
+                divvy.style("font-size", windowWidth * 0.01 + "px");
+                conflictAlert.style("font-size", windowWidth * 0.0075 + "px");
+                noMatch.style("font-size", windowWidth * 0.0075 + "px");
+        } else {
+                divvy.style("font-size", windowHeight * 0.01 + "px");
+                conflictAlert.style("font-size", windowHeight * 0.0075 + "px");
+                noMatch.style("font-size", windowWidth * 0.0075 + "px");
+        }
+
+        //INPUT ELEMENTS
 
         //F
         inputF.position((windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight / 3);
@@ -107,14 +105,14 @@ function draw() {
         inputP.position((windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight / 3);
         inputP.size(windowWidth * 0.15, windowHeight * 0.0175);
 
-
-
+        //CANVAS/P5 RESPONSIVE TEXT SIZING FRO INPUT LABELS
         if (windowWidth >= windowHeight) {
                 textSize(windowWidth * 0.01);
         } else {
                 textSize(windowHeight * 0.01);
         }
 
+        //INPUT LABELS
         fill(102, 102, 102);
         textStyle(BOLD);
         text("FUND", (windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight / 3.1);
@@ -129,6 +127,7 @@ function draw() {
 
 
 
+        //GENERAL TEXT SIZING
         if (windowWidth >= windowHeight) {
                 textSize(windowWidth * 0.0075);
         } else {
@@ -137,7 +136,8 @@ function draw() {
         fill(0);
         textStyle(NORMAL);
         textAlign(LEFT, CENTER);
-        ///validate inputs
+
+        ///VALIDATE INPUT CODES
         var F_input = tableF.findRows(inputF.value(), 0);
         var O_input = tableO.findRows(inputO.value(), 0);
         var A_input = tableA.findRows(inputA.value(), 0);
@@ -157,24 +157,10 @@ function draw() {
                         var F_DS = F_.getString(4);
                         text(F_TP + "\n" + F_ID + "\n" + F_DS, (windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight / 1.8);
                 } else {
-                        // image(ALERT,(windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight * 0.375,windowWidth * 0.075, windowHeight * 0.075);
-                        // text("Fund not found.\nPlease enter a valid fund.", (windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight * 0.39);
-
                         noMatch.show();
                         noMatch.position((windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight * 0.37);
                         noMatch.size((windowWidth / 5) * 1 - (windowWidth * 0.06));
-
-
                 }
-                // if (mouseX > (windowWidth / 5) * 1 - (windowWidth * 0.075) && mouseX < (windowWidth / 5) * 1 + (windowWidth * 0.075) && mouseY > windowHeight / 1.8 - windowHeight * 0.1 && mouseY < windowHeight / 1.8 + windowHeight * 0.1) {
-                //         rectMode(CENTER, CENTER);
-                //         textAlign(CENTER, BOTTOM);
-                //         fill(222, 55, 55, 244);
-                //         rect(mouseX, mouseY, (windowWidth / 5) * 1 + (windowWidth * 0.025), windowHeight * 0.1, 5);
-                //         fill(255);
-                //         text("Desc: " + F_DS, mouseX, mouseY);
-                // }
-
         }
 
 
@@ -212,9 +198,9 @@ function draw() {
                 // image(ALERT,(windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.375,windowWidth * 0.075, windowHeight * 0.075);
                 // text("The derived Cost Center does not match\nthe related Cost Center for this Org. \nPlease contact mydayhelp@newschool.edu\nto resolve this.", (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.39);
 
-                orgAlert.show();
-                orgAlert.position((windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.37);
-                orgAlert.size((windowWidth / 5) * 1 - (windowWidth * 0.06));
+                conflictAlert.show();
+                conflictAlert.position((windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.37);
+                conflictAlert.size((windowWidth / 5) * 1 - (windowWidth * 0.06));
 
 
         }
@@ -263,13 +249,13 @@ function draw() {
                 } else {
                         // image(ALERT,(windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.375,windowWidth * 0.075, windowHeight * 0.075);
                         // text("This Program is not found.\nPlease enter a valid Program.", (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.39);
-                        
+
                         noMatch.show();
                         noMatch.position((windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.37);
-                        noMatch.size((windowWidth / 5) * 1 - (windowWidth * 0.06));                        
-                        
-                        
-                        
+                        noMatch.size((windowWidth / 5) * 1 - (windowWidth * 0.06));
+
+
+
                 }
         } else if (inputP.value().length > inputF.value().length) {
                 // image(ALERT,(windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.375,windowWidth * 0.075, windowHeight * 0.075);
@@ -279,10 +265,16 @@ function draw() {
 
         // ///PROGRAM MISMATCH ALERT!!!!!!!!!!!!!!!!
         if (inputP.value().length === 4 && F_PG !== P_PG) {
-                fill(0);
-                textAlign(LEFT, BOTTOM);
-                // image(ALERT,(windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.375,windowWidth * 0.075, windowHeight * 0.075);
-                text("The derived Program does not match\nthe related Program worktag. \nPlease contact mydayhelp@newschool.edu\nto resolve this.", (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.39);
+                // fill(0);
+                // textAlign(LEFT, BOTTOM);
+                // // image(ALERT,(windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.375,windowWidth * 0.075, windowHeight * 0.075);
+                // text("The derived Program does not match\nthe related Program worktag. \nPlease contact mydayhelp@newschool.edu\nto resolve this.", (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.39);
+
+                conflictAlert.show();
+                conflictAlert.position((windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.37);
+                conflictAlert.size((windowWidth / 5) * 1 - (windowWidth * 0.06));                
+                
+                
         }
 
 
