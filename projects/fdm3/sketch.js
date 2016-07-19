@@ -64,6 +64,8 @@ function draw() {
 
         divvy.position(windowWidth / 7, windowHeight * 0.01);
         divvy.size(windowWidth - windowWidth / 3);
+        
+        orgAlert.hide();
 
         if (windowWidth >= windowHeight) {
                 divvy.style("font-size", windowWidth * 0.01 + "px");
@@ -193,6 +195,7 @@ function draw() {
                 // image(ALERT,(windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.375,windowWidth * 0.075, windowHeight * 0.075);
                 // text("The derived Cost Center does not match\nthe related Cost Center for this Org. \nPlease contact mydayhelp@newschool.edu\nto resolve this.", (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.39);
 
+                orgAlert.show();
                 orgAlert.position((windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.37);
                 orgAlert.size((windowWidth / 5) * 1 - (windowWidth * 0.05));
 
