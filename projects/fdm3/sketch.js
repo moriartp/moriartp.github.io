@@ -28,7 +28,6 @@ function setup() {
 
         getHelp = createA('mailto:mydayhelp@newschol.edu', 'Help');
         // paragraph = createP('MyDay Finance has replaced Banner for key finance functions. One of the most significant changes is the MyDay Financial Data Model (FDM). The FDM is further broken down into MyDay ”Worktags” that have replaced the University’s traditional chart of accounts and the rigid FOAP structure. To easily convert your old FOAPs to MyDay Worktags simply enter your old FOAPs to convert them to MyDay Worktags. For additional resources about MyDay Finance, please visit the MyDay Finance Training page');
-        // link = createA('https://myday-project.newschool.edu/training/finance/','MyDay Finance Training page');
         divvy = createDiv('');
 
 }
@@ -61,9 +60,10 @@ function draw() {
         fill(255, 255, 255, 229);
         rect(0, windowHeight * 0.25, windowWidth, windowHeight * 0.65);
         
-        divvy.html("<p>MyDay Finance has replaced Banner for key finance functions. One of the most significant changes is the MyDay Financial Data Model (FDM). The FDM is further broken down into MyDay ”Worktags” that have replaced the University’s traditional chart of accounts and the rigid FOAP structure. To easily convert your old FOAPs to MyDay Worktags simply enter your old FOAPs to convert them to MyDay Worktags. For additional resources about MyDay Finance, please visit the <a href='https://myday-project.newschool.edu/training/finance/'>MyDay Finance Training</a> page.</p>");
+        divvy.html("<h1>FOAP to MyDay Worktag Converter</h1><p>MyDay Finance has replaced Banner for key finance functions. One of the most significant changes is the MyDay Financial Data Model (FDM). The FDM is further broken down into MyDay ”Worktags” that have replaced the University’s traditional chart of accounts and the rigid FOAP structure. To easily convert your old FOAPs to MyDay Worktags simply enter your old FOAPs to convert them to MyDay Worktags. For additional resources about MyDay Finance, please visit the <a href='https://myday-project.newschool.edu/training/finance/'>MyDay Finance Training</a> page.</p>");
         divvy.position(windowWidth / 7, windowHeight *0.05);
         divvy.size(windowWidth - windowWidth / 3);
+        divvy.style("font-size", windowWidth * 0.01 + "px");
 
 
 
@@ -71,12 +71,9 @@ function draw() {
         // paragraph.position(windowWidth / 7, windowHeight *0.05);
         // paragraph.size(windowWidth - windowWidth / 3);
 
-        // //LINK
-        // link.position(windowWidth / 5, windowHeight *0.9);
-        // link.size(windowWidth - windowWidth / 3);
-
         ///HELP BUTTON
-        getHelp.position(windowWidth / 2 - (windowWidth * 0.07), 0);
+        // getHelp.position(windowWidth / 2 - (windowWidth * 0.07), 0);
+        getHelp.position(windowWidth *0.99 - (windowWidth * 0.0587), 0);        
         getHelp.size(windowWidth * 0.07, windowWidth * 0.025);
         getHelp.style("font-size", windowWidth * 0.015 + "px");
 
