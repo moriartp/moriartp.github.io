@@ -30,7 +30,8 @@ function setup() {
 
         getHelp = createA('mailto:mydayhelp@newschol.edu', 'Help');
         divvy = createDiv('<h1>FOAP to MyDay Worktag Converter</h1><p>MyDay Finance has replaced Banner for key finance functions. One of the most significant changes is the MyDay Financial Data Model (FDM). The FDM is further broken down into MyDay ”Worktags” that have replaced the University’s traditional chart of accounts and the rigid FOAP structure. To easily convert your old FOAPs to MyDay Worktags simply enter your old FOAPs to convert them to MyDay Worktags. For additional resources about MyDay Finance, please visit the <a href="https://myday-project.newschool.edu/training/finance/" target="_blank">MyDay Finance Training</a> page.</p>');
-        orgAlert = createDiv("The derived Org you entered does not match the related Cost Center for this Fund. Please use the below Cost Center code and notify <a href='mailto:mydayhelp.newschool.edu'>MyDayHelp@newschool.edu</a> of the conflict.");
+        orgAlert = createDiv("The Org you entered does not match the related Cost Center for this Fund. Please use the below Cost Center code and notify <a href='mailto:mydayhelp.newschool.edu'>MyDayHelp</a> of the conflict.");
+        noMatch = createDiv("No match found.");
 
 }
 
@@ -64,15 +65,18 @@ function draw() {
 
         divvy.position(windowWidth / 7, windowHeight * 0.01);
         divvy.size(windowWidth - windowWidth / 3);
-        
+
         orgAlert.hide();
+        noMatch.hide();
 
         if (windowWidth >= windowHeight) {
                 divvy.style("font-size", windowWidth * 0.01 + "px");
                 orgAlert.style("font-size", windowWidth * 0.0075 + "px");
+                noMatch.style("font-size", windowWidth * 0.0075 + "px");
         } else {
                 divvy.style("font-size", windowHeight * 0.01 + "px");
                 orgAlert.style("font-size", windowHeight * 0.0075 + "px");
+                noMatch.style("font-size", windowWidth * 0.0075 + "px");
         }
 
 
@@ -154,7 +158,13 @@ function draw() {
                         text(F_TP + "\n" + F_ID + "\n" + F_DS, (windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight / 1.8);
                 } else {
                         // image(ALERT,(windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight * 0.375,windowWidth * 0.075, windowHeight * 0.075);
-                        text("Fund not found.\nPlease enter a valid fund.", (windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight * 0.39);
+                        // text("Fund not found.\nPlease enter a valid fund.", (windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight * 0.39);
+
+                        noMatch.show();
+                        noMatch.position((windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight * 0.37);
+                        noMatch.size((windowWidth / 5) * 1 - (windowWidth * 0.06));
+
+
                 }
                 // if (mouseX > (windowWidth / 5) * 1 - (windowWidth * 0.075) && mouseX < (windowWidth / 5) * 1 + (windowWidth * 0.075) && mouseY > windowHeight / 1.8 - windowHeight * 0.1 && mouseY < windowHeight / 1.8 + windowHeight * 0.1) {
                 //         rectMode(CENTER, CENTER);
@@ -181,9 +191,16 @@ function draw() {
                         }
                 } else {
                         // image(ALERT,(windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.375,windowWidth * 0.075, windowHeight * 0.075);
-                        text("This Org is not found.\nPlease enter a valid Org.", (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.39);
+                        // text("This Org is not found.\nPlease enter a valid Org.", (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.39);
                         // orgAlert.position((windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.39);
                         // orgAlert.siz((windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight / 1.8);
+                        noMatch.show();
+                        noMatch.position((windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.37);
+                        noMatch.size((windowWidth / 5) * 1 - (windowWidth * 0.06));
+
+
+
+
                 }
         } else if (inputO.value().length > inputF.value().length) {
                 text("Please first enter a valid FUND value", (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.39);
@@ -197,7 +214,7 @@ function draw() {
 
                 orgAlert.show();
                 orgAlert.position((windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.37);
-                orgAlert.size((windowWidth / 5) * 1 - (windowWidth * 0.05));
+                orgAlert.size((windowWidth / 5) * 1 - (windowWidth * 0.06));
 
 
         }
@@ -207,7 +224,12 @@ function draw() {
 
         if (rows.length === 0 && inputA.value().length === 5) {
                 // image(ALERT,(windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight * 0.375,windowWidth * 0.075, windowHeight * 0.075);
-                text("Account not found.\nPlease enter a valid Account.", (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight * 0.39);
+                // text("Account not found.\nPlease enter a valid Account.", (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight * 0.39);
+
+                noMatch.show();
+                noMatch.position((windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight * 0.37);
+                noMatch.size((windowWidth / 5) * 1 - (windowWidth * 0.06));
+
 
         }
 
@@ -240,7 +262,14 @@ function draw() {
                         }
                 } else {
                         // image(ALERT,(windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.375,windowWidth * 0.075, windowHeight * 0.075);
-                        text("This Program is not found.\nPlease enter a valid Program.", (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.39);
+                        // text("This Program is not found.\nPlease enter a valid Program.", (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.39);
+                        
+                        noMatch.show();
+                        noMatch.position((windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.37);
+                        noMatch.size((windowWidth / 5) * 1 - (windowWidth * 0.06));                        
+                        
+                        
+                        
                 }
         } else if (inputP.value().length > inputF.value().length) {
                 // image(ALERT,(windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.375,windowWidth * 0.075, windowHeight * 0.075);
