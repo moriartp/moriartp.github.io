@@ -1,0 +1,769 @@
+Banner ID,Banner Account Description,MyDay ID,MyDay Description,Related Revenue Category ID,Related Revenue Category,Related Spend Category ID,Related Spend Category,Related Expense Item
+10045,Operating account BoA,1000,Cash,null,null,null,null,null
+10051,Payroll account BoA,1000,Cash,null,null,null,null,null
+10053,Disbursement account BoA,1000,Cash,null,null,null,null,null
+10054,Student refund account BoA,1000,Cash,null,null,null,null,null
+10056,Credit card account BoA,1000,Cash,null,null,null,null,null
+10057,CAPS account BoA,1000,Cash,null,null,null,null,null
+10061,Perkins account BoA,1000,Cash,null,null,null,null,null
+10070,Perkins UMB USA,1000,Cash,null,null,null,null,null
+10092,E-payables BoA,1000,Cash,null,null,null,null,null
+10093,Direct Loan Account,1000,Cash,null,null,null,null,null
+11000,Accounts receivable student,1100,Student accounts receivable,null,null,null,null,null
+11020,Accounts receivable conversion,1101,Accounts receivable conversion,null,null,null,null,null
+11100,Allow doubtful a/c's stdnt. rcvbl.,1102,Student receivable allowance,null,null,null,null,null
+11200,Returned check receivable,1103,Student returned check receivable,null,null,null,null,null
+11202,Contracts receivable,1104,Student contract receivable,null,null,null,null,null
+11203,Returned check clearing,1105,Student returned check clearing,null,null,null,null,null
+11204,Returned credit card clearing,1106,Student returned credit card clearing,null,null,null,null,null
+11205,Student refunds receivable,1107,Student refunds receivable,null,null,null,null,null
+11206,Loan proceed returns receivable,1108,Student loan proceed returns receivable,null,null,null,null,null
+11207,Security dpst forfeiture receivable,1109,Student dormitory security deposit forfeiture receivable,null,null,null,null,null
+11208,Admissions dpst. forfeiture recvbl.,1110,Student admission deposit forfeiture receivable,null,null,null,null,null
+11210,Student refund ACH reject clearing,1111,Student Refund ACH reject clearing,null,null,null,null,null
+11211,Agency Fund receivables,1503,Student Agency fund receivable,null,null,null,null,null
+11212,Third party receivable,1112,Student third party receivable,null,null,null,null,null
+11300,Gift grant and contract receivable,1500,Grants and contracts receivable,null,null,null,null,null
+11400,Accounts receivable employees P/R,1501,Employee payroll receivable,null,null,null,null,null
+11411,Accounts receivable: other,1502,Accounts receivable - other,null,null,null,null,null
+11430,Accrued interest receivable,1402,Accrued interest receivable,null,null,null,null,null
+11462,Concur personal expense receivable,1504,Concur personal expense receivable,null,null,SC058,Cash Advance,null
+11463,Concur clearing,1505,Concur outstanding expense receivable,null,null,null,null,null
+11470,Receivable clearing account,1506,Accounts receivable other clearing,null,null,null,null,null
+11490,Interfund due to/from,1599,Interworktag Receivable,null,null,null,null,null
+11540,Due from Paris,1508,Due from Paris,null,null,null,null,null
+11610,Notes receivable employee,1509,Employee notes receivable,null,null,null,null,null
+11700,Perkins allow dbtfl a/c stdnt loans,1200,Loans allowance Perkins,null,null,null,null,null
+11710,Perkins funds advanced,1201,Funds advanced Perkins,null,null,null,null,null
+11720,Perkins notes assigned,1202,Notes assigned Perkins,null,null,null,null,null
+11730,Perkins prin cncl tch/miltry < 6/72,1203,Principal cancellation for Teaching/military Loans < 6/72- Perkins,null,null,null,null,null
+11740,Perkins prin cncl bankruptcy,1204,Principal cancellation for bankruptcy Perkins,null,null,null,null,null
+11750,Perkins prin cncl death & disablty,1205,Principal cancellation for death and disability Perkins,null,null,null,null,null
+11760,Perkins prin cncl other,1206,Principal cancellation other Perkins,null,null,null,null,null
+11770,Perkins principal collected,1207,Principal collected Perkins,null,null,null,null,null
+11790,Perkins prin cncl volunteer service,1208,Principal cancellation volunteer service Perkins,null,null,null,null,null
+11800,Perkins prin cncl chld/famly servce,1209,Principal cancellation child/family Intervention services Perkins,null,null,null,null,null
+11801,Perkins prin cncl certain tchn sub,1210,Principal cancellation certain teaching subject matter - Perkins,null,null,null,null,null
+11802,Perkins prin cncl other auth tch,1211,Principal cancellation other authorized teaching Perkins,null,null,null,null,null
+11803,Perkins prin cncl law/corr off svc,1212,Principal cancellation law/correction office services Perkins,null,null,null,null,null
+11804,Perkins prin cnc nurse/med tech svc,1213,Principal cancellation nurse/medical technical service Perkins,null,null,null,null,null
+11810,Cost of principle assigned/accepted,1214,Cost of principle assigned/accepted Perkins,null,null,null,null,null
+12000,Accumulated amort bond issue costs,2403,Debt accumulated amortization,null,null,null,null,null
+12010,Deferred closing cost,2404,Debt deferred closing cost,null,null,null,null,null
+12020,Deferred compensation plan 457(b),1510,Deferred compensation plan 457(b) receivable,null,null,null,null,null
+12030,Deferred compensation plan 457(f),1511,Deferred compensation plan 457(f) receivable,null,null,null,null,null
+12110,Prepaid expenses other,1512,Prepaid expenses other,null,null,null,null,null
+12140,Prepaid legal expense,1513,Prepaid legal expense,null,null,null,null,null
+12190,Prepaid insurance,1514,Prepaid insurance expense,null,null,null,null,null
+12210,Security deposits,1515,Security deposits,null,null,null,null,null
+12220,Suspense,1506,Accounts receivable other clearing ,null,null,null,null,null
+12250,Marketplace clearing,1516,Marketplace clearing,null,null,null,null,null
+13000,Pledges receivable,1300,Pledges receivable,null,null,null,null,null
+13100,Allowance for doubtful pledge rec.,1301,Pledge receivable allowance,null,null,null,null,null
+13200,Pledge discount to present value,1302,Pledge receivable discount,null,null,null,null,null
+14000,Canyon Capital,1400,Investments,null,null,null,null,null
+14010,Rim Rock,1400,Investments,null,null,null,null,null
+14020,Goldman Sachs Strategic,1400,Investments,null,null,null,null,null
+14025,Blue Orchid Select Ltd. - Series 1,1400,Investments,null,null,null,null,null
+14030,Fund Services Cayman/Summerhaven,1400,Investments,null,null,null,null,null
+14040,Fir Tree Special Opportunities,1400,Investments,null,null,null,null,null
+14060,WHI Real Estate Partners III,1400,Investments,null,null,null,null,null
+14080,Brookfield Global,1400,Investments,null,null,null,null,null
+14090,Sales Force COM,1400,Investments,null,null,null,null,null
+14111,Emerging Soverign CBE,1400,Investments,null,null,null,null,null
+14112,Valinor Capital Partners,1400,Investments,null,null,null,null,null
+14113,Eaton Vance- Emerging Markets,1400,Investments,null,null,null,null,null
+14114,Wisdomtree JPN HDGD EQTY,1400,Investments,null,null,null,null,null
+14115,Institutional Venture Partners,1400,Investments,null,null,null,null,null
+14116,OptionsXpress,1400,Investments,null,null,null,null,null
+14120,The Children Investment fund,1400,Investments,null,null,null,null,null
+14122,FMIINTL FD,1400,Investments,null,null,null,null,null
+14130,Aleutian Fund LTD,1400,Investments,null,null,null,null,null
+14140,Vanguard Investment Grade Fund,1400,Investments,null,null,null,null,null
+14150,DHI Group Inc,1400,Investments,null,null,null,null,null
+14191,Charles Schwab Mannes Building,1400,Investments,null,null,null,null,null
+14196,Charles Schwab Restricted Funds,1400,Investments,null,null,null,null,null
+14197,Golub Capital,1400,Investments,null,null,null,null,null
+14199,Merrill Lynch Endowment Money Marke,1400,Investments,null,null,null,null,null
+14231,Greenhaven Wells Fargo,1400,Investments,null,null,null,null,null
+14232,Loomis Sayles Funds,1400,Investments,null,null,null,null,null
+14233,Northern Trust Pentwater,1400,Investments,null,null,null,null,null
+14234,Wellington CTF Global,1400,Investments,null,null,null,null,null
+14235,Harbor International Schwab,1400,Investments,null,null,null,null,null
+14236,Wells Fargo Kennedy Capital,1400,Investments,null,null,null,null,null
+14239,Schwab Gold Trust Spdr,1400,Investments,null,null,null,null,null
+14240,Schwab Vanquard Short Term Bond,1400,Investments,null,null,null,null,null
+14242,Quadrangle Capital Partners II LP,1400,Investments,null,null,null,null,null
+14246,Lehman Brothers REPP II,1400,Investments,null,null,null,null,null
+14247,American Securities,1400,Investments,null,null,null,null,null
+14250, Schwarb operating money market,1400,Investments,null,null,null,null,null
+14251,Schwab Federal Funds Operating,1400,Investments,null,null,null,null,null
+14252,American Securities Partners VI LP,1400,Investments,null,null,null,null,null
+14260,Charles Schwab Money Market,1400,Investments,null,null,null,null,null
+14290,SEG Blackwall Offshore Fd Ltd Equit,1400,Investments,null,null,null,null,null
+14298,Morgan Stanley Smith Barney:Evans,1400,Investments,null,null,null,null,null
+14370,Wintergreen Partners Offshore Fund,1400,Investments,null,null,null,null,null
+14380,NYC Media lab project,1401,Investments - other,null,null,null,null,null
+14390,Endowment interest receivable,1402,Accrued interest receivable,null,null,null,null,null
+14391,Endowment trade in transit,1403,Endowment trade in transit,null,null,null,null,null
+14450,Donated securities,1404,Investments - donated securities,null,null,null,null,null
+14760,Real estate,1405,Investments - real estate,null,null,null,null,null
+14780,Unrealized gain principal adjustmnt,1406,Investments - unrealized gains and losses,null,null,null,null,null
+15000,Land,1703,Land,null,null,SC119,Land,null
+15002,Air Rights,1704,Air Rights,null,null,SC005,Air rights,null
+15010,Buildings,1700,Buildings,null,null,SC018,Buildings,null
+15020,Equipment,1701,"Furniture, fixtures, and equipment",null,null,null,null,null
+15040,Accumulated depreciation,null,null,null,null,null,null,null
+15070,Construction in progress,1710,Construction in progress,null,null,null,null,null
+15100,Leasehold improvements,1702,Leasehold improvements,null,null,SC121,Leasehold improvements,null
+15210,Accum Deprec - Buildings,1750,Accumulated depreciation - buildings,null,null,null,null,null
+15220,Accum Deprec - Equipment,1751,"Accumulated depreciation - furniture, fixtures and equipment",null,null,null,null,null
+15295,Accum Deprec - L Improvemts,1752,Accumulated depreciation - leasehold improvements,null,null,null,null,null
+16020,Debt service fund,1600,Debt service fund,null,null,null,null,null
+16050,Construction Fund,1601,Debt construction fund,null,null,null,null,null
+16051,Market value adjustment,1602,Debt market value adjustment,null,null,null,null,null
+18000,Split interest real estate,1407,Investments - split interest,null,null,null,null,null
+18010,Split interest agreements receivbl.,1408,Investments - split interest receivable,null,null,null,null,null
+20000,Accounts payable accrual,2000,Accounts payable accrual,null,null,null,null,null
+20040,Student refunds clearing,2001,Student refunds clearing payable,null,null,null,null,null
+20050,Asset Retirement Liability,2002,Asset retirement liability payable,null,null,null,null,null
+20060,Accounts payable vendors,2003,Accounts payable,null,null,null,null,null
+20062,Accounts payable Fupload clearing,2003,Accounts payable,null,null,SC215,Accounts payable Fupload clearing,null
+20063,Concur direct deposit clearing,2004,Concur direct deposit clearing,null,null,null,null,null
+20064,Concur credit card clearing,2005,Concur credit card clearing,null,null,null,null,null
+20065,Concur check payment clearing,2006,Employee expense payable,null,null,null,null,null
+20070,Accrual FAS 106 post-retire liablty,2007,Accrual FAS106 post-retirement liability,null,null,null,null,null
+20080,Accrued interest payable,2008,Accrued interest payable,null,null,null,null,null
+20100,Accrued payroll,2009,Accrued Payroll,null,null,null,null,null
+20126,Perkins ECSI Clearing Account,2010,Clearing account Perkins,null,null,null,null,null
+20127,Perkins ECSI Suspense Account,2011,Suspense account Perkins,null,null,null,null,null
+20140,Vacation Accrual,2012,Vacation Accrual,null,null,null,null,null
+20190,Rental security deposits payable,2013,Rental security deposits payable,null,null,null,null,null
+20230,Nonresident alien withholding,2015,Nonresident alien tax withholding,null,null,null,null,null
+20240,Rent payable SFAS 13,2016,Rent lease payable FAS13,null,null,null,null,null
+20252,Alumni giving clearing,2065,Alumni giving clearing,null,null,null,null,null
+20253,Starrez Summer Clearing,2017,Starrez summer revenue clearing,null,null,null,null,null
+20254,Starrez Clearing,2018,Starrez deposit clearing,null,null,null,null,null
+20256,Deposit payable admissions,2019,Deposit payable admissions,null,null,null,null,null
+20257,Marketplace deposit clearing,2020,Marketplace deposit clearing,null,null,null,null,null
+20262,Prior year conversion clearing,2021,Student credit balances,null,null,null,null,null
+20270,Student credit balances,2021,Student credit balances,null,null,null,null,null
+20271,Student loan clearing,2022,Student loan clearing,null,null,null,null,null
+20275,Unclaimed checks,2023,Escheatment - Accounts payable,null,null,null,null,null
+20276,Unclaimed Payroll,2024,Escheatment - payroll,null,null,null,null,null
+20284,Admissions deposit payable,2025,Student admission deposit payable,null,null,null,null,null
+20285,Contracts clearing,2014,Unapplied student payments,null,null,null,null,null
+20286,Third party clearing,2014,Unapplied student payments,null,null,null,null,null
+20288,Unapplied admissions deposits,2014,Unapplied student payments,null,null,null,null,null
+20289,Unapplied exemptions,2014,Unapplied student payments,null,null,null,null,null
+20290,Unapplied financial aid,2014,Unapplied student payments,null,null,null,null,null
+20291,Unapplied payments,2014,Unapplied student payments,null,null,null,null,null
+20292,Unapplied security deposits,2014,Unapplied student payments,null,null,null,null,null
+20293,Unapplied loan proceed returns,2014,Unapplied student payments,null,null,null,null,null
+20294,Payment plan clearing,2014,Unapplied student payments,null,null,null,null,null
+20295,Unapplied contract payments,2014,Unapplied student payments,null,null,null,null,null
+20301,Loan return clearing,2026,Student loan return clearing,null,null,null,null,null
+20303,Sales tax payable,2027,Sales tax payable,null,null,null,null,null
+20305,Suspense contributions,2028,Contributions suspense,null,null,null,null,null
+20502,Payroll Clearing,2066,Payroll Clearing,null,null,null,null,null
+20503,Medical insurance,2029,Employee medical insurance,null,null,null,null,null
+20504,Dental insurance,2030,Employee dental insurance,null,null,null,null,null
+20505,Deferred comp plan 457(b) payable,2039,Deferred comp plan 457(b) liability,null,null,null,null,null
+20506,Deferred comp plan 457(f) payable,2031,Deferred compensation plan 457 (f) payable,null,null,null,null,null
+20507,FICA,2032,FICA tax withholding,null,null,null,null,null
+20508,Life insurance,2033,Employee life insurance,null,null,null,null,null
+20509,Long term disability insurance,2034,Long term disability insurance,null,null,null,null,null
+20512,Short term disability insurance,2035,Short term disability insurance,null,null,null,null,null
+20513,457(f) Executive retention,2036,Executive retention 457(f),null,null,null,null,null
+20601,TIAA-CREF EE/ER Contributions,2037,TIAA-CREF EE/ER contributions,null,null,null,null,null
+20606,Supplemental life,2038,Supplemental life,null,null,null,null,null
+20609,Deferred comp plan 457(b) liability,2039,Deferred comp plan 457(b) liability,null,null,null,null,null
+20610,Credit Union deduction,2040,Credit union deduction,null,null,null,null,null
+20611,Union dues Local 1205,2041,Union dues Local 1205,null,null,null,null,null
+20613,Union dues Local 32BJ,2042,Union dues Local 32BJ,null,null,null,null,null
+20614,Union dues Local 802,2043,Union dues Local 802,null,null,null,null,null
+20615,Union dues Actors Equity,2044,Union dues Actors Equity,null,null,null,null,null
+20616,HSA Oxford,2045,HSA Oxford,null,null,null,null,null
+20617,Local 94 deduction,2046,Local 94 deduction,null,null,null,null,null
+20618,Local 32BJ supplemental retirement,2047,Local 32BJ supplement retirement,null,null,null,null,null
+20620,FSA salary reduction,2048,FSA salary reduction,null,null,null,null,null
+20621,eTRAC salary reduction,2049,eTRAC salary reduction,null,null,null,null,null
+20624,32BJ political action contributions,2050,32BJ political action contributions,null,null,null,null,null
+20626,Federal taxes,2051,Federal taxes,null,null,null,null,null
+20627,State of New York taxes,2052,State of New York taxes,null,null,null,null,null
+20628,Local taxes,2053,Local taxes,null,null,null,null,null
+20629,Garnishments,2054,Garnishments,null,null,SC200,Garnishment,null
+20630,Executive gifts withheld,2055,Executive gifts withheld,null,null,null,null,null
+20638,ACT-UAW Local 7902 V-CAP contrib.,2056,ACT-UAW Local 7902 V-CAP contribution,null,null,null,null,null
+20639,ACT-UAW Local 7902 union dues,2057,ACT-UAW Local 7902 union dues,null,null,null,null,null
+20640,ACT-UAW Non-Union members Beck fees,2058,ACT-UAW Non-Union members Beck fees,null,null,null,null,null
+20641,Local 32BJ Security dues initiation,2042,Union dues Local 32BJ,null,null,null,null,null
+20642,Local 32BJ Security medical pension,2060,Local 32BJ Security medical pension,null,null,null,null,null
+20644,Local 1205 DRIVE,2061,Local 1205 DRIVE,null,null,null,null,null
+21000,Student loan refundable,2300,Student loan refundable,null,null,null,null,null
+22000,Deferred tuition revenue,2200,Deferred tuition revenue,null,null,null,null,null
+23010,Deferred revenue miscellaneous,2201,Deferred revenue miscellaneous,null,null,null,null,null
+23011,Deferred revenue housing,2202,Deferred revenue housing,null,null,null,null,null
+23020,Gift certificate deferred revenue,2207,Gift certificate deferred revenue,null,null,null,null,null
+23030,Deferred contract revenue,2203,Deferred contract revenue,null,null,null,null,null
+23032,Agency fund liability,2204,Student Agency fund liability,null,null,null,null,null
+23033,Direct loan prog revenue,2062,Direct loan program revenue,null,null,null,null,null
+23200,Pell/ACG revenue,2063,Pell/ACG revenue,null,null,null,null,null
+23201,Pell/ACG entitlement  payments,2064,Pell/ACG entitlement  payments,null,null,null,null,null
+23300,TAP entitlement program receipts,2205,TAP entitlement program receipts,null,null,null,null,null
+23301,TAP entitlement program payments,2206,TAP entitlement program payments,null,null,null,null,null
+26000,Bonds payable,2400,Bonds payable,null,null,null,null,null
+26010,Discount on bonds payable,2401,Discount on bonds payable,null,null,null,null,null
+26011,Premium on bonds payable,2402,Premium on bonds payable,null,null,null,null,null
+24000,Notes payable,2500,Notes payable,null,null,null,null,null
+40000,Unrestricted fund balance,3100,Retained Earnings - Prior Year,null,null,null,null,null
+40001,Appropriation & Appreciation,3100,Retained Earnings - Prior Year,null,null,null,null,null
+43000,Temporarily restricted fund balance,3100,Retained Earnings - Prior Year,null,null,null,null,null
+46000,Permanently restricted fund balance,3100,Retained Earnings - Prior Year,null,null,null,null,null
+50000,Undergraduate tuition Fall,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50010,Graduate tuition Fall,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50020,Continuing education tuition Fall,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50030,Maintenance of status fee Fall,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50040,Private lessons tuition Fall,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50060,Preparatory tuition Fall,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50200,Undergraduate tuition Prior Fall,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50210,Graduate tuition Prior Fall,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50220,Continuing ed. tuition Prior Fall,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50230,Maint. of status fee Prior Fall,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50240,Private lessons tuition Prior Fall,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50260,Preparatory tuition Prior Fall,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50300,Undergraduate tuition Future Fall,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50310,Graduate tuition Future Fall,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50320,Continuing ed. tuition Future Fall,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50330,Maint. of status fee Future Fall,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50340,Private lesson tuition Future Fall,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50360,Preparatory tuition Future Fall,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50400,Undergraduate tuition Spring,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50410,Graduate tuition Spring,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50420,Continuing eductn. tuition Spring,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50430,Maintenance of status fee Spring,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50440,Private lessons tuition Spring,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50460,Preparatory tuition Spring,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50500,Undergraduate tuition Prior Spring,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50510,Graduate tuition Prior Spring,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50520,Continuing ed tuition Prior Spring,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50530,Maint. of status fee Prior Spring,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50540,Prvt. lessons tuition Prior Spring,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50560,Preparatory tuition Prior Spring,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50600,Undergraduate tuition PS1,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50610,Graduate tuition PS1,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50620,Continuing education tuition PS1,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50630,Maintenance of status fee PS1,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50640,Private lessons tuition PS1,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50660,Preparatory tuition PS1,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50800,Undergraduate tuition CS1,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50810,Graduate tuition CS1,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50820,Continuing education tuition CS1,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50830,Maintenance of status fee CS1,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50840,Private lessons tuition CS1,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50860,Preparatory tuition CS1,4000,Tuition revenue,RC063,Tuition income,null,null,null
+50900,Deferred Tuition Revenue Adj,4000,Tuition revenue,RC063,Tuition income,null,null,null
+51400,Prior year tuition revenue,4000,Tuition revenue,RC063,Tuition income,null,null,null
+51500,Application fee,4100,Student fees,RC002,Application fees,null,null,null
+51501,Dossier Fee,4100,Student fees,RC046,Other student fees,null,null,null
+51510,Late registration fee,4100,Student fees,RC052,Registration fees,null,null,null
+51520,Transcript fee,4100,Student fees,RC046,Other student fees,null,null,null
+51530,Late graduation fee,4100,Student fees,RC046,Other student fees,null,null,null
+51540,Forfeited deposit,4100,Student fees,RC046,Other student fees,null,null,null
+51550,Other fee,4100,Student fees,RC046,Other student fees,null,null,null
+51560,Facility access fee,4100,Student fees,RC046,Other student fees,null,null,null
+51570,Box office / performance receipt,4721,Other income,RC004,Box Office/performance receipt,null,null,null
+51580,Audition fee,4100,Student fees,RC046,Other student fees,null,null,null
+51590,Audio studio recording fee,4100,Student fees,RC046,Other student fees,null,null,null
+51600,Library fine,4100,Student fees,RC046,Other student fees,null,null,null
+51610,Temporary fee,4100,Student fees,RC046,Other student fees,null,null,null
+51620,Late payment fee,4100,Student fees,RC046,Other student fees,null,null,null
+51630,Extended paymnt plan enrollment fee,4100,Student fees,RC015,Extended payment plan enrollment fee,null,null,null
+51640,Participation fee,4100,Student fees,RC046,Other student fees,null,null,null
+51641,Membership fee,4100,Student fees,RC041,Membership fees,null,null,null
+51650,University services fee Fall,4100,Student fees,RC060,Student registration fees,null,null,null
+51651,University services fee Spring,4100,Student fees,RC060,Student registration fees,null,null,null
+51652,University services fee PS1,4100,Student fees,RC060,Student registration fees,null,null,null
+51653,University services fee CS1,4100,Student fees,RC060,Student registration fees,null,null,null
+51656,University services fee Prior Fall,4100,Student fees,RC060,Student registration fees,null,null,null
+51657,University servcs fee Prior Spring,4100,Student fees,RC060,Student registration fees,null,null,null
+51658,University srvcs. fee Future Fall,4100,Student fees,RC060,Student registration fees,null,null,null
+51659,University srvcs fee Future Spring,4100,Student fees,RC060,Student registration fees,null,null,null
+51660,Student senate fee Fall,4101,Student Senate fees,RC061,Student Senate fees,null,null,null
+51661,Student senate fee Spring,4101,Student Senate fees,RC061,Student Senate fees,null,null,null
+51662,Student senate fee Prior Fall,4101,Student Senate fees,RC061,Student Senate fees,null,null,null
+51663,Student senate fee Prior Spring,4101,Student Senate fees,RC061,Student Senate fees,null,null,null
+51664,Student senate fee Future Fall,4101,Student Senate fees,RC061,Student Senate fees,null,null,null
+51665,Student senate fee Future Spring,4101,Student Senate fees,RC061,Student Senate fees,null,null,null
+51667,Agency Fund revenue offset,4101,Student Senate fees,RC061,Student Senate fees,null,null,null
+51668,Student senate fee PS,4101,Student Senate fees,RC061,Student Senate fees,null,null,null
+51669,Student senate fee CS,4101,Student Senate fees,RC061,Student Senate fees,null,null,null
+51670,Application fee Parsons,4100,Student fees,RC002,Application fees,null,null,null
+51671,Application fee NSGS,4100,Student fees,RC002,Application fees,null,null,null
+51672,Application fee NSSR,4100,Student fees,RC002,Application fees,null,null,null
+51673,Application fee Lang,4100,Student fees,RC002,Application fees,null,null,null
+51674,Application fee Milano,4100,Student fees,RC002,Application fees,null,null,null
+51675,Application fee Mannes,4100,Student fees,RC002,Application fees,null,null,null
+51676,Application fee Drama,4100,Student fees,RC002,Application fees,null,null,null
+51677,Application fee Jazz,4100,Student fees,RC002,Application fees,null,null,null
+51678,Application fee Guitar,4100,Student fees,RC002,Application fees,null,null,null
+51710,Parsons academic supplies Fall,4100,Student fees,RC001,Academic supplies fees,null,null,null
+51711,Parsons academic supplies Spring,4100,Student fees,RC001,Academic supplies fees,null,null,null
+51712,Parsons academic supplies PS1,4100,Student fees,RC001,Academic supplies fees,null,null,null
+51713,Parsons academic supplies CS1,4100,Student fees,RC001,Academic supplies fees,null,null,null
+51716,Parsons acad. supplies Prior Fall,4100,Student fees,RC001,Academic supplies fees,null,null,null
+51717,Parsons acad supplies Prior Spring,4100,Student fees,RC001,Academic supplies fees,null,null,null
+51718,Parsons acad. supplies Future Fall,4100,Student fees,RC001,Academic supplies fees,null,null,null
+51719,Parsons acad supplies Future Sprng,4100,Student fees,RC001,Academic supplies fees,null,null,null
+51750,Registration fees CE/GC Fall,4100,Student fees,RC052,Registration fees,null,null,null
+51751,Registration fees CE/GC Spring,4100,Student fees,RC052,Registration fees,null,null,null
+51752,Registration fees CE/GC PS1,4100,Student fees,RC052,Registration fees,null,null,null
+51753,Registration fees CE/GC CS1,4100,Student fees,RC052,Registration fees,null,null,null
+51756,Registration fees Prior Fall,4100,Student fees,RC052,Registration fees,null,null,null
+51757,Registration fees Prior Spring,4100,Student fees,RC052,Registration fees,null,null,null
+51758,Registration fees Future Fall,4100,Student fees,RC052,Registration fees,null,null,null
+51759,Registration fees Future Spring,4100,Student fees,RC052,Registration fees,null,null,null
+51850,NSGS division fee Fall,4100,Student fees,RC046,Other student fees,null,null,null
+51853,NSGS division fee Summer,4100,Student fees,RC046,Other student fees,null,null,null
+51851,NSGS division fee Spring,4100,Student fees,RC046,Other student fees,null,null,null
+51857,NSGS division fee Prior Spring,4100,Student fees,RC046,Other student fees,null,null,null
+51866,Parsons division fee Prior Fall,4100,Student fees,RC046,Other student fees,null,null,null
+52000,Scholarships,4200,Scholarships,RC057,Scholarships,null,null,null
+52001,Maintenance,4200,Scholarships,RC030,HEOP stipend,null,null,null
+52002,FS Scholarships transfer,4201,FS Scholarships transfer,RC057,Scholarships,null,null,null
+52610,Fee allowances non-employees,4202,Fee allowances,RC016,Fee allowances,null,null,null
+53000,Contributions,4300,Contributions revenue,RC022,Gift revenue,null,null,null
+53020,Contrbutions Other,4300,Contributions revenue,RC022,Gift revenue,null,null,null
+53030,Contributions pledge,4301,Pledge contributions revenue,RC048,Pledged gift revenue,null,null,null
+53031,Contributions present value adj.,4302,Contributions present value adjustment,RC048,Pledged gift revenue,null,null,null
+53032,Cntrbtns doubtful pledge allowance,4303,Contributions pledge allowance,RC048,Pledged gift revenue,null,null,null
+53040,Contributions property,4300,Contributions revenue,RC067,Contributions revenue - Property,null,null,null
+53050,Contributions stock,4300,Contributions revenue,RC022,Gift revenue,null,null,null
+53070,Donor designated trnsfr prior year,4304,Donor Designation change - prior years,RC022,Gift revenue,null,null,null
+53071,Resource Transfer,4305,Resource transfer,RC022,Gift revenue,null,null,null
+53091,Sponsored research revenue,4306,Sponsored research revenue,RC022,Gift revenue,null,null,null
+53092,Sponsored activity revenue,4307,Sponsored activity revenue,RC022,Gift revenue,null,null,null
+53093,Pledge payment,4308,Pledge payment contribution revenue,RC022,Gift revenue,null,null,null
+53095,Pledge payment stock,4308,Pledge payment contribution revenue,RC022,Gift revenue,null,null,null
+53096,Pledge pay-Grants,4308,Pledge payment contribution revenue,RC022,Gift revenue,null,null,null
+53097,Property pledge other,4300,Contributions revenue,RC067,Contributions revenue - Property,null,null,null
+53100,FS Contributions transfer,4309,FS contributions transfer,RC022,Gift revenue,null,null,null
+53200,New pledge allowance,4303,Contributions pledge allowance,RC048,Pledged gift revenue,null,null,null
+54000,Federal grants,4400,Grants revenue - federal,RC024,Grants - federal,null,null,null
+54002,Federal grants FS Transfer,4401,Federal grants FS transfer,RC018,Financial statement revenue transfer,null,null,null
+55000,State grants,4500,Grants revenue - state and local,RC027,Grants - state,null,null,null
+55100,Local grants,4500,Grants revenue - state and local,RC025,Grants - local,null,null,null
+55101,Local grants FS Transfer,4760,Local grants FS Transfer,RC018,Financial statement revenue transfer,null,null,null
+55130,Private grants,4300,Contributions Revenue,RC026,Grants - private,null,null,null
+55140,FS grants transfer,4501,FS grants transfer,RC018,Financial statement revenue transfer,null,null,null
+55200,Bundy grants,4500,Grants revenue - state and local,RC023,Grants - Bundy,null,null,null
+56000,Interest and dividend income,4640,Investment income - endowment,RC037,Interest income,null,null,null
+56010,Change in split interest,4740,Non-operating revenue,RC059,Split interest income,null,null,null
+56020,Endowment appropriation - operating,4620,Endowment appropriation operating,RC014,Endowment non-operating transfer,null,null,null
+56021,FS Endowment approp. - operating,4621,FS Endowment appropriation operating,RC014,Endowment non-operating transfer,null,null,null
+56030,Realized endowment gains (losses),4640,Investment income - endowment,RC050,Realized gain/loss,null,null,null
+56040,Unrealized endowment gains (losses),4640,Investment income - endowment,RC064,Unrealized gain/loss,null,null,null
+56043,Endowment appreciation allocated,4641,Endowment appreciation allocated,RC012,Endowment income,null,null,null
+56050,Transfer to cover endowment shortag,4642,Endowment appropriation,RC013,Endowment spending,null,null,null
+56101,FS Endow non-operating transfer,4643,FS Endowment non-operating transfer,RC014,Endowment non-operating transfer,null,null,null
+56500,Gain or loss on donated security,4710,Investment income,RC021,Gain/Loss on donated security,null,null,null
+56510,Interest from Perkins program,4710,Investment income,RC037,Interest income,null,null,null
+56520,Interest divdnd income non-endwmnt,4710,Investment income,RC008,Dividend income,null,null,null
+56530,Realized gain or loss non-endowment,4710,Investment income,RC050,Realized gain/loss,null,null,null
+56540,Unrealized gain or loss non-endwmnt,4710,Investment income,RC064,Unrealized gain/loss,null,null,null
+56590,Currency Exchange Gain/Loss,4711,Currency Exchange Gain/Loss,RC050,Realized gain/loss,null,null,null
+57000,Dormitory damage fees,4700,Dormitory revenue,RC009,Dormitory damage fees,null,null,null
+57010,Dormitory other fees,4700,Dormitory revenue,RC010,Dormitory other fees,null,null,null
+57030,Dormitory fees Fall,4700,Dormitory revenue,RC056,Room charge,null,null,null
+57031,Dormitory fees Prior Fall,4700,Dormitory revenue,RC056,Room charge,null,null,null
+57032,Dormitory fees Future Fall,4700,Dormitory revenue,RC056,Room charge,null,null,null
+57040,Dormitory fees Spring,4700,Dormitory revenue,RC056,Room charge,null,null,null
+57041,Dormitory fees Prior Spring,4700,Dormitory revenue,RC056,Room charge,null,null,null
+57050,Dormitory fees PS1,4700,Dormitory revenue,RC056,Room charge,null,null,null
+57060,Dormitory fees CS1,4700,Dormitory revenue,RC056,Room charge,null,null,null
+57500,Student Health insurance,5517,Student health insurance expense,null,null,SC178,Student health insurance expense,null
+57510,Health services fee,4701,Health services revenue,RC029,Health services fee,null,null,null
+57520,Health insurance co-payment,4701,Health services revenue,RC028,Health insurance co-payment,null,null,null
+57530,Agency revenue offset,4703,Agency revenue offset,null,null,null,null,null
+57550,Dining service revenue Fall,4702,Dining services revenue,RC040,Meal plan fee,null,null,null
+57551,Dining service revenue Spring,4702,Dining services revenue,RC040,Meal plan fee,null,null,null
+57552,Dining service revenue PS1,4702,Dining services revenue,RC040,Meal plan fee,null,null,null
+57553,Dining service revenue CS1,4702,Dining services revenue,RC040,Meal plan fee,null,null,null
+57556,Dining service revenue Prior Fall,4702,Dining services revenue,RC040,Meal plan fee,null,null,null
+57557,Dining service revenue Future Fall,4702,Dining services revenue,RC040,Meal plan fee,null,null,null
+57558,Dining service revenue Prior Spring,4702,Dining services revenue,RC040,Meal plan fee,null,null,null
+57559,Dining srvc revenue Future Spring,4702,Dining services revenue,RC040,Meal plan fee,null,null,null
+57560,Dining Dollars Student,4702,Dining services revenue,RC044,New card cash,null,null,null
+57600,Food service commissions,4702,Dining services revenue,RC020,Food service commission,null,null,null
+57610,Coin operated machine revenue,4702,Dining services revenue,RC065,Vending machine revenue,null,null,null
+58000,Audio studio recording revenue,4721,Other income,RC003,Audio studio recording income,null,null,null
+58010,Contract revenue,4600,Contract revenue,RC006,Commercial contracts,null,null,null
+58011,Private SubContract revenue,4600,Contract revenue,RC062,Subcontract revenue,null,null,null
+58020,Journal sales revenue,4721,Other income,RC038,Journal sales revenue,null,null,null
+58030,Sales revenue other,4721,Other income,RC045,Other sales revenue,null,null,null
+58031,Marketplace Sales,4721,Other income,RC039,Marketplace revenue,null,null,null
+58040,FS Other Income transfer,4721,Other income,RC017,Financial statement other income transfer,null,null,null
+59000,Auditorium rental,4721,Other income,RC066,Venue leasing income,null,null,null
+59020,Lease rental income,4721,Other income,RC007,Commercial leasing income,null,null,null
+59021,Other Venue Leasing Income,4721,Other income,RC066,Venue leasing income,null,null,null
+59030,Rental income residential PS,4721,Other income,RC055,Residential leasing income,null,null,null
+59031,Rental income residential CS,4721,Other income,RC055,Residential leasing income,null,null,null
+59032,Rental income residential FA,4721,Other income,RC055,Residential leasing income,null,null,null
+59300,Indirect cost recovery Federal,4720,Indirect cost recovery,RC033,Indirect Cost Recovery - Federal,null,null,null
+59310,Indirect cost recovery CWSP,4720,Indirect cost recovery,RC032,Indirect Cost Recovery - CWSP,null,null,null
+59320,Indirect cost recovery Perkins,4720,Indirect cost recovery,RC034,Indirect Cost Recovery - Perkins,null,null,null
+59330,Indirect cost recovery Private,4720,Indirect cost recovery,RC035,Indirect Cost Recovery - Private,null,null,null
+59340,Indirect cost recovery SEOG,4720,Indirect cost recovery,RC036,Indirect Cost Recovery - SEOG,null,null,null
+59530,Vendor adjustments and rebates,4721,Other income,RC051,Rebates and commissions,null,null,null
+59540,Miscellaneous income,4721,Other income,RC043,Miscellaneous income,null,null,null
+59541,Miscellaneous income - suspense,4721,Other income,RC031,Income clearing account,null,null,null
+59550,Perkins penalty and fee revenue,4721,Other income,RC047,Perkins income,null,null,null
+59560,Educational departments rev,4721,Other income,RC011,Educational services income,null,null,null
+59580,Indirect cost revenue,4720,Indirect cost recovery,RC068,Indirect cost recovery - other,null,null,null
+59583,Recreation revenue,4721,Other income,RC042,Merchandise sales revenue,null,null,null
+59600,Claims Settlement,4721,Other income,RC005,Claims and legal settlements,null,null,null
+59800,Release unrestricted transfer,4730,Release of restrictions - operating,RC054,Release of restriction,null,null,null
+59811,Release temp. restrctd. transfr.,4730,Release of restrictions - operating,RC054,Release of restriction,null,null,null
+59830,Non-operating Net Asset release,4770,Release of restrictions - nonoperating,RC054,Release of restriction,null,null,null
+59831,Non-operating Net Asset release UR,4770,Release of restrictions - nonoperating,RC054,Release of restriction,null,null,null
+59840,FS Net Asset release operating,4730,Release of restrictions - operating,RC054,Release of restriction,null,null,null
+59900,Post retirement gain/loss,4740,Non-operating revenue,RC049,Post retirement income,null,null,null
+59902,Endowment appropriation non-op,4660,Endowment appropriation non-operating,RC013,Endowment spending,null,null,null
+59904,Non-operating contribution FS,4750,Non-operating contribution FS,RC014,Endowment non-operating transfer,null,null,null
+59905,FS Endowment approp. non-op,4751,Endowment Appropriation Non-Operating - Contra Account,RC014,Endowment non-operating transfer,null,null,null
+59910,Sale of fixed asset gain or loss,4780,Non-operating revenue - asset gain/loss,RC019,Fixed asset gain/loss,null,null,null
+60000,Administrative salaries,5000,Administrative Salaries,null,null,null,null,null
+60300,Principal Full time faculty,5001,Principal full-time faculty salaries,null,null,null,null,null
+60305,Faculty academic administrators,5001,Principal full-time faculty salaries,null,null,null,null,null
+60310,Part time faculty,5020,Part-time faculty salaries- union (Local 7902 and 802),null,null,null,null,null
+60320,Half time faculty,5001,Principal full-time faculty salaries,null,null,null,null,null
+60325,FACSUP non contractual instruction,5010,FACSUP non-contractual instruction,null,null,null,null,null
+60330,Part time teaching staff,5021,Part-time faculty salaries- non-union,null,null,null,null,null
+60340,Part-time faculty additional duties,5025,Part-time faculty additional duties,null,null,null,null,null
+60341,Part-time faculty leaves,5026,Part-time faculty leaves,null,null,null,null,null
+60350,Part-time faculty remedies,5027,Part-time faculty remedies,null,null,null,null,null
+60360,Associate FT Faculty,5002,Full-time faculty fixed term non-renewable salaries,null,null,null,null,null
+60370,FT Faculty Fellows,5003,Full-time faculty fellows salaries,null,null,null,null,null
+60380,FACSUP non contractual supp salary,5011,FACSUP non-contractual supplemental salary,null,null,null,null,null
+60381,FACSUP non contractual projects,5012,FACSUP non-contractual projects,null,null,null,null,null
+60382,FACSUP housing relocation,5013,FACSUP housing relocation,null,null,null,null,null
+60390,PT Faculty substitution pay,5028,Part-time faculty substitution pay,null,null,null,null,null
+60600,Full time clerical wages non-union,5000,Administrative Salaries,null,null,null,null,null
+60610,Part time clerical wages non-union,5000,Administrative Salaries,null,null,null,null,null
+60620,Full time clerical wages union,5045,Full-time clerical union regular time,null,null,null,null,null
+60625,Part time clerical wages union,5046,Part-time clerical union regular time,null,null,null,null,null
+60630,Clerical wages overtime,5047,Clerical union overtime,null,null,null,null,null
+60900,Technician wages full time,5040,Full-time technician salaries,null,null,null,null,null
+60910,Technician wages part time,5041,Part-time technician salaries,null,null,null,null,null
+61200,Maintenance wages regular time,5050,Maintenance wages-regular time,null,null,null,null,null
+61210,Maintenance wages overtime,5051,Maintenance wages-over time,null,null,null,null,null
+61500,Security wages regular time,5055,Security wages- regular time,null,null,null,null,null
+61510,Security wages overtime,5056,Security wages- over time,null,null,null,null,null
+61800,Research assistant,5060,Research Assistants,null,null,null,null,null
+61810,Teaching Assistant,5061,Teaching Assistants,null,null,null,null,null
+61820,Teaching Fellows,5062,Teaching Fellows,null,null,null,null,null
+61830,Course Academic Planning Assistant,5063,Course Academic Planning Assistants,null,null,null,null,null
+61840,Publications Archive Assistant,5064,Publications Archive Assistants,null,null,null,null,null
+61850,Project Technical Assistant,5065,Project Technical Assistants,null,null,null,null,null
+62100,RA/TA institutional aid,5070,Other student wages,null,null,null,null,null
+62400,Student advisor,5066,Student Advisors,null,null,null,null,null
+62700,Non-qual Schol/Fellowships/stipends,5070,Other student wages,null,null,null,null,null
+63000,Student wages,5070,Other student wages,null,null,null,null,null
+63300,Tutor Generalist Specialist,5067,Tutors,null,null,null,null,null
+63600,Accompanists wages,5075,Accompanists Wages,null,null,null,null,null
+63610,Agency and other office temp fees,5077,Miscellaneous non-teaching wages,null,null,null,null,null
+63615,Miscellaneous faculty compensation,5076,Miscellaneous faculty compensation,null,null,null,null,null
+63620,Miscellaneous non-teaching wages,5077,Miscellaneous non-teaching wages,null,null,null,null,null
+63630,Models wages,5078,Models wages,null,null,null,null,null
+63640,Orchestra fill-in ringers wages,5077,Miscellaneous non-teaching wages,null,null,null,null,null
+63650,Registration temporary wages,5077,Miscellaneous non-teaching wages,null,null,null,null,null
+63660,Salary separation expense,5079,Salary Separation expense,null,null,null,null,null
+63670,External salary expense,5077,Miscellaneous non-teaching wages,null,null,null,null,null
+63671,Faculty course buyout,5098,Faculty course buyout,null,null,null,null,null
+63672,Salary expense transfer,5099,Salary expense transfer,null,null,null,null,null
+63673,Wireless celluar device allowance,5080,Wireless cellular device allowance,null,null,null,null,null
+63900,Undistributed salary pool,5081,Undistributed salary pool,null,null,null,null,null
+63910,Undistributed vacancy savings,5082,Undistributed vacancy savings,null,null,null,null,null
+66000,Employers share FICA,5100,Employee Benefits,null,null,null,null,null
+66100, Employers share MCTMT,5101,Employers share MCTMT,null,null,null,null,null
+66400,TIAA-CREF employer contribution,5110,TIAA-CREF employer contribution,null,null,null,null,null
+66410,TIAA-CREF part time faculty,5111,TIAA-CREF part time faculty,null,null,null,null,null
+66420,TIAA-CREF part time teaching staff,5102,TIAA-CREF part time teaching staff,null,null,null,null,null
+66500,Deferred comp plan 457(f) expense,5112,Deferred comp plan 457(f) expense,null,null,null,null,null
+66600,Basic life and A.D.&D.,5113,Basic life and A.D.&D.,null,null,null,null,null
+67000,Long term disability,5114,Long term disability,null,null,null,null,null
+67200,Unemployment insurance,5115,Unemployment insurance,null,null,SC202,Unemployment Insurance,null
+67400,Workers compensation insurance,5116,Workers compensation insurance,null,null,SC203,Worker Compensation Insurance,null
+67600,Short-term disability insurance,5117,Short-term disability insurance,null,null,SC204,Short-term disability insurance,null
+67601,Short-term disability ins. reimb.,5118,Short-term disability insurance reimbursement,null,null,null,null,null
+67800,International medical insurance,5120,International medical insurance,null,null,SC205,International Medical Insurance,null
+67821, Health Insurance charter,5123,Health Insurance charter,null,null,null,null,null
+67822,Health Insurance Passport,5121,Health Insurance Passport,null,null,null,null,null
+67850,Employee Health Insurance,5122,Employee Health Insurance,null,null,null,null,null
+68011,Delta Dental POS,5130,Delta Dental POS,null,null,null,null,null
+68012,Delta Dental HMO,5131,Delta Dental HMO,null,null,null,null,null
+68221,Health Insur. Charter - cost share,5198,Health Insurance Charter - cost share,null,null,null,null,null
+68410,Local 32BJ health fund,5140,Local 32BJ health fund,null,null,null,null,null
+68415,Local 32BJ Security medical,5141,Local 32BJ Security medical,null,null,null,null,null
+68430,Local 1205 health welfare,5142,Local 1205 health welfare,null,null,null,null,null
+68450,Theatrical unions health,5143,Theatrical unions health,null,null,null,null,null
+68460,Local 94 Health and Welfare,5144,Local 94 Health and Welfare,null,null,null,null,null
+68610,Local 32BJ annuity fund,5145,Local 32BJ annuity fund,null,null,null,null,null
+68620,Local 32BJ pension fund,5146,Local 32BJ pension fund,null,null,null,null,null
+68625,Local 32BJ Security pension fund,5147,Local 32BJ Security pension fund,null,null,null,null,null
+68626,Local 32BJ Security training fund,5148,Local 32BJ Security training fund,null,null,null,null,null
+68630,Local 802 pension,5149,Local 802 pension,null,null,null,null,null
+68640,Local 1205 pension,5150,Local 1205 pension,null,null,null,null,null
+68660,Theatrical unions pension,5151,Theatrical unions pension,null,null,null,null,null
+68670,Local 829 United Scenic Artists,5152,Local 829 United Scenic Artists,null,null,SC208,Local 829 United Scenic Artist,null
+68680,Local 94 Pension fund,5153,Local 94 Pension fund,null,null,null,null,null
+68800,COBRA reimbursement,5170,COBRA reimbursement,null,null,SC197,EBPA,null
+68810,College Tuition Fund,5171,College Tuition Reimbursement,null,null,null,null,null
+68815,Tuition remission,5172,Tuition remission,null,null,SC246,Tuition Remission,null
+68820,Compensated absences,5173,Compensated absences,null,null,null,null,null
+68830,Faculty children fund,5174,Faculty children fund,null,null,null,null,null
+68840,FASB 106 expenses,5175,FASB 106 expenses,null,null,null,null,null
+68850,Flex benefits,5176,Other Employee Benefits,null,null,SC201,Flex Benefit,null
+68855,Transportation benefits,5176,Other Employee Benefits,null,null,SC198,Transportation Benefits,null
+68860,Part time & misc benefit reimbrsmnt,5176,Other Employee Benefits,null,null,null,null,null
+68870,Staff benefits and tax distribution,5179,Staff benefits and tax distribution,null,null,null,null,null
+68872,Health insurance rebate,5180,Health insurance rebate,null,null,null,null,null
+68873,Fringe expense transfer,5181,Fringe expense transfer,null,null,null,null,null
+69999,Labor dist. override error suspense,5199,Labor distribution override error suspense,null,null,null,null,null
+70000,Supplies & materials,5200,Supplies and materials,null,null,SC001,Academic Supplies,Academic Supplies
+70010,Computer supplies excldng software,5200,Supplies and materials,null,null,SC068,Computer supplies excluding software,Computer supplies excluding software
+70020,Office supplies,5200,Supplies and materials,null,null,SC138,Office Supplies,Office supplies
+70030,Audio visual hardware,5510,Audio visual equipment,null,null,SC010,Audio visual supplies,Audio visual supplies
+70040,Advertising & promotion,5224,Advertising and promotion,null,null,SC002,Advertising and promotional material and supplies,Advertising and promotional material and supplies
+70200,Computer hardware capital,5511,"Computer hardware, software, fees & maintenance",null,null,SC064,Computer hardware,Computer hardware
+70201,Computer hardware < $1000,5511,"Computer hardware, software, fees & maintenance",null,null,SC064,Computer hardware,Computer hardware
+70210,Computer hardware maintenance,5511,"Computer hardware, software, fees & maintenance",null,null,SC065,Computer hardware maintenance,Computer hardware maintenance
+70220,"Computer hardware,software & fees",5511,"Computer hardware, software, fees & maintenance",null,null,SC066,Computer software,Computer software
+70230,Computer software maintenance,5511,"Computer hardware, software, fees & maintenance",null,null,SC067,Computer software maintenance,Computer software maintenance
+70231,Internet service fees,5201,Telecommunications equipment and services,null,null,SC117,Internet services,Internet services
+70300,Audio visual hardware capital,5510,Audio visual equipment,null,null,SC009,Audio Equipment,null
+70301,Audio visual hardware < $1000,5510,Audio visual equipment,null,null,SC009,Audio Equipment,null
+70400,Building supplies & materials,5500,Building supplies and materials,null,null,SC022,Building supplies,Building supplies
+70410,Building materials,5500,Building supplies and materials,null,null,SC020,Building materials,Building materials
+70600,Postage & mailing,5202,Postage and mailing,null,null,SC151,"Postage, standard (bulk rate)",null
+70610,Business reply postage,5202,Postage and mailing,null,null,SC149,"Postage, business reply",null
+70620,Delivery and mail services,5202,Postage and mailing,null,null,SC080,Delivery and mail services,Delivery and mail services
+70630,Postage (1st class int'l & other),5202,Postage and mailing,null,null,SC148,"Postage, 1st class, international, other",Postage
+70640,First class postage distribution,5202,Postage and mailing,null,null,SC152,Postage distribution,null
+70650,Periodicals (2nd class) postage,5202,Postage and mailing,null,null,SC150,"Postage, periodicals (2nd class)",null
+70800,Telephone distribution,5201,Telecommunications equipment and services,null,null,SC187,Telephone usage,Telephone usage
+70810,Telephone equipment,5201,Telecommunications equipment and services,null,null,SC186,Telephone equipment,Telephone equipment
+70820,"Telephone, cable, service & fees",5201,Telecommunications equipment and services,null,null,SC187,Telephone usage,Telephone usage
+70830,Cellular telephone equipment,5201,Telecommunications equipment and services,null,null,SC060,Cellular telephone equipment,Cellular telephone equipment
+70840,Cellular telephone usage,5201,Telecommunications equipment and services,null,null,SC061,Cellular telephone usage,Cellular telephone usage
+70850,Local access transport T3 T1 trunk,5201,Telecommunications equipment and services,null,null,SC136,Networking equipment & services,Networking equipment & services
+70870,Telephone moves adds changes,5201,Telecommunications equipment and services,null,null,SC187,Telephone usage,Telephone usage
+70880,Radio telephone equipment,5201,Telecommunications equipment and services,null,null,SC157,Radio equipment & services,null
+70890,Networking equipment,5201,Telecommunications equipment and services,null,null,SC136,Networking equipment & services,Networking equipment & services
+71000,Utilities,5203,Utilities,null,null,SC088,Electric utility,null
+71010,Fuel utility,5203,Utilities,null,null,SC105,Fuel utility,null
+71020,Gas utility,5203,Utilities,null,null,SC107,Gas utility,null
+71030,Steam utility,5203,Utilities,null,null,SC175,Steam utility,null
+71040,Water utility,5203,Utilities,null,null,SC194,Water utility,null
+71200,Cleaning services,5204,Cleaning services and supplies,null,null,SC062,Cleaning services,Cleaning services
+71210,Cleaning services special,5204,Cleaning services and supplies,null,null,SC062,Cleaning services,Cleaning services
+71211,Cleaning supplies,5204,Cleaning services and supplies,null,null,SC063,Cleaning supplies,Cleaning supplies
+71212,Uniforms,5204,Cleaning services and supplies,null,null,SC191,Uniforms,Uniforms
+71400,Carting & trash services,5205,Carting and trash services,null,null,SC057,Carting & trash removal service contract,null
+71410,Carting trash removal special,5205,Carting and trash services,null,null,SC056,Carting & trash removal,null
+71600,Outside security services,5215,Professional and freelance services,null,null,SC154,Professional & freelance services,Professional & freelance services
+71610,Security system hardware capital,5206,Security systems and services,null,null,SC164,Security system hardware,null
+71611,Security systems < $1000,5206,Security systems and services,null,null,SC166,Security system software,null
+71612,"Security systems, services & fees",5206,Security systems and services,null,null,SC162,Security services,null
+71720,Equipment,5220,Furniture & equipment,null,null,SC137,Office Equipment,null
+72100,Equipment lease payments,5216,Equipment leasing and rental,null,null,SC092,Equipment lease,null
+72110,Space rental,5207,Space lease and rental,null,null,SC173,Space rental,Space rental
+72111,Space lease & rental miscellaneous,5207,Space lease and rental,null,null,SC169,Space lease,Space lease
+72112,Space lease & rental escalation,5207,Space lease and rental,null,null,SC170,Space lease escalation charges,null
+72120,Storage & rentals charges,5219,Moving storage and rental charges,null,null,SC177,Storage,Storage
+72130,Rentals: film prprty eqpmnt sppls,5219,Moving storage and rental charges,null,null,SC159,Record retention,Record retention
+72300,"Fees, permits, & penalties",5540,"Fees, permits, taxes, and penalties",null,null,SC100,Fees,null
+72301,Permits,5540,"Fees, permits, taxes, and penalties",null,null,SC145,Permits,Permits
+72302,Penalties,5540,"Fees, permits, taxes, and penalties",null,null,SC139,Penalties,null
+72310,Non-real estate taxes,5540,"Fees, permits, taxes, and penalties",null,null,SC184,Taxes other than real estate,null
+72320,Real estate taxes,5208,Real Estate taxes,null,null,SC158,Real estate taxes,null
+72500,Design,5223,"Printing, duplicating, digitizing",null,null,SC153,Printing,Printing
+72510,"Printing, duplicating, digitizing",5223,"Printing, duplicating, digitizing",null,null,SC081,Digitizing,null
+72520,Duplicating & printing distribution,5223,"Printing, duplicating, digitizing",null,null,SC085,Duplicating,Duplicating
+72530,Printing,5223,"Printing, duplicating, digitizing",null,null,SC153,Printing,Printing
+73000,Travel,5300,Travel,null,null,SC190,Travel,Airfare
+73000,Travel,5300,Travel,null,null,SC190,Travel,Airline fees
+73000,Travel,5300,Travel,null,null,SC190,Travel,Bus
+73000,Travel,5300,Travel,null,null,SC190,Travel,Car rental
+73000,Travel,5300,Travel,null,null,SC190,Travel,Gasoline
+73000,Travel,5300,Travel,null,null,SC190,Travel,Limousine and car service
+73000,Travel,5300,Travel,null,null,SC190,Travel,Parking
+73000,Travel,5300,Travel,null,null,SC190,Travel,Personal car mileage
+73000,Travel,5300,Travel,null,null,SC190,Travel,Subway
+73000,Travel,5300,Travel,null,null,SC190,Travel,Taxi
+73000,Travel,5300,Travel,null,null,SC190,Travel,Tolls
+73000,Travel,5300,Travel,null,null,SC190,Travel,Train
+73001,Lodging,5301,Lodging,null,null,SC124,Lodging,Hotel
+73002,Meals & entertainment,5302,Meals & Entertainment,null,null,SC128,Meals & entertainment,Breakfast
+73002,Meals & entertainment,5302,Meals & Entertainment,null,null,SC128,Meals & entertainment,Dinner
+73002,Meals & entertainment,5302,Meals & Entertainment,null,null,SC128,Meals & entertainment,Lunch
+73003,Per diem,5302,Meals & Entertainment,null,null,SC140,Per diem,Per diem
+73100,Third party reimbursed housing,5209,Third Party Reimbursed Housing,null,null,SC189,Third party reimbursed housing,null
+73300,"Workshop, conference, events",5320,"Workshop, Conference, Event Tickets, Registration",null,null,SC195,"Workshop, conference, event tickets, registration",Conference registration
+73300,"Workshop, conference, events",5320,"Workshop, Conference, Event Tickets, Registration",null,null,SC195,"Workshop, conference, event tickets, registration",Event tickets
+73300,"Workshop, conference, events",5320,"Workshop, Conference, Event Tickets, Registration",null,null,SC195,"Workshop, conference, event tickets, registration",Workshop registration
+73500,Catering,5550,Catering,null,null,SC059,Catering,Catering
+73700,Relocation expense,5219,Moving storage and rental charges,null,null,null,null,null
+73800,Professional development & training,5430,Professional Development and Training,null,null,SC174,Staff training expense,Staff training expense
+73900,"Dues, subscriptions & memberships",5514,"Dues, subscriptions and memberships",null,null,SC084,Dues and memberships,Dues and memberships
+73910,Subscriptions,5514,"Dues, subscriptions and memberships",null,null,SC182,Subscriptions,Subscriptions
+75700,Independent contractors,5215,Professional and freelance services,null,null,SC113,Independent contractors,null
+75710,Honoraria,5432,Honoraria & Guest Lecturers,null,null,SC110,Honoraria,null
+75720,Faculty development fees,5430,Professional development and training,null,null,SC098,Faculty development costs,Faculty development costs
+75730,Honoraria and fees,5432,Honoraria & Guest Lecturers,null,null,SC110,Honoraria,null
+75740,Subject and patient costs,5433,Subject and patient costs,null,null,SC181,Subject and patient costs,Subject and patient costs
+75750,"Stipends, fellowships, awards",5910,"Stipends, fellowships, awards",null,null,SC176,"Stipend, fellowship, award","Stipend, fellowship, award"
+76300,Annual catalogs,5224,Advertising and promotion,null,null,SC007,Annual catalogs,null
+76310,CE Publication,5224,Advertising and promotion,null,null,SC071,Continuing education publications,null
+76360,Mailing lists,5224,Advertising and promotion,null,null,SC126,Mailing list purchase,null
+76370,Promotional publications,5224,Advertising and promotion,null,null,SC002,Advertising and promotional material and supplies,Advertising and promotional material and supplies
+76500,Advertising discounts,5224,Advertising and promotion,null,null,SC003,Advertising discounts,null
+76510,Promotional advertising,5224,Advertising and promotion,null,null,SC002,Advertising and promotional material and supplies,Advertising and promotional material and supplies
+76540,Direct Mail,5224,Advertising and promotion,null,null,SC082,Direct Mail,null
+76550,Promotional merchandise for sale,5225,Promotional merchandise for sale,null,null,SC155,Promotional merchandise for sale,Promotional merchandise for sale
+76560,Photography/Video Equipment,5510,Audio visual equipment,null,null,SC146,Photographic equipment,null
+76700,Furniture & equipment,5220,"Furniture, fixtures and equipment",null,null,SC106,Furniture,null
+76710,Furniture & equipment capital,5220,"Furniture, fixtures and equipment",null,null,SC106,Furniture,null
+76900,Perkins capital contribution,5912,Perkins capital contribution,null,null,null,null,null
+76910,CWSP capital contribution,5906,CWSP capital contribution,null,null,SC078,CWSP capital contribution,null
+76911,Federal Cost Share,5907,Federal cost share,null,null,SC099,Federal cost share,null
+76920,SEOG capital contribution,5908,SEOG capital contribution,null,null,SC167,SEOG capital contribution,null
+77400,"Music, instrument rental & repairs",5562,"Music, instrument purchase, rental and repairs",null,null,SC133,Musical instruments,Musical instruments
+77410,"Instrument purchase< 1,000",5562,"Music, instrument purchase, rental and repairs",null,null,SC131,Musical instrument rental,Musical instrument rental
+77420,Instrument repairs,5562,"Music, instrument purchase, rental and repairs",null,null,SC132,Musical instrument repairs,Musical instrument repairs
+77430,Music purchase,5562,"Music, instrument purchase, rental and repairs",null,null,SC134,Music purchase,Music purchase
+77440,Music rental,5562,"Music, instrument purchase, rental and repairs",null,null,SC135,Music rental,Music rental
+77450,"Music, instrument purchase capital",5562,"Music, instrument purchase, rental and repairs",null,null,SC133,Musical instruments,Musical instruments
+77600,Art acquisition,5564,Art acquisition,null,null,SC008,Art Acquisition,Art acquisition
+77610,"Book, periodical, media acquisition",5519,"Book, periodical, media acquisition",null,null,SC017,Book binding and conservation,Book binding and conservation
+77620,Books acquisition,5519,"Book, periodical, media acquisition",null,null,SC016,Book acquistion,null
+77630,Book binding and conservation,5519,"Book, periodical, media acquisition",null,null,SC017,Book binding and conservation,Book binding and conservation
+77640,Journal subscriptions,5519,"Book, periodical, media acquisition",null,null,SC141,Periodicals acquisition,Periodicals acquisition
+77650,Library consortium expense,5520,Library consortium expense,null,null,SC123,Library consortium payments,null
+77660,Multimedia acquisition,5519,"Book, periodical, media acquisition",null,null,SC130,Multimedia acquisition,Multimedia acquisition
+77670,Electronic resources acquisition,5519,"Book, periodical, media acquisition",null,null,SC130,Multimedia acquisition,Multimedia acquisition
+77800,Capital lease interest expense,5401,Interest expense - Debt,null,null,SC116,Interest expense,null
+77810,External debt interest expense,5401,Interest expense - Debt,null,null,SC116,Interest expense,null
+77820,Internal debt amortization,5401,Interest expense - Debt,null,null,SC116,Interest expense,null
+77840,Interest expense other,5401,Interest expense - Debt,null,null,SC116,Interest expense,null
+77850,Bond premium discount amortization,5404,Amortization of deferred costs,null,null,SC015,Bond premium and discount amortization,null
+77860,Loss on Debt Refinancing,5405,FS reporting,null,null,SC125,Loss on debt refinancing,null
+78000,Indirect costs,5560,Indirect costs,null,null,SC114,Indirect costs,null
+78010,Perkins indirect cost,5526,Perkins loan expense,null,null,SC143,Perkins indirect cost,null
+78020,Maintenance chargebacks,5221,Repairs and maintenance,null,null,SC127,Maintenance chargeback,null
+78030,Security chargebacks,5206,Security equipment and services,null,null,SC161,Security chargeback,null
+78040,Allocation/capitalization,5410,Depreciation and Amortization,null,null,SC006,Allocation/capitalization,null
+78041,Building Disposition and Impairment,5213,Fixed Asset disposition and impairment,null,null,SC019,Building disposition and impairment,null
+78200,Bad debt write-off expense,5513,Bad Debt write-off expense,null,null,SC012,Bad debt expense,null
+78210,Collection fees,5523,Collection fees,null,null,SC188,Third party collection fees,null
+78300,Electrical repairs,5221,Repairs and maintenance,null,null,SC087,Electrical repairs,Electrical repairs
+78301,Elevator minor repair,5221,Repairs and maintenance,null,null,SC089,Elevator repairs,null
+78302,Elevator service contract,5221,Repairs and maintenance,null,null,SC090,Elevator service contract,null
+78303,Equipment repairs and maintenance,5221,Repairs and maintenance,null,null,SC094,Equipment repairs and maintenance,Equipment repairs and maintenance
+78304,Exterminator service contract,5221,Repairs and maintenance,null,null,SC097,Exterminator service contract,null
+78305,Fire alarm service contract,5221,Repairs and maintenance,null,null,SC103,Fire alarm service contract,null
+78306,Heating cooling service contract,5221,Repairs and maintenance,null,null,SC112,HVAC service contract,null
+78307,HVAC repair and maintenance,5221,Repairs and maintenance,null,null,SC111,HVAC repairs,null
+78308,HVAC service contract,5221,Repairs and maintenance,null,null,SC112,HVAC service contract,null
+78309,Landscaping service contract,5221,Repairs and maintenance,null,null,SC120,Landscaping service contract,null
+78310,Plumbing repairs,5221,Repairs and maintenance,null,null,SC147,Plumbing repairs,Plumbing repairs
+78311,Other repairs,5221,Repairs and maintenance,null,null,null,null,null
+78312,Service contracts,5221,Repairs and maintenance,null,null,null,null,null
+78313,Uniform service contract,5221,Repairs and maintenance,null,null,SC192,Uniform service contract,null
+78314,Repairs & maintenance,5221,Repairs and maintenance,null,null,SC021,Building repairs,Building repairs
+78315,Elevator major repair,5221,Repairs and maintenance,null,null,SC089,Elevator repairs,null
+78316,Fire alarm repair,5221,Repairs and maintenance,null,null,SC102,Fire alarm repair,null
+78317,Heating cooling minor repair,5221,Repairs and maintenance,null,null,SC111,HVAC repairs,null
+78319,HVAC major repairs,5221,Repairs and maintenance,null,null,SC111,HVAC repairs,null
+78320,HVAC minor repairs,5221,Repairs and maintenance,null,null,SC111,HVAC repairs,null
+78322,Kitchen equipment repairs,5221,Repairs and maintenance,null,null,SC118,Kitchen equipment repairs,null
+78323,Signage,5221,Repairs and maintenance,null,null,SC168,Signage,Signage
+78324,Repairs & maintenance capital,5221,Repairs and maintenance,null,null,SC021,Building repairs,Building repairs
+78325,Fixed Asset Disposal Loss,5213,Fixed Asset disposition and impairment,null,null,SC019,Building disposition and impairment,null
+78500,Condominium expense share,5214,Condominium expense share,null,null,SC069,Condominium expense share,null
+78502,Contribution expense,5570,Miscellaneous expenses,null,null,SC129,Miscellaneous expense,null
+78503,Employment advertising fees,5215,Professional and freelance services,null,null,SC091,Employment advertising fees,null
+78504,Miscellaneous expense,5570,Miscellaneous expenses,null,null,SC129,Miscellaneous expense,null
+78505,"Purchase discounts, rebate, royalty",5571,"Purchase discounts, rebate, royalty expense",null,null,SC156,Purchase discounts,null
+78506,Royalty expense,5571,"Purchase discounts, rebate, royalty expense",null,null,SC160,Royalty expense,null
+78507,Educational exchange program,5215,Professional and freelance services,null,null,SC086,Educational exchange program,null
+78508,Executive search fees,5215,Professional and freelance services,null,null,SC095,Executive search fees,null
+78509,Expense Transfer,5905,Expense transfer,null,null,SC096,Expense transfer,null
+78600,Budget relief,5900,Capital expense offset,null,null,SC041,"Capital project, management",null
+78702,FS year end interest adjustment,5901,FS year end interest adjustment,null,null,SC096,Expense transfer,null
+78703,FS year end depreciation adjustment,5902,FS year end depreciation adjustment,null,null,SC096,Expense transfer,null
+78704,FS year end O&M adjustment,5903,FS year end O&M adjustment,null,null,SC096,Expense transfer,null
+78705,Agency Fund expense offset,5904,Financial Statement Reporting,null,null,SC004,Agency fund expense offset,null
+78706,FS expense adjustment,5905,Expense transfer,null,null,SC101,Financial statement expense adjustment,null
+79000,Legal fees,5330,Legal fees,null,null,SC122,Legal fees,null
+79050,Auditing fees,5215,Professional and freelance services,null,null,SC011,Auditing fees,null
+79100,Contract research,5215,Professional and freelance services,null,null,SC072,Contract research,null
+79200,Professional & freelance services,5215,Professional and freelance services,null,null,SC154,Professional & freelance services,Professional & freelance services
+79210,Telephone answering service,5201,Telecommunications equipment and services,null,null,SC185,Telephone answering service,null
+79211,"Subcontract services > 25,000",5215,Professional and freelance services,null,null,SC180,Subcontracting services,null
+79212,"Subcontract services < 25,000",5215,Professional and freelance services,null,null,SC180,Subcontracting services,null
+79270,Dining services costs,5551,Dining services costs,null,null,SC179,Student meal plan cost,null
+79275,Student meal plan subisdy,5551,Dining services costs,null,null,SC179,Student meal plan cost,null
+79280,Summer meal plan,5551,Dining services costs,null,null,SC183,Summer meal plan cost,null
+79300,General insurance,5515,General insurance,null,null,SC108,General insurance,null
+79305,Insurance claims,5516,Insurance claims,null,null,SC108,General insurance,null
+79340,Student health insurance expense,5517,Student health insurance expense,null,null,SC178,Student health insurance expense,null
+79350,Director Insurance,5515,General insurance,null,null,SC083,Directors & Officers Insurance,null
+79400,Credit card processing fees,5524,Credit card processing fees,null,null,SC075,Credit card data processing fees,null
+79500,Bank service fees,5525,Bank service fees,null,null,SC013,Bank service fees,null
+79501,Perkins loan expense,5526,Perkins loan expense,null,null,SC144,Perkins loan expense,null
+79510,Credit card discount expense,5524,Credit Card processing fees,null,null,SC075,Credit card data processing fees,null
+79520,Currency overage and shortage,5525,Bank Service Fees,null,null,SC104,Foreign exchange gain or loss,null
+79530,American Express fees,5524,Credit card processing fees,null,null,SC075,Credit card data processing fees,null
+79540,Mastercard and Visa fees,5524,Credit card processing fees,null,null,SC075,Credit card data processing fees,null
+79550,Bond issue cost amortization expns.,5406,Amortization of debt issuance costs,null,null,SC014,Bond issuance cost amortization expense,null
+79560,Debt administrative expense,5911,Debt administrative expense,null,null,SC079,Debt administration expense,null
+79600,Course income sharing,5440,Course income sharing,null,null,SC074,Course income sharing,null
+79800,Project Architect,5704,"Capital projects, construction",null,null,SC024,"Capital project, architect",null
+79801,Project audio/visual,5704,"Capital projects, construction",null,null,SC026,"Capital project, audio visual",null
+79802,Project building construction,5704,"Capital projects, construction",null,null,SC032,"Capital project, construction",null
+79803,Capital contingency,5704,"Capital projects, construction",null,null,SC032,"Capital project, construction",null
+79804,Capital miscellaneous,5704,"Capital projects, construction",null,null,SC043,"Capital project, miscellaneous",null
+79805,Construction,5704,"Capital projects, construction",null,null,SC032,"Capital project, construction",null
+79807,Construction management,5704,"Capital projects, construction",null,null,SC041,"Capital project, management",null
+79810,Construction fire system,5704,"Capital projects, construction",null,null,null,null,null
+79812,Construction network and cabling,5704,"Capital projects, construction",null,null,null,null,null
+79813,Construction reimbursable expense,5704,"Capital projects, construction",null,null,SC032,"Capital project, construction",null
+79817,Construction water system,5704,"Capital projects, construction",null,null,SC043,"Capital project, miscellaneous",null
+79831,Project Engineering,5704,"Capital projects, construction",null,null,SC034,"Capital project, engineering",null
+79833,Project general furniture,5704,"Capital projects, construction",null,null,null,null,null
+79834,Project hazmat. disposal,5704,"Capital projects, construction",null,null,SC037,"Capital project, hazardous material disposal",null
+79837,Project material testing,5704,"Capital projects, construction",null,null,SC041,"Capital project, management",null
+79838,Project mechanical construction,5704,"Capital projects, construction",null,null,SC042,"Capital project, mechanical",null
+79840,Project estimator,5704,"Capital projects, construction",null,null,SC041,"Capital project, management",null
+79841,Project insurance,5704,"Capital projects, construction",null,null,SC038,"Capital project, insurance",null
+79842,Project management,5704,"Capital projects, construction",null,null,SC041,"Capital project, management",null
+79843,Project moving and relocation,5704,"Capital projects, construction",null,null,SC044,"Capital project, moving and relocation",null
+79844,Project permits,5704,"Capital projects, construction",null,null,null,null,null
+79846,Project utilities,5704,"Capital projects, construction",null,null,SC196,"Capital project, utilities",null
+79847,Capital Federal Cost Share,5704,"Capital projects, construction",null,null,SC041,"Capital project, management",null
+79848,Capital Expense Transfer,5704,"Capital projects, construction",null,null,SC041,"Capital project, management",null
+79849,Capital Budget Relief,5704,"Capital projects, construction",null,null,SC041,"Capital project, management",null
+79860,Project signage,5704,"Capital projects, construction",null,null,SC050,"Capital project, signage",null
+79861,Project consultant services,5704,"Capital projects, construction",null,null,SC029,"Capital project, code consulting",null
+79862,Project special equipment,5704,"Capital projects, construction",null,null,null,null,null
+79863,Project storage,5704,"Capital projects, construction",null,null,SC053,"Capital project, storage",null
+79864,Project survey,5704,"Capital projects, construction",null,null,SC054,"Capital project, survey",null
+79865,Project tele. equip. capital costs,5704,"Capital projects, construction",null,null,null,null,null
+79866,Project floor & carpet,5704,"Capital projects, construction",null,null,SC043,"Capital project, miscellaneous",null
+79869,Capital Computer hardware>1000,5704,"Capital projects, construction",null,null,null,null,null
+79870,Capital Computer hardware mainten.,5704,"Capital projects, construction",null,null,null,null,null
+79871,Capital Computer software,5704,"Capital projects, construction",null,null,SC031,"Capital project, computer software",null
+79873,Capital salary expense,5704,"Capital projects, construction",null,null,null,null,null
+79874,Capital benefits expense,5704,"Capital projects, construction",null,null,null,null,null
+79901,Contribution writeoff,5999,Contribution write-off,null,null,SC073,Contribution write-off,null

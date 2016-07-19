@@ -8,10 +8,10 @@ var orgAlert;
 
 
 function preload() {
-        tableF = loadTable("data2/f.csv", "csv", "header");
-        tableO = loadTable("data2/o.csv", "csv", "header");
-        tableA = loadTable("data2/a.csv", "csv", "header");
-        tableP = loadTable("data2/p.csv", "csv", "header");
+        tableF = loadTable("fdm_data/f.csv", "csv", "header");
+        tableO = loadTable("fdm_data/o.csv", "csv", "header");
+        tableA = loadTable("fdm_data/a.csv", "csv", "header");
+        tableP = loadTable("fdm_data/p.csv", "csv", "header");
 }
 
 
@@ -40,7 +40,7 @@ function setup() {
         getHelp = createA('mailto:mydayhelp@newschol.edu', 'HELP');
         divvy = createDiv('<h1>FOAP to MyDay Worktag Converter</h1><p>MyDay Finance has replaced Banner for key finance functions. One of the most significant changes is the MyDay Financial Data Model (FDM). The FDM is further broken down into MyDay ”Worktags” that have replaced the University’s traditional chart of accounts and the rigid FOAP structure. To easily convert your old FOAPs to MyDay Worktags simply enter your old FOAPs to convert them to MyDay Worktags. For additional resources about MyDay Finance, please visit the <a href="https://myday-project.newschool.edu/training/finance/" target="_blank">MyDay Finance Training</a> page.</p>');
         conflictAlert = createDiv("The value you entered above does not match the related value for this Fund. Please use the below code and notify <a href='mailto:mydayhelp.newschool.edu'>MyDayHelp</a> of the conflict.");
-        expenseAlert = createDiv("If your purchase doesn't match an 'Expense Item' from the list below, please contact <a href='mailto:mydayhelp.newschool.edu'>MyDayHelp</a>.");
+        expenseAlert = createDiv("If your purchase doesn't match a spencategory / expense item from the list below, please contact <a href='mailto:mydayhelp.newschool.edu'>MyDayHelp</a>.");
         noMatch = createDiv("No match found.");
 
 }
@@ -225,11 +225,13 @@ function draw() {
         if (inputO.value().length === 5 && inputF.value().length === 5) {
                 if (F_input.length > 0 && O_input.length > 0) {
                         var F_CC = F_.getString(9);
+                        var F_CC_DS = F_.getString(10);
                         var O_CC = O_.getString(2);
+                        var O_CC_DS = O_.getString(3);
                         if (F_CC !== 'null') {
-                                text(F_CC, (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 1.8);
-                        } else if (O_CC !== null) {
-                                text(O_CC, (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 1.8);
+                                text(F_CC+"\n"+F_CC_DS, (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 1.8);
+                        } else if (O_CC !== 'null') {
+                                text(O_CC+"\n"+O_CC_DS, (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 1.8);
                         }
                 } else {
                         // image(ALERT,(windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.375,windowWidth * 0.075, windowHeight * 0.075);
@@ -304,11 +306,13 @@ function draw() {
         if (inputP.value().length === 4 && inputF.value().length === 5) {
                 if (F_input.length > 0 && P_input.length > 0) {
                         var F_PG = F_.getString(11);
+                        var F_PG_DS = F_.getString(12);
                         var P_PG = P_.getString(1);
+                        var P_DS = P_.getString(2);
                         if (F_PG !== 'null') {
-                                text(F_PG, (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight / 1.8);
+                                text(F_PG+"\n"+F_PG_DS, (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight / 1.8);
                         } else if (P_PG !== 'null') {
-                                text(P_PG, (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight / 1.8);
+                                text(P_PG+"\n"+P_DS, (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight / 1.8);
                         }
                 } else {
                         // image(ALERT,(windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.375,windowWidth * 0.075, windowHeight * 0.075);
