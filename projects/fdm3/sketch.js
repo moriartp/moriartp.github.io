@@ -229,9 +229,9 @@ function draw() {
                         var O_CC = O_.getString(2);
                         var O_CC_DS = O_.getString(3);
                         if (F_CC !== 'null') {
-                                text(F_CC+"\n"+F_CC_DS, (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 1.8);
+                                text(F_CC + "\n" + F_CC_DS, (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 1.8);
                         } else if (O_CC !== 'null') {
-                                text(O_CC+"\n"+O_CC_DS, (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 1.8);
+                                text(O_CC + "\n" + O_CC_DS, (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 1.8);
                         }
                 } else {
                         // image(ALERT,(windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.375,windowWidth * 0.075, windowHeight * 0.075);
@@ -251,7 +251,7 @@ function draw() {
         }
 
         ///FUND/ORG COST CENTER MISMATCH ALERT!!!!!!!!!!!!!!!!
-        if (inputO.value().length === 5 && F_CC !== O_CC) {
+        if (inputO.value().length === 5 && F_CC !== O_CC && F_CC !== 'null') {
                 fill(0);
                 // image(ALERT,(windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.375,windowWidth * 0.075, windowHeight * 0.075);
                 // text("The derived Cost Center does not match\nthe related Cost Center for this Org. \nPlease contact mydayhelp@newschool.edu\nto resolve this.", (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.39);
@@ -282,7 +282,7 @@ function draw() {
         var matches = tableA.matchRows(inputA.value(), 0);
 
         for (var i = 0; i < rows.length; i++) {
-                text(matches[i].getString(7) + "      " + matches[i].getString(8), (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 1.8 + i * (windowHeight * 0.0175));
+                text(matches[i].getString(7) + "/" + matches[i].getString(8), (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 1.8 + i * (windowHeight * 0.0175));
         }
 
         if (rows.length > 0) {
@@ -310,9 +310,9 @@ function draw() {
                         var P_PG = P_.getString(1);
                         var P_DS = P_.getString(2);
                         if (F_PG !== 'null') {
-                                text(F_PG+"\n"+F_PG_DS, (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight / 1.8);
+                                text(F_PG + "\n" + F_PG_DS, (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight / 1.8);
                         } else if (P_PG !== 'null') {
-                                text(P_PG+"\n"+P_DS, (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight / 1.8);
+                                text(P_PG + "\n" + P_DS, (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight / 1.8);
                         }
                 } else {
                         // image(ALERT,(windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.375,windowWidth * 0.075, windowHeight * 0.075);
@@ -332,7 +332,7 @@ function draw() {
 
 
         // ///PROGRAM MISMATCH ALERT!!!!!!!!!!!!!!!!
-        if (inputP.value().length === 4 && F_PG !== P_PG) {
+        if (inputP.value().length === 4 && F_PG !== P_PG && F_CC !== 'null') {
                 // fill(0);
                 // textAlign(LEFT, BOTTOM);
                 // // image(ALERT,(windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.375,windowWidth * 0.075, windowHeight * 0.075);
