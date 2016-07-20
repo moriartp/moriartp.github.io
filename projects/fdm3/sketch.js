@@ -231,11 +231,11 @@ function draw() {
                 if (A_input.length > 0) {
                         // var F_SC = F_.getString(9);
                         // var F_SC_DS = F_.getString(10);
-                        var A_SC = A_.getString(2);
-                        var A_SC_DS = A_.getString(3);
+                        var A_SC = A_.getString(7);
+                        var A_SC_DS = A_.getString(8);
 
                         if (A_SC !== 'null') {
-                                text(A_SC + "\n" + A_SC_DS + "\n\nRelated Expense Items:", (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 1.8);
+                                text(A_SC_DS + "\n\nRelated Expense Items:", (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 1.8);
                                 // text("Related Expense Items:", (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 1.8 + (windowHeight * 0.035));
                         }
                 } else {
