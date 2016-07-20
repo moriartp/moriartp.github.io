@@ -243,8 +243,6 @@ function draw() {
                         noMatch.position((windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight * 0.37);
                         noMatch.size((windowWidth / 5) * 1 - (windowWidth * 0.06));
                 }
-        } else if (inputA.value().length > inputF.value().length) {
-                text("Please first enter a valid FUND value", (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight * 0.39);
         }
 
         ///ITERATION OF SPEND CATEGORY/RELATED EXPENSE ITEMS
