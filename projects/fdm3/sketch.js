@@ -40,7 +40,7 @@ function setup() {
         getHelp = createA('mailto:mydayhelp@newschol.edu', 'HELP');
         divvy = createDiv('<h1>FOAP to MyDay Worktag Converter</h1><p>MyDay Finance has replaced Banner for key finance functions. One of the most significant changes is the MyDay Financial Data Model (FDM). The FDM is further broken down into MyDay ”Worktags” that have replaced the University’s traditional chart of accounts and the rigid FOAP structure. To easily convert your old FOAPs to MyDay Worktags simply enter your old FOAPs to convert them to MyDay Worktags. For additional resources about MyDay Finance, please visit the <a href="https://myday-project.newschool.edu/training/finance/" target="_blank">MyDay Finance Training</a> page.</p>');
         conflictAlert = createDiv("The value you entered above does not match the related value for this Fund. Please use the below code and notify <a href='mailto:mydayhelp.newschool.edu'>MyDayHelp</a> of the conflict.");
-        expenseAlert = createDiv("If your purchase doesn't match a spencategory / expense item from the list below, please contact <a href='mailto:mydayhelp.newschool.edu'>MyDayHelp</a>.");
+        expenseAlert = createDiv("If your purchase doesn't match a spend category / expense item from the list below, please contact <a href='mailto:mydayhelp.newschool.edu'>MyDayHelp</a>.");
         noMatch = createDiv("No match found.");
 
 }
@@ -261,7 +261,7 @@ function draw() {
         // text("Related Expense Items:",(windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 1.8);
 
         for (var i = 0; i < rows.length; i++) {
-                text(matches[i].getString(8), (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 1.8 + i * (windowHeight * 0.0175) + (windowHeight * 0.0175) * 5);
+                text(" • "+matches[i].getString(8), (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 1.8 + i * (windowHeight * 0.0175) + (windowHeight * 0.0175) * 5);
         }
 
         if (rows.length > 0) {
