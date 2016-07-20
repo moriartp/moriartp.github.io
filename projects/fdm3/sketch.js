@@ -60,32 +60,23 @@ function parseData() {
         }
 }
 
-
-
-
-
 function draw() {
         background(img);
         image(logo, 0, 0, windowWidth * 0.07, windowWidth * 0.05);
-
 
         noStroke();
         fill(255, 255, 255, 229);
         rect(0, windowHeight * 0.25, windowWidth, windowHeight * 0.65);
 
-
         ///HTML ELEMENTS
         divvy.position(windowWidth / 7, windowHeight * 0.01);
         divvy.size(windowWidth - windowWidth / 3);
-
         conflictAlert.hide();
         noMatch.hide();
         expenseAlert.hide();
-
         getHelp.position(windowWidth * 0.99 - (windowWidth * 0.06), 0);
         getHelp.size(windowWidth * 0.07, windowWidth * 0.025);
         getHelp.style("font-size", windowWidth * 0.015 + "px");
-
 
         ///RESPONSIVE CSS FONT-SIZES
         if (windowWidth >= windowHeight) {
@@ -134,7 +125,7 @@ function draw() {
         inputP.position((windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight / 3);
         inputP.size(windowWidth * 0.15, windowHeight * 0.0175);
 
-        //CANVAS/P5 RESPONSIVE TEXT SIZING FRO INPUT LABELS
+        //CANVAS/P5 RESPONSIVE TEXT SIZING FOR INPUT LABELS
         if (windowWidth >= windowHeight) {
                 textSize(windowWidth * 0.01);
         } else {
@@ -144,10 +135,6 @@ function draw() {
         //INPUT LABELS
         fill(102, 102, 102);
         textStyle(BOLD);
-        // text("FUND", (windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight / 3.1);
-        // text("ORG", (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 3.1);
-        // text("ACCOUNT", (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 3.1);
-        // text("PROGRAM", (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight / 3.1);
 
         labelF.position((windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight * 0.3);
         labelO.position((windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.3);
@@ -164,12 +151,6 @@ function draw() {
         labelA2.style('font-weight', 'bold');
         labelP2.style('font-weight', 'bold');
 
-
-        // text("FUND", (windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight / 2);
-        // text("COST\nCENTER", (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 2);
-        // text("SPEND CAT/\nEXPENSE ITEM", (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 2);
-        // text("PROGRAM", (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight / 2);
-
         labelF2.position((windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight * 0.5);
         labelO2.position((windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.5);
         labelA2.position((windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight * 0.5);
@@ -179,9 +160,6 @@ function draw() {
         labelO2.size(windowWidth * 0.15);
         labelA2.size(windowWidth * 0.15);
         labelP2.size(windowWidth * 0.15);
-
-
-
 
         //GENERAL TEXT SIZING
         if (windowWidth >= windowHeight) {
@@ -199,7 +177,7 @@ function draw() {
         var A_input = tableA.findRows(inputA.value(), 0);
         var P_input = tableP.findRows(inputP.value(), 0);
 
-        ///MATCH INPUTS TO TABLE
+        ///MATCH INPUTS TO TABLE DATA
         var F_ = tableF.matchRow(inputF.value(), 0);
         var O_ = tableO.matchRow(inputO.value(), 0);
         var A_ = tableA.matchRow(inputA.value(), 0);
@@ -219,8 +197,6 @@ function draw() {
                 }
         }
 
-
-
         ////ORG -> COSTCENTER
         if (inputO.value().length === 5 && inputF.value().length === 5) {
                 if (F_input.length > 0 && O_input.length > 0) {
@@ -234,17 +210,9 @@ function draw() {
                                 text(O_CC + "\n" + O_CC_DS, (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight / 1.8);
                         }
                 } else {
-                        // image(ALERT,(windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.375,windowWidth * 0.075, windowHeight * 0.075);
-                        // text("This Org is not found.\nPlease enter a valid Org.", (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.39);
-                        // orgAlert.position((windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.39);
-                        // orgAlert.siz((windowWidth / 5) * 1 - (windowWidth * 0.075), windowHeight / 1.8);
                         noMatch.show();
                         noMatch.position((windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.37);
                         noMatch.size((windowWidth / 5) * 1 - (windowWidth * 0.06));
-
-
-
-
                 }
         } else if (inputO.value().length > inputF.value().length) {
                 text("Please first enter a valid FUND value", (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.39);
@@ -253,63 +221,56 @@ function draw() {
         ///FUND/ORG COST CENTER MISMATCH ALERT!!!!!!!!!!!!!!!!
         if (inputO.value().length === 5 && F_CC !== O_CC && F_CC !== 'null') {
                 fill(0);
-                // image(ALERT,(windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.375,windowWidth * 0.075, windowHeight * 0.075);
-                // text("The derived Cost Center does not match\nthe related Cost Center for this Org. \nPlease contact mydayhelp@newschool.edu\nto resolve this.", (windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.39);
-
                 conflictAlert.show();
                 conflictAlert.position((windowWidth / 5) * 2 - (windowWidth * 0.075), windowHeight * 0.37);
                 conflictAlert.size((windowWidth / 5) * 1 - (windowWidth * 0.06));
-
-
         }
 
-        ///ACCOUNT -> SPEND CAT
+        ///ACCOUNT -> SPEND CATEGORY/RELATED EXPENSE ITEM
+        if (inputA.value().length === 5) { // && inputF.value().length === 5) {
+                if (A_input.length > 0) {
+                        // var F_SC = F_.getString(9);
+                        // var F_SC_DS = F_.getString(10);
+                        var A_SC = A_.getString(2);
+                        var A_SC_DS = A_.getString(3);
+
+                        if (A_SC !== 'null') {
+                                text(A_SC + "\n" + A_SC_DS + "\n\nRelated Expense Items:", (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 1.8);
+                                // text("Related Expense Items:", (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 1.8 + (windowHeight * 0.035));
+                        }
+                } else {
+                        noMatch.show();
+                        noMatch.position((windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight * 0.37);
+                        noMatch.size((windowWidth / 5) * 1 - (windowWidth * 0.06));
+                }
+        } else if (inputA.value().length > inputF.value().length) {
+                text("Please first enter a valid FUND value", (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight * 0.39);
+        }
+
+        ///ITERATION OF SPEND CATEGORY/RELATED EXPENSE ITEMS
         var rows = tableA.findRows(inputA.value(), 0);
 
         if (rows.length === 0 && inputA.value().length === 5) {
-                // image(ALERT,(windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight * 0.375,windowWidth * 0.075, windowHeight * 0.075);
-                // text("Account not found.\nPlease enter a valid Account.", (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight * 0.39);
-
                 noMatch.show();
                 noMatch.position((windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight * 0.37);
                 noMatch.size((windowWidth / 5) * 1 - (windowWidth * 0.06));
-
-
         }
 
-
-
-
-        // var A_SC = tableA.findRow(inputA.value(),0);
-        // text(tableA[0].getString(7),666,10);
-        
         var found = tableA.findRow(inputA.value(), 0);
-        
         var matches = tableA.matchRows(inputA.value(), 0);
+        // text("Related Expense Items:",(windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 1.8);
 
         for (var i = 0; i < rows.length; i++) {
-                text("Spend Category: \n"+matches[i].getString(7), (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 1.8);
-                text(matches[i].getString(8), (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 1.8 + i * (windowHeight * 0.0175)+(windowHeight * 0.0175)*5);
+                text(matches[i].getString(8), (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 1.8 + i * (windowHeight * 0.0175) + (windowHeight * 0.0175) * 5);
         }
 
         if (rows.length > 0) {
-                // textSize(windowWidth * 0.0075);
-                // fill(232, 46, 33);
-                // image(INFO,(windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight * 0.375,windowWidth * 0.075, windowHeight * 0.075);
-                // text("If your purchase doesn't match\na 'Expense Item' please" + "\ncontact mydayhelp@newschool.edu.", (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight * 0.39);
-
                 expenseAlert.show();
                 expenseAlert.position((windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight * 0.37);
                 expenseAlert.size((windowWidth / 5) * 1 - (windowWidth * 0.06));
-
-
-
-
         }
 
-
         ///PROGRAM -> PROGRAM
-
         if (inputP.value().length === 4 && inputF.value().length === 5) {
                 if (F_input.length > 0 && P_input.length > 0) {
                         var F_PG = F_.getString(11);
@@ -322,46 +283,20 @@ function draw() {
                                 text(P_PG + "\n" + P_DS, (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight / 1.8);
                         }
                 } else {
-                        // image(ALERT,(windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.375,windowWidth * 0.075, windowHeight * 0.075);
-                        // text("This Program is not found.\nPlease enter a valid Program.", (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.39);
-
                         noMatch.show();
                         noMatch.position((windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.37);
                         noMatch.size((windowWidth / 5) * 1 - (windowWidth * 0.06));
-
-
-
                 }
         } else if (inputP.value().length > inputF.value().length) {
-                // image(ALERT,(windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.375,windowWidth * 0.075, windowHeight * 0.075);
                 text("Please first enter a valid FUND value", (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.39);
         }
 
-
         // ///PROGRAM MISMATCH ALERT!!!!!!!!!!!!!!!!
         if (inputP.value().length === 4 && F_PG !== P_PG && F_CC !== 'null') {
-                // fill(0);
-                // textAlign(LEFT, BOTTOM);
-                // // image(ALERT,(windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.375,windowWidth * 0.075, windowHeight * 0.075);
-                // text("The derived Program does not match\nthe related Program worktag. \nPlease contact mydayhelp@newschool.edu\nto resolve this.", (windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.39);
-
                 conflictAlert.show();
                 conflictAlert.position((windowWidth / 5) * 4 - (windowWidth * 0.075), windowHeight * 0.37);
                 conflictAlert.size((windowWidth / 5) * 1 - (windowWidth * 0.06));
-
-
         }
-
-
-
-
-
-        // fill(0, 0, 0, fader);
-        // textSize(windowWidth * 0.05);
-        // textAlign(CENTER, CENTER);
-        // text("FOAP to MyDay Worktag Converter", width / 2, height / 7);
-        // textSize(windowWidth * 0.025);
-        // text("Enter your FOAP in the below fields", width / 2, height / 4.75);
 }
 
 
