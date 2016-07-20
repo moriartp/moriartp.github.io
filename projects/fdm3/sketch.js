@@ -235,7 +235,7 @@ function draw() {
                         var A_SC_DS = A_.getString(8);
 
                         if (A_SC !== 'null') {
-                                text(A_SC_DS + "\n\nRelated Expense Items:", (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 1.8);
+                                text(A_SC + "\n\nRelated Expense Items:", (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 1.8);
                                 // text("Related Expense Items:", (windowWidth / 5) * 3 - (windowWidth * 0.075), windowHeight / 1.8 + (windowHeight * 0.035));
                         }
                 } else {
