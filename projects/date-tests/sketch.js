@@ -9,6 +9,12 @@ function setup() {
         createCanvas(windowWidth, windowHeight);
         textAlign(CENTER, CENTER);
 
+        imgIC = loadImage("assets/innocationcenter.jpeg"); // Load the image
+        imgAH = loadImage("assets/arnholdHall.png"); // Load the image
+        imgPE = loadImage("assets/parsonsEast.png"); // Load the image
+        imgPC = loadImage("assets/printcenter.jpg"); // Load the image
+
+
         inputMonth = createInput();
         inputDay = createInput();
         inputYear = createInput();
@@ -90,7 +96,7 @@ function draw() {
                         if (mouseX > dayStart && mouseX < dayStart + dayEnd) {
                                 fill(22, 222, 22, 255);
                         } else {
-                                fill(22, 222, 22, 125);
+                                fill(122, 122, 222, 125);
 
                         }
                         rect(dayStart, 500, dayEnd, 60, 11);
@@ -102,6 +108,7 @@ function draw() {
                         textSize(15);
                         if (mouseY > 500 && mouseY < 560) {
                                 text("Lab: " + labName + "\nOpen: " + hourOpen + ":" + minOpen + "\nClose: " + hourClose + ":" + minClose, mouseX + 50, 530);
+                                image(imgAH,0,600);
                         }
                 }
         }
@@ -146,7 +153,7 @@ function draw() {
                         if (mouseX > dayStartB && mouseX < dayStartB + dayEndB) {
                                 fill(22, 222, 22, 255);
                         } else {
-                                fill(22, 222, 22, 125);
+                                fill(122, 122, 222, 125);
 
                         }
                         rect(dayStartB, 400, dayEndB, 60, 11);
@@ -157,12 +164,13 @@ function draw() {
                         textSize(15);
                         if (mouseY > 400 && mouseY < 460) {
                                 text("Lab: " + labNameB + "\nOpen: " + hourOpenB + ":" + minOpenB + "\nClose: " + hourCloseB + ":" + minCloseB, mouseX + 50, 430);
+                                image(imgIC,0,625);
                         }
 
                         if (mouseX > dayStartB && mouseX < dayStartB + dayEndB) {
                                 fill(22, 222, 22, 255);
                         } else {
-                                fill(22, 222, 22, 125);
+                                fill(122, 122, 222, 125);
 
                         }
 
@@ -170,7 +178,7 @@ function draw() {
                         if (mouseX > dayStartB - dayRange && mouseX < dayStartB + dayEndB + dayRange) {
                                 fill(22, 222, 22, 255);
                         } else {
-                                fill(22, 222, 22, 125);
+                                fill(122, 122, 222, 125);
                         }
 
                         textSize(9);
@@ -182,6 +190,7 @@ function draw() {
                         textSize(15);
                         if (mouseY > 300 && mouseY < 360) {
                                 text("Lab: Print Center" + "\nOpen: " + (hourOpenB - 1) + ":" + minOpenB + "\nClose: " + (hourCloseB + 1) + ":" + minCloseB, mouseX + 50, 330);
+                                image(imgPC,0,625);
                         }
                         /////END OF JUNK, DELETE//////////
 
@@ -189,7 +198,7 @@ function draw() {
                         if (mouseX > dayStartB - dayRange * 2 && mouseX < dayStartB + dayEndB) {
                                 fill(22, 222, 22, 255);
                         } else {
-                                fill(22, 222, 22, 125);
+                                fill(122, 122, 222, 125);
                         }
 
                         textSize(9);
@@ -201,6 +210,7 @@ function draw() {
                         textSize(15);
                         if (mouseY > 200 && mouseY < 260) {
                                 text("Lab: Parsons East" + "\nOpen: " + (hourOpenB - 2) + ":" + minOpenB + "\nClose: " + (hourCloseB + 1) + ":" + minCloseB, mouseX + 50, 230);
+                                image(imgPE,0,625);
                         }
                         /////END OF JUNK, DELETE//////////                        
 
