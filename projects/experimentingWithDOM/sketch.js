@@ -28,6 +28,7 @@ var tile = [];
 var selectType;
 var headerDiv;
 var hover;
+var hoverIndex;
 
 var xpose = [];
 
@@ -40,22 +41,26 @@ function setup() {
       tile = createDiv(roomID[i]);
       tile.html(roomID[i] + "<br>" + roomType[i] + "<br>" + roomTools[i] + "<br>" + buildAddress[i]);
       tile.size(115, 115);
+      tile.id(i);
       tile.style("background-color", "green");
       tile.style("border-radius", "25px");
       tile.style("padding", "10px");
       tile.style("display", "inline-block");
       tile.style("margin", "10px");
 
-      tile.mouseOver(hoverShow);
-      tile.mouseOut(hoverHide);
-   }
       hover = createDiv();
       hover.class('tooltip');
-      hover.position(mouseX,mouseY);
+      // hover.position(mouseX,mouseY);
       hover.html(roomID[i] + "<br>" + roomType[i] + "<br>" + roomTools[i] + "<br>" + buildAddress[i]);
       hover.size(300, 115);
       hover.style('background-color', 'red');
       hover.style('display', 'inline-block');
+      hover.hide();
+
+      tile.mouseOver(hoverShow);
+      tile.mouseOut(hoverHide);
+
+   }
 }
 
 function draw() {
@@ -77,8 +82,6 @@ function draw() {
 
 function hoverShow() {
    hover.show();
-   // hover.size(400, 400);
-   tile.style("background-color", "red");
 }
 
 
