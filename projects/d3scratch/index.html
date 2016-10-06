@@ -4,10 +4,56 @@
   <head>
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
 
-    <style>body {font-family: 'Montserrat', sans-serif;font-size: 9px;} div{border:1px solid red}</style>
+    <style>body {font-family: 'Montserrat', sans-serif;font-size: 9px;}</style>
   </head>
   <body>
+    <header>
+    <h1>TECHNOLOGY SPACES ON CAMPUS</h1>
+
+    <button class="accordion">LOCATION DETAILS</button>
+    <div class="panel">
+        	<form action="action_page.php">
+    	<input type="radio" name="type" value="Classroom" checked>Classroom<br>
+    	<input type="radio" name="type" value="Technology Lab"> Technology Lab<br>
+    	<input type="radio" name="type" value="Conference Room"> Conference Room<br><br>
+    	<input type="submit">
+    	</form>
+
+    	<form action="action_page.php">
+    	<input type="checkbox" name="6 East 13th Street" value="D">6 East 13th Street
+    	<br>
+    	<input type="checkbox" name="66 West 12th Street" value="A">66 West 12th Street
+    	<br>
+    	<input type="checkbox" name="65 West 11th Street" value="B">65 West 11th Street
+    	<br>
+    	<input type="checkbox" name="25 East 13th Street" value="E">25 East 13th Street
+    	<br>
+    	<input type="checkbox" name="63 Fifth Avenue" value="U">63 Fifth Avenue
+
+    	<br><br>
+    	<input type="submit">
+    	</div>
+     </header>
+
+
+
     <script type='text/javascript' src='script.js'></script>
+
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+    }
+}
+</script>
+
+
+
+
   </body>
 </html>
