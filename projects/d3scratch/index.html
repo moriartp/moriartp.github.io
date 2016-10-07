@@ -10,15 +10,38 @@
   </head>
   <body>
     <header>
-    <h1>TECHNOLOGY SPACES ON CAMPUS</h1>
+    <h1>CAMPUS TECHNOLOGY FINDER</h1>
     <!-- <form class="searchbox"> -->
     <input type="text" name="search" placeholder="Search..">
 <!--     </form> -->
 
+<div class="multiselect">
+<h3>Location:</h3>
+    <label><input type="checkbox" name="option[]" value="A" />Green</label>
+    <label><input type="checkbox" name="option[]" value="B" />Red</label>
+    <label><input type="checkbox" name="option[]" value="D" />Blue</label>
+    <label><input type="checkbox" name="option[]" value="E" />Orange</label>
+    <label><input type="checkbox" name="option[]" value="L" />Purple</label>
+    <label><input type="checkbox" name="option[]" value="M" />Black</label>
+    <label><input type="checkbox" name="option[]" value="U" />White</label>
+</div>
 
-    <button class="accordion">LOCATION DETAILS</button>
+<div class="multiselect">
+    <h3>Room Type:</h3>
+    <label><input type="checkbox" name="option[]" value="1" />Green</label>
+    <label><input type="checkbox" name="option[]" value="2" />Red</label>
+    <label><input type="checkbox" name="option[]" value="3" />Blue</label>
+    <label><input type="checkbox" name="option[]" value="4" />Orange</label>
+    <label><input type="checkbox" name="option[]" value="5" />Purple</label>
+    <label><input type="checkbox" name="option[]" value="6" />Black</label>
+    <label><input type="checkbox" name="option[]" value="7" />White</label>
+</div>
+
+
+
+    <button class="accordion">MORE SEARCH OPTIONS</button>
     <div class="panel">
-        	<form action="action_page.php">
+        <form action="action_page.php">
     	<input type="radio" name="type" value="Classroom" checked>Classroom<br>
     	<input type="radio" name="type" value="Technology Lab"> Technology Lab<br>
     	<input type="radio" name="type" value="Conference Room"> Conference Room<br><br>
@@ -35,10 +58,25 @@
     	<input type="checkbox" name="25 East 13th Street" value="E">25 East 13th Street
     	<br>
     	<input type="checkbox" name="63 Fifth Avenue" value="U">63 Fifth Avenue
-
     	<br><br>
     	<input type="submit">
-    	</div>
+
+<!--         <div class="multiselect">
+        <h3>Location:</h3>
+            <label><input type="checkbox" name="option[]" value="A" />Green</label>
+            <label><input type="checkbox" name="option[]" value="B" />Red</label>
+            <label><input type="checkbox" name="option[]" value="D" />Blue</label>
+            <label><input type="checkbox" name="option[]" value="E" />Orange</label>
+            <label><input type="checkbox" name="option[]" value="L" />Purple</label>
+            <label><input type="checkbox" name="option[]" value="M" />Black</label>
+            <label><input type="checkbox" name="option[]" value="U" />White</label>
+    </div>  -->           
+
+
+
+
+        </div>
+
      </header>
 
 
