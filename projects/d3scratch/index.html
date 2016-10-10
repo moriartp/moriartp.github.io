@@ -5,94 +5,37 @@
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css"/>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
 
     <style>body {font-family: 'Montserrat', sans-serif;font-size: 9px;}</style>
   </head>
   <body>
     <header>
-    <h1>CAMPUS TECHNOLOGY FINDER</h1>
-    <!-- <form class="searchbox"> -->
-    <input type="text" name="search" placeholder="Search..">
-<!--     </form> -->
+        <h1>CAMPUS TECHNOLOGY FINDER</h1>
+    </header>
 
-<div class="multiselect">
-<h3>Location:</h3>
-    <label><input type="checkbox" name="option[]" value="A" />Green</label>
-    <label><input type="checkbox" name="option[]" value="B" />Red</label>
-    <label><input type="checkbox" name="option[]" value="D" />Blue</label>
-    <label><input type="checkbox" name="option[]" value="E" />Orange</label>
-    <label><input type="checkbox" name="option[]" value="L" />Purple</label>
-    <label><input type="checkbox" name="option[]" value="M" />Black</label>
-    <label><input type="checkbox" name="option[]" value="U" />White</label>
-</div>
+    <h1>Isotope - filtering</h1>
 
-<div class="multiselect">
-    <h3>Room Type:</h3>
-    <label><input type="checkbox" name="option[]" value="1" />Green</label>
-    <label><input type="checkbox" name="option[]" value="2" />Red</label>
-    <label><input type="checkbox" name="option[]" value="3" />Blue</label>
-    <label><input type="checkbox" name="option[]" value="4" />Orange</label>
-    <label><input type="checkbox" name="option[]" value="5" />Purple</label>
-    <label><input type="checkbox" name="option[]" value="6" />Black</label>
-    <label><input type="checkbox" name="option[]" value="7" />White</label>
-</div>
-
-
-
-    <button class="accordion">MORE SEARCH OPTIONS</button>
-    <div class="panel">
-        <form action="action_page.php">
-    	<input type="radio" name="type" value="Classroom" checked>Classroom<br>
-    	<input type="radio" name="type" value="Technology Lab"> Technology Lab<br>
-    	<input type="radio" name="type" value="Conference Room"> Conference Room<br><br>
-    	<input type="submit">
-    	</form>
-
-    	<form action="action_page.php">
-    	<input type="checkbox" name="6 East 13th Street" value="D">6 East 13th Street
-    	<br>
-    	<input type="checkbox" name="66 West 12th Street" value="A">66 West 12th Street
-    	<br>
-    	<input type="checkbox" name="65 West 11th Street" value="B">65 West 11th Street
-    	<br>
-    	<input type="checkbox" name="25 East 13th Street" value="E">25 East 13th Street
-    	<br>
-    	<input type="checkbox" name="63 Fifth Avenue" value="U">63 Fifth Avenue
-    	<br><br>
-    	<input type="submit">
-
-<!--         <div class="multiselect">
-        <h3>Location:</h3>
-            <label><input type="checkbox" name="option[]" value="A" />Green</label>
-            <label><input type="checkbox" name="option[]" value="B" />Red</label>
-            <label><input type="checkbox" name="option[]" value="D" />Blue</label>
-            <label><input type="checkbox" name="option[]" value="E" />Orange</label>
-            <label><input type="checkbox" name="option[]" value="L" />Purple</label>
-            <label><input type="checkbox" name="option[]" value="M" />Black</label>
-            <label><input type="checkbox" name="option[]" value="U" />White</label>
-    </div>  -->           
-
-
-
-
-        </div>
-
-     </header>
-
+    <div class="button-group filters-button-group">
+      <button class="button is-checked" data-filter="*">show all</button>
+      <button class="button" data-filter=".Mac">Mac</button>
+      <button class="button" data-filter=".Windows">Windows</button>
+      <button class="button" data-filter=".X">X</button>
+      <button class="button" data-filter=":not(.transition)">not transition</button>
+      <button class="button" data-filter=".metal:not(.transition)">metal but not transition</button>
+      <button class="button" data-filter="numberGreaterThan50">number > 50</button>
+      <button class="button" data-filter="ium">name ends with &ndash;ium</button>
+    </div>
 
 
     <script type='text/javascript' src='script.js'></script>
+    <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-    <script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-    for (i = 0; i < acc.length; i++) {
-    acc[i].onclick = function(){
-        this.classList.toggle("active");
-        this.nextElementSibling.classList.toggle("show");
-    }
-}
-</script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+    <script src='http://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js'></script>
+    <script src="index.js"></script>
 
 
 

@@ -5,19 +5,17 @@ var data = d3.csv("dummyRoomData.csv", function(error, data) {
 var body = d3.select('body')
   .selectAll('div')
   .data(data).enter()
-  .append('div')
+  .append('div.tile')
     .attr('class', "tile")//function (d) { return d.class; })
-    // .style('position','absolute')
+    .attr('class', function (d) { return d.type; })
+    // .attr('data-filter', function (d) { return d.type; })
+    // .attr('class', function (d) { return d.platform; })
     .style('display','inline-block')
     .style('padding','10px')
-    .style('margin','10px')        
-    // .style('top', function (d) { return d.top; })
-    // .style('left', function (d) { return d.left; })
+    .style('margin','10px')
     .style('width', "100px")
     .style('height', "100px")
     .style('background-color', "WhiteSmoke")//function (d) { return d.backgroundColor; })
-    // .html('background-color', function (d) { return d.class; })
-    // add mouseover effect to change background color to black
     .on('mouseover', function() {
       d3.select(this)
       .transition().duration(100)
@@ -37,3 +35,8 @@ var body = d3.select('body')
 
 
     });
+
+// }
+
+
+
