@@ -1,13 +1,20 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
 header {
 	display: block;
-	margin: none;
-	padding: 10px;
+	margin: 2px;
+	padding: none;
 	border: none;
 }
 
-.accordion {
-	display: block;
-	border: none;
+p{
+    padding-top: 7px;
+    padding-bottom: 11px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 h1{
@@ -20,96 +27,17 @@ h1{
 	display: block;
 }
 
-form {
-	font-size: 15px;
-	color: black;
-	display: inline-block;
-	border: none;
-	margin: 10px;
-	padding: 20px;
-	background-color: whitesmoke;
-	vertical-align: top;
-	min-height: 200px;
-	min-width: 200px;
-	border:1px solid gray;
-}
-
-button.accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 10px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-}
-
 div.tile{
 	border:1px solid #E82E21;
+    max-height: 150px;
+    max-width: 150px;
 
 }
 
-button.accordion.active, button.accordion:hover {
-    background-color: #ddd;
-}
-
-div.panel {
-    padding: 0 10px;
-    display: none;
-    background-color: white;
-    border:1px solid lightgray;
-}
-
-div.panel.show {
-    display: block;
-}
-
-
-
-/*GLOWING SEARCH BAR*/
-
-input[type=text] {
-    width: 50%;
-    display: block;
-    box-sizing: border-box;
-    border: 2px solid #167F8E;
-    border-radius: 4px;
+.fa {
     font-size: 16px;
-    background-color: white;
-    background-image: url('searchicon.png');
-    background-position: 10px 10px; 
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
 }
 
-input[type=text]:focus {
-    width: 100%;
-}
-
-/*MULTI_SELECT*/
-div.multiselect {
-    display:inline-block;
-}
-
-.multiselect {
-    width:49.65%;
-    /*height:15em;*/
-    border:solid 1px #c0c0c0;
-    /*overflow:auto;*/
-    display:inline-block;
-}
- 
-.multiselect label {
-    display:inline-block;
-}
- 
-.multiselect-on {
-    color:#ffffff;
-    background-color:#000099;
-    display:inline-block;
+.spacer{
+    display: block;
 }
