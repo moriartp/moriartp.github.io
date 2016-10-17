@@ -27,16 +27,52 @@ h1{
 	display: block;
 }
 
-/*div.tile{
-	border:1px solid #E82E21;
-    max-height: 150px;
-    max-width: 150px;
-
-}*/
-
-.fa {
-    font-size: 16px;
+div.tile{
+	float: left;
+	padding: 5px;
+	margin:2px;
+	width:200px;
+	height:333px;
+	background-color: whitesmoke;
+	border:2px solid slategray;
+	border-radius: 5px
 }
+
+/*/////////////FONT AWESOME STYLING START*/
+.fa {
+    font-size: 24px;
+    color: #167F8E;
+	vertical-align: middle;
+}
+
+.fa-windows{
+	color: #E88021;
+}
+
+.fa-apple{
+	color:#167F8E;
+}
+
+.fa-video-camera{
+	color: #930B00;
+}
+
+.fa-clipboard{
+	color: #024F5A ;
+}
+
+.fa-play-circle-o{
+	color: #568900;
+}
+
+.fa-film{
+	color: brown;
+}
+
+.fa-music{
+	color: navy;
+}
+/*/////////////FONT AWESOME STYLING END*/
 
 .spacer{
     display: block;
@@ -47,8 +83,9 @@ h1{
 	text-align: left;
 	padding: 10px;
 	font: 12px sans-serif;
-	background: #EDEDED;
-	border:3px solid darkgray;
+	background: slategray;
+	color: #EDEDED;
+	border:3px solid whitesmoke;
 	border-radius: 8px;
 	pointer-events: none;
 	display: none;
