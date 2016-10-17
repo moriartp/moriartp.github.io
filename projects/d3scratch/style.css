@@ -1,6 +1,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
+    color:#373332;
 }
 
 header {
@@ -8,6 +9,14 @@ header {
 	margin: 2px;
 	padding: none;
 	border: none;
+/*	position: fixed;
+	z-index: 10;*/
+	/*width:100%;*/
+}
+
+#container{
+	margin-left:5%;
+	margin-right:5%
 }
 
 p{
@@ -80,20 +89,20 @@ div.tile{
 
 .tooltip {
 	position: absolute;
+	font-size: 22px;
 	text-align: left;
 	padding: 10px;
-	font: 12px sans-serif;
-	background: slategray;
-	color: #EDEDED;
-	border:3px solid whitesmoke;
-	border-radius: 8px;
+	background: whitesmoke;
+	color: #1B1413;
+	border:2px solid darkgray;
+	border-radius: 5px;
 	pointer-events: none;
 	display: none;
-	width:200px;
+	width:400px;
 	min-height: 150px
 }
 
 .tooltip.showit {
 	display: block;
-	opacity: 1;
+	opacity: .95;
 }

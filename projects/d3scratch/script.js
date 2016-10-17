@@ -1,16 +1,11 @@
-// // Define the div for the tooltip
-// var div = d3.select("body").append("div") 
-//     .attr("class", "tooltip")       
-//     .style("opacity", 0);   
-
 var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
     data.forEach(function(d) {
       d.macQty = +d.macQty;
       d.winQty = +d.winQty;
     });   
 
-  var tiles = d3.select('body')
-    .selectAll('div')
+  var tiles = d3.select('#container')//('body')
+    .selectAll('div.tile')
     .data(data).enter()
     // .append('div.tile')
     .append('div')
@@ -112,16 +107,11 @@ var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
       ////Put the name in the tooltip HTML
       tooltip.html('').html('<b>'+d.roomID+'</b><br>Location: '+d.location)
 
-
-      // // ////Calculate positioning and move tooltip THIS IS THE ORIGINAL
-      // var ttBCR = tooltip.node().getBoundingClientRect()
-      // var topPosition = mouseY - ttBCR.height + pageYOffset - 14
-      // var leftPosition = ( mouseX - ttBCR.width*1 ) + pageXOffset
       
       ////Calculate positioning and move tooltip
       var ttBCR = tooltip.node().getBoundingClientRect()
       var topPosition = mouseY - ttBCR.height + pageYOffset + 200
-      var leftPosition = ( mouseX - ttBCR.width*1 ) + pageXOffset + 100
+      var leftPosition = ( mouseX - ttBCR.width*1 ) + pageXOffset + 200
 
 
 
