@@ -5,11 +5,12 @@ var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
     });   
 
   var tiles = d3.select('#container')//('body')
-    .selectAll('div.tile')
+    .selectAll('tile')
     .data(data).enter()
     // .append('div.tile')
     .append('div')
-      .attr('class', "tile")
+      // .attr('class', "tile ")
+      .attr('class', function(d) {return "tile "+d.type+ " dvd"+d.DVD;})
       .on('mouseover', function() {
         d3.select(this)
         .transition().duration(100)
@@ -110,7 +111,7 @@ var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
       
       ////Calculate positioning and move tooltip
       var ttBCR = tooltip.node().getBoundingClientRect()
-      var topPosition = mouseY - ttBCR.height + pageYOffset + 200
+      var topPosition = mouseY - ttBCR.height + pageYOffset + 100
       var leftPosition = ( mouseX - ttBCR.width*1 ) + pageXOffset + 200
 
 

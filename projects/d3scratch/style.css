@@ -47,6 +47,10 @@ div.tile{
 	border-radius: 5px
 }
 
+div.tile.dvdTRUE{
+	background-color: yellow;
+}
+
 /*/////////////FONT AWESOME STYLING START*/
 .fa {
     font-size: 24px;
@@ -100,6 +104,8 @@ div.tile{
 	display: none;
 	width:400px;
 	min-height: 150px
+	box-shadow: 10px 10px 5px #888888;
+
 }
 
 .tooltip.showit {
