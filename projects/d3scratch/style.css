@@ -27,12 +27,12 @@ h1{
 	display: block;
 }
 
-div.tile{
+/*div.tile{
 	border:1px solid #E82E21;
     max-height: 150px;
     max-width: 150px;
 
-}
+}*/
 
 .fa {
     font-size: 16px;
@@ -40,4 +40,23 @@ div.tile{
 
 .spacer{
     display: block;
+}
+
+.tooltip {
+	position: absolute;
+	text-align: left;
+	padding: 10px;
+	font: 12px sans-serif;
+	background: #EDEDED;
+	border:3px solid darkgray;
+	border-radius: 8px;
+	pointer-events: none;
+	display: none;
+	width:200px;
+	min-height: 150px
+}
+
+.tooltip.showit {
+	display: block;
+	opacity: 1;
 }
