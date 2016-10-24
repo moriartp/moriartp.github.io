@@ -2,9 +2,17 @@
 <meta charset='utf-8'>
 <html>
   <head>
-    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS-->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- D3 -->
+    <!-- <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script> -->
+
+    <!-- Google FONTS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"> <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- CUSTOM STYLING -->
     <link rel="stylesheet" type="text/css" href="style.css"/>
   </head>
   <body>
@@ -14,12 +22,36 @@
 
 <!-- UI FILTERS START -->
 
+    <select id="roomType">
+
+          <option value="Technology Lab" label="Technology Lab">Technology Lab</option>
+          <option value="Classroom" label="Classroom">Classroom</option>
+          <option value="Conference Room" label="Conference Room">Conference Room</option>      
+          </select>
+
+
+
+
 <!-- UI FILTERS END -->
 
     <div id="container"></div>
 
 
 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- ajax library -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+
+
+    <!-- D3 -->
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+    <!-- CUSTOM -->
     <script type='text/javascript' src='script.js'></script>
 
 
