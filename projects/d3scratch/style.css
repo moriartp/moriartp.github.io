@@ -56,7 +56,7 @@ h1{
 div.tile{
 	float: left;
 	padding: 1%;
-	margin:1%;
+	margin:0.5%;
 	width:18%;
 	height:333px;
 	background-color: whitesmoke;
@@ -107,10 +107,8 @@ div.tile{
 
 .fa-times-circle{
 	color:black;
-/*    float: right;*/
-/*    position: absolute;*/
-/*	line-height: 10px;*/
 }
+
 .closer{
     position: absolute;
     top: 10px;
@@ -137,12 +135,14 @@ div.tile{
 	border-radius: 2px;
 	pointer-events: none;
 	display: none;
-	width:40%;
+	width:20%;
 	min-height: 150px
 	box-shadow: 10px 10px 5px #888888;
 	margin: 10px;
 	padding-bottom: 50px;
 	box-shadow: 10px 10px 75px black; /*#888888;*/
+	margin-left:5%;
+	margin-right:5%
 
 }
 
