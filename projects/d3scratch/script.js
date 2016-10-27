@@ -15,14 +15,19 @@ var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
     .selectAll('tile')
     .data(data).enter()
     .append('div')
-    .filter( function(d) {return d.type === document.getElementById("roomType").value; })
-      // .attr('class', "tile ")
+    // .filter( function(d) {return d.type === document.getElementById("roomType").value; })
       .attr('class', function(d) {return "tile "+d.type+ " dvd"+d.DVD;})
       .on('mouseover', function() {
         d3.select(this)
         .transition().duration(100)
-        .style('background-color','#F6594D')//'#E82E21')
+        .style('background-color', '#54A5B0')
       })
+      // .on('mouseenter', showToolTip)
+      .on('click', showToolTip)
+      .on('mousemove', moveTooltip)
+      .on('mouseleave', hideToolTip)
+
+
 
       .on('mouseout', function () {
         d3.select(this)
@@ -31,15 +36,12 @@ var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
       })
 
       .append('text')
-      // .html(function (d) { return "<font size='5'>"+d.roomID+"</font><br>"+d.type+"<br>"+d.location+"<br>Macs: "+d.macQty+"<br>Wins: "+d.winQty; });
       .html(function (d) { return "<font size='5'>"+d.roomID+"</font><br>"+d.type+"<br>"+d.location+"; Rm. "+d.roomID+"<br>"; });   
 
       d3.selectAll("text").append("mac")
-        // .text(function (d) { return d.macQty})
       .filter( function(d) {return d.macQty > 0; })
 
       d3.selectAll("text").append("mac")
-        // .text(function (d) { return d.macQty})
       .filter( function(d) {return d.macQty > 0; })
         .html(function (d) { return "<br><i class='fa fa-apple' fa-lg></i> Mac Stations: "+d.macQty; })
 
@@ -70,37 +72,28 @@ var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
     ///ADD A TOOLTIP TOOLTIP TOOLTIP////
     var tooltip = d3.select('body').append('div').attr('class', 'tooltip')
 
-    tiles.on('mouseenter', showToolTip)    
-              .on('mousemove', moveTooltip)
-              .on('mouseleave', hideToolTip)
-    //           .on('click', focusTile)
-
-    // // // var decimal = d3.format(".1f")
-
-    // function focusTile (d,i){
-    //   var selection = d3.select(this)
-    //   var test = selection.classed('highlight')
-    //   selection.classed('highlight', !test)
-
-    //   var highlighted = []
-
-    //   tiles.classed('recede', function (tile){
-    //     var tileSel = d3.select(this)
-    //     var hightlightTest = tileSel.classed('highlight')
-    //     if (hightlightTest) {
-    //       highlighted.push(tile)
-    //     }
-    //     return !hightlightTest
-    //   })
-
-    //   if (highlighted.length == 0){
-    //     tiles.classed('recede', false)
-    //   }
-
-    // }
-
     function showToolTip(d,i){
       tooltip.classed('showit', true)
+      tooltip.html('').html('<h2><b>'+d.roomID+'</h2><br>Location: '+d.location+'<br>Macs: '+d.macQty+'<br>Windows: '+d.winQty+'<br>Projector: '+d.Projection+'<br>DVD: '+d.DVD+'</b><p><i>This might also include a more verbose description of the room that details the general function, purpose and access to the room, whether that be specialized, designated to specific parties, etc...</i></p>')
+      
+      ////Get the mouse X position 
+      var mouseX = d3.event.clientX// + 82.5
+      var mouseY = d3.event.clientY
+
+      ////Calculate positioning and move tooltip
+      var ttBCR = tooltip.node().getBoundingClientRect()
+      var topPosition = mouseY - ttBCR.height + pageYOffset + 100
+      var leftPosition = ( mouseX - ttBCR.width*1 ) + pageXOffset + 200
+
+      tooltip
+        .style({
+          top: topPosition+'px', 
+          left: leftPosition+'px'
+        })
+
+
+
+      console.log('SHOWIT')
       
     }
 
@@ -110,9 +103,10 @@ var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
       ////Get the mouse X position 
       var mouseX = d3.event.clientX// + 82.5
       var mouseY = d3.event.clientY
+      console.log('MOVEIT')
       
-      ////Put the name in the tooltip HTML
-      tooltip.html('').html('<b>'+d.roomID+'</b><br>Location: '+d.location)
+      // ////Put the name in the tooltip HTML
+      // tooltip.html('').html('<b>'+d.roomID+'</b><br>Location: '+d.location+'</b><br>Macs: '+d.macQty+'</b><br>Windows: '+d.winQty+'</b><br>Projector: '+d.Projection+'</b><br>DVD: '+d.DVD)
 
       
       ////Calculate positioning and move tooltip
@@ -131,6 +125,7 @@ var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
 
     function hideToolTip(d,i){
       tooltip.classed('showit', false)
+      console.log('HIDEIT')
     }
     //////////////////////////////////////////////////////////
 
@@ -140,27 +135,11 @@ var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
     });
 
     update()
-
-
-//////////////////////////////////////////////////////////////TO HERE (DO NOT DELETE BELOW THIS LINE)
-}
-
-
-
+  }
 );
 
 
   
 var update = function(d,i) {
   console.log(roomType);
-
 };
-
-
-
-
-// }
-/////////////////endliveinput
-
-
-

@@ -24,6 +24,7 @@ p{
     padding-bottom: 11px;
     margin-top: 0px;
     margin-bottom: 0px;
+    /*font-size: 14px;*/
 }
 
 h1{
@@ -39,17 +40,17 @@ h1{
 div.tile{
 	float: left;
 	padding: 5px;
-	margin:2px;
+	margin:22px;
 	width:200px;
 	height:333px;
 	background-color: whitesmoke;
 	border:2px solid slategray;
-	border-radius: 5px
+	border-radius: 2px
 }
 
-div.tile.dvdTRUE{
+/*div.tile.dvdTRUE{
 	background-color: yellow;
-}
+}*/
 
 /*/////////////FONT AWESOME STYLING START*/
 .fa {
@@ -93,7 +94,7 @@ div.tile.dvdTRUE{
 
 .tooltip {
 	position: absolute;
-	font-size: 22px;
+	font-size: 12px;
 	text-align: left;
 	padding: 10px;
 	background: whitesmoke;
@@ -105,10 +106,13 @@ div.tile.dvdTRUE{
 	width:400px;
 	min-height: 150px
 	box-shadow: 10px 10px 5px #888888;
+	margin: 10px;
+	padding-bottom: 50px;
 
 }
 
 .tooltip.showit {
 	display: block;
 	opacity: .95;
+	background-color: #FFB877;
 }
