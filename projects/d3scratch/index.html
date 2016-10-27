@@ -18,21 +18,18 @@
   <body>
     <header>
         <h1>CAMPUS TECHNOLOGY FINDER</h1>
+        <input type='text' id='search' placeholder="Search by Device or Software...">
+
+        <!-- UI FILTERS START -->
+
+        <select id="roomType">
+
+              <option value="Technology Lab" label="Technology Lab">Technology Lab</option>
+              <option value="Classroom" label="Classroom">Classroom</option>
+              <option value="Conference Room" label="Conference Room">Conference Room</option>
+              </select>
+        <!-- UI FILTERS END -->
     </header>
-
-<!-- UI FILTERS START -->
-
-    <select id="roomType">
-
-          <option value="Technology Lab" label="Technology Lab">Technology Lab</option>
-          <option value="Classroom" label="Classroom">Classroom</option>
-          <option value="Conference Room" label="Conference Room">Conference Room</option>      
-          </select>
-
-
-
-
-<!-- UI FILTERS END -->
 
     <div id="container"></div>
 

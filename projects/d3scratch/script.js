@@ -26,9 +26,6 @@ var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
       .on('click', showToolTip)
       .on('mousemove', moveTooltip)
       .on('mouseleave', hideToolTip)
-
-
-
       .on('mouseout', function () {
         d3.select(this)
         .transition().duration(500)
@@ -74,7 +71,7 @@ var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
 
     function showToolTip(d,i){
       tooltip.classed('showit', true)
-      tooltip.html('').html('<h2><b>'+d.roomID+'</h2><br>Location: '+d.location+'<br>Macs: '+d.macQty+'<br>Windows: '+d.winQty+'<br>Projector: '+d.Projection+'<br>DVD: '+d.DVD+'</b><p><i>This might also include a more verbose description of the room that details the general function, purpose and access to the room, whether that be specialized, designated to specific parties, etc...</i></p>')
+      tooltip.html('').html('<h2><b>'+d.roomID+'</h2><iframe width=50% height="200" src="https://www.youtube.com/embed/oYZGGDK3kUg?autoplay=1" frameborder="0" allowfullscreen></iframe><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.1376991648503!2d-73.99441544876213!3d40.736995479227645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a2868a69e1%3A0x79b19a0b47c6d645!2s6+E+16th+St%2C+New+York%2C+NY+10003!5e0!3m2!1sen!2sus!4v1477595809186" width=50% height="200" frameborder="1" style="border:1" allowfullscreen></iframe><br>Location: '+d.location+'<br>Macs: '+d.macQty+'<br>Windows: '+d.winQty+'<br>Projector: '+d.Projection+'<br>DVD: '+d.DVD+'</b><p><i>This might also include a more verbose description of the room that details the general function, purpose and access to the room, whether that be specialized, designated to specific parties, etc...</i></p><div class="closer"><i class="fa fa-times-circle" fa-lg></div>')
       
       ////Get the mouse X position 
       var mouseX = d3.event.clientX// + 82.5
@@ -82,8 +79,8 @@ var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
 
       ////Calculate positioning and move tooltip
       var ttBCR = tooltip.node().getBoundingClientRect()
-      var topPosition = mouseY - ttBCR.height + pageYOffset + 100
-      var leftPosition = ( mouseX - ttBCR.width*1 ) + pageXOffset + 200
+      var topPosition = mouseY - ttBCR.height + pageYOffset + 10
+      var leftPosition = ( mouseX - ttBCR.width*1 ) + pageXOffset + 300
 
       tooltip
         .style({
@@ -111,8 +108,8 @@ var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
       
       ////Calculate positioning and move tooltip
       var ttBCR = tooltip.node().getBoundingClientRect()
-      var topPosition = mouseY - ttBCR.height + pageYOffset + 100
-      var leftPosition = ( mouseX - ttBCR.width*1 ) + pageXOffset + 200
+      var topPosition = mouseY - ttBCR.height + pageYOffset + 10
+      var leftPosition = ( mouseX - ttBCR.width*1 ) + pageXOffset + 300
 
 
 
@@ -127,6 +124,10 @@ var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
       tooltip.classed('showit', false)
       console.log('HIDEIT')
     }
+
+
+
+
     //////////////////////////////////////////////////////////
 
     $("#roomType").on("change", function(){
@@ -141,5 +142,9 @@ var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
 
   
 var update = function(d,i) {
+  d3.select('#container')//('body')
+    .selectAll('qwerty')
+    .append('p')
+    .html(roomType)
   console.log(roomType);
 };

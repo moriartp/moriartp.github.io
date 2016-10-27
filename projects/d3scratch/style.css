@@ -9,14 +9,29 @@ header {
 	margin: 2px;
 	padding: none;
 	border: none;
-/*	position: fixed;
-	z-index: 10;*/
-	/*width:100%;*/
+	background-color: #167F8E;
+}
+
+input#search{
+	margin-right: 6%;
+	margin-left: 6%;	
+	font-size: 22px;
+	width: 90%;
+	height: 40px;
+	margin-bottom: 10px;
+}
+
+select#roomType{
+	margin-right: 6%;
+	margin-left: 6%;	
+	margin-bottom: 1%;
+	width: 16%;
 }
 
 #container{
 	margin-left:5%;
 	margin-right:5%
+
 }
 
 p{
@@ -33,19 +48,22 @@ h1{
 	border: none;
 	background-color: #167F8E;
 	padding: 10px;
-	padding-bottom: 40px;
+	padding-bottom: 10px;
+	/*width: 100%;*/
 	display: block;
 }
 
 div.tile{
 	float: left;
-	padding: 5px;
-	margin:22px;
-	width:200px;
+	padding: 1%;
+	margin:1%;
+	width:18%;
 	height:333px;
 	background-color: whitesmoke;
 	border:2px solid slategray;
-	border-radius: 2px
+	border-radius: 1px;
+	min-width: 170px;
+	max-width: 230px;
 }
 
 /*div.tile.dvdTRUE{
@@ -86,6 +104,22 @@ div.tile{
 .fa-music{
 	color: navy;
 }
+
+.fa-times-circle{
+	color:black;
+/*    float: right;*/
+/*    position: absolute;*/
+/*	line-height: 10px;*/
+}
+.closer{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+
+
+}
+
 /*/////////////FONT AWESOME STYLING END*/
 
 .spacer{
@@ -99,15 +133,22 @@ div.tile{
 	padding: 10px;
 	background: whitesmoke;
 	color: #1B1413;
-	border:2px solid darkgray;
-	border-radius: 5px;
+	border:2px solid #E88021;
+	border-radius: 2px;
 	pointer-events: none;
 	display: none;
-	width:400px;
+	width:40%;
 	min-height: 150px
 	box-shadow: 10px 10px 5px #888888;
 	margin: 10px;
 	padding-bottom: 50px;
+	box-shadow: 10px 10px 75px black; /*#888888;*/
+
+}
+
+iframe{
+	border:1px solid #E88021;
+	border-radius: 2px;
 
 }
 
