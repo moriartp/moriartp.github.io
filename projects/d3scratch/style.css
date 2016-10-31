@@ -11,10 +11,7 @@ header {
 	border: none;
 	background-color: #167F8E;
 }
-.legend{
-	padding-top: 22%;
-	padding-bottom: 22%;
-}
+
 
 #clicker{
 	margin-right: 6%;
@@ -22,6 +19,7 @@ header {
 	font-size: 12px;
 	padding-top: 0.5%;
 	padding-bottom: 0.5%;	
+	color: white;
 }
 
 #hardwareClicker{
@@ -30,6 +28,7 @@ header {
 	font-size: 12px;
 	padding-top: 0.5%;
 	padding-bottom: 0.5%;
+	color: white;
 }
 
 input#search{

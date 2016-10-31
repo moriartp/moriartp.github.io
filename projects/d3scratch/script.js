@@ -174,6 +174,7 @@ var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
       .append("text")
        
       .on("click", function(){
+        // .attr("color", "red");
         // Determine if current line is visible
         var active   = Classroom.active ? false : true,
           newOpacity = active ? "block" : "none";
