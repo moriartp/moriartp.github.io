@@ -8,7 +8,6 @@ var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
     .selectAll('.tile')
     .data(data).enter()
     .append('div')
-    // .filter( function(d) {return d.type === document.getElementById("roomType").value; })
       .attr('class', function(d) {return "tile "+d.type+ " dvd"+d.DVD+ " projector"+d.Projection+ " vhs"+d.VHS+ " cd"+d.CD;})
       .attr('id', function(d) {return d.type;})
       .attr('id', function(d) {return d.roomID;})
@@ -61,12 +60,12 @@ var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
         .html(function (d) { return "<br><i class='fa fa-music' fa-lg></i> CD Playback" })
 
     //////////////ADD FILTER LINKS/////////////////
+
     ////////START CLASSROOM FILTER
-        // Add the Classroom line title
+
+    // Add the Classroom line title
     d3.select("#clicker")
       .append("text")
-      // .attr("x", 0)             
-      // .attr("y", height + margin.top + 10)           
       .on("click", function(){
         // Determine if current line is visible
         var active   = tiles.active ? false : true,
@@ -75,8 +74,6 @@ var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
         // Hide or show the elements
         d3.selectAll(".Classroom").style("display", newOpacity);
         d3.selectAll(".Classroom").style("display", newOpacity);
-
-
 
         // Update whether or not the elements are active
         tiles.active = active;
@@ -86,7 +83,8 @@ var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
       ////////END CLASSROOM FILTER
 
     ////////START Conference ROOM FILTER
-        // Add the Classroom line title
+
+    // Add the Classroom line title
     d3.select("#clicker")
       .append("text")
        
@@ -95,11 +93,10 @@ var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
         var active   = tiles.active ? false : true,
           newOpacity = active ? "block" : "none";
           textStyle = active ? "none" : "line-through";
+
         // Hide or show the elements
         d3.selectAll(".Conference").style("display", newOpacity);
         d3.selectAll(".Conference").style("display", newOpacity);
-
-
 
         // Update whether or not the elements are active
         tiles.active = active;
@@ -111,9 +108,7 @@ var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
     ////////START Technology ROOM FILTER
         // Add the Tech line title
     d3.select("#clicker")
-      .append("text")
-
-       
+      .append("text")       
       .on("click", function(){
         // Determine if current line is visible
         var active   = tiles.active ? false : true,
@@ -129,24 +124,22 @@ var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
       .html("Technology Lab").attr('id','labFilter');
 
       ////////END TECH LAB ROOM FILTER          
+
     //////////////END ADD FILTER LINKS////////////
 
 ///////////////////////HARDWARE/////////////////////
+
    //////////////ADD FILTER LINKS/////////////////
+
     ////////START DVD FILTER
         // Add the line title
     d3.select("#hardwareClicker")
-      .append("text")
-      // .attr("x", 0)             
-      // .attr("y", height + margin.top + 10)    
+      .append("text")  
       .attr("class", "legend")        
       .on("click", function(){
         // Determine if current line is visible
         var active   = tiles.active ? false : true,
-        //   newOpacity = active ? 0 : 1;
         // // Hide or show the elements
-        // d3.selectAll(".Classroom").style("opacity", newOpacity);
-        // d3.selectAll(".Classroom").style("opacity", newOpacity);
           newOpacity = active ? "block" : "none";
           textStyle = active ? "none" : "line-through";
         // Hide or show the elements
@@ -166,7 +159,6 @@ var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
       .append("text")
        
       .on("click", function(){
-        // .attr("color", "red");
         // Determine if current line is visible
         var active   = tiles.active ? false : true,
           newOpacity = active ? "block" : "none";
@@ -174,8 +166,6 @@ var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
         // Hide or show the elements
         d3.selectAll(".projectorTRUE").style("display", newOpacity);
         d3.selectAll(".projectorTRUE").style("display", newOpacity);
-
-
 
         // Update whether or not the elements are active
         tiles.active = active;
@@ -206,6 +196,7 @@ var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
       ////////END FILTER          
 
     ////////START CD PLAYER FILTER
+
         // Add the line title
     d3.select("#hardwareClicker")
       .append("text")
@@ -226,12 +217,9 @@ var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
 
       ////////END FILTER
 
-
-
-
     //////////////END ADD FILTER LINKS////////////
 
-    ///ADD A TOOLTIP TOOLTIP TOOLTIP////
+    ///ADD A TOOLTIP TOOLTIP TOOLTIP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!////
     var tooltip = d3.select('body').append('div').attr('class', 'tooltip')
 
     function showToolTip(d,i){
@@ -255,9 +243,6 @@ var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
       console.log('SHOWIT')
       
     }
-
-
-
 
     function moveTooltip(d,i){
 
@@ -288,33 +273,11 @@ var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
       tooltip.classed('showit', false)
       console.log('HIDEIT')
     }
-
-
-
-    // //////////////////////////////////////////////////////////
-
-    // $("#roomType").on("change", function(){
-    //   roomType = document.getElementById("roomType").value;
-
-
-    //   update();
-    // });
-
-    // update()
+    //////////////////////////////////////////////////////////
   }
-
-
 );
 
-// var update = function() {
-//       // d3.selectAll(".tile")
-//       //   .attr("background-color", 'red')
-//         // .attr("cy", function(d) {
-//         //   return y( d[depend+sliderValue] )
-//         // })        
 
-//       console.log(roomType);    
-//     };
 
 
   
