@@ -17,22 +17,22 @@ var data = d3.csv("proactive-monitor.csv", function(error, data) {
 
 
       .append('text')
-      .html(function (d) { return "<font size='5'>"+d.service+"</font><br>"; });   
+      .html(function (d) { return "<h2>"+d.service+"</h2><br>"; });   
 
       // d3.selectAll("text").append("mac")
       // .filter( function(d) {return d.macQty > 0; })
 
-      d3.selectAll("text").append("server").attr("class",function(d) {return "server- "+d.server;})
+      d3.selectAll(".tile").append("div").attr("class",function(d) {return "factor "+"server- "+d.server;})
       .html(function (d) { return "<br><i class='fa fa-server'></i> <br>Server: "+d.server; })
 
-      d3.selectAll("text").append("network").attr("class",function(d) {return "network- "+d.network;})
+      d3.selectAll(".tile").append("div").attr("class",function(d) {return "factor "+"network- "+d.network;})
       .html(function (d) { return "<br><i class='fa fa-connectdevelop'></i><br>Network: "+d.network; })
 
-      d3.selectAll("text").append("database").attr("class",function(d) {return "database- "+d.database;})
+      d3.selectAll(".tile").append("div").attr("class",function(d) {return "factor "+"database- "+d.database;})
       .html(function (d) { return "<br><i class='fa fa-database' fa-lg></i><br>Database: "+d.database; })
 
-      d3.selectAll("text").append("application").attr("class",function(d) {return "application- "+d.application;})
-      .html(function (d) { return "<br><i class='fa fa-table' fa-lg></i><br>Application: "+d.application; })            
+      d3.selectAll(".tile").append("div").attr("class",function(d) {return "factor "+"application- "+d.application;})
+      .html(function (d) { return "<br><i class='fa fa-desktop' fa-lg></i><br>Application: "+d.application; })            
 
   }
 );      
