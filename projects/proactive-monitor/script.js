@@ -28,7 +28,7 @@ var data = d3.csv("proactive-monitor.csv", function(error, data) {
       d3.selectAll("text").append("network").attr("class",function(d) {return "network- "+d.network;})
       .html(function (d) { return "<br><i class='fa fa-connectdevelop'></i><br>Network: "+d.network; })
 
-      d3.selectAll("text").append("database").attr("class",function(d) {return "database-"+d.database;})
+      d3.selectAll("text").append("database").attr("class",function(d) {return "database- "+d.database;})
       .html(function (d) { return "<br><i class='fa fa-database' fa-lg></i><br>Database: "+d.database; })
 
       d3.selectAll("text").append("application").attr("class",function(d) {return "application- "+d.application;})

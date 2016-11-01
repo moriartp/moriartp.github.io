@@ -1,7 +1,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
-    color:#373332;
+    /*color:#373332;*/
 }
 
 header {
@@ -187,7 +187,7 @@ h1{
 	vertical-align: middle;
 }*/
 
-.fa-windows{
+/*.fa-windows{
 	color: #E88021;
 }
 
@@ -226,7 +226,7 @@ h1{
     font-size: 18px;
 
 
-}
+}*/
 
 /*/////////////FONT AWESOME STYLING END*/
 
