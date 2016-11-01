@@ -1,0 +1,5 @@
+service,server,network,database,application
+Banner,active,active,active,active
+Luminis,active,active,active,active
+Degreeworks,active,active,active,active
+Reporting,active,active,active,inactive
