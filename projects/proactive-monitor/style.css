@@ -1,5 +1,12 @@
+/*@font-face {
+    font-family: "Nueue";
+    src: url(Neue);
+}*/
+
+
 body {
     font-family: 'Montserrat', sans-serif;
+    /*font-family: 'NeueDisplay-Ulta', sans-serif;*/
     font-size: 14px;
     /*color:#373332;*/
 }
@@ -7,11 +14,11 @@ body {
 header {
 	display: block;
 	width: 100%;
-	max-height: 300px;
-	padding: none;
+	height: 100px;
+	padding: 0px;
 	border: none;
 	background-color: #e82e21;
-	margin: none;
+/*	margin: none;*/
 	top:0;
 	left:0;
 
@@ -19,6 +26,7 @@ header {
 #container{
 	margin-left: 6%;
 	margin-right: 6%;
+	margin-top: 1.5%;
 	height: 100%;
 	/*margin-top: 190px;*/
 	display: block;
@@ -60,15 +68,17 @@ i{
 }
 
 h1{
-	font-size: 20px;
+	font-size: 111px;
 	color: white;
 	border: none;
 	/*background-color: #167F8E;*/
-	padding: 5px;
-	padding-bottom: 5px;
+	/*padding: 5px;*/
+	/*padding-bottom: 5px;*/
 	/*width: 100%;*/
 	display: block;
 	margin: none;
+	font-weight: 900;
+	letter-spacing: -4px;
 }
 
 h2{
