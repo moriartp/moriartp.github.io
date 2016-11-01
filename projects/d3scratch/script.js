@@ -1,10 +1,3 @@
-
-// var roomType = document.getElementById("roomType").value;
-
-// $(document).ready(function()  {
-// }
-  //////////////live input//////////
-
 var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
     data.forEach(function(d) {
       d.macQty = +d.macQty;
@@ -16,25 +9,21 @@ var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
     .data(data).enter()
     .append('div')
     // .filter( function(d) {return d.type === document.getElementById("roomType").value; })
-      .attr('class', function(d) {return "tile "+d.type+ " dvd"+d.DVD+ " projector"+d.Projection;})
+      .attr('class', function(d) {return "tile "+d.type+ " dvd"+d.DVD+ " projector"+d.Projection+ " vhs"+d.VHS+ " cd"+d.CD;})
       .attr('id', function(d) {return d.type;})
+      .attr('id', function(d) {return d.roomID;})
       .on('mouseover', function() {
         d3.select(this)
         .transition().duration(100)
         .style('background-color', '#54A5B0')
       })
-      // .on('mouseenter', showToolTip)
       .on('click', showToolTip)
       .on('mousemove', moveTooltip)
       .on('mouseleave', hideToolTip)
       .on('mouseout', function () {
         d3.select(this)
         .transition().duration(500)
-        .style('background-color', 'WhiteSmoke')//function (d) { return d.backgroundColor; })\
-      //   .style("opacity", 1)
-      //   .style("stroke-width", 0 );
-      //     tooltip.transition().duration(300)
-      //           .style("opacity", 0);
+        .style('background-color', 'WhiteSmoke')
       })
 
       .append('text')
@@ -80,12 +69,9 @@ var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
       // .attr("y", height + margin.top + 10)           
       .on("click", function(){
         // Determine if current line is visible
-        var active   = Classroom.active ? false : true,
-        //   newOpacity = active ? 0 : 1;
-        // // Hide or show the elements
-        // d3.selectAll(".Classroom").style("opacity", newOpacity);
-        // d3.selectAll(".Classroom").style("opacity", newOpacity);
+        var active   = tiles.active ? false : true,
           newOpacity = active ? "block" : "none";
+          textStyle = active ? "none" : "line-through";
         // Hide or show the elements
         d3.selectAll(".Classroom").style("display", newOpacity);
         d3.selectAll(".Classroom").style("display", newOpacity);
@@ -93,9 +79,10 @@ var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
 
 
         // Update whether or not the elements are active
-        Classroom.active = active;
+        tiles.active = active;
+        d3.selectAll("#classroomFilter").style("text-decoration", textStyle);
       })
-      .text(" Classroom |");
+      .html("Classroom <br>").attr('id','classroomFilter');
       ////////END CLASSROOM FILTER
 
     ////////START Conference ROOM FILTER
@@ -105,8 +92,9 @@ var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
        
       .on("click", function(){
         // Determine if current line is visible
-        var active   = Classroom.active ? false : true,
+        var active   = tiles.active ? false : true,
           newOpacity = active ? "block" : "none";
+          textStyle = active ? "none" : "line-through";
         // Hide or show the elements
         d3.selectAll(".Conference").style("display", newOpacity);
         d3.selectAll(".Conference").style("display", newOpacity);
@@ -114,32 +102,36 @@ var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
 
 
         // Update whether or not the elements are active
-        Classroom.active = active;
+        tiles.active = active;
+        d3.selectAll("#conferenceFilter").style("text-decoration", textStyle);
       })
-      .text(" Conference |");
+      .html("Conference Room<br>").attr('id','conferenceFilter');
       ////////END CONF ROOM FILTER    
 
     ////////START Technology ROOM FILTER
         // Add the Tech line title
     d3.select("#clicker")
       .append("text")
+
        
       .on("click", function(){
         // Determine if current line is visible
-        var active   = Classroom.active ? false : true,
+        var active   = tiles.active ? false : true,
           newOpacity = active ? "block" : "none";
+          textStyle = active ? "none" : "line-through";
         // Hide or show the elements
         d3.selectAll(".Technology").style("display", newOpacity);
         d3.selectAll(".Technology").style("display", newOpacity);
         // Update whether or not the elements are active
-        Classroom.active = active;
+        tiles.active = active;
+        d3.selectAll("#labFilter").style("text-decoration", textStyle);
       })
-      .text(" Tech Lab |");
+      .html("Technology Lab").attr('id','labFilter');
 
       ////////END TECH LAB ROOM FILTER          
     //////////////END ADD FILTER LINKS////////////
 
-///////////////////////PLATFORM/////////////////////
+///////////////////////HARDWARE/////////////////////
    //////////////ADD FILTER LINKS/////////////////
     ////////START DVD FILTER
         // Add the line title
@@ -150,22 +142,22 @@ var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
       .attr("class", "legend")        
       .on("click", function(){
         // Determine if current line is visible
-        var active   = Classroom.active ? false : true,
+        var active   = tiles.active ? false : true,
         //   newOpacity = active ? 0 : 1;
         // // Hide or show the elements
         // d3.selectAll(".Classroom").style("opacity", newOpacity);
         // d3.selectAll(".Classroom").style("opacity", newOpacity);
           newOpacity = active ? "block" : "none";
+          textStyle = active ? "none" : "line-through";
         // Hide or show the elements
         d3.selectAll(".dvdTRUE").style("display", newOpacity);
         d3.selectAll(".dvdTRUE").style("display", newOpacity);
 
-
-
         // Update whether or not the elements are active
-        Classroom.active = active;
+        tiles.active = active;
+        d3.selectAll("#dvdFilter").style("text-decoration", textStyle);
       })
-      .text(" DVD |");
+      .html("DVD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;").attr('id','dvdFilter');
       ////////END DVD FILTER
 
     ////////START PROJ FILTER
@@ -176,8 +168,9 @@ var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
       .on("click", function(){
         // .attr("color", "red");
         // Determine if current line is visible
-        var active   = Classroom.active ? false : true,
+        var active   = tiles.active ? false : true,
           newOpacity = active ? "block" : "none";
+          textStyle = active ? "none" : "line-through";
         // Hide or show the elements
         d3.selectAll(".projectorTRUE").style("display", newOpacity);
         d3.selectAll(".projectorTRUE").style("display", newOpacity);
@@ -185,9 +178,10 @@ var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
 
 
         // Update whether or not the elements are active
-        Classroom.active = active;
+        tiles.active = active;
+        d3.selectAll("#projectorFilter").style("text-decoration", textStyle);
       })
-      .text(" Projector |");
+      .html("Projector<br>").attr('id','projectorFilter');
       ////////END PROJ FILTER    
 
     ////////START VHS FILTER
@@ -197,17 +191,44 @@ var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
        
       .on("click", function(){
         // Determine if current line is visible
-        var active   = Classroom.active ? false : true,
+        var active   = tiles.active ? false : true,
           newOpacity = active ? "block" : "none";
+          textStyle = active ? "none" : "line-through";
         // Hide or show the elements
         d3.selectAll(".vhsTRUE").style("display", newOpacity);
         d3.selectAll(".vhsTRUE").style("display", newOpacity);
         // Update whether or not the elements are active
-        Classroom.active = active;
+        tiles.active = active;
+        d3.selectAll("#vhsFilter").style("text-decoration", textStyle);
       })
-      .text(" VHS |");
+      .html("VHS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;").attr('id','vhsFilter');
 
-      ////////END TECH LAB ROOM FILTER          
+      ////////END FILTER          
+
+    ////////START CD PLAYER FILTER
+        // Add the line title
+    d3.select("#hardwareClicker")
+      .append("text")
+       
+      .on("click", function(){
+        // Determine if current line is visible
+        var active   = tiles.active ? false : true,
+          newOpacity = active ? "block" : "none";
+          textStyle = active ? "none" : "line-through";
+        // Hide or show the elements
+        d3.selectAll(".cdTRUE").style("display", newOpacity);
+        d3.selectAll(".cdTRUE").style("display", newOpacity);
+        // Update whether or not the elements are active
+        tiles.active = active;
+        d3.selectAll("#cdFilter").style("text-decoration", textStyle);
+      })
+      .html("CD Player<br>").attr('id','cdFilter');
+
+      ////////END FILTER
+
+
+
+
     //////////////END ADD FILTER LINKS////////////
 
     ///ADD A TOOLTIP TOOLTIP TOOLTIP////
