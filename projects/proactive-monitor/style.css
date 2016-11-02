@@ -65,6 +65,10 @@ i{
 	vertical-align: middle;
 }
 
+.fa.fa-exclamation-circle{
+	font-size: 30px;
+}
+
 .inactive{
 	color:#e82e21;
 }
@@ -142,9 +146,9 @@ p{
 /*///////////////////////////////*/
 
 
-@-webkit-keyframes fadeIn { from { margin-left:100%; } to { margin-left:-240px; } }
-@-moz-keyframes fadeIn { from { margin-left:100%; } to { margin-left:-240px; } }
-@keyframes fadeIn { from { margin-left:100%; } to { margin-left:-240px; } }
+@-webkit-keyframes fadeIn { from { margin-left:100%; } to { margin-left:-550px; } }
+@-moz-keyframes fadeIn { from { margin-left:100%; } to { margin-left:-550px; } }
+@keyframes fadeIn { from { margin-left:100%; } to { margin-left:-550px; } }
 
 .fade-in {
   opacity:1;  /* make things invisible upon start */
@@ -173,10 +177,11 @@ p{
 /*---make a basic box ---*/
 .box{
   width: 100%;
-  height: 30px;
+  height: 25px;
   position: absolute;
   display:block;
   margin: 10px;
+  font-size: 30px;
   /*float: left;*/
   /*border: 1px solid #333;*/
   /*background: #000;*/
