@@ -24,8 +24,8 @@ header {
 
 }
 #container{
-	margin-left: 6%;
-	margin-right: 6%;
+	margin-left: 3%;
+	margin-right: 3%;
 	margin-top: 1.5%;
 	height: 100%;
 	/*margin-top: 190px;*/
@@ -34,21 +34,23 @@ header {
 
 div.tile{
 	float: left;
-	padding: 1%;
-	margin:0.5%;
-	width:49%;
-	height:55%;
+	padding: 3%;
+	margin: 1%;
+	width:48%;
+	height:50%;
 	background-color: whitesmoke;
 	border:2px solid slategray;
 	border-radius: 1px;
-/*	min-width: 190px;
+/*	min-width: 600px;
 	max-width: 230px;*/
 	text-align: center;
+	display:block;
+	/*margin: auto;*/
 }
 div.factor{
 	display: inline-block;
-	width:50%;
-	height:50%;
+	width:25%;
+	height:25%;
 	padding:none;
 	margin:none;
 }
