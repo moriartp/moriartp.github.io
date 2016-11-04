@@ -47,6 +47,7 @@ div.tile{
 	display:block;
 	/*margin: auto;*/
 }
+
 div.factor{
 	display: inline-block;
 	width:25%;
@@ -65,8 +66,12 @@ i{
 	vertical-align: middle;
 }
 
-.inactive{
+/* The element to apply the animation to */
+/* The animation code */
+
+div.inactive{
 	color:#e82e21;
+
 }
 
 h1{
@@ -148,17 +153,17 @@ p{
 
 .fade-in {
   opacity:1;  /* make things invisible upon start */
-  -webkit-animation:fadeIn ease-out 4;   call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time 
-  -moz-animation:fadeIn ease-out 4;
-  animation:fadeIn ease-out 4;
+  -webkit-animation:fadeIn ease-in 2;   call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time 
+  -moz-animation:fadeIn ease-in 2;
+  animation:fadeIn ease-in 2;
 
   -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
   -moz-animation-fill-mode:forwards;
   animation-fill-mode:forwards;
 
-  -webkit-animation-duration:13.5s;
-  -moz-animation-duration:13.5s;
-  animation-duration:13.5s;
+  -webkit-animation-duration:27s;
+  -moz-animation-duration:27s;
+  animation-duration:27s;
 }
 
 
@@ -177,7 +182,7 @@ p{
   position: absolute;
   display:block;
   margin: 10px;
-  font-size: 30px;
+  font-size: 20px;
   /*float: left;*/
   /*border: 1px solid #333;*/
   /*background: #000;*/

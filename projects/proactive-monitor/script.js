@@ -1,6 +1,7 @@
 // var parseDate = d3.time.format("%d-%b-%y").parse;
 
 var data = d3.csv("proactive-monitor.csv", function(error, data) {
+  console.log(data);
     // data.forEach(function(d) {
     //   d.date = d.date = parseDate(d.date);
     //   // d.close = +d.close;
@@ -40,6 +41,27 @@ var data = d3.csv("proactive-monitor.csv", function(error, data) {
 
   }
 ); 
+
+
+
+///////////////////////ticker script//////////////////
+var d = new Date();
+var n = d.getHours();
+// var m = d.getMinutes();
+var m = (d.getMinutes()<10?'0':'') + d.getMinutes();
+var s = d.getSeconds();
+
+
+var lastUpdate = d3.select(".box.fade-in.two")
+      // .append('text').html(function (d) { return "...last update: " + new Date(); })
+      // .append('text').html(function (d) { return "<i>...last update: " + n + ":" + m; }) 
+      .append('text').html(function (d) {
+        if (n<12){
+           return "<i>...last update: " + n + ":" + m + "AM</i>";
+        } else {
+          return "<i>...last update: " + (n - 12) + ":" + m + " p.m.</i>";
+        }
+      ;})
 
 // var inter = setInterval(function() {
 //                 updateData();
