@@ -46,10 +46,10 @@ var data = d3.csv("proactive-monitor.csv", function(error, data) {
 
 ///////////////////////ticker script//////////////////
 var d = new Date();
-var n = d.getHours();
+var n = (d.getHours()<10?'0':'') + d.getHours();
 // var m = d.getMinutes();
 var m = (d.getMinutes()<10?'0':'') + d.getMinutes();
-var s = d.getSeconds();
+var s = (d.getSeconds()<10?'0':'') + d.getSeconds();
 
 
 var lastUpdate = d3.select(".box.fade-in.two")
@@ -57,9 +57,9 @@ var lastUpdate = d3.select(".box.fade-in.two")
       // .append('text').html(function (d) { return "<i>...last update: " + n + ":" + m; }) 
       .append('text').html(function (d) {
         if (n<12){
-           return "<i>...last update: " + n + ":" + m + "AM</i>";
+           return "<i>...last update: " + n  + ":" + m +":" + s + " a.m.</i>";
         } else {
-          return "<i>...last update: " + (n - 12) + ":" + m + " p.m.</i>";
+          return "<i>...last update: " + (n - 12) + ":" + m +":" + s + " p.m.</i>";
         }
       ;})
 
