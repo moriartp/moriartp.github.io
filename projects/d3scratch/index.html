@@ -24,14 +24,18 @@
         <!-- <p id="showClassrooms">SHOW CLASSROOMS</p> -->
 
 
-        <input type='text' id='search' placeholder="Search by Device or Software...">
+        <!-- <input type='text' id='search' placeholder="Search by Device or Software..."> -->
 <!--         <div id="activeTags">HERE THEY ARE:<p id="selectinput"></div> -->
 
-        <p id="showClassrooms" class="buttonFilter"></p>
-        <p id="showConference" class="buttonFilter"></p>
-        <p id="showLabs" class="buttonFilter"></p>
-        <p></p>
-
+        <div id="roomFilters" class='filterSect'>Rooms
+        <div id="showClassrooms" class="buttonFilter"></div>
+        <div id="showConference" class="buttonFilter"></div>
+        <div id="showLabs" class="buttonFilter"></div>
+        </div>
+        <div id="deviceFilters" class='filterSect'> Devices
+        <div id="showDVD" class="buttonFilter"></div>
+        <div id="showPROJ" class="buttonFilter"></div>
+        </div>
 
 
 
@@ -42,6 +46,7 @@
     </header>
 
     <div id="container"></div>
+    <footer>Haven't found what you're looking for? Try adjusting the filters</footer>
 
 
 <!-- jquery start -->
@@ -60,6 +65,9 @@
 
     <!-- CUSTOM -->
     <script type='text/javascript' src='script.js'></script>
+
+    <!-- CUSTOM STYLING -->
+    <link rel="stylesheet" type="text/css" href="style.css"/>
 
 
 

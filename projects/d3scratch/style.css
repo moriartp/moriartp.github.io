@@ -24,7 +24,18 @@ header {
 	margin-left: 6%;
 	margin-right: 6%;
 	padding-bottom: 0px;
+}
 
+.filterSect{
+	border: 1px solid white;
+	border-radius: 3px;
+	display: inline-block;
+	width:36%;
+	min-width: 200px;
+	padding-left: 0.5%;
+	padding-right: 0.5%;
+	margin: 1%;
+	color: white;
 }
 
 #container{
@@ -64,7 +75,7 @@ header {
 
 }
 
-p.buttonFilter{
+div.buttonFilter{
 	background-color: floralwhite;
 	border: 2px solid darkgray;
 	border-radius: 13px;
@@ -75,6 +86,7 @@ p.buttonFilter{
 	padding-bottom:1px;
 	margin: 1%;
 	cursor: pointer;
+	color: black;
 }
 
 input#search{
@@ -103,7 +115,7 @@ p{
 }
 
 h1{
-	font-size: 20px;
+	font-size: 33px;
 	color: white;
 	border: none;
 	/*background-color: #167F8E;*/
@@ -125,6 +137,16 @@ div.tile{
 	min-width: 190px;
 	max-width: 230px;
 }
+
+/*div.tile.dontKILLme{
+	display: block;
+}
+
+div.tile #KILL {
+	display: none;
+}*/
+
+
 
 /*/////////////FONT AWESOME STYLING START*/
 .fa {
@@ -224,4 +246,23 @@ iframe{
 	position: fixed;
 	left:10%;
 	z-index: 10000000;
+}
+
+
+div.tile.dontKILLme{
+	display: block;
+}
+
+#KILL div.tile {
+	display: none;
+}
+
+footer{
+	margin-left: 6%;
+	margin-right: 6%;
+	margin-top: 190px;
+	display: inline-block;
+	font-size: 90px;
+	color:#e82e21;
+
 }

@@ -9,9 +9,8 @@ var data = d3.csv("data/dummyRoomDataUpdate.csv", function(error, data) {
     .selectAll('.tile')
     .data(data).enter()
     .append('div')
-      .attr('class', function(d) {return "tile "+d.type+ " dvd"+d.DVD+ " projector"+d.Projection+ " vhs"+d.VHS+ " cd"+d.CD;})
-      .attr('id', function(d) {return d.type;})
       .attr('id', function(d) {return d.roomID;})
+      .attr('class', function(d) {return "tile "+d.type+ " dvd"+d.DVD+ " projector"+d.Projection+ " vhs"+d.VHS+ " cd"+d.CD;})
       .on('mouseover', function() {
         d3.select(this)
         .transition().duration(100)
@@ -60,17 +59,6 @@ var data = d3.csv("data/dummyRoomDataUpdate.csv", function(error, data) {
 
     //////////////ADD FILTER LINKS/////////////////
 
-  //   ////////START CLASSROOM FILTER/////////////////////////////////////////////////////////////////
-
-  // d3.selectAll("#showConference").append("text").html("HIDE CONF. ROOMS")
-  //   .on("click", function(d) {
-  //               d3.selectAll("#showConference").style("background-color", 'lightgray').style("color", 'gray');
-  //               d3.selectAll(".Conference").style("display", 'none')
-  //               var show = false
-  //               console.log(show)
-  //             })
-  //   ////////END CLASSROOM FILTER/////////////////////////////////////////////////////////////////
-
   ////////START CLASSROOM FILTER/////////////////////////////////////////////////////////////////
   var showClass = 0;
   console.log(showClass);
@@ -79,11 +67,13 @@ var data = d3.csv("data/dummyRoomDataUpdate.csv", function(error, data) {
       if (showClass%2){
                   d3.selectAll("#showClassrooms").style("background-color", 'white').style("color", 'black');
                   d3.selectAll(".Classroom").style("display", 'block')
+                  // d3.selectAll(".Classroom") .attr("class", ' dontKILLme')
                   showClass = (showClass + 1);
                   console.log(showClass);
                 } else {
                   d3.selectAll("#showClassrooms").style("background-color", 'lightgray').style("color", 'gray');
                   d3.selectAll(".Classroom").style("display", 'none')
+                  // d3.selectAll(".Classroom").attr("id", ' KILL')
                   showClass = (showClass + 1);
                   console.log(showClass);
                 }
@@ -98,11 +88,13 @@ var data = d3.csv("data/dummyRoomDataUpdate.csv", function(error, data) {
       if (showCONF%2){
                   d3.selectAll("#showConference").style("background-color", 'white').style("color", 'black');
                   d3.selectAll(".Conference").style("display", 'block')
+                  // d3.selectAll(".Conference").attr("class", ' dontKILLme')
                   showCONF = (showCONF + 1);
                   console.log(showCONF);
                 } else {
                   d3.selectAll("#showConference").style("background-color", 'lightgray').style("color", 'gray');
                   d3.selectAll(".Conference").style("display", 'none')
+                  // d3.selectAll(".Conference").attr("id", ' KILL')
                   showCONF = (showCONF + 1);
                   console.log(showCONF);
                 }
@@ -117,67 +109,63 @@ var data = d3.csv("data/dummyRoomDataUpdate.csv", function(error, data) {
       if (showTECHLABS%2){
                   d3.selectAll("#showLabs").style("background-color", 'white').style("color", 'black');
                   d3.selectAll(".Technology").style("display", 'block')
+                  // d3.selectAll(".Technology").attr("class", ' dontKILLme')
                   showTECHLABS = (showTECHLABS + 1);
                   console.log(showTECHLABS);
                 } else {
                   d3.selectAll("#showLabs").style("background-color", 'lightgray').style("color", 'gray');
                   d3.selectAll(".Technology").style("display", 'none')
+                  // d3.selectAll(".Technology").attr("id", ' KILL')
                   showTECHLABS = (showTECHLABS + 1);
                   console.log(showTECHLABS);
                 }
               })
   ////////END CONFERENCE FILTER/////////////////////////////////////////////////////////////////  
 
+// END FILTER LINKS // // END FILTER LINKS //  // END FILTER LINKS //  // END FILTER LINKS //  // END FILTER LINKS //  
 
 
+  ////////START DVD FILTER/////////////////////////////////////////////////////////////////
+  var showDVD = 0;
+  console.log(showDVD);
+  d3.selectAll("#showDVD").append("text").html("DVD")
+    .on("click", function(d) {
+      if (showDVD%2) {
+                  d3.selectAll("#showDVD").style("background-color", 'white').style("color", 'black');
+                  d3.selectAll(".dvdTRUE").style("display", 'block')
+                  // d3.selectAll(".dvdTRUE").attr("class", ' dontKILLme')
+                  showDVD = (showDVD + 1);
+                  console.log(showDVD);
+      } else {
+                  d3.selectAll("#showDVD").style("background-color", ' lightgray').style("color", 'gray');
+                  d3.selectAll(".dvdTRUE").style("display", 'none')
+                  // d3.selectAll(".dvdTRUE").attr("id", ' KILL')
+                  showDVD = (showDVD + 1);
+                  console.log(showDVD);
+                }
+              })
+  ////////END DVD FILTER/////////////////////////////////////////////////////////////////  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  //   ////////START CLASSROOM FILTER/////////////////////////////////////////////////////////////////
-
-  // d3.selectAll("#showLabs").append("text").html("HIDE TECH LABS")
-  //   .on("click", function(d) {
-  //               d3.selectAll("#showLabs").style("background-color", 'lightgray').style("color", 'gray');
-  //               d3.selectAll(".Technology").style("display", 'none')
-  //               var show = false
-  //               console.log(show)
-  //             })
-  //   ////////END CLASSROOM FILTER/////////////////////////////////////////////////////////////////        
+  ////////START DVD FILTER/////////////////////////////////////////////////////////////////
+  var showPROJ = 0;
+  console.log(showPROJ);
+  d3.selectAll("#showPROJ").append("text").html("PROJECTOR")
+    .on("click", function(d) {
+      if (showPROJ%2) {
+                  d3.selectAll("#showPROJ").style("background-color", 'white').style("color", 'black');
+                  d3.selectAll(".projectorTRUE").style("display", 'block')
+                  // d3.selectAll(".projectorTRUE").attr("class", ' dontKILLme')
+                  showPROJ = (showPROJ + 1);
+                  console.log(showPROJ);
+      } else {
+                  d3.selectAll("#showPROJ").style("background-color", 'lightgray').style("color", 'gray');
+                  d3.selectAll(".projectorTRUE").style("display", 'none')
+                  // d3.selectAll(".projectorTRUE").attr("id", ' KILL')
+                  showPROJ = (showPROJ + 1);
+                  console.log(showPROJ);
+                }
+              })
+  ////////END DVD FILTER///////////////////////////////////////////////////////////////// 
 
 //START TOOLTIP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!////
     var tooltip = d3.select('#container').append('div').attr('class', 'tooltip')
