@@ -60,38 +60,124 @@ var data = d3.csv("data/dummyRoomDataUpdate.csv", function(error, data) {
 
     //////////////ADD FILTER LINKS/////////////////
 
-    ////////START CLASSROOM FILTER/////////////////////////////////////////////////////////////////
+  //   ////////START CLASSROOM FILTER/////////////////////////////////////////////////////////////////
 
-  d3.selectAll("#showConference").append("text").html("HIDE CONF. ROOMS")
+  // d3.selectAll("#showConference").append("text").html("HIDE CONF. ROOMS")
+  //   .on("click", function(d) {
+  //               d3.selectAll("#showConference").style("background-color", 'lightgray').style("color", 'gray');
+  //               d3.selectAll(".Conference").style("display", 'none')
+  //               var show = false
+  //               console.log(show)
+  //             })
+  //   ////////END CLASSROOM FILTER/////////////////////////////////////////////////////////////////
+
+  ////////START CLASSROOM FILTER/////////////////////////////////////////////////////////////////
+  var showClass = 0;
+  console.log(showClass);
+  d3.selectAll("#showClassrooms").append("text").html("CLASSROOMS")
     .on("click", function(d) {
-                d3.selectAll("#showConference").style("background-color", 'lightgray').style("color", 'gray');
-                d3.selectAll(".Conference").style("display", 'none')
-                var show = false
-                console.log(show)
+      if (showClass%2){
+                  d3.selectAll("#showClassrooms").style("background-color", 'white').style("color", 'black');
+                  d3.selectAll(".Classroom").style("display", 'block')
+                  showClass = (showClass + 1);
+                  console.log(showClass);
+                } else {
+                  d3.selectAll("#showClassrooms").style("background-color", 'lightgray').style("color", 'gray');
+                  d3.selectAll(".Classroom").style("display", 'none')
+                  showClass = (showClass + 1);
+                  console.log(showClass);
+                }
               })
-    ////////END CLASSROOM FILTER/////////////////////////////////////////////////////////////////
+  ////////END CLASSROOM FILTER/////////////////////////////////////////////////////////////////
 
-    ////////START CLASSROOM FILTER/////////////////////////////////////////////////////////////////
-
-  d3.selectAll("#showClassrooms").append("text").html("HIDE CLASSROOMS")
+  ////////START CONFERENCE FILTER/////////////////////////////////////////////////////////////////
+  var showCONF = 0;
+  console.log(showCONF);
+  d3.selectAll("#showConference").append("text").html("CONFERENCE ROOMS")
     .on("click", function(d) {
-                d3.selectAll("#showClassrooms").style("background-color", 'lightgray').style("color", 'gray');
-                d3.selectAll(".Classroom").style("display", 'none')
-                var show = false
-                console.log(show)
+      if (showCONF%2){
+                  d3.selectAll("#showConference").style("background-color", 'white').style("color", 'black');
+                  d3.selectAll(".Conference").style("display", 'block')
+                  showCONF = (showCONF + 1);
+                  console.log(showCONF);
+                } else {
+                  d3.selectAll("#showConference").style("background-color", 'lightgray').style("color", 'gray');
+                  d3.selectAll(".Conference").style("display", 'none')
+                  showCONF = (showCONF + 1);
+                  console.log(showCONF);
+                }
               })
-    ////////END CLASSROOM FILTER/////////////////////////////////////////////////////////////////
+  ////////END CONFERENCE FILTER/////////////////////////////////////////////////////////////////  
 
-    ////////START CLASSROOM FILTER/////////////////////////////////////////////////////////////////
-
-  d3.selectAll("#showLabs").append("text").html("HIDE TECH LABS")
+  ////////START CONFERENCE FILTER/////////////////////////////////////////////////////////////////
+  var showTECHLABS = 0;
+  console.log(showTECHLABS);
+  d3.selectAll("#showLabs").append("text").html("TECHNOLOGY LABS")
     .on("click", function(d) {
-                d3.selectAll("#showLabs").style("background-color", 'lightgray').style("color", 'gray');
-                d3.selectAll(".Technology").style("display", 'none')
-                var show = false
-                console.log(show)
+      if (showTECHLABS%2){
+                  d3.selectAll("#showLabs").style("background-color", 'white').style("color", 'black');
+                  d3.selectAll(".Technology").style("display", 'block')
+                  showTECHLABS = (showTECHLABS + 1);
+                  console.log(showTECHLABS);
+                } else {
+                  d3.selectAll("#showLabs").style("background-color", 'lightgray').style("color", 'gray');
+                  d3.selectAll(".Technology").style("display", 'none')
+                  showTECHLABS = (showTECHLABS + 1);
+                  console.log(showTECHLABS);
+                }
               })
-    ////////END CLASSROOM FILTER/////////////////////////////////////////////////////////////////        
+  ////////END CONFERENCE FILTER/////////////////////////////////////////////////////////////////  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  //   ////////START CLASSROOM FILTER/////////////////////////////////////////////////////////////////
+
+  // d3.selectAll("#showLabs").append("text").html("HIDE TECH LABS")
+  //   .on("click", function(d) {
+  //               d3.selectAll("#showLabs").style("background-color", 'lightgray').style("color", 'gray');
+  //               d3.selectAll(".Technology").style("display", 'none')
+  //               var show = false
+  //               console.log(show)
+  //             })
+  //   ////////END CLASSROOM FILTER/////////////////////////////////////////////////////////////////        
 
 //START TOOLTIP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!////
     var tooltip = d3.select('#container').append('div').attr('class', 'tooltip')
