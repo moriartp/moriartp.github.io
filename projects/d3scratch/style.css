@@ -225,7 +225,6 @@ div.tile #KILL {
 	width:100%;
 	vertical-align: middle;
 	align:center;
-
 }
 
 iframe{
@@ -248,14 +247,12 @@ iframe{
 	z-index: 10000000;
 }
 
+iframe{
+	border:1px solid #E88021;
+	border-radius: 2px;
 
-div.tile.dontKILLme{
-	display: block;
 }
 
-#KILL div.tile {
-	display: none;
-}
 
 footer{
 	margin-left: 6%;
