@@ -12,7 +12,7 @@ var data = d3.csv("db_status/db_status.csv", function(error, data) {
     .selectAll('.tile')
     .data(data).enter()
     .append('div')
-      .attr('class', function(d) {return "tile "+"db-"+d.INSTANCE_NAME||'+ " network-"+d.network+ " database"+d.database+ " application"+d.application;})
+      .attr('class', function(d) {return "tile "+"db-"+d.INSTANCE_NAME+ " network-"+d.network+ " database"+d.DATABASE_STATUS+ " application"+d.application;})
       // .attr('id', function(d) {return d.type;})
       .attr('id', function(d) {return d.service;})
       // .on('mouseover', function() {
@@ -23,7 +23,7 @@ var data = d3.csv("db_status/db_status.csv", function(error, data) {
 
 
       .append('text')
-      .html(function (d) { return "<h2>"+d.service+"</h2><br>"; });   
+      .html(function (d) { return "<p class='instanceName'>"+d.INSTANCE_NAME+"</p><br>"; });   
 
       // d3.selectAll("text").append("mac")
       // .filter( function(d) {return d.macQty > 0; })
@@ -34,8 +34,8 @@ var data = d3.csv("db_status/db_status.csv", function(error, data) {
       d3.selectAll(".tile").append("div").attr("class",function(d) {return "factor "+"network- "+d.network;})
       .html(function (d) { return "<br><i class='fa fa-connectdevelop'></i><br>Network: "+d.network; })
 
-      d3.selectAll(".tile").append("div").attr("class",function(d) {return "factor "+"database- "+d.database;})
-      .html(function (d) { return "<br><i class='fa fa-database' fa-lg></i><br>Database: "+d.database; })
+      d3.selectAll(".tile").append("div").attr("class",function(d) {return "factor "+"database- "+d.DATABASE_STATUS;})
+      .html(function (d) { return "<br><i class='fa fa-database' fa-lg></i><br>Database: "+d.DATABASE_STATUS; })
 
       d3.selectAll(".tile").append("div").attr("class",function(d) {return "factor "+"application- "+d.application;})
       .html(function (d) { return "<br><i class='fa fa-desktop' fa-lg></i><br>Application: "+d.application; })            
@@ -57,8 +57,10 @@ var lastUpdate = d3.select(".box.fade-in.two")
       // .append('text').html(function (d) { return "...last update: " + new Date(); })
       // .append('text').html(function (d) { return "<i>...last update: " + n + ":" + m; }) 
       .append('text').html(function (d) {
-        if (n<12){
-           return "<i>...last update: " + n  + ":" + m +":" + s + " a.m.</i>";
+        if(n==12){
+          return "<i>...last update: " + n  + ":" + m +":" + s + " p.m.</i>";
+        }else if (n<12){
+          return "<i>...last update: " + n  + ":" + m +":" + s + " a.m.</i>";
         } else {
           return "<i>...last update: " + (n - 12) + ":" + m +":" + s + " p.m.</i>";
         }

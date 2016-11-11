@@ -34,10 +34,10 @@ header {
 
 div.tile{
 	float: left;
-	padding: 3%;
+	padding: 1%;
 	margin: 1%;
 	width:48%;
-	height:50%;
+	height:280%;
 	background-color: whitesmoke;
 	border:2px solid slategray;
 	border-radius: 1px;
@@ -61,9 +61,10 @@ i{
 }
 
 .fa {
-    font-size: 800%;
+    font-size: 400%;
 /*    color: #167F8E;*/
 	vertical-align: middle;
+	padding-top: 1px
 }
 
 /* The element to apply the animation to */
@@ -75,7 +76,7 @@ div.inactive{
 }
 
 h1{
-	font-size: 126px;
+	font-size: 66px;
 	color: white;
 	border: none;
 	/*background-color: #167F8E;*/
@@ -91,7 +92,7 @@ h1{
 }
 
 h2{
-	font-size: 500%;
+	font-size: 300%;
 	margin:1px;
 	font-weight: 900;
 	letter-spacing: -4px;
@@ -104,6 +105,15 @@ p{
     margin-top: 0px;
     margin-bottom: 0px;
     /*font-size: 14px;*/
+}
+
+p.instanceName{
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    letter-spacing: 12px;
+    font-size: 55px;
 }
 
 
