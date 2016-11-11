@@ -122,13 +122,13 @@ var data = d3.csv("data/dummyRoomDataUpdate.csv", function(error, data) {
     .on("click", function(d) {
       if (showClass%2){
                   d3.selectAll("#showClassrooms").style("background-color", 'white').style("color", 'black');
-                  d3.selectAll(".Classroom").style("display", 'block')
+                  // d3.selectAll(".Classroom").style("display", 'block')
                   // d3.selectAll(".Classroom") .attr("class", ' dontKILLme')
                   showClass = (showClass + 1);
                   // console.log(showClass);
                 } else {
                   d3.selectAll("#showClassrooms").style("background-color", 'lightgray').style("color", 'gray');
-                  d3.selectAll(".Classroom").style("display", 'none')
+                  // d3.selectAll(".Classroom").style("display", 'none')
                   // d3.selectAll(".Classroom").attr("id", ' KILL')
                   showClass = (showClass + 1);
                   // console.log(showClass);
@@ -145,13 +145,13 @@ var data = d3.csv("data/dummyRoomDataUpdate.csv", function(error, data) {
     .on("click", function(d) {
       if (showCONF%2){
                   d3.selectAll("#showConference").style("background-color", 'white').style("color", 'black');
-                  d3.selectAll(".Conference").style("display", 'block')
+                  // d3.selectAll(".Conference").style("display", 'block')
                   // d3.selectAll(".Conference").attr("class", ' dontKILLme')
                   showCONF = (showCONF + 1);
                   // console.log(showCONF);
                 } else {
                   d3.selectAll("#showConference").style("background-color", 'lightgray').style("color", 'gray');
-                  d3.selectAll(".Conference").style("display", 'none')
+                  // d3.selectAll(".Conference").style("display", 'none')
                   // d3.selectAll(".Conference").attr("id", ' KILL')
                   showCONF = (showCONF + 1);
                   // console.log(showCONF);
@@ -168,13 +168,13 @@ var data = d3.csv("data/dummyRoomDataUpdate.csv", function(error, data) {
     .on("click", function(d) {
       if (showTECHLABS%2){
                   d3.selectAll("#showLabs").style("background-color", 'white').style("color", 'black');
-                  d3.selectAll(".Technology").style("display", 'block')
+                  // d3.selectAll(".Technology").style("display", 'block')
                   // d3.selectAll(".Technology").attr("class", ' dontKILLme')
                   showTECHLABS = (showTECHLABS + 1);
                   // console.log(showTECHLABS);
                 } else {
                   d3.selectAll("#showLabs").style("background-color", 'lightgray').style("color", 'gray');
-                  d3.selectAll(".Technology").style("display", 'none')
+                  // d3.selectAll(".Technology").style("display", 'none')
                   // d3.selectAll(".Technology").attr("id", ' KILL')
                   showTECHLABS = (showTECHLABS + 1);
                   // console.log(showTECHLABS);
@@ -194,7 +194,7 @@ var data = d3.csv("data/dummyRoomDataUpdate.csv", function(error, data) {
     .on("click", function(d) {
       if (showDVD%2) {
                   d3.selectAll("#showDVD").style("box-shadow", '0px 0px 40px 12px rgba(255,234,0,1)').style("color", 'black');
-                  d3.selectAll(".dvdTRUE").style("visibility", 'visible')
+                  // d3.selectAll(".dvdTRUE").style("visibility", 'visible')
                   // d3.selectAll(".dvdTRUE").style("position", 'auto')
                   // d3.selectAll(".dvdTRUE").style("top", 'auto')
                   // d3.selectAll(".dvdTRUE").attr("class", ' dontKILLme')
@@ -202,7 +202,7 @@ var data = d3.csv("data/dummyRoomDataUpdate.csv", function(error, data) {
                   // console.log(showDVD);
       } else {
                   d3.selectAll("#showDVD").style("box-shadow", 'none')//.style("color", 'gray');
-                  d3.selectAll(".dvdTRUE").style("visibility", 'hidden')
+                  // d3.selectAll(".dvdTRUE").style("visibility", 'hidden')
                   // d3.selectAll(".dvdTRUE").style("position", 'absolute')
                   // d3.selectAll(".dvdTRUE").style("top", '-9999999px')
                   // d3.selectAll(".dvdTRUE").attr("id", ' KILL')
@@ -221,8 +221,8 @@ var data = d3.csv("data/dummyRoomDataUpdate.csv", function(error, data) {
     .on("click", function(d) {
       if (showPROJ%2) {
                   d3.selectAll("#showPROJ").style("box-shadow", '0px 0px 40px 12px rgba(255,234,0,1)').style("color", 'black');
-                  d3.selectAll(".projectorTRUE").style("visibility", 'visible')
-                  d3.selectAll(".projectorTRUE").style("opacity", '1')
+                  // d3.selectAll(".projectorTRUE").style("visibility", 'visible')
+                  // d3.selectAll(".projectorTRUE").style("opacity", '1')
                   // d3.selectAll(".projectorTRUE").style("position", 'auto')
                   // d3.selectAll(".projectorTRUE").style("top", 'auto')
                   showPROJ = (showPROJ + 1);
@@ -230,7 +230,7 @@ var data = d3.csv("data/dummyRoomDataUpdate.csv", function(error, data) {
       } else {
                   d3.selectAll("#showPROJ").style("box-shadow", 'none')//.style("color", 'gray');
                   // d3.selectAll(".projectorTRUE").style("visibility", 'hidden')
-                  d3.selectAll(".projectorTRUE").style("opacity", '0')
+                  // d3.selectAll(".projectorTRUE").style("opacity", '0')
                   // d3.selectAll(".projectorTRUE").style("position", 'absolute')
                   // d3.selectAll(".projectorTRUE").style("top", '-9999999px')
                   showPROJ = (showPROJ + 1);
@@ -245,6 +245,11 @@ var data = d3.csv("data/dummyRoomDataUpdate.csv", function(error, data) {
   console.log(displayME);
   // d3.selectAll("."+CLRMCode+CONFcode+TLABcode+PROcode+DVDcode)
 ////////END DVD FILTER///////////////////////////////////////////////////////////////// 
+
+d3.selectAll("#submit").append("text").html("SUBMIT")
+    .on("click", function(d) {})
+d3.selectAll("#reset").append("text").html("RESET")
+    .on("click", function(d) {})    
 
 //////////|||||||||||///|||||||||//////|||||||||///|||///////|||||||||||////|||////|||||||||/////////////////////////////////
 //////////////|||///////||/////||//////||/////||///|||///////////|||////////|||////|||///|||/////////////////////////////////
