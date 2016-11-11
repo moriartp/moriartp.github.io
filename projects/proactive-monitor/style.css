@@ -1,14 +1,7 @@
-/*@font-face {
-    font-family: "Nueue";
-    src: url(Neue);
-}*/
-
 
 body {
     font-family: 'Montserrat', sans-serif;
-    /*font-family: 'NeueDisplay-Ulta', sans-serif;*/
     font-size: 14px;
-    /*color:#373332;*/
 }
 
 header {
@@ -18,17 +11,14 @@ header {
 	padding: 0px;
 	border: none;
 	background-color: #e82e21;
-/*	margin: none;*/
 	top:0;
 	left:0;
-
 }
 #container{
 	margin-left: 3%;
 	margin-right: 3%;
 	margin-top: 1.5%;
 	height: 100%;
-	/*margin-top: 190px;*/
 	display: block;
 }
 
@@ -41,36 +31,29 @@ div.tile{
 	background-color: whitesmoke;
 	border:2px solid slategray;
 	border-radius: 1px;
-/*	min-width: 600px;
-	max-width: 230px;*/
 	text-align: center;
 	display:block;
-	/*margin: auto;*/
 }
 
 div.factor{
 	display: inline-block;
 	width:25%;
-	height:25%;
+	height:5%;
 	padding:none;
 	margin:none;
 }
 
 i{
-	margin:10px;
+	margin:1px;
 }
 
 .fa {
     font-size: 400%;
-/*    color: #167F8E;*/
 	vertical-align: middle;
 	padding-top: 1px
 }
 
-/* The element to apply the animation to */
-/* The animation code */
-
-div.inactive{
+div.INACTIVE{
 	color:#e82e21;
 
 }
@@ -79,10 +62,6 @@ h1{
 	font-size: 66px;
 	color: white;
 	border: none;
-	/*background-color: #167F8E;*/
-	/*padding: 5px;*/
-	/*padding-bottom: 5px;*/
-	/*width: 100%;*/
 	display: block;
 	margin: none;
 	padding: none;
@@ -100,11 +79,10 @@ h2{
 
 
 p{
-    padding-top: 7px;
-    padding-bottom: 11px;
+    padding-top: 1px;
+    padding-bottom: 1px;
     margin-top: 0px;
     margin-bottom: 0px;
-    /*font-size: 14px;*/
 }
 
 p.instanceName{
@@ -113,61 +91,20 @@ p.instanceName{
     margin-top: 0px;
     margin-bottom: 0px;
     letter-spacing: 12px;
-    font-size: 55px;
+    font-size: 45px;
 }
-
-
-/*////////////////////////////////////*/
-
-.tooltip {
-	position: absolute;
-	font-size: 12px;
-	text-align: left;
-	padding: 10px;
-	background: whitesmoke;
-	color: #1B1413;
-	border:2px solid #E88021;
-	border-radius: 2px;
-	pointer-events: none;
-	display: none;
-	width:30%;
-	min-height: 150px
-	box-shadow: 10px 10px 5px #888888;
-	margin: 10px;
-	padding-bottom: 50px;
-	box-shadow: 10px 10px 75px black; /*#888888;*/
-	margin-left:5%;
-	margin-right:5%
-
-}
-
-/*iframe{
-	border:1px solid #E88021;
-	border-radius: 2px;
-
-}*/
-
-.tooltip.showit {
-	display: block;
-	opacity: .95;
-/*	background-color: #FFB877;*/
-	background-color: floralwhite;	
-}
-
-/*///////////////////////////////*/
-
 
 @-webkit-keyframes fadeIn { from { margin-left:100%; } to { margin-left:-550px; } }
 @-moz-keyframes fadeIn { from { margin-left:100%; } to { margin-left:-550px; } }
 @keyframes fadeIn { from { margin-left:100%; } to { margin-left:-550px; } }
 
 .fade-in {
-  opacity:1;  /* make things invisible upon start */
-  -webkit-animation:fadeIn ease-in 2;   call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time 
+  opacity:1;  
+  -webkit-animation:fadeIn ease-in 2;  
   -moz-animation:fadeIn ease-in 2;
   animation:fadeIn ease-in 2;
 
-  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -webkit-animation-fill-mode:forwards; 
   -moz-animation-fill-mode:forwards;
   animation-fill-mode:forwards;
 
@@ -176,26 +113,17 @@ p.instanceName{
   animation-duration:27s;
 }
 
-
-
-/*.fade-in.two {
-  -webkit-animation-delay: 1s;
-  -moz-animation-delay:1s;
-  animation-delay: 1s;
-}*/
-
-
-/*---make a basic box ---*/
 .box{
   width: 100%;
   height: 25px;
   position: absolute;
   display:block;
-  margin: 10px;
+  margin: 15px;
   font-size: 20px;
-  /*float: left;*/
-  /*border: 1px solid #333;*/
-  /*background: #000;*/
   color:black;
+}
 
+#tick-tick-tick{
+	height: 20px;
+	margin:1px;
 }
