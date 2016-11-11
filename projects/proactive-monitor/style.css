@@ -13,6 +13,8 @@ header {
 	background-color: #e82e21;
 	top:0;
 	left:0;
+	margin:none;
+	/*position: absolute;*/
 }
 #container{
 	margin-left: 3%;
@@ -26,7 +28,7 @@ div.tile{
 	float: left;
 	padding: 1%;
 	margin: 1%;
-	width:48%;
+	width:45%;
 	height:280%;
 	background-color: whitesmoke;
 	border:2px solid slategray;
