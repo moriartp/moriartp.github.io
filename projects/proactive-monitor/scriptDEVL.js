@@ -1,6 +1,7 @@
 // var parseDate = d3.time.format("%d-%b-%y").parse;
 
-var data = d3.csv("proactive-monitor.csv", function(error, data) {
+// var data = d3.csv("proactive-monitor.csv", function(error, data) {
+var data = d3.csv("db_status/db_status.csv", function(error, data) {  
   console.log(data);
     // data.forEach(function(d) {
     //   d.date = d.date = parseDate(d.date);
@@ -11,7 +12,7 @@ var data = d3.csv("proactive-monitor.csv", function(error, data) {
     .selectAll('.tile')
     .data(data).enter()
     .append('div')
-      .attr('class', function(d) {return "tile "+"server-"+d.server+ " network-"+d.network+ " database"+d.database+ " application"+d.application;})
+      .attr('class', function(d) {return "tile "+"db-"+d.INSTANCE_NAME||'+ " network-"+d.network+ " database"+d.database+ " application"+d.application;})
       // .attr('id', function(d) {return d.type;})
       .attr('id', function(d) {return d.service;})
       // .on('mouseover', function() {
