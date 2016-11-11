@@ -1,7 +1,6 @@
 // var parseDate = d3.time.format("%d-%b-%y").parse;
 
 var data = d3.csv("proactive-monitor.csv", function(error, data) {
-// var data = d3.csv("dbproactive-monitor.csv", function(error, data) {  
   console.log(data);
     // data.forEach(function(d) {
     //   d.date = d.date = parseDate(d.date);
