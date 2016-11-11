@@ -57,7 +57,10 @@ i{
 
 div.INACTIVE{
 	color:#e82e21;
+}
 
+div.undefined{
+	color: darkgray;
 }
 
 h1{
