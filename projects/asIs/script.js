@@ -55,6 +55,10 @@ var data = d3.csv("data/supported-spaces.csv", function(error, data) {
       d3.selectAll("text").append("wins")
       .filter( function(d) {return d.PCStationQty > 0; })
         .html(function (d) { return "<br><i class='fa fa-windows' fa-lg></i> Windows Stations: "+d.PCStationQty})
+
+      // d3.selectAll("text").append("devices")
+      // .filter( function(d) {return d.SpecialtyHardware != null; })
+      //   .html(function (d) { return "<br>Hardware: "+d.SpecialtyHardware })
   //////////////ADD FILTER LINKS///////////////////////////////////////////////////////////////// 
 
   ////////      |||||||   ///   ///    //////////   ///////   //////////  ///////     //////// 
