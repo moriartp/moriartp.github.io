@@ -24,7 +24,7 @@ header {
 	display: block;
 }
 
-div.tile{
+div.tile div.course-tile{
 	float: left;
 	padding: 1%;
 	margin: 1%;
