@@ -122,13 +122,13 @@ var data = d3.csv("data/dummyRoomDataUpdate.csv", function(error, data) {
     .on("click", function(d) {
       if (showClass%2){
                   d3.selectAll("#showClassrooms").style("background-color", 'white').style("color", 'black');
-                  // d3.selectAll(".Classroom").style("display", 'block')
+                  d3.selectAll(".Classroom").style("display", 'block')
                   // d3.selectAll(".Classroom") .attr("class", ' dontKILLme')
                   showClass = (showClass + 1);
                   // console.log(showClass);
                 } else {
                   d3.selectAll("#showClassrooms").style("background-color", 'lightgray').style("color", 'gray');
-                  // d3.selectAll(".Classroom").style("display", 'none')
+                  d3.selectAll(".Classroom").style("display", 'none')
                   // d3.selectAll(".Classroom").attr("id", ' KILL')
                   showClass = (showClass + 1);
                   // console.log(showClass);
@@ -145,13 +145,13 @@ var data = d3.csv("data/dummyRoomDataUpdate.csv", function(error, data) {
     .on("click", function(d) {
       if (showCONF%2){
                   d3.selectAll("#showConference").style("background-color", 'white').style("color", 'black');
-                  // d3.selectAll(".Conference").style("display", 'block')
+                  d3.selectAll(".Conference").style("display", 'block')
                   // d3.selectAll(".Conference").attr("class", ' dontKILLme')
                   showCONF = (showCONF + 1);
                   // console.log(showCONF);
                 } else {
                   d3.selectAll("#showConference").style("background-color", 'lightgray').style("color", 'gray');
-                  // d3.selectAll(".Conference").style("display", 'none')
+                  d3.selectAll(".Conference").style("display", 'none')
                   // d3.selectAll(".Conference").attr("id", ' KILL')
                   showCONF = (showCONF + 1);
                   // console.log(showCONF);

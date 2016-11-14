@@ -1,6 +1,3 @@
-
-
-
 // var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
 var data = d3.csv("data/dummyRoomDataUpdate.csv", function(error, data) {  
     data.forEach(function(d) {
@@ -115,186 +112,8 @@ var data = d3.csv("data/dummyRoomDataUpdate.csv", function(error, data) {
 //   ////////      |||||||   ///   ///       ///       ///       ///////         ///     //////// 
 //   ////////      |||       ///   //////    ///       ///////   ///   ///   ///////     //////// 
 
-//   ////////START CLASSROOM FILTER/////////////////////////////////////////////////////////////////
-//   var showClass = 0;
-//   console.log(showClass);
-//   d3.selectAll("#showClassrooms").append("text").html("CLASSROOMS")
-//     .on("click", function(d) {
-//       if (showClass%2){
-//                   d3.selectAll("#showClassrooms").style("background-color", 'white').style("color", 'black');
-//                   // d3.selectAll(".Classroom").style("display", 'block')
-//                   // d3.selectAll(".Classroom") .attr("class", ' dontKILLme')
-//                   showClass = (showClass + 1);
-//                   // console.log(showClass);
-//                 } else {
-//                   d3.selectAll("#showClassrooms").style("background-color", 'lightgray').style("color", 'gray');
-//                   // d3.selectAll(".Classroom").style("display", 'none')
-//                   // d3.selectAll(".Classroom").attr("id", ' KILL')
-//                   showClass = (showClass + 1);
-//                   // console.log(showClass);
-//                 }
-//                 var displayME = (showClass%2).toString()+(showCONF%2).toString()+(showTECHLABS%2).toString()+(showDVD%2).toString()+(showPROJ%2).toString();
-//                 console.log(displayME)
-//               })
-//   ////////END CLASSROOM FILTER/////////////////////////////////////////////////////////////////
+d3.selectAll('.room_button').on('change', console.log('Hello, World!'));
 
-//   ////////START CONFERENCE FILTER/////////////////////////////////////////////////////////////////
-//   var showCONF = 0;
-//   console.log(showCONF);
-//   d3.selectAll("#showConference").append("text").html("CONFERENCE ROOMS")
-//     .on("click", function(d) {
-//       if (showCONF%2){
-//                   d3.selectAll("#showConference").style("background-color", 'white').style("color", 'black');
-//                   // d3.selectAll(".Conference").style("display", 'block')
-//                   // d3.selectAll(".Conference").attr("class", ' dontKILLme')
-//                   showCONF = (showCONF + 1);
-//                   // console.log(showCONF);
-//                 } else {
-//                   d3.selectAll("#showConference").style("background-color", 'lightgray').style("color", 'gray');
-//                   // d3.selectAll(".Conference").style("display", 'none')
-//                   // d3.selectAll(".Conference").attr("id", ' KILL')
-//                   showCONF = (showCONF + 1);
-//                   // console.log(showCONF);
-//                 }
-//                 var displayME = (showClass%2).toString()+(showCONF%2).toString()+(showTECHLABS%2).toString()+(showDVD%2).toString()+(showPROJ%2).toString();
-//                 console.log(displayME)
-//               })
-//   ////////END CONFERENCE FILTER/////////////////////////////////////////////////////////////////  
-
-//   ////////START CONFERENCE FILTER/////////////////////////////////////////////////////////////////
-//   var showTECHLABS = 0;
-//   console.log(showTECHLABS);
-//   d3.selectAll("#showLabs").append("text").html("TECHNOLOGY LABS")
-//     .on("click", function(d) {
-//       if (showTECHLABS%2){
-//                   d3.selectAll("#showLabs").style("background-color", 'white').style("color", 'black');
-//                   // d3.selectAll(".Technology").style("display", 'block')
-//                   // d3.selectAll(".Technology").attr("class", ' dontKILLme')
-//                   showTECHLABS = (showTECHLABS + 1);
-//                   // console.log(showTECHLABS);
-//                 } else {
-//                   d3.selectAll("#showLabs").style("background-color", 'lightgray').style("color", 'gray');
-//                   // d3.selectAll(".Technology").style("display", 'none')
-//                   // d3.selectAll(".Technology").attr("id", ' KILL')
-//                   showTECHLABS = (showTECHLABS + 1);
-//                   // console.log(showTECHLABS);
-//                 }
-//                 var displayME = (showClass%2).toString()+(showCONF%2).toString()+(showTECHLABS%2).toString()+(showDVD%2).toString()+(showPROJ%2).toString();
-//                 console.log(displayME)
-//               })
-//   ////////END CONFERENCE FILTER/////////////////////////////////////////////////////////////////  
-
-// // END FILTER LINKS // // END FILTER LINKS //  // END FILTER LINKS //  // END FILTER LINKS //  // END FILTER LINKS //  
-
-
-//   ////////START DVD FILTER/////////////////////////////////////////////////////////////////
-//   var showDVD = 1;
-//   console.log(showDVD);
-//   d3.selectAll("#showDVD").append("text").html("DVD")
-//     .on("click", function(d) {
-//       if (showDVD%2) {
-//                   d3.selectAll("#showDVD").style("box-shadow", '0px 0px 40px 12px rgba(255,234,0,1)').style("color", 'black');
-//                   // d3.selectAll(".dvdTRUE").style("visibility", 'visible')
-//                   // d3.selectAll(".dvdTRUE").style("position", 'auto')
-//                   // d3.selectAll(".dvdTRUE").style("top", 'auto')
-//                   // d3.selectAll(".dvdTRUE").attr("class", ' dontKILLme')
-//                   showDVD = (showDVD + 1);
-//                   // console.log(showDVD);
-//       } else {
-//                   d3.selectAll("#showDVD").style("box-shadow", 'none')//.style("color", 'gray');
-//                   // d3.selectAll(".dvdTRUE").style("visibility", 'hidden')
-//                   // d3.selectAll(".dvdTRUE").style("position", 'absolute')
-//                   // d3.selectAll(".dvdTRUE").style("top", '-9999999px')
-//                   // d3.selectAll(".dvdTRUE").attr("id", ' KILL')
-//                   showDVD = (showDVD + 1);
-//                   // console.log(showDVD);
-//                 }
-//                 var displayME = (showClass%2).toString()+(showCONF%2).toString()+(showTECHLABS%2).toString()+(showDVD%2).toString()+(showPROJ%2).toString();
-//                 console.log(displayME)
-//               })
-//   ////////END DVD FILTER/////////////////////////////////////////////////////////////////  
-
-//   ////////START DVD FILTER/////////////////////////////////////////////////////////////////
-//   var showPROJ = 1;
-//   console.log(showPROJ);
-//   d3.selectAll("#showPROJ").append("text").html("PROJECTOR")
-//     .on("click", function(d) {
-//       if (showPROJ%2) {
-//                   d3.selectAll("#showPROJ").style("box-shadow", '0px 0px 40px 12px rgba(255,234,0,1)').style("color", 'black');
-//                   // d3.selectAll(".projectorTRUE").style("visibility", 'visible')
-//                   // d3.selectAll(".projectorTRUE").style("opacity", '1')
-//                   // d3.selectAll(".projectorTRUE").style("position", 'auto')
-//                   // d3.selectAll(".projectorTRUE").style("top", 'auto')
-//                   showPROJ = (showPROJ + 1);
-//                   // console.log(showPROJ);
-//       } else {
-//                   d3.selectAll("#showPROJ").style("box-shadow", 'none')//.style("color", 'gray');
-//                   // d3.selectAll(".projectorTRUE").style("visibility", 'hidden')
-//                   // d3.selectAll(".projectorTRUE").style("opacity", '0')
-//                   // d3.selectAll(".projectorTRUE").style("position", 'absolute')
-//                   // d3.selectAll(".projectorTRUE").style("top", '-9999999px')
-//                   showPROJ = (showPROJ + 1);
-//                   // console.log(showPROJ);
-//                 }
-//                 var displayME = (showClass%2).toString()+(showCONF%2).toString()+(showTECHLABS%2).toString()+(showDVD%2).toString()+(showPROJ%2).toString();
-//                 console.log(displayME)
-//               })
-
-
-//   var displayME = showClass.toString()+showCONF.toString()+showTECHLABS.toString()+showDVD.toString()+showPROJ.toString();
-//   console.log(displayME);
-//   // d3.selectAll("."+CLRMCode+CONFcode+TLABcode+PROcode+DVDcode)
-// ////////END DVD FILTER///////////////////////////////////////////////////////////////// 
-
-// d3.selectAll("#submit").append("text").html("SUBMIT")
-//     .on("click", function(d) {})
-// d3.selectAll("#reset").append("text").html("RESET")
-//     .on("click", function(d) {})    
-
-//////////|||||||||||///|||||||||//////|||||||||///|||///////|||||||||||////|||////|||||||||/////////////////////////////////
-//////////////|||///////||/////||//////||/////||///|||///////////|||////////|||////|||///|||/////////////////////////////////
-//////////////|||///////||/////||//////||/////||///|||///////////|||////////|||////|||||||||/////////////////////////////////
-//////////////|||///////|||||||||//////|||||||||///||||||||//////|||////////|||////|||///////////////////////////////////////
-
-
-
-////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////
-
-// a function that will be responsible for updating the visibility of the tiles
-function update() {
-  // colors will be the array of active colors, i.e. if only the yellow checkbox
-  // is checked, it will be ['yellow']
-  var rooms = d3.selectAll('.room_button')[0]
-     .filter(function(e) { return e.checked; })
-     .map(function(e) { return e.value; });
-
-  // same thing for the devices
-  var devices = d3.selectAll('.hardware_button')[0]
-      .filter(function(e) { return e.checked; })
-      .map(function(e) { return e.value; });
-      console.log(e.checked);
-
-  // a helper function that will return the correct display value
-  // it will be called for every tile
-  function display(d) {
-    // we check if the current dot's color and texture are present in the
-    // colors and textures arrays.
-    if (rooms.indexOf(d.roomType) !== -1 && devices.indexOf(d.Projector) !== -1) {
-      return 'block';
-    } else {
-      return 'none';
-    }
-  }
-
-  // we change the display attribute of every dot using the display function just defined
-  d3.selectAll('.tile').attr('display', display);
-}
-
-// we add a simple handler to all the checkboxes: every time one changes,
-// just call update
-d3.selectAll(".filter_options input").on("change", update);
 ////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -325,6 +144,18 @@ d3.selectAll(".filter_options input").on("change", update);
 //END TOOLTIP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!////
   }
 );
+
+var checked = false;
+  setInterval(function(){
+    checked = !checked;
+    var myInput = d3.select("input");
+    myInput.property("checked", checked);
+    myInput.on("change")();
+  }, 2000);
+
+  d3.select("input").on("change", function(d){
+    console.log('checkbox changed');
+});
 
 
 
