@@ -194,7 +194,7 @@ var data = d3.csv("data/dummyRoomDataUpdate.csv", function(error, data) {
     .on("click", function(d) {
       if (showDVD%2) {
                   d3.selectAll("#showDVD").style("box-shadow", '0px 0px 40px 12px rgba(255,234,0,1)').style("color", 'black');
-                  // d3.selectAll(".dvdTRUE").style("visibility", 'visible')
+                  d3.selectAll(".dvdTRUE").style("visibility", 'visible')
                   // d3.selectAll(".dvdTRUE").style("position", 'auto')
                   // d3.selectAll(".dvdTRUE").style("top", 'auto')
                   // d3.selectAll(".dvdTRUE").attr("class", ' dontKILLme')
@@ -202,7 +202,7 @@ var data = d3.csv("data/dummyRoomDataUpdate.csv", function(error, data) {
                   // console.log(showDVD);
       } else {
                   d3.selectAll("#showDVD").style("box-shadow", 'none')//.style("color", 'gray');
-                  // d3.selectAll(".dvdTRUE").style("visibility", 'hidden')
+                  d3.selectAll(".dvdTRUE").style("visibility", 'hidden')
                   // d3.selectAll(".dvdTRUE").style("position", 'absolute')
                   // d3.selectAll(".dvdTRUE").style("top", '-9999999px')
                   // d3.selectAll(".dvdTRUE").attr("id", ' KILL')
@@ -221,7 +221,7 @@ var data = d3.csv("data/dummyRoomDataUpdate.csv", function(error, data) {
     .on("click", function(d) {
       if (showPROJ%2) {
                   d3.selectAll("#showPROJ").style("box-shadow", '0px 0px 40px 12px rgba(255,234,0,1)').style("color", 'black');
-                  // d3.selectAll(".projectorTRUE").style("visibility", 'visible')
+                  d3.selectAll(".projectorTRUE").style("visibility", 'visible')
                   // d3.selectAll(".projectorTRUE").style("opacity", '1')
                   // d3.selectAll(".projectorTRUE").style("position", 'auto')
                   // d3.selectAll(".projectorTRUE").style("top", 'auto')
@@ -229,7 +229,7 @@ var data = d3.csv("data/dummyRoomDataUpdate.csv", function(error, data) {
                   // console.log(showPROJ);
       } else {
                   d3.selectAll("#showPROJ").style("box-shadow", 'none')//.style("color", 'gray');
-                  // d3.selectAll(".projectorTRUE").style("visibility", 'hidden')
+                  d3.selectAll(".projectorTRUE").style("visibility", 'hidden')
                   // d3.selectAll(".projectorTRUE").style("opacity", '0')
                   // d3.selectAll(".projectorTRUE").style("position", 'absolute')
                   // d3.selectAll(".projectorTRUE").style("top", '-9999999px')
