@@ -1,6 +1,6 @@
 
 var data = d3.csv("db_status/db_status.csv", function(error, data) {  
-  console.log(data);  
+  // console.log(data);  
 
   var tiles = d3.select('#container')
     .selectAll('.tile')
