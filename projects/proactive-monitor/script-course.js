@@ -5,7 +5,7 @@ var textString = d3.text("db_status/coursedb_status.csv", function(text) {
     .selectAll('.course-tile')
     .data(text[0]).enter()
     .append('div')
-      .attr('class', function(d) {return "tile "+"course-catalog";})
+      .attr('class', function(d) {return "course-tile "+"course-catalog";})
       .attr('id', 'course-catalog')
       .append('text')
       .html(function (d) { return "<p class='instanceName'>COURSES</p><br>"; });   
