@@ -24,7 +24,20 @@ header {
 	display: block;
 }
 
-div.tile div.course-tile{
+div.tile {
+	float: left;
+	padding: 1%;
+	margin: 1%;
+	width:45%;
+	height:280%;
+	background-color: whitesmoke;
+	border:2px solid slategray;
+	border-radius: 1px;
+	text-align: center;
+	display:block;
+}
+
+div.course-tile {
 	float: left;
 	padding: 1%;
 	margin: 1%;
