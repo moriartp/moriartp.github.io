@@ -81,7 +81,7 @@ var data = d3.csv("data/supported-spaces.csv", function(error, data) {
                   d3.selectAll("#showA").style("background-color", 'lightgray').style("color", 'gray');
                   d3.selectAll(".A").style("display", 'none')
                   // d3.selectAll(".Classroom").attr("id", ' KILL')
-                  showClass = (showA + 1);
+                  showA = (showA + 1);
                   // console.log(showClass);
                 }
                 var displayME = (showClass%2).toString()+(showCONF%2).toString()+(showTECHLABS%2).toString()+(showDVD%2).toString()+(showPROJ%2).toString();
@@ -139,8 +139,8 @@ var data = d3.csv("data/supported-spaces.csv", function(error, data) {
   d3.selectAll("#showE").append("text").html("Parsons East Building<br><font size='0.5'>25 East 13th Street")
     .on("click", function(d) {
       if (showE%2){
-                  d3.selectAll("#showD").style("background-color", 'white').style("color", 'black');
-                  d3.selectAll(".D").style("display", 'block')
+                  d3.selectAll("#showE").style("background-color", 'white').style("color", 'black');
+                  d3.selectAll(".E").style("display", 'block')
                   // d3.selectAll(".Classroom") .attr("class", ' dontKILLme')
                   showE = (showE + 1);
                   // console.log(showClass);
@@ -208,7 +208,7 @@ var data = d3.csv("data/supported-spaces.csv", function(error, data) {
                   d3.selectAll("#showI").style("background-color", 'white').style("color", 'black');
                   d3.selectAll(".i").style("display", 'block')
                   // d3.selectAll(".Classroom") .attr("class", ' dontKILLme')
-                  showH = (showH + 1);
+                  showI = (showI + 1);
                   // console.log(showClass);
                 } else {
                   d3.selectAll("#showI").style("background-color", 'lightgray').style("color", 'gray');
