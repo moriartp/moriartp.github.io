@@ -69,7 +69,7 @@ var data = d3.csv("data/supported-spaces.csv", function(error, data) {
   ////////START CLASSROOM FILTER/////////////////////////////////////////////////////////////////
   var showA = 0;
   console.log(showA);
-  d3.selectAll("#showA").append("text").html("66 West 12th Street")
+  d3.selectAll("#showA").append("text").html("Alvin Johnson/J.M. Kaplan Hall<br><font size='0.5'>66 West 12th Street")
     .on("click", function(d) {
       if (showA%2){
                   d3.selectAll("#showA").style("background-color", 'white').style("color", 'black');
@@ -92,7 +92,7 @@ var data = d3.csv("data/supported-spaces.csv", function(error, data) {
   ////////START CLASSROOM FILTER/////////////////////////////////////////////////////////////////
   var showB = 0;
   console.log(showB);
-  d3.selectAll("#showB").append("text").html("65 West 11th Street")
+  d3.selectAll("#showB").append("text").html("Eugene Lang College Building<br><font size='0.5'>65 West 11th Street")
     .on("click", function(d) {
       if (showB%2){
                   d3.selectAll("#showB").style("background-color", 'white').style("color", 'black');
@@ -114,7 +114,7 @@ var data = d3.csv("data/supported-spaces.csv", function(error, data) {
 
   var showD = 0;
   console.log(showD);
-  d3.selectAll("#showD").append("text").html("6 East 16th Street")
+  d3.selectAll("#showD").append("text").html("Albert and Vera List Academic Center<br><font size='0.5'>6 East 16th Street")
     .on("click", function(d) {
       if (showD%2){
                   d3.selectAll("#showD").style("background-color", 'white').style("color", 'black');
@@ -136,7 +136,7 @@ var data = d3.csv("data/supported-spaces.csv", function(error, data) {
 
   var showE = 0;
   console.log(showE);
-  d3.selectAll("#showE").append("text").html("25 East 13th Street")
+  d3.selectAll("#showE").append("text").html("Parsons East Building<br><font size='0.5'>25 East 13th Street")
     .on("click", function(d) {
       if (showE%2){
                   d3.selectAll("#showD").style("background-color", 'white').style("color", 'black');
@@ -158,7 +158,7 @@ var data = d3.csv("data/supported-spaces.csv", function(error, data) {
 
   var showG = 0;
   console.log(showG);
-  d3.selectAll("#showG").append("text").html("80 Fifth Avenue")
+  d3.selectAll("#showG").append("text").html("Administrative Offices<br><font size='0.5'>80 Fifth Avenue")
     .on("click", function(d) {
       if (showG%2){
                   d3.selectAll("#showG").style("background-color", 'white').style("color", 'black');
@@ -180,7 +180,7 @@ var data = d3.csv("data/supported-spaces.csv", function(error, data) {
 
   var showH = 0;
   console.log(showH);
-  d3.selectAll("#showH").append("text").html("72 Fifth Avenue")
+  d3.selectAll("#showH").append("text").html("Fanton Hall/Welcome Center<br><font size='0.5'>72 Fifth Avenue")
     .on("click", function(d) {
       if (showH%2){
                   d3.selectAll("#showH").style("background-color", 'white').style("color", 'black');
@@ -202,7 +202,7 @@ var data = d3.csv("data/supported-spaces.csv", function(error, data) {
 
   var showI = 0;
   console.log(showI);
-  d3.selectAll("#showI").append("text").html("55 West 13th Street")
+  d3.selectAll("#showI").append("text").html("Arnhold Hall<br><font size='0.5'>55 West 13th Street")
     .on("click", function(d) {
       if (showI%2){
                   d3.selectAll("#showI").style("background-color", 'white').style("color", 'black');
@@ -224,7 +224,7 @@ var data = d3.csv("data/supported-spaces.csv", function(error, data) {
 
   var showL = 0;
   console.log(showL);
-  d3.selectAll("#showL").append("text").html("2 West 13th Street")
+  d3.selectAll("#showL").append("text").html("Sheila C. Johnson Design Center<br><font size='0.5'>2 West 13th Street (L)")
     .on("click", function(d) {
       if (showL%2){
                   d3.selectAll("#showL").style("background-color", 'white').style("color", 'black');
@@ -246,7 +246,7 @@ var data = d3.csv("data/supported-spaces.csv", function(error, data) {
 
   var showM = 0;
   console.log(showM);
-  d3.selectAll("#showM").append("text").html("66 Fifth Avenue")
+  d3.selectAll("#showM").append("text").html("Sheila C. Johnson Design Center <br><font size='0.5'>66 Fifth Avenue (M)")
     .on("click", function(d) {
       if (showM%2){
                   d3.selectAll("#showM").style("background-color", 'white').style("color", 'black');
@@ -268,7 +268,7 @@ var data = d3.csv("data/supported-spaces.csv", function(error, data) {
 
   var showN = 0;
   console.log(showN);
-  d3.selectAll("#showN").append("text").html("66 Fifth Avenue (N)")
+  d3.selectAll("#showN").append("text").html("Sheila C. Johnson Design Center <br><font size='0.5'>66 Fifth Avenue (N)")
     .on("click", function(d) {
       if (showN%2){
                   d3.selectAll("#showN").style("background-color", 'white').style("color", 'black');
@@ -290,7 +290,7 @@ var data = d3.csv("data/supported-spaces.csv", function(error, data) {
 
   var showU = 0;
   console.log(showU);
-  d3.selectAll("#showU").append("text").html("63 Fifth Avenue")
+  d3.selectAll("#showU").append("text").html("University Center<br><font size='0.5'>63 Fifth Avenue")
     .on("click", function(d) {
       if (showU%2){
                   d3.selectAll("#showU").style("background-color", 'white').style("color", 'black');
@@ -311,7 +311,7 @@ var data = d3.csv("data/supported-spaces.csv", function(error, data) {
   ////////END CLASSROOM FILTER///////////////////////////////////////////////////////////////// 
   var showW = 0;
   console.log(showW);
-  d3.selectAll("#showW").append("text").html("71 Fifth Avenue")
+  d3.selectAll("#showW").append("text").html("Administrative Offices<br><font size='0.5'>71 Fifth Avenue")
     .on("click", function(d) {
       if (showW%2){
                   d3.selectAll("#showW").style("background-color", 'white').style("color", 'black');
