@@ -12,24 +12,6 @@ var data = d3.csv("data/supported-spaces.csv", function(error, data) {
     .append('div')
       .attr('id', function(d) {return d.BuildingCode + d.RoomNumber;})
       .attr('class', function(d) { return "tile " + d.RoomType + " location " + d.BuildingCode })
-      //     if(d.type==="Conference Room"){
-      //       var CONFcode = "1";
-      //     } esle {
-      //       CONFcode = "0";
-      //     }
-      //     if (d.Projection === true){
-      //       var PROcode = "1";
-      //     } else {
-      //       var PROcode = "0";
-      //     }
-      //     if (d.DVD === true){
-      //       var DVDcode = "1";
-      //     } else {
-      //       var PROcode = "0";
-      //     }
-      //   return CLRMCode+CONFcode+PROcode+DVDcode
-      //   })
-      // .attr('class', function(d) {return "tile "+d.type+ " dvd"+d.DVD+ " projector"+d.Projection+ " vhs"+d.VHS+ " cd"+d.CD;})
       .on('mouseover', function() {
         d3.select(this)
         .transition().duration(100)
@@ -40,8 +22,9 @@ var data = d3.csv("data/supported-spaces.csv", function(error, data) {
         .transition().duration(500)
         .style('background-color', 'WhiteSmoke')
       })
-      .on('click', showToolTip)
-
+      .on('mouseenter', showToolTip)
+      .on('mousemove', moveTooltip)
+      .on('mouseleave', hideToolTip)
       .append('text')
       .html(function (d) { return "<font size='3'>"+d.RoomNumber+"</font><br>"+d.RoomType+"<br>"+d.BuildingCode+"; Rm. "+d.RoomNumber+"<br>"; });   
 
@@ -470,11 +453,31 @@ var data = d3.csv("data/supported-spaces.csv", function(error, data) {
     //SHOW IT///////////////////////////////////////
     function showToolTip(d,i){
       tooltip.classed('showit', true)
-      tooltip.html('').html('<h2><b>'+d.RoomNumber+'</h2><iframe width=100% height="200" src="https://www.youtube.com/embed/oYZGGDK3kUg?autoplay=1" frameborder="0" allowfullscreen volume="0"></iframe><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.1376991648503!2d-73.99441544876213!3d40.736995479227645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a2868a69e1%3A0x79b19a0b47c6d645!2s6+E+16th+St%2C+New+York%2C+NY+10003!5e0!3m2!1sen!2sus!4v1477595809186" width=100% height="100" frameborder="1" style="border:1" allowfullscreen></iframe><br>Location: '+d.location+'<br>Macs: '+d.macQty+'<br>Windows: '+d.winQty+'<br>Projector: '+d.Projection+'<br>DVD: '+d.DVD+'</b><p><i>This might also include a more verbose description of the room that details the general function, purpose and access to the room, whether that be specialized, designated to specific parties, etc...</i></p><div class="closer"><i class="fa fa-times-circle" fa-lg></div>')
+      tooltip.html('').html('<h1 id="tooltiph1"><i class="fa fa-building"></i> '+d.BuildingCode+' Room: '+d.RoomNumber+'</h1><p><i class="fa fa-video-camera"></i><b> Presentation Devices</b><br>This '+d.RoomType+' comes equiped with '+d.PresentationDevicesInstructions+' devices for presentation.</p><p><i class="fa fa-life-ring"></i><b> Support</b><br>If you require support please contact '+d.SupportContact+'.</p><p><i class="fa fa-desktop"></i><b> Available Platforms</b><br>Offering '+d.StationPlatform+' workstations, this '+d.RoomType+' is equipped with '+d.PCStationQty+' Windows workstation(s), and '+d.MacStationQty+' Mac workstation(s)</p><p><i class="fa fa-info-circle"></i><i>This might also include a more verbose description of the room that details the general function, purpose and access to the room, whether that be specialized, designated to specific parties, etc...</i></p>')
       // tooltip.html("<i class='fa fa-times-circle' fa-lg>").on('click',hideToolTip)  
     }
 
-    d3.select('.fa-times-circle').on('click', hideToolTip);
+    function moveTooltip(d,i){
+
+      ////Get the mouse X position 
+      var mouseX = d3.event.clientX + 215
+      var mouseY = d3.event.clientY + 600
+      
+      ////Put the name in the tooltip HTML
+      // tooltip.html('').html('<b>'+d.Agencies+'</b><br>Total Respondents: '+d.TotalEnrollment)
+
+
+      ////Calculate positioning and move tooltip
+      var ttBCR = tooltip.node().getBoundingClientRect()
+      var topPosition = mouseY - ttBCR.height + pageYOffset - 14
+      var leftPosition = ( mouseX - ttBCR.width*1 ) + pageXOffset
+      
+      tooltip
+        .style({
+          top: topPosition+'px', 
+          left: leftPosition+'px'
+        })
+    }
 
     //HIDE IT///////////////////////////////////////
     function hideToolTip(d,i){

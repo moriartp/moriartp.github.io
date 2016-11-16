@@ -156,6 +156,15 @@ h1{
 	display: block;
 }
 
+#tooltiph1{
+	color: black;
+	font-size: 14px
+}
+
+.tooltip p{
+	font-size: 12px;
+}
+
 div.tile{
 	float: left;
 	padding: 1%;
@@ -268,13 +277,13 @@ iframe{
 	display: block;
 	opacity: .95;
 	display: inline-block;
-	width: 67%;
-	height: 67%;
+	width: 215px;
+	height: 600px;
 	padding: none;
 	border: none;
 	background-color: whitesmoke;
-	position: fixed;
-	left:10%;
+	/*position: fixed;*/
+	/*left:10%;*/
 	z-index: 10000000;
 }
 
