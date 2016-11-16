@@ -453,15 +453,15 @@ var data = d3.csv("data/supported-spaces.csv", function(error, data) {
     //SHOW IT///////////////////////////////////////
     function showToolTip(d,i){
       tooltip.classed('showit', true)
-      tooltip.html('').html('<h1 id="tooltiph1"><i class="fa fa-building"></i> '+d.BuildingCode+' Room: '+d.RoomNumber+'</h1><p><i class="fa fa-video-camera"></i><b> Presentation Devices</b><br>This '+d.RoomType+' comes equiped with '+d.PresentationDevicesInstructions+' devices for presentation.</p><p><i class="fa fa-life-ring"></i><b> Support</b><br>If you require support please contact '+d.SupportContact+'.</p><p><i class="fa fa-desktop"></i><b> Available Platforms</b><br>Offering '+d.StationPlatform+' workstations, this '+d.RoomType+' is equipped with '+d.PCStationQty+' Windows workstation(s), and '+d.MacStationQty+' Mac workstation(s)</p><p><i class="fa fa-info-circle"></i><i>This might also include a more verbose description of the room that details the general function, purpose and access to the room, whether that be specialized, designated to specific parties, etc...</i></p>')
+      tooltip.html('').html('<p><img src="https://static.dezeen.com/uploads/2014/02/University-Center-The-New-School-by-SOM-_dezeen_ss_15.jpg"></p><h2>Room '+d.RoomNumber+' Details</h2><p><i class="fa fa-building"></i> <b>Location</b><br>'+d.BuildingCode+' Room: '+d.RoomNumber+'</p><p><i class="fa fa-video-camera"></i><b> Presentation Devices</b><br>This '+d.RoomType+' comes equiped with '+d.PresentationDevicesInstructions+' devices for presentation.</p><p><i class="fa fa-life-ring"></i><b> Support</b><br>If you require support please contact '+d.SupportContact+'.</p><p><i class="fa fa-desktop"></i><b> Available Platforms</b><br>Offering '+d.StationPlatform+' workstation(s), this '+d.RoomType+' is equipped with ('+d.PCStationQty+') Windows workstation(s), and ('+d.MacStationQty+') Mac workstation(s)</p><p><i class="fa fa-info-circle"></i><b> Additional Info</b><br><i>This might also include a more verbose description of the room that details the general function, purpose and access to the room, whether that be specialized, designated to specific parties, etc...</i></p>')
       // tooltip.html("<i class='fa fa-times-circle' fa-lg>").on('click',hideToolTip)  
     }
 
     function moveTooltip(d,i){
 
       ////Get the mouse X position 
-      var mouseX = d3.event.clientX + 215
-      var mouseY = d3.event.clientY + 600
+      var mouseX = d3.event.clientX + 275
+      var mouseY = d3.event.clientY + 350
       
       ////Put the name in the tooltip HTML
       // tooltip.html('').html('<b>'+d.Agencies+'</b><br>Total Respondents: '+d.TotalEnrollment)
