@@ -95,7 +95,7 @@ function draw() {
     // fill(255, Ax[i] / 10 + 50, Ay[i] / 10 + 50, Ab[i]);
     fill(aRed[i], aGreen[i], aBlue[i]);
     rectMode(CENTER, CENTER);
-    rect(Ax[i], Ay[i], Aa[i], Aa[i]*2);
+    rect(Ax[i], Ay[i], Aa[i], Aa[i]*10);
     fill(0);
     textAlign(CENTER, CENTER);
     textSize(12);
@@ -103,35 +103,35 @@ function draw() {
   } 
 
   for (var i = 0; i < 20; i++) {//cities.length; i++) {
-    if (mouseIsPressed && mouseX <= Ax[i] && mouseY <= Ay[i]) {
-      Ax[i] = Ax[i] + ((mouseX - Ax[i]) / 100);
-      Ay[i] = Ay[i] + ((mouseY - Ay[i]) / 100);
-      print(mouseIsPressed);
-    } else if (mouseIsPressed && mouseX >= Ax[i] && mouseY >= Ay[i]) {
-      Ax[i] = Ax[i] - ((Ax[i] - mouseX) / 100);
-      Ay[i] = Ay[i] - ((Ay[i] - mouseY) / 100);
-      print(mouseIsPressed);
-    } else if (mouseIsPressed && mouseX >= Ax[i] && mouseY <= Ay[i]) {
-      Ax[i] = Ax[i] - ((Ax[i] - mouseX) / 100);
-      Ay[i] = Ay[i] + ((mouseY - Ay[i]) / 100);
-      print(mouseIsPressed);
-    } else if (mouseIsPressed && mouseX <= Ax[i] && mouseY >= Ay[i]) {
-      Ax[i] = Ax[i] + ((mouseX - Ax[i]) / 100);
-      Ay[i] = Ay[i] - ((Ay[i] - mouseY) / 100);
-      print(mouseIsPressed);
-      //STADARD BEHAVIOR, drift and bounce off walls  
-    } else {
-      Ax[i] = Ax[i] + Ac[i];
-      Ay[i] = Ay[i] + Ad[i];
-    }
-    //BOUNCE OFF SIDE WALLS
-    if (Ax[i] >= width - 40 || Ax[i] <= 20) {
-      Ac[i] = Ac[i] * -1;
-    }
-    //BOUNCE OFF TOP AND BOTTOM WALLS
-    if (Ay[i] >= height - 40 || Ay[i] <= 20) {
-      Ad[i] = Ad[i] * -1;
-    }
+    // if (mouseIsPressed && mouseX <= Ax[i] && mouseY <= Ay[i]) {
+    //   Ax[i] = Ax[i] + ((mouseX - Ax[i]) / 100);
+    //   Ay[i] = Ay[i] + ((mouseY - Ay[i]) / 100);
+    //   print(mouseIsPressed);
+    // } else if (mouseIsPressed && mouseX >= Ax[i] && mouseY >= Ay[i]) {
+    //   Ax[i] = Ax[i] - ((Ax[i] - mouseX) / 100);
+    //   Ay[i] = Ay[i] - ((Ay[i] - mouseY) / 100);
+    //   print(mouseIsPressed);
+    // } else if (mouseIsPressed && mouseX >= Ax[i] && mouseY <= Ay[i]) {
+    //   Ax[i] = Ax[i] - ((Ax[i] - mouseX) / 100);
+    //   Ay[i] = Ay[i] + ((mouseY - Ay[i]) / 100);
+    //   print(mouseIsPressed);
+    // } else if (mouseIsPressed && mouseX <= Ax[i] && mouseY >= Ay[i]) {
+    //   Ax[i] = Ax[i] + ((mouseX - Ax[i]) / 100);
+    //   Ay[i] = Ay[i] - ((Ay[i] - mouseY) / 100);
+    //   print(mouseIsPressed);
+    //   //STADARD BEHAVIOR, drift and bounce off walls  
+    // } else {
+    //   Ax[i] = Ax[i] + Ac[i];
+    //   Ay[i] = Ay[i] + Ad[i];
+    // }
+    // //BOUNCE OFF SIDE WALLS
+    // if (Ax[i] >= width - 40 || Ax[i] <= 20) {
+    //   Ac[i] = Ac[i] * -1;
+    // }
+    // //BOUNCE OFF TOP AND BOTTOM WALLS
+    // if (Ay[i] >= height - 40 || Ay[i] <= 20) {
+    //   Ad[i] = Ad[i] * -1;
+    // }
     //DRAW ACTUAL SHAPE
     // fill(255, Ax[i] / 10 + 50, Ay[i] / 10 + 50, Ab[i]);
     fill(aRed[i], aGreen[i], aBlue[i], 200);
