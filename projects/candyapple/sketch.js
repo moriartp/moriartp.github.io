@@ -18,11 +18,13 @@ var aRed = [];
 var aGreen = [];
 var aBlue = [];
 
+var img;
 
 
 
 
 function setup() {
+  img = loadImage("imgs/candyapple.png");
   
   for (var i = 0; i < 20; i++) {//cities.length; i++) {
     Aa[i] = random(windowWidth/3,windowWidth/2); // length or diameter
@@ -47,12 +49,14 @@ function setup() {
 }
 
 function draw() {
+  // image(img,555,555); //,Ax[i], Ay[i]);
   // background(255,3,62);
   var bg = createCanvas(windowWidth,5555);
   bg.background(255,3,62);
   bg.background(255,3,62);
   bg.position(0,0);
   noStroke();
+  // image(img,555,555);
   // for (var j = 0;j<100;j++){
   //   noStroke();
   //   rect(((10+mover)/j)*random(-0.05,0.06),((10+mover)/j)*random(-0.05,0.06),10,10);
@@ -99,6 +103,7 @@ function draw() {
     fill(0);
     textAlign(CENTER, CENTER);
     textSize(12);
+    // image(img ,Ax[i], Ay[i]);
     // text(cities[i], Ax[i], Ay[i]);
   } 
 
@@ -136,8 +141,14 @@ function draw() {
     // fill(255, Ax[i] / 10 + 50, Ay[i] / 10 + 50, Ab[i]);
     fill(aRed[i], aGreen[i], aBlue[i], 200);
     ellipse(Ax[i], Ay[i],22);
+    // image(img ,Ax[i], Ay[i],22,44);
     // text(cities[i], Ax[i], Ay[i]);
   } 
+
+
+
+  imageMode(CENTER);
+  image(img,mouseX,mouseY);
 
 
 
