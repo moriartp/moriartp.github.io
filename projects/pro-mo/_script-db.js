@@ -1,5 +1,3 @@
-
-
 var data = d3.csv("db_status/db_status.csv", function(error, data) {  
   // console.log(data);  
 
@@ -12,17 +10,14 @@ var data = d3.csv("db_status/db_status.csv", function(error, data) {
       .append('text')
       .html(function (d) { return "<p class='instanceName'>"+d.INSTANCE_NAME+"</p><br>"; });   
 
-      // d3.selectAll(".tile").append("div").attr("class",function(d) {return "factor "+"server- "+d.server;})
-      // .html(function (d) { return "<br><i class='fa fa-server'></i> <br>Server: "+d.server; })
 
-      // d3.selectAll(".tile").append("div").attr("class",function(d) {return "factor "+"network- "+d.network;})
-      // .html(function (d) { return "<br><i class='fa fa-connectdevelop'></i><br>Network: "+d.network; })
-
-      d3.selectAll(".tile").append("div").attr("class",function(d) {return "factor "+"database- "+d.DATABASE_STATUS;})
-      .html(function (d) { return "<br><i class='fa fa-database' fa-lg></i><br>Database: "+d.DATABASE_STATUS; })
-
-      // d3.selectAll(".tile").append("div").attr("class",function(d) {return "factor "+"application- "+d.application;})
-      // .html(function (d) { return "<br><i class='fa fa-desktop' fa-lg></i><br>Application: "+d.application; })            
+      d3.selectAll(".tile").append("div").attr("class",function(d) {
+        if(d.INSTANCE_NAME === "NSPB"){
+          return "factor "+"database- banner";
+        } else {
+          return "factor "+"database- other"
+        }
+      // .html(function (d) { return "<br><i class='fa fa-database' fa-lg></i><br>Database: "+d.DATABASE_STATUS; })
 
   }
 ); 

@@ -12,7 +12,7 @@ var data = d3.csv("server-status/server_status.csv", function(error, data) {
       .html(function (d) { return "<p class='serverName'>"+d.SERVER_NAME+"</p><br>"; });   
 
       d3.selectAll(".tile").append("div").attr("class",function(d) {return "factor "+"server- "+d.SERVER_STATUS;})
-      .html(function (d) { return "<br><i class='fa fa-server'></i> <br>Server: "+d.SERVER_STATUS; })
+      .html(function (d) { return "<br><i class='fa fa-server'></i> <br>db server: "+d.SERVER_STATUS; })
 
       // d3.selectAll(".tile").append("div").attr("class",function(d) {return "factor "+"network- "+d.network;})
       // .html(function (d) { return "<br><i class='fa fa-connectdevelop'></i><br>Network: "+d.network; })

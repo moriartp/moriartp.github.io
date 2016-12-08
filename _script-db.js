@@ -1,5 +1,4 @@
 
-
 var data = d3.csv("db_status/db_status.csv", function(error, data) {  
   // console.log(data);  
 
