@@ -47,7 +47,7 @@ div.course-tile {
 	border:2px solid slategray;
 	border-radius: 1px;
 	text-align: center;
-	display:block;
+	display:inline-block;
 }
 
 div.factor{
