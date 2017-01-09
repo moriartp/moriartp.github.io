@@ -12,7 +12,7 @@ var data = d3.csv("server-status/server_status.csv", function(error, data) {
       })
       .html(function (d) { 
         if(d.SERVER_NAME === "bandb01-lip.newschool.edu"){
-          return "<br><i class='fa fa-server'></i> <br>Banner Server: "+d.SERVER_STATUS; 
+          return "<br><i class='fa fa-server'></i> <br>Banner DB Server: "+d.SERVER_STATUS; 
       }
     })
   }

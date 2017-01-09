@@ -16,7 +16,7 @@ var data = d3.csv("server-status/server_status.csv", function(error, data) {
       })
       .html(function (d) { 
         if(d.SERVER_NAME === "dwweb01-lip.newschool.edu"){
-          return "<br><i class='fa fa-server'></i> <br>Degreeworks Server: "+d.SERVER_STATUS; 
+          return "<br><i class='fa fa-server'></i> <br>Degreeworks DB Server: "+d.SERVER_STATUS; 
       }
     })
   }
