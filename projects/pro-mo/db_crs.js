@@ -20,6 +20,6 @@ var textString = d3.text("db_status/coursedb_status.csv", function(text) {
       console.log(db_display_status);
 
       d3.select("#courses").append("div").attr("class",function(d) { return "database factor server- "+course_db_status;})
-      .html(function (d) { return "<br><i class='fa fa-database'></i><br>crsDatabase: " + db_display_status; })
+      .html(function (d) { return "<br><i class='fa fa-database'></i><br>Database: " + db_display_status; })
   }
 );  

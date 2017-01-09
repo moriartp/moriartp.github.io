@@ -12,7 +12,7 @@ var data = d3.csv("db_status/db_status.csv", function(error, data) {
       })
       .html(function (d) { 
         if(d.INSTANCE_NAME === "NSPB"){
-          return "<br><i class='fa fa-database'></i> <br>Banner DB: "+d.DATABASE_STATUS; 
+          return "<br><i class='fa fa-database'></i> <br>Database: "+d.DATABASE_STATUS; 
       }
     })
   }

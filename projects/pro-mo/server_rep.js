@@ -7,6 +7,6 @@ var data = d3.csv("server-status/server_status.csv", function(error, data) {
     .select('#report')
     .data(report_server_data).enter()
       d3.select('#report').append("div").attr("class",function(d) { return "factor "+"server- "+d.SERVER_STATUS; })
-      .html(function (d) { return "<br><i class='fa fa-server'></i> <br>Report DB Server: "+d.SERVER_STATUS; })
+      .html(function (d) { return "<br><i class='fa fa-server'></i> <br>DB Server: "+d.SERVER_STATUS; })
   }
 ); 
