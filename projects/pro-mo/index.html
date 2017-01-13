@@ -24,33 +24,43 @@
 
     <div id="container">
     <div id="banner" class="tile"><h2>Banner</h2>
-      <div class="factor server- undefined"><br><i class="fa fa-table"></i> <br>DB table: ⌧</div>
-      <div class="factor server- undefined"><br><i class="fa fa-desktop"></i> <br>Application: ⌧</div>
-      <div class="factor server- undefined"><br><i class="fa fa-connectdevelop"></i> <br>Network: ⌧</div>
+      <div class="factor server- " id="banner_DB_table"></div>
+      <div class="factor server- " id="banner_DB_server"></div>
+
+      <div class="factor server- undefined"><br><i class="fa fa-desktop"></i> <br>Application: &#0;</div>
+      <div class="factor server- undefined"><br><i class="fa fa-connectdevelop"></i> <br>Network: &#0;</div>
     </div>
 
     <div id="degreeworks" class="tile"><h2>DegreeWorks</h2>
-      <div class="factor server- undefined"><br><i class="fa fa-table"></i> <br>DB table: ⌧</div>
-      <div class="factor server- undefined"><br><i class="fa fa-desktop"></i> <br>Application: ⌧</div>
-      <div class="factor server- undefined"><br><i class="fa fa-connectdevelop"></i> <br>Network: ⌧</div>
+      <div class="factor server- " id="degreeworks_DB_table"></div>
+      <div class="factor server- " id="degreeworks_DB_server"></div>
+
+      <div class="factor server- undefined"><br><i class="fa fa-desktop"></i> <br>Application: &#0;</div>
+      <div class="factor server- undefined"><br><i class="fa fa-connectdevelop"></i> <br>Network: &#0;</div>
     </div>
     
     <div id="mynewschool" class="tile"><h2>MyNewSchool</h2>
-      <div class="factor server- undefined"><br><i class="fa fa-table"></i> <br>DB table: ⌧</div>
-      <div class="factor server- undefined"><br><i class="fa fa-desktop"></i> <br>Application: ⌧</div>
-      <div class="factor server- undefined"><br><i class="fa fa-connectdevelop"></i> <br>Network: ⌧</div>
+      <div class="factor server- " id="mynewschool_DB_table"></div>
+      <div class="factor server- " id="mynewschool_DB_server"></div>
+
+      <div class="factor server- undefined"><br><i class="fa fa-desktop"></i> <br>Application: &#0;</div>
+      <div class="factor server- undefined"><br><i class="fa fa-connectdevelop"></i> <br>Network: &#0;</div>
     </div>
     
     <div id="report" class="tile"><h2>Reports</h2>
-      <div class="factor server- undefined"><br><i class="fa fa-table"></i> <br>DB table: ⌧</div>
-      <div class="factor server- undefined"><br><i class="fa fa-desktop"></i> <br>Application: ⌧</div>
-      <div class="factor server- undefined"><br><i class="fa fa-connectdevelop"></i> <br>Network: ⌧</div>
+      <div class="factor server- " id="reports_DB_table"></div>
+      <div class="factor server- " id="reports_DB_server"></div>
+      
+      <div class="factor server- undefined"><br><i class="fa fa-desktop"></i> <br>Application: &#0;</div>
+      <div class="factor server- undefined"><br><i class="fa fa-connectdevelop"></i> <br>Network: &#0;</div>
     </div>
     
     <div id="courses" class="tile"><h2>Course Catalog</h2>
-      <div class="factor server- undefined"><br><i class="fa fa-table"></i> <br>DB table: ⌧</div>
-      <div class="factor server- undefined"><br><i class="fa fa-desktop"></i> <br>Application: ⌧</div>
-      <div class="factor server- undefined"><br><i class="fa fa-connectdevelop"></i> <br>Network: ⌧</div>
+      <div class="factor server- " id="courses_DB_table"></div>
+      <div class="factor server- " id="courses_DB_server"></div>
+
+      <div class="factor server- undefined"><br><i class="fa fa-desktop"></i> <br>Application: &#0;</div>
+      <div class="factor server- undefined"><br><i class="fa fa-connectdevelop"></i> <br>Network: &#0;</div>
     </div>
             
     
@@ -62,17 +72,32 @@
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
     <!-- CUSTOM -->
-    <script type='text/javascript' src='server_crs.js'></script>
+<!--     <script type='text/javascript' src='server_crs.js'></script>
     <script type='text/javascript' src='server_ban.js'></script>
     <script type='text/javascript' src='server_dgw.js'></script>
     <script type='text/javascript' src='server_mns.js'></script>
-    <script type='text/javascript' src='server_rep.js'></script>
+    <script type='text/javascript' src='server_rep.js'></script> -->
 
-    <script type='text/javascript' src='db_ban.js'></script>
+    <script type='text/javascript' src='db_server_crs.js'></script>
+    <script type='text/javascript' src='db_server_ban.js'></script>
+    <script type='text/javascript' src='db_server_dgw.js'></script>
+    <script type='text/javascript' src='db_server_mns.js'></script>
+    <script type='text/javascript' src='db_server_rep.js'></script>
+
+
+
+<!--     <script type='text/javascript' src='db_ban.js'></script>
     <script type='text/javascript' src='db_dgw.js'></script>
     <script type='text/javascript' src='db_mns.js'></script>
     <script type='text/javascript' src='db_rep.js'></script>
-    <script type='text/javascript' src='db_crs.js'></script>
+    <script type='text/javascript' src='db_crs.js'></script> -->
+
+    <script type='text/javascript' src='db_table_ban.js'></script>
+    <script type='text/javascript' src='db_table_dgw.js'></script>
+    <script type='text/javascript' src='db_table_mns.js'></script>
+    <script type='text/javascript' src='db_table_rep.js'></script>  
+    <script type='text/javascript' src='db_table_crs.js'></script>   
+
 
   </body>
 </html>

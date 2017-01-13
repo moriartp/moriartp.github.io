@@ -29,7 +29,7 @@ div.tile {
 	padding: 1%;
 	margin: 1%;
 	width:45%;
-	height:200px;
+	height:33%;
 	background-color: whitesmoke;
 	border:2px solid slategray;
 	border-radius: 1px;
@@ -47,12 +47,12 @@ div.course-tile {
 	border:2px solid slategray;
 	border-radius: 1px;
 	text-align: center;
-	display:inline-block;
+	display:block;
 }
 
 div.factor{
 	display: inline-block;
-	width:15%;
+	width:18%;
 	height:5%;
 	padding:none;
 	margin:none;
@@ -150,3 +150,16 @@ p.instanceName{
 	height: 20px;
 	margin:1px;
 }
+
+
+/*div#banner_DB_table{
+	display: inline-block;
+}*/
+
+/*div.factor{
+	display: inline-block;
+	width:18%;
+	height:5%;
+	padding:none;
+	margin:none;
+}*/
