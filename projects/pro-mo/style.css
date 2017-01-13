@@ -29,7 +29,7 @@ div.tile {
 	padding: 1%;
 	margin: 1%;
 	width:45%;
-	height:33%;
+	height:182px;
 	background-color: whitesmoke;
 	border:2px solid slategray;
 	border-radius: 1px;
@@ -156,10 +156,10 @@ p.instanceName{
 	display: inline-block;
 }*/
 
-/*div.factor{
+div.factor{
 	display: inline-block;
 	width:18%;
 	height:5%;
 	padding:none;
 	margin:none;
-}*/
+}

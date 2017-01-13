@@ -16,7 +16,7 @@ var data = d3.csv("db_status/db_status.csv", function(error, data) {
 
           if(d.DATABASE_STATUS === "ACTIVE"){
 
-          return "<br><i class='fa fa-table'></i> <br>Database: ✔;"; 
+          return "<br><i class='fa fa-table'></i> <br>Database: ✔"; 
         } else {
           return "<br><i class='fa fa-table'></i> <br>Database: &#9888;"; 
         }

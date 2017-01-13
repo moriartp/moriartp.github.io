@@ -21,6 +21,6 @@ var data = d3.csv("server-status/server_status.csv", function(error, data) {
   var report_tiles = d3.select('#container')
       d3.select('#courses_DB_server').attr("class",function(d) { return "factor server- " + crs_dbserver_status; })
       .html(function (d) { 
-        return "<br><i class='fa fa-server'></i> <br>DB Server: "+crs_dbserver_indicator; })
+        return "<br><i class='fa fa-database'></i> <br>DB Server: "+crs_dbserver_indicator; })
   }
 ); 
