@@ -9,10 +9,10 @@ var data = d3.csv("db_status/db_status.csv", function(error, data) {
     .data(dw_db_data).enter()
 
       d3.select("#degreeworks_DB_table").attr("class",function(d) { 
-        if(d.INSTANCE_NAME === "DWPROD"){
+        // if(d.INSTANCE_NAME === "DWPROD"){
           // console.log(d.SERVER_NAME);
           return "factor "+"server- "+d.DATABASE_STATUS;
-        }
+        // }
       })
       .html(function (d) { 
         if(d.INSTANCE_NAME === "DWPROD"){
@@ -24,5 +24,10 @@ var data = d3.csv("db_status/db_status.csv", function(error, data) {
         }
       }
     })
+
+
+
+
+
   }
 ); 
