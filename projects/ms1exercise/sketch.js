@@ -10,7 +10,7 @@ function setup() {
 }
 console.log('data');
 function draw() {
-  background(211);
+  background(0);
   textSize(20);
   fill(222);
   for (var i = 0; i < data.colors.length; i++){
@@ -20,7 +20,7 @@ function draw() {
      rect(10,50+i*80,800,40);
      
      if (mouseY> 48+i*80 && mouseY < 48+i*80+40){
-        fill(0);
+        fill(255);
         text(data.colors[i].color, mouseX, mouseY);
      }
   }
