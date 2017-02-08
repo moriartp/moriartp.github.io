@@ -3,16 +3,30 @@ var vizNum;
 var r = [];
 var g = [];
 var b = [];
+var titleDisplay;
 
 function setup() {
   //PC QTY SELECT ELEMENT
   input = createInput();
-  input.position(windowWidth/2-40, windowHeight/2);
+  input.position(windowWidth/2-51, windowHeight/2);
+  textAlign(CENTER,CENTER);
+  titleDisplay = 255;
 }
 
 function draw() {
    createCanvas(windowWidth,windowHeight);
    background(0);
+
+   fill(255,255,255,titleDisplay);
+   titleDisplay = titleDisplay - 0.5;
+   textAlign(CENTER,CENTER);
+
+   textSize(33);
+   text("THE NUMBER CRUNCH", width/2,height*0.333);
+   textSize(13);
+   text("Enter a number in\nthe below field.", width/2,height*0.444);
+
+
    // fill(222);
    // text(input.value(),222,222);
    vizNum = input.value();
