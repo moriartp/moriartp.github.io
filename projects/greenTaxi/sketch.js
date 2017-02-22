@@ -11,7 +11,8 @@ function preload() { // preload() runs once
 
 function setup() {
   var opacity = 111;
-  textFont('Lucida Console');
+  // textFont('Lucida Console');
+  textFont('Arial Black');
 }
 
 function parseData() {
