@@ -35,7 +35,7 @@ function draw() {
 
     if (mouseY < windowHeight / 2 && mouseX > (windowWidth * 0.175) * (pickup_hour - 7) - (windowWidth * 0.1) && mouseX < (windowWidth * 0.175) * (pickup_hour - 7) + (windowWidth * 0.1)) {
       if (trip_distance > 12) {
-        textSize(0.1);
+        textSize(8);
         noStroke();
         text(trip_distance + " mi.", (windowWidth * 0.175) * (pickup_hour - 7) + (dirx * 1500), windowHeight * 0.3 + diry * 1500);
       }
@@ -44,7 +44,7 @@ function draw() {
       strokeWeight(0.5);
     } else if (mouseY > windowHeight / 2 && mouseX > (windowWidth * 0.175) * (pickup_hour - 12) - (windowWidth * 0.1) && mouseX < (windowWidth * 0.175) * (pickup_hour - 12) + (windowWidth * 0.1)) {
       if (trip_distance > 12) {
-        textSize(0.1);
+        textSize(8);
         noStroke();
         text(trip_distance + " mi.", (windowWidth * 0.175) * (pickup_hour - 12) + (dirx * 1500), windowHeight * 0.7 + diry * 1500);
       }
