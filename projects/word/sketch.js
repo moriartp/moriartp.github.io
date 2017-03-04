@@ -29,7 +29,7 @@ function draw() {
       var mass = currentRow.getNum(1);
       
       for (var i = 0; i < mass;i++){
-         textSize(2);
+         textSize(8);
          fill(random(0,255),random(0,255),random(0,255),111);
          text(element,random(0, windowWidth),random(windowHeight,0));
       }
