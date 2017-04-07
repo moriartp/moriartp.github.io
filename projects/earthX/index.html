@@ -27,7 +27,7 @@
     </script>
 
     <script>
-        var map = L.map('map').setView([40.735317, -73.994582], 15);
+        var map = L.map('map').setView([40.735317, -73.994582], 13);
         mapLink = 
             '<a href="http://openstreetmap.org">OpenStreetMap</a>';
         L.tileLayer(
@@ -39,36 +39,53 @@
 
 
             L.circle([40.735236, -73.994507], 67, {
-                    color: 'lightgray',
-                    fillColor: 'lightgray',
+                    color: 'green',
+                    fillColor: 'green',
                     fillOpacity: 0.01
                 }).addTo(map).bindPopup("Mercury Orbit");  
 
             L.circle([40.735236, -73.994507], 138, {
-                    color: 'orange',
-                    fillColor: 'orange',
+                    color: 'green',
+                    fillColor: 'green',
                     fillOpacity: 0.01
                 }).addTo(map).bindPopup("Venus Orbit.");  
 
 
             L.circle([40.735236, -73.994507], 184, {
-                    color: 'blue',
-                    fillColor: 'blue',
+                    color: 'green',
+                    fillColor: 'green',
                     fillOpacity: 0.01
                 }).addTo(map).bindPopup("Earth's Orbit.");
 
             L.circle([40.735236, -73.994507], 276.5, {
-                    color: 'red',
-                    fillColor: 'red',
+                    color: 'green',
+                    fillColor: 'green',
                     fillOpacity: 0.01
                 }).addTo(map).bindPopup("Martian Orbit.");  
 
             L.circle([40.735236, -73.994507], 943, {
-                    color: 'coral',
-                    fillColor: 'coral',
+                    color: 'green',
+                    fillColor: 'green',
                     fillOpacity: 0.01
                 }).addTo(map).bindPopup("Jupiter Orbit.");                                           
 
+            L.circle([40.735236, -73.994507], 1666, {
+                    color: 'coral',
+                    fillColor: 'green',
+                    fillOpacity: 0.01
+                }).addTo(map).bindPopup("Saturn Orbit.");  
+
+            L.circle([40.735236, -73.994507], 3333, {
+                    color: 'coral',
+                    fillColor: 'green',
+                    fillOpacity: 0.01
+                }).addTo(map).bindPopup("Uranus Orbit.");  
+
+            L.circle([40.735236, -73.994507], 5333, {
+                    color: 'coral',
+                    fillColor: 'green',
+                    fillOpacity: 0.01
+                }).addTo(map).bindPopup("Neptune Orbit.");  
 
             // var earthOrbit = L.circle([40.735236, -73.994507], {
             //     color: 'blue',
@@ -96,7 +113,7 @@
                 jupiterIcon = new planetIcon({iconUrl: 'icons/05jupiter.png'});
                 saturnIcon = new planetIcon({iconUrl: 'icons/06saturn.png'});
                 uranusIcon = new planetIcon({iconUrl: 'icons/07uranus.png'});
-                neptuneIcon = new planetIcon({iconUrl: 'icons/08neptune.png'});
+                neptuneIcon = new planetIcon({iconUrl: 'icons/08neptune_.png'});
 
             L.marker([40.735236, -73.994507], {icon: sunIcon}).addTo(map).bindPopup("I am the sun.");
             L.marker([40.735683, -73.993981], {icon: mercuryIcon}).addTo(map).bindPopup("I am mercury.");
@@ -106,7 +123,7 @@
             L.marker([40.742718, -73.989259], {icon: jupiterIcon}).addTo(map).bindPopup("I am jupiter."); 
             L.marker([40.748784, -73.984432], {icon: saturnIcon}).addTo(map).bindPopup("I am saturn.");  
             L.marker([40.762514, -73.974451], {icon: uranusIcon}).addTo(map).bindPopup("I am uranus."); 
-            L.marker([40.777865, -73.963201], {icon: uranusIcon}).addTo(map).bindPopup("I am neptune.");     
+            L.marker([40.777865, -73.963201], {icon: neptuneIcon}).addTo(map).bindPopup("I am neptune.");     
 
 
             // var venus = L.icon({
