@@ -1,0 +1,24 @@
+body {
+    padding: 20px;
+    margin: 20px;
+    font-family: 'Dosis', sans-serif;
+    color:#DDD;
+}
+
+h1{
+    font-size: 44px;
+}
+
+#map {
+    margin-top:0;
+    height: 630px;
+    width: 100%;
+    color:#000;
+    font-family: 'Dosis', sans-serif;
+    background-o
+}
+div.leaflet-popup-content-wrapper, div.leaflet-popup-tip{
+    background-color: gray;
+    color:#EEE;
+    border-radius: 0;
+}
