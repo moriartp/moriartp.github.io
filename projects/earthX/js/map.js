@@ -8,8 +8,7 @@
             maxZoom: 21,
             }).addTo(map);
 
-
-            L.circle([40.735236, -73.994507], 67, {
+            L.circle([40.735296, -73.994592], 67, {
                     color: '#DDD',
                     fillColor: '#111',
                     fillOpacity: 0.01

@@ -9,16 +9,44 @@ h1{
     font-size: 44px;
 }
 
+/*MAP*/
+
 #map {
     margin-top:0;
     height: 630px;
     width: 100%;
     color:#000;
     font-family: 'Dosis', sans-serif;
-    background-o
+    display:block;
 }
 div.leaflet-popup-content-wrapper, div.leaflet-popup-tip{
     background-color: gray;
     color:#EEE;
     border-radius: 0;
+}
+
+/*TOUR*/
+
+svg, canvas {
+  /*position: absolute;*/
+}
+
+#tour{
+    /*display:block;*/
+}
+
+
+
+/*SPHERE*/
+svg{
+    margin-top:150px;
+}
+
+circle, path {
+/*  fill: none;
+  stroke: #333;*/
+}
+
+circle {
+  /*stroke-width: 2px;*/
 }
