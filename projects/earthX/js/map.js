@@ -8,16 +8,16 @@
             maxZoom: 21,
             }).addTo(map);
 
-            L.circle([40.735296, -73.994592], 67, {
+            L.circle([40.735236, -73.994507], 67, {
                     color: '#DDD',
                     fillColor: '#111',
-                    fillOpacity: 0.01
+                    fillOpacity: 0.1
                 }).addTo(map).bindPopup("Mercury Orbit");  
 
             L.circle([40.735236, -73.994507], 138, {
                     color: '#DDD',
                     fillColor: '#111',
-                    fillOpacity: 0.01
+                    fillOpacity: 0.1
                 }).addTo(map).bindPopup("Venus Orbit.");  
 
 

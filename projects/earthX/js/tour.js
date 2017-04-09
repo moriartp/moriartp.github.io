@@ -7,7 +7,7 @@ var random = d3.randomNormal(0, 0.2),
     points = d3.merge([points0, points1, points2]),
     index = -1;
 
-var context = d3.select("canvas").node().getContext("2d"),
+var context = d3.select("#tour").node().getContext("2d"),
     svg = d3.select("svg"),
     width = +svg.attr("width"),
     height = +svg.attr("height");
