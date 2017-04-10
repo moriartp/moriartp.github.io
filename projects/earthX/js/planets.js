@@ -1,20 +1,22 @@
 d3.csv("data/plants.csv", function(data) {
   data.forEach(function(d) {
     d.radius = +d.radius;
+    d.diameter = +d.diameter
   });
-  console.log(data[0]);
+  console.log(function(d, i) { return d.diameter; });
 
   var svg = d3.select("#planets").append("svg")
       .attr("width", "100%")
       .attr("height", "100%");
 
   var circle = svg.selectAll("circle")
-      .data([10.97,9.14,3.98,3.86,1,0.950,0.532,0.383,0.181], function(d) { return d; });
+      .data([66,6.628,5.524,2.405,2.335,0.6041,0.5737,0.3214,0.2313,0.1125], function(d) { return d; });
 
   circle.enter().append("circle")
       .attr("cy", 60)
       .attr("cx", function(d, i) { return i * 100 + 30; })
       .attr("r", function(d) { return Math.sqrt(d)*10; })
+      // .attr("r", function(d) { return (d.diameter / 2) *10; })
       .attr("fill", "yellow")
       .html(function(d) { return d.name; }) ;   
 

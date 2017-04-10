@@ -64,7 +64,9 @@ div.leaflet-popup-content-wrapper, div.leaflet-popup-tip{
 
 }
 
-
+.p_name {
+    color:#FFF;
+}
 /*.group {*/
   /*fill: none;*/
  /* stroke: #FFF;
