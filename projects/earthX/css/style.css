@@ -4,8 +4,10 @@ body {
 }
 
 body {
-    padding: 5%;
-    margin: 5%;
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
     font-family: 'Dosis', sans-serif;
     color:#DDD;
 }
@@ -42,7 +44,7 @@ div{
     font-family: 'Dosis', sans-serif;
     display:block;
     margin-top:1%;
-    border:1px #FFF;
+    border: 1px solid #333333;
 }
 div.leaflet-popup-content-wrapper, div.leaflet-popup-tip{
     background-color: gray;
@@ -52,13 +54,16 @@ div.leaflet-popup-content-wrapper, div.leaflet-popup-tip{
 
 /*PLANETS*/
 #planets{
+    margin: auto;
     margin-top:1%;
     height: 800px;
     width: 100%;
     font-family: 'Dosis', sans-serif;
     display:block;
+    border: 1px solid #333333;
 
 }
+
 
 /*.group {*/
   /*fill: none;*/

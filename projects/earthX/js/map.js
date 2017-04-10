@@ -14,6 +14,7 @@
                     color: 'yellow',
                     fillColor: '#111',
                     fillOpacity: 0.1,
+                    weight: 1
                 }).addTo(map);
             // .bindPopup("Mercury Orbit"); 
             
@@ -22,6 +23,7 @@
                     color: 'yellow',
                     fillColor: '#111',
                     fillOpacity: 0.1,
+                    weight: 1
                 }).addTo(map);
             // .bindPopup("Venus Orbit.");  
 
@@ -29,42 +31,48 @@
             L.circle([40.735236, -73.994507], 184, {
                     color: 'yellow',
                     fillColor: '#111',
-                    fillOpacity: 0.01
+                    fillOpacity: 0.01,
+                    weight: 1
                 }).addTo(map);
             // .bindPopup("Earth's Orbit.");
 
             L.circle([40.735236, -73.994507], 276.5, {
                     color: 'yellow',
                     fillColor: '#111',
-                    fillOpacity: 0.01
+                    fillOpacity: 0.01,
+                    weight: 1
                 }).addTo(map);
             // .bindPopup("Martian Orbit.");  
 
             L.circle([40.735236, -73.994507], 943, {
                     color: 'yellow',
                     fillColor: '#111',
-                    fillOpacity: 0.01
+                    fillOpacity: 0.01,
+                    weight: 1
                 }).addTo(map);
             // .bindPopup("Jupiter Orbit.");                                           
 
             L.circle([40.735236, -73.994507], 1731, {
                     color: 'yellow',
                     fillColor: '#111',
-                    fillOpacity: 0.01
+                    fillOpacity: 0.01,
+                    weight: 1
                 }).addTo(map);
             // .bindPopup("Saturn Orbit.");  
 
             L.circle([40.735236, -73.994507], 3478, {
                     color: 'yellow',
                     fillColor: '#111',
-                    fillOpacity: 0.01
+                    fillOpacity: 0.01,
+                    weight: 1
                 }).addTo(map);
             // .bindPopup("Uranus Orbit.");  
 
             L.circle([40.735236, -73.994507], 5431, {
                     color: 'yellow',
                     fillColor: '#111',
-                    fillOpacity: 0.01
+                    fillOpacity: 0.01,
+                    weight: 1
                 }).addTo(map);
             // .bindPopup("Neptune Orbit.");  
 

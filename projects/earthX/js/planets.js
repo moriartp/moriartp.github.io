@@ -1,11 +1,11 @@
-var width = 900,
+var width = 1000,
     height = 800,
     padding = 1.5, // separation between same-color nodes
     clusterPadding = 6, // separation between different-color nodes
     maxRadius = 99;
 
 var n = 14, // total number of nodes
-    m = 9; // number of distinct clusters
+    m = 13; // number of distinct clusters
 
 var color = d3.scale.category10()
     .domain(d3.range(m));
@@ -29,13 +29,13 @@ var nodes = d3.range(n).map(function() {
 var force = d3.layout.force()
     .nodes(nodes)
     .size([width, height])
-    .gravity(.075)
-    .charge(100)
+    .gravity(.05)
+    .charge(40)
     .on("tick", tick)
     .start();
 
 var svg = d3.select("#planets").append("svg")
-    .attr("width", width)
+    .attr("width", "100%")
     .attr("height", height);
 
 var node = svg.selectAll("circle")
