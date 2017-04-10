@@ -1,11 +1,27 @@
 body {
-    padding: 20px;
-    margin: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 5%;
+    margin: 5%;
     font-family: 'Dosis', sans-serif;
     color:#DDD;
 }
 
-svg{
+#map {
+    margin-top:1%;
+    height: 800px;
+    width: 100%;
+    border:1px #FFF;
+    stroke:1px;
+
+}
+
+
+
+/*svg{
     width:100%;
 }
 
@@ -15,17 +31,18 @@ h1{
 
 div{
     display:block;
-}
+}*/
 
 /*MAP*/
 
 #map {
-    margin-top:0;
-    height: 630px;
+
+    height: 800px;
     width: 100%;
-    color:#000;
     font-family: 'Dosis', sans-serif;
     display:block;
+    margin-top:1%;
+    border:1px #FFF;
 }
 div.leaflet-popup-content-wrapper, div.leaflet-popup-tip{
     background-color: gray;
@@ -33,26 +50,18 @@ div.leaflet-popup-content-wrapper, div.leaflet-popup-tip{
     border-radius: 0;
 }
 
-/*TOUR*/
-
-/*svg, canvas {*/
-  /*position: absolute;*/
-/*}*/
-
-/*#tour{*/
-    /*display:block;*/
-/*}*/
-
-
-
-/*SPHERE*/
-/*svg{*/
-    /*margin-top:150px;*/
-/*}*/
-
 /*PLANETS*/
-.group {
-  /*fill: none;*/
-  stroke: #FFF;
-  stroke-width: 1.5px;
+#planets{
+    margin-top:1%;
+    height: 800px;
+    width: 100%;
+    font-family: 'Dosis', sans-serif;
+    display:block;
+
 }
+
+/*.group {*/
+  /*fill: none;*/
+ /* stroke: #FFF;
+  stroke-width: 1.5px;*/
+/*}*/
