@@ -1,17 +1,18 @@
 var width = 960,
-    height = 500,
-    padding = 1.5, // separation between same-color nodes
-    clusterPadding = 6, // separation between different-color nodes
+    height = 800,
+    padding = 75, // separation between same-color nodes
+    clusterPadding = 60, // separation between different-color nodes
     maxRadius = 12;
 
 var color = d3.scale.ordinal()
-      .range(["#2FF", "#3FF"]);
+      // .range(["yellow","coral","gold","aquamarine","darkcyan", "dodgerblue","darkorange","firebrick","lightgray"]);
+      .range(["#ffff33","#ff7f00","#a65628","#4daf4a","#984ea3", "#377eb8","#f781bf","#e41a1c","#999999"]);
 
 
 
 d3.text("data/word_groups.csv", function(error, text) {
   if (error) throw error;
-  var colNames = "text,size,group,diam\n" + text;
+  var colNames = "text,size,group,diam,colorX\n" + text;
   var data = d3.csv.parse(colNames);
 
   data.forEach(function(d) {
@@ -41,12 +42,12 @@ for (var i = 0; i<n; i++){
 var force = d3.layout.force()
     .nodes(nodes)
     .size([width, height])
-    .gravity(.02)
+    .gravity(0.025)
     .charge(0)
     .on("tick", tick)
     .start();
 
-var svg = d3.select("body").append("svg")
+var svg = d3.select("#planets").append("svg")
     .attr("width", "100%")
     .attr("height", height);
 
@@ -56,20 +57,26 @@ var node = svg.selectAll("circle")
     .enter().append("g").call(force.drag);
 
 
+
 node.append("circle")
     .style("fill", function (d) {
     return color(d.cluster);
     })
     .attr("r", function(d){return d.radius})
+    .style("color","#FFF")
     
 
 node.append("text")
-
       .attr("class","p_name")
       .attr("dy", ".3em")
       .style("text-anchor", "middle")
-      .style("color", "#FFF")
-      .text(function(d) { return d.text.substring(0, d.radius / 3); });
+      .style("alignment-baseline","hanging")
+      .text(function(d) { return d.text; })
+      // .style("stroke", "white");
+      .style("font-size", "34px")
+      .style('fill', 'white')
+      // .style('stroke', 'black')
+      .style('font-weight', 'bold')
 
 
 
@@ -79,7 +86,7 @@ function create_nodes(data,node_counter) {
       r = Math.sqrt((i + 1) / m * -Math.log(Math.random())) * maxRadius,
       d = {
         cluster: i,
-        radius: data[node_counter].diam*10.5,
+        radius: data[node_counter].diam*15,
         text: data[node_counter].text,
         x: Math.cos(i / m * 2 * Math.PI) * 200 + width / 2 + Math.random(),
         y: Math.sin(i / m * 2 * Math.PI) * 200 + height / 2 + Math.random()

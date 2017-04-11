@@ -8,6 +8,7 @@
             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>', 
             subdomains: 'abcd',
             maxZoom: 18,
+            minZoom: 13,
             }).addTo(map);
 
             L.circle([40.735236, -73.994507], 67, {
