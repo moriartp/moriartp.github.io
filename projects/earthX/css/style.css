@@ -56,7 +56,7 @@ div.leaflet-popup-content-wrapper, div.leaflet-popup-tip{
 #planets{
     margin: auto;
     margin-top:1%;
-    height: 800px;
+    height: 1000px;
     width: 100%;
     font-family: 'Dosis', sans-serif;
     display:block;
