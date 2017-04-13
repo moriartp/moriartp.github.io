@@ -1,4 +1,4 @@
-var w = 1000, h = 900;
+var w = 1000, h = 800;
       var t0 = Date.now();
 
       var planets = [
@@ -44,8 +44,8 @@ var w = 1000, h = 900;
       container.selectAll("g.planet").data(planets).enter().append("g")
         .attr("class", "planet").each(function(d, i) {
           d3.select(this).append("circle").attr("class", "orbit")
-            .attr("r", d.R * 1.4);
-          d3.select(this).append("circle").attr("r", d.r).attr("cx",d.R * 1.4)
+            .attr("r", d.R * 1.25);
+          d3.select(this).append("circle").attr("r", d.r).attr("cx",d.R * 1.25)
             .attr("cy", 0).attr("class", "planet")
             .style("fill", d.hex);
           d3.select(this).append("text")
@@ -53,7 +53,7 @@ var w = 1000, h = 900;
             // .attr("cx",d.R * 1.5)
             // .attr("cy", d.R * 1.5)
             .attr("class","p_name")
-            .attr("dy", d.R * 1.4)
+            .attr("dy", d.R * 1.25)
             // .style("text-anchor", "middle")
             .style("alignment-baseline","hanging")
             .text(function(d) { return d.name; })
