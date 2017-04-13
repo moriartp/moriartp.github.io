@@ -105,7 +105,7 @@
                 neptuneIcon = new planetIcon({iconUrl: 'icons/08neptune_.png'});
 
             L.marker([40.735236, -73.994507], {icon: sunIcon}).addTo(map).bindPopup("<h1>I am the sun.</h1><img src='icons/00sun.png' height='100' width='100'>");
-            L.marker([40.735683, -73.993981], {icon: mercuryIcon}).addTo(map).bindPopup("I am mercury.");
+            L.marker([40.735683, -73.993981], {icon: mercuryIcon}).addTo(map).bindPopup("I am mercury.<iframe width='300' height='315' src='https://www.youtube.com/embed/Qd4MMjOnglQ' frameborder='0' allowfullscreen></iframe>");
             L.marker([40.736253, -73.993573], {icon: venusIcon}).addTo(map).bindPopup("I am venus.");
             L.marker([40.736607, -73.993302], {icon: earthIcon}).addTo(map).bindPopup("I am earth.");
             L.marker([40.737331, -73.992749], {icon: marsIcon}).addTo(map).bindPopup("I am mars.");  

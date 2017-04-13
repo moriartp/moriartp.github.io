@@ -1,6 +1,7 @@
 body {
     padding: 0;
     margin: 0;
+    background-image: url("/imgs/maxresdefault.jpg");
 }
 
 body {
@@ -12,6 +13,43 @@ body {
     color:#DDD;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #DDD;
+    background-color:#111112;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #DDD;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+    color:#111112;
+}
+
+li a.active {
+    color: white;
+    background-color: #ff7f00;
+}
+
+
+
+
+
+
+
 #map {
     margin-top:1%;
     height: 800px;
@@ -20,22 +58,6 @@ body {
     stroke:1px;
 
 }
-
-
-
-/*svg{
-    width:100%;
-}
-
-h1{
-    font-size: 44px;
-}
-
-div{
-    display:block;
-}*/
-
-/*MAP*/
 
 #map {
 
@@ -54,14 +76,17 @@ div.leaflet-popup-content-wrapper, div.leaflet-popup-tip{
 
 /*PLANETS*/
 #planets{
-    margin: auto;
-    margin-top:1%;
-    height: 1000px;
+    /*margin: auto;*/
+    /*margin-top:1%;*/
+    /*height: 100%;*/
     width: 100%;
     font-family: 'Dosis', sans-serif;
     display:block;
     border: 1px solid #333333;
 
+}
+iframe{
+    margin: auto;
 }
 
 .p_name text{
