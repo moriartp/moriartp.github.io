@@ -1,5 +1,5 @@
-var width = 960,
-    height = 800,
+var width = window.innerWidth,
+    height = window.innerHeight,
     padding = 75, // separation between same-color nodes
     clusterPadding = 60, // separation between different-color nodes
     maxRadius = 12;
@@ -48,7 +48,7 @@ var force = d3.layout.force()
     .start();
 
 var svg = d3.select("#planets").append("svg")
-    .attr("width", "100%")
+    .attr("width", width)
     .attr("height", height);
 
 

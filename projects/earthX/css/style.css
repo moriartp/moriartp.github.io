@@ -5,17 +5,17 @@ body {
 }
 
 body {
-    padding: 1%;
-    margin-top: 1%;
-    margin-left: 5%;
-    margin-right: 5%;
+    /*padding: 1%;*/
+    /*margin-top: 1%;*/
+    /*margin-left: 5%;*/
+    /*margin-right: 5%;*/
     font-family: 'Dosis', sans-serif;
     color:#DDD;
 }
 
 ul {
     list-style-type: none;
-    margin: 0;
+    margin: 1%;
     padding: 0;
     overflow: hidden;
     border: 1px solid #DDD;
@@ -79,12 +79,23 @@ div.leaflet-popup-content-wrapper, div.leaflet-popup-tip{
     /*margin: auto;*/
     /*margin-top:1%;*/
     /*height: 100%;*/
-    width: 100%;
+    /*width: 100%;*/
     font-family: 'Dosis', sans-serif;
     display:block;
-    border: 1px solid #333333;
-
+    /*border: 1px solid #333333;*/
 }
+
+#blurb{
+    margin-left:1%;
+    margin-right:1%;
+    margin-top:0;
+    margin-bottom:0;
+    position:absolute;
+}
+h2{
+    margin-top:0;
+}
+
 iframe{
     margin: auto;
 }
