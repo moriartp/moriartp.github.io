@@ -13,6 +13,14 @@ body {
     color:#DDD;
 }
 
+h2{
+    margin: 1%;
+}
+
+.blurb{
+    margin: 1%;
+}
+
 ul {
     list-style-type: none;
     margin: 1%;
@@ -68,12 +76,20 @@ li a.active {
     margin-top:1%;
     border: 1px solid #333333;
 }
-div.leaflet-popup-content-wrapper, div.leaflet-popup-tip{
+div.leaflet-popup-content-wrapper{
     background-color: gray;
     color:#EEE;
     border-radius: 0;
     width:600px;
 }
+
+div.leaflet-popup-tip{
+    background-color: gray;
+    color:#EEE;
+    border-radius: 0;
+    /*width:600px;*/
+}
+
 
 /*PLANETS*/
 #planets{

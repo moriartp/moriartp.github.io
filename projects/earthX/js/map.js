@@ -106,10 +106,10 @@
 
             L.marker([40.735236, -73.994507], {icon: sunIcon}).addTo(map).bindPopup("<h1>I am the sun.</h1><img src='icons/00sun.png' height='100' width='100'><img src='imgs/mockupUI-start.jpg' height='100' width='233'>");
             L.marker([40.735683, -73.993981], {icon: mercuryIcon}).addTo(map).bindPopup("I am mercury.<iframe width=98% height='315' src='https://www.youtube.com/embed/Qd4MMjOnglQ' frameborder='0' allowfullscreen></iframe>");
-            L.marker([40.736253, -73.993573], {icon: venusIcon}).addTo(map).bindPopup("I am venus.");
+            L.marker([40.736253, -73.993573], {icon: venusIcon}).addTo(map).bindPopup("I am venus.<iframe width='560' height='315' src='https://www.youtube.com/embed/RAn1te30nMY' frameborder='0' allowfullscreen></iframe>");
             L.marker([40.736607, -73.993302], {icon: earthIcon}).addTo(map).bindPopup("<p>I am earth.</p><iframe width='560' height='315' src='https://www.youtube.com/embed/kGqGK54bEZg' frameborder='0' allowfullscreen></iframe>");
-            L.marker([40.737331, -73.992749], {icon: marsIcon}).addTo(map).bindPopup("<p>I am mars.</p><img src='imgs/marsmarker.jpg' height='100' width='233'>");  
+            L.marker([40.737331, -73.992749], {icon: marsIcon}).addTo(map).bindPopup("<p>I am mars.</p><iframe width='560' height='315' src='https://www.youtube.com/embed/w60za813B7s' frameborder='0' allowfullscreen></iframe>");  
             L.marker([40.742718, -73.989259], {icon: jupiterIcon}).addTo(map).bindPopup("<p>I am jupiter.</p><iframe width='560' height='315' src='https://www.youtube.com/embed/TONOIXTquho' frameborder='0' allowfullscreen></iframe>"); 
-            L.marker([40.748784, -73.984432], {icon: saturnIcon}).addTo(map).bindPopup("I am saturn.");  
+            L.marker([40.748784, -73.984432], {icon: saturnIcon}).addTo(map).bindPopup("I am saturn.<iframe width=560' height='315' src='https://www.youtube.com/embed/tuu7EfD145A' frameborder='0' allowfullscreen></iframe>");  
             L.marker([40.762514, -73.974451], {icon: uranusIcon}).addTo(map).bindPopup("I am uranus."); 
             L.marker([40.777865, -73.963201], {icon: neptuneIcon}).addTo(map).bindPopup("I am neptune.");     
