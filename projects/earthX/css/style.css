@@ -72,6 +72,7 @@ div.leaflet-popup-content-wrapper, div.leaflet-popup-tip{
     background-color: gray;
     color:#EEE;
     border-radius: 0;
+    width:600px;
 }
 
 /*PLANETS*/
