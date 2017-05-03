@@ -1,51 +1,51 @@
 body {
     padding: 0;
     margin: 0;
-    background-image: url("/imgs/maxresdefault.jpg");
-}
+/*    background-image: url("../imgs/Flatiron2.jpg");
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center top;*/
 
-body {
-    /*padding: 1%;*/
-    /*margin-top: 1%;*/
-    /*margin-left: 5%;*/
-    /*margin-right: 5%;*/
+
     font-family: 'Dosis', sans-serif;
     color:#DDD;
 }
 
+
 h2{
-    margin: 1%;
+    margin-left: 3%;
 }
 
 .blurb{
-    margin: 1%;
+    margin: 3%;
 }
 
 ul {
     list-style-type: none;
     margin: 1%;
-    height: 100px;
+    height: 52px;
     padding: 0;
     overflow: hidden;
     border: none;
-    background-color:#111112;
+    /*background-color:#111112;*/
+    background-color:none;
 }
 
 li {
     margin:2px;
     float: left;
-    height:55px;
+    height:25px;
 }
 
 li a {
     display: block;
     color: #DDD;
     text-align: center;
-    height:55px;
-    width:55px;
+    height:20px;
+    width:100px;
     padding: 14px 16px;
     text-decoration: none;
-    border-radius: 100px;
+    /*border-radius: 100px;*/
 }
 
 li a:hover:not(.active) {
@@ -55,7 +55,7 @@ li a:hover:not(.active) {
 
 li a.active {
     color: white;
-    background-color: #ff7f00;
+    background-color: #ff4e00;
 }
 
 
