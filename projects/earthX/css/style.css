@@ -20,6 +20,20 @@ h2{
     margin: 1%;
 }
 
+#projName{
+    font-style: bold;
+    font-size: 200px;
+    margin:20%;
+    width:60%;
+    position: absolute;
+    text-align: center;
+
+}
+
+#sun{
+    position: static;
+}
+
 ul {
     list-style-type: none;
     margin: 1%;

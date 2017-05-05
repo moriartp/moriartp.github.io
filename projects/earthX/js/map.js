@@ -11,6 +11,8 @@
             minZoom: 13,
             }).addTo(map);
 
+
+
             L.circle([40.735236, -73.994507], 67, {
                     color: '#ff4e00',
                     fillColor: '#111',
@@ -77,12 +79,99 @@
                 }).addTo(map);
             // .bindPopup("Neptune Orbit.");  
 
-            // var earthOrbit = L.circle([40.735236, -73.994507], {
-            //     color: 'blue',
-            //     fillColor: 'blue',
-            //     fillOpacity: 0.9,
-            //     radius: 50
-            // }).addTo(map);
+
+            // ///////////////////////////////////////////
+            // L.circle([40.735236, -73.994507], 20, {
+            //         color: '#111',
+            //         fillColor: '#ffff33',
+            //         fillOpacity: 1,
+            //         weight: 2
+            //     }).addTo(map);
+            // // .bindPopup("TheSun"); 
+
+
+            // L.circle([40.735683, -73.993981], 20, {
+            //         color: '#111',
+            //         fillColor: '#ff7f00',
+            //         fillOpacity: 1,
+            //         weight: 2
+            //     }).addTo(map);
+            // // .bindPopup("Mercury Orbit"); 
+            
+
+            // L.circle([40.736253, -73.993573], 20, {
+            //         color: '#111',
+            //         fillColor: '#a65628',
+            //         fillOpacity: 1,
+            //         weight: 2
+            //     }).addTo(map);
+            // // .bindPopup("Venus Orbit.");  
+
+
+            // L.circle([40.736607, -73.993302], 20, {
+            //         color: '#111',
+            //         fillColor: '#4daf4a',
+            //         fillOpacity: 1,
+            //         weight: 2
+            //     }).addTo(map);
+            // // .bindPopup("Earth's Orbit.");
+
+            // L.circle([40.737331, -73.992749], 20, {
+            //         color: '#111',
+            //         fillColor: '#984ea3',
+            //         fillOpacity: 1,
+            //         weight: 1
+            //     }).addTo(map);
+            // // .bindPopup("Martian Orbit.");  
+
+            // L.circle([40.742718, -73.989259], 20, {
+            //         color: '#111',
+            //         fillColor: '#377eb8',
+            //         fillOpacity: 1,
+            //         weight: 2
+            //     }).addTo(map);
+            // // .bindPopup("Jupiter Orbit.");                                           
+
+            // L.circle([40.748784, -73.984432], 20, {
+            //         color: '#111',
+            //         fillColor: '#f781bf',
+            //         fillOpacity: 1,
+            //         weight: 2
+            //     }).addTo(map);
+            // // .bindPopup("Saturn Orbit.");  
+
+            // L.circle([40.762514, -73.974451], 20, {
+            //         color: '#111',
+            //         fillColor: '#e41a1c',
+            //         fillOpacity: 1,
+            //         weight: 2
+            //     }).addTo(map);
+            // // .bindPopup("Uranus Orbit.");  
+
+            // L.circle([40.777865, -73.963201], 20, {
+            //         color: '#111',
+            //         fillColor: '#999999',
+            //         fillOpacity: 1,
+            //         weight: 2
+            //     }).addTo(map);
+            // // .bindPopup("Neptune Orbit.");  
+
+
+            // ///////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             var planetIcon = L.Icon.extend({
                 options: {
