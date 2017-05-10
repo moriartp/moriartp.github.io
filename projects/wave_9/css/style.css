@@ -98,19 +98,22 @@ li a.active {
     border: 1px solid #333333;
 }
 div.leaflet-popup-content-wrapper{
-    background-color: gray;
+    background-color: black;
     color:#EEE;
     border-radius: 0;
     width:600px;
 }
 
 div.leaflet-popup-tip{
-    background-color: gray;
+    background-color: black;
     color:#EEE;
     border-radius: 0;
     /*width:600px;*/
 }
 
+img{
+    margin:auto;
+}
 
 /*PLANETS*/
 #planets{

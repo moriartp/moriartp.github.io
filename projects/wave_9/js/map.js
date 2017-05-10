@@ -194,12 +194,13 @@
                 uranusIcon = new planetIcon({iconUrl: 'icons/007uranus.png'});
                 neptuneIcon = new planetIcon({iconUrl: 'icons/008neptune.png'});
 
-            L.marker([40.735236, -73.994507], {icon: sunIcon}).addTo(map).bindPopup("<h1>I am the sun.</h1><img src='icons/00sun.png' height='100' width='100'><img src='imgs/mockupUI-start.jpg' height='100' width='233'>");
-            L.marker([40.735683, -73.993981], {icon: mercuryIcon}).addTo(map).bindPopup("I am mercury.<iframe width=98% height='315' src='https://www.youtube.com/embed/Qd4MMjOnglQ' frameborder='0' allowfullscreen></iframe>");
-            L.marker([40.736253, -73.993573], {icon: venusIcon}).addTo(map).bindPopup("I am venus.<iframe width='560' height='315' src='https://www.youtube.com/embed/RAn1te30nMY' frameborder='0' allowfullscreen></iframe>");
-            L.marker([40.736607, -73.993302], {icon: earthIcon}).addTo(map).bindPopup("<p>I am earth.</p><iframe width='560' height='315' src='https://www.youtube.com/embed/kGqGK54bEZg' frameborder='0' allowfullscreen></iframe>");
-            L.marker([40.737331, -73.992749], {icon: marsIcon}).addTo(map).bindPopup("<p>I am mars.</p><iframe width='560' height='315' src='https://www.youtube.com/embed/w60za813B7s' frameborder='0' allowfullscreen></iframe>");  
-            L.marker([40.742718, -73.989259], {icon: jupiterIcon}).addTo(map).bindPopup("<p>I am jupiter.</p><iframe width='560' height='315' src='https://www.youtube.com/embed/TONOIXTquho' frameborder='0' allowfullscreen></iframe>"); 
-            L.marker([40.748784, -73.984432], {icon: saturnIcon}).addTo(map).bindPopup("I am saturn.<iframe width=560' height='315' src='https://www.youtube.com/embed/tuu7EfD145A' frameborder='0' allowfullscreen></iframe>");  
-            L.marker([40.762514, -73.974451], {icon: uranusIcon}).addTo(map).bindPopup("I am uranus."); 
-            L.marker([40.777865, -73.963201], {icon: neptuneIcon}).addTo(map).bindPopup("I am neptune.");     
+            L.marker([40.735236, -73.994507], {icon: sunIcon}).addTo(map).bindPopup("<h1>the sun</h1><p>Beginning in the lobby of Parsons Shiela Johnson Design center, the wave 9 model presents a render of the sun at anthropic scale. With a diameter of 5' 6'' -- the average height of an american adult -- this unit of measure remains with the viewer as they progress through the model, taking with them as a recognizable point of reference.</p><img src='imgs/Screenshot_sun.jpg' height=300px width=550px>");
+            L.marker([40.735683, -73.993981], {icon: mercuryIcon}).addTo(map).bindPopup("<h1>mercury</h1><img src='imgs/Screenshot_mercury.jpg' height=300px width=550px>");
+            L.marker([40.736253, -73.993573], {icon: venusIcon}).addTo(map).bindPopup("<h1>venus</h1><img src='imgs/Screenshot_venus.jpg' height=300px width=550px>");
+            // L.marker([40.736253, -73.993573], {icon: venusIcon}).addTo(map).bindPopup("<h1>venus</h1><iframe width='560' height='315' src='https://www.youtube.com/embed/RAn1te30nMY' frameborder='0' allowfullscreen></iframe>");
+            L.marker([40.736607, -73.993302], {icon: earthIcon}).addTo(map).bindPopup("<h1>earth</h1></p><img src='imgs/Screenshot_earth.jpg' height=300px width=550px>");
+            L.marker([40.737331, -73.992749], {icon: marsIcon}).addTo(map).bindPopup("<h1>mars<h1><img src='imgs/Screenshot_mars.jpg' height=300px width=550px>");  
+            L.marker([40.742718, -73.989259], {icon: jupiterIcon}).addTo(map).bindPopup("<h1>jupiter<h1><img src='imgs/Screenshot_jupiter.jpg' height=300px width=550px>"); 
+            L.marker([40.748784, -73.984432], {icon: saturnIcon}).addTo(map).bindPopup("<h1>saturn</h1><img src='imgs/Screenshot_saturn.jpg' height=300px width=550px>");  
+            L.marker([40.762514, -73.974451], {icon: uranusIcon}).addTo(map).bindPopup("<h1>uranus</h1><img src='imgs/Screenshot_uranus.jpg' height=300px width=550px>"); 
+            L.marker([40.777865, -73.963201], {icon: neptuneIcon}).addTo(map).bindPopup("<h1>neptune</h1><img src='imgs/Screenshot_netune.jpg' height=300px width=550px>");     
