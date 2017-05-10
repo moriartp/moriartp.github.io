@@ -14,68 +14,69 @@
 
 
             L.circle([40.735236, -73.994507], 67, {
-                    color: '#ff4e00',
+                    // color: '#ff4e00',
+                    color: '#444444',
                     fillColor: '#111',
                     fillOpacity: 0.1,
-                    weight: 5
+                    weight: 22
                 }).addTo(map);
             // .bindPopup("Mercury Orbit"); 
             
 
             L.circle([40.735236, -73.994507], 138, {
-                    color: '#ff4e00',
+                    color: '#444444',
                     fillColor: '#111',
                     fillOpacity: 0.1,
-                    weight: 5
+                    weight: 22
                 }).addTo(map);
             // .bindPopup("Venus Orbit.");  
 
 
             L.circle([40.735236, -73.994507], 184, {
-                    color: '#ff4e00',
+                    color: '#444444',
                     fillColor: '#111',
                     fillOpacity: 0.01,
-                    weight: 5
+                    weight: 22
                 }).addTo(map);
             // .bindPopup("Earth's Orbit.");
 
             L.circle([40.735236, -73.994507], 276.5, {
-                    color: '#ff4e00',
+                    color: '#444444',
                     fillColor: '#111',
                     fillOpacity: 0.01,
-                    weight: 5
+                    weight: 22
                 }).addTo(map);
             // .bindPopup("Martian Orbit.");  
 
             L.circle([40.735236, -73.994507], 943, {
-                    color: '#ff4e00',
+                    color: '#444444',
                     fillColor: '#111',
                     fillOpacity: 0.01,
-                    weight: 5
+                    weight: 22
                 }).addTo(map);
             // .bindPopup("Jupiter Orbit.");                                           
 
             L.circle([40.735236, -73.994507], 1731, {
-                    color: '#ff4e00',
+                    color: '#444444',
                     fillColor: '#111',
                     fillOpacity: 0.01,
-                    weight: 5
+                    weight: 22
                 }).addTo(map);
             // .bindPopup("Saturn Orbit.");  
 
             L.circle([40.735236, -73.994507], 3478, {
-                    color: '#ff4e00',
+                    color: '#444444',
                     fillColor: '#111',
                     fillOpacity: 0.01,
-                    weight: 5
+                    weight: 22
                 }).addTo(map);
             // .bindPopup("Uranus Orbit.");  
 
             L.circle([40.735236, -73.994507], 5431, {
-                    color: '#ff4e00',
+                    color: '#444444',
                     fillColor: '#111',
                     fillOpacity: 0.01,
-                    weight: 5
+                    weight: 22
                 }).addTo(map);
             // .bindPopup("Neptune Orbit.");  
 
@@ -183,15 +184,15 @@
                 }
             });
 
-            var sunIcon = new planetIcon({iconUrl: 'icons/00sun.png'}),
-                mercuryIcon = new planetIcon({iconUrl: 'icons/01mercury.png'}),
-                venusIcon = new planetIcon({iconUrl: 'icons/02venus.gif'}),
-                earthIcon = new planetIcon({iconUrl: 'icons/03earth.png'});
-                marsIcon = new planetIcon({iconUrl: 'icons/04mars.png'});
-                jupiterIcon = new planetIcon({iconUrl: 'icons/05jupiter.png'});
-                saturnIcon = new planetIcon({iconUrl: 'icons/06saturn.png'});
-                uranusIcon = new planetIcon({iconUrl: 'icons/07uranus.png'});
-                neptuneIcon = new planetIcon({iconUrl: 'icons/08neptune_.png'});
+            var sunIcon = new planetIcon({iconUrl: 'icons/000sun.png'}),
+                mercuryIcon = new planetIcon({iconUrl: 'icons/001mercury.png'}),
+                venusIcon = new planetIcon({iconUrl: 'icons/002venus.png'}),
+                earthIcon = new planetIcon({iconUrl: 'icons/003earth.png'});
+                marsIcon = new planetIcon({iconUrl: 'icons/004mars.png'});
+                jupiterIcon = new planetIcon({iconUrl: 'icons/005jupiter.png'});
+                saturnIcon = new planetIcon({iconUrl: 'icons/006saturn.png'});
+                uranusIcon = new planetIcon({iconUrl: 'icons/007uranus.png'});
+                neptuneIcon = new planetIcon({iconUrl: 'icons/008neptune.png'});
 
             L.marker([40.735236, -73.994507], {icon: sunIcon}).addTo(map).bindPopup("<h1>I am the sun.</h1><img src='icons/00sun.png' height='100' width='100'><img src='imgs/mockupUI-start.jpg' height='100' width='233'>");
             L.marker([40.735683, -73.993981], {icon: mercuryIcon}).addTo(map).bindPopup("I am mercury.<iframe width=98% height='315' src='https://www.youtube.com/embed/Qd4MMjOnglQ' frameborder='0' allowfullscreen></iframe>");

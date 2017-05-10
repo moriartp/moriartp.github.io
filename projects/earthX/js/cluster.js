@@ -64,6 +64,7 @@ node.append("circle")
     })
     .attr("r", function(d){return d.radius})
     .style("color","#FFF")
+    .style("cursor", "move")
     
 
 node.append("text")
@@ -74,6 +75,7 @@ node.append("text")
       .text(function(d) { return d.text; })
       // .style("stroke", "white");
       .style("font-size", "34px")
+      .style("cursor", "move")
       .style('fill', 'white')
       // .style('stroke', 'black')
       .style('font-weight', 'bold')

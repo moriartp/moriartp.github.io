@@ -1,6 +1,7 @@
 body {
     padding: 0;
     margin: 0;
+    overflow: hidden;
 /*    background-image: url("../imgs/Flatiron2.jpg");
     background-size:     cover;                      
     background-repeat:   no-repeat;
@@ -139,6 +140,7 @@ iframe{
 
 .p_name text{
     color:#55F;
+    cursor: move;
 }
 /*.group {*/
   /*fill: none;*/
