@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W9</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+</head>
+<!-- <body background="imgs/Flatiron2.jpg"> -->
+<body bgcolor="#111112">
+    <ul>
+      <li><a href="index.html">w9 home</a></li>
+      <li><a class="active" href="origins.html">about</a></li>
+      <li><a href="cluster.html">compare sizes</a></li>
+      <li><a href="map.html">view map</a></li>
+      <li><a href="demo.html">view demo</a></li>
+    </ul>
+    <div class="content">
+      <div class="relative">
+        <img class="mySlides" src="imgs/slideshow/Screenshot_c01.png" style="width:25%">
+        <img class="mySlides" src="imgs/slideshow/Screenshot_c02.png" style="width:25%">
+        <img class="mySlides" src="imgs/slideshow/Screenshot_c03.png" style="width:25%">
+        <img class="mySlides" src="imgs/slideshow/Screenshot_c04.png" style="width:25%">
+        <img class="mySlides" src="imgs/slideshow/Screenshot_c05.png" style="width:25%">
+        <img class="mySlides" src="imgs/slideshow/Screenshot_c06.png" style="width:25%">
+      </div>
+
+    <h2>About the wave9 mobile app</h2>
+    <p>Commonly, numerical values expressed in multiple orders of magnitude are difficult to comprehend, particularly so for audiences that are less-mathematically inclined. The deliverable of this project is intended to narrow this gap in comprehension in order to create meaning and make interpretable a true model of the solar system to a general audience. Owing to early visual representations of the the sublime in 19th century romanticism, the project name, in homage to Russian Armenian painter Ivan Aivazovsky, is dubbed, Wave 9.</p>
+    <p>Using the physical landscape of Manhattan, as its backdrop, the wave 9 mobile application guides audiences on a walking tour through a physical model of the solar system that begins at Parsons campus in dowtown New York and stretches up Fifth Avenue to the Metropolitan Museum of art, where the model concludes. Along the way, guided the applications map, audiences encounter various markers which trigger 3D renderings within the mobile app visualizing the various planets of our solar system using augmented reality technology.</p>
+    <p>The three dimensional renderings set within the recognizable landscape of New York city provides audience with a level of conprehension of size, scale, interplanetary relationship, and solar enormity in a clear, intuitive, and accessible way.</p>
+
+    </div>
+    <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 5000); // Change image every 2 seconds
+    }
+</script>
+
+
+ 
+
+
+
+
+
+
+
+</body>
+</html>
