@@ -15,7 +15,7 @@ function setup() {
 
 function draw() {
    createCanvas(windowWidth,windowHeight);
-   background(0);
+   background(17,17,18);
 
    fill(255,255,255,titleDisplay);
    titleDisplay = titleDisplay - 0.5;

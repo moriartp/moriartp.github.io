@@ -6,8 +6,10 @@ var b = [];
 var titleDisplay;
 
 function setup() {
-  //PC QTY SELECT ELEMENT
+  textFont('Dosis');
+  //QTY SELECT
   input = createInput();
+
   input.position(windowWidth/2-51, windowHeight/2);
   textAlign(CENTER,CENTER);
   titleDisplay = 255;
@@ -15,14 +17,14 @@ function setup() {
 
 function draw() {
    createCanvas(windowWidth,windowHeight);
-   background(0);
+   background(17,17,18);
 
    fill(255,255,255,titleDisplay);
    titleDisplay = titleDisplay - 0.5;
    textAlign(CENTER,CENTER);
 
    textSize(33);
-   text("THE NUMBER CRUNCH", width/2,height*0.333);
+   text("The Number Crunch", width/2-51,height*0.333);
    textSize(13);
    // text("Enter a number in\nthe below field.", width/2,height*0.444);
 
@@ -34,8 +36,8 @@ function draw() {
    
   //CONSTRUCTOR VARS
   var tablingValue = sqrt(vizNum); //calculates optimal row/column count based on dataset.length
-  var marginH = (windowWidth * 0.0025);
-  var marginV = (windowHeight * 0.0025);
+  var marginH = (windowWidth * 0.025);
+  var marginV = (windowHeight * 0.025);
   var intervalH = ((windowWidth - (marginH * 3)) / tablingValue);
   var intervalV = ((windowHeight - (marginV * 2)) / tablingValue); 
 
@@ -49,7 +51,7 @@ function draw() {
       
       fill(255,78,0);
       noStroke();
-      rect(marginH * 1.5 + colH * intervalH, (marginV * 1.5 + rowV * intervalV), intervalH * 0.90, intervalV * 0.90);
+      rect((marginH * 1.5 + colH * intervalH)*0.9, (marginV * 1.5 + rowV * intervalV)*0.9, (intervalH * 0.90)*0.9, (intervalV * 0.90)*0.9);
   }
    
    
