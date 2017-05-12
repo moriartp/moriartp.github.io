@@ -1,14 +1,14 @@
 var input;
 var vizNum;
-// var r = [];
-// var g = [];
-// var b = [];
+var r = [];
+var g = [];
+var b = [];
 var titleDisplay;
 
 function setup() {
   //PC QTY SELECT ELEMENT
   input = createInput();
-  input.position(windowWidth/2-52, windowHeight/2+52);
+  input.position(windowWidth/2-51, windowHeight/2);
   textAlign(CENTER,CENTER);
   titleDisplay = 255;
 }
@@ -24,7 +24,7 @@ function draw() {
    textSize(33);
    text("THE NUMBER CRUNCH", width/2,height*0.333);
    textSize(13);
-   text("Enter a number in\nthe below field.", width/2,height*0.444);
+   // text("Enter a number in\nthe below field.", width/2,height*0.444);
 
 
    // fill(222);
@@ -43,14 +43,13 @@ function draw() {
   for (var i = 0; i < vizNum; i++){
       var rowV = floor(i % tablingValue);
       var colH = floor(i / tablingValue);
-      // r[i] = 255;
-      // g[i] = 78;
-      // b[i] = 0;
+      // r[i] = random(0,255);
+      // g[i] = random(0,255);
+      // b[i] = random(0,255);
       
       fill(255,78,0);
       noStroke();
-      rectAlign(LEFT,CENTER);
-      rect(marginH * 1.5 + colH * intervalH, (marginV * 1.5 + rowV * intervalV), intervalH * 0.70, intervalV * 0.70);
+      rect(marginH * 1.5 + colH * intervalH, (marginV * 1.5 + rowV * intervalV), intervalH * 0.90, intervalV * 0.90);
   }
    
    
