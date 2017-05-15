@@ -38,8 +38,8 @@ function draw() {
   var tablingValue = sqrt(vizNum); //calculates optimal row/column count based on dataset.length
   var marginH = (windowWidth * 0.025);
   var marginV = (windowHeight * 0.025);
-  var intervalH = ((windowWidth - (marginH * 3)) / tablingValue);
-  var intervalV = ((windowHeight - (marginV * 2)) / tablingValue); 
+  var intervalH = ((windowWidth-100 - (marginH * 3)) / tablingValue);
+  var intervalV = ((windowHeight-100 - (marginV * 2)) / tablingValue); 
 
   
   for (var i = 0; i < vizNum; i++){
