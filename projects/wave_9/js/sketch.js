@@ -24,7 +24,7 @@ function draw() {
    textAlign(CENTER,CENTER);
 
    textSize(33);
-   text("The Number Crunch", width/2-51,height*0.333);
+   text("The Number Crunch", width/2-51,height*0.2);
    textSize(13);
    // text("Enter a number in\nthe below field.", width/2,height*0.444);
 
