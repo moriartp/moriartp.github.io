@@ -10,7 +10,8 @@ function setup() {
   //QTY SELECT
   input = createInput();
 
-  input.position(windowWidth/2-51, windowHeight/2);
+  // input.position(windowWidth/2-51, windowHeight/2);
+  // input.position(windowWidth*0.1, windowHeight-200);
   textAlign(CENTER,CENTER);
   titleDisplay = 255;
 }
@@ -18,6 +19,7 @@ function setup() {
 function draw() {
    createCanvas(windowWidth,windowHeight);
    background(17,17,18);
+   input.position(windowWidth*0.1, windowHeight*0.145);
 
    fill(255,255,255,titleDisplay);
    titleDisplay = titleDisplay - 0.5;
