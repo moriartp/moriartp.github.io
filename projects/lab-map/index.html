@@ -35,10 +35,10 @@
 
     </style>
 
-<div id="mapid" style="width: 100%; height: 900px;"></div>
+<div id="mapid" style="width: 100%; height: 450px;"></div>
 <script>
 
-	var mymap = L.map('mapid').setView([40.735486, -73.993554], 17);
+	var mymap = L.map('mapid').setView([40.735486, -73.993554], 13);
 
 	// L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
 	// 	maxZoom: 18,
@@ -54,8 +54,8 @@
 var Stamen_TonerLite = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.{ext}', {
 	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
 	subdomains: 'abcd',
-	minZoom: 0,
-	maxZoom: 20,
+	minZoom: 12,
+	maxZoom: 18,
 	ext: 'png'
 }).addTo(mymap);
 
@@ -78,20 +78,20 @@ var myIcon = L.icon({
 var AH = L.marker([40.736414, -73.996580]).addTo(mymap)
 	.bindPopup('A pretty CSS3 popup.<br> Easily customizable.<iframe width=100% height="315" src="https://www.youtube.com/embed/YP3RIKITA-I" frameborder="0" allowfullscreen></iframe>')
 
-    .openPopup();
+    .closePopup();
 
 
 var PE = L.marker([40.734832, -73.992795]).addTo(mymap)
 	.bindPopup('A pretty CSS3 popup.<br> Easily customizable.<iframe width=100% height="315" src="https://www.youtube.com/embed/YP3RIKITA-I" frameborder="0" allowfullscreen></iframe>')
-    .openPopup();
+    .closePopup();
 
 var IC = L.marker([40.737026, -73.992105]).addTo(mymap)
 	.bindPopup('A pretty CSS3 popup.<br> Easily customizable.<iframe width=100% height="315" src="https://www.youtube.com/embed/YP3RIKITA-I" frameborder="0" allowfullscreen></iframe>')
-    .openPopup();
+    .closePopup();
 
 var UC = L.marker([40.735486, -73.993554]).addTo(mymap)
 	.bindPopup('A pretty CSS3 popup.<br> Easily customizable.<iframe width="300" height="315" src="https://www.youtube.com/embed/YP3RIKITA-I" frameborder="0" allowfullscreen></iframe>')
-    .openPopup();    
+    .closePopup();    
 
 
 </script>
