@@ -1,0 +1,18 @@
+#selection{
+	height:40px;
+}
+
+.software{
+	width:100%;
+	cursor: pointer;
+}
+
+.tooltip {
+
+	display: none;
+
+}
+
+.tooltip.showit {
+	display: block;
+}
