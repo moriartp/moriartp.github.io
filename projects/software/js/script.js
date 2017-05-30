@@ -67,7 +67,7 @@ var data = d3.csv("data/software.csv", function(error, data) {
     function showToolTip(d,i){
       tooltip.classed('showit', true)
       tooltip.html('').html('<h2>'+d.Category+' '+d.Software+' '+d.Version+' : CLASSROOMS HERE'+' '+' '+' '+'</h2>')
-      d3.select("#rooms").append("html").html("ADD ROOM LIST PJ")
+      d3.select("#rooms").html("ADD ROOM LIST PJ")
     }
 //END TOOLTIP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!////
 
