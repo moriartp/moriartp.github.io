@@ -1,17 +1,37 @@
-// var data = d3.csv("dummyRoomDataX.csv", function(error, data) {
+var Inputdata;
+ 
+ 
+function handleClick(event){
+  draw(document.getElementById("myVal").value)
+  return false;
+
+  // d3.selectAll(".software").style("background-color","green")
+}
+ 
+function draw(val){
+  d3.select("body")
+  Inputdata = document.getElementById("myVal").value;
+  console.log("Draw var = " + Inputdata);
+
+  d3.select("body").select("p").text(Inputdata); 
+  // d3.selectAll(".software").style("background-color","green");
+
+  d3.selectAll(".software").style("display", function(d) {
+    if(d.Software.indexOf(Inputdata) >= 0){
+      return "block"
+    } else {
+      return "none"
+    }
+  });
+}
+
+
+
+
+
 var data = d3.csv("data/software.csv", function(error, data) {  
     data.forEach(function(d) {
     }); 
-
-  var input;
-
-  function getMessage() {
-    d3.select("#d3").text("D3a:" + d3.select("#msg").property("value"));
-    input = d3.select("#d3").text("D3a:" + d3.select("#msg").property("value"));
-    // d3.select("#d3node").text("D3b:" + d3.select("#msg").node().value);
-    // document.getElementById("dom").innerHTML = "DOM:" + document.getElementById("msg").value;
-   }
-
 
   var tiles = d3.select('#container')//('body')
     .selectAll('.tile')
@@ -35,7 +55,9 @@ var data = d3.csv("data/software.csv", function(error, data) {
       .on('click', showToolTip)
 
       .append('text')
-      .html(function (d) { return d.Software+" "+d.Version; });   
+      .html(function (d) { return d.Software+" "+d.Version; });
+
+      
 
 //START TOOLTIP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!////
     var tooltip = d3.select('#selection').append('div').attr('class', 'tooltip')
@@ -48,6 +70,7 @@ var data = d3.csv("data/software.csv", function(error, data) {
       // tooltip.html("<i class='fa fa-times-circle' fa-lg>").on('click',hideToolTip)  
     }
 //END TOOLTIP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!////
+
 
 
 
