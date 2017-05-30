@@ -13,7 +13,7 @@ function draw(val){
   Inputdata = document.getElementById("myVal").value;
   console.log("Draw var = " + Inputdata.toLowerCase());
 
-  d3.select("body").select("p").text(Inputdata); 
+  d3.select("body").select("p").text("Your search parameter: "+Inputdata); 
   // d3.selectAll(".software").style("background-color","green");
 
   d3.selectAll(".software").style("display", function(d) {
@@ -66,8 +66,8 @@ var data = d3.csv("data/software.csv", function(error, data) {
     //SHOW IT///////////////////////////////////////
     function showToolTip(d,i){
       tooltip.classed('showit', true)
-      tooltip.html('').html('<h2>'+d.Category+' '+d.Software+' '+d.Version+' '+' '+' '+' '+'</h2>')
-      // tooltip.html("<i class='fa fa-times-circle' fa-lg>").on('click',hideToolTip)  
+      tooltip.html('').html('<h2>'+d.Category+' '+d.Software+' '+d.Version+' : CLASSROOMS HERE'+' '+' '+' '+'</h2>')
+      d3.select("#rooms").append("html").html("ADD ROOM LIST PJ")
     }
 //END TOOLTIP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!////
 
