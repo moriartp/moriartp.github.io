@@ -67,16 +67,27 @@ var data = d3.csv("data/software.csv", function(error, data) {
     function showToolTip(d,i){
       tooltip.classed('showit', true)
       tooltip.html('').html('<h2>'+d.Category+' '+d.Software+' '+d.Version+' : CLASSROOMS HERE'+' '+' '+' '+'</h2>')
-      d3.select("#rooms").html("ADD ROOM LIST PJ")
+      d3.select("#rooms").html("ADD ROOM LIST HERE, PJ")
+
+      var data = d3.csv("data/supported-spaces.csv", function(error, data) {  
+        data.forEach(function(f) {
+          console.log(d)
+          // d3.select(#rooms).html("HI");
+        }); 
+        var room_tiles = d3.select('#rooms')//('body')
+          .selectAll('.room')
+          .data(data).enter()
+          .append('div')
+            .attr('id', function(d) {return d.RoomNumber;})
+            .attr('class', 'software')
+            .style("display","inline")
+            .append('text')
+            .html(function (d) { return d.BuildingCode+" "+d.RoomNumber; });
+      });
+    
+
     }
+
 //END TOOLTIP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!////
 
-
-
-
-
-
-
-
-});      
-
+});
