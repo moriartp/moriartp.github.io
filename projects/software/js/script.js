@@ -11,13 +11,13 @@ function handleClick(event){
 function draw(val){
   d3.select("body")
   Inputdata = document.getElementById("myVal").value;
-  console.log("Draw var = " + Inputdata);
+  console.log("Draw var = " + Inputdata.toLowerCase());
 
   d3.select("body").select("p").text(Inputdata); 
   // d3.selectAll(".software").style("background-color","green");
 
   d3.selectAll(".software").style("display", function(d) {
-    if(d.Software.indexOf(Inputdata) >= 0){
+    if(d.Software.toLowerCase().indexOf(Inputdata.toLowerCase()) >= 0){
       return "block"
     } else {
       return "none"
