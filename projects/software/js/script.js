@@ -13,7 +13,7 @@ function draw(val){
   Inputdata = document.getElementById("myVal").value;
   console.log("Draw var = " + Inputdata.toLowerCase());
 
-  d3.select("body").select("p").text("Your search parameter: "+Inputdata); 
+  d3.select("body").select("p").text("Input search string: "+Inputdata); 
   // d3.selectAll(".software").style("background-color","green");
 
   d3.selectAll(".software").style("display", function(d) {
