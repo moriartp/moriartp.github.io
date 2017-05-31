@@ -11,17 +11,28 @@
       stroke-width: 3px;
   }
   .node text {
+
+      position:relative;
       font: 12px sans-serif;
-      fill: #999;
-      -webkit-transition: fill 2s, z-index 2s, font-size 1s;
+      fill: #222;
+      opacity: 0.8;
+      -webkit-transition: fill 2s, z-index 2s, font-size 1s, opacity 2s, background 2s;
+
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      writing-mode: tb-rl;
+
+
+
   }
 
   .node text:hover {
-    fill: #000;
-    z-index: -10;
-    font-size: 24px;
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
+    fill: #001;
+    background:#000;
+    z-index: 10;
+    font-size: 14px;
+    opacity: 1;
   }
 
 

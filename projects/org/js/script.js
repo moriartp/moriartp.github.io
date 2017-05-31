@@ -10,15 +10,16 @@
               left: 20
           };
           var width = 1200 - margin.right - margin.left;
-          var height = 500 - margin.top - margin.bottom;
+          var height = 1100 - margin.top - margin.bottom;
 
           var i = 0,
-              duration = 750;
+              duration = 1750;
           var tree = d3.layout.tree()
               .size([height, width]);
           var diagonal = d3.svg.diagonal()
               .projection(function(d) {
-                  return [d.x*2, d.y];
+                  // return [d.x*2, d.y];
+                  return [d.x, d.y];
               });
           var svg = d3.select(treeContainerDom).append("svg")
               .attr("width", width + margin.right + margin.left)
@@ -35,7 +36,7 @@
                   links = tree.links(nodes);
               // Normalize for fixed-depth.
               nodes.forEach(function(d) {
-                  d.y = d.depth * 100;
+                  d.y = d.depth * 150;
               });
               // Declare the nodes…
               var node = svg.selectAll("g.node")
@@ -46,7 +47,8 @@
               var nodeEnter = node.enter().append("g")
                   .attr("class", "node")
                   .attr("transform", function(d) {
-                      return "translate(" + source.x0*2 + "," + source.y0 + ")";
+                      // return "translate(" + source.x0*2 + "," + source.y0 + ")";
+                      return "translate(" + source.x0 + "," + source.y0 + ")";
                   }).on("click", nodeclick);
               nodeEnter.append("circle")
                   .attr("r", 10)
@@ -60,10 +62,10 @@
               //.style("fill", "#fff");
               nodeEnter.append("text")
                   .attr("y", function(d) {
-                      return d.children || d._children ? -18 : 18;
+                      return d.children || d._children ? 11 : 12;
                   })
                   .attr("dy", ".35em")
-                  .attr("text-anchor", "middle")
+                  .attr("text-anchor", "start")
                   .text(function(d) {
                       return d.name;
                   })
@@ -73,7 +75,8 @@
               var nodeUpdate = node.transition()
                   .duration(duration)
                   .attr("transform", function(d) {
-                      return "translate(" + d.x*2 + "," + d.y + ")";
+                      return "translate(" + d.x + "," + d.y + ")";
+                      // return "translate(" + d.x*2 + "," + d.y + ")";
                   });
               nodeUpdate.select("circle")
                   .attr("r", 10)
@@ -88,7 +91,8 @@
               var nodeExit = node.exit().transition()
                   .duration(duration)
                   .attr("transform", function(d) {
-                      return "translate(" + source.x*2 + "," + source.y + ")";
+                      // return "translate(" + source.x*2 + "," + source.y + ")";
+                      return "translate(" + source.x + "," + source.y + ")";
                   })
                   .remove();
               nodeExit.select("circle")
