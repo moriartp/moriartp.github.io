@@ -18,7 +18,7 @@
               .size([height, width]);
           var diagonal = d3.svg.diagonal()
               .projection(function(d) {
-                  return [d.x, d.y];
+                  return [d.x*2, d.y];
               });
           var svg = d3.select(treeContainerDom).append("svg")
               .attr("width", width + margin.right + margin.left)
@@ -46,7 +46,7 @@
               var nodeEnter = node.enter().append("g")
                   .attr("class", "node")
                   .attr("transform", function(d) {
-                      return "translate(" + source.x0 + "," + source.y0 + ")";
+                      return "translate(" + source.x0*2 + "," + source.y0 + ")";
                   }).on("click", nodeclick);
               nodeEnter.append("circle")
                   .attr("r", 10)
@@ -73,7 +73,7 @@
               var nodeUpdate = node.transition()
                   .duration(duration)
                   .attr("transform", function(d) {
-                      return "translate(" + d.x + "," + d.y + ")";
+                      return "translate(" + d.x*2 + "," + d.y + ")";
                   });
               nodeUpdate.select("circle")
                   .attr("r", 10)
@@ -88,7 +88,7 @@
               var nodeExit = node.exit().transition()
                   .duration(duration)
                   .attr("transform", function(d) {
-                      return "translate(" + source.x + "," + source.y + ")";
+                      return "translate(" + source.x*2 + "," + source.y + ")";
                   })
                   .remove();
               nodeExit.select("circle")
@@ -212,14 +212,14 @@
                               }
                           ]
                       },
+                      // {
+                      //     "name": "Student Relationship Manager",
+                      //     "lead": "Zina",
+                      //     "children": []
+                      // },
                       {
-                          "name": "Student Relationship Manager",
-                          "lead": "Zina",
-                          "children": []
-                      },
-                      {
-                          "name": "Faculty Relationship Manager",
-                          "lead": "Vina",
+                          "name": "Relationship Managers",
+                          "lead": "Vina and Zina",
                           "children": []
                       }
                   ]
