@@ -16,7 +16,7 @@
       font: 12px sans-serif;
       fill: #222;
       opacity: 0.8;
-      -webkit-transition: fill 2s, z-index 2s, font-size 1s, opacity 2s, background 2s;
+      -webkit-transition: fill 2s, z-index 2s, font-size 1s, opacity 2s, background-color 2s;
 
       -webkit-transform: rotate(-45deg);
       -moz-transform: rotate(-45deg);
@@ -29,7 +29,7 @@
 
   .node text:hover {
     fill: #001;
-    background:#000;
+    background-color:#000;
     z-index: 10;
     font-size: 14px;
     opacity: 1;

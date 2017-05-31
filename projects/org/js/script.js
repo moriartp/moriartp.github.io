@@ -1,4 +1,4 @@
-  console.log("SCRIPT LOADED");
+  console.log(window.innerWidth);
 
   // $(document).ready(function() {
       //build tree
@@ -47,7 +47,7 @@
               var nodeEnter = node.enter().append("g")
                   .attr("class", "node")
                   .attr("transform", function(d) {
-                      // return "translate(" + source.x0*2 + "," + source.y0 + ")";
+        
                       return "translate(" + source.x0 + "," + source.y0 + ")";
                   }).on("click", nodeclick);
               nodeEnter.append("circle")
@@ -58,8 +58,7 @@
                   .style("fill", function(d) {
                       return d.children || d._children ? "#DDD" : "AAA";
                   });
-              //.attr("r", 10)
-              //.style("fill", "#fff");
+
               nodeEnter.append("text")
                   .attr("y", function(d) {
                       return d.children || d._children ? 11 : 12;
