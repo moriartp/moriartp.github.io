@@ -56,7 +56,8 @@ div.polaroid img {
   max-height:250px;
   width: auto;
   height: auto;
-  -webkit-filter: grayscale(100%);
+  -webkit-filter: grayscale(100%) opacity(50%) ;
+
   -webkit-transition: .5s ease-in-out;
   -moz-filter: grayscale(100%); 
   -moz-transition: .5s ease-in-out;
