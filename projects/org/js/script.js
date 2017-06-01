@@ -51,7 +51,7 @@
                       return "translate(" + source.x0 + "," + source.y0 + ")";
                   }).on("click", nodeclick);
               nodeEnter.append("circle")
-                  .attr("r", 15)
+                  .attr("r", 9)
                   .attr("stroke", function(d) {
                       return d.children || d._children ? "#e82e21" : "#555";
                   })
@@ -61,7 +61,7 @@
 
               nodeEnter.append("text")
                   .attr("y", function(d) {
-                      return d.children || d._children ? 16 : 16;
+                      return d.children || d._children ? 10 : 10;
                   })
                   .attr("dy", ".35em")
                   .attr("text-anchor", "start")
@@ -78,7 +78,7 @@
                       // return "translate(" + d.x*2 + "," + d.y + ")";
                   });
               nodeUpdate.select("circle")
-                  .attr("r", 15)
+                  .attr("r", 9)
                   .style("fill", function(d) {
                       return d._children ? "#DDD" : "#AAA";
                   });
