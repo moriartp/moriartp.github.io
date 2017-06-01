@@ -14,19 +14,28 @@
   padding:25px;
 }
 
+#portfolio{
+
+}
+
 div.polaroid {
   width: 100%;
   max-width:500px;
   display:inline-block;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 25px;
+  margin-right: 1%;
+  margin-bottom: 1%;
+  cursor:pointer;
+
 }
 
-div.container {
-  text-align: center;
+div.polaroid-container {
+  text-align: right;
   padding: 10px 20px;
   max-width:500px;
+  text-transform: uppercase;
+  cursor:pointer;
 }
 
 div.polaroid img {
@@ -35,5 +44,81 @@ div.polaroid img {
   max-height:250px;
   width: auto;
   height: auto;
-  overflow: hidden;
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-filter: grayscale(100%); 
+  -moz-transition: .5s ease-in-out;
+  -o-filter: grayscale(100%); 
+  -o-transition: .5s ease-in-out;
 }
+
+div.polaroid img:hover {
+  -webkit-filter: grayscale(0%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-filter: grayscale(0%);
+  -moz-transition: .5s ease-in-out;
+  -o-filter: grayscale(0%);
+  -o-transition: .5s ease-in-out;
+}
+
+.container-fluid{
+  height:100%;
+}
+
+/*PROFILE*//*PROFILE*//*PROFILE*//*PROFILE*//*PROFILE*//*PROFILE*//*PROFILE*/
+
+#team .profile_container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    display:inline-block;
+}
+
+#team .image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+
+  -webkit-filter: grayscale(0%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-filter: grayscale(0%); 
+  -moz-transition: .5s ease-in-out;
+  -o-filter: grayscale(00%); 
+  -o-transition: .5s ease-in-out;
+}
+
+#team .middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+#team .profile_container:hover .image {
+  opacity: 0.3;
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-filter: grayscale(100%);
+  -moz-transition: .5s ease-in-out;
+  -o-filter: grayscale(100%);
+  -o-transition: .5s ease-in-out;
+
+}
+
+#team .profile_container:hover .middle {
+  opacity: 1;
+}
+
+#team .text {
+  background-color: #e82e21;
+  color: white;
+  font-size: 1em;
+  padding: 16px 32px;
+}
+
