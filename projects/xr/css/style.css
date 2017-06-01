@@ -1,3 +1,15 @@
+#title{
+  font-size: 6em;
+}
+#subtitle{
+  font-size: 1em;
+  margin-left:25%;
+  margin-right:25%;
+  /*margin:auto;*/
+}
+
+
+
 .profile{
   max-width:500px;
   display:inline-block;
