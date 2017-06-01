@@ -185,7 +185,7 @@ div.polaroid img:hover {
 .video-container .title-container {
   z-index: 1000;
   position: absolute;
-  top: 35%;
+  top: 20%;
   width: 100%;
   text-align: center;
   color: #fff;
@@ -197,7 +197,7 @@ div.polaroid img:hover {
 }
 .video-container .link {
   position: absolute;
-  bottom: 3em;
+  bottom: 5em;
   width: 100%;
   text-align: center;
   z-index: 1001;
@@ -215,3 +215,4 @@ div.polaroid img:hover {
 .video-container video.fillWidth {
   width: 100%;
 }
+
