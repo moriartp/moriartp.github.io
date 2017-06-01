@@ -2,9 +2,26 @@ html {
   overflow-y: hidden;
 }
 
+@-webkit-keyframes greyscale {
+    0%   { -webkit-filter: FILL(1); /* Google Chrome & Webkit Nightlies */}
+    100% { -webkit-filter: grayscale(0); /* Google Chrome & Webkit Nightlies */ }
+}
+
+
+
 #title{
   font-size: 12em;
 }
+
+#fX, #fR, #f_, #fL, #fA, #fB, #fS{
+  transition: transform 7s;
+}
+
+#fX:hover, #fR:hover, #f_:hover, #fL:hover, #fA:hover, #fB:hover, #fS:hover {
+  transform: rotate(36000deg);
+  cursor:pointer;
+}
+
 #subtitle{
   font-size: 2em;
   margin-left:25%;
@@ -97,17 +114,6 @@ div.polaroid img:hover {
 
 .container-fluid{
   height:100%;
-}
-
-#four1 {
-min-width: 333px;
-width: 45%;
-margin-right: 2%;
-}
-
-#four2 {
-min-width: 333px;
-width: 45%;
 }
 
 /*PROFILE*//*PROFILE*//*PROFILE*//*PROFILE*//*PROFILE*//*PROFILE*//*PROFILE*/
