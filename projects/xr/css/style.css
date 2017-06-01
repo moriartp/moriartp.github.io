@@ -130,6 +130,10 @@ div.polaroid img:hover {
 #section2{
   display:block;
 }
+.dropdown-menu>.active>a{
+  background-color:#e82e21;
+
+}
 
 /*VIDEOVIDEOVIDEOVIDEOVIDEOVIDEOVIDEOVIDEOVIDEOVIDEO*/
 
@@ -163,7 +167,7 @@ div.polaroid img:hover {
 .video-container .filter {
   z-index: 100;
   position: absolute;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.1);
   width: 100%;
 }
 .video-container .title-container {
