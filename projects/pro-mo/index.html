@@ -24,7 +24,8 @@
         <div class="factor server- undefined"><br><i class="fa fa-connectdevelop"></i> <br>Network: &#0;</div>
         <div class="factor server- " id="banner_DB_server"></div>
         <div class="factor server- " id="banner_DB_table"></div>
-        <div class="factor server- undefined"><br><i class="fa fa-server"></i> <br>App Server: &#0;</div> 
+        <div class="factor server- " id="banner_app_server"></div>
+        <!-- <div class="factor server- undefined"><br><i class="fa fa-server"></i> <br>App Server: &#0;</div>  -->
         <div class="factor server- undefined"><br><i class="fa fa-desktop"></i> <br>Application: &#0;</div>
         <p id="banner_contact"></p>
       </div>
@@ -33,7 +34,8 @@
         <div class="factor server- undefined"><br><i class="fa fa-connectdevelop"></i> <br>Network: &#0;</div>
         <div class="factor server- " id="degreeworks_DB_server"></div>
         <div class="factor server- " id="degreeworks_DB_table"></div>
-        <div class="factor server- undefined"><br><i class="fa fa-server"></i> <br>App Server: &#0;</div> 
+        <div class="factor server- " id="degreeworks_app_server"></div>
+        <!-- <div class="factor server- undefined"><br><i class="fa fa-server"></i> <br>App Server: &#0;</div>  -->
         <div class="factor server- undefined"><br><i class="fa fa-desktop"></i> <br>Application: &#0;</div>
         <p id="degreeworks_contact"></p>
       </div>
@@ -41,8 +43,9 @@
       <div id="mynewschool" class="tile"><h2>MyNewSchool</h2>
         <div class="factor server- undefined"><br><i class="fa fa-connectdevelop"></i> <br>Network: &#0;</div>
         <div class="factor server- " id="mynewschool_DB_server"></div>
-        <div class="factor server- " id="mynewschool_DB_table"></div>      
-        <div class="factor server- undefined"><br><i class="fa fa-server"></i> <br>App Server: &#0;</div> 
+        <div class="factor server- " id="mynewschool_DB_table"></div>
+        <div class="factor server- " id="mynewschool_app_server"></div>      
+        <!-- <div class="factor server- undefined"><br><i class="fa fa-server"></i> <br>App Server: &#0;</div>  -->
         <div class="factor server- undefined"><br><i class="fa fa-desktop"></i> <br>Application: &#0;</div>
       </div>
       <!-- REPORTING REPORTING REPORTING REPORTING REPORTING REPORTING REPORTING REPORTING REPORTING REPORTING REPORTING  -->
@@ -50,15 +53,17 @@
         <div class="factor server- undefined"><br><i class="fa fa-connectdevelop"></i> <br>Network: &#0;</div>
         <div class="factor server- " id="reports_DB_server"></div>
         <div class="factor server- " id="reports_DB_table"></div>
-        <div class="factor server- undefined"><br><i class="fa fa-server"></i> <br>App Server: &#0;</div> 
+        <div class="factor server- " id="reports_app_server"></div>
+        <!-- <div class="factor server- undefined"><br><i class="fa fa-server"></i> <br>App Server: &#0;</div>  -->
         <div class="factor server- undefined"><br><i class="fa fa-desktop"></i> <br>Application: &#0;</div>
       </div>
       <!-- COURSES COURSES COURSES COURSES COURSES COURSES COURSES COURSES COURSES COURSES COURSES COURSES COURSES  -->
       <div id="courses" class="tile"><h2>Course Catalog</h2>
         <div class="factor server- undefined"><br><i class="fa fa-connectdevelop"></i> <br>Network: &#0;</div>
         <div class="factor server- " id="courses_DB_server"></div>
-        <div class="factor server- " id="courses_DB_table"></div>     
-        <div class="factor server- undefined"><br><i class="fa fa-server"></i> <br>App Server: &#0;</div> 
+        <div class="factor server- " id="courses_DB_table"></div>  
+        <div class="factor server- " id="courses_app_server"></div>    
+        <!-- <div class="factor server- undefined"><br><i class="fa fa-server"></i> <br>App Server: &#0;</div>  -->
         <div class="factor server- undefined"><br><i class="fa fa-desktop"></i> <br>Application: &#0;</div>
       </div>
       <!-- DEVL DEVL DEVL DEVL DEVL DEVL DEVL DEVL DEVL DEVL DEVL DEVL DEVL DEVL DEVL DEVL DEVL DEVL DEVL DEVL DEVL   -->
@@ -75,27 +80,21 @@
     <!-- D3 -->
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
-    <!-- CUSTOM -->
-<!--     <script type='text/javascript' src='server_crs.js'></script>
-    <script type='text/javascript' src='server_ban.js'></script>
-    <script type='text/javascript' src='server_dgw.js'></script>
-    <script type='text/javascript' src='server_mns.js'></script>
-    <script type='text/javascript' src='server_rep.js'></script> -->
-
+    <!-- DATABASE SERVER SCRIPTS -->
     <script type='text/javascript' src='db_server_crs.js'></script>
     <script type='text/javascript' src='db_server_ban.js'></script>
     <script type='text/javascript' src='db_server_dgw.js'></script>
     <script type='text/javascript' src='db_server_mns.js'></script>
     <script type='text/javascript' src='db_server_rep.js'></script>
 
+    <!-- APPLICATION SERVER SCRIPTS -->
+    <script type='text/javascript' src='app_server_ban.js'></script>
+    <script type='text/javascript' src='app_server_dgw.js'></script>
+    <script type='text/javascript' src='app_server_mns.js'></script>
+    <script type='text/javascript' src='app_server_rep.js'></script>
+    <script type='text/javascript' src='app_server_crs.js'></script>
 
-
-<!--     <script type='text/javascript' src='db_ban.js'></script>
-    <script type='text/javascript' src='db_dgw.js'></script>
-    <script type='text/javascript' src='db_mns.js'></script>
-    <script type='text/javascript' src='db_rep.js'></script>
-    <script type='text/javascript' src='db_crs.js'></script> -->
-
+    <!-- DATABASE TABLE SCRIPTS -->
     <script type='text/javascript' src='db_table_ban.js'></script>
     <script type='text/javascript' src='db_table_dgw.js'></script>
     <script type='text/javascript' src='db_table_mns.js'></script>
