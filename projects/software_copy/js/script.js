@@ -55,7 +55,7 @@ var data = d3.csv("data/__software.csv", function(error, data) {
 
 //START TOOLTIP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!////
     var tooltip = d3.select('#selection').append('div').attr('class', 'tooltip')
-    // var roomtip = d3.select('#selection').append('div').attr('class', 'roomtip')
+    var roomtip = d3.select('#selection').append('div').attr('class', 'roomtip')
     //SHOW IT///////////////////////////////////////
     function showToolTip(d,i){
       tooltip.classed('showit', true)
@@ -68,6 +68,7 @@ var data = d3.csv("data/__software.csv", function(error, data) {
           console.log(data);
 
         var roomB = d3.select('.roomtip')//('body')
+          // .remove('.location')
           .selectAll('.roomBs')
           .data(data).enter()
           .append('div')
@@ -75,7 +76,10 @@ var data = d3.csv("data/__software.csv", function(error, data) {
             .attr('id', function(d2) {return d2.bldg+d2.room;})
             .attr('class', 'location')
             .append('text')
-            .html(function (d2) {return d2.bldg+' '+d2.room;})
+            .html(function (d2) {return d2.bldg+' '+d2.room;});
+
+      roomtip.classed('showit', true)
+      // roomtip.html('').html('<h2>'+d2.room+'</h2>')
 
       });
     }
