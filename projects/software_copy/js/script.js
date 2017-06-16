@@ -31,9 +31,17 @@ function draw(val){
 
 
 
-var data = d3.csv("data/software.csv", function(error, data) {  
+var data = d3.csv("data/__software.csv", function(error, data) {  
     data.forEach(function(d) {
     }); 
+    console.log(data);
+
+// var roomData = d3.csv("data/__hardware.csv", function(error, data) {  
+//     roomData.forEach(function(d) {
+//     }); 
+
+
+
 
   var tiles = d3.select('#container')//('body')
     .selectAll('.tile')
@@ -57,56 +65,121 @@ var data = d3.csv("data/software.csv", function(error, data) {
       .on('click', showToolTip)
 
       .append('text')
-      .html(function (d) { return d.Software+" "+d.Version; });
+      .html(function (d) { return d.Software; });
 
       
 
 //START TOOLTIP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!////
     var tooltip = d3.select('#selection').append('div').attr('class', 'tooltip')
+    // var roomData = d3.csv("data/__hardware.csv", function(error, roomdata) {  
+    //     roomdata.forEach(function(e) {
+    //     }); 
+
+    // var rooms = d3.select('#selection')//('body')
+    //   .selectAll('.rooms')
+    //   .data(data).enter()
+    //   .append('div')
+    //   .attr('id', function(d) {return d.bldg+d.room;})
+    //   .attr('class', 'room');    
+
 
 
     //SHOW IT///////////////////////////////////////
     function showToolTip(d,i){
       tooltip.classed('showit', true)
-      tooltip.html('').html('<h2>'+d.Category+' '+d.Software+' '+d.Version+' '+' '+' '+' '+'</h2>')
-      d3.select("#rooms").html("Available: ")
-
-      var data2 = d3.csv("data/supported-spaces.csv", function(error, data2) {  
-        data2.forEach(function(f) {
-          console.log(f)
-          // d3.select(#rooms).html("HI");
-        }); 
-        var room_tiles = d3.select('#rooms')//('body')
-          .selectAll('.room')
-          .data(data2).enter()
-          .append('div')
-          .style("display","none")
-          .attr('id', function(f) {return f.RoomNumber;})
-          .attr('class', 'room')
-            .filter( function(f) {return f.SoftwareConfigurations === "Mac Standard Software"; })
-            // .attr('id', function(f) {return f.RoomNumber;})
-            // .attr('class', 'room')
-            .style("display","inline-block")
-
-            .on('mouseover', function() {
-                d3.select(this)
-                .transition().duration(100)
-                .style('background-color', 'red')
-                .style('cursor','pointer')
-              })
-            .on('mouseout', function () {
-                d3.select(this)
-                .transition().duration(500)
-                .style('background-color', '#FFF')
-              })
-
-            .append('text')
-            .html(function (f) { return f.BuildingCode[0]+f.RoomNumber; });
-      });
-    
+      tooltip.html('').html('<h2>'+d.Software+'</h2>')
 
     }
 
 //END TOOLTIP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!////
+});
 
+
+// var data2 = d3.csv("data/__hardware.csv", function(error, data) {  
+//   data2.forEach(function(dd) {
+// }); 
+
+// d3.select('#room_list')
+//   .append('div')
+//   .attr('class', 'room');
+
+// var rooms = d3.select('#room_list')//('body')
+//   .selectAll('.rooms')
+//   .data(data2).enter()
+//   .append('div')
+//   .attr('id', function(dd) {return dd.room;})
+//   .attr('class', 'room')
+// });    
+////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+
+var data2 = d3.csv("data/__hardware.csv", function(error, data) {  
+    data.forEach(function(d) {
+    }); 
+    console.log('data above, data2 below');
+    console.log(data);
+
+// var roomData = d3.csv("data/__hardware.csv", function(error, data) {  
+//     roomData.forEach(function(d) {
+//     }); 
+
+
+
+
+  var roomB = d3.select('#container')//('body')
+    .selectAll('.roomBs')
+    .data(data).enter()
+    .append('div')
+      .attr('id', function(d) {return d.bldg+' '+d.room;})
+      .attr('class', 'software')
+      .append('text')
+      .html(function (d) {return d.bldg+' '+d.room;});
+
+
+
+      // .on('mouseover', function() {
+      //   d3.select(this)
+      //   .transition().duration(100)
+      //   .style('background-color', 'red')
+      // })
+      // .on('mouseout', function () {
+      //   d3.select(this)
+      //   .transition().duration(500)
+      //   .style('background-color', '#FFF')
+      // })
+      // .on('click', showToolTip)
+
+      // .append('text')
+      // .html(function (d) { return d.Software; });
+
+      
+
+//START TOOLTIP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!////
+    var tooltip = d3.select('#selection').append('div').attr('class', 'tooltip')
+    // var roomData = d3.csv("data/__hardware.csv", function(error, roomdata) {  
+    //     roomdata.forEach(function(e) {
+    //     }); 
+
+    // var rooms = d3.select('#selection')//('body')
+    //   .selectAll('.rooms')
+    //   .data(data).enter()
+    //   .append('div')
+    //   .attr('id', function(d) {return d.bldg+d.room;})
+    //   .attr('class', 'room');    
+
+
+
+    //SHOW IT///////////////////////////////////////
+    function showToolTip(d,i){
+      tooltip.classed('showit', true)
+      tooltip.html('').html('<h2>'+d.room+'</h2>')
+
+    }
+
+//END TOOLTIP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!////
 });
