@@ -1,0 +1,11 @@
+bldg,room,hardware,platform,image
+BuildingA,Room01,Scanner,Mac,MacExp
+BuildingA,Room02,Printer,Win,WinExp
+BuildingA,Room03,Scanner,Mac,MacStd
+BuildingA,Room04,Printer,Win,WinStd
+BuildingA,Room05,Scanner,Mac,MacProTools
+BuildingB,Room01,Printer,Win,WinStd
+BuildingB,Room02,Scanner,Mac,MacAudio
+BuildingB,Room03,Printer,Win,WinStd
+BuildingB,Room04,Scanner,Mac,MacSuite
+BuildingB,Room05,Printer,Win,WinStd

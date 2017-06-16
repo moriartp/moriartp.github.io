@@ -1,0 +1,32 @@
+#selection{
+
+}
+
+.software{
+	width:100%;
+	cursor: pointer;
+	padding:2px;
+	margin:1px;
+	border: 1px solid gray;
+}
+
+.tooltip {
+
+	display: none;
+
+}
+
+.tooltip.showit {
+	display: block;
+}
+
+.room{
+	padding:2px;
+	margin:1px;
+	border: 1px solid gray;
+
+}
+
+.hideit{
+	display:none;
+}
