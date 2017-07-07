@@ -1,0 +1,186 @@
+{
+   "name":"Information Technology",
+   "lead":"Anand Padmadabhan",
+   "children":[
+      {
+         "name":"Project Management",
+         "lead":"Jen Smith",
+         "size":2,
+         "children":[
+
+         ]
+      },
+      {
+         "name":"edu Services",
+         "lead":"Lillian Sartori",
+         "children":[
+            {
+               "name":"Card Services",
+               "lead":"Bill Carty",
+               "size":3,
+               "children":[
+
+               ]
+            },
+            {
+               "name":"Client Services",
+               "lead":"Violette Hutchins",
+               "children":[
+                  {
+                     "name":"Tech Support Level 1",
+                     "lead":"John Quinn",
+                     "size":6,
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "name":"Tech Support Level 1",
+                     "lead":"Gary",
+                     "size":6,
+                     "children":[
+
+                     ]
+                  }
+               ]
+            },
+            {
+               "name":"Equipment Center",
+               "lead":"Tyler",
+               "size":6,
+               "children":[
+
+               ]
+            },
+            {
+               "name":"Events IT",
+               "lead":"Mark",
+               "size":6,
+               "children":[
+
+               ]
+            },
+            {
+               "name":"Learning Spaces",
+               "lead":"Robert Austin",
+               "children":[
+                  {
+                     "name":"Collaborative Technologies",
+                     "lead":"Emre",
+                     "size":6,
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "name":"Learning Space Operations",
+                     "lead":"Nik",
+                     "size":6,
+                     "children":[
+
+                     ]
+                  }
+               ]
+            },
+            {
+               "name":"Relationship Managers",
+               "lead":"Vina and Zina",
+               "size":2,
+               "children":[
+
+               ]
+            }
+         ]
+      },
+      {
+         "name":"Enterprise Applications",
+         "lead":"Dan O'Connell",
+         "children":[
+            {
+               "name":"Business Analysis",
+               "lead":"Max",
+               "size":3,
+               "children":[
+
+               ]
+            },
+            {
+               "name":"Solutions Development",
+               "lead":"Lauren Ipsum",
+               "size":3,
+               "children":[
+
+               ]
+            },
+            {
+               "name":"Information and Business Intelligence",
+               "lead":"Lauren Ipsum",
+               "size":3,
+               "children":[
+
+               ]
+            }
+         ]
+      },
+      {
+         "name":"Enterprise Operations",
+         "lead":"Chris Brezil",
+         "children":[
+            {
+               "name":"Access Control and Security",
+               "lead":"Jeff Maddans",
+               "size":2,
+               "children":[
+
+               ]
+            },
+            {
+               "name":"Enterprise Systems",
+               "lead":"Jorge",
+               "size":6,
+               "children":[
+
+               ]
+            },
+            {
+               "name":"Integrated Communications",
+               "lead":"Peter",
+               "children":[
+                  {
+                     "name":"Network Infrastructure",
+                     "lead":"Lauren Ipsum",
+                     "size":3,
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "name":"Telecommunications",
+                     "lead":"Malcolm",
+                     "size":1,
+                     "children":[
+
+                     ]
+                  }
+               ]
+            },
+            {
+               "name":"IT Security",
+               "lead":"David Curry",
+               "size":2,
+               "children":[
+
+               ]
+            },
+            {
+               "name":"Web/Application Development",
+               "lead":"Lauren Ipsum",
+               "size":2,
+               "children":[
+
+               ]
+            }
+         ]
+      }
+   ]
+}
