@@ -1,3 +1,5 @@
+var bg;
+
 // text arrays
 var goal = ["Infrastructure", "Enable", "Service", "Innovation", "Empower"];
 var cloud = ["Infrastructure", "Enable", "Service", "Innovation", "Empower","Infrastructure", "Enable", "Service", "Innovation", "Empower","Infrastructure", "Enable", "Service", "Innovation", "Empower"];
@@ -36,6 +38,7 @@ var b = 255;
 ///////SETUP
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  bg = loadImage("img/desktop.jpg");
   noStroke();
 
   //randomly assign attributes for active text clouds
@@ -70,14 +73,15 @@ function setup() {
 
 //DRAW
 function draw() {
-  background(r, g, b); //erase 60x/sec
-  textFont('Arial');
+  // background(r, g, b); //erase 60x/sec
+  background(bg); //erase 60x/sec
+  textFont('Open Sans');
 
   //draw the active text clouds
   for (var i = 0; i < goal.length; i++) {
     x[i] = x[i] + s[i];
     noStroke();
-    fill(0, 0, 0, t[i]);
+    fill(255, 255, 255, t[i]);
     textAlign(CENTER, CENTER);
     textSize(h[i]);
     text(goal[i], x[i], y[i]);
@@ -96,7 +100,7 @@ function draw() {
   for (var j = 0; j < cloud.length; j++) {
     bx[j] = bx[j] + bs[j]; //repositions on x axis to create movement
     noStroke();
-    fill(0, 0, 0, bt[j]); //sets tranparency to randomly assigned value
+    fill(255, 255, 255, bt[j]); //sets tranparency to randomly assigned value
     textAlign(CENTER, CENTER);
     textSize(bh[j]); //sets text size to randomlyu assigned value
     text(cloud[j], bx[j], by[j]);
@@ -109,7 +113,7 @@ function draw() {
   for (var k = 0; k < blurb.length; k++) {
     textSize(width * 0.025);
     textAlign(LEFT);
-    fill(0, 0, 0, blurbOpacity[k]);
+    fill(255, 255, 255, blurbOpacity[k]);
     text(blurb[k], blurbX[k], height * 0.9);
     if (blurbOpacity[k] >= 21 && blurbOpacity[k] < 222) {
       blurbOpacity[k] = blurbOpacity[k] + 0.5; //very slow fade to allow audience to first experience the activated text cloud, then reveal for additional context
@@ -120,12 +124,12 @@ function draw() {
     textSize(height * 0.1);
     fill(0, 173, 237, 99); //(171, 194, 43), color00 (0,173,237,99);
     textAlign(CENTER, CENTER);
-    fill(0, 0, 0);
+    fill(255, 255, 255);
     text("About IT", width / 2, height * 0.33);
     textSize(height * 0.04);
     text("What we do", width / 2, height * 0.4);    
     textSize(width * 0.01);
-    textFont('Varela Round');    
+    textFont('Varela Round');   
     text("Click the screen to begin", width / 2, height * 0.95);
   }
   //Count off the goals in the corner
