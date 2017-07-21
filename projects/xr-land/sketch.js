@@ -1,21 +1,24 @@
 var vid;
 
+
 var bg;
 var imgX;
 var imgR;
 var imgTNS;
 var scaleVal = 3;
 var cnv;
-
+var xr_sizer;
 
 function setup() {
-   vid = createVideo(['img/code.mov','https://p5js.org/assets/examples/assets/fingers.webm']);
+   vid = createVideo(['img/keyboard.mp4','https://p5js.org/assets/examples/assets/keyboard.mp4']);
    vid.hide();
+   vid.loop(); 
    filter(GRAY);
    bg = loadImage("img/bg.jpg");
    imgX = loadImage("img/X.png");
    imgR = loadImage("img/R.png");
    imgTNS = loadImage("img/TNS.png");
+   xr_sizer = 1;
 }
 
 function draw() {
@@ -23,18 +26,34 @@ function draw() {
    cnv.parent("container")
    background(0);
    fill(255);
-   imageMode(CENTER);
+   imageMode(CENTER,CENTER);
    if (width > height) {
-      image(vid, width / 2, height / 2, bg.width / 2, bg.height / 2);
+      image(vid, width / 2, height / 2, width, height);
+      image(imgX, width/2, height/2, (imgX.width / 4)*xr_sizer, (imgX.height / 4)*xr_sizer);
+      image(imgX, width/2, height/2, (imgX.width / 4), (imgX.height / 4));
+      image(imgR, width/2, height/2, imgR.width / 4, imgR.height / 4);
+      image(imgTNS, width/2, height/2, imgTNS.width / 4, imgTNS.height / 4);
+
    } else {
-      image(vid, width / 2, height / 2, bg.width*3, bg.height*3);      
-   }
-   image(imgX, mouseX, mouseY, imgX.width / 4, imgX.height / 4);
-   image(imgR, mouseX, mouseY, imgR.width / 4, imgR.height / 4);
-   image(imgTNS, mouseX, mouseY, imgTNS.width / 4, imgTNS.height / 4);
+      image(vid, width / 2, height / 2, width*2,width*2);      
+      image(imgX, width/2, height/2, (imgX.width / 2)*xr_sizer, (imgX.height /2)*xr_sizer);
+      image(imgX, width/2, height/2, (imgX.width /2), (imgX.height /2));
+      image(imgR, width/2, height/2, imgR.width /2, imgR.height /2);
+      image(imgTNS, width/2, height/2, imgTNS.width /2, imgTNS.height /2);
+
+   }   
 
 }
 
-function mousePressed() {
-    vid.loop(); // set the video to loop and start playing
+// function mouseWheel() {
+//    if(mouseX >width/2){
+//       xr_sizer = xr_sizer + 0.0025;      
+//    } else {
+//       xr_sizer = xr_sizer - 0.0025;
+//    }
+// }
+
+function mouseWheel() {
+      xr_sizer = xr_sizer + 0.065;      
+
 }
