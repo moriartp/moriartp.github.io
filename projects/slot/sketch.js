@@ -145,15 +145,15 @@ function setup() {
   //CREATE ICON ELEMENT PLACEHOLDERS
   icon1 = createElement('i', ' ');
   icon1.class(icons[0]);
-  icon1.position((width / 6) * 0.77, height*0.4);
+  icon1.position((width / 6) * 0.6, height*0.4);
 
   icon2 = createElement('i', ' ');
   icon2.class(icons[1]);
-  icon2.position((width / 6) * 2.77, height*0.4);
+  icon2.position((width / 6) * 2.6, height*0.4);
   
   icon3 = createElement('i', ' ');
   icon3.class(icons[2]);
-  icon3.position((width / 6) * 4.77, height*0.4);  
+  icon3.position((width / 6) * 4.6, height*0.4);  
 
 }
 
@@ -161,7 +161,7 @@ function draw() {
   background(255);
   image(img, 0, 0, img.width/15, img.height/15);
 
-  textSize(44);
+  textSize(30);
   fill('red');
   rect(width*0.4,height*0,width*0.2,height*0.1);
   fill(255);
@@ -232,7 +232,7 @@ function draw() {
     textSize(188);
     text("JACKPOT!", width / 2, height * 0.2);
     fill(0);
-    textSize(24);
+    textSize(30);
 
     text(blurb1, width / 2, height * 0.75);
   } else if ((slot1dur > slotPull + 3500) && (slot1 === slot2 || slot1 === slot3 || slot2 === slot3)) {
@@ -240,7 +240,7 @@ function draw() {
     textSize(111);
     text("WINNER!", width / 2, height * 0.2);
     fill(0);
-    textSize(24);
+    textSize(30);
     if (slot1 === slot2 || slot1 === slot3) {
       text(blurb1, width / 2, height * 0.75);
     } else {
