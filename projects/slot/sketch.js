@@ -15,19 +15,19 @@ var services = [
 ];
 
 var blurbs = [
-  "You have won a subscription for the full \nAdobe Creative Cloud suite of applications.",
-  "You have won special pricing on Apple products.",
-  "You have won free AGI-32 software",
-  "You have won a free AWS Educate grant",
-  "You have won 30% off Dell consumer line products.",
-  "You have won free Mathematica licensing",
-  "You have won the Microsoft Office suite, \ninstallable on your personal device.",
-  "You have won deep discounts on \nRhino/Flamingo/Penguin/Bongo software bundles.",
-  "You have won a free SketchUp Pro Educator's License.",
-  "You have won Symantec AntiVirus Corporate Edition.",
-  "You have won something related to VMware",
-  "You have won an installable wireless print driver.",
-  "You have won unlimited cloud storage on Google Drive."  
+  "The New School provides all degree and credit-seeking students, faculty, and staff \nwith subscriptions for the Adobe Creative Cloud suite.",
+  "Visit Apple at The New School to learn more about and to receive special education \npricing on Apple products for the entire university community. ",
+  "Free AGI-32 software* available to Parsons Lighting degree-seeking students only. ",
+  "AWS Educate is Amazon's global, grants-based initiative that gives students and educators hands-on experience with AWS technology. ",
+  "Dell is offering discounts of up to 30% on their consumer line products to \nNew School students, faculty, and staff.",
+  "New School Students and faculty have access to Mathematica. ",
+  "New School Students, faculty and staff have access to Microsoft Office 365. ",
+  "Deep discounts on \nRhino/Flamingo/Penguin/Bongo software bundles.",
+  "Instructors may apply for an Educator's License.*",
+  "The New School is provides the current version of Symantec AntiVirus Corporate Edition at no cost to New School students, faculty, and staff! ",
+  "The New School has partnered with VMWare to offer our students and faculty a suite of software via the VMWare Academic Program for academic and research use.",
+  "The New School provides all degree and credit-seeking students, faculty, and staff with wireless printing software so that you may enable your personal laptop to print using the print points allocation associated with your NetID.",
+  "The New School provides all degree and credit-seeking students, faculty, and staff with unlimited cloud storage via Google G-Suite."  
 ];
 
 // var brewer = [

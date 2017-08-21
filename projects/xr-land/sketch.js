@@ -45,15 +45,11 @@ function draw() {
 
 }
 
-// function mouseWheel() {
-//    if(mouseX >width/2){
-//       xr_sizer = xr_sizer + 0.0025;      
-//    } else {
-//       xr_sizer = xr_sizer - 0.0025;
-//    }
-// }
-
 function mouseWheel() {
-      xr_sizer = xr_sizer + 0.065;      
+      xr_sizer = xr_sizer + 0.075;      
 
+}
+
+function touchMoved() {
+      xr_sizer = xr_sizer + 0.5;
 }
