@@ -23,7 +23,7 @@ div.chip{
 div.Completed{
 		background-color: gray;
 		display:none;
-		display:inline-block;
+		/*display:inline-block;*/
 }
 
 div.Warnings{
@@ -35,12 +35,3 @@ div.Errors{
 		background-color: coral;
 		display:inline-block;
 }
-
-/*div#PrintServiceRetrieveReportAndParmsAndGeneratePDF{
-	width:32vw;
-	height:11vw;
-	margin:0.5vw;
-	background-color: gold;
-	display:inline-block;
-
-}*/
