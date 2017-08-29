@@ -1,16 +1,22 @@
+var arr = [];
+// arr.push({ key1: 0, key2: 1 });
+// arr.push({ key1: 2, key2: 3 });
+// console.log(arr);
+
 
 
 var data = d3.csv("data/workday_prod_status.csv", function(data) { 
 	data.forEach(function(d){ 
 		d.dateA = new Date(d.dateA); 
-		// console.log(d.dateA.getMonth()+"-"+d.dateA.getDate()+"-"+d.dateA.getYear()); 
 	});   
 	data.sort(function(a,b){
             return b.dateA - a.dateA;
-        });
+    });
+
+	console.log(arr);
 
 	var print_data = data.filter(function(d){ return d.process === "PrintServiceRetrieveReportAndParmsAndGeneratePDF"})
-  	console.log(print_data);
+  	// console.log(print_data);
 
 	// var groups = d3.nest()
 	// 		.key(function(d) { return d.process; })

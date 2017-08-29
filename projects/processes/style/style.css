@@ -1,3 +1,5 @@
+
+
 body{
 	margin:0px;
 	font-family: 'Kanit', sans-serif;
@@ -5,6 +7,8 @@ body{
 	font-size: 0.9em;
 	font-weight: bolder;
 }
+
+
 
 div#container{
 	width:100vw;
@@ -34,4 +38,20 @@ div.Warnings{
 div.Errors{
 		background-color: coral;
 		display:inline-block;
+
+	    -moz-transition:all 2s ease-in-out;
+	    -webkit-transition:all 2s ease-in-out;
+	    -o-transition:all 2s ease-in-out;
+	    -ms-transition:all 2s ease-in-out;
+	    transition:all 2s ease-in-out; 
+	    -moz-animation:blink normal 2s infinite ease-in-out; /* Firefox */
+	    -webkit-animation:blink normal 2s infinite ease-in-out; /* Webkit */
+	    -ms-animation:blink normal 2s infinite ease-in-out; /* IE */
+	    animation:blink normal 2s infinite ease-in-out; /* Opera */
+
 }
+
+@-moz-keyframes blink {0%{opacity:1;} 50%{opacity:0.75;} 100%{opacity:1;}} /* Firefox */
+@-webkit-keyframes blink {0%{opacity:1;} 50%{opacity:0.75;} 100%{opacity:1;}} /* Webkit */
+@-ms-keyframes blink {0%{opacity:1;} 50%{opacity:0.75;} 100%{opacity:1;}} /* IE */
+@keyframes blink {0%{opacity:1;} 50%{opacity:0.75;} 100%{opacity:1;}} /* Opera */

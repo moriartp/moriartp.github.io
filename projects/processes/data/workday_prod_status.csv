@@ -1,4 +1,4 @@
-process,dateA,processStamp,status
+process,dateA,processDate,status
 CC-I-Finance-BankOfAmericaStatements_BAI2,2017-08-28T05:00:00-07:00,CC-I-Finance-BankOfAmericaStatements_BAI2 - 08/28/2017 05:00:21.626 (Completed),Completed
 CC-O-Benefits-UnitedHealthcare,2017-08-28T00:15:00-07:00,CC-O-Benefits-UnitedHealthcare - 08/28/2017 00:15:22.036 (Completed),Completed
 CC-O-Benefits-UnitedHealthcare-Vision,2017-08-28T05:00:00-07:00,CC-O-Benefits-UnitedHealthcare-Vision - 08/28/2017 05:00:21.586 (Completed),Completed
