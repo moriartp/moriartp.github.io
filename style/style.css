@@ -10,12 +10,19 @@ body{
 	font-family: 'Montserrat', sans-serif;
 }
 h1{
+	padding-top: 3vw;
 	margin:0px;
 	font-family: 'Source Code Pro', monospace;
 	font-size: 2em;
 	font-weight: bolder;
 	text-transform: lowercase;
-	color:#666;
+	color:#fff;
+	/*border-top:0.25em double white;*/
+	border-bottom:1px solid white;
+
+	position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 h2, h3, h4, h5{
@@ -24,6 +31,9 @@ h2, h3, h4, h5{
 	/*font-size: 2em;*/
 	/*display: block;*/
 	/*margin-top: 5vh;*/
+	padding: 1vw;
+	padding-top: 2vw;
+	padding-bottom: 2vw;
 	font-weight: bolder;
 	text-transform: lowercase;
 	font-stretch: ultra-expanded;
@@ -38,6 +48,7 @@ p{
 	background-color: rgba(0,0,0,0.65);
 	color:#FFF;
 	font-weight: lighter;
+	padding:0px;
 	font-size:0px;
 
     -webkit-transition: all .1s ease;
@@ -56,10 +67,12 @@ a{
 section#A00{
 	background-color: #000;
 	width:100vw;
-	height:10vh;
+	height:50vh;
+	overflow: hidden;
 }
 
 section#B00{
+	margin-top:5vh;
 	background-color: #001;
 	width:100vw;
 	height:auto;
@@ -137,7 +150,7 @@ div.chip{
 
 .chip:hover > p.blurb{
 	font-size:1em;
-	transform: ;
+	padding:1vw;
 }
 
 
