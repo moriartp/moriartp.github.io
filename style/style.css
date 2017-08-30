@@ -25,13 +25,20 @@ h1, h2, h3, h4, h5{
 p{
 	background-color: rgba(0,0,0,0.65);
 	color:#FFF;
+	font-weight: lighter;
+	font-size:0px;
+
+    -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    -ms-transition: all .1s ease;
+    -o-transition: all .1s ease;
+    transition: all .1s ease;
 }
 
 a{
 	color:#F00;
 	text-decoration: none;
 }
-
 
 
 section#A00{
@@ -41,10 +48,11 @@ section#A00{
 }
 
 section#B00{
-	background-color: steelblue;
+	background-color: #001;
 	width:100vw;
-	height:100vh;
+	height:auto;
 	margin:0px;
+	overflow: auto;
 }
 
 
@@ -56,10 +64,16 @@ div.chip{
   	float:left;
   	margin:0px;
   	overflow: hidden;
-  	background-color: gold;
+  	background-color: #000;
   	background-size: cover;
   	background-position: center;
   	background-repeat: no-repeat;
+
+    -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    -ms-transition: all .1s ease;
+    -o-transition: all .1s ease;
+    transition: all .1s ease;
 }
 
 
@@ -98,4 +112,20 @@ div.chip{
 
 	}
 }
+
+
+
+/*HOVER ANIMATIONS*/
+.chip:hover{
+	/*background-size: 75%,75%;*/
+	/*background-position: bottom;*/
+
+}
+
+.chip:hover > p.blurb{
+	font-size:1em;
+	transform: ;
+}
+
+
 
