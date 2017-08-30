@@ -19,10 +19,6 @@ h1{
 	color:#fff;
 	/*border-top:0.25em double white;*/
 	border-bottom:1px solid white;
-
-	position: -webkit-sticky;
-    position: sticky;
-    top: 0;
 }
 
 h2, h3, h4, h5{

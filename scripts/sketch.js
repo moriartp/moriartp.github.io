@@ -9,7 +9,7 @@ function setup() {
 
    for (var j = 0; j<=dotNumerator;j++){
       dotx[j] = random(0,windowWidth);
-      doty[j] = random(0,windowHeight/2);
+      doty[j] = random(0,windowHeight);
       dotsx[j] = random(-0.5,0.5);
       dotsy[j] = random(-0.5,0.5);
    } 
