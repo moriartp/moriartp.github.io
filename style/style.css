@@ -9,16 +9,28 @@ body{
 	font-family: 'Source Code Pro', monospace;
 	font-family: 'Montserrat', sans-serif;
 }
+h1{
+	margin:0px;
+	font-family: 'Source Code Pro', monospace;
+	font-size: 2em;
+	font-weight: bolder;
+	text-transform: lowercase;
+	color:#666;
+}
 
-h1, h2, h3, h4, h5{
+h2, h3, h4, h5{
 	margin:0px;
 	font-family: 'Source Code Pro', monospace;
 	/*font-size: 2em;*/
+	/*display: block;*/
+	/*margin-top: 5vh;*/
 	font-weight: bolder;
 	text-transform: lowercase;
+	font-stretch: ultra-expanded;
+	letter-spacing: 0.25em;
 	background-color: rgba(0,0,0,0.75);
 	margin:0px;
-	color:#FFF;
+	color:#BBB;
 
 }
 
@@ -116,9 +128,10 @@ div.chip{
 
 
 /*HOVER ANIMATIONS*/
-.chip:hover{
+.chip:hover > h2.title{
 	/*background-size: 75%,75%;*/
 	/*background-position: bottom;*/
+	color:#FFF;
 
 }
 
