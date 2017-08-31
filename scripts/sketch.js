@@ -4,8 +4,14 @@ var doty = [];
 var dotsx = [];
 var dotsy = [];
 
+var XX;
+var YY;
+
 function setup() {
    dotNumerator = windowWidth/25;
+   textFont('Source Code Pro');
+   XX = windowWidth;
+   YY = windowHeight/2;
 
    for (var j = 0; j<=dotNumerator;j++){
       dotx[j] = random(0,windowWidth);
@@ -19,6 +25,8 @@ function draw() {
    cnv = createCanvas(windowWidth, windowHeight);
    cnv.parent("container")
    background(0); 
+   textFont('Source Code Pro');
+   textSize(33);
 
    noStroke();
    fill(255,255,255,155);
@@ -45,5 +53,12 @@ function draw() {
 
       }
    }
+   noStroke();
+   text("i am pjmoriarty: web developer and data viz designer. below find my profile and served coding samples.",XX,windowHeight*0.2);
+   XX = XX-2.5;
+   if (XX < -2200){
+      XX = windowWidth;
+   }
+
 }
 
