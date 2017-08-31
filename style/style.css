@@ -1,3 +1,5 @@
+/*BASE*/
+
 *, html {
     margin:0;
     padding:0;  
@@ -8,7 +10,12 @@ body{
 	margin:0px;
 	font-family: 'Source Code Pro', monospace;
 	font-family: 'Montserrat', sans-serif;
+
 }
+
+
+/*BASE ELEMENT STYLING*/
+
 h1{
 	padding-top: 3vw;
 	margin:0px;
@@ -17,16 +24,12 @@ h1{
 	font-weight: bolder;
 	text-transform: lowercase;
 	color:#fff;
-	/*border-top:0.25em double white;*/
 	border-bottom:1px solid white;
 }
 
 h2, h3, h4, h5{
 	margin:0px;
 	font-family: 'Source Code Pro', monospace;
-	/*font-size: 2em;*/
-	/*display: block;*/
-	/*margin-top: 5vh;*/
 	padding: 1vw;
 	padding-top: 2vw;
 	padding-bottom: 2vw;
@@ -36,7 +39,7 @@ h2, h3, h4, h5{
 	letter-spacing: 0.25em;
 	background-color: rgba(0,0,0,0.75);
 	margin:0px;
-	color:#BBB;
+	color:#AAA;
 
 }
 
@@ -59,7 +62,7 @@ a{
 	text-decoration: none;
 }
 
-
+/*SECTION ID STYLING*/
 section#A00{
 	background-color: #000;
 	width:100vw;
@@ -67,7 +70,7 @@ section#A00{
 	overflow: hidden;
 }
 
-section#B00{
+section#B00, section#B01{
 	margin-top:5vh;
 	background-color: #001;
 	width:100vw;
@@ -75,8 +78,6 @@ section#B00{
 	margin:0px;
 	overflow: auto;
 }
-
-
 
 /*///GLOBAL CHIP PROPERTIES*/
 div.chip{
@@ -90,11 +91,11 @@ div.chip{
   	background-position: center;
   	background-repeat: no-repeat;
 
-    -webkit-transition: all .1s ease;
-    -moz-transition: all .1s ease;
-    -ms-transition: all .1s ease;
-    -o-transition: all .1s ease;
-    transition: all .1s ease;
+    -webkit-transition: all .1s ease-out;
+    -moz-transition: all .1s ease-out;
+    -ms-transition: all .1s ease-out;
+    -o-transition: all .1s ease-out;
+    transition: all .1s ease-out;
 }
 
 
@@ -138,15 +139,13 @@ div.chip{
 
 /*HOVER ANIMATIONS*/
 .chip:hover > h2.title{
-	/*background-size: 75%,75%;*/
-	/*background-position: bottom;*/
 	color:#FFF;
-
 }
 
 .chip:hover > p.blurb{
 	font-size:1em;
 	padding:1vw;
+	padding-bottom: 100vw
 }
 
 
