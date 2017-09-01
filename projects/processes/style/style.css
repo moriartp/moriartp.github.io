@@ -103,12 +103,22 @@ div#transformation{
 
 div.Warnings{
 		background-color: gold;
-		display:inline-block;
+		/*display:inline-block;*/
+	    -moz-transition:all 2s ease-in-out;
+	    -webkit-transition:all 2s ease-in-out;
+	    -o-transition:all 2s ease-in-out;
+	    -ms-transition:all 2s ease-in-out;
+	    transition:all 2s ease-in-out; 
+	    -moz-animation:blink normal 2s infinite ease-in-out; /* Firefox */
+	    -webkit-animation:blink normal 2s infinite ease-in-out; /* Webkit */
+	    -ms-animation:blink normal 2s infinite ease-in-out; /* IE */
+	    animation:blink normal 2s infinite ease-in-out; /* Opera */
+
 }
 
 div.Errors{
 		background-color: coral;
-		display:inline-block;
+		/*display:block;*/
 
 	    -moz-transition:all 2s ease-in-out;
 	    -webkit-transition:all 2s ease-in-out;
