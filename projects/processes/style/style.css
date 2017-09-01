@@ -9,25 +9,36 @@ body{
 }
 
 
-
-div#container{
-	width:100vw;
-	height:100;
+#title{
+	margin:0px;
+	font-weight: bolder;
+	font-size: 3em;
+	padding-left: 1vw;
+	height:auto;
+	border:none;	
 }
 
-div.chip{
-	width:32vw;
-	height:22vw;
-	margin:0.5vw;
-	display:inline-block;
-	background-color: steelblue;
-	overflow:hidden;
+div{
+	width:98vw;
+	height:10vh;
+	margin: 1vh;	
+	display: block;
+	border:0.5px solid black;
+	padding-left: 1em;
+
 }
 
+h1{
+	font-weight: bolder;
+	font-size: 2em;
 
-/*ID STYLE*/
 
-div#dataLoad{
+	margin:0px;
+}
+
+/*/*ID STYLE*/
+
+/*div#dataLoad{
 	width:100vw;
 	height:12.5vh;
 	background-color: #8dd3c7;
@@ -74,7 +85,7 @@ div#transformation{
 	width:100vw;
 	height:12.5vh;
 	background-color: #b3de69;
-}
+}*/
 
 
 
@@ -82,8 +93,8 @@ div#transformation{
 
 /*CLASS STYLE*/
 
-div.Completed{
-		background-color: gray;
+.Completed{
+		background-color: lightgray;
 		/*display:none;*/
 		/*display:inline-block;*/
 }

@@ -20,8 +20,8 @@ var data = d3.csv("data/workday_prod_status.csv", function(data) {
     var dataLoadChip = d3.select('body')
         .select('#dataLoad')
         .data(dataLoad).enter()
-        d3.select('#dataLoad').attr("class",function(d) { return "factor "+"server- "+d.process; })
-            .html(function (d) { return "Process: "+d.process+"<br><br>Status: "+d.status; })
+        d3.select('#dataLoad').attr("class",function(d) { return d.status; })
+            .html(function (d) { return "<h1>"+d.process+"</h1>"+d.status+": "+d.dateA; })
         
     // DOCUMENT DELIVERY //
     var documentDelivery = data.filter(function(e){ return e.process === "Document Delivery"})
@@ -31,7 +31,7 @@ var data = d3.csv("data/workday_prod_status.csv", function(data) {
         .select('#documentDelivery')
         .data(documentDelivery).enter()
         d3.select('#documentDelivery').attr("class",function(e) { return e.status; })
-            .html(function (e) { return "Process: "+e.process+"<br><br>Status: "+e.status; })
+            .html(function (e) { return "<h1>"+e.process+"</h1>"+e.status +": "+e.dateA; })
 
     // DOCUMENT RETRIEVAL //
     var documentRetrieval = data.filter(function(f){ return f.process === "Document Retrieval"})
@@ -41,7 +41,7 @@ var data = d3.csv("data/workday_prod_status.csv", function(data) {
         .select('#documentRetrieval')
         .data(documentRetrieval).enter()
         d3.select('#documentRetrieval').attr("class",function(f) { return f.status; })
-            .html(function (f) { return "Process: "+f.process+"<br><br>Status: "+f.status; })
+            .html(function (f) { return "<h1>"+f.process+"</h1>"+f.status+": "+f.dateA; })
 
     // IMPORT ERROR AGGREGATION //
     var importErrorAggregation = data.filter(function(g){ return g.process === "Import Error Aggregation"})
@@ -51,7 +51,7 @@ var data = d3.csv("data/workday_prod_status.csv", function(data) {
         .select('#importErrorAggregation')
         .data(importErrorAggregation).enter()
         d3.select('#importErrorAggregation').attr("class",function(g) { return g.status; })
-            .html(function (g) { return "Process: "+g.process+"<br><br>Status: "+g.status; })
+            .html(function (g) { return "<h1>"+g.process+"</h1>"+g.status+": "+g.dateA; })
 
     // printServiceRetrieveReportAndParmsAndGeneratePDF //
     var printServiceRetrieveReportAndParmsAndGeneratePDF = data.filter(function(g){ return g.process === "PrintServiceRetrieveReportAndParmsAndGeneratePDF"})
@@ -61,7 +61,7 @@ var data = d3.csv("data/workday_prod_status.csv", function(data) {
         .select('#printServiceRetrieveReportAndParmsAndGeneratePDF')
         .data(printServiceRetrieveReportAndParmsAndGeneratePDF).enter()
         d3.select('#printServiceRetrieveReportAndParmsAndGeneratePDF').attr("class",function(g) { return g.status; })
-            .html(function (g) { return "Process: "+g.process+"<br><br>Status: "+g.status; })
+            .html(function (g) { return "<h1>"+g.process+"</h1>"+g.status+": "+g.dateA; })
 
     // RETRIEVAL //
     var retrieval = data.filter(function(g){ return g.process === "Retrieval"})
@@ -71,7 +71,7 @@ var data = d3.csv("data/workday_prod_status.csv", function(data) {
         .select('#retrieval')
         .data(retrieval).enter()
         d3.select('#retrieval').attr("class",function(g) { return g.status; })
-            .html(function (g) { return "Process: "+g.process+"<br><br>Status: "+g.status; })
+            .html(function (g) { return "<h1>"+g.process+"</h1>"+g.status+": "+g.dateA; })
 
     // SCHEDULE LARGE REPORTS //
     var scheduleLargeReports = data.filter(function(g){ return g.process === "Schedule Large Reports"})
@@ -81,7 +81,7 @@ var data = d3.csv("data/workday_prod_status.csv", function(data) {
         .select('#scheduleLargeReports')
         .data(scheduleLargeReports).enter()
         d3.select('#scheduleLargeReports').attr("class",function(g) { return g.status; })
-            .html(function (g) { return "Process: "+g.process+"<br><br>Status: "+g.status; })
+            .html(function (g) { return "<h1>"+g.process+"</h1>"+g.status+": "+g.dateA; })
 
     // TRANSFORMATION //
     var transformation = data.filter(function(g){ return g.process === "Transformation"})
@@ -91,7 +91,7 @@ var data = d3.csv("data/workday_prod_status.csv", function(data) {
         .select('#transformation')
         .data(transformation).enter()
         d3.select('#transformation').attr("class",function(g) { return g.status; })
-            .html(function (g) { return "Process: "+g.process+"<br><br>Status: "+g.status; })
+            .html(function (g) { return '<h1>'+g.process+"</h1>"+g.status+": "+g.dateA; })
 
 
 
