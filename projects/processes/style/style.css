@@ -20,11 +20,10 @@ body{
 
 div{
 	/*width:50vw;*/
-	height:11.85vh;
+	height:11.5vh;
 	margin: 0px;	
 	display: block;
-	/*position: relative;*/
-	/*float: left;*/
+	overflow:hidden;
 	margin:0.25vw;
 	border:0.25px solid black;
 	padding-left: 1em;
