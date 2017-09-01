@@ -12,7 +12,7 @@ body{
 
 div#container{
 	width:100vw;
-	height:100vh;
+	height:100;
 }
 
 div.chip{
@@ -24,9 +24,67 @@ div.chip{
 	overflow:hidden;
 }
 
+
+/*ID STYLE*/
+
+div#dataLoad{
+	width:100vw;
+	height:12.5vh;
+	background-color: #8dd3c7;
+}
+
+div#documentDelivery{
+	width:100vw;
+	height:12.5vh;
+	background-color: #ffffb3;
+}
+
+div#importErrorAggregation{
+	width:100vw;
+	height:12.5vh;
+	background-color: #efefef;
+}
+
+div#documentRetrieval{
+	width:100vw;
+	height:12.5vh;
+	background-color: #bebada;
+}
+
+
+div#printServiceRetrieveReportAndParmsAndGeneratePDF{
+	width:100vw;
+	height:12.5vh;
+	background-color: #fb8072;
+}
+
+div#retrieval{
+	width:100vw;
+	height:12.5vh;
+	background-color: #80b1d3;
+}
+
+div#scheduleLargeReports{
+	width:100vw;
+	height:12.5vh;
+	background-color: #fdb462;
+}
+
+div#transformation{
+	width:100vw;
+	height:12.5vh;
+	background-color: #b3de69;
+}
+
+
+
+
+
+/*CLASS STYLE*/
+
 div.Completed{
 		background-color: gray;
-		display:none;
+		/*display:none;*/
 		/*display:inline-block;*/
 }
 
