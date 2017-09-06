@@ -1,6 +1,6 @@
 body{
 	background-color: #EEE;
-	color:#111;
+	color:#000;
 	margin: 0px;
 	padding:0px;
 	font-family: 'Raleway', sans-serif;
@@ -8,7 +8,16 @@ body{
 
 h3, p{
 	padding: 10px;
-	color:#FFF;
+	color:#000;
+}
+
+image{
+	/*filter:brightness(80%);*/
+}
+
+.anywhere span{
+	background-color: gold;
+
 }
 
 
@@ -19,18 +28,28 @@ h3, p{
     width:100vw;
     height: auto;
     /*transition: all 2s;*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: cover; 
 }
 
 .anywhere{
-	font-size: 5em;
-	margin:0;
+	font-size: 3em;
+	display: block;
+	height:200px;
+	font-weight: bolder;
+	margin:0px;
+	padding:0px;
+	padding-left:10px;
+	background-color: rgba(255,255,255,0.3)
 }
 
 .print{
 	width:33.333vw;
 	/*height:200px;*/
-	background-color: #11F;
+	background-color: rgba(222,22,22,0.9);
 	display: block;
+	min-height: 200px;
     float: left;
     /*padding:3px;*/
 }
@@ -44,8 +63,8 @@ h3, p{
 }
 
 .parent:hover {
-    background-color: #00F;
     height:auto;
+    color:#FFF;
     /*font-size: 0px;*/
     /*transition: font-size 2s;*/
 }
@@ -61,6 +80,17 @@ h3, p{
 .parent:hover .child {
     display: block;
     overflow: hidden;
+    color:#FFF;
     /*opacity: 0.5;*/
     /*transition: width 2s;*/
 }
+
+.parent:hover p, h3 {
+    display: block;
+    overflow: hidden;
+    color:#FFF;
+    /*opacity: 0.5;*/
+    /*transition: width 2s;*/
+}
+
+
