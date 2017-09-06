@@ -1,0 +1,33 @@
+body{
+	margin:0px;
+	font-family: 'Kanit', sans-serif;
+}
+
+h1{
+	padding:0px;
+	margin:0px;
+}
+
+.team{
+	width:25vw;
+	height:25vw;
+	overflow: hidden;
+	display:block;
+	float:left;
+}
+
+.Mountain {
+	background-color: violet;
+}
+
+.SEC {
+	background-color: gold;
+}
+
+.PAC-12 {
+	background-color: maroon;
+}
+
+.sun {
+	background-color: yellow;
+}
