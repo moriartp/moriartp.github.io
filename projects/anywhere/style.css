@@ -1,0 +1,66 @@
+body{
+	background-color: #EEE;
+	color:#111;
+	margin: 0px;
+	padding:0px;
+	font-family: 'Raleway', sans-serif;
+}
+
+h3, p{
+	padding: 10px;
+	color:#FFF;
+}
+
+
+.parent {
+    min-height: 200px; min-width: 200px;
+    background-color: #F00;
+    margin-top: 1vh;
+    width:100vw;
+    height: auto;
+    /*transition: all 2s;*/
+}
+
+.anywhere{
+	font-size: 5em;
+	margin:0;
+}
+
+.print{
+	width:33.333vw;
+	/*height:200px;*/
+	background-color: #11F;
+	display: block;
+    float: left;
+    /*padding:3px;*/
+}
+
+.child {
+    display: none;
+    /*width:0px;*/
+    /*height:0px;*/
+    /*overflow: hidden;*/
+    /*transition: all 2s;*/
+}
+
+.parent:hover {
+    background-color: #00F;
+    height:auto;
+    /*font-size: 0px;*/
+    /*transition: font-size 2s;*/
+}
+
+
+.parent:hover p.anywhere{
+    display: none;
+    height: auto;
+    /*font-size: 0px;*/
+    /*transition: font-size 2s;*/
+}
+
+.parent:hover .child {
+    display: block;
+    overflow: hidden;
+    /*opacity: 0.5;*/
+    /*transition: width 2s;*/
+}
