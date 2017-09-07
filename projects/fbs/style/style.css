@@ -4,7 +4,7 @@ body{
 	font-size: 0.75em;
 	font-weight: lighter;
 	color:white;
-	background-color: #EEE;
+	background-color: #BBB;
 }
 
 h1{
@@ -23,9 +23,11 @@ h1{
 	margin:0px;
 
 }
+.team{
+	display:none;
+}
 
-
-div.team{
+.team{
 	width:13.5vw;
 	margin-left:1vw;
 	height:13.5vw;

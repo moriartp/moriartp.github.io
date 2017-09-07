@@ -1,8 +1,8 @@
-team,official,nickname,color1,color2,color3,color4,conference,subdivision,address,lat,lon
+team,official,nickname,color1,color2,color3,color4,conference,subdivision,address,lat,lon,logo
 Abilene Christian,Abilene Christian University,Wildcats,#4f2170,#FFFFFF,,,Independent,FCS,,,
 Air Force,United States Air Force Academy,Falcons,#0061AA,#FFFFFF,,,Mountain West,FBS,"2304 Cadet Drive Suite 3800, U.S. Air Force Academy, CO 80840-5002",39.0082911,-104.8904006
 Akron,University of Akron,Zips,#000E41,#C29C41,#FFFFFF,,Mid-American,FBS,"302 Buchtel Common, Akron, OH, 44325-4702",41.0763656,-81.5102535
-Alabama,The University of Alabama,Crimson Tide,#A80532,#FFFFFF,#CACCCE,,SEC,FBS,"739 University Blvd, Tuscaloosa, AL, 35487-0166",33.2095901,-87.5463678
+Alabama,The University of Alabama,Crimson Tide,#A80532,#FFFFFF,#CACCCE,,SEC,FBS,"739 University Blvd, Tuscaloosa, AL, 35487-0166",33.2095901,-87.5463678,https://goo.gl/ZHXST5
 Alabama A&M,Alabama Agricultural and Mechanical University,Bulldogs,#750000,#FFFFFF,,,SWAC,FCS,,,
 Alabama State,Alabama State University,Hornets,#FECB09,#231F20,#FFFFFF,,SWAC,FCS,,,
 Albany,State University of New York at Albany,Great Danes,#3D2777,#FCBB0D,#FFFFFF,,Colonial Athletic Association,FCS,,,
@@ -198,7 +198,7 @@ Southern University,Southern University and Agricultural and Mechanical College,
 Southern Utah,Southern Utah University,Thunderbirds,#D12947,#050607,#FFFFFF,,Big Sky,FCS,,,
 Stanford,Stanford University,Cardinal,#A80532,#FFFFFF,,,Pac-12,FBS,"450 Serra Mall, Stanford, CA, 94305",37.428443,-122.1695305
 Stephen F. Austin,Stephen F. Austin State University,Lumberjacks,#393996,#EE3A42,#FFFFFF,,Southland,FCS,,,
-Stetson,,,#3d8e33,#11181b,#FFFFFF,,Pioneer Football,FCS,,,
+Stetson,Stetson University,Hatters,#3d8e33,#11181b,#FFFFFF,,Pioneer Football,FCS,,,
 Stony Brook,State University of New York at Stony Brook,Seawolves,#115F9A,#FFFFFF,#B33A4E,,Colonial Athletic Association,FCS,,,
 Syracuse,Syracuse University,Orange,#002D62,#F37321,#FFFFFF,,ACC,FBS,"Suite 600 Crouse-Hinds Hall, Syracuse, NY, 13244-1100",43.040248,-76.1370235
 TCU,Texas Christian University,Horned Frogs,#3C377D,#EBEBEB,#FFFFFF,#1E1B1C,Big 12,FBS,"2800 S University Dr, Fort Worth, TX, 76129",32.7118466,-97.363079
