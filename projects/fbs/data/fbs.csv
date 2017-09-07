@@ -7,11 +7,11 @@ Alabama A&M,Alabama Agricultural and Mechanical University,Bulldogs,#750000,#FFF
 Alabama State,Alabama State University,Hornets,#FECB09,#231F20,#FFFFFF,,SWAC,FCS,,,
 Albany,State University of New York at Albany,Great Danes,#3D2777,#FCBB0D,#FFFFFF,,Colonial Athletic Association,FCS,,,
 Alcorn State,Alcorn State University,Braves,#42094A,#FFFFFF,#FCF5BA,,SWAC,FCS,,,
-Appalachian State,Appalachian State University,Mountaineers,#000000,#FFC520,#FFFFFF,,Sun Belt,FBS,"287 Rivers St, Boone, NC 28608",36.213484,-81.684166
+Appalachian State,Appalachian State University,Mountaineers,#FFC520,#000000,#FFFFFF,,Sun Belt,FBS,"287 Rivers St, Boone, NC 28608",36.213484,-81.684166
 Arizona,University of Arizona,Wildcats,#003559,#BB003A,#FFFFFF,,Pac-12,FBS,"1401 E University, Tucson, AZ, 85721-0066",32.231871,-110.954822
 Arizona State,Arizona State University,Sun,#96203D,#FEC927,#FFFFFF,,Pac-12,FBS,"PO Box 877705, Tempe, AZ, 85287-7705",33.4183159,-111.9311939
 Arkansas,University of Arkansas,Razorbacks,#CD1041,#231F20,#FFFFFF,,SEC,FBS,"Administration Bldg 425, Fayetteville, AR, 72701",36.0700245,-94.1768949
-Arkansas State,Arkansas State University,Red,#ED1B2E,#FFFFFF,#231F20,#C8C7C7,Sun Belt,FBS,"2105 E. Aggie Road, State University, AR, 72467",35.8427962,-90.6818907
+Arkansas State,Arkansas State University,Red Wolves,#ED1B2E,#FFFFFF,#231F20,#C8C7C7,Sun Belt,FBS,"2105 E. Aggie Road, State University, AR, 72467",35.8427962,-90.6818907
 Arkansas-Pine Bluff,University of Arkansas at Pine Bluff,Golden,#000000,#EEBB00,#FFFFFF,,SWAC,FCS,,,
 Army,United States Military Academy,Black Knights,#D19D00,#000000,#FFFFFF,,Independent,FBS,"700 Mills Rd, West Point, NY 10996",41.387964,-73.964017
 Auburn,Auburn University,Tigers,#172240,#FE3300,#FFFFFF,,SEC,FBS,"Auburn University, Auburn, AL, 36849",32.6005991,-85.4865371
@@ -72,11 +72,11 @@ Georgetown,Georgetown University,Hoyas,#49487C,#FFFFFF,#AC928A,,Patriot League,F
 Georgia,University of Georgia,Bulldogs,#A0000B,#000000,#FFFFFF,,SEC,FBS,"The Administration Building, Athens, GA, 30602",33.9562215,-83.3739514
 Georgia Southern,Georgia Southern University,Eagles,#003775,#FFFFFF,#9B8348,#9DB7c4,Sun Belt,FBS,"1332 Southern Dr, Statesboro, GA 30458",32.420368,-81.786556
 Georgia State,Georgia State University,Panthers,#005DAA,#FFFFFF,#F8112B,,Sun Belt,FBS,"100 Decatur St SE, Atlanta, GA 30303",33.753106,-84.385316
-Georgia Tech,Georgia Institute of Technology,Yellow Jackets,#160A06,#FDB813,#FFFFFF,,ACC,FBS,"225 North Ave, Atlanta, GA, 30332-0530",33.7724231,-84.3950522
+Georgia Tech,Georgia Institute of Technology,Yellow Jackets,#FDB813,#160A06,#FFFFFF,,ACC,FBS,"225 North Ave, Atlanta, GA, 30332-0530",33.7724231,-84.3950522
 Grambling State,Grambling State University,Tigers,#F88400,#101008,#FFFFFF,,SWAC,FCS,,,
 Hampton,Hampton University,Pirates,#0067AC,#FFFFFF,#E5B67D,,MEAC,FCS,,,
 Harvard,Harvard University,Crimson,#C41130,#FFFFFF,#231F20,,Ivy League,FCS,,,
-Hawaii,University of Hawaii at Manoa,Warriors,#004231,#000000,#FFFFFF,,Mountain West,FBS,"2500 Campus Road, Hawaii Hall, Honolulu, HI, 96822-2301",21.2984111,-157.8202236
+Hawaii,University of Hawaii at Manoa,Warriors,#004231,#FFFFFF,#000000,,Mountain West,FBS,"2500 Campus Road, Hawaii Hall, Honolulu, HI, 96822-2301",21.2984111,-157.8202236
 Holy Cross,College of the Holy Cross,Crusaders,#090909,#1B2154,#FFFFFF,#909095,Patriot League,FCS,,,
 Houston,University of Houston,Cougars,#C90822,#012259,#FFFFFF,,American Athletic,FBS,"212 E. Cullen Building, Houston, TX, 77204-2018",29.72037,-95.34374
 Houston Baptist,Houston Baptist University,Huskies,#00529C,#FF5114,#FFFFFF,,Independent,FCS,,,
@@ -199,7 +199,7 @@ Southern Utah,Southern Utah University,Thunderbirds,#D12947,#050607,#FFFFFF,,Big
 Stanford,Stanford University,Cardinal,#A80532,#FFFFFF,,,Pac-12,FBS,"450 Serra Mall, Stanford, CA, 94305",37.428443,-122.1695305
 Stephen F. Austin,Stephen F. Austin State University,Lumberjacks,#393996,#EE3A42,#FFFFFF,,Southland,FCS,,,
 Stetson,,,#3d8e33,#11181b,#FFFFFF,,Pioneer Football,FCS,,,
-Stony Brook,State University of New York at Stony Brook,Seawolves,#115F9A,#B33A4E,#FFFFFF,,Colonial Athletic Association,FCS,,,
+Stony Brook,State University of New York at Stony Brook,Seawolves,#115F9A,#FFFFFF,#B33A4E,,Colonial Athletic Association,FCS,,,
 Syracuse,Syracuse University,Orange,#002D62,#F37321,#FFFFFF,,ACC,FBS,"Suite 600 Crouse-Hinds Hall, Syracuse, NY, 13244-1100",43.040248,-76.1370235
 TCU,Texas Christian University,Horned Frogs,#3C377D,#EBEBEB,#FFFFFF,#1E1B1C,Big 12,FBS,"2800 S University Dr, Fort Worth, TX, 76129",32.7118466,-97.363079
 Temple,Temple University,Owls,#A80532,#FFFFFF,#000000,,American Athletic,FBS,"1801 North Broad Street, Philadelphia, PA, 19122-6096",39.980271,-75.157053
@@ -218,11 +218,11 @@ Towson,Towson University,Tigers,#FFC229,#1E1C1C,#FFFFFF,,Colonial Athletic Assoc
 Troy,Troy University,Trojans,#AE0210,#FFFFFF,#6E7272,#000000,Sun Belt,FBS,"University Avenue, Troy, AL, 36082-0001",31.7983394,-85.9572618
 Tulane,Tulane University,Green Wave,#005837,#FFFFFF,#6EA396,#00A6eb,Conference USA,FBS,"6823 Saint Charles Ave, New Orleans, LA, 70118-5698",29.934585,-90.1230366
 Tulsa,University of Tulsa,Golden Hurricane,#004371,#FFFFFF,#E21721,#000000,Conference USA,FBS,"800 South Tucker Drive, Tulsa, OK, 74104-3189",36.1491309,-95.9464523
-UAB,The University of Alabama at Birmingham,Blazers,#054338,#040504,#FFFFFF,#E7BD05,Conference USA,FBS,"1720 2nd Ave S, Birmingham, AL 35294",33.50206,-86.806466
+UAB,The University of Alabama at Birmingham,Blazers,#054338,#FFFFFF,#040504,#E7BD05,Conference USA,FBS,"1720 2nd Ave S, Birmingham, AL 35294",33.50206,-86.806466
 UC Davis,University of California: Davis,Aggies,#183563,#CB992B,#FFFFFF,#CCCCCD,Big Sky,FCS,,,
 UCF,University of Central Florida,Knights,#231F20,#B4985A,#FFFFFF,,American Athletic,FBS,"4000 Central Florida Blvd, Orlando, FL 32816",28.602305,-81.200168
 UCLA,University of California: Los Angeles,Bruins,#005C8E,#FFB325,#000000,#FFFFFF,Pac-12,FBS,"405 Hilgard Ave, Los Angeles, CA, 90095-1405",34.0709334,-118.4421229
-UNC Charlotte,University of North Carolina at Charlotte,,#006940,#9a8648,#FFFFFF,#000000,Conference USA,FBS,"9201 University City Blvd, Charlotte, NC 28223",35.307075,-80.735357
+UNC Charlotte,University of North Carolina at Charlotte,49ers,#006940,#9a8648,#FFFFFF,#000000,Conference USA,FBS,"9201 University City Blvd, Charlotte, NC 28223",35.307075,-80.735357
 UNLV,University of Nevada: Las Vegas,Rebels,#231E1F,#D50026,#FFFFFF,,Mountain West,FBS,"4505 S Maryland Pkwy, Las Vegas, NV 89154",36.108542,-115.143045
 USC,University of Southern California,Trojans,#AE2531,#FFAC33,#FFFFFF,,Pac-12,FBS,"University Park, Los Angeles, CA, 90089",34.0133669,-118.1682199
 Utah,University of Utah,Utes,#CD1041,#231F20,#FFFFFF,,Pac-12,FBS,"201 Presidents Circle, Room 203, Salt Lake City, UT, 84112-9008",40.765023,-111.848931
@@ -248,6 +248,6 @@ Western Michigan,Western Michigan University,Broncos,#7E3E09,#FFFFFF,#B59966,#1D
 William & Mary,College of William and Mary,Tribe,#103217,#FDF71C,#FFFFFF,,Colonial Athletic Association,FCS,,,
 Wisconsin,University of Wisconsin-Madison,Badgers,#A00000,#000000,#FFFFFF,,Big 10,FBS,"500 Lincoln Dr, Madison, WI, 53706-1380",43.0746351,-89.403633
 Wofford,Wofford College,Terriers,#000000,#FFD700,#FFFFFF,,Southern,FCS,,,
-Wyoming,University of Wyoming,Cowboys,#533B22,#000000,#FFFFFF,,Mountain West,FBS,"Corner of Ninth and Ivinson, Laramie, WY, 82071",41.3114964,-105.5856475
+Wyoming,University of Wyoming,Cowboys,#533B22,#ffc425,#FFFFFF,#000000,Mountain West,FBS,"Corner of Ninth and Ivinson, Laramie, WY, 82071",41.3114964,-105.5856475
 Yale,Yale University,Bulldogs,#004A81,#040404,#FFFFFF,,Ivy League,FCS,,,
 Youngstown State,Youngstown State University,Penguins,#E51937,#231F20,#FFFFFF,,Missouri Valley,FCS,,,

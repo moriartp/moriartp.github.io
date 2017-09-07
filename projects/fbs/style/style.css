@@ -1,6 +1,10 @@
 body{
 	margin:0px;
 	font-family: 'Kanit', sans-serif;
+	font-size: 0.75em;
+	font-weight: lighter;
+	color:white;
+	background-color: #EEE;
 }
 
 h1{
@@ -8,15 +12,48 @@ h1{
 	margin:0px;
 }
 
-.team{
-	width:25vw;
-	height:25vw;
+/*.team{
+	width:17.8vw;
+	margin-left:1vw;
+	height:8.9vw;
+	margin-top:1vw;
+	padding:0.5vw;
 	overflow: hidden;
 	display:block;
 	float:left;
+	display:none;
+}*/
+
+.teamname{
+	font-size:1.5em;
+	margin:0px;
+
 }
 
-.Mountain {
+.notteamname{
+	font-size:1.25em;
+	margin:0px;
+
+}
+
+
+div.team{
+	width:13.5vw;
+	margin-left:1vw;
+	height:8.9vw;
+	margin-top:1vw;
+	padding:0.5vw;
+	overflow: hidden;
+	display:block;
+	float:left;
+	border-radius: 10px;
+}
+
+.fcs{
+	/*display:none;*/
+}
+
+/*.Mountain {
 	background-color: mediumpurple;
 }
 
@@ -72,3 +109,20 @@ h1{
 .Pioneer{
 	background-color: khaki;
 }
+
+.Patriot{
+	background-color: indianred;
+}
+
+.Missouri{
+	background-color: brown;
+}
+
+.Ohio{
+	background-color: palevioletred;
+}
+.fcs{
+	display:none;
+}
+
+*/
