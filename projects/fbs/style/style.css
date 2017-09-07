@@ -12,20 +12,8 @@ h1{
 	margin:0px;
 }
 
-/*.team{
-	width:17.8vw;
-	margin-left:1vw;
-	height:8.9vw;
-	margin-top:1vw;
-	padding:0.5vw;
-	overflow: hidden;
-	display:block;
-	float:left;
-	display:none;
-}*/
-
 .teamname{
-	font-size:1.5em;
+	font-size:2.5em;
 	margin:0px;
 
 }
@@ -40,13 +28,12 @@ h1{
 div.team{
 	width:13.5vw;
 	margin-left:1vw;
-	height:8.9vw;
+	height:13.5vw;
 	margin-top:1vw;
 	padding:0.5vw;
 	overflow: hidden;
 	display:block;
 	float:left;
-	border-radius: 10px;
 }
 
 .fcs{
