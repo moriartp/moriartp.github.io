@@ -1,17 +1,17 @@
 team,official,nickname,color1,color2,color3,color4,conference,subdivision,address,lat,lon,logo
-Abilene Christian,Abilene Christian University,Wildcats,#4f2170,#FFFFFF,,,Independent,FCS,,,
-Air Force,United States Air Force Academy,Falcons,#0061AA,#FFFFFF,,,Mountain West,FBS,"2304 Cadet Drive Suite 3800, U.S. Air Force Academy, CO 80840-5002",39.0082911,-104.8904006
-Akron,University of Akron,Zips,#000E41,#C29C41,#FFFFFF,,Mid-American,FBS,"302 Buchtel Common, Akron, OH, 44325-4702",41.0763656,-81.5102535
-Alabama,The University of Alabama,Crimson Tide,#A80532,#FFFFFF,#CACCCE,,SEC,FBS,"739 University Blvd, Tuscaloosa, AL, 35487-0166",33.2095901,-87.5463678,https://goo.gl/ZHXST5
-Alabama A&M,Alabama Agricultural and Mechanical University,Bulldogs,#750000,#FFFFFF,,,SWAC,FCS,,,
-Alabama State,Alabama State University,Hornets,#FECB09,#231F20,#FFFFFF,,SWAC,FCS,,,
+Abilene Christian,Abilene Christian University,Wildcats,#4f2170,#FFFFFF,,,Independent,FCS,,,,http://www.acusports.com/images/responsive/main_logo.png
+Air Force,United States Air Force Academy,Falcons,#0061AA,#FFFFFF,,,Mountain West,FBS,"2304 Cadet Drive Suite 3800, U.S. Air Force Academy, CO 80840-5002",39.0082911,-104.8904006,http://cdn.bleacherreport.net/images/team_logos/328x328/air_force_football.png
+Akron,University of Akron,Zips,#000E41,#C29C41,#FFFFFF,,Mid-American,FBS,"302 Buchtel Common, Akron, OH, 44325-4702",41.0763656,-81.5102535,https://upload.wikimedia.org/wikipedia/commons/4/41/Akron_Z_logo_2015.png
+Alabama,The University of Alabama,Crimson Tide,#A80532,#FFFFFF,#CACCCE,,SEC,FBS,"739 University Blvd, Tuscaloosa, AL, 35487-0166",33.2095901,-87.5463678,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Alabama_Crimson_Tide_logo.svg/2000px-Alabama_Crimson_Tide_logo.svg.png
+Alabama A&M,Alabama Agricultural and Mechanical University,Bulldogs,#750000,#FFFFFF,,,SWAC,FCS,,,,http://cdn.bleacherreport.net/images/team_logos/328x328/alabama_am_basketball.png
+Alabama State,Alabama State University,Hornets,#FECB09,#231F20,#FFFFFF,,SWAC,FCS,,,,https://cdn.herosports.com/upload/uploads/alabama-state-logo2.png
 Albany,State University of New York at Albany,Great Danes,#3D2777,#FCBB0D,#FFFFFF,,Colonial Athletic Association,FCS,,,
 Alcorn State,Alcorn State University,Braves,#42094A,#FFFFFF,#FCF5BA,,SWAC,FCS,,,
 Appalachian State,Appalachian State University,Mountaineers,#FFC520,#000000,#FFFFFF,,Sun Belt,FBS,"287 Rivers St, Boone, NC 28608",36.213484,-81.684166
 Arizona,University of Arizona,Wildcats,#003559,#BB003A,#FFFFFF,,Pac-12,FBS,"1401 E University, Tucson, AZ, 85721-0066",32.231871,-110.954822
 Arizona State,Arizona State University,Sun,#96203D,#FEC927,#FFFFFF,,Pac-12,FBS,"PO Box 877705, Tempe, AZ, 85287-7705",33.4183159,-111.9311939
 Arkansas,University of Arkansas,Razorbacks,#CD1041,#231F20,#FFFFFF,,SEC,FBS,"Administration Bldg 425, Fayetteville, AR, 72701",36.0700245,-94.1768949
-Arkansas State,Arkansas State University,Red Wolves,#ED1B2E,#FFFFFF,#231F20,#C8C7C7,Sun Belt,FBS,"2105 E. Aggie Road, State University, AR, 72467",35.8427962,-90.6818907
+Arkansas State,Arkansas State University,Red Wolves,#ED1B2E,#FFFFFF,#231F20,#C8C7C7,Sun Belt,FBS,"2105 E. Aggie Road, State University, AR, 72467",35.8427962,-90.6818907,https://upload.wikimedia.org/wikipedia/en/thumb/3/36/Arkansas_State_Red_Wolves_logo.svg/1200px-Arkansas_State_Red_Wolves_logo.svg.png
 Arkansas-Pine Bluff,University of Arkansas at Pine Bluff,Golden,#000000,#EEBB00,#FFFFFF,,SWAC,FCS,,,
 Army,United States Military Academy,Black Knights,#D19D00,#000000,#FFFFFF,,Independent,FBS,"700 Mills Rd, West Point, NY 10996",41.387964,-73.964017
 Auburn,Auburn University,Tigers,#172240,#FE3300,#FFFFFF,,SEC,FBS,"Auburn University, Auburn, AL, 36849",32.6005991,-85.4865371
