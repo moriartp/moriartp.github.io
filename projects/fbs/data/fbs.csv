@@ -19,17 +19,17 @@ Austin Peay,Austin Peay State University,Governors,#8E0B0B,#FFFFFF,,,Ohio Valley
 Ball State,Ball State University,Cardinals,#DA0000,#FFFFFF,#000000,,Mid-American,FBS,"2000 University Ave, Muncie, IN, 47306",40.1972321,-85.4088412,https://sports.cbsimg.net/images/collegefootball/logos/70x70/BALLST.png
 Baylor,Baylor University,Bears,#008649,#FFC227,#FFFFFF,,Big 12,FBS,"500 Speight Ave., Waco, TX, 76798",31.5447389,-97.1183626,https://sports.cbsimg.net/images/collegefootball/logos/70x70/BAYLOR.png
 Bethune-Cookman,Bethune-Cookman College,Wildcats,#841B35,#FFFFFF,#FEB65F,,MEAC,FCS,,,,https://sports.cbsimg.net/images/collegefootball/logos/70x70/BTHN.png
-Boise State,Boise State University,Broncos,#2D4492,#F27E34,#FFFFFF,,Mountain West,FBS,"1910 University Dr, Boise, ID, 83725",43.6056603,-116.2059975
-Boston College,Boston College,Eagles,#821E1E,#000000,#EEE8B7,#FFFFFF,ACC,FBS,"140 Commonwealth Avenue, Chestnut Hill, MA, 2467",42.3397737,-71.1667023
-Bowling Green,Bowling Green State University,Green Falcons,#4E2400,#F5793F,#FFFFFF,,Mid-American,FBS,"220 McFall Ctr, Bowling Green, OH, 43403",41.3754306,-83.6409484
-Brown,Brown University,Bears,#543019,#8A1E04,#FFFFFF,#000000,Ivy League,FCS,,,
-Bryant University,Bryant College,Bulldogs,#702D07,#231F20,#A59474,,NEC,FCS,,,
-Bucknell,Bucknell University,Bison,#000064,#FF7000,#FFFFFF,,Patriot League,FCS,,,
-Buffalo,State University of New York at Buffalo,Bulls,#0068B4,#FFFFFF,#000000,,Mid-American,FBS,"3435 Main Street, Buffalo, NY, 14214",42.9563819,-78.8200287
-Butler,Butler University,Bulldogs,#0D1361,#FFFFFF,#000000,,Pioneer Football,FCS,,,
-BYU,Brigham Young University,Cougars,#002D62,#FFFFFF,,,Independent,FBS,"Main Campus, Provo, UT, 84602",40.25034,-111.644815
-Cal Poly,California Polytechnic State University: San Luis Obispo,Mustangs,#123C31,#FFF1D0,#FFFFFF,,Big Sky,FCS,,,
-California,University of California: Berkeley,Golden Bears,#003768,#FFDE30,#FFFFFF,,Pac-12,FBS,"200 California Hall, Berkeley, CA, 94720",37.868979,-122.266073
+Boise State,Boise State University,Broncos,#2D4492,#F27E34,#FFFFFF,,Mountain West,FBS,"1910 University Dr, Boise, ID, 83725",43.6056603,-116.2059975,https://sports.cbsimg.net/images/collegefootball/logos/70x70/BOISE.png
+Boston College,Boston College,Eagles,#821E1E,#000000,#EEE8B7,#FFFFFF,ACC,FBS,"140 Commonwealth Avenue, Chestnut Hill, MA, 2467",42.3397737,-71.1667023,https://sports.cbsimg.net/images/collegefootball/logos/70x70/BC.png
+Bowling Green,Bowling Green State University,Green Falcons,#4E2400,#F5793F,#FFFFFF,,Mid-American,FBS,"220 McFall Ctr, Bowling Green, OH, 43403",41.3754306,-83.6409484,https://sports.cbsimg.net/images/collegefootball/logos/70x70/BGREEN.png
+Brown,Brown University,Bears,#543019,#8A1E04,#FFFFFF,#000000,Ivy League,FCS,,,,https://sports.cbsimg.net/images/collegefootball/logos/70x70/BROWN.png
+Bryant University,Bryant College,Bulldogs,#702D07,#231F20,#A59474,,NEC,FCS,,,,https://sports.cbsimg.net/images/collegefootball/logos/70x70/BRYANT.png
+Bucknell,Bucknell University,Bison,#000064,#FF7000,#FFFFFF,,Patriot League,FCS,,,,https://sports.cbsimg.net/images/collegefootball/logos/70x70/BUCK.png
+Buffalo,State University of New York at Buffalo,Bulls,#0068B4,#FFFFFF,#000000,,Mid-American,FBS,"3435 Main Street, Buffalo, NY, 14214",42.9563819,-78.8200287,https://sports.cbsimg.net/images/collegefootball/logos/70x70/BUFF.png
+Butler,Butler University,Bulldogs,#0D1361,#FFFFFF,#000000,,Pioneer Football,FCS,,,,https://sports.cbsimg.net/images/collegefootball/logos/70x70/BUTLER.png
+BYU,Brigham Young University,Cougars,#002D62,#FFFFFF,,,Independent,FBS,"Main Campus, Provo, UT, 84602",40.25034,-111.644815,https://sports.cbsimg.net/images/collegefootball/logos/70x70/BYU.png
+Cal Poly,California Polytechnic State University: San Luis Obispo,Mustangs,#123C31,#FFF1D0,#FFFFFF,,Big Sky,FCS,,,,https://sports.cbsimg.net/images/collegefootball/logos/70x70/CPOLY.png
+California,University of California: Berkeley,Golden Bears,#003768,#FFDE30,#FFFFFF,,Pac-12,FBS,"200 California Hall, Berkeley, CA, 94720",37.868979,-122.266073,https://sports.cbsimg.net/images/collegefootball/logos/70x70/CAL.png
 Campbell,Campbell University,Fighting Camels,#000000,#FF8931,#FFFFFF,,Pioneer Football,FCS,,,
 Central Arkansas,University of Central Arkansas,Bears,#4F2683,#FFFFFF,#939BA1,,Southland,FCS,,,
 Central Connecticut,Central Connecticut State University,Blue Devils,#1B49A2,#FFFFFF,,,NEC,FCS,,,
@@ -51,7 +51,7 @@ Dayton,University of Dayton,Flyers,#151A66,#E70808,#FFFFFF,,Pioneer Football,FCS
 Delaware,University of Delaware,Fightin' Blue Hens,#01539B,#FFDD00,#100A04,#FFFFFF,Colonial Athletic Association,FCS,,,
 Delaware State,Delaware State University,Hornets,#F11A2D,#01A9EF,#FFFFFF,#261511,MEAC,FCS,,,
 Drake,Drake University,Bulldogs,#0053A0,#FFFFFF,#B4B6B8,,Pioneer Football,FCS,,,
-Duke,Duke University,Blue Devils,#004C7D,#FFFFFF,,,ACC,FBS,"207 Allen Bldg, Durham, NC, 27708",36.0011241,-78.9373541
+Duke,Duke University,Blue Devils,#004C7D,#FFFFFF,,,ACC,FBS,"207 Allen Bldg, Durham, NC, 27708",36.0011241,-78.9373541,https://sports.cbsimg.net/images/collegefootball/logos/70x70/DUKE.png
 Duquesne,Duquesne University,Dukes,#002D62,#D31145,#FFFFFF,,NEC,FCS,,,
 East Carolina,East Carolina University,Pirates,#4A1F68,#FFCE28,#FFFFFF,#000000,Conference USA,FBS,"East 5th Street, Greenville, NC, 27858-4353",35.6066409,-77.3559964
 Eastern Illinois,Eastern Illinois University,Panthers,#000000,#FFFFFF,#0675D0,,Ohio Valley,FCS,,,
@@ -106,7 +106,7 @@ Louisiana Tech,Louisiana Tech University,Bulldogs,#006AB5,#ED1C24,#FFFFFF,,Confe
 Louisiana-Lafayette,University of Louisiana at Lafayette,Ragin' Cajuns,#D73347,#FFFFFF,#F4A42A,#231F20,Sun Belt,FBS,"104 University Circle, Lafayette, LA, 70503",30.2095864,-92.0085328
 Louisiana-Monroe,University of Louisiana at Monroe,Warhawks,#231F20,#98012E,#FFFFFF,#B38807,Sun Belt,FBS,"700 University Ave, Monroe, LA 71209",32.531026,-92.068806
 Louisville,University of Louisville,Cardinals,#FD0B20,#070707,#FFFFFF,#FFC010,American Athletic,FBS,"2301 S 3rd St, Louisville, KY, 40292-0001",38.2150724,-85.7602816
-LSU,Louisiana State University and Agricultural and Mechanical College,Tigers,#33297B,#FDB827,#FFFFFF,,SEC,FBS,"P.O. Box 25095, Baton Rouge, LA, 70803-2750",30.41,-91.18
+LSU,Louisiana State University and Agricultural and Mechanical College,Tigers,#33297B,#FDB827,#FFFFFF,,SEC,FBS,"P.O. Box 25095, Baton Rouge, LA, 70803-2750",30.41,-91.18,https://sports.cbsimg.net/images/collegefootball/logos/70x70/LSU.png
 Maine,University of Maine,Black Bears,#2E8DC4,#FFFFFF,#909090,#000000,Colonial Athletic Association,FCS,,,
 Marist,Marist College,Red Foxes,#EF1216,#FFFFFF,#210203,,Pioneer Football,FCS,,,
 Marshall,Marshall University,Thundering Herd,#01592F,#FFFFFF,#000000,,Conference USA,FBS,"1 John Marshall Dr, Huntington, WV, 25755",38.4231429,-82.4292749
@@ -170,7 +170,7 @@ Presbyterian,Presbyterian College,Blue Hose,#194896,#FFFFFF,#AA153B,,Big South,F
 Princeton,Princeton University,Tigers,#F9A13A,#231F20,#FFFFFF,,Ivy League,FCS,,,
 Purdue,Purdue University,Boilermakers,#000000,#B89D29,#FFFFFF,#9FA3A6,Big 10,FBS,"Hovde Hall of Administration, West Lafayette, IN, 47907-2040",40.4282164,-86.9143966
 Rhode Island,University of Rhode Island,Rams,#3691C6,#003559,#FFFFFF,,Colonial Athletic Association,FCS,,,
-Rice,Rice University,Owls,#003D7D,#FFFFFF,,,Conference USA,FBS,"6100 S Main, Houston, TX, 77005",29.7126665,-95.4041068
+Rice,Rice University,Owls,#003D7D,#FFFFFF,,,Conference USA,FBS,"6100 S Main, Houston, TX, 77005",29.7126665,-95.4041068,https://sports.cbsimg.net/images/collegefootball/logos/70x70/RICE.png
 Richmond,University of Richmond,Spiders,#9E0712,#003256,#FFFFFF,,Colonial Athletic Association,FCS,,,
 Robert Morris,Robert Morris College,Colonials,#00214D,#AF1C2E,#FFFFFF,#BEB9B4,NEC,FCS,,,
 Rutgers,Rutgers,Scarlet Knights,#EE363D,#FFFFFF,#0E1112,,American Athletic,FBS,"83 Somerset St, New Brunswick, NJ, 08901-1281",40.4978792,-74.4463361
@@ -183,13 +183,13 @@ San Diego,University of San Diego,Toreros,#2f99d4,#00275d,#FFFFFF,,Pioneer Footb
 San Diego State,San Diego State University,Aztecs,#231F20,#BF2C37,#7C6642,#FFFFFF,Mountain West,FBS,"5500 Campanile Dr, San Diego, CA, 92182",32.7727078,-117.0765114
 San Jose State,San Jose State University,Spartans,#005893,#FFC021,#FFFFFF,,Mountain West,FBS,"1 Washington Sq, San Jose, CA, 95192-0001",37.3348412,-121.8849198
 Savannah State,Savannah State University,Tigers,#280298,#FF0000,#FFFFFF,,MEAC,FCS,,,
-SMU,Southern Methodist University,Mustangs,#E32F38,#FFFFFF,,,American Athletic,FBS,"6425 Boaz St, Dallas, TX, 75275-0221",32.844918,-96.785785
+SMU,Southern Methodist University,Mustangs,#E32F38,#FFFFFF,,,American Athletic,FBS,"6425 Boaz St, Dallas, TX, 75275-0221",32.844918,-96.785785,https://sports.cbsimg.net/images/collegefootball/logos/70x70/SMU.png
 South Alabama,University of South Alabama,Jaguars,#003E7E,#FFFFFF,#D11241,,Sun Belt,FBS,"307 N. University Blvd. #130, Mobile, AL 36688",30.695904,-88.184365
 South Carolina,University of South Carolina-Columbia,Gamecocks,#CD0000,#000000,#FFFFFF,,SEC,FBS,"1300 Rosewood Drive, Columbia, SC, 29208",33.9808047,-81.0227005
 South Carolina State,South Carolina State University,Bulldogs,#7E1812,#080D35,#050305,#FFFFFF,MEAC,FCS,,,
 South Dakota,University of South Dakota,Coyotes,#CD1241,#231F20,#B3B5B8,#FFFFFF,Missouri Valley,FCS,,,
 South Dakota State,South Dakota State University,Jackrabbits,#005DAB,#FFDE00,#FFFFFF,,Missouri Valley,FCS,,,
-South Florida,University of South Florida,Bulls,#004A36,#FFFFFF,#A08B4D,,American Athletic,FBS,"4202 East Fowler Ave, Tampa, FL, 33620-9951",28.0545918,-82.4136143
+South Florida,University of South Florida,Bulls,#004A36,#FFFFFF,#A08B4D,,American Athletic,FBS,"4202 East Fowler Ave, Tampa, FL, 33620-9951",28.0545918,-82.4136143,https://sports.cbsimg.net/images/collegefootball/logos/70x70/SFLA.png
 Southeast Missouri State,Southeast Missouri State University,Redhawks,#E2373E,#231F20,#FFFFFF,,Ohio Valley,FCS,,,
 Southeastern Louisiana,Southeastern Louisiana University,Lions,#007550,#F0B510,#231F20,#FFFFFF,Southland,FCS,,,
 Southern Illinois,Southern Illinois University Carbondale,Salukis,#85283D,#000000,#FFFFFF,,Missouri Valley,FCS,,,
@@ -201,7 +201,7 @@ Stephen F. Austin,Stephen F. Austin State University,Lumberjacks,#393996,#EE3A42
 Stetson,Stetson University,Hatters,#3d8e33,#11181b,#FFFFFF,,Pioneer Football,FCS,,,
 Stony Brook,State University of New York at Stony Brook,Seawolves,#115F9A,#FFFFFF,#B33A4E,,Colonial Athletic Association,FCS,,,
 Syracuse,Syracuse University,Orange,#002D62,#F37321,#FFFFFF,,ACC,FBS,"Suite 600 Crouse-Hinds Hall, Syracuse, NY, 13244-1100",43.040248,-76.1370235
-TCU,Texas Christian University,Horned Frogs,#3C377D,#EBEBEB,#FFFFFF,#1E1B1C,Big 12,FBS,"2800 S University Dr, Fort Worth, TX, 76129",32.7118466,-97.363079
+TCU,Texas Christian University,Horned Frogs,#3C377D,#EBEBEB,#FFFFFF,#1E1B1C,Big 12,FBS,"2800 S University Dr, Fort Worth, TX, 76129",32.7118466,-97.363079,https://sports.cbsimg.net/images/collegefootball/logos/70x70/TCU.png
 Temple,Temple University,Owls,#A80532,#FFFFFF,#000000,,American Athletic,FBS,"1801 North Broad Street, Philadelphia, PA, 19122-6096",39.980271,-75.157053
 Tennessee,University of Tennessee: Knoxville,Volunteers,#EE9627,#FFFFFF,,,SEC,FBS,"1600 Phillip Fulmer Way, Knoxville, TN 37916",35.954471,-83.929456
 Tennessee State,Tennessee State University,Tigers,#383C84,#FFFFFF,#060607,,Ohio Valley,FCS,,,
@@ -215,30 +215,30 @@ Texas Tech,Texas Tech University,Red Raiders,#C80025,#000000,#FFFFFF,,Big 12,FBS
 The Citadel,The Citadel,Bulldogs,#002B5C,#FFFFFF,,,Southern,FCS,,,
 Toledo,University of Toledo,Rockets,#00488F,#FFD51D,#FFFFFF,,Mid-American,FBS,"2801 W Bancroft, Toledo, OH, 43606-3390",41.6585172,-83.6120617
 Towson,Towson University,Tigers,#FFC229,#1E1C1C,#FFFFFF,,Colonial Athletic Association,FCS,,,
-Troy,Troy University,Trojans,#AE0210,#FFFFFF,#6E7272,#000000,Sun Belt,FBS,"University Avenue, Troy, AL, 36082-0001",31.7983394,-85.9572618
+Troy,Troy University,Trojans,#AE0210,#FFFFFF,#6E7272,#000000,Sun Belt,FBS,"University Avenue, Troy, AL, 36082-0001",31.7983394,-85.9572618,https://sports.cbsimg.net/images/collegefootball/logos/70x70/TROY.png
 Tulane,Tulane University,Green Wave,#005837,#FFFFFF,#6EA396,#00A6eb,Conference USA,FBS,"6823 Saint Charles Ave, New Orleans, LA, 70118-5698",29.934585,-90.1230366
 Tulsa,University of Tulsa,Golden Hurricane,#004371,#FFFFFF,#E21721,#000000,Conference USA,FBS,"800 South Tucker Drive, Tulsa, OK, 74104-3189",36.1491309,-95.9464523
-UAB,The University of Alabama at Birmingham,Blazers,#054338,#FFFFFF,#040504,#E7BD05,Conference USA,FBS,"1720 2nd Ave S, Birmingham, AL 35294",33.50206,-86.806466
+UAB,The University of Alabama at Birmingham,Blazers,#054338,#FFFFFF,#040504,#E7BD05,Conference USA,FBS,"1720 2nd Ave S, Birmingham, AL 35294",33.50206,-86.806466,https://sports.cbsimg.net/images/collegefootball/logos/70x70/UAB.png
 UC Davis,University of California: Davis,Aggies,#183563,#CB992B,#FFFFFF,#CCCCCD,Big Sky,FCS,,,
-UCF,University of Central Florida,Knights,#231F20,#B4985A,#FFFFFF,,American Athletic,FBS,"4000 Central Florida Blvd, Orlando, FL 32816",28.602305,-81.200168
-UCLA,University of California: Los Angeles,Bruins,#005C8E,#FFB325,#000000,#FFFFFF,Pac-12,FBS,"405 Hilgard Ave, Los Angeles, CA, 90095-1405",34.0709334,-118.4421229
+UCF,University of Central Florida,Knights,#231F20,#B4985A,#FFFFFF,,American Athletic,FBS,"4000 Central Florida Blvd, Orlando, FL 32816",28.602305,-81.200168,https://sports.cbsimg.net/images/collegefootball/logos/70x70/UCF.png
+UCLA,University of California: Los Angeles,Bruins,#005C8E,#FFB325,#000000,#FFFFFF,Pac-12,FBS,"405 Hilgard Ave, Los Angeles, CA, 90095-1405",34.0709334,-118.4421229,https://sports.cbsimg.net/images/collegefootball/logos/70x70/UCLA.png
 UNC Charlotte,University of North Carolina at Charlotte,49ers,#006940,#9a8648,#FFFFFF,#000000,Conference USA,FBS,"9201 University City Blvd, Charlotte, NC 28223",35.307075,-80.735357
-UNLV,University of Nevada: Las Vegas,Rebels,#231E1F,#D50026,#FFFFFF,,Mountain West,FBS,"4505 S Maryland Pkwy, Las Vegas, NV 89154",36.108542,-115.143045
-USC,University of Southern California,Trojans,#AE2531,#FFAC33,#FFFFFF,,Pac-12,FBS,"University Park, Los Angeles, CA, 90089",34.0133669,-118.1682199
-Utah,University of Utah,Utes,#CD1041,#231F20,#FFFFFF,,Pac-12,FBS,"201 Presidents Circle, Room 203, Salt Lake City, UT, 84112-9008",40.765023,-111.848931
+UNLV,University of Nevada: Las Vegas,Rebels,#231E1F,#D50026,#FFFFFF,,Mountain West,FBS,"4505 S Maryland Pkwy, Las Vegas, NV 89154",36.108542,-115.143045,https://sports.cbsimg.net/images/collegefootball/logos/70x70/UNLV.png
+USC,University of Southern California,Trojans,#AE2531,#FFAC33,#FFFFFF,,Pac-12,FBS,"University Park, Los Angeles, CA, 90089",34.0133669,-118.1682199,https://sports.cbsimg.net/images/collegefootball/logos/70x70/USC.png
+Utah,University of Utah,Utes,#CD1041,#231F20,#FFFFFF,,Pac-12,FBS,"201 Presidents Circle, Room 203, Salt Lake City, UT, 84112-9008",40.765023,-111.848931,https://sports.cbsimg.net/images/collegefootball/logos/70x70/UTAH.png
 Utah State,Utah State University,Aggies,#003263,#FFFFFF,#000000,,Mountain West,FBS,"Old Main Hill, Logan, UT, 84322-1400",41.7408463,-111.8157639
-UTEP,University of Texas-El Paso,Miners,#002843,#F9783B,#FFFFFF,#C2BFBC,Conference USA,FBS,"500 W. University Ave, El Paso, TX, 79968-0691",31.7704338,-106.5043979
-UTSA,University of Texas at San Antonio,Roadrunners,#002A5C,#F47321,#FFFFFF,,Conference USA,FBS,"1 UTSA Circle, San Antonio, TX 78249",29.582886,-98.619666
+UTEP,University of Texas-El Paso,Miners,#002843,#F9783B,#FFFFFF,#C2BFBC,Conference USA,FBS,"500 W. University Ave, El Paso, TX, 79968-0691",31.7704338,-106.5043979,https://sports.cbsimg.net/images/collegefootball/logos/70x70/UTEP.png
+UTSA,University of Texas at San Antonio,Roadrunners,#002A5C,#F47321,#FFFFFF,,Conference USA,FBS,"1 UTSA Circle, San Antonio, TX 78249",29.582886,-98.619666,https://sports.cbsimg.net/images/collegefootball/logos/70x70/TXSA.png
 Valparaiso,Valparaiso University,Crusaders,#794500,#FFD204,#FFFFFF,,Pioneer Football,FCS,,,
 Vanderbilt,Vanderbilt University,Commodores,#000000,#BB8D09,#FFFFFF,,SEC,FBS,"2101 West End Avenue, Nashville, TN, 37240",36.1504349,-86.801199
 Villanova,Villanova University,Wildcats,#123d7C,#FFFFFF,#80FBFF,,Colonial Athletic Association,FCS,,,
 Virginia,University of Virginia,Cavaliers,#00204E,#EA4B0F,#FFFFFF,,ACC,FBS,"PO Box 400224, Charlottesville, VA, 22904",38.0334517,-78.514259
 Virginia Tech,Virginia Polytechnic Institute & State University,Hokies,#74232D,#FBB088,#FFFFFF,,ACC,FBS,"185 Beamer Way, Blacksburg, VA 24060",37.219999,-80.418015
-VMI,Virginia Military Institute,Keydets,#000000,#E52D37,#FFC527,#FFFFFF,Big South,FCS,,,
+VMI,Virginia Military Institute,Keydets,#000000,#E52D37,#FFC527,#FFFFFF,Big South,FCS,,,,https://sports.cbsimg.net/images/collegefootball/logos/70x70/VMI.png
 Wagner,Wagner College,Seahawks,#00483A,#FFFFFF,#BABCBE,,NEC,FCS,,,
 Wake Forest,Wake Forest University,Demon Deacons,#000000,#C49544,#FFFFFF,,ACC,FBS,"1834 Wake Forest Road, Winston Salem, NC, 27106",36.1318798,-80.2803994
 Washington,University of Washington,Huskies,#2B2F64,#E8D4A3,#FFFFFF,,Pac-12,FBS,"1400 NE Campus Parkway, Seattle, WA, 98195-4550",47.6562222,-122.3132446
-Washington State,Washington State University,Cougars,#97002F,#FFFFFF,,,Pac-12,FBS,"French Administration Building, Pullman, WA, 99164-1009",46.7304147,-117.158331
+Washington State,Washington State University,Cougars,#97002F,#FFFFFF,,,Pac-12,FBS,"French Administration Building, Pullman, WA, 99164-1009",46.7304147,-117.158331,https://sports.cbsimg.net/images/collegefootball/logos/70x70/WASHST.png
 Weber State,Weber State University,Wildcats,#29086B,#FFFFFF,,,Big Sky,FCS,,,
 West Virginia,West Virginia University,Mountaineers,#FFC600,#000000,#FFFFFF,,Big 12,FBS,"Stewart Hall, University Avenue, Morgantown, WV, 26506-6201",39.6347691,-79.9545878
 Western Carolina,Western Carolina University,Catamounts,#492F91,#FFFFFF,#CFAB7A,,Southern,FCS,,,
@@ -249,5 +249,5 @@ William & Mary,College of William and Mary,Tribe,#103217,#FDF71C,#FFFFFF,,Coloni
 Wisconsin,University of Wisconsin-Madison,Badgers,#A00000,#000000,#FFFFFF,,Big 10,FBS,"500 Lincoln Dr, Madison, WI, 53706-1380",43.0746351,-89.403633
 Wofford,Wofford College,Terriers,#000000,#FFD700,#FFFFFF,,Southern,FCS,,,
 Wyoming,University of Wyoming,Cowboys,#533B22,#ffc425,#FFFFFF,#000000,Mountain West,FBS,"Corner of Ninth and Ivinson, Laramie, WY, 82071",41.3114964,-105.5856475
-Yale,Yale University,Bulldogs,#004A81,#040404,#FFFFFF,,Ivy League,FCS,,,
+Yale,Yale University,Bulldogs,#004A81,#040404,#FFFFFF,,Ivy League,FCS,,,,https://sports.cbsimg.net/images/collegefootball/logos/70x70/YALE.png
 Youngstown State,Youngstown State University,Penguins,#E51937,#231F20,#FFFFFF,,Missouri Valley,FCS,,,
