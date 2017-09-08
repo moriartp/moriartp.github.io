@@ -21,6 +21,7 @@ body{
 div{
 	/*width:50vw;*/
 	height:11.5vh;
+	width:40vw;
 	margin: 0px;	
 	display: block;
 	overflow:hidden;
@@ -28,11 +29,13 @@ div{
 	border:0.25px solid black;
 	padding-left: 1em;
 	padding-right: 1em;	
+	display:block;
+	float:left;
 }
 
 h1{
 	font-weight: bolder;
-	font-size: 2em;
+	font-size: 1.2em;
 
 
 	margin:0px;
