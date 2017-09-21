@@ -1,0 +1,47 @@
+html {
+  font-family: 'Kanit', sans-serif;
+}
+
+section{
+  width:100vw;
+  height:100vh;
+}
+
+.mySlides{
+  margin:none;
+  padding:none;
+
+}
+
+iframe{
+  width:100vw;
+  height:100vh;
+}
+
+/*#slide01{
+  background-color: gold;
+}
+*/
+#slide02{
+  background-color: coral;
+}
+
+#slide03{
+  background-color: steelblue;
+}
+
+#slide04{
+  background-color: lime;
+}
+
+
+#XRtype{
+  font-family: 'Kanit', sans-serif;
+  font-size: 6vw;
+  font-weight: bolder;
+  color:#000;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 3vh;
+  padding-bottom: 25vh;    
+}
