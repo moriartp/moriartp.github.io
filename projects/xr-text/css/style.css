@@ -12,6 +12,15 @@ section{
   padding:none;
 
 }
+h1{
+  color:white;
+}
+
+video{
+  margin-top: 20vh
+  width: 100vw;
+  height:90vh;
+}
 
 iframe{
   width:100vw;
@@ -23,15 +32,15 @@ iframe{
 }
 */
 #slide02{
-  background-color: coral;
+  background-color: #000;
 }
 
 #slide03{
-  background-color: steelblue;
+  background-color: #000;
 }
 
 #slide04{
-  background-color: lime;
+  background-color: #000;
 }
 
 

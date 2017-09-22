@@ -1,0 +1,134 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+
+      <a-assets>
+        <a-asset-item id="person" src="assets/lego-people.dae"></a-asset-item>
+       <!--  <a-asset-item id="tree2" src="model/tree-toon.dae"></a-asset-item>
+        <a-asset-item id="tree3" src="model/dead-tree.dae"></a-asset-item>
+        <a-asset-item id="tree4" src="model/tree4.dae"></a-asset-item>
+        <a-asset-item id="earth" src="model/earth.dae"></a-asset-item>
+        <a-asset-item id="ship" src="model/fast-ship.dae"></a-asset-item> -->
+      </a-assets>
+
+      <!-- <a-entity collada-model="#person" position="1.284 -1.19 -7" rotation="0 -90 0"></a-entity> -->
+
+      <a-text value="Augmented reality (AR)  is the use of computer technology that simulates artificial objects into the real world. The content is not anchored to the real world in any way, but the user can still interact." 
+        position="-30 1.6 0" 
+        scale="3 3 3" 
+        align="center" 
+        color="#000000"
+        rotation="0 90 0">
+        <a-animation attribute="position"
+               dur="10000"
+               ease-out="10000"
+               fill="forwards"
+               to="0 1.6 0"
+               repeat="indefinite">         
+        </a-animation>
+      </a-text>
+
+      <a-text value="Virtual Reality (VR) is the use of computer technology to create an immersive simulated environment." 
+        position="0 1.6 -30" 
+        scale="3 3 3" 
+        align="center" 
+        color="#000000">
+        <a-animation attribute="position"
+               dur="10000"
+               ease-out="1"
+               fill="forwards"
+               to="0 1.6 0"
+               repeat="indefinite">         
+        </a-animation>
+      </a-text>
+
+      <a-text value="360 degree media, such as videography and photography, are spherical recordings of a real-world scene, where the view in every direction is recorded at the same time. During playback, the viewer has control of the viewing direction and can choose what to pay attention to, and what to ignore." 
+        position="0 1.6 30" 
+        scale="3 3 3" 
+        align="center" 
+        color="#000000"
+        rotation="0 180 0">
+        <a-animation attribute="position"
+               dur="10000"
+               ease-out="10"
+               fill="forwards"
+               to="0 1.6 0"
+               repeat="indefinite">         
+        </a-animation>
+      </a-text>
+
+      <a-text value="Mixed Reality integrates both the real world and virtual world, combining the best attributes of AR and VR into a single immersive experience. The most popular example of MR is the Microsoft Hololens, a device which aims to facilitate a user’s manipulation of digital objects with a gesture of their hand. " 
+        position="30 1.6 0" 
+        scale="3 3 3" 
+        align="left" 
+        color="#000000"
+        rotation="0 -90 0">
+        <a-animation attribute="position"
+               dur="10000"
+               ease-out="1"
+               fill="forwards"
+               to="0 1.6 0"
+               repeat="indefinite">         
+        </a-animation>
+      </a-text>
+
+      <a-entity camera position="0 1.6 0">
+        <a-animation attribute="rotation"
+                dur="40000"
+                to="0 359.99 0"
+                ease-out="5"
+                repeat="indefinite">          
+        </a-animation>
+      </a-entity>
+
+
+
+<!--       <a-text value="Virtual Reality (VR) is the use of computer technology to create an immersive simulated environment." position="0 3.5 -10" scale="3 3 3" align="center" color="#000000">
+        <a-animation attribute="position"
+              delay="20000"
+              dur="10000"
+              ease-in="10000"
+              fill="forwards"
+              to="0 1.5 2"
+              repeat="indefinite">         
+        </a-animation>
+      </a-text>
+
+      <a-text value="The user can interact with this world using their gaze, buttons, or controllers." position="0 3.5 -10" scale="3 3 3" align="center" color="#000000">
+        <a-animation attribute="position"
+              delay="30000"
+              dur="10000"
+              ease-in="10000"
+              fill="forwards"
+              to="0 1.5 2"
+              repeat="indefinite">         
+        </a-animation> -->
+      <!-- </a-text> -->
+
+
+
+
+<!--       <a-entity camera position="0 1.6 0">
+        <a-animation attribute="position"
+                dur="5000"
+                easing="linear"
+                direction="alternate"
+                to="0 1.6 -2.5"
+                repeat="indefinite">          
+        </a-animation>
+      </a-entity> -->
+
+
+
+
+<!--       <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere> -->
+      <!-- <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder> -->
+      <!-- <a-plane position="1.384 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane> -->
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+  </body>
+</html>
