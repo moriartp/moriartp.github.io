@@ -4,15 +4,17 @@ body{
 	margin:0px;
 	font-family: 'Kanit', sans-serif;
 	text-transform: uppercase;
-	font-size: 0.9em;
+	font-size: 0.5em;
 	font-weight: bolder;
 }
 
 
 #title{
+	display: block;
+	width:100vw;
 	margin:0px;
 	font-weight: bolder;
-	font-size: 3em;
+	font-size: 5em;
 	padding-left: 1vw;
 	height:auto;
 	border:none;	
@@ -20,8 +22,8 @@ body{
 
 div{
 	/*width:50vw;*/
-	height:11.5vh;
-	width:40vw;
+	height:3.75vh;
+	width:31vw;
 	margin: 0px;	
 	display: block;
 	overflow:hidden;
@@ -35,7 +37,7 @@ div{
 
 h1{
 	font-weight: bolder;
-	font-size: 1.2em;
+	font-size: 1.55em;
 
 
 	margin:0px;
@@ -99,7 +101,7 @@ div#transformation{
 /*CLASS STYLE*/
 
 .Completed{
-		background-color: lightgray;
+		background-color: white;
 		/*display:none;*/
 		/*display:inline-block;*/
 }
