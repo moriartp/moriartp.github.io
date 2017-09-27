@@ -18,7 +18,7 @@ var data = d3.json("http://api.openweathermap.org/data/2.5/group?id=524901,70344
 		.append('div')
 			.attr('id', function (d) { return d.id; })
 			.style('position','block')
-			.style('background-color', function (d) { return "#0000FF"; })
+			.style('background-color', function (d) { return "#"+d.main.pressure+d.main.humidity; })
 			.style('color','white')
 			.html(function(d) { return d.name+
 				"<br>wind speed: "+d.wind.speed+"mph"+
