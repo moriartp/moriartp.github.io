@@ -12,6 +12,7 @@ var data = d3.json("http://api.openweathermap.org/data/2.5/group?id=524901,70344
 
 	var list = data.list;
 
+
 	var weatherCHIP = d3.select('body')
 		.selectAll('div')
 		.data(list).enter()
@@ -20,10 +21,12 @@ var data = d3.json("http://api.openweathermap.org/data/2.5/group?id=524901,70344
 			.style('position','block')
 			.style('background-color', function (d) { return "#"+d.main.pressure+d.main.humidity; })
 			.style('color','white')
+			.style('height','300px')
 			.html(function(d) { return d.name+
 				"<br>wind speed: "+d.wind.speed+"mph"+
 				"<br>desc: "+d.weather[0].description+
-				"<br>hum: "+d.main.humidity
+				"<br>hum: "+d.main.humidity+
+				"<br><img src='http://openweathermap.org/img/w/"+d.weather[0].icon+".png' height='50px' width>"
 
 
 
