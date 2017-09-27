@@ -1,0 +1,337 @@
+ProcessName,StartTime,Status
+CC-0-Finance-ADP_Garnishment_Disbursement,2017-09-05T12:54:00-07:00,Completed With Errors
+CC-0-Finance-ADP_Garnishment_Disbursement,2017-09-05T13:03:00-07:00,Completed
+CC-0-Finance-ADP_Garnishment_Disbursement,2017-09-05T14:30:00-07:00,Completed With Errors
+CC-0-Finance-ADP_Garnishment_Disbursement,2017-09-05T14:33:00-07:00,Completed
+CC-0-Finance-ADP_Garnishment_Disbursement,2017-09-05T19:33:00-07:00,Completed
+CC-0-Finance-ADP_Garnishment_Disbursement,2017-09-05T19:37:00-07:00,Completed
+CC-0-Finance-ADP_Garnishment_Disbursement,2017-09-05T20:13:00-07:00,Completed
+CC-0-Finance-ADP_Garnishment_Disbursement,2017-09-05T20:23:00-07:00,Completed With Errors
+CC-0-Finance-ADP_Garnishment_Disbursement,2017-09-05T20:26:00-07:00,Completed With Errors
+CC-0-Finance-ADP_Garnishment_Disbursement,2017-09-05T20:27:00-07:00,Completed
+CC-0-Finance-ADP_Garnishment_Disbursement,2017-09-05T20:34:00-07:00,Completed
+CC-0-Finance-ADP_Garnishment_Disbursement,2017-09-05T20:39:00-07:00,Completed
+CC-0-Finance-ADP_Garnishment_Disbursement,2017-09-05T20:49:00-07:00,Completed
+CC-0-Finance-ADP_Garnishment_Disbursement,2017-09-05T22:22:00-07:00,Completed
+CC-0-Finance-ADP_Garnishment_Disbursement,2017-09-05T22:30:00-07:00,Completed
+CC-0-Finance-ADP_Garnishment_Disbursement,2017-09-05T22:37:00-07:00,Completed
+CC-I-Finance-BankOfAmericaStatements_BAI2,2017-09-04T05:00:00-07:00,Completed
+CC-I-Finance-BankOfAmericaStatements_BAI2,2017-09-05T05:00:00-07:00,Completed with Warnings
+CC-I-Finance-BankOfAmericaStatements_BAI2,2017-09-06T05:00:00-07:00,Completed
+CC-I-HCM-Photos,2017-09-04T19:45:00-07:00,Completed
+CC-I-HCM-Photos,2017-09-05T19:45:00-07:00,Completed
+CC-O-Benefits-UnitedHealthcare,2017-09-04T00:15:00-07:00,Completed
+CC-O-Benefits-UnitedHealthcare-Vision,2017-09-04T05:00:00-07:00,Completed
+CC-O-Finance-ACH-PPD,2017-09-05T11:32:00-07:00,Completed
+CC-O-Finance-ACH-PPD,2017-09-06T11:04:00-07:00,Completed
+CC-O-Finance-PaymodeX-Extract,2017-09-05T11:32:00-07:00,Completed
+CC-O-Finance-PaymodeX-Extract,2017-09-05T11:32:00-07:00,Completed
+CC-O-Finance-PaymodeX-Extract,2017-09-05T11:32:00-07:00,Completed
+CC-O-Finance-PaymodeX-Extract,2017-09-06T11:04:00-07:00,Completed
+CC-O-Finance-PaymodeX-Extract,2017-09-06T11:04:00-07:00,Completed
+CC-O-Finance-PaymodeX-Extract,2017-09-06T09:07:00-07:00,Completed
+CC-O-Finance-PaymodeX-Extract,2017-09-06T11:04:00-07:00,Completed
+CC-O-Finance-PaymodeX-Transport,2017-09-05T11:33:00-07:00,Completed
+CC-O-Finance-PaymodeX-Transport,2017-09-05T11:33:00-07:00,Completed
+CC-O-Finance-PaymodeX-Transport,2017-09-05T11:33:00-07:00,Completed
+CC-O-Finance-PaymodeX-Transport,2017-09-06T09:07:00-07:00,Completed
+CC-O-Finance-PaymodeX-Transport,2017-09-06T11:04:00-07:00,Completed
+CC-O-Finance-PaymodeX-Transport,2017-09-06T11:04:00-07:00,Completed
+CC-O-Finance-PaymodeX-Transport,2017-09-06T11:04:00-07:00,Completed
+CC-O-Payroll-ADP-Tax-Filing-Periodic,2017-09-06T06:45:00-07:00,Completed
+CC-O-Payroll-ADP-WagePayments,2017-09-06T06:13:00-07:00,Completed with Warnings
+Daily Digest,2017-09-04T21:00:00-07:00,Completed
+Daily Digest,2017-09-05T21:00:00-07:00,Completed
+EIB_Import_Accounting_Journal,2017-09-06T09:04:00-07:00,Completed With Errors
+EIB_Import_Accounting_Journal,2017-09-06T09:07:00-07:00,Completed With Errors
+EIB_Import_Accounting_Journal,2017-09-06T09:08:00-07:00,Completed
+EIB_Import_Accounting_Journal,2017-09-06T09:09:00-07:00,Completed
+EIB_Student_Supplier_Invoice,2017-09-05T12:36:00-07:00,Completed With Errors
+EIB_Student_Supplier_Invoice,2017-09-06T08:46:00-07:00,Completed
+EIB_Student_Supplier_Invoice,2017-09-06T08:48:00-07:00,Completed
+EIB_Student_Suppliers,2017-09-05T12:24:00-07:00,Completed With Errors
+EIB_Student_Suppliers,2017-09-05T12:24:00-07:00,Completed With Errors
+EIB_Student_Suppliers,2017-09-05T12:26:00-07:00,Completed
+EIB_Student_Suppliers,2017-09-06T06:53:00-07:00,Completed With Errors
+EIB_Student_Suppliers,2017-09-06T06:56:00-07:00,Completed
+EIB_Student_Suppliers,2017-09-06T06:57:00-07:00,Completed
+EIB - All Positions for Provisioning,2017-09-04T22:30:00-07:00,Completed
+EIB - All Positions for Provisioning,2017-09-05T22:30:00-07:00,Completed
+EIB - All Supervisory and Superior Organizations,2017-09-04T22:30:00-07:00,Completed
+EIB - All Supervisory and Superior Organizations,2017-09-05T22:30:00-07:00,Completed
+EIB - Course Subject Academic Units,2017-09-04T22:30:00-07:00,Completed
+EIB - Course Subject Academic Units,2017-09-05T22:30:00-07:00,Completed
+EIB - Current Academic Appointments,2017-09-04T22:30:00-07:00,Completed
+EIB - Current Academic Appointments,2017-09-05T22:30:00-07:00,Completed
+EIB - Manage Period Activity Assignments - Attachment,2017-09-05T13:39:00-07:00,Completed
+EIB - Manage Period Activity Assignments - Attachment,2017-09-05T13:40:00-07:00,Completed
+EIB - Manage Period Activity Assignments - Attachment,2017-09-06T05:48:00-07:00,Completed With Errors
+EIB - Manage Period Activity Assignments - Attachment,2017-09-06T05:51:00-07:00,Completed
+EIB - Manage Period Activity Assignments - Attachment,2017-09-06T05:53:00-07:00,Completed
+EIB-O-Active Union Members,2017-09-04T01:30:00-07:00,Completed
+EIB-O-Active Union Members,2017-09-05T01:30:00-07:00,Completed
+EIB-O-Active Union Members,2017-09-06T01:30:00-07:00,Completed
+EIB-O-Cancelled-Course-Assignments,2017-09-04T01:30:00-07:00,Completed
+EIB-O-Cancelled-Course-Assignments,2017-09-05T01:30:00-07:00,Completed
+EIB-O-Cancelled-Course-Assignments,2017-09-06T01:30:00-07:00,Completed
+EIB-O-Finance_INT055_Acad_Lev_of_Study,2017-09-04T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_Acad_Lev_of_Study,2017-09-05T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_Academic_Terms,2017-09-04T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_Academic_Terms,2017-09-05T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_Bank_Accounts,2017-09-04T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_Bank_Accounts,2017-09-05T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_Bonds,2017-09-04T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_Bonds,2017-09-05T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_Cost_Center_Hierarc,2017-09-04T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_Cost_Center_Hierarc,2017-09-05T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_Cost_Centers,2017-09-04T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_Cost_Centers,2017-09-05T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_Fund_Hierarc,2017-09-04T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_Fund_Hierarc,2017-09-05T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_ Funds,2017-09-04T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_ Funds,2017-09-05T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_Gift_Hierarc,2017-09-04T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_Gift_Hierarc,2017-09-05T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_Gifts,2017-09-04T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_Gifts,2017-09-05T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_Grant_Hierarc,2017-09-04T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_Grant_Hierarc,2017-09-05T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_Grants,2017-09-04T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_Grants,2017-09-05T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_Ledger_Accounts,2017-09-04T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_Ledger_Accounts,2017-09-05T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_Ledger_Acct_Summar,2017-09-04T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_Ledger_Acct_Summar,2017-09-05T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_Program_Hierarc,2017-09-04T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_Program_Hierarc,2017-09-05T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_Programs,2017-09-04T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_Programs,2017-09-05T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_Project_Hierarc,2017-09-04T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_Project_Hierarc,2017-09-05T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_Projects,2017-09-04T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_Projects,2017-09-05T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_Rev_Categry_Hierar,2017-09-04T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_Rev_Categry_Hierar,2017-09-05T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_Revenue_Categories,2017-09-04T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_Revenue_Categories,2017-09-05T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_Spend_Categories,2017-09-04T18:00:00-07:00,Completed
+EIB-O-Finance_INT055_Spend_Categories,2017-09-05T18:00:00-07:00,Completed
+EIB-O-Finance_INT055WD_Stud_AR_Detl_Code,2017-09-04T18:00:00-07:00,Completed
+EIB-O-Finance_INT055WD_Stud_AR_Detl_Code,2017-09-05T18:00:00-07:00,Completed
+EIB-O-Finance_NT055_Spend_Categry_Hier,2017-09-04T18:00:00-07:00,Completed
+EIB-O-Finance_NT055_Spend_Categry_Hier,2017-09-05T18:00:00-07:00,Completed
+EIB-O-Finance-Student_Suppliers,2017-09-04T19:00:00-07:00,Completed
+EIB-O-Finance-Student_Suppliers,2017-09-05T19:00:00-07:00,Completed
+EIB-O-PartTimeFaculty-2TermsAhead,2017-09-04T21:00:00-07:00,Completed
+EIB-O-PartTimeFaculty-2TermsAhead,2017-09-05T21:00:00-07:00,Completed
+EIB-O-PartTimeFaculty-3TermsAhead,2017-09-04T21:00:00-07:00,Completed
+EIB-O-PartTimeFaculty-3TermsAhead,2017-09-05T21:00:00-07:00,Completed
+EIB-O-PartTimeFaculty-CurrentTerm,2017-09-04T21:00:00-07:00,Completed
+EIB-O-PartTimeFaculty-CurrentTerm,2017-09-05T21:00:00-07:00,Completed
+EIB-O-PartTimeFaculty-NextTerm,2017-09-04T21:00:00-07:00,Completed
+EIB-O-PartTimeFaculty-NextTerm,2017-09-05T21:00:00-07:00,Completed
+EIB-O-PartTimeFaculty-PriorTerm,2017-09-04T21:00:00-07:00,Completed
+EIB-O-PartTimeFaculty-PriorTerm,2017-09-05T21:00:00-07:00,Completed
+EIB-O-Period-Activity-Pay-Assignments,2017-09-04T21:00:00-07:00,Completed
+EIB-O-Period-Activity-Pay-Assignments,2017-09-05T21:00:00-07:00,Completed
+EIB-O-Period Activity Rates Assignments,2017-09-04T21:00:00-07:00,Completed
+EIB-O-Period Activity Rates Assignments,2017-09-05T21:00:00-07:00,Completed
+EIB-O-Period Activity Tasks,2017-09-04T01:30:00-07:00,Completed
+EIB-O-Period Activity Tasks,2017-09-05T01:30:00-07:00,Completed
+EIB-O-Period Activity Tasks,2017-09-06T01:30:00-07:00,Completed
+EIB-O-UAW and Jazz Contractual Detail,2017-09-04T01:30:00-07:00,Completed
+EIB-O-UAW and Jazz Contractual Detail,2017-09-05T01:30:00-07:00,Completed
+EIB-O-UAW and Jazz Contractual Detail,2017-09-06T01:30:00-07:00,Completed
+EIB - Person Classification Report,2017-09-04T22:30:00-07:00,Completed
+EIB - Person Classification Report,2017-09-05T22:30:00-07:00,Completed
+EIB - Person Classification Report - Future Hires,2017-09-04T22:30:00-07:00,Completed
+EIB - Person Classification Report - Future Hires,2017-09-05T22:30:00-07:00,Completed
+Import BAI2 Bank Statement Post-Processor,2017-09-04T05:02:00-07:00,Completed
+Import BAI2 Bank Statement Post-Processor,2017-09-06T05:00:00-07:00,Completed
+Pay Input- EIB,2017-09-06T11:14:00-07:00,Completed With Errors
+Pay Input- EIB,2017-09-06T12:08:00-07:00,Completed With Errors
+Print Service Retrieve Report And Generate PDF,2017-09-04T19:44:00-07:00,Completed
+Solution Publish,2017-09-05T23:36:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-04T04:56:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-04T05:26:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-04T05:56:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-04T06:26:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-04T06:56:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-04T07:26:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-04T07:56:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-04T08:26:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-04T08:56:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-04T09:26:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-04T09:56:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-04T10:26:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-04T10:56:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-04T11:26:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-04T11:56:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-04T12:26:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-04T12:56:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-04T13:26:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-04T13:56:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-04T14:26:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-04T14:56:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-04T15:26:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-05T04:56:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-05T05:26:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-05T05:56:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-05T06:26:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-05T06:56:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-05T07:26:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-05T07:56:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-05T08:26:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-05T08:56:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-05T09:26:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-05T09:56:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-05T10:26:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-05T10:56:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-05T11:26:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-05T11:56:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-05T12:26:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-05T12:56:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-05T13:26:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-05T13:56:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-05T14:26:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-05T14:56:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-05T15:26:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-06T04:56:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-06T05:26:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-06T05:56:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-06T06:26:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-06T06:56:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-06T07:26:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-06T07:56:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-06T08:26:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-06T08:56:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-06T09:26:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-06T09:56:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-06T10:26:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-06T10:56:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-06T11:26:00-07:00,Completed
+STD-I-Contingent-Worker-Update-IDs,2017-09-06T11:56:00-07:00,Completed
+STD-I-PreHire-Get-IDs,2017-09-05T06:12:00-07:00,Completed
+STD-I-PreHire-Get-IDs,2017-09-05T06:29:00-07:00,Completed
+STD-I-PreHire-Get-IDs,2017-09-05T06:38:00-07:00,Completed
+STD-I-PreHire-Get-IDs,2017-09-05T06:40:00-07:00,Completed
+STD-I-PreHire-Get-IDs,2017-09-05T06:54:00-07:00,Completed
+STD-I-PreHire-Get-IDs,2017-09-05T07:20:00-07:00,Completed
+STD-I-PreHire-Get-IDs,2017-09-05T08:17:00-07:00,Completed
+STD-I-PreHire-Get-IDs,2017-09-05T08:48:00-07:00,Completed
+STD-I-PreHire-Get-IDs,2017-09-05T09:00:00-07:00,Completed
+STD-I-PreHire-Get-IDs,2017-09-05T09:08:00-07:00,Completed
+STD-I-PreHire-Get-IDs,2017-09-05T09:32:00-07:00,Completed
+STD-I-PreHire-Get-IDs,2017-09-05T09:34:00-07:00,Completed
+STD-I-PreHire-Get-IDs,2017-09-05T09:36:00-07:00,Completed
+STD-I-PreHire-Get-IDs,2017-09-05T10:06:00-07:00,Completed
+STD-I-PreHire-Get-IDs,2017-09-05T10:22:00-07:00,Completed
+STD-I-PreHire-Get-IDs,2017-09-05T11:15:00-07:00,Completed
+STD-I-PreHire-Get-IDs,2017-09-05T12:05:00-07:00,Completed
+STD-I-PreHire-Get-IDs,2017-09-05T12:16:00-07:00,Completed
+STD-I-PreHire-Get-IDs,2017-09-05T13:20:00-07:00,Completed
+STD-I-PreHire-Get-IDs,2017-09-05T13:25:00-07:00,Completed
+STD-I-PreHire-Get-IDs,2017-09-05T13:50:00-07:00,Completed
+STD-I-PreHire-Get-IDs,2017-09-06T07:53:00-07:00,Completed
+STD-I-PreHire-Get-IDs,2017-09-06T07:56:00-07:00,Completed
+STD-I-PreHire-Get-IDs,2017-09-06T08:46:00-07:00,Completed
+STD-I-PreHire-Get-IDs,2017-09-06T08:54:00-07:00,Completed
+STD-I-PreHire-Get-IDs,2017-09-06T08:57:00-07:00,Completed
+STD-I-PreHire-Get-IDs,2017-09-06T09:02:00-07:00,Completed
+STD-I-PreHire-Get-IDs,2017-09-06T09:23:00-07:00,Completed
+STD-I-PreHire-Get-IDs,2017-09-06T09:42:00-07:00,Completed
+STD-I-PreHire-Get-IDs,2017-09-06T10:43:00-07:00,Completed
+STD-I-PreHire-Get-IDs,2017-09-06T10:53:00-07:00,Completed
+STD-I-PreHire-Get-IDs,2017-09-06T11:56:00-07:00,Completed
+STD-I-PreHire-Get-IDs,2017-09-06T12:00:00-07:00,Completed
+STD-I-PTF-Inactivate-PeriodActivityTasks,2017-09-04T00:00:00-07:00,Completed
+STD-I-PTF-Inactivate-PeriodActivityTasks,2017-09-04T00:00:00-07:00,Completed With Errors
+STD-I-PTF-Inactivate-PeriodActivityTasks,2017-09-04T00:00:00-07:00,Completed
+STD-I-PTF-Inactivate-PeriodActivityTasks,2017-09-04T00:00:00-07:00,Completed
+STD-I-PTF-Inactivate-PeriodActivityTasks,2017-09-04T00:00:00-07:00,Completed
+STD-I-PTF-Inactivate-PeriodActivityTasks,2017-09-05T00:00:00-07:00,Completed
+STD-I-PTF-Inactivate-PeriodActivityTasks,2017-09-05T00:00:00-07:00,Completed With Errors
+STD-I-PTF-Inactivate-PeriodActivityTasks,2017-09-05T00:00:00-07:00,Completed
+STD-I-PTF-Inactivate-PeriodActivityTasks,2017-09-05T00:00:00-07:00,Completed
+STD-I-PTF-Inactivate-PeriodActivityTasks,2017-09-05T00:00:00-07:00,Completed
+STD-I-PTF-Inactivate-PeriodActivityTasks,2017-09-06T00:00:00-07:00,Completed
+STD-I-PTF-Inactivate-PeriodActivityTasks,2017-09-06T00:00:00-07:00,Completed With Errors
+STD-I-PTF-Inactivate-PeriodActivityTasks,2017-09-06T00:00:00-07:00,Completed
+STD-I-PTF-Inactivate-PeriodActivityTasks,2017-09-06T00:00:00-07:00,Completed
+STD-I-PTF-Inactivate-PeriodActivityTasks,2017-09-06T00:00:00-07:00,Completed
+STD-I-PTF-UpdateCreate-PeriodActivityTasks,2017-09-04T00:15:00-07:00,Completed With Errors
+STD-I-PTF-UpdateCreate-PeriodActivityTasks,2017-09-04T00:15:00-07:00,Completed With Errors
+STD-I-PTF-UpdateCreate-PeriodActivityTasks,2017-09-04T00:15:00-07:00,Completed With Errors
+STD-I-PTF-UpdateCreate-PeriodActivityTasks,2017-09-04T00:15:00-07:00,Completed With Errors
+STD-I-PTF-UpdateCreate-PeriodActivityTasks,2017-09-04T00:15:00-07:00,Completed With Errors
+STD-I-PTF-UpdateCreate-PeriodActivityTasks,2017-09-05T00:15:00-07:00,Completed With Errors
+STD-I-PTF-UpdateCreate-PeriodActivityTasks,2017-09-05T00:15:00-07:00,Completed With Errors
+STD-I-PTF-UpdateCreate-PeriodActivityTasks,2017-09-05T00:15:00-07:00,Completed With Errors
+STD-I-PTF-UpdateCreate-PeriodActivityTasks,2017-09-05T00:15:00-07:00,Completed With Errors
+STD-I-PTF-UpdateCreate-PeriodActivityTasks,2017-09-05T00:15:00-07:00,Completed With Errors
+STD-I-PTF-UpdateCreate-PeriodActivityTasks,2017-09-06T00:15:00-07:00,Completed With Errors
+STD-I-PTF-UpdateCreate-PeriodActivityTasks,2017-09-06T00:15:00-07:00,Completed With Errors
+STD-I-PTF-UpdateCreate-PeriodActivityTasks,2017-09-06T00:15:00-07:00,Completed With Errors
+STD-I-PTF-UpdateCreate-PeriodActivityTasks,2017-09-06T00:15:00-07:00,Completed With Errors
+STD-I-PTF-UpdateCreate-PeriodActivityTasks,2017-09-06T00:15:00-07:00,Completed With Errors
+STD-I-Worker-Update-IDs,2017-09-04T04:56:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-04T05:26:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-04T05:56:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-04T06:26:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-04T06:56:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-04T07:26:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-04T07:56:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-04T08:26:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-04T08:56:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-04T09:26:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-04T09:56:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-04T10:26:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-04T10:56:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-04T11:26:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-04T11:56:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-04T12:26:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-04T12:56:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-04T13:26:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-04T13:56:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-04T14:26:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-04T14:56:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-04T15:26:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-05T04:56:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-05T05:26:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-05T05:56:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-05T06:26:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-05T06:56:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-05T07:26:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-05T07:56:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-05T08:26:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-05T08:56:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-05T09:26:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-05T09:56:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-05T10:26:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-05T10:56:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-05T11:26:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-05T11:56:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-05T12:26:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-05T12:56:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-05T13:26:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-05T13:56:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-05T14:26:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-05T14:56:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-05T15:26:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-06T04:56:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-06T05:26:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-06T05:56:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-06T06:26:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-06T06:56:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-06T07:26:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-06T07:56:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-06T08:26:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-06T08:56:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-06T09:26:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-06T09:56:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-06T10:26:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-06T10:56:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-06T11:26:00-07:00,Completed
+STD-I-Worker-Update-IDs,2017-09-06T11:56:00-07:00,Completed
+Update Local Tax EIB,2017-09-05T06:49:00-07:00,Completed
+Update Local Tax EIB,2017-09-05T06:53:00-07:00,Completed

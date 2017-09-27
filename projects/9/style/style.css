@@ -1,0 +1,143 @@
+
+
+body{
+	margin:0px;
+	font-family: 'Kanit', sans-serif;
+	text-transform: uppercase;
+	font-size: 0.5em;
+	font-weight: bolder;
+}
+
+
+#title{
+	display: block;
+	width:100vw;
+	margin:0px;
+	font-weight: bolder;
+	font-size: 5em;
+	padding-left: 1vw;
+	height:auto;
+	border:none;	
+}
+
+div{
+	/*width:50vw;*/
+	height:6vh;
+	width:18vw;
+	margin: 0px;	
+	display: block;
+	overflow:hidden;
+	margin:0.25vw;
+	border:0.25px solid black;
+	padding-left: 1em;
+	padding-right: 1em;	
+	display:block;
+	float:left;
+}
+
+h1{
+	font-weight: bolder;
+	font-size: 1.55em;
+
+
+	margin:0px;
+}
+
+/*/*ID STYLE*/
+
+/*div#dataLoad{
+	width:100vw;
+	height:12.5vh;
+	background-color: #8dd3c7;
+}
+
+div#documentDelivery{
+	width:100vw;
+	height:12.5vh;
+	background-color: #ffffb3;
+}
+
+div#importErrorAggregation{
+	width:100vw;
+	height:12.5vh;
+	background-color: #efefef;
+}
+
+div#documentRetrieval{
+	width:100vw;
+	height:12.5vh;
+	background-color: #bebada;
+}
+
+
+div#printServiceRetrieveReportAndParmsAndGeneratePDF{
+	width:100vw;
+	height:12.5vh;
+	background-color: #fb8072;
+}
+
+div#retrieval{
+	width:100vw;
+	height:12.5vh;
+	background-color: #80b1d3;
+}
+
+div#scheduleLargeReports{
+	width:100vw;
+	height:12.5vh;
+	background-color: #fdb462;
+}
+
+div#transformation{
+	width:100vw;
+	height:12.5vh;
+	background-color: #b3de69;
+}*/
+
+
+
+
+
+/*CLASS STYLE*/
+
+.Completed{
+		background-color: white;
+		/*display:none;*/
+		/*display:inline-block;*/
+}
+
+div.Warnings{
+		background-color: gold;
+		/*display:inline-block;*/
+	    -moz-transition:all 2s ease-in-out;
+	    -webkit-transition:all 2s ease-in-out;
+	    -o-transition:all 2s ease-in-out;
+	    -ms-transition:all 2s ease-in-out;
+	    transition:all 2s ease-in-out; 
+	    -moz-animation:blink normal 2s infinite ease-in-out; /* Firefox */
+	    -webkit-animation:blink normal 2s infinite ease-in-out; /* Webkit */
+	    -ms-animation:blink normal 2s infinite ease-in-out; /* IE */
+	    animation:blink normal 2s infinite ease-in-out; /* Opera */
+
+}
+
+div.Errors{
+		background-color: coral;
+		/*display:block;*/
+
+	    -moz-transition:all 2s ease-in-out;
+	    -webkit-transition:all 2s ease-in-out;
+	    -o-transition:all 2s ease-in-out;
+	    -ms-transition:all 2s ease-in-out;
+	    transition:all 2s ease-in-out; 
+	    -moz-animation:blink normal 2s infinite ease-in-out; /* Firefox */
+	    -webkit-animation:blink normal 2s infinite ease-in-out; /* Webkit */
+	    -ms-animation:blink normal 2s infinite ease-in-out; /* IE */
+	    animation:blink normal 2s infinite ease-in-out; /* Opera */
+
+}
+
+@-moz-keyframes blink {0%{opacity:1;} 50%{opacity:0.75;} 100%{opacity:1;}} /* Firefox */
+@-webkit-keyframes blink {0%{opacity:1;} 50%{opacity:0.75;} 100%{opacity:1;}} /* Webkit */
+@-ms-keyframes blink {0%{opacity:1;} 50%{opacity:0.75;} 100%{opacity:1;}} /* IE */
+@keyframes blink {0%{opacity:1;} 50%{opacity:0.75;} 100%{opacity:1;}} /* Opera */
