@@ -16,7 +16,7 @@
 
       <a-assets>
         <a-asset-item id="field" src="model/field4/model.dae"></a-asset-item>
-        <a-asset-item id="player1" src="model/player/model.dae"></a-asset-item>
+<!--         <a-asset-item id="player1" src="model/player/model.dae"></a-asset-item>
         <a-asset-item id="player2" src="model/player/model.dae"></a-asset-item>
         <a-asset-item id="player3" src="model/player/model.dae"></a-asset-item>
         <a-asset-item id="player4" src="model/player/model.dae"></a-asset-item>
@@ -25,14 +25,17 @@
         <a-asset-item id="player7" src="model/player/model.dae"></a-asset-item>
         <a-asset-item id="player8" src="model/player/model.dae"></a-asset-item>
         <a-asset-item id="player9" src="model/player/model.dae"></a-asset-item>
-        <a-asset-item id="player0" src="model/player/model.dae"></a-asset-item>
+        <a-asset-item id="player0" src="model/player/model.dae"></a-asset-item> -->
 
 
       </a-assets>
 
-      <a-entity collada-model="#field" position="-30 0 70" rotation="0 0 0"></a-entity>
+      <a-entity collada-model="#field" position="-30 -0.667 70" rotation="0 0 0"></a-entity>
 
-      <a-entity collada-model="#player0" position="0 0 -2" rotation="0 180 0" scale="1.25 0.75 1"></a-entity>
+      <a-cylinder radius="0.25" height="3" position="0 0 -2" displacement-bias="0"></a-cylinder>
+      <a-box height="1.6" position="0 0 -2"></a-box>
+
+<!--       <a-entity collada-model="#player0" position="0 0 -2" rotation="0 180 0" scale="1.25 0.75 1"></a-entity>
       <a-entity collada-model="#player1" position="-1 0 -2" rotation="0 180 0" scale="1.25 0.75 1"></a-entity>
       <a-entity collada-model="#player2" position="1 0 -2" rotation="0 180 0" scale="1.25 0.75 1"></a-entity>
       <a-entity collada-model="#player3" position="-2 0 -2" rotation="0 180 0" scale="1.25 0.75 1"></a-entity>            
@@ -41,11 +44,11 @@
       <a-entity collada-model="#player6" position="-10 0 -2" rotation="0 180 0" scale="0.75 1 1"></a-entity>
       <a-entity collada-model="#player7" position="10 0 -2" rotation="0 180 0" scale="0.75 1 1"></a-entity>
       <a-entity collada-model="#player8" position="0 0 2" rotation="0 180 0" scale="1 0.75 1"></a-entity>
-      <a-entity collada-model="#player9" position="0 0 4" rotation="0 180 0" scale="1 0.75 1">></a-entity>
+      <a-entity collada-model="#player9" position="0 0 4" rotation="0 180 0" scale="1 0.75 1">></a-entity> -->
 
 
 
-      <a-plane position="0 -1 0" rotation="-90 0 0" width="2000" height="2000" color="#004400"></a-plane>
+      <a-plane position="0 0 0" rotation="-90 0 0" width="2000" height="2000" color="#004400"></a-plane>
       <a-sky color="#ADD8E6"></a-sky>
     </a-scene>
   </body>
