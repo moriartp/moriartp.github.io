@@ -19,7 +19,7 @@ var data = d3.json("http://api.openweathermap.org/data/2.5/group?id=5128581,4335
 		.append('div')
 			.attr('id', function (d) { return d.id; })
 			.style('position','block')
-			.style('background-color', function (d) { return "#"+d.main.pressure+d.main.humidity; })
+			.style('background-color', function (d) { return "#000"; })
 			.style('color','white')
 			.style('height','130px')
 			.style('width','22vw')
@@ -33,20 +33,29 @@ var data = d3.json("http://api.openweathermap.org/data/2.5/group?id=5128581,4335
 
 
 				; });
-	
-
-
-
-
-
-
-
-
-
-
 });
 
 //GOOGLE SHEET///
-// var data = d3.json("https://spreadsheets.google.com/feeds/list/1qD7mNvmee6r4lSvqyVQvJI4ffoHWGTS6q5LbzcJsDTk/1/public/basic?alt=json", function(data) { 
-//     console.log(data);
-// });
+var JSONURL = 'https://spreadsheets.google.com/feeds/list/1DER_OEs6gIjQ4BY5EXztIl8mqWe99fqn_DopvDPrZLc/1/public/basic?alt=json';
+
+function callback(data){
+    
+    var cells = data.feed.entry;
+    // console.log(data);
+    console.log(cells);
+    
+    var raw = document.createElement('p');
+    raw.innerText = JSON.stringify(cells);
+    document.body.appendChild(raw);
+}
+
+$(document).ready(function(){
+    
+    $.ajax({
+        url:JSONURL,
+        success: function(data){
+            callback(data);
+        }
+    });
+
+});
