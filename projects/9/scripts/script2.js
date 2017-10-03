@@ -1,6 +1,35 @@
-// var data = d3.json("https://projects.newschool.edu/psa/api.do?function=query&table=db_task&project_id=593&token=fa71d5fc-1b40-4512-9eb6-a7b0f8ec828e&data-format=json", function(data) { 
-//     console.log(data);
-// });
+var data = d3.json("https://projects.newschool.edu/psa/api.do?function=query&table=db_task&project_id=593&token=fa71d5fc-1b40-4512-9eb6-a7b0f8ec828e&data-format=json", function(data) { 
+    console.log(data.rows);
+
+    var RA = data.rows;
+
+
+     var projectCHIP = d3.select('#shit')
+         .selectAll('div')
+         .data(RA).enter()
+         .append('div')
+             .style('position','block')
+             .style('color','white')
+             .style('height','130px')
+             .style('width','100vw')
+             .style('font-size','1.5em')
+             .attr('id', function(d) { return d[4].n; })
+             .attr('class', function(d) { return d[4].n + " " + d[108].v; })
+             .html(function(d) { return d[110].v+
+                 "<br>Summary: "+d[11].v+
+                 "<br>Percent Complete: "+d[30].v+"%"+
+                 "<br>Planned Finish: "+d[19].v+
+                 "<br>Sched Status: "+d[108].v
+                ; })
+         .append('p')
+         .append('div')
+            .attr('display','block')    
+            .attr('float','none')    
+         .append('div')
+            .style('width',function(d) { return  d[30].v+"vw"; })
+            .style('height','10px')
+            .style('background-color','black')  
+});
 
 
 // //WEATHER API
@@ -58,55 +87,52 @@
 
 
 //ANOTHER GOOGLE SHEET
-var JSONURL = 'https://spreadsheets.google.com/feeds/list/1DER_OEs6gIjQ4BY5EXztIl8mqWe99fqn_DopvDPrZLc/1/public/basic?alt=json';
+// var JSONURL = 'https://spreadsheets.google.com/feeds/list/1DER_OEs6gIjQ4BY5EXztIl8mqWe99fqn_DopvDPrZLc/1/public/basic?alt=json';
 
-function callback(data){
-    var rows = [];
-    var cells = data.feed.entry;
+// function callback(data){
+//     var rows = [];
+//     var cells = data.feed.entry;
     
-    for (var i = 0; i < cells.length; i++){
-        var rowObj = {};
-        rowObj.name = cells[i].title.$t;
-        var rowCols = cells[i].content.$t.split(',');
-        for (var j = 0; j < rowCols.length; j++){
-            var keyVal = rowCols[j].split(':');
-            rowObj[keyVal[0].trim()] = keyVal[1].trim();
-        }
-        rows.push(rowObj);
-    }
+//     for (var i = 0; i < cells.length; i++){
+//         var rowObj = {};
+//         rowObj.name = cells[i].title.$t;
+//         var rowCols = cells[i].content.$t.split(',');
+//         for (var j = 0; j < rowCols.length; j++){
+//             var keyVal = rowCols[j].split(':');
+//             rowObj[keyVal[0].trim()] = keyVal[1].trim();
+//         }
+//         rows.push(rowObj);
+//     }
     
-    // var raw = document.createElement('p');
-    // raw.innerText = JSON.stringify(rows);
-    // document.body.appendChild(raw);
-    // console.log(rows);
+//     // var raw = document.createElement('p');
+//     // raw.innerText = JSON.stringify(rows);
+//     // document.body.appendChild(raw);
+//     // console.log(rows);
 
-    var data2 = rows;
-    console.log(data2);
-	var personCHIP = d3.select('#shit')
-			.selectAll('div')
-			.data(data2).enter()
-			.append('div')
-				.attr('id', function (d) { return d.name; })
-				.attr('class', 'person')				
-				.style('background-color', function (d) { return d.favcolor; })
-				.style('color','coral')
-				.attr('display','block')
+//     var data2 = rows;
+//     console.log(data2);
+// 	var personCHIP = d3.select('#shit')
+// 			.selectAll('div')
+// 			.data(data2).enter()
+// 			.append('div')
+// 				.attr('id', function (d) { return d.name; })
+// 				.attr('class', 'person')				
+// 				.style('background-color', function (d) { return d.favcolor; })
+// 				.style('color','coral')
+// 				.attr('display','block')
 
-			.html(function(d) { return d.name+
-				"<br>sex: "+d.sex
-				; });
+// 			.html(function(d) { return d.name+
+// 				"<br>sex: "+d.sex
+// 				; });
+// }
 
-
-
-}
-
-$(document).ready(function(){
+// $(document).ready(function(){
     
-    $.ajax({
-        url:JSONURL,
-        success: function(data){
-            callback(data);
-        }
-    });
+//     $.ajax({
+//         url:JSONURL,
+//         success: function(data){
+//             callback(data);
+//         }
+//     });
 
-});
+// });
