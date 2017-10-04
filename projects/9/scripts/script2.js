@@ -42,7 +42,7 @@ var dataP = d3.json("https://projects.newschool.edu/psa/api.do?function=query&ta
     console.log(dataP);
 
     var RAP = dataP.rows;
-
+    let myObt = [];
 
      var projectCHIP = d3.select('#header')
          .selectAll('div')
@@ -55,7 +55,17 @@ var dataP = d3.json("https://projects.newschool.edu/psa/api.do?function=query&ta
              .style('font-size','1.5em')
              // .attr('id', function(d) { return d[14].v; })
              .attr('id', function(d) { 
-                if(d.n === '"summary"'){
+                console.log(d);
+                $.each(d, function (i, ob) {
+                    $.each(ob, function (ind, obj) {
+                        // console.log("key:" + ind + " value:" + obj);
+                        if (obj =='summary') {
+                            console.log("key:" + ind + " value:" + obj);
+                        };
+                    });
+                });
+                if(d.n == 'summary'){
+                    console.log('helloWorld');
                     return d.v
                 }
             ; })
