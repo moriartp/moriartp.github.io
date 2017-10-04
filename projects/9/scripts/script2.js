@@ -20,6 +20,12 @@ var data = d3.json("https://projects.newschool.edu/psa/api.do?function=query&tab
                  "Due: "+d[19].v+" | "+
                  "Sched: "+d[108].v
                 ; })
+             // .html(function(d) { 
+             //    if(d.n === "schedule_status") {
+             //        return "Sched: "+d.v
+             //    ;}
+             //    ; })
+
          .append('p')
          .append('div')
             .attr('display','block')    
@@ -47,7 +53,13 @@ var dataP = d3.json("https://projects.newschool.edu/psa/api.do?function=query&ta
              // .style('height','130px')
              .style('width','100vw')
              .style('font-size','1.5em')
-             .attr('id', function(d) { return d[14].v; })
+             // .attr('id', function(d) { return d[14].v; })
+             .attr('id', function(d) { 
+                if(d.n === '"summary"'){
+                    return d.v
+                }
+            ; })
+             
              .attr('class', function(d) { return d[4].n; })
              .html(function(d) { return "<h1>Project: "+d[14].v+"</h1>"+
                  "<br>Planned Start: "+d[28].v+
@@ -55,7 +67,7 @@ var dataP = d3.json("https://projects.newschool.edu/psa/api.do?function=query&ta
                  "<br>Schedule Status: "+d[80].v+
                  "<br>Manager: "+d[84].v+
                  "<br>Deadline: "+d[31].v
-                ; }) 
+                ; })   
 });
 
 
