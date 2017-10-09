@@ -1,0 +1,27 @@
+Type,Name,Description,Category,Compatibility,Play Type,Notes
+360,Google Street View,Basic 360 maker software,Developer,,,
+360,Samsung Gear Action Director,Intermediate 360 video maker software,Developer,,,
+360,Adobe Premier with Mettle,360 video maker software,Developer,,,
+360,Youtube Gyroscopic,360 video viewing software,,,,
+AR,BlippAR,Basic AR developing and viewing software,Developer,"iOS, Android ",,
+AR,Vuforia,Intermediate AR developing software,Developer,"iOs, Android",,
+AR,Unity/ARToolKit,Advanced AR developing software,Developer,"iOS, Android",,"Unity/AR Toolkit must be used with:
+- Android SDK for Android devices
+- X Code for iOS devices (also requires an apple ID)"
+VR,InstaVR,Basic VR developing software,Developer,"HTC Vive, Oculus Rift, Gear VR, Google Daydream, Android, iOS, and most Internet browsers","Standing, Seated",
+VR,A-Frame,Intermediate VR developing software,Developer,"HTML, iOs, Android",,
+VR,Unity,Advanced VR developing software,Developer,"HTC Vive, Oculus Rift, Gear VR, Google Daydream, Android, iOS, and most Internet browsers",,
+VR,Google Earth VR,"Google Earth VR lets you explore the world from totally new perspectives in virtual reality. Stroll the streets of Tokyo, soar over the Grand Canyon, or walk around the Eiffel Tower.",,"HTC Vive, Oculus Rift","Standing, Seated, Motion Tracking",Downloaded on Steam account
+VR,The Body VR,Journey Inside a Cell is an educational virtual reality experience that takes the user inside the human body., ,HTC Vive,"Standing, Seated, Motion Tracking",Downloaded on Steam account
+VR,Google Tilt Brush,"Tilt Brush lets you paint in 3D space with virtual reality. Unleash your creativity with three-dimensional brush strokes, stars, light, and even fire. Your room is your canvas.",,"HTC Vive, Oculus Rift","Standing, Seated, Motion Tracking",Downloaded on Steam account
+VR,The Lab,"Compilation of Valve’s room-scale VR experiments set in a pocket universe within Aperture Science. Fix a robot, defend a castle, adopt a mechanical dog, and more.",,"HTC Vive, Oculus Rift","Standing, Motion Tracking",Downloaded on Steam account
+VR,InMind VR,InMind is a short scientific adventure with arcade elements designed for the Oculus VR. Submerge into the microworld and experience the miracles of the human mind.,,"HTC Vive, Oculus Rift, iOS, Android",Seated,Downloaded on Steam account
+VR,Richie's Plank Experience ,"Take an elevator to our plank that’s sits 160m high above the ground, then dare to walk to the end! An experience made for first-time VR users.",,"HTC Vive, Oculus Rift",Motion Tracking: requires a play area of at least 6.5ft (2m)  x 5.9ft (1.8m).,Downloaded on Steam account
+VR,VR Museum of Fine Arts,See famous life-size scultpures and paintings with the use of VR.,,HTC Vive,"Standing, Motion Tracking",Downloaded on Steam account
+VR,Blocks by Google,"Blocks lets you easily create 3D objects in virtual reality, no matter your modelling experience. Using six simple tools, you can bring your applications to life, create a volumetric masterpiece, or simply let your imagination run wild.",,"HTC Vive, Oculus Rift",,---Wishlist item
+VR,Sisters,"Be careful where you look, because something doesn't want you here! Uncover the mysteries and solve the puzzles of the house, rescue your sister, and escape before it's too late.",,"iOS, Android",Motion Tracking,
+VR,Proton Pulse,3D Arcade Brick-Breaking Action from a whole new perspective,,"iOS, Android",,Cost $1.99
+VR,Surge,"
+Surge is one of the first real-time VR music videos created for the new generation VR headsets and gives amazing insight in the possibilities of VR as a medium.",,Oculus Rift,"Standing, Seated, Motion Tracking",
+VR,Disney VR,"This app is a fully-immersive experience where you visit themed worlds, including Disney, Marvel and Lucasfilm, and interact with some of your favorite characters in their natural environments.",,Oculus Rift,"Standing, Seated, Motion Tracking",
+VR,Richie's Plank Experience,"Are you afraid of heights? Take an elevator to our plank that's sits 160m high above the ground, then dare to walk to the end!",,"HTC Vive, Oculus Rift","Standing, Motion Tracking",
