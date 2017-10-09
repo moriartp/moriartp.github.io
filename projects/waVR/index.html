@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, WebVR! - A-Frame</title>
+    <meta name="description" content="Hello, WebVR! - A-Frame">
+    <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+<!--       <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+      <a-plane position="0 0 0" rotation="-90 0 0" width="4444" height="4444" color="#7BC8A4"></a-plane>
+      <a-cone position="-0.5 6 -2" color="tomato" radius-bottom="1" radius-top="0"></a-cone>
+      <a-text value="Welcome to the world of XR" position="-1 2 -2.55" color="#000" wrap-count="9"></a-text>
+      <a-text value="Here are the assets" position="-1 2 6" rotation="0 -180 0" color="#000" wrap-count="9"></a-text>
+      <a-dodecahedron color="#FF926B" radius="5" position="0 5 10"></a-dodecahedron>
+      <a-curvedimage src="https://newschool.imgix.net/Media/Resources/Content/homepage/20160707_DesignGEMS_145_1440x960.jpg" height="30" position="1 13.5 -4" radius="10"></a-curvedimage> -->
+
+
+      <a-camera>
+        <a-cursor></a-cursor>
+      </a-camera>
+      <a-entity camera universal-controls></a-entity>
+      <a-entity camera look-controls wasd-controls></a-entity>
+
+      <a-assets>
+        <a-asset-item id="city" src="city/model.dae"></a-asset-item>
+
+      </a-assets>
+
+<!--       <a-entity collada-model="#tree" position="0 0 0"></a-entity>
+      <a-entity collada-model="#tree" position="0 0 5"></a-entity>
+      <a-entity collada-model="#tree" position="-2 0 -5"></a-entity>
+      <a-entity collada-model="#tree" position="2 0 -5"></a-entity>
+      <a-entity collada-model="#tree" position="5 0 5"></a-entity>
+      <a-entity collada-model="#tree" position="0 0 -5"></a-entity>
+
+      <a-entity collada-model="#tree2" position="-6 0 -4.5"></a-entity>
+      <a-entity collada-model="#tree2" position="-6 0 5"></a-entity>
+      <a-entity collada-model="#tree2" position="-8 0 -8"></a-entity>
+      <a-entity collada-model="#tree2" position="7 0 -8.5"></a-entity>
+      <a-entity collada-model="#tree2" position="3.5 0 -3.5"></a-entity>
+
+      <a-entity collada-model="#tree3" position="-8.33 0 -8.53"></a-entity>
+      <a-entity collada-model="#tree3" position="8.33 0 -9.53"></a-entity>
+      <a-entity collada-model="#tree3" position="-7.933 0 7.53"></a-entity>
+      <a-entity collada-model="#tree3" position="9.33 0 8.53"></a-entity>
+      <a-entity collada-model="#tree3" position="-8.02 0 -7.53"></a-entity>
+      <a-entity collada-model="#tree3" position="8.11 0 -8.53"></a-entity>
+      <a-entity collada-model="#tree3" position="-7.33 0 6.53"></a-entity>
+
+      <a-entity collada-model="#tree4" position="4.33 0 2.13"></a-entity>
+      <a-entity collada-model="#tree4" position="-4.33 0 -3.03"></a-entity>
+      <a-entity collada-model="#tree4" position="-3.13 0 4.53"></a-entity>
+ -->      <a-entity collada-model="#city" position="0 0 0"></a-entity>
+
+
+      <a-sky color="#000022"></a-sky>
+    </a-scene>
+  </body>
+</html>
