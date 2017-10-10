@@ -27,6 +27,17 @@
 
       <a-assets>
         <a-asset-item id="001" src="model/001.dae"></a-asset-item>
+        <a-asset-item id="002" src="model/002.dae"></a-asset-item>
+        <a-asset-item id="003" src="model/003.dae"></a-asset-item>
+        <a-asset-item id="004" src="model/004.dae"></a-asset-item>
+        <a-asset-item id="005" src="model/005.dae"></a-asset-item>
+        <a-asset-item id="006" src="model/006.dae"></a-asset-item>
+        <a-asset-item id="007" src="model/007.dae"></a-asset-item>
+        <a-asset-item id="008" src="model/008.dae"></a-asset-item>
+        <a-asset-item id="009" src="model/009.dae"></a-asset-item>
+        <a-asset-item id="010" src="model/010.dae"></a-asset-item>
+
+
 
       </a-assets>
 
@@ -56,11 +67,87 @@
       <a-entity collada-model="#tree4" position="-3.13 0 4.53"></a-entity>
 
  -->
-      <a-plane position="0 0 0"></a-entity>    
-      <a-entity collada-model="#001" position="-15 0 0"></a-entity>
-      <a-entity collada-model="#001" position="-15 0 -25"></a-entity>
-      <a-entity collada-model="#001" position="-15 0 -50"></a-entity>
-      <a-entity collada-model="#001" position="-15 0 -75"></a-entity>
+<!-- <a-entity light="type: hemisphere; color: #fff; groundColor: #fff; intensity: 2"></a-entity> -->
+
+<!-- <a-entity light="type: point; intensity: 1; distance: 250; decay: 10"  position="0 4 -25" radius="1.6"></a-entity> -->
+<!-- <a-entity light="type: point; intensity: 1; distance: 250; decay: 10"  position="0 -2 -25" radius="1.6"></a-entity> -->
+<a-entity light="type: point; intensity: 5; distance: 500; decay: 0.1"  position="0 1.6 0" radius="3.2"></a-entity>
+<!-- <a-entity light="type: point; intensity: 1; distance: 250; decay: 10"  position="0 1.6 -21" radius="1.6"></a-entity> -->
+<!-- <a-entity light="type: point; intensity: 1; distance: 250; decay: 10"  position="0 1.6 -25" radius="1.6"></a-entity> -->
+<!-- <a-entity light="type: point; intensity: 1; distance: 250; decay: 10"  position="4 1.6 -25" radius="1.6"></a-entity> -->
+<!-- <a-entity light="type: point; intensity: 1; distance: 250; decay: 10"  position="-4 1.6 -25" radius="1.6"></a-entity> -->
+<!-- <a-entity light="type: ambient; color: #CCC"></a-entity> -->
+
+      <a-sphere position="0 1.6 5" radius="1.6" color="yellow"></a-sphere> 
+
+      <a-entity text="value:mercury;align:center;width:6" material="color: lightgray" position="0 1.7 -50"></a-entity>
+      <a-sphere position="0 1.5 -50" radius="0.006" color="lightgray"></a-sphere> 
+
+      <a-entity text="value:venus;align:center;width:6" material="color: lightgray" position="0 1.7 -75"></a-entity>
+      <a-sphere position="0 1.5 -75" radius="0.006" color="pink"></a-sphere> 
+
+      <a-entity text="value:earth;align:center;width:6" material="color: lightgray" position="0 1.7 -100"></a-entity>      
+      <a-sphere position="0 1.5 -100" radius=".016" color="green"></a-sphere>             
+
+      <a-entity text="value:mars;align:center;width:6" material="color: lightgray" position="0 1.7 -125"></a-entity>      
+      <a-sphere position="0 1.5 -125" radius="0.01" color="red"></a-sphere> 
+
+      <a-entity text="value:jupiter;align:center;width:6" material="color: lightgray" position="0 1.7 -225"></a-entity>      
+      <a-sphere position="0 1.5 -225" radius=".16" color="orange"></a-sphere>                        
+
+      <a-entity text="value:saturn;align:center;width:6" material="color: lightgray" position="0 1.7 -275"></a-entity>
+      <a-sphere position="0 1.5 -275" radius="0.12" color="brown"></a-sphere>                        
+
+      <a-entity text="value:uranus;align:center;width:6" material="color: lightgray" position="0 1.7 -350"></a-entity>
+      <a-sphere position="0 1.5 -350" radius="0.1" color="steelblue"></a-sphere>                              
+
+      <a-entity text="value:neptune;align:center;width:6" material="color: lightgray" position="0 1.7 -450"></a-entity>
+      <a-sphere position="0 1.5 -450" radius="0.1" color="blue"></a-sphere>                        
+
+
+      <a-entity collada-model="#001" position="-15 0 0" material="opacity: 0.0; transparent: true"></a-entity>
+      <a-entity collada-model="#003" position="-15 0 -25"></a-entity>
+      <a-entity collada-model="#002" position="-15 0 -50"></a-entity>
+      <a-entity collada-model="#004" position="-15 0 -75"></a-entity>
+      <a-entity collada-model="#006" position="-15 0 -100"></a-entity>
+      <a-entity collada-model="#008" position="-15 0 -125"></a-entity>
+      <a-entity collada-model="#007" position="-15 0 -150"></a-entity>
+      <a-entity collada-model="#009" position="-15 0 -175"></a-entity>
+      <a-entity collada-model="#010" position="-15 0 -200"></a-entity>
+      <a-entity collada-model="#010" position="-15 0 -225"></a-entity>
+      <a-entity collada-model="#010" position="-15 0 -250"></a-entity>
+      <a-entity collada-model="#010" position="-15 0 -275"></a-entity>
+      <a-entity collada-model="#010" position="-15 0 -300"></a-entity>
+      <a-entity collada-model="#010" position="-15 0 -325"></a-entity>      
+      <a-entity collada-model="#010" position="-15 0 -350"></a-entity>      
+      <a-entity collada-model="#010" position="-15 0 -375"></a-entity>
+      <a-entity collada-model="#010" position="-15 0 -400"></a-entity>
+      <a-entity collada-model="#010" position="-15 0 -425"></a-entity>
+      <a-entity collada-model="#010" position="-15 0 -450"></a-entity>
+           
+
+
+      <a-entity collada-model="#004" position="15 0 0"></a-entity>
+      <a-entity collada-model="#002" position="15 0 -25"></a-entity>
+      <a-entity collada-model="#005" position="15 0 -50"></a-entity>
+      <a-entity collada-model="#005" position="15 0 -75"></a-entity>      
+      <a-entity collada-model="#006" position="15 0 -100"></a-entity>
+      <a-entity collada-model="#008" position="15 0 -125"></a-entity>
+      <a-entity collada-model="#007" position="15 0 -150"></a-entity>
+      <a-entity collada-model="#009" position="15 0 -175"></a-entity>
+      <a-entity collada-model="#010" position="15 0 -200"></a-entity>
+      <a-entity collada-model="#010" position="15 0 -225"></a-entity>
+      <a-entity collada-model="#010" position="15 0 -250"></a-entity>
+      <a-entity collada-model="#010" position="15 0 -275"></a-entity>
+      <a-entity collada-model="#010" position="15 0 -300"></a-entity>
+      <a-entity collada-model="#010" position="15 0 -325"></a-entity>      
+      <a-entity collada-model="#010" position="15 0 -350"></a-entity>      
+      <a-entity collada-model="#010" position="15 0 -375"></a-entity>
+      <a-entity collada-model="#010" position="15 0 -400"></a-entity>
+      <a-entity collada-model="#010" position="15 0 -425"></a-entity>
+      <a-entity collada-model="#010" position="15 0 -450"></a-entity>
+
+
 
 
       <a-sky color="#000022"></a-sky>
