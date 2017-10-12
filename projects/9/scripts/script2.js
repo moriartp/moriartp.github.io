@@ -1,5 +1,5 @@
 var data = d3.json("https://projects.newschool.edu/psa/api.do?function=query&table=db_task&project_id=593&token=fa71d5fc-1b40-4512-9eb6-a7b0f8ec828e&data-format=json", function(data) { 
-    console.log(data.rows);
+    // console.log(data.rows);
 
     var RA = data.rows;
 
@@ -39,7 +39,7 @@ var data = d3.json("https://projects.newschool.edu/psa/api.do?function=query&tab
 
 
 var dataP = d3.json("https://projects.newschool.edu/psa/api.do?function=query&table=db_project&id=593&data-format=json&token=fa71d5fc-1b40-4512-9eb6-a7b0f8ec828e&data-format=json", function(dataP) { 
-    console.log(dataP);
+    // console.log(dataP);
 
     var RAP = dataP.rows;
     let myObt = [];
@@ -55,17 +55,17 @@ var dataP = d3.json("https://projects.newschool.edu/psa/api.do?function=query&ta
              .style('font-size','1.5em')
              // .attr('id', function(d) { return d[14].v; })
              .attr('id', function(d) { 
-                console.log(d);
+                // console.log(d);
                 $.each(d, function (i, ob) {
                     $.each(ob, function (ind, obj) {
                         // console.log("key:" + ind + " value:" + obj);
                         if (obj =='summary') {
-                            console.log("key:" + ind + " value:" + obj);
+                            // console.log("key:" + ind + " value:" + obj);
                         };
                     });
                 });
                 if(d.n == 'summary'){
-                    console.log('helloWorld');
+                    // console.log('helloWorld');
                     return d.v
                 }
             ; })
@@ -81,7 +81,7 @@ var dataP = d3.json("https://projects.newschool.edu/psa/api.do?function=query&ta
 });
 
 
-'https://projects.newschool.edu/psa/api.do?function=query&table=db_project&id=593&data-format=json&token=fa71d5fc-1b40-4512-9eb6-a7b0f8ec828e&data-format=json'
+// 'https://projects.newschool.edu/psa/api.do?function=query&table=db_project&id=593&data-format=json&token=fa71d5fc-1b40-4512-9eb6-a7b0f8ec828e&data-format=json'
 // //WEATHER API
 // // var data = d3.json("http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=9bc8d884e74f1ab2b830ee0edc7539e1", function(data) { 
 // var data = d3.json("http://api.openweathermap.org/data/2.5/group?id=5128581,4335045,4644585,4174757,4164047,4380997,4164143,4153188,4407665,5114401,4748050,5110108,5441199,5601615,5207490,5187443&appid=9bc8d884e74f1ab2b830ee0edc7539e1", function(data) { 	
