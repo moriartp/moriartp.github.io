@@ -58,7 +58,7 @@ var data = d3.json(api, function(data) {
 
 	var circle = svgContainer.selectAll('circle')
 		.data(obj).enter().append('circle')
-		    .attr("cx",function(d) { return d.percent_complete*8; })
+		    .attr("cx",function(d) { return d.percent_complete*6; })
 		    .attr("cy",function(d) { return d.local_key*100; })
 			.attr("r",function(d) { return d.priority*20; })
 
