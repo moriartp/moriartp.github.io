@@ -32,12 +32,12 @@ var data = d3.json(api, function(data) {
 		.selectAll('div')
 		.data(obj).enter().append('div')
 		.attr('id',function(d) { return d.id; })
-		.attr('class',function(d) { return d.schedule_status+" Task"; })
+		.attr('class',function(d) { return d.schedule_status+" Task branch"+d.tree_level; })
 		.style('height','auto')
 		// .style('background-color','coral')
 		.style('margin','1vw')
 		.style('margin-left',function(d) { return 1+d.tree_level*3+"vw"; })		
-        .style('width','90vw')
+        .style('width','80vw')
         .style('font-size','1.5em')
         .html(function(d) { return "<b>"+d.summary+" (" +d.id+")</b>"+
                  "<br>Progress: "+d.percent_complete+"% | "+
@@ -48,25 +48,25 @@ var data = d3.json(api, function(data) {
 
 	var svgContainer = d3.select("body").append("svg")
 		.attr("id", 'svgContainer')
-		.attr("width", '900')
-		.attr("height", '500')
-		.attr('viewBox','0 0 900 500')
+		.attr("width", '600')
+		.attr("height", '400')
+		.attr('viewBox','0 0 600 500')
 		.attr('preserveAspectRatio','xMidYMid meet')
+		.style('margin','1vw')
 		.style('fill','black')
 		.style('background-color','seagreen')
 
-	var circle = svgContainer
-		.selectAll('circle')
+	var circle = svgContainer.selectAll('circle')
 		.data(obj).enter().append('circle')
-		    .attr("cx",function(d) { return 50+d.percent_complete*5; })
-		    .attr("cy",function(d) { return d.local_key*50; })
-			.attr("r",function(d) { return d.priority*10; })
+		    .attr("cx",function(d) { return d.percent_complete*8; })
+		    .attr("cy",function(d) { return d.local_key*100; })
+			.attr("r",function(d) { return d.priority*20; })
 
 	var chart = $("#svgContainer"),
 	    aspect = chart.width() / chart.height(),
 	    container = chart.parent();
 	$(window).on("resize", function() {
-	    var targetWidth = container.width();
+	    var targetWidth = container.width()*0.975;
 	    chart.attr("width", targetWidth);
 	    chart.attr("height", Math.round(targetWidth / aspect));
 	}).trigger("resize");
