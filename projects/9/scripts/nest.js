@@ -39,12 +39,54 @@ var data = d3.json(api, function(data) {
 		.style('margin-left',function(d) { return 1+d.tree_level*3+"vw"; })		
         .style('width','90vw')
         .style('font-size','1.5em')
-        .html(function(d) { return "ID: "+d.id+
+        .html(function(d) { return "<b>"+d.summary+" (" +d.id+")</b>"+
                  "<br>Progress: "+d.percent_complete+"% | "+
-                 "<br>Planned Finish: "+d.plan_finish+" | "+
-                 "<br>Parent: "+d.plan_finish+" | "+                
-                 "<br>Sched: "+d.schedule_status
+                 "Planned Finish: "+d.plan_finish+" | "+
+                 "Parent: "+d.plan_finish+" | "+                
+                 "Sched: "+d.schedule_status
                 ; })
+
+	var svgContainer = d3.select("body").append("svg")
+		.attr("id", 'svgContainer')
+		.attr("width", '900')
+		.attr("height", '500')
+		.attr('viewBox','0 0 900 500')
+		.attr('preserveAspectRatio','xMidYMid meet')
+		.style('fill','black')
+		.style('background-color','seagreen')
+
+	var circle = svgContainer
+		.selectAll('circle')
+		.data(obj).enter().append('circle')
+		    .attr("cx",function(d) { return 50+d.percent_complete*5; })
+		    .attr("cy",function(d) { return d.local_key*50; })
+			.attr("r",function(d) { return d.priority*10; })
+
+	var chart = $("#svgContainer"),
+	    aspect = chart.width() / chart.height(),
+	    container = chart.parent();
+	$(window).on("resize", function() {
+	    var targetWidth = container.width();
+	    chart.attr("width", targetWidth);
+	    chart.attr("height", Math.round(targetWidth / aspect));
+	}).trigger("resize");
+
+
+
+			// .attr("cx", 30)
+			// .attr("cy", 30)
+			// .attr("r", 20);
+			// .attr("stroke", 'black');
+			// .style('background-color','black')                                    
+
+	// var circles = select('svg')
+	// 	.selectAll('.circL')
+	// 	.data(obj).enter().append("circle")
+		 //    .attr("cx",function(d) { return d.percent_complete; })
+		 //    .attr("cy",function(d) { return d.local_key*10; })
+			// .attr("r",function(d) { return d.priority; })
+
+
 
 
 	// var dataset = d3.json(obj, function(data) {  
