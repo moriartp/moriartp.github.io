@@ -49,7 +49,7 @@ var data = d3.json(api, function(data) {
 	var svgContainer = d3.select("body").append("svg")
 		.attr("id", 'svgContainer')
 		.attr("width", '600')
-		.attr("height", '400')
+		.attr("height", '350')
 		.attr('viewBox','0 0 600 500')
 		.attr('preserveAspectRatio','xMidYMid meet')
 		.style('margin','1vw')
