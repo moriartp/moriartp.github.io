@@ -161,6 +161,10 @@ div.Errors{
 	background-color: gold;
 }
 
+.completed{
+	background-color: lightgray;
+}
+
 .ontrack{
 	background-color: forestgreen;
 }
