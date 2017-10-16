@@ -1,18 +1,56 @@
+var apiPROJ = "https://projects.newschool.edu/psa/api.do?function=query&table=db_project&id=593&data-format=json&token=fa71d5fc-1b40-4512-9eb6-a7b0f8ec828e&data-format=json";
+
+var data2 = d3.json(apiPROJ, function(data2) { 
+	data2 = data2.rows;
+	console.log(data2);
+
+	var strPROJ = JSON.stringify(data2);
+
+	strPROJ = strPROJ.replace(/"n":"/g,'"');
+	strPROJ = strPROJ.replace(/,"v":/g,':');
+	strPROJ = strPROJ.replace(/{/g,'');
+	strPROJ = strPROJ.replace(/}/g,'');
+	strPROJ = strPROJ.replace(/"\]/g,'"}');
+	strPROJ = strPROJ.replace(/\["/g,'{"');
+
+	console.log(strPROJ);
+
+	var objPROJ = JSON.parse(strPROJ);
+	console.log(objPROJ);
+
+	var divvyPROJ = d3.select('#header')
+		.selectAll('div')
+		.data(objPROJ).enter().append('div')
+		.attr('id',function(d) { return d.id; })
+		// .attr('class',function(d) { return d.schedule_status+" Task branch"+d.folder_id; })
+		.style('height','auto')
+		.style('margin','1vw')
+		// .style('margin-left',function(d) { return 1+d.tree_level*3+"vw"; })		
+        .style('width','80vw')
+        .style('font-size','1.5em')
+        .html(function(d) { return "<h1>"+d.summary+" (" +d.id+")</h1>"+
+                 "<br>Planned Finish: "+d.plan_finish+
+                 "<br>Deadline: "+d.deadline+ 
+                 "<br>Project Lead: "+d.manager_name+ 
+                 "<br>Client: "+d.client_name+ 
+                 "<br>Progress: "+d.percent_complete+"%"+
+                 "<p>"+d.detail+"</p>"+                
+                 "<br>Sched: "+d.schedule_status
+                ; })
+
+});
+
+
+
+
+////////////////////////////////////////////TASKS/////////////////////
+
 var api = "https://projects.newschool.edu/psa/api.do?function=query&table=db_task&project_id=593&token=fa71d5fc-1b40-4512-9eb6-a7b0f8ec828e&data-format=json";
-// var obj = [];
+
 var data = d3.json(api, function(data) { 
-	// console.log(data.rows[0][0].n);
-	// console.log(data.rows[0][0].v);
-	// console.log(data.rows[0]);
 	data = data.rows;
-	// console.log(data);
-
-	// console.log(JSON.stringify(data));
-
-
 
 	var str = JSON.stringify(data);
-	// console.log(str);
 
 	str = str.replace(/"n":"/g,'"');
 	str = str.replace(/,"v":/g,':');
@@ -21,12 +59,10 @@ var data = d3.json(api, function(data) {
 	str = str.replace(/"\]/g,'"}');
 	str = str.replace(/\["/g,'{"');
 
-
-
-	console.log(str);
+	// console.log(str);
 
 	var obj = JSON.parse(str);
-	console.log(obj);
+	// console.log(obj);
 
 	var divvy = d3.select('#tasks')
 		.selectAll('div')
@@ -71,28 +107,12 @@ var data = d3.json(api, function(data) {
 	    chart.attr("height", Math.round(targetWidth / aspect));
 	}).trigger("resize");
 
-
-
-			// .attr("cx", 30)
-			// .attr("cy", 30)
-			// .attr("r", 20);
-			// .attr("stroke", 'black');
-			// .style('background-color','black')                                    
-
-	// var circles = select('svg')
-	// 	.selectAll('.circL')
-	// 	.data(obj).enter().append("circle")
-		 //    .attr("cx",function(d) { return d.percent_complete; })
-		 //    .attr("cy",function(d) { return d.local_key*10; })
-			// .attr("r",function(d) { return d.priority; })
-
-
-
-
-	// var dataset = d3.json(obj, function(data) {  
-	// 	console.log(dataset);  
-	// 	console.log('hello');  
-	// });
-
-
 });
+
+
+
+
+
+
+
+
