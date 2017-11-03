@@ -7,7 +7,7 @@
     <script src="https://d3js.org/d3.v4.min.js"></script>
   </head>
   <body>
-    <a-scene>
+    <a-scene width="7000">
 <!--       <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
       <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
       <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
@@ -18,12 +18,23 @@
       <a-dodecahedron color="#FF926B" radius="5" position="0 5 10"></a-dodecahedron>
       <a-curvedimage src="https://newschool.imgix.net/Media/Resources/Content/homepage/20160707_DesignGEMS_145_1440x960.jpg" height="30" position="1 13.5 -4" radius="10"></a-curvedimage> -->
 
+<!--       <a-entity position="0 0 0">
+        <a-camera></a-camera>
+        <a-animation  attribute="position"
+                      dur="180000"
+                      to="0 0 600"
+                      repeat="indefinite"
 
-      <a-camera>
+                      >
+        </a-animation>
+      </a-entity> -->
+
+
+<!--       <a-camera>
         <a-cursor></a-cursor>
       </a-camera>
       <a-entity camera universal-controls></a-entity>
-      <a-entity camera look-controls wasd-controls></a-entity>
+      <a-entity camera look-controls wasd-controls></a-entity> -->
 
       <a-assets>
         <a-asset-item id="001" src="model/001.dae"></a-asset-item>
@@ -40,6 +51,18 @@
 
 
       </a-assets>
+          <!-- <a-entity scale="0.1 0.1 0.1"> -->
+
+                <a-entity position="0 0 0">
+        <a-camera></a-camera>
+        <a-animation  attribute="position"
+                      dur="10000"
+                      to="0 0 7000"
+                      repeat="indefinite"
+
+                      >
+        </a-animation>
+      </a-entity>
 
 <!--       <a-entity collada-model="#tree" position="0 0 0"></a-entity>
       <a-entity collada-model="#tree" position="0 0 5"></a-entity>
@@ -71,14 +94,14 @@
 
 <!-- <a-entity light="type: point; intensity: 1; distance: 250; decay: 10"  position="0 4 -25" radius="1.6"></a-entity> -->
 <!-- <a-entity light="type: point; intensity: 1; distance: 250; decay: 10"  position="0 -2 -25" radius="1.6"></a-entity> -->
-<a-entity light="type: point; intensity: 5; distance: 500; decay: 0.1"  position="0 1.6 0" radius="3.2"></a-entity>
+<!-- <a-entity light="type: point; intensity: 5; distance: 500; decay: 0.1"  position="0 1.6 0" radius="3.2"></a-entity> -->
 <!-- <a-entity light="type: point; intensity: 1; distance: 250; decay: 10"  position="0 1.6 -21" radius="1.6"></a-entity> -->
 <!-- <a-entity light="type: point; intensity: 1; distance: 250; decay: 10"  position="0 1.6 -25" radius="1.6"></a-entity> -->
 <!-- <a-entity light="type: point; intensity: 1; distance: 250; decay: 10"  position="4 1.6 -25" radius="1.6"></a-entity> -->
 <!-- <a-entity light="type: point; intensity: 1; distance: 250; decay: 10"  position="-4 1.6 -25" radius="1.6"></a-entity> -->
 <!-- <a-entity light="type: ambient; color: #CCC"></a-entity> -->
 
-      <a-sphere position="0 1.6 5" radius="1.6" color="yellow"></a-sphere> 
+<!--       <a-sphere position="0 1.6 5" radius="1.6" color="yellow"></a-sphere> 
 
       <a-entity text="value:mercury;align:center;width:6" material="color: lightgray" position="0 1.7 -50"></a-entity>
       <a-sphere position="0 1.5 -50" radius="0.006" color="lightgray"></a-sphere> 
@@ -103,7 +126,6 @@
 
       <a-entity text="value:neptune;align:center;width:6" material="color: lightgray" position="0 1.7 -450"></a-entity>
       <a-sphere position="0 1.5 -450" radius="0.1" color="blue"></a-sphere>                        
-
 
       <a-entity collada-model="#001" position="-15 0 0" material="opacity: 0.0; transparent: true"></a-entity>
       <a-entity collada-model="#003" position="-15 0 -25"></a-entity>
@@ -145,12 +167,55 @@
       <a-entity collada-model="#010" position="15 0 -375"></a-entity>
       <a-entity collada-model="#010" position="15 0 -400"></a-entity>
       <a-entity collada-model="#010" position="15 0 -425"></a-entity>
-      <a-entity collada-model="#010" position="15 0 -450"></a-entity>
+      <a-entity collada-model="#010" position="15 0 -450"></a-entity> -->
+
+
+
+<a-entity line="start:0 1.55 -1.65; end:0 1.55 5177; color:red"></a-entity>
+<a-plane id="avenue" position="0 0 150" width="10000" height="65" color="darkgray" rotation="-90 -90 0"></a-plane>
+
+
+<a-sphere id="sun" color="yellow" radius="0.8" position="0 1.55 -1.65"></a-sphere>
+<a-sphere id="target" color="gray" radius="0.01" position="0 1.55 1.65"></a-sphere>
+
+<a-entity text="value:mercury;align:center;width:6" material="color: lightgray" position="0 1.65 67" rotation="0 -180 0"></a-entity>
+<a-sphere id="mercury" color="lightgray" radius="0.005609" position="0 1.6 66.57"></a-sphere>
+
+<a-entity text="value:venus;align:center;width:6" material="color: lightgray" position="0 1.55 125" rotation="0 -180 0"></a-entity>
+<a-sphere id="venus" color="pink" radius="0.01391" position="0 1.55 124.4"></a-sphere>
+
+<a-entity text="value:earth;align:center;width:6" material="color: lightgray" position="0 1.55 172.2" rotation="0 -180 0"></a-entity>
+<a-sphere id="earth" color="blue" radius="0.01465" position="0 1.55 172"></a-sphere>
+
+<a-entity text="value:mars;align:center;width:66" material="color: lightgray" position="0 1.55 262.2" rotation="0 -180 0"></a-entity>
+<a-sphere id="mars" color="red" radius="0.007793" position="0 1.55 262"></a-sphere>
+
+<a-entity text="value:ceres;align:center;width:66" material="color: lightgray" position="0 1.55 476" rotation="0 -180 0"></a-entity>
+<a-sphere id="ceres" color="darkgray" radius="0.001092" position="0 1.55 475.7"></a-sphere>
+
+<a-entity text="value:jupiter;align:center;width:66" material="color: lightgray" position="0 1.55 895.3" rotation="0 -180 0"></a-entity>
+<a-sphere id="jupiter" color="orange" radius="0.1607" position="0 1.55 895.1"></a-sphere>
+
+<a-entity text="value:saturn;align:center;width:66" material="color: lightgray" position="0 1.55 1647.2" rotation="0 -180 0"></a-entity>
+<a-sphere id="saturn" color="brown" radius="0.1339" position="0 1.55 1647"></a-sphere>
+
+<a-entity text="value:uranus;align:center;width:66" material="color: lightgray" position="0 1.55 3307.2" rotation="0 -180 0"></a-entity>
+<a-sphere id="uranus" color="lightblue" radius="0.05831" position="0 1.55 3307"></a-sphere>
+
+<a-entity text="value:neptune;align:center;width:66" material="color: lightgray" position="0 1.55 5177" rotation="0 -180 0"></a-entity>
+<a-sphere id="neptune" color="yellow" radius="0.05662" position="0 1.55 5177"></a-sphere>
+
+<a-entity text="value:kuiperBelt;align:center;width:66" material="color: lightgray" position="0 1.55 6753.2" rotation="0 -180 0"></a-entity>
+<a-sphere id="kuiperBelt" color="black" radius="0.002727" position="0 1.55 6753"></a-sphere>
+
+
+
 
 
 
 
       <a-sky color="#000022"></a-sky>
+      <!-- </a-entity> -->
     </a-scene>
   </body>
 </html>
