@@ -1,0 +1,60 @@
+body {
+	width:100vw;
+	height:100vh;
+	background-color: coral;
+	font-family: 'Heebo', sans-serif;
+	margin:0px;
+	padding:0px;
+}
+
+h1{
+	margin:0px;
+	padding:0px;
+}
+
+#canvasContainer{
+	width:100vw;
+	height:100vh;
+
+}
+
+canvas{
+	width:100vw;
+	height:100vh;	
+}
+
+.menuItem{
+	border-radius: 50%;
+	background-color: steelblue;
+	width:25vw;
+	height:25vw;
+	margin-left:-20vw;
+	transition: width 1s, height 1s, margin-left 1s, border-radius 1s;
+}
+
+.menuItem:hover{
+	border-radius: 50%;
+	background-color: steelblue;
+	width:50vw;
+	height:50vw;
+	margin-left:-25vw;
+	transition: width 1s, height 1s, margin-left 1s, border-radius 1s;
+}
+
+/*.menuItem:after{
+	border-radius: 0%;
+	background-color: steelblue;
+	width:100vw;
+	height:100vw;
+	margin-left:0vw;
+	transition: width 1s, height 1s, margin-left 1s, border-radius 1s;
+}
+*/
+div.animatedMenu{
+	border-radius: 0%;
+	background-color: steelblue;
+	width:100vw;
+	height:100vw;
+	margin-left:0vw;
+	transition: width 1s, height 1s, margin-left 1s, border-radius 1s;
+}
