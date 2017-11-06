@@ -5,11 +5,14 @@ body {
 	font-family: 'Heebo', sans-serif;
 	margin:0px;
 	padding:0px;
+	color:white;
+	text-align: right;
 }
 
 h1{
 	margin:0px;
-	padding:0px;
+	text-align: right;
+	padding-top: 25%;
 }
 
 #canvasContainer{
@@ -23,38 +26,56 @@ canvas{
 	height:100vh;	
 }
 
+
+
 .menuItem{
+	cursor: pointer;
+	position:absolute;
+	color:white;
+	left: -20vw;
 	border-radius: 50%;
 	background-color: steelblue;
+	top:15vh;
 	width:25vw;
 	height:25vw;
-	margin-left:-20vw;
-	transition: width 1s, height 1s, margin-left 1s, border-radius 1s;
+	opacity: 0.25;
+	transition: width 1s, height 1s, margin-left 1s, opacity 1s, border-radius 1s, left 1s, top 1s;
+	/*transition: left 1s;*/
 }
 
-.menuItem:hover{
+
+.base{
 	border-radius: 50%;
 	background-color: steelblue;
-	width:50vw;
-	height:50vw;
-	margin-left:-25vw;
-	transition: width 1s, height 1s, margin-left 1s, border-radius 1s;
+	top:15vh;
+	width:25vw;
+	height:25vw;
+	/*margin-left:-20vw;*/
+	transition: width 1s, height 1s, margin-left 1s, opacity 1s, border-radius 1s, left 1s, top 1s;
+	/*transition: left 1s;*/
 }
 
-/*.menuItem:after{
-	border-radius: 0%;
+
+.hover{
+	border-radius: 50%;
 	background-color: steelblue;
-	width:100vw;
-	height:100vw;
-	margin-left:0vw;
-	transition: width 1s, height 1s, margin-left 1s, border-radius 1s;
+	opacity:0.75;
+	width:50vw;
+	height:50vw;
+	/*margin-left:-25vw;*/
+	transition: width 1s, height 1s, margin-left 1s, opacity 1s, border-radius 1s, left 1s, top 1s;
+	/*transition: left 1s;*/
 }
-*/
-div.animatedMenu{
+
+.selected{
 	border-radius: 0%;
-	background-color: steelblue;
+	background-color: darkcyan;
+	left:0;
+	top:0;
+	opacity:1;
 	width:100vw;
-	height:100vw;
+	height:100vh;
 	margin-left:0vw;
-	transition: width 1s, height 1s, margin-left 1s, border-radius 1s;
+	transition: width 1s, height 1s, margin-left 1s, border-radius 0.1s, left 1s, top 1s;
+	/*transition: left 1s;*/
 }

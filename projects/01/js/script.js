@@ -1,4 +1,26 @@
-$(".menuItem").click(function() {
-  $('.menuItem').toggleClass('animatedMenu');
+// $(".menuItem").click(function() {
+//   $('.menuItem').toggleClass('animatedMenu');
+// });
+// console.log('here?');
+
+
+$('.menuItem')
+    .hover(
+   function(){
+       $(this).addClass('hover');
+       $(this).removeClass('base');
+   },
+   function() {
+       $(this).removeClass('hover');
+   })
+    .click(function() {
+        $(this).toggleClass('selected');
+        $(this).removeClass('hover');
 });
-console.log('here?');
+
+
+$('.menuItem.selected')
+    .click(function() {
+        $(this).addClass('base');
+        $(this).removeClass('selected');
+});    
