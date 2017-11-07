@@ -6,13 +6,14 @@ body {
 	margin:0px;
 	padding:0px;
 	color:white;
-	text-align: right;
+	text-align: left;
 }
 
-h1{
+.menuItem h1{
 	margin:0px;
 	text-align: right;
-	padding-top: 25%;
+	padding-top: 45%;
+	transition: padding-top 1s;
 }
 
 #canvasContainer{
@@ -24,6 +25,16 @@ h1{
 canvas{
 	width:100vw;
 	height:100vh;	
+}
+
+i.fa{
+	top:0;
+	right:0;
+	/*display:none;*/
+	height:0px;
+	opacity:0;
+	transition: opacity 1s;
+	position:absolute;
 }
 
 
@@ -76,6 +87,22 @@ canvas{
 	width:100vw;
 	height:100vh;
 	margin-left:0vw;
-	transition: width 1s, height 1s, margin-left 1s, border-radius 0.1s, left 1s, top 1s;
+	transition: width 1s, height 1s, margin-left 1s, border-radius 3s, left 1s, top 1s;
 	/*transition: left 1s;*/
+}
+
+.selected > i.fa{
+	display:block;
+	opacity:1;
+	transition: opacity 1s;
+	height:100%;
+}
+
+.menuItem.hover > h1, .menuItem.selected > h1{
+	display:block;
+	opacity:1;
+	transition: opacity 1s;
+	height:100%;
+	padding-top: 10vh;
+	transition padding-top: 1s;
 }

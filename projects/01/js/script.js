@@ -15,11 +15,11 @@ $('.menuItem')
    })
     .click(function() {
         $(this).toggleClass('selected');
-        $(this).removeClass('hover');
+        // $(this).removeClass('hover');
 });
 
 
-$('.menuItem.selected')
+$('.menuItem.selected i.fa')
     .click(function() {
         $(this).addClass('base');
         $(this).removeClass('selected');
