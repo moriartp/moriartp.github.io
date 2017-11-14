@@ -14,13 +14,14 @@ $('.menuItem')
        $(this).removeClass('hover');
    })
     .click(function() {
-        $(this).toggleClass('selected');
-        // $(this).removeClass('hover');
+        $(this).addClass('selected');
+        $(this).removeClass('hover');
+   });  
+
+$('i.fa')
+  .click(function(e){
+    // e.preventDefault();
+    e.stopPropagation();
+    // $(this).parent().addClass('base').siblings().removeClass('selected');
+    $(this).parent().addClass('base').removeClass('selected');    
 });
-
-
-$('.menuItem.selected i.fa')
-    .click(function() {
-        $(this).addClass('base');
-        $(this).removeClass('selected');
-});    

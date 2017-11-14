@@ -1,16 +1,17 @@
 body {
 	width:100vw;
 	height:100vh;
-	background-color: coral;
+	background-color: white;
 	font-family: 'Heebo', sans-serif;
 	margin:0px;
 	padding:0px;
-	color:white;
+	color:#030303;
 	text-align: left;
 }
 
 .menuItem h1{
 	margin:0px;
+	margin-right:-10px;
 	text-align: right;
 	padding-top: 45%;
 	transition: padding-top 1s;
@@ -35,32 +36,80 @@ i.fa{
 	opacity:0;
 	transition: opacity 1s;
 	position:absolute;
+	cursor: pointer;
 }
 
 
 
 .menuItem{
-	cursor: pointer;
 	position:absolute;
-	color:white;
+	color:#000;
 	left: -20vw;
 	border-radius: 50%;
 	background-color: steelblue;
-	top:15vh;
+	/*top:15vh;*/
 	width:25vw;
 	height:25vw;
 	opacity: 0.25;
-	transition: width 1s, height 1s, margin-left 1s, opacity 1s, border-radius 1s, left 1s, top 1s;
+	transition: width 1s, height 1s, margin-left 1s, opacity 1s, border-radius 1s, left 1s, top 1s, color 1s;
 	/*transition: left 1s;*/
 }
 
+#A001{
+	top:15vh;
+	background-color: #66c2a5;
+}
+
+#A002{
+	top:32vh;
+	background-color: #fc8d62;	
+}
+
+#A003{
+	top:49vh;	
+	background-color: #8da0cb;
+}
+
+#A004{
+	top:66vh;
+	background-color: #e78ac3;
+}
+
+#A005{
+	top:83vh;	
+	background-color: #a6d854;
+}
+
+#A001.selected{
+	top:0vh;
+}
+
+#A002.selected{
+	top:0vh;	
+}
+
+#A003.selected{
+	top:0vh;	
+}
+
+#A004.selected{
+	top:0vh;
+}
+
+#A005.selected{
+	top:0vh;	
+}
+
+#A006.selected{
+	top:0vh;	
+}
 
 .base{
 	border-radius: 50%;
 	background-color: steelblue;
-	top:15vh;
+/*	top:15vh;
 	width:25vw;
-	height:25vw;
+	height:25vw;*/
 	/*margin-left:-20vw;*/
 	transition: width 1s, height 1s, margin-left 1s, opacity 1s, border-radius 1s, left 1s, top 1s;
 	/*transition: left 1s;*/
@@ -68,13 +117,17 @@ i.fa{
 
 
 .hover{
+	cursor: pointer;
 	border-radius: 50%;
 	background-color: steelblue;
+	left:-25vw;
 	opacity:0.75;
 	width:50vw;
 	height:50vw;
+	color:#000;
+	z-index: 100;
 	/*margin-left:-25vw;*/
-	transition: width 1s, height 1s, margin-left 1s, opacity 1s, border-radius 1s, left 1s, top 1s;
+	transition: width 1s, height 1s, margin-left 1s, opacity 1s, border-radius 1s, left 1s, top 1s, color 1s;
 	/*transition: left 1s;*/
 }
 
@@ -84,25 +137,30 @@ i.fa{
 	left:0;
 	top:0;
 	opacity:1;
+	color:white;
+	z-index: 100;
 	width:100vw;
 	height:100vh;
 	margin-left:0vw;
-	transition: width 1s, height 1s, margin-left 1s, border-radius 3s, left 1s, top 1s;
+	transition-timing-function: ease-in;
+	transition: width 1s, height 1s, margin-left 1s, border-radius 3s, left 1s, top 1s, color 1s;
 	/*transition: left 1s;*/
 }
 
 .selected > i.fa{
 	display:block;
 	opacity:1;
-	transition: opacity 1s;
+	transition: opacity 1s, color 3s;
 	height:100%;
 }
 
 .menuItem.hover > h1, .menuItem.selected > h1{
 	display:block;
+	margin-right: 0px;
 	opacity:1;
-	transition: opacity 1s;
+	transition: opacity 1s, color 3s, margin-right 3s;
 	height:100%;
 	padding-top: 10vh;
 	transition padding-top: 1s;
 }
+
