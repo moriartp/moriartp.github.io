@@ -9,6 +9,10 @@ body {
 	text-align: left;
 }
 
+#home{
+	margin-left: 33vw;
+}
+
 .menuItem h1{
 	margin:0px;
 	margin-right:-10px;
