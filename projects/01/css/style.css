@@ -30,7 +30,7 @@ video{
 	text-align: right;
 	padding-top: 45%;
 	/*opacity:0.99;*/
-	transition: padding-top 1s, box-shadow 1s;
+	transition: padding-top 0.1s, box-shadow 0.1s;
 }
 
 #canvasContainer{
@@ -67,7 +67,7 @@ i.fa{
 	width:10vw;
 	height:10vw;
 	/*opacity: 0.5;*/
-	transition: width 1s, height 1s, margin-left 1s, opacity 1s, border-radius 1s, left 1s, top 1s, color 1s;
+	transition: width 0.1s, height 0.1s, margin-left 0.1s, opacity 0.1s, border-radius 0.1s, left 0.1s, top 0.1s, color 0.1s;
 	/*transition: left 1s;*/
 }
 
@@ -145,7 +145,7 @@ i.fa{
 	height:25vw;*/
 	margin-left: 2vw;
 	text-align: left;
-	transition: width 1s, height 1s, margin-left 1s, opacity 1s, border-radius 1s, left 1s, top 1s, padding-top 1s;
+	transition: width 0.1s, height 0.1s, margin-left 0.1s, opacity 0.1s, border-radius 0.1s, left 0.1s, top 0.1s, padding-top 0.1s;
 	/*transition: left 1s;*/
 
 /*	margin:0px;
@@ -157,7 +157,7 @@ i.fa{
 }
 
 
-div.hover{
+div.hovered{
 	cursor: pointer;
 	border-radius: 50%;
 	background-color: steelblue;
@@ -168,7 +168,7 @@ div.hover{
 	color:#000;
 	z-index: 100;
 	margin-right:1vw;
-	transition: width 1s, height 1s, margin-left 1s, opacity 1s, border-radius 1s, left 1s, top 1s, color 1s, box-shadow 1s;
+	transition: width 0.1s, height 0.1s, margin-left 0.1s, opacity 0.1s, border-radius 0.1s, left 0.1s, top 0.1s, color 0.1s, box-shadow 0.1s;
 	/*transition: left 1s;*/
 }
 
@@ -185,25 +185,25 @@ div.hover{
 	margin-left:0vw;
 	/*opacity:0.33;*/
 	transition-timing-function: ease-in;
-	transition: width 0.1s, height 0.1s, margin-left 1s, border-radius 3s, left 0.1s, top 0.1s, color 1s;
+	transition: width 0.1s, height 0.1s, margin-left 0.1s, border-radius 0.1s, left 0.1s, top 0.1s, color 0.1s;
 	/*transition: left 1s;*/
 }
 
 .selected > i.fa{
 	display:block;
 	opacity:1;
-	transition: opacity 1s, color 3s;
+	transition: opacity 0.1s, color 0.1s;
 	height:100%;
 }
 
-.menuItem.hover > h1, .menuItem.selected > h1{
+.menuItem.hovered > h1, .menuItem.selected > h1{
 	display:block;
 	margin-right: 0px;
 	opacity:1;
-	transition: opacity 1s, color 3s, margin-right 3s, padding-top 1s;
+	transition: opacity 0.1s, color 0.1s, margin-right 0.1s, padding-top 0.1s;
 	height:100%;
 	padding-top: 10vh;
-	transition padding-top: 1s;
+	transition padding-top: 0.1s;
 
 
 }

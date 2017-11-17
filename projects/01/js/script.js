@@ -4,18 +4,19 @@
 // console.log('here?');
 
 
-$('.menuItem')
+$('.base')
     .hover(
    function(){
-       $(this).addClass('hover');
+       $(this).addClass('hovered');
        $(this).removeClass('base');
-   },
+   }
+   ,
    function() {
-       $(this).removeClass('hover');
+       $(this).removeClass('hovered');
    })
     .click(function() {
         $(this).addClass('selected');
-        $(this).removeClass('hover');
+        $(this).removeClass('hovered');
    });  
 
 $('i.fa')
@@ -23,5 +24,6 @@ $('i.fa')
     // e.preventDefault();
     e.stopPropagation();
     // $(this).parent().addClass('base').siblings().removeClass('selected');
-    $(this).parent().addClass('base').removeClass('selected');    
+    $(this).parent().addClass('base');
+    $(this).parent().removeClass('selected');    
 });
