@@ -1,0 +1,1 @@
+document.getElementById("vide0").playbackRate = 0.5;
