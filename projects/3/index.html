@@ -1,12 +1,26 @@
 <html>
 	<head>
-		<title>My first three.js app</title>
+		<title>three.js</title>
 		<style>
 			body { margin: 0; }
 			canvas { width: 100%; height: 100% }
+
+			#info {
+				position: absolute;
+				top: 10px;
+				width: 100%;
+				text-align: center;
+				padding-top: 0%;
+				z-index: 100;
+				display:block;
+				color:#FFF;
+				font-family: arial;
+			}
+
 		</style>
 	</head>
 	<body>
+		<div id="info">html text</div>
 		<script src="js/three.js"></script>
 		<script>
 			var scene = new THREE.Scene();
@@ -17,36 +31,68 @@
 			document.body.appendChild( renderer.domElement );
 
 			var geometry = new THREE.BoxGeometry( 1, 1, 1 );
-			var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+			var material = new THREE.MeshLambertMaterial( { color: 0x00ff00 } );
+
 			var cube = new THREE.Mesh( geometry, material );
-			scene.add( cube );
-
-			cube.position.x = 0.2;
-			cube.position.y = 0.2;
-			cube.position.z = -2;	
-
-
+				scene.add( cube );
+				cube.position.x = Math.random();
+				cube.position.y = Math.random() * 2;
+				cube.position.z = Math.random() * -30;
 
 			var cube1 = new THREE.Mesh( geometry, material );
-			scene.add( cube1 );
+				scene.add( cube1 );
+				cube1.position.x = Math.random();
+				cube1.position.y = Math.random() * 2;
+				cube1.position.z = Math.random() * -30;
 
-			cube1.position.x = 0.5;
-			cube1.position.y = 2;
-			cube1.position.z = -3;
+
+			var sphereGeometry = new THREE.SphereGeometry( 1, 11, 11 );
+			var sphereMaterial = new THREE.MeshLambertMaterial( {color: 0xDADDAD} );
+			var sphere = new THREE.Mesh( sphereGeometry, sphereMaterial );
+				sphere.position.x = -3;
+				sphere.position.y = -3;
+				sphere.position.z = -30;
+			scene.add( sphere );
+
+			// create a point light
+			const pointLight =
+			  new THREE.PointLight(0xFFFFFF);
+
+			// set its position
+			pointLight.position.x = 2;
+			pointLight.position.y = 3;
+			pointLight.position.z = 10;
 
 
+
+
+
+
+			// add to the scene
+			scene.add(pointLight);
 
 			camera.position.z = 5;
 
 			var animate = function () {
 				requestAnimationFrame( animate );
 
-				cube.rotation.x += 0.1;
-				cube.rotation.y += 0.1;
+				cube.rotation.x += 0.001;
+				cube.rotation.y += 0.01;
+				cube.position.z += 0.001;
 
 				cube1.rotation.x += 0.02;
 				cube1.rotation.y += 0.01;
+				cube1.position.z += 0.1;
 
+				sphere.position.z += 0.1;
+
+				if (cube1.position.z > 5 ){
+					cube1.position.z = -50;
+				}
+
+				if (sphere.position.z > 5 ){
+					sphere.position.z = -50;
+				}
 
 				renderer.render(scene, camera);
 			};
