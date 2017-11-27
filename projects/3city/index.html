@@ -16,7 +16,7 @@
 	//////////////////////////////////////////////////////////////////////////////////
 
 	var camera		= new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.01, 3000)
-	camera.position.y	= 1.6
+	camera.position.y	= 1
 
 	//////////////////////////////////////////////////////////////////////////////////
 	//		add an object and make it move					//
@@ -43,7 +43,7 @@
 	//		Camera Controls							//
 	//////////////////////////////////////////////////////////////////////////////////
 	var controls	= new THREE.FirstPersonControls( camera );
-	controls.movementSpeed	= 50;
+	controls.movementSpeed	= 15;
 	controls.lookSpeed	= 0.05;
 	controls.lookVertical	= true;
 	updateFcts.push(function(delta, now){
