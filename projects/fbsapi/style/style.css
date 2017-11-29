@@ -1,0 +1,121 @@
+body{
+	margin:0px;
+	font-family: 'Kanit', sans-serif;
+	font-size: 0.75em;
+	font-weight: lighter;
+	color:white;
+	background-color: #BBB;
+}
+
+h1{
+	padding:0px;
+	margin:0px;
+}
+
+.teamname{
+	font-size:2.5em;
+	margin:0px;
+
+}
+
+.notteamname{
+	font-size:1.25em;
+	margin:0px;
+
+}
+.team{
+	display:none;
+}
+
+.team{
+	width:13.5vw;
+	margin-left:1vw;
+	height:13.5vw;
+	margin-top:1vw;
+	padding:0.5vw;
+	overflow: hidden;
+	display:block;
+	float:left;
+	background-size: 3vw;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	/*background-position: right;	*/
+}
+
+.fcs{
+	/*display:none;*/
+}
+
+/*.Mountain {
+	background-color: mediumpurple;
+}
+
+.SEC {
+	background-color: gold;
+}
+
+.PAC-12 {
+	background-color: firebrick;
+}
+
+.sun {
+	background-color: goldenrod;
+}
+
+.ACC {
+	background-color: steelblue;
+}
+
+.big {
+	background-color: powderblue;
+
+}
+.ivy {
+	background-color: forestgreen;
+}
+
+.independent{
+	background-color: lightgray;	
+}
+
+.usa{
+	background-color: cornflowerblue;
+}
+
+.swac{
+	background-color: darkred;
+}
+
+
+.Colonial{
+	background-color: beige;
+}
+
+.Mid-American{
+	background-color: coral;
+}
+
+.MEAC{
+	background-color: darkolivegreen;
+}
+
+.Pioneer{
+	background-color: khaki;
+}
+
+.Patriot{
+	background-color: indianred;
+}
+
+.Missouri{
+	background-color: brown;
+}
+
+.Ohio{
+	background-color: palevioletred;
+}
+.fcs{
+	display:none;
+}
+
+*/
