@@ -5,10 +5,11 @@
   <body>
       <a-scene>
         <a-assets>
-          <a-asset-item id="tree-obj" src="/assets/Model.obj"></a-asset-item>
+          <a-asset-item id="jeans" src="assets/Model/jeans.dae"></a-asset-item>
           <!-- <a-asset-item id="tree-mtl" src="/assets/Model/Model.mtl"></a-asset-item> -->
         </a-assets>
-        <a-entity obj-model="obj: #tree-obj" position="-1.5 3.25 -2" visible="true" scale="3 3 3" rotation="180 0 0"></a-entity>
+        <!-- <a-entity collada-model="obj: #tree-obj" position="-1.5 3.25 -2" visible="true" scale="3 3 3" rotation="180 0 0"></a-entity> -->
+        <a-entity collada-model="#jeans" position="-1.5 3.25 -2" visible="true" scale="3 3 3" rotation="180 0 0"></a-entity>
 
         <!-- <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box> -->
         <!-- <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere> -->
