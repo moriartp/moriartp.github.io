@@ -1,4 +1,0 @@
-1517867465
-a:2:{s:7:"content";s:631:"<p>the filter tells the plugin which files to gather up and compare in order to find related pages. My goto example is usually: --- filter: items: '@page': /blog --- This way it will use the page collection defined in the <code>/blog</code> page which makes sense when I'm using this plugin to find other related blog pages. However if you wanted to use a variety of pages, you could simply assign each one a specific category and use that: --- taxonomy: category: relatable --- Then in the plugin configuration: --- filter: items: '@taxonomy.category': relatable -</p>
-<p>Maren likes purple.</p>
-<p>maren wrote her name: maren</p>";s:12:"content_meta";N;}

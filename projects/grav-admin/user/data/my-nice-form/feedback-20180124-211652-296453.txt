@@ -1,4 +1,0 @@
-name: pj
-email: moriartp@newschool.edu
-message: hello
-

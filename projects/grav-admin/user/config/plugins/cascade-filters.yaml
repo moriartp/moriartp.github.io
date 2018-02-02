@@ -1,8 +1,0 @@
-enabled: true
-select_pages:
-  - /news
-  - /projects
-  - /team
-  - /learning
-taxonomy_filters:
-  - tag
