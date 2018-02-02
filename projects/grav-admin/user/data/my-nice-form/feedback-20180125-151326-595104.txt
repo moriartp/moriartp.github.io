@@ -1,0 +1,5 @@
+name: 'PJ Moriarty'
+email: moriartp@newschool.edu
+message: 'I have been working on building a flat file cms using an open source cms called Grav. I am finding that it is really flexible, and because there is no backend database configuration required it is easy to setup and install. Additionally, it is really fast. Also did a cool thing where I used a bit of jQuery in a p5 script to assign a width property to my canvas element via parental inheritance. That was clean.'
+url: moriartp.github.io
+

@@ -1,0 +1,9 @@
+---
+title: 'a thought began'
+related_pages:
+    - /team/pj-moriarty
+---
+
+I thought much about myself. That is to say I often took a quick look at myself, closed my eyes, forgot, began again. I thought much about myself. That is to say I often took a quick look at myself, closed my eyes, forgot, began again. I thought much about myself. That is to say I often took a quick look at myself, closed my eyes, forgot, began again. I thought much about myself. That is to say I often took a quick look at myself, closed my eyes, forgot, began again. I thought much about myself. That is to say I often took a quick look at myself, closed my eyes, forgot, began again. I thought much about myself. That is to say I often took a quick look at myself, closed my eyes, forgot, began again. I thought much about myself. That is to say I often took a quick look at myself, closed my eyes, forgot, began again. I thought much about myself. That is to say I often took a quick look at myself, closed my eyes, forgot, began again. I thought much about myself. That is to say I often took a quick look at myself, closed my eyes, forgot, began again. I thought much about myself. That is to say I often took a quick look at myself, closed my eyes, forgot, began again. 
+
+I thought much about myself. That is to say I often took a quick look at myself, closed my eyes, forgot, began again. I thought much about myself. That is to say I often took a quick look at myself, closed my eyes, forgot, began again. I thought much about myself. That is to say I often took a quick look at myself, closed my eyes, forgot, began again. I thought much about myself. That is to say I often took a quick look at myself, closed my eyes, forgot, began again. I thought much about myself. That is to say I often took a quick look at myself, closed my eyes, forgot, began again. 

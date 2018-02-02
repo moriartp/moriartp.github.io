@@ -1,0 +1,17 @@
+---
+title: 'Anand Padmanabhan'
+media_order: anandp.jpg
+taxonomy:
+    category:
+        - item
+    tag:
+        - IT
+visible: false
+related_pages:
+    - /about
+    - /news
+---
+
+Anand, founder of the XReality Center, provides vision and leadership for developing and implementing information technology initiatives that align with the mission of The New School.
+
+[Anand Padmanabhan](https://www.newschool.edu/leadership/senior-leadership-anand-padmanabhan/) became The New School’s senior vice president and chief information officer in January 2014. Anand’s role is to improve the effectiveness of the university’s information technology operations, in accordance with The New School’s service-oriented goals and efforts. Before coming to The New School, he was chief information officer for the Shiv Nadar Foundation in India, where he set IT strategy for a large organization encompassing a research university, a college of engineering, and other programs. In 2013, he was named one of India’s Top 100 CIOs by CIO magazine. Anand has led technology innovation in educational organizations including Everonn Education Limited in Chennai, India; Stern School of Business at New York University; Hunter College; Seton Hill University, in Pennsylvania; and Classroom of the Future, a NASA-sponsored program. Anand has an MBA from Stern School of Business, an MS from Louisiana State University, and a bachelor’s degree from Madras University in India.

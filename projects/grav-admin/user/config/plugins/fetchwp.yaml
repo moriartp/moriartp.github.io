@@ -1,0 +1,7 @@
+enabled: false
+wordpress_fetch_settings:
+  blogurl: 'http://techtalk.newschool.edu//index.php'
+  count: 3
+  enableTranslation: false
+  enableFMedia: false
+  sectiontitle: PLUGIN_FETCHWP.SECTION_TITLE

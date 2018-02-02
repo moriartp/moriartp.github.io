@@ -1,0 +1,41 @@
+{% embed 'partials/base.html.twig' %}
+
+	{% set collection = page.collection() %}
+
+	{% block content %}
+
+
+		{% set blog_image = page.media.images|first.grayscale().contrast(20).brightness(-100).colorize(11,11,11) %}
+
+		{% if blog_image %}
+		<div class="flush-top blog-header blog-header-image" style="background-image: url({{ blog_image.url }});">
+		{% else %}
+		<div class="blog-header">
+		{% endif %}
+			{{ page.content }}
+		</div>
+
+
+
+
+		{#	
+		<ul>
+		{% for post in page.find('/collection').children.order('date', 'desc').slice(0, 5) %}
+		    <li class="recent-posts">
+		        <strong><a href="{{ post.url }}">{{ post.title }}</a></strong>
+		    </li>
+		{% endfor %}
+		</ul>
+		#}
+
+
+	{% endblock %}
+
+{% endembed %}
+
+
+
+
+
+
+

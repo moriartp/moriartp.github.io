@@ -1,0 +1,105 @@
+---
+title: About
+media_order: fingers.mov
+---
+
+#About
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+<script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+
+<h4>The XReality Center is build on four foundational pillars.</h4>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a tristique urna. Sed at scelerisque lacus. Nullam congue metus id ex fringilla consectetur. Ut ullamcorper eget est in fringilla. Donec condimentum lorem erat, vel fermentum nulla vehicula et. Proin nisl lacus, aliquam a tincidunt et, commodo a metus. Praesent venenatis hendrerit ante.</p>
+<div>
+<p>The XReality Center is based on these four building blocks:</p>
+<ol>
+    <li><span style="font-family:neueRando">Immersive Learning</span> - A resource hub for XR activities and initiatives happening within the university. </li>
+    <li><span style="font-family:neueRando">XR Labs </span>- Explore and experience what XR has to offer in order to create pedagogically sound immersive learning interactions and to gain insight into a project or initiative using emerging immersive technology.</li>
+<li><span style="font-family:neueRando">Products and Projects</span> - A collaborative environment for students and faculty to develop XR initiatives and a place where products can be developed for and/or with external clients and partners.</li>
+<li><span style="font-family:neueRando">Research</span> - Research will be conducted on an ongoing basis in order to comprehend how to effectively utilize emerging technology in the education sector.</li>
+</ol>
+</div>
+<div id="container"></div>    
+<p>In et aliquam massa. Donec ut pretium leo. Quisque nunc turpis, blandit eget tempor vel, hendrerit et felis. Aliquam erat volutpat. Aliquam mattis sapien nec velit pharetra, a sollicitudin purus ornare. Curabitur eu urna vitae ante volutpat aliquet in at eros. Nullam eget turpis sodales, consectetur sem sit amet, auctor sem. Duis tempor sem in tincidunt ultricies. Etiam vitae egestas enim. Etiam facilisis dui convallis ornare hendrerit. Morbi dignissim lectus eu elementum iaculis. Suspendisse elementum, nunc a ultrices molestie, nisl tellus venenatis felis, eget elementum elit ligula sed mi. Curabitur sit amet lacus mollis, molestie lacus in, vulputate quam. Nulla eget turpis diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse neque sapien, faucibus sed finibus bibendum, bibendum at felis.</p>
+<p>Proin dui velit, pretium ut tortor eu, ultrices ultricies est. Nunc eget pellentesque metus. Fusce nec pretium ligula. Cras ultrices ultricies mollis. Cras sagittis metus in odio scelerisque malesuada eget quis sem. Nam porta orci vel ullamcorper lacinia. Pellentesque vel lacus vitae nunc ornare vehicula. Suspendisse potenti. Vestibulum ultrices leo ac est porttitor, nec sagittis massa ultrices. Suspendisse commodo vehicula nulla quis viverra. Curabitur tincidunt a lacus et venenatis.</p>
+
+<p>Suspendisse at vehicula est, a maximus lorem. Vivamus sagittis non leo a luctus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse ut tempor justo. Sed aliquet, dui nec euismod rutrum, dui mi feugiat lorem, ut pharetra nunc ligula eu ligula. Nam eget venenatis nibh. Nullam id diam dui. Quisque suscipit quis est ac interdum. Nullam eget metus nisl.</p>
+
+<p>Proin blandit quam ut libero accumsan, non placerat nibh sodales. Vivamus tincidunt ligula lorem, id hendrerit augue tincidunt eu. Nullam cursus arcu eros, a gravida ligula volutpat ac. Nam convallis convallis mattis. Proin eu dapibus purus. Sed efficitur justo a leo finibus, nec euismod eros faucibus. Ut rutrum vitae augue eu dignissim. Nullam lacinia mi vitae nisl tincidunt, eu interdum risus scelerisque. Nulla auctor scelerisque augue sed sollicitudin. Aliquam sit amet lorem vel dui rhoncus ultricies sed non dolor. Nunc bibendum sapien ipsum, vel euismod magna auctor eget. Curabitur eu urna et velit pretium malesuada non sit amet sem. 
+ </p>
+<script>
+var dotNumerator;
+var dotx = [];
+var doty = [];
+var dotsx = [];
+var dotsy = [];
+
+var XX;
+var YY;
+
+function setup() {
+   dotNumerator = windowWidth/25;
+   XX = windowWidth;
+   YY = windowHeight/2;
+
+   for (var j = 0; j<=dotNumerator;j++){
+      dotx[j] = random(0,XX);
+      doty[j] = random(0,windowHeight);
+      dotsx[j] = random(-0.5,0.5);
+      dotsy[j] = random(-0.5,0.5);
+   } 
+}
+
+function draw() {
+   cnv = createCanvas($("#container").width(), windowHeight/2);
+   cnv.parent("container");
+   
+   
+
+   background(255); 
+
+   
+   noStroke();
+   fill(0,0,0,155);
+   for (var i = 0; i<=dotNumerator;i++){
+      dotx[i] = dotx[i]+dotsx[i];
+      doty[i] = doty[i]+dotsy[i];
+      ellipse(dotx[i],doty[i],3);
+
+      if(dotx[i]<= -50 || dotx[i]>= windowWidth+5){
+         dotsx[i] = dotsx[i] * -1;
+      }
+
+      if(doty[i]<= -50 || doty[i]>= windowHeight+50){
+         dotsy[i] = dotsy[i] * -1;
+      }
+
+      for (var k = 0;k<=dotNumerator;k++){
+         dotx[0] = mouseX;
+         doty[0] = mouseY;
+         // stroke(222,222,222,(333 -    (( abs(dotx[i]-dotx[k])   +   abs(doty[i]-doty[k]))      )));
+         stroke(0,0,0,(288 -    (( abs(dotx[i]-dotx[k])   +   abs(doty[i]-doty[k]))      )));
+         strokeWeight(2);
+         line(dotx[i],doty[i],dotx[k],doty[k]);
+
+      }
+   }
+   noStroke();
+   XX = XX-2.5;
+   if (XX < -2200){
+      XX = windowWidth;
+   }
+   
+   textSize(dotx[0]/10);
+   textFont('neue');
+   textAlign(CENTER,CENTER);
+   fill(dotx[0]/4,11,11,dotx[0]/8);
+   text('XReality',constrain(dotx[0],0,width/2),height/2);
+   
+   textSize(width/30);
+   text('Immersive Leaning',dotx[1],doty[1]);
+   text('XR Labs',dotx[2],doty[2]);
+   text('Products and Development',dotx[3],doty[3]);
+   text('Research',dotx[4],doty[4]);
+}
+</script>

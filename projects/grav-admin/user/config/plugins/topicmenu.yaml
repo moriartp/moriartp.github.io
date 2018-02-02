@@ -1,0 +1,4 @@
+enabled: false
+page_path: /news
+taxonomy_level_1: category
+taxonomy_level_2: tag

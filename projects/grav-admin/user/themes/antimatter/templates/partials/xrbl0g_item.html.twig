@@ -1,0 +1,120 @@
+
+    {% set header_image = page.header.header_image|defined(true) %}
+    {% set header_image_width  = page.header.header_image_width|defined(1200) %}
+    {% set header_image_height = page.header.header_image_height|defined(200) %}
+    {% set header_image_file = page.header.header_image_file %}
+    {% set header_image_file_url = page.header.header_image_file.url() %}
+
+
+    {% set header_image = page.media.images|first %}
+
+        {% if header_image %}
+        <div class="bl0gp0st" style="background-position:center;background-size:cover;background-image: url({{ header_image.url }});">
+        {% else %}
+        <div class="bl0gp0st" style="background-position:center;background-size:cover;background-image: url(/images/4/5/5/0/d/4550d1af389520932c40b4f5c77f574e081a074a-post-it.jpeg);">
+        {% endif %}
+
+
+        {# PAGE DATE #}
+        {#<span class="list-blog-date">
+            <time class="dt-published" datetime="{{ page.date|date("c") }}">
+                <span>{{ page.date|date("d") }}</span>
+                <em>{{ page.date|date("M") }}</em>
+            </time>
+       </span>#}
+
+
+
+
+       {# PAGE HEADER LINK #}
+        {% if page.header.link %}
+            <div class="bl0gp0st-content" style="display:block;">
+                {% if page.header.continue_link is not sameas(false) %}
+                <h3><a href="{{ page.url }}"><i class="fa fa-angle-double-right u-url"></i></a></h3>
+                {% endif %}
+                <h3><a href="{{ page.header.link }}" class="bl0gp0st-url">{{ page.title }}</a></h3>
+            <div class="bl0gp0st-summary">{{ page.summary(100) }}</div>
+            </div>
+        {% else %}
+            <div class="bl0gp0st-name" style="display:block;"><h3><a href="{{ page.url }}" class="bl0gp0st-url">{{ page.title }}</a></h3><div class="bl0p0st-summary">{{ page.summary(100) }}</a></div></div>
+
+        {% endif %}
+
+
+
+
+
+
+
+
+
+
+
+
+        {#START TAGS 
+        {% if page.taxonomy.tag %}
+        <span class="tags">
+            {% for tag in page.taxonomy.tag %}
+            <a href="{{ blog.url|rtrim('/') }}/tag{{ config.system.param_sep }}{{ tag }}" class="p-category">{{ tag }}</a>
+            {% endfor %}
+        </span>
+        {% endif %}
+        END TAGS#}
+
+
+
+
+
+{#
+    {% if page.header.continue_link is sameas(false) %}
+       
+            {{ page.content }}
+
+        {% if not truncate %}
+        {% set show_prev_next = true %}
+        {% endif %}
+    {% elseif truncate and page.summary != page.content %}
+
+            {{ page.summary(100) }}
+            <p><a href="{{ page.url }}">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a></p>
+
+    {% elseif truncate %}
+
+            {{ page.content }}
+            <p><a href="{{ page.url }}">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a></p>
+
+
+
+
+    {% else %}
+
+            {{ page.content }}
+
+
+
+
+        {% if config.plugins.comments.enabled %}
+            {% include 'partials/comments.html.twig' %}
+        {% endif %}
+
+        {% set show_prev_next = true %}
+    {% endif %}
+
+    {% if show_prev_next %}
+            <div id="'"paginator" style="display:block;">
+            <p class="prev-next">
+                {% if not page.isFirst %}
+                    <a class="button" href="{{ page.nextSibling.url }}"><i class="fa fa-chevron-left"></i> {{ 'BLOG.ITEM.NEXT_POST'|t }}</a>
+                {% endif %}
+
+                {% if not page.isLast %}
+                    <a class="button" href="{{ page.prevSibling.url }}">{{ 'BLOG.ITEM.PREV_POST'|t }} <i class="fa fa-chevron-right"></i></a>
+                {% endif %}
+            </p></div>
+    {% endif %}
+    #}
+
+
+</div>
+
+

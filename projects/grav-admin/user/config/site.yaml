@@ -1,0 +1,22 @@
+title: 'XR CENTER'
+default_lang: en
+author:
+  name: 'X Reality'
+  email: xrcenter-test@newschool.edu
+taxonomies:
+  - category
+  - tag
+  - designation
+metadata:
+  description: 'Grav is an easy to use, yet powerful, open source flat-file CMS'
+summary:
+  enabled: true
+  format: short
+  size: 300
+  delimiter: ___
+blog:
+  route: /blog
+menu:
+  -
+    url: /search
+    text: <i class="fa fa-search" aria-hidden="true"></i>

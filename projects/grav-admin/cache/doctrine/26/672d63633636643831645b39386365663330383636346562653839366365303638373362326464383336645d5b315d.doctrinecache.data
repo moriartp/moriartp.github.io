@@ -1,0 +1,278 @@
+1518107331
+a:2:{s:7:"content";s:12851:"<div id="XRtype"><h1><text style="color:#e42a1d;display: inline-block;text-align:left;">The X Reality Center is&nbsp</text>
+      <span
+         class="txt-rotate"
+         data-period="2000"
+         data-rotate='[ 
+           " where XR happens at The New School.",
+           " a place where you will find XR resources, and guidance.", 
+           " paving a new pathway of design.", 
+           " defining how XR is used in education.", 
+           " on the avante garde.", 
+           " leading the design of the virtual and augmented reality.",
+           " a new research center at The New School.",
+           " virtual, augmented, and mixed reality.", 
+           " New School faculty and students.",
+           " exploring new arenas of design.", 
+           " an opportunity to solve problems.",
+           " an IT development and prototyping team.", 
+           " your chance to design new worlds.", 
+           " the reality that has yet to be defined." 
+           ]'>
+      </span>
+      </h1>
+</div>
+<h1>Grav is Running!</h1>
+<h2>You have installed <strong>Grav</strong> successfully</h2>
+<p>Congratulations! You have installed the <strong>Base Grav Package</strong> that provides a <strong>simple page</strong> and the default <strong>antimatter</strong> theme to get you started.</p>
+<div class="notices blue">
+<p>If you want a more <strong>full-featured</strong> base install, you should check out <a href="http://getgrav.org/downloads" target="_blank" rel="nofollow" class="external-link no-image"><strong>Skeleton</strong> packages available in the downloads</a>.</p>
+</div>
+<h1>pageinject</h1>
+<h1>About</h1>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+<script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+<h4>The XReality Center is build on four foundational pillars.</h4>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a tristique urna. Sed at scelerisque lacus. Nullam congue metus id ex fringilla consectetur. Ut ullamcorper eget est in fringilla. Donec condimentum lorem erat, vel fermentum nulla vehicula et. Proin nisl lacus, aliquam a tincidunt et, commodo a metus. Praesent venenatis hendrerit ante.</p>
+<div>
+<p>The XReality Center is based on these four building blocks:</p>
+<ol>
+    <li><span style="font-family:neueRando">Immersive Learning</span> - A resource hub for XR activities and initiatives happening within the university. </li>
+    <li><span style="font-family:neueRando">XR Labs </span>- Explore and experience what XR has to offer in order to create pedagogically sound immersive learning interactions and to gain insight into a project or initiative using emerging immersive technology.</li>
+<li><span style="font-family:neueRando">Products and Projects</span> - A collaborative environment for students and faculty to develop XR initiatives and a place where products can be developed for and/or with external clients and partners.</li>
+<li><span style="font-family:neueRando">Research</span> - Research will be conducted on an ongoing basis in order to comprehend how to effectively utilize emerging technology in the education sector.</li>
+</ol>
+</div>
+<div id="container"></div>    
+<p>In et aliquam massa. Donec ut pretium leo. Quisque nunc turpis, blandit eget tempor vel, hendrerit et felis. Aliquam erat volutpat. Aliquam mattis sapien nec velit pharetra, a sollicitudin purus ornare. Curabitur eu urna vitae ante volutpat aliquet in at eros. Nullam eget turpis sodales, consectetur sem sit amet, auctor sem. Duis tempor sem in tincidunt ultricies. Etiam vitae egestas enim. Etiam facilisis dui convallis ornare hendrerit. Morbi dignissim lectus eu elementum iaculis. Suspendisse elementum, nunc a ultrices molestie, nisl tellus venenatis felis, eget elementum elit ligula sed mi. Curabitur sit amet lacus mollis, molestie lacus in, vulputate quam. Nulla eget turpis diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse neque sapien, faucibus sed finibus bibendum, bibendum at felis.</p>
+<p>Proin dui velit, pretium ut tortor eu, ultrices ultricies est. Nunc eget pellentesque metus. Fusce nec pretium ligula. Cras ultrices ultricies mollis. Cras sagittis metus in odio scelerisque malesuada eget quis sem. Nam porta orci vel ullamcorper lacinia. Pellentesque vel lacus vitae nunc ornare vehicula. Suspendisse potenti. Vestibulum ultrices leo ac est porttitor, nec sagittis massa ultrices. Suspendisse commodo vehicula nulla quis viverra. Curabitur tincidunt a lacus et venenatis.</p>
+<p>Suspendisse at vehicula est, a maximus lorem. Vivamus sagittis non leo a luctus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse ut tempor justo. Sed aliquet, dui nec euismod rutrum, dui mi feugiat lorem, ut pharetra nunc ligula eu ligula. Nam eget venenatis nibh. Nullam id diam dui. Quisque suscipit quis est ac interdum. Nullam eget metus nisl.</p>
+<p>Proin blandit quam ut libero accumsan, non placerat nibh sodales. Vivamus tincidunt ligula lorem, id hendrerit augue tincidunt eu. Nullam cursus arcu eros, a gravida ligula volutpat ac. Nam convallis convallis mattis. Proin eu dapibus purus. Sed efficitur justo a leo finibus, nec euismod eros faucibus. Ut rutrum vitae augue eu dignissim. Nullam lacinia mi vitae nisl tincidunt, eu interdum risus scelerisque. Nulla auctor scelerisque augue sed sollicitudin. Aliquam sit amet lorem vel dui rhoncus ultricies sed non dolor. Nunc bibendum sapien ipsum, vel euismod magna auctor eget. Curabitur eu urna et velit pretium malesuada non sit amet sem. 
+ </p>
+<script>
+var dotNumerator;
+var dotx = [];
+var doty = [];
+var dotsx = [];
+var dotsy = [];
+
+var XX;
+var YY;
+
+function setup() {
+   dotNumerator = windowWidth/25;
+   XX = windowWidth;
+   YY = windowHeight/2;
+
+   for (var j = 0; j<=dotNumerator;j++){
+      dotx[j] = random(0,XX);
+      doty[j] = random(0,windowHeight);
+      dotsx[j] = random(-0.5,0.5);
+      dotsy[j] = random(-0.5,0.5);
+   } 
+}
+
+function draw() {
+   cnv = createCanvas($("#container").width(), windowHeight/2);
+   cnv.parent("container");
+
+   background(255); 
+
+   noStroke();
+   fill(0,0,0,155);
+   for (var i = 0; i<=dotNumerator;i++){
+      dotx[i] = dotx[i]+dotsx[i];
+      doty[i] = doty[i]+dotsy[i];
+      ellipse(dotx[i],doty[i],3);
+
+      if(dotx[i]<= -50 || dotx[i]>= windowWidth+5){
+         dotsx[i] = dotsx[i] * -1;
+      }
+
+      if(doty[i]<= -50 || doty[i]>= windowHeight+50){
+         dotsy[i] = dotsy[i] * -1;
+      }
+
+      for (var k = 0;k<=dotNumerator;k++){
+         dotx[0] = mouseX;
+         doty[0] = mouseY;
+         // stroke(222,222,222,(333 -    (( abs(dotx[i]-dotx[k])   +   abs(doty[i]-doty[k]))      )));
+         stroke(0,0,0,(288 -    (( abs(dotx[i]-dotx[k])   +   abs(doty[i]-doty[k]))      )));
+         strokeWeight(2);
+         line(dotx[i],doty[i],dotx[k],doty[k]);
+
+      }
+   }
+   noStroke();
+   XX = XX-2.5;
+   if (XX < -2200){
+      XX = windowWidth;
+   }
+
+   textSize(dotx[0]/10);
+   textFont('neue');
+   textAlign(CENTER,CENTER);
+   fill(dotx[0]/4,11,11,dotx[0]/8);
+   text('XReality',constrain(dotx[0],0,width/2),height/2);
+
+   textSize(width/30);
+   text('Immersive Leaning',dotx[1],doty[1]);
+   text('XR Labs',dotx[2],doty[2]);
+   text('Products and Development',dotx[3],doty[3]);
+   text('Research',dotx[4],doty[4]);
+}
+</script>
+<h3>Find out all about Grav</h3>
+<ul>
+<li>Learn about <strong>Grav</strong> by checking out our dedicated <a href="http://learn.getgrav.org" target="_blank" rel="nofollow" class="external-link no-image">Learn Grav</a> site.</li>
+<li>Download <strong>plugins</strong>, <strong>themes</strong>, as well as other Grav <strong>skeleton</strong> packages from the <a href="http://getgrav.org/downloads" target="_blank" rel="nofollow" class="external-link no-image">Grav Downloads</a> page.</li>
+<li>Check out our <a href="http://getgrav.org/blog" target="_blank" rel="nofollow" class="external-link no-image">Grav Development Blog</a> to find out the latest goings on in the Grav-verse.</li>
+</ul>
+<h3>Edit this Page</h3>
+<p>To edit this page, simply navigate to the folder you installed <strong>Grav</strong> into, and then browse to the <code>user/pages/01.home</code> folder and open the <code>default.md</code> file in your <a href="http://learn.getgrav.org/basics/requirements" target="_blank" rel="nofollow" class="external-link no-image">editor of choice</a>.  You will see the content of this page in <a href="http://learn.getgrav.org/content/markdown" target="_blank" rel="nofollow" class="external-link no-image">Markdown format</a>.</p>
+<h3>Create a New Page</h3>
+<p>Creating a new page is a simple affair in <strong>Grav</strong>.  Simply follow these simple steps:</p>
+<ol>
+<li>Navigate to your pages folder: <code>user/pages/</code> and create a new folder.  In this example, we will use <a href="http://learn.getgrav.org/content/content-pages" target="_blank" rel="nofollow" class="external-link no-image">explicit default ordering</a> and call the folder <code>02.mypage</code>.</li>
+<li>
+<p>Launch your text editor and paste in the following sample code:</p>
+<pre><code>---
+title: My New Page
+---
+# My New Page!
+
+This is the body of **my new page** and I can easily use _Markdown_ syntax here.</code></pre>
+</li>
+<li>Save this file in the <code>user/pages/02.mypage/</code> folder as <code>default.md</code>. This will tell <strong>Grav</strong> to render the page using the <strong>default</strong> template.</li>
+<li>That is it! Reload your browser to see your new page in the menu.</li>
+</ol>
+<div class="notices yellow">
+<p>NOTE: The page will automatically show up in the Menu after the "Home" menu item. If you wish to change the name that shows up in the Menu, simple add: <code>menu: My Page</code> between the dashes in the page content. This is called the YAML front matter, and it is where you configure page-specific options.</p>
+</div>
+<hr />
+<script type="text/javascript">
+
+<script>
+var dotNumerator;
+var dotx = [];
+var doty = [];
+var dotsx = [];
+var dotsy = [];
+
+var XX;
+var YY;
+
+function setup() {
+   dotNumerator = $("#XRtype").width()/25;
+   XX = $("#XRtype").width();
+   YY = windowHeight;
+
+   for (var j = 0; j<=dotNumerator;j++){
+      dotx[j] = random(0,XX);
+      doty[j] = random(0,windowHeight);
+      dotsx[j] = random(-0.5,0.5);
+      dotsy[j] = random(-0.5,0.5);
+   } 
+}
+
+function draw() {
+   cnv = createCanvas($("#XRtype").width(), windowHeight*1);
+   cnv.parent("XRtype");
+
+   background(255); 
+
+   noStroke();
+   fill(0,0,0,155);
+   for (var i = 0; i<=dotNumerator;i++){
+      dotx[i] = dotx[i]+dotsx[i];
+      doty[i] = doty[i]+dotsy[i];
+      ellipse(dotx[i],doty[i],3);
+
+      if(dotx[i]<= 0 || dotx[i]>= $("#container").width()){
+         dotsx[i] = dotsx[i] * -1;
+      }
+
+      if(doty[i]<= 0 || doty[i]>= windowHeight){
+         dotsy[i] = dotsy[i] * -1;
+      }
+
+      for (var k = 0;k<=dotNumerator;k++){
+         dotx[0] = mouseX;
+         doty[0] = mouseY;
+         // stroke(222,222,222,(333 -    (( abs(dotx[i]-dotx[k])   +   abs(doty[i]-doty[k]))      )));
+         stroke(0,0,0,(288 -    (( abs(dotx[i]-dotx[k])   +   abs(doty[i]-doty[k]))      )));
+         strokeWeight(2);
+         line(dotx[i],doty[i],dotx[k],doty[k]);
+
+      }
+   }
+   noStroke();
+   XX = XX-2.5;
+   if (XX < -2200){
+      XX = windowWidth;
+   }
+
+}
+
+/////    
+
+  var TxtRotate = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
+
+TxtRotate.prototype.tick = function() {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+  var that = this;
+  var delta = 100 - Math.random() * 100;
+
+  if (this.isDeleting) { delta /= 2; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 50;
+  }
+
+  setTimeout(function() {
+    that.tick();
+  }, delta);
+};
+
+window.onload = function() {
+
+  var elements = document.getElementsByClassName('txt-rotate');
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+    // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+  document.body.appendChild(css);
+};
+
+</script>";s:12:"content_meta";N;}
