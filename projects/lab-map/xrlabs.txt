@@ -1,4 +1,4 @@
 name,id,nametype,recclass,mass (g),fall,year,reclat,reclong
 XReality Lab,6640,Valid,L4,8346,Found,1/1/72 00:00,40.736277,-73.993223
 Equiment Center,6640,Valid,L4,8346,Found,1/1/72 00:00,40.736497, -73.996629
-Making Center,6640,Valid,L4,8346,Found,1/1/72 00:00,40.735256, -73.994528
+Making Center,6640,Valid,L4,8346,Found,1/1/72 00:00,40.735329, -73.995014
