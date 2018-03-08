@@ -1,0 +1,152 @@
+
+
+body{
+	margin:0px;
+	font-family: 'Kanit', sans-serif;
+	/*text-transform: uppercase;*/
+	font-size: 0.5em;
+	/*font-weight: bolder;*/
+}
+
+
+#title{
+	display: block;
+	width:100vw;
+	margin:0px;
+	font-weight: bolder;
+	font-size: 5em;
+	padding-left: 1vw;
+	height:auto;
+	border:none;	
+}
+
+/*div{
+	height:6vh;
+	width:18vw;
+	margin: 0px;	
+	display: block;
+	overflow:hidden;
+	margin:0.25vw;
+	border:0.25px solid black;
+	padding-left: 1em;
+	padding-right: 1em;	
+	display:block;
+	float:left;
+}*/
+
+h1{
+	font-weight: bolder;
+	font-size: 7em;
+	display:block;
+
+
+	margin:0px;
+}
+
+h2{
+	margin-bottom: 1px;
+	margin-top: 1px;
+	font-size: 2em;
+	line-height: 1.1em;
+}
+h4{
+	display:block;
+	float:none;
+	padding:2px;
+	margin:0px;
+}
+p{
+	margin:0px;
+}
+
+.appContainer{
+	padding:5px;
+
+}
+
+.itemDetails{
+	/*float:none;*/
+	position:block !important;
+	width:100%;
+	border:1px dotted gold;
+}
+
+
+.diver{
+	padding:3px;
+}
+
+
+.projectClass{
+	color:#555;
+	background-color:#bbb; 
+	padding:5px;
+	text-transform: uppercase;
+}
+
+.type11{
+	display:none;
+}
+
+.statusTag{
+	padding:1px 5px 1px 5px;
+	border-radius:5px;
+	display:inline-block;
+}
+
+.Unresolved, .Open, .Review{
+	color:#FFF;
+	color: coral;
+	border:1px solid coral;
+	font-size: 1.5em;
+
+}
+
+.Hold, .Not, .Deferred{
+	color:#FFF;
+	color: steelblue;
+	border:1px solid steelblue;
+	font-size: 1.5em;
+
+
+
+}
+
+
+.Resolved, .Completed .Archived{
+	color:#FFF;
+	color: seagreen;
+	border:1px solid seagreen;
+	font-size: 1.5em;	
+}
+
+
+.Planned{
+	color:#FFF;
+	color: purple;
+	border:1px solid purple;
+	font-size: 1.5em;	
+
+
+}
+
+
+.Occurred{
+	color:#FFF;
+	color: red;
+	border:1px solid red;
+	font-size: 1.5em;
+
+
+
+}
+
+.Mitigated, .Closed{
+	color:#FFF;
+	color: gray;
+	border:1px solid gray;
+	font-size: 1.5em;
+
+
+
+}
