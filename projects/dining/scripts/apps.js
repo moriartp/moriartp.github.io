@@ -1,6 +1,5 @@
 ////////////////////////////////////////////  APPS   /////////////////////
 
-
 var project = "https://projects.newschool.edu/psa/api.do?function=query&table=db_project&id=676&id=678&id=684&token=fa71d5fc-1b40-4512-9eb6-a7b0f8ec828e&data-format=json";
 
 var objProj = [];
@@ -45,9 +44,9 @@ var dataState = d3.json(state, function(dataState) {
 	// console.log(str);
 
 	var objState = JSON.parse(str3);
-	console.log(objState);
+	// console.log(objState);
 	for(var z=0;z<objState.length; z++){
-		console.log(objState[z].name);
+		// console.log(objState[z].name);
 	}
 // });
 
@@ -65,6 +64,7 @@ var dataType = d3.json(process_type, function(dataType) {
 	dataType = dataType.rows;
 
 	var str2 = JSON.stringify(dataType);
+
 
 	str2 = str2.replace(/"n":"/g,'"');
 	str2 = str2.replace(/,"v":/g,':');
@@ -93,7 +93,7 @@ var data = d3.json(api, function(data) {
 	data = data.rows;
 
 	var str = JSON.stringify(data);
-
+	// console.log(str);
 	str = str.replace(/"n":"/g,'"');
 	str = str.replace(/,"v":/g,':');
 	str = str.replace(/{/g,'');
@@ -125,11 +125,14 @@ var data = d3.json(api, function(data) {
 
 			}
 		}
-		obj[i].custom_field_string = "https://projects.newschool.edu/psa/project.View.wm?p_p_id=";
-
-
+		obj[i].projectName = obj[i].projectName.replace("Dining Services || ","");		
+		// obj[i].custom_field_string = "https://projects.newschool.edu/psa/project.View.wm?p_p_id=";
+		obj[i].due_date = Date(obj[i].due_date);
+		// obj[i].formattedDate = Date(obj[i].due_date).getMonth();		
+		// console.log(obj[i].due_date);
 	}
 	console.log(obj);
+
 
 
 
@@ -139,7 +142,7 @@ var data = d3.json(api, function(data) {
 		.data(obj).enter().append('div')
 		.attr('id',function(d) { return d.id; })
 		.attr('class',function(d) { return d.is_delayed+" appContainer type"+d.type_id + " "+d.id; })
-		.style('border', '1px double black')
+		// .style('border', '1px double black')
 
 		.style('height','auto')
 		// .style('color',function(d) { return "#"+d.state_id+"66"; })
@@ -152,12 +155,9 @@ var data = d3.json(api, function(data) {
         	"<h2>"+d.typeName+": "+d.summary+"</h2>"+
         	"<div style='width:100%'><div class='statusTag "+d.stateName+"'>"+d.stateName +"</div></div>"+
                  "<h4>Planned Finish: "+d.due_date+"</h4>"+
-                 "<p>Delayed: "+d.is_delayed+"</p></div>"+
-                 "<div class='itemDetails'><p>"+d.detail+"</p></div>"
-                ; })
-
-
-
+                 // "<p>Delayed: "+d.is_delayed+"</p></div>"+
+                 "<div class='itemDetails'><h3><b>Details:</b></h3><p>"+d.detail+"</p></div>"
+                ;})
 
 
 			});

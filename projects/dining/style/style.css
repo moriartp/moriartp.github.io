@@ -2,9 +2,11 @@
 
 body{
 	margin:0px;
-	font-family: 'Kanit', sans-serif;
+	/*font-family: 'Kanit', sans-serif;*/
+	/*font-family: Verdana;	*/
+	font-family: 'Raleway', sans-serif;
 	/*text-transform: uppercase;*/
-	font-size: 0.5em;
+	font-size: 0.65em;
 	/*font-weight: bolder;*/
 }
 
@@ -38,30 +40,40 @@ h1{
 	font-weight: bolder;
 	font-size: 7em;
 	display:block;
-
-
 	margin:0px;
 }
 
 h2{
 	margin-bottom: 1px;
 	margin-top: 1px;
-	font-size: 2em;
+	font-size: 1.5em;
 	line-height: 1.1em;
 }
+
+h3{
+	margin-bottom:0px;
+}
+
 h4{
 	display:block;
 	float:none;
 	padding:2px;
 	margin:0px;
 }
+
 p{
 	margin:0px;
 }
 
+.a {
+	color: #E47C1D !important;
+}
+
 .appContainer{
 	padding:5px;
-
+	margin-top:5vh !important;
+	border:2px solid #CCC;
+	transition: border-color 0.5s;
 }
 
 .itemDetails{
@@ -69,6 +81,20 @@ p{
 	position:block !important;
 	width:100%;
 	border:1px dotted gold;
+	height: 0px;
+	overflow-y:scroll;
+
+	transition: height 0.5s;
+}
+
+.appContainer:hover > .itemDetails{
+	height:15vh;
+
+}
+
+.appContainer:hover{
+	border-color: #222;
+
 }
 
 
@@ -90,14 +116,17 @@ p{
 
 .statusTag{
 	padding:1px 5px 1px 5px;
+	margin:5% 5% 5% 0px;
+	right:0px ;
 	border-radius:5px;
 	display:inline-block;
+	font-weight: bolder;
 }
 
 .Unresolved, .Open, .Review{
 	color:#FFF;
-	color: coral;
-	border:1px solid coral;
+	color: #E47C1D;
+	border:1px solid #E47C1D;
 	font-size: 1.5em;
 
 }
@@ -115,7 +144,7 @@ p{
 
 .Resolved, .Completed .Archived{
 	color:#FFF;
-	color: seagreen;
+	color: #169b62;
 	border:1px solid seagreen;
 	font-size: 1.5em;	
 }
@@ -132,9 +161,8 @@ p{
 
 
 .Occurred{
-	color:#FFF;
-	color: red;
-	border:1px solid red;
+	color: #e42a1d;
+	border:1px solid #e42a1d;
 	font-size: 1.5em;
 
 
