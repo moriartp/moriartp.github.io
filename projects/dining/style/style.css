@@ -80,7 +80,8 @@ p{
 	/*float:none;*/
 	position:block !important;
 	width:100%;
-	border:1px dotted gold;
+	max-width: 700px;
+	/*border:1px dotted gold;*/
 	height: 0px;
 	overflow-y:scroll;
 
