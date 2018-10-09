@@ -42,7 +42,7 @@ var units = "k Objects";
 
 var margin = {top: 10, right: 50, bottom: 10, left: 10},
     width = window.innerWidth - margin.left - margin.right,
-    height = 300 - margin.top - margin.bottom;
+    height = window.innerWidth*0.425 - margin.top - margin.bottom;
 
 var formatNumber = d3.format(",.1f"),    // zero decimal places
     format = function(d) { return formatNumber(d) + units; },
