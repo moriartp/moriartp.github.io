@@ -1,0 +1,13 @@
+source,target,value,owner
+Oral Histories Prelim Metadata,Digitization,4,David/Alex
+Oral Histories Prelim Metadata,MARC Metadata QC,2.4,David/Alex
+Archives Prelim Metadata,Digitization,3,Melanie
+Archives Prelim Metadata,Metadata QC,4.2,Melanie
+Digitization,MARC Metadata QC,4,Jonah
+Digitization,Metadata QC,3,Jonah
+MARC Metadata QC,Fedora Upload,4,David/Alex
+Metadata QC,Fedora Upload,3,Melanie
+MARC Metadata QC,Hyacinth Bulk Upload,2.4,David/Alex
+Metadata QC,Hyacinth Ingest,4.2,Melanie
+Fedora Upload,Hyacinth Bulk Upload,4,Dina
+Fedora Upload,Hyacinth Ingest,3,Dina
