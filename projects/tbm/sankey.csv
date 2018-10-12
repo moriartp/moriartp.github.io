@@ -1,6 +1,8 @@
 source,target,value,owner
-Oral Histories Prelim Metadata,Digitization,4,David/Alex
-Oral Histories Prelim Metadata,Hyacinth Bulk Upload,2.4,David/Alex
+Identify Objects,Oral Histories MARC,6.8
+Identify Objects,Archives Prelim Metadata,7.2
+Oral Histories MARC,Digitization,4,David/Alex
+Oral Histories MARC,Hyacinth Bulk Upload,2.8,David/Alex
 Archives Prelim Metadata,Digitization,3,Melanie
 Archives Prelim Metadata,Metadata QC,4.2,Melanie
 Digitization,Storage Upload,4,Jonah
@@ -9,3 +11,5 @@ Metadata QC,Storage Upload,3,Melanie
 Metadata QC,Hyacinth Ingest,4.2,Melanie
 Storage Upload,Hyacinth Bulk Upload,4,Dina
 Storage Upload,Hyacinth Ingest,3,Dina
+Hyacinth Bulk Upload,DLC Push,6.8,Dina
+Hyacinth Ingest,DLC Push,7.2,Violetta
