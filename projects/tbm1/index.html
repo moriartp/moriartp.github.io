@@ -1,0 +1,33 @@
+<!doctype html>
+<meta charset="utf-8">
+
+<!-- load D3js -->
+<script src="//d3plus.org/js/d3.js"></script>
+
+<!-- load D3plus after D3js -->
+<script src="//d3plus.org/js/d3plus.js"></script>
+
+<!-- create container element for visualization -->
+<div id="viz"></div>
+
+<script>
+  // sample data array
+  var sample_data = [
+    {"value": 4000, "name": "Oral Histories", "group": "To be Digitized"},
+    {"value": 424, "name": "FLW", "group": "To be Digitized"},
+    {"value": 2500, "name": "Fass", "group": "To be Digitized"},
+    {"value": 90, "name": "Wango", "group": "To be Digitized"},
+    {"value": 2400, "name": "Oral Histories", "group": "Already Digitized"},
+    {"value": 4200, "name": "Archival", "group": "Already Digitized"}
+  ]
+  // instantiate d3plus
+  var visualization = d3plus.viz()
+    .container("#viz")     // container DIV to hold the visualization
+    .data(sample_data)     // data to use with the visualization
+    .type("bubbles")       // visualization type
+    .id(["group", "name"]) // nesting keys
+    .depth(1)              // 0-based depth
+    .size("value")         // key name to size bubbles
+    .color("group")        // color by each group
+    .draw()                // finally, draw the visualization!
+</script>
