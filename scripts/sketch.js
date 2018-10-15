@@ -54,9 +54,9 @@ function draw() {
       }
    }
    noStroke();
-   text("i am pjmoriarty: web developer and data viz designer. below find my profile and served coding samples.",XX,windowHeight*0.2);
-   XX = XX-2.5;
-   if (XX < -2200){
+   text("i am pjmoriarty: pmp certified project manager and web developer/data viz designer. below find my profile and served coding samples.",XX,windowHeight*0.2);
+   XX = XX-1.5;
+   if (XX < -2700){
       XX = windowWidth;
    }
 
