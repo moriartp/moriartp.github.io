@@ -1,14 +1,14 @@
 source,target,value,owner
-Frank Lloyd Wright,Set Prelim Matadata,0.424
-Bob Fass,Set Prelim Matadata,2.5
-Wango Films,Set Prelim Matadata,0.09
-RBML Music Collection,Set Prelim Matadata,0.680
-Other Archives Collection,Set Prelim Matadata,3.54
-Oral Histories,Create MARC/CLIO IDs,6.400
-Set Prelim Matadata,Digitize Objects,2.924
-Create MARC/CLIO IDs,Digitize Objects,4
-Digitize Objects,Storage Upload,4
-Create MARC/CLIO IDs,Hyacinth/DLC Push,2.4
-Storage Upload,Hyacinth/DLC Push,4
-Set Prelim Matadata,Refine Desc Metadata,4.2
-Refine Desc Metadata,Hyacinth/DLC Push,4.2
+Frank Lloyd Wright,Set Prelim Matadata,0.424,
+Bob Fass,Set Prelim Matadata,2.5,
+Wango Films,Set Prelim Matadata,0.09,
+RBML Music Collection,Set Prelim Matadata,0.680,
+Other Archives Collection,Set Prelim Matadata,3.54,
+Oral Histories,Create MARC/CLIO IDs,6.400,
+Set Prelim Matadata,Digitize Objects,2.924,Janet
+Create MARC/CLIO IDs,Digitize Objects,4,Alex Whelan
+Digitize Objects,Storage Upload,4,Jonah V.
+Create MARC/CLIO IDs,Hyacinth/DLC Push,2.4,Alex Whelan
+Storage Upload,Hyacinth/DLC Push,4,Dina
+Set Prelim Matadata,Refine Desc Metadata,4.2,Janet
+Refine Desc Metadata,Hyacinth/DLC Push,4.2,Melanie
