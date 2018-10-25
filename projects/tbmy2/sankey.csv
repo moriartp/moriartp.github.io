@@ -1,0 +1,14 @@
+source,target,value,subs
+Initiate DCG Digitization,Digitization Prep,8.45,"ID Priority Collection,Customize metadata template,Note digitized assets,Create CLIO IDs"
+Initiate OH Digitization,Digitization Prep,4
+Initiate OH Digitization,OH Digitization Audit,0.25
+OH Digitization Audit,OH Remediation,0.25
+Digitization Prep,Create CLIO IDs,4
+Digitization Prep,Digitization,8.45
+Create CLIO IDs,Digitization,4
+Digitization,Add Digitized Items,12.45
+OH Remediation,Add Digitized Items,0.25
+Add Digitized Items,Enhance Metadata,8.45
+Add Digitized Items,Hyacinth Batch Import,4.25
+Enhance Metadata,Ingest,8.45
+Ingest,Publish Finding Aid,8.45
