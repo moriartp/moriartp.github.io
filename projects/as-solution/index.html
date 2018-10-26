@@ -91,9 +91,9 @@ var svg = d3.select("body").append("svg")
   //using width/height from above, but size is mainly det'd by linkDistance and charge
     .size([width, height])  
     // how far between nodes                         
-    .linkDistance(80) 
+    .linkDistance(10) 
     // changes how close nodes will get to each other. Neg is farther apart.
-    .charge(-400);
+    .charge(-200);
     
  
 d3.csv(nodepath, function(nodes) {
@@ -121,12 +121,13 @@ d3.csv(linkpath, function(linkchecker) {
 
   var linkcollector = {};
   indexsource = 0;
-  indextarget = 0; 
+  indextarget = 0;
+  indexforce = 0; 
     count= 0;
     //console.log(nodelookup['celery'])
     linkchecker.forEach(function(link) {
   
-  linkcollector[count] = {source: nodelookup[link.source], target: nodelookup[link.target], type: link.type };
+  linkcollector[count] = {source: nodelookup[link.source], target: nodelookup[link.target], type: link.type, force: +link.force };
     //console.log(linkcollector[count]) 
   count++
 });
@@ -136,13 +137,13 @@ var nodes = d3.values(nodecollector);
 var links = d3.values(linkcollector);
 
 //console.log(nodes)
-//console.log(links)
+console.log(links)
 
   // Create the link lines.
   var link = svg.selectAll(".link")
       .data(links)
      .enter().append("line")
-     .attr("class", function(d) { return "link " + d.type; })
+     .attr("class", function(d) { return "link " + d.type  + " " + d.force; })
         
   // Create the node circles.
   var node = svg.selectAll(".node")
@@ -153,7 +154,7 @@ var links = d3.values(linkcollector);
  
  //put in little circles to drag
   node.append("circle")
-      .attr("r", 4.5)
+      .attr("r", 9)
     .attr("class", function(d) { return "node " + d.group; })
     .call(force.drag);
     

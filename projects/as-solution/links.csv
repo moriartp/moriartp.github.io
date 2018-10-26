@@ -1,35 +1,47 @@
-source,target,type
-Centralize Collection Management Systems,Consolidate processing systems,type1
-Centralize Collection Management Systems,Version Control Methods,type1
-Centralize Collection Management Systems,Control Static File Finding Aids,type1
-Centralize Collection Management Systems,Gain Operational Insight,type1
-Centralize Collection Management Systems,Complementary Descriptive Files,type1
-Centralize Collection Management Systems,Improve Location Management,type1
-Centralize Collection Management Systems,Simplify Container Management,type1
-Centralize Collection Management Systems,Preview Finding Aids,type1
-Centralize Collection Management Systems,Standardized publication method,type1
-Centralize Collection Management Systems,Standardize Finding Aid Format,type1
-Reduce Archives Processing Backlog,Streamline processing workflows,type1
-Reduce Archives Processing Backlog,Standardize format,type1
-Reduce Archives Processing Backlog,Digital Object Management Capability,type1
-Improve Customer Services,Reduce Materials Paging Lag,type1
-Improve Customer Services,Full Text Search Capability,type1
-Improve Customer Services,Digital objects access,type1
-Improve Customer Services,Standardize UX,type1
-Improve Customer Services,Non-roman character sets,type1
-Secure Environment,Security Compliance,type1
-Secure Environment,Control Static File Finding Aids,type1
-Consolidate processing systems,Touchpoint Reduction,type1
-Consolidate processing systems,eXist Records Migration,type1
-Consolidate processing systems,html finding aid publication,type1
-Security Compliance,Patch PHP vulnerability,type1
-Version Control Methods,Version Control,type1
-Control Static File Finding Aids,Finding Aid File Audit,type1
-Control Static File Finding Aids,File Management Check,type1
-Gain Operational Insight,BI Reporting,type1
-Complementary Descriptive Files,Disable File Upload,type1
-Improve Location Management,Location Table,type1
-Simplify Container Management,Offsite Ordering,type1
-Preview Finding Aids,Review prior to publish,type1
-Standardized publication method,PUI Publication,type1
-Standardize Finding Aid Format,Transpose/Migrate Static File Finding Aids,type1
+source,target,type,force
+Centralize Collection Management Systems,Consolidate processing systems,type1,1
+Centralize Collection Management Systems,Version Control Methods,type1,1
+Centralize Collection Management Systems,Control Static File Finding Aids,type1,1
+Centralize Collection Management Systems,Gain Operational Insight,type1,1
+Centralize Collection Management Systems,Complementary Descriptive Files,type1,1
+Centralize Collection Management Systems,Improve Location Management,type1,1
+Centralize Collection Management Systems,Simplify Container Management,type1,1
+Centralize Collection Management Systems,Preview Finding Aids,type1,1
+Centralize Collection Management Systems,Standardized publication method,type1,1
+Centralize Collection Management Systems,Standardize Finding Aid Format,type1,1
+Reduce Archives Processing Backlog,Streamline processing workflows,type1,1
+Reduce Archives Processing Backlog,Standardize format,type1,1
+Reduce Archives Processing Backlog,Digital Object Management Capability,type1,1
+Improve Customer Services,Reduce Materials Paging Lag,type1,1
+Improve Customer Services,Full Text Search Capability,type1,1
+Improve Customer Services,Digital objects access,type1,1
+Improve Customer Services,Standardize UX,type1,1
+Improve Customer Services,Non-roman character sets,type1,1
+Secure Environment,Security Compliance,type1,1
+Secure Environment,Control Static File Finding Aids,type1,1
+Consolidate processing systems,Touchpoint Reduction,type1,1
+Consolidate processing systems,eXist Records Migration,type1,1
+Consolidate processing systems,html finding aid publication,type1,1
+Security Compliance,Patch PHP vulnerability,type1,1
+Version Control Methods,Version Control,type1,1
+Control Static File Finding Aids,Finding Aid File Audit,type1,1
+Control Static File Finding Aids,File Management Check,type1,1
+Gain Operational Insight,BI Reporting,type1,1
+Complementary Descriptive Files,Disable File Upload,type1,2
+Improve Location Management,Location Table,type1,2
+Simplify Container Management,Offsite Ordering,type1,3
+Preview Finding Aids,Review prior to publish,type1,1
+Standardized publication method,PUI Publication,type1,3
+Standardize Finding Aid Format,Transpose/Migrate Static File Finding Aids,type1,3
+Streamline processing workflows,Offsite Ordering,type1,3
+Streamline processing workflows,Location Table,type1,3
+Streamline processing workflows,ArchiveGrid/WorldCat Publication,type1,3
+Streamline processing workflows,BibID Generation,type1,3
+Standardize format,QC/Records Auditing,type1,2
+Standardize format,Authority Control,type1,1
+Digital Object Management Capability,URI Delivery,type1,
+Reduce Materials Paging Lag,Location Table,type1,2
+Digital objects access,URI Delivery,type1,1
+Full Text Search Capability,Contextualized text search,type1,3
+Standardize UX,Transpose/Migrate static finding aids,type1,3
+Non-roman character sets,Non-Roman Character Set Rendering,type1,2
