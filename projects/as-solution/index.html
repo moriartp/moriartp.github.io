@@ -30,6 +30,7 @@
   font-weight: bolder;
 }
 
+
 .node.group1{
   fill: red;
   stroke-opacity: .3; 
@@ -86,14 +87,14 @@ var svg = d3.select("body").append("svg")
 
       
 //Want to have different labels
-// SETTING UP THE FORCE LAYOUT
+//SETTING UP THE FORCE LAYOUT
   var force = d3.layout.force()
   //using width/height from above, but size is mainly det'd by linkDistance and charge
     .size([width, height])  
     // how far between nodes                         
-    .linkDistance(10) 
+    .linkDistance(30) 
     // changes how close nodes will get to each other. Neg is farther apart.
-    .charge(-200);
+    .charge(-300);
     
  
 d3.csv(nodepath, function(nodes) {
@@ -154,10 +155,10 @@ console.log(links)
  
  //put in little circles to drag
   node.append("circle")
-      .attr("r", 9)
+      .attr("r", function(d) { return 5; })
     .attr("class", function(d) { return "node " + d.group; })
     .call(force.drag);
-    
+
 //add the words  
  node.append("text")
       .attr("dx", 12)
