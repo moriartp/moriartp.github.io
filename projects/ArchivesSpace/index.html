@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html>
+
 <style>
 body{
 font-family:helvetica;
@@ -5,7 +8,8 @@ font-family:helvetica;
 </style>
 
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
- 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
 <body>
 <h1>ArchivesSpace Phase Two</h1>
 
@@ -130,3 +134,15 @@ font-family:helvetica;
 
 
 </script>
+
+<script>
+var $url = "https://spreadsheets.google.com/feeds/list/176CDbtZ2Daa5Z1FRdkh62Fy0jC3vrPhgIE8SjGPXhfg/1/public/basic?alt=json"
+$.getJSON($url,function(blob){
+    var str = JSON.stringify(blob.feed.entry);
+    // console.log(str.replace(/"id"/g, '"id_code"'));
+    // console.log(string.replace(/\'id'[^()]*\)/g, '');
+});
+</script>
+
+
+</html>
