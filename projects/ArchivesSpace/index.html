@@ -138,9 +138,25 @@ font-family:helvetica;
 <script>
 var $url = "https://spreadsheets.google.com/feeds/list/176CDbtZ2Daa5Z1FRdkh62Fy0jC3vrPhgIE8SjGPXhfg/1/public/basic?alt=json"
 $.getJSON($url,function(blob){
+  // console.log(blob.feed.entry);
     var str = JSON.stringify(blob.feed.entry);
-    // console.log(str.replace(/"id"/g, '"id_code"'));
-    // console.log(string.replace(/\'id'[^()]*\)/g, '');
+
+    // str.replace(/"description:"/g, "Xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx_______________________");
+    // str.replace(/"description:"/g, '"description":"');
+
+
+    // str.replace(/"desc"/g, "_________________________________");
+    str = str.replace(/"content":{"type":"text","\$t":"description:/g,"\"description\": \"");
+    // console.log(str);
+    str = str.replace(/, responsiblestakeholder:/g,"\", \"responsiblestakeholder\":\"");
+    str = str.replace(/, probability: /g,"\", \"probability\":\"");
+    str = str.replace(/, severity: /g,"\", \"severity\":\"");
+    str = str.replace(/, risklevel: /g,"\", \"risklevel\":\"");
+    str = str.replace(/, responsestrategy: /g,"\", \"responsestrategy\":\"");
+    str = str.replace(/, responseplan: /g,"\", \"responseplan\":\"");    
+    console.log(str);
+    var reme = JSON.parse(str);
+    console.log(reme[0]);
 });
 </script>
 
