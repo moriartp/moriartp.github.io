@@ -5,6 +5,37 @@
 body{
 font-family:helvetica;
 }
+
+div.tooltip { 
+    position: absolute;     
+    text-align: left;     
+    width: 20%;          
+    height: auto;         
+    padding: 5px;       
+    font: 12px sans-serif;    
+    background: lightsteelblue; 
+    border: 0px;    
+    border-radius: 8px;     
+    pointer-events: none;     
+}
+
+circle{
+  stroke:#222;
+  stroke-width:0.25;
+}
+
+circle.LOW{
+  fill: steelblue;
+
+}
+circle.MODERATE{
+  fill: coral;
+}
+circle.HIGH{
+  fill: darkred;
+}
+
+
 </style>
 
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -12,9 +43,10 @@ font-family:helvetica;
 <script src="https://d3js.org/d3.v5.min.js"></script>
 <body>
 <h1>ArchivesSpace Phase Two</h1>
-
+    <h2>Schedule</h2>
      <div id="chart_div"></div>
      <div id="charter"></div>
+     <h2> Risk Assessment</h2>
      <div id="charto"></div>
 </body>
 <script type="text/javascript">
@@ -158,10 +190,12 @@ $.getJSON($url,function(blob){
     str = str.replace(/, severity: /g,"\", \"severity\":\"");
     str = str.replace(/, risklevel: /g,"\", \"risklevel\":\"");
     str = str.replace(/, responsestrategy: /g,"\", \"responsestrategy\":\"");
-    str = str.replace(/, responseplan: /g,"\", \"responseplan\":\"");    
-    console.log(str);
+    str = str.replace(/, responseplan: /g,"\", \"responseplan\":\""); 
+    str = str.replace(/, approved: /g,"\", \"approved\":\""); 
+    str = str.replace(/, contingencyplan: /g,"\", \"contingencyplan\":\"");    
+    // console.log(str);
     var reme = JSON.parse(str);
-    console.log(reme[0].content.probability);
+    console.log(reme);
 
     var charter = d3.select('#charter')
     .data(reme)
@@ -175,9 +209,10 @@ $.getJSON($url,function(blob){
 
 ///////////////////SOME SCATTER
 
-var margin = {top: 20, right: 20, bottom: 30, left: 40},
+var margin = {top: 100, right: 100, bottom: 150, left: 100},
     width = window.innerWidth - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
+    // height = 500 - margin.top - margin.bottom;
+    height = window.innerHeight*.9 - margin.top - margin.bottom;
 
 var x = d3.scaleLinear()
     .range([0, width]);
@@ -197,6 +232,10 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
+// Define the div for the tooltip
+var div = d3.select("body").append("div") 
+    .attr("class", "tooltip")       
+    .style("opacity", 0);
 
   // x.domain(d3.extent(reme, function(d) { return d.content.probability; })).nice();
   // y.domain(d3.extent(reme, function(d) { return d.content.severity; })).nice();
@@ -209,51 +248,87 @@ var svg = d3.select("body").append("svg")
       .attr("class", "x axis")
       .attr("transform", "translate(0," + height + ")")
       .call(xAxis)
-    .append("text")
-      .attr("class", "label")
-      .attr("x", width)
-      .attr("y", -6)
-      .style("text-anchor", "end")
-      .text("Sepal Width (cm)");
+    // .append("text")
+    //   .attr("class", "label")
+    //   .attr("x", width)
+    //   .attr("y", -6)
+    //   .style("text-anchor", "end")
+    //   .text("Sepal Width (cm)");
 
   svg.append("g")
       .attr("class", "y axis")
       .call(yAxis)
-    .append("text")
-      .attr("class", "label")
-      .attr("transform", "rotate(-90)")
-      .attr("y", 6)
-      .attr("dy", ".71em")
-      .style("text-anchor", "end")
-      .text("Sepal Length (cm)")
+    // .append("text")
+    //   .attr("class", "label")
+    //   .attr("transform", "rotate(-90)")
+    //   .attr("y", 6)
+    //   .attr("dy", ".71em")
+    //   .style("text-anchor", "end")
+    //   .text("Sepal Length (cm)")
 
   svg.selectAll(".dot")
       .data(reme)
     .enter().append("circle")
-      .attr("class", "dot")
-      .attr("r", function(d) { return d.content.severity/3; })
+      .attr("class", function(d) { return d.content.risklevel; })
+      .attr("r", function(d) { return d.content.severity; })
       .attr("cx", function(d) { return x(d.content.probability); })
       .attr("cy", function(d) { return y(d.content.severity); })
-      .style("fill", "red");
+      // .style("fill", "coral")
+          .on("mouseover", function(d) {      
+            div.transition()        
+                .duration(200)      
+                .style("opacity", .9);      
+            div .html("<h2>"+d.title.$t+"</h2><p><b>Severity:</b> "  + d.content.severity+"<br><b>Probaility:</b> "+d.content.probability+"</p><p><b>Description:</b> "+d.content.description+"</p><p><b>Response Plan: "+d.content.responsestrategy+"</b> "+d.content.responseplan+"</p><p><b>Contingency Plan: </b>"+d.content.contingencyplan+"</p>")  
+                .style("left", (d3.event.pageX) + "px")     
+                .style("top", (d3.event.pageY - 28) + "px");    
+            })                  
+        .on("mouseout", function(d) {       
+            div.transition()        
+                .duration(500)      
+                .style("opacity", 0);   
+        });
 
-  var legend = svg.selectAll(".legend")
-      .data(color.domain())
-    .enter().append("g")
-      .attr("class", "legend")
-      .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+    svg.append("text")             
+      .attr("transform",
+            "translate(" + (width/2) + " ," + 
+                           (height + margin.top) + ")")
+      .style("text-anchor", "middle")
+      .style("font-size", "2em")
+      .text("Probaility");
 
-  legend.append("rect")
-      .attr("x", width - 18)
-      .attr("width", 18)
-      .attr("height", 18)
-      .style("fill", color);
+    svg.append("g")
+        .call(d3.axisLeft(y));
 
-  legend.append("text")
-      .attr("x", width - 24)
-      .attr("y", 9)
-      .attr("dy", ".35em")
-      .style("text-anchor", "end")
-      .text(function(d) { return d.content.title; });
+    // text label for the y axis
+    svg.append("text")
+        .attr("transform", "rotate(-90)")
+        .attr("y", 0 - margin.left)
+        .attr("x",0 - (height / 2))
+        .attr("dy", "1em")
+        .style("text-anchor", "middle")
+        .style("font-size", "2em")
+        .text("Severity");  
+
+  // var legend = svg.selectAll("div")
+  //     .data(color.domain())
+  //   .enter().append("g")
+  //   // console.log("hello")
+  //     .attr("class", "legend")
+  //     .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+  // legend.append("rect")
+  //     .attr("x", width - 18)
+  //     .attr("width", 18)
+  //     .attr("height", 18)
+  //     // .style("fill", color);
+
+  // legend.append("text")
+  //     .attr("x", width - 24)
+  //     .attr("y", 9)
+  //     .attr("dy", ".35em")
+  //     .style("text-anchor", "end")
+  //     // .text(function(d) { return d.content.title; });
+  //     .text("function(d) { return d.content.title; }");
 
 
 
