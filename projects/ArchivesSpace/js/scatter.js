@@ -17,7 +17,7 @@ $.getJSON($url,function(blob){
 
     ///PARSE RESTRUCTURED DATA INTO JSON 
     var reme = JSON.parse(str);
-    console.log(reme);
+    // console.log(reme);
 
     var charter = d3.select('#charter')
     .data(reme)
