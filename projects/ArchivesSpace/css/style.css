@@ -38,34 +38,37 @@ circle.HIGH{
 
 
 /*SCHED*/
-style.css#
-    .pending {
-        fill: #e74c3c;
-    }
+.pending {
+  fill: #e74c3c;
+}
 
-    .bar {
+#gantt text{
+  font-size:0.5em;
+}
+
+.bar {
         fill: #2ecc71;
-    }
+}
 
-    .bar:hover, .pending:hover {
-      fill: #3498db;
-    }
+.bar:hover, .pending:hover {
+     fill: #3498db;
+}
 
-    .axis path,
-    .axis line {
+.axis path,
+.axis line {
       fill: none;
       stroke: #000;
       shape-rendering: crispEdges;
-    }
+}
 
-    .legend {
+.legend {
         padding: 5px;
         font: 16px sans-serif;
         background: yellow;
         box-shadow: 2px 2px 1px #888;
-    }
+}
 
-    .tooltip {
+.tooltip {
         background: #eee;
         box-shadow: 0 0 5px #999999;
         color: #333;
@@ -78,4 +81,4 @@ style.css#
         z-index: 10;
         display: block;
         opacity: 0;
-    }
+}

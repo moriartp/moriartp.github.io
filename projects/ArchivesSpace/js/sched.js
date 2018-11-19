@@ -1,142 +1,180 @@
-console.log("blob");
+// script = document.createElement("script");
+// script.type = "text/javascript";
+// script.src = "https://spreadsheets.google.com/feeds/list/1EHLW8ElRHA31H5cW5yzFm0rpSV_Hss4gzyQebs4AR1g/1/public/basic?alt=json";
 
-var $url = "https://docs.google.com/document/d/e/2PACX-1vSlthoiJxT2Ab9DRqp49rLtUOagU_PiDgS3JuzxcAhdyewvx-j0hNuFpdq4OA2spvFO0NZoLawXzIiA/pub"
-$.getJSON($url,function(blob){
 
-console.log("blob");
 
+
+
+
+
+var $url = "https://spreadsheets.google.com/feeds/list/1NHMAu6QAwiCgdF99Mah3xvK49qXGN_CWFa-17ggTRRY/1/public/basic?alt=json"
+$.getJSON($url,function(blob1){
+
+console.log(blob1.feed.entry);
+var str = JSON.stringify(blob1.feed.entry);
+ str = str.replace(/\"\$t\":\"from: /g,"\"from\":\"");
+ str = str.replace(/, to: /g,"\", \"to\":\"");
+ str = str.replace(/, progress: /g,"\", \"progress\":"); 
+  str = str.replace(/\"},\"link\":/g,"\},\"link\": "); 
+// str = str.replace(/{\"type\":\"text\" /g,"");
+ console.log(str);
+ str = $.parseJSON(str);
+ console.log(str);
+
+
+
+
+
+
+
+
+var parseDate = d3three.time.format("%d-%b-%y").parse;
+
+    // var data=[
+    //  {"category": "Task 1", "from": "1-Jan-17", "to": "15-Jan-17", "progress":100},
+    //  {"category": "Task 2", "from": "13-Jan-17", "to": "1-Feb-17", "progress":60},
+    //  {"category": "Task 3", "from": "1-Feb-17", "to": "15-Feb-17", "progress":70},
+    //  {"category": "Task 4", "from": "10-Feb-17", "to": "1-Mar-17", "progress":10},
+    //  {"category": "Task 5", "from": "13-Jan-17", "to": "1-Feb-17", "progress":60},
+    //  {"category": "Task 6", "from": "1-Feb-17", "to": "15-Feb-17", "progress":70},
+    //  {"category": "Task 41", "from": "10-Feb-17", "to": "1-Mar-17", "progress":10},
+    //  {"category": "Task 22", "from": "13-Jan-17", "to": "1-Feb-17", "progress":60},
+    //  {"category": "Task 33", "from": "1-Feb-17", "to": "15-Feb-17", "progress":70},
+    //  {"category": "Task 24", "from": "13-Jan-17", "to": "1-Feb-17", "progress":60},
+    //  {"category": "Task 35", "from": "1-Feb-17", "to": "15-Feb-17", "progress":70},
+    //  {"category": "Task 46", "from": "10-Feb-17", "to": "1-Mar-17", "progress":10},
+    //  {"category": "Task 27", "from": "13-Jan-17", "to": "1-Feb-17", "progress":60},
+    //  {"category": "Task 38", "from": "1-Feb-17", "to": "15-Feb-17", "progress":70},
+    //  {"category": "Task 49", "from": "10-Feb-17", "to": "1-Mar-17", "progress":10},
+    //  {"category": "Task 20", "from": "13-Jan-17", "to": "1-Feb-17", "progress":60},
+    //  {"category": "Task 355", "from": "1-Feb-17", "to": "15-Feb-17", "progress":70},
+    //  {"category": "Task 466", "from": "10-Feb-17", "to": "1-Mar-17", "progress":10},
+    //  {"category": "Task 477", "from": "10-Feb-17", "to": "1-Mar-17", "progress":10},          
+    //  {"category": "Task 588", "from": "1-Mar-17", "to": "12-Mar-17", "progress":90}
+    // ]
+
+    var types_of_statuses = ["Completed","Remaining"];
+    var statuses_color = ["#2ecc71","#e74c3c"];
+
+    str.forEach(function(d) {
+        d.content.from = parseDate(d.content.from);
+        d.content.to = parseDate(d.content.to);
+    });
+    console.log(str);
+    var margin = {top: 50, right: 50, bottom: 50, left: 250},
+        width = window.innerWidth - margin.left - margin.right,
+        height = window.innerHeight*1.9 - margin.top - margin.bottom;
+
+    var y = d3three.scale.ordinal()
+        .rangeRoundBands([0, height], .2);
+
+    var x = d3three.time.scale().range([0, width]);
+
+    y.domain(str.map(function(d) { return d.title.$t; }));
+    x.domain([d3three.min(str,function(d){return d.content.from;}), d3three.max(str,function(d){return d.content.to;})]);
+
+    var xAxis = d3three.svg.axis()
+        .scale(x)
+        .orient("bottom")
+        .ticks(15)
+        .tickFormat(d3three.time.format("%d%b"));
+
+    var yAxis = d3three.svg.axis()
+        .scale(y)
+        .orient("left");
+
+    var svg = d3three.select("body").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .attr("id","gantt")
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+      svg.append("g")
+          .attr("class", "x axis")
+          .attr("transform", "translate(0," + height + ")")
+          .call(xAxis)
+          .append("text")
+          .attr("x", width-margin.right)
+          .attr("dx", ".71em")
+          .attr("dy", "-0.2em")
+          .text("Date");
+
+      svg.append("g")
+          .attr("class", "y axis")
+          .call(yAxis);
+
+      svg.selectAll(".bar")
+          .data(str)
+          .enter().append("rect")
+          .attr("class", "bar")
+          .attr("y", function(d) { return y(d.title.$t); })
+          .attr("height", y.rangeBand())
+          .attr("x", function(d) { return x(d.content.from); })
+          .attr("width", function(d) { return x(d.content.to) - x(d.content.from)});
+
+      svg.selectAll(".pending")
+          .data(str)
+          .enter().append("rect")
+          .attr("class", "pending")
+          .attr("y", function(d) { return y(d.title.$t); })
+          .attr("height", y.rangeBand())
+          .attr("x", function(d) { return x(d.content.from) + (x(d.content.to) - x(d.content.from))*d.content.progress/100 })
+          .attr("width", function(d) { return (x(d.content.to) - x(d.content.from))*(1-(d.content.progress/100))});
+
+
+        // add legend
+        var legend = svg.append("g")
+          .attr("class", "legend")
+
+        legend.selectAll(".swatch")
+          .data(types_of_statuses)
+          .enter()
+          .append("rect")
+          .attr("x", width-margin.left-margin.right-25)
+          .attr("y", function(d, i){ return -margin.top/2 + i*20;})
+          .attr("width", 10)
+          .attr("height", 10)
+          .style("fill", function(d,i) {
+            return statuses_color[i];
+          })
+
+        legend.selectAll(".labels")
+          .data(types_of_statuses)
+          .enter()
+          .append("text")
+          .attr("x", width-margin.left-margin.right)
+          .attr("y", function(d, i){ return -margin.top/2 + i*20 + 10;})
+          .text(function(d,i){return types_of_statuses[i]});
+
+
+    var tooltip = d3three.select("body")
+    .append('div')
+    .attr('class', 'tooltip');
+
+    tooltip.append('div').attr('class', 'category');
+    tooltip.append('div').attr('class', 'tempRange');
+    tooltip.append('div').attr('class', 'progress');
+
+    svg.selectAll(".bar,.pending")
+    .on('mouseover', function(d) {
+
+      tooltip.select('.category').html("<b>" + d.title.$t + "</b>");
+      tooltip.select('.tempRange').html(d.content.from.toDateString() + " to " + d.content.to.toDateString());
+      tooltip.select('.progress').html(d.content.progress + "% completed");
+
+      tooltip.style('display', 'block');
+      tooltip.style('opacity',2);
+
+    })
+    .on('mousemove', function(d) {
+      tooltip.style('top', (d3three.event.layerY + 10) + 'px')
+      .style('left', (d3three.event.layerX - 25) + 'px');
+    })
+    .on('mouseout', function() {
+      tooltip.style('display', 'none');
+      tooltip.style('opacity',0);
+    });
 
 });
-
-
-// var parseDate = d3.time.format("%d-%b-%y").parse;
-
-//     var data=[
-//      {"category": "Task 1", "from": "1-Jan-17", "to": "15-Jan-17", "progress":100},
-//      {"category": "Task 2", "from": "13-Jan-17", "to": "1-Feb-17", "progress":60},
-//      {"category": "Task 3", "from": "1-Feb-17", "to": "15-Feb-17", "progress":70},
-//      {"category": "Task 4", "from": "10-Feb-17", "to": "1-Mar-17", "progress":10},
-//      {"category": "Task 5", "from": "1-Mar-17", "to": "12-Mar-17", "progress":90}
-//     ]
-
-//     var types_of_statuses = ["Completed","Remaining"];
-//     var statuses_color = ["#2ecc71","#e74c3c"];
-
-//     data.forEach(function(d) {
-//         d.from = parseDate(d.from);
-//         d.to = parseDate(d.to);
-//     });
-//     var margin = {top: 50, right: 50, bottom: 50, left: 100},
-//         width = 900 - margin.left - margin.right,
-//         height = 500 - margin.top - margin.bottom;
-
-//     var y = d3.scale.ordinal()
-//         .rangeRoundBands([0, height], .2);
-
-//     var x = d3.time.scale().range([0, width]);
-
-//     y.domain(data.map(function(d) { return d.category; }));
-//     x.domain([d3.min(data,function(d){return d.from;}), d3.max(data,function(d){return d.to;})]);
-
-//     var xAxis = d3.svg.axis()
-//         .scale(x)
-//         .orient("bottom")
-//         .ticks(15)
-//         .tickFormat(d3.time.format("%d%b"));
-
-//     var yAxis = d3.svg.axis()
-//         .scale(y)
-//         .orient("left");
-
-//     var svg = d3.select("#sched").append("svg")
-//         .attr("width", width + margin.left + margin.right)
-//         .attr("height", height + margin.top + margin.bottom)
-//         .append("g")
-//         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-//       svg.append("g")
-//           .attr("class", "x axis")
-//           .attr("transform", "translate(0," + height + ")")
-//           .call(xAxis)
-//           .append("text")
-//           .attr("x", width-margin.right)
-//           .attr("dx", ".71em")
-//           .attr("dy", "-0.2em")
-//           .text("Date");
-
-//       svg.append("g")
-//           .attr("class", "y axis")
-//           .call(yAxis);
-
-//       svg.selectAll(".bar")
-//           .data(data)
-//           .enter().append("rect")
-//           .attr("class", "bar")
-//           .attr("y", function(d) { return y(d.category); })
-//           .attr("height", y.rangeBand())
-//           .attr("x", function(d) { return x(d.from); })
-//           .attr("width", function(d) { return x(d.to) - x(d.from)});
-
-//       svg.selectAll(".pending")
-//           .data(data)
-//           .enter().append("rect")
-//           .attr("class", "pending")
-//           .attr("y", function(d) { return y(d.category); })
-//           .attr("height", y.rangeBand())
-//           .attr("x", function(d) { return x(d.from) + (x(d.to) - x(d.from))*d.progress/100 })
-//           .attr("width", function(d) { return (x(d.to) - x(d.from))*(1-(d.progress/100))});
-
-
-//         // add legend
-//         var legend = svg.append("g")
-//           .attr("class", "legend")
-
-//         legend.selectAll(".swatch")
-//           .data(types_of_statuses)
-//           .enter()
-//           .append("rect")
-//           .attr("x", width-margin.left-margin.right-25)
-//           .attr("y", function(d, i){ return -margin.top/2 + i*20;})
-//           .attr("width", 10)
-//           .attr("height", 10)
-//           .style("fill", function(d,i) {
-//             return statuses_color[i];
-//           })
-
-//         legend.selectAll(".labels")
-//           .data(types_of_statuses)
-//           .enter()
-//           .append("text")
-//           .attr("x", width-margin.left-margin.right)
-//           .attr("y", function(d, i){ return -margin.top/2 + i*20 + 10;})
-//           .text(function(d,i){return types_of_statuses[i]});
-
-
-// 		var tooltip = d3.select("body")
-// 		.append('div')
-// 		.attr('class', 'tooltip');
-
-// 		tooltip.append('div').attr('class', 'category');
-// 		tooltip.append('div').attr('class', 'tempRange');
-// 		tooltip.append('div').attr('class', 'progress');
-
-// 		svg.selectAll(".bar,.pending")
-// 		.on('mouseover', function(d) {
-
-// 			tooltip.select('.category').html("<b>" + d.category + "</b>");
-// 			tooltip.select('.tempRange').html(d.from.toDateString() + " to " + d.to.toDateString());
-// 			tooltip.select('.progress').html(d.progress + "% completed");
-
-// 			tooltip.style('display', 'block');
-// 			tooltip.style('opacity',2);
-
-// 		})
-// 		.on('mousemove', function(d) {
-// 			tooltip.style('top', (d3.event.layerY + 10) + 'px')
-// 			.style('left', (d3.event.layerX - 25) + 'px');
-// 		})
-// 		.on('mouseout', function() {
-// 			tooltip.style('display', 'none');
-// 			tooltip.style('opacity',0);
-// 		});
-
