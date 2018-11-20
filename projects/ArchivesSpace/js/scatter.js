@@ -49,6 +49,9 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
+
+
+
 // Define the div for the tooltip
 var div = d3.select("body").append("div") 
     .attr("class", "tooltip")       
@@ -62,9 +65,11 @@ var div = d3.select("body").append("div")
       .attr("transform", "translate(0," + height + ")")
       .call(xAxis)
 
+
   svg.append("g")
       .attr("class", "y axis")
       .call(yAxis)
+
 
   svg.selectAll(".dot")
       .data(reme)
