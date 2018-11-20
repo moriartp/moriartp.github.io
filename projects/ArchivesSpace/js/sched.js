@@ -110,29 +110,8 @@ var parseDate = d3three.time.format("%d-%b-%y").parse;
         .data(str)
         .enter()
         .append("path")
-        // .attr("d", function(d) { return "M "+x(d.content.to)*1+" "+y(d.title.$t)*1+" L "+x(d.content.to)*1.05+" "+y(d.title.$t)*1+
-        //   " L "+x(d.content.to)*1.05+" "+y(d.title.$t) +" L "+x(d.content.to)*1.1+" "+y(d.title.$t)+1/100000 })
-
-
         .attr("d", function(d) { return "M "+x(d.content.to)*1+" "+y(d.title.$t)*1+" H "+x(d.content.to)*1.025+" "+
           " V "+y(d.title.$t)*1.25 +" H "+x(d.content.to)*1.05 })
-
-
-          // "M "+x(d.content.to)+" 100 L "+x(d.content.from)+" 200";
-
-
-           
-
-
-          // "H 90 V 90 H 10 L 10 10" 
-
-        // .attr("curve","curveStepBefore")
-        // .attr("curve","step-before")
-        // .attr("x1", function(d) { return x(d.content.to) })  //<<== change your code here
-        // .attr("y1", function(d) { return y(d.title.$t)+10; })
-        // .attr("x2", function(d) { return x(d.content.to)+50 })
-        // .attr("y2", function(d) { return y(d.title.$t)+40; })
-
         .style("stroke-width", "0.5px")
         .style("stroke-opacity", ".95")
         .style("stroke", "#222")
