@@ -41,7 +41,7 @@ var parseDate = d3three.time.format("%d-%b-%y").parse;
     console.log(str);
     var margin = {top: 50, right: 50, bottom: 50, left: 250},
         width = window.innerWidth - margin.left - margin.right,
-        height = window.innerHeight*1.9 - margin.top - margin.bottom;
+        height = window.innerHeight*0.9 - margin.top - margin.bottom;
 
     var y = d3three.scale.ordinal()
         .rangeRoundBands([0, height], .2);
@@ -106,22 +106,59 @@ var parseDate = d3three.time.format("%d-%b-%y").parse;
           .attr("ry","2")
           .attr("width", function(d) { return (x(d.content.to) - x(d.content.from))*(1-(d.content.progress/100))});
 
-/////////////DEPEND//////////////////////
         svg.selectAll(".depend")
         .data(str)
         .enter()
-        .append("line")
-        .attr("x1", function(d) { return x(d.content.to) })  //<<== change your code here
-        .attr("y1", function(d) { return y(d.title.$t)+10; })
-        .attr("x2", function(d) { return x(d.content.to) })
-        .attr("y2", function(d) { return y(d.title.$t)+40; })
-        .attr("x3", function(d) { return x(d.content.to)+50 })
-        .attr("y3", function(d) { return y(d.title.$t)+40; })
+        .append("path")
+        // .attr("d", function(d) { return "M "+x(d.content.to)*1+" "+y(d.title.$t)*1+" L "+x(d.content.to)*1.05+" "+y(d.title.$t)*1+
+        //   " L "+x(d.content.to)*1.05+" "+y(d.title.$t) +" L "+x(d.content.to)*1.1+" "+y(d.title.$t)+1/100000 })
+
+
+        .attr("d", function(d) { return "M "+x(d.content.to)*1+" "+y(d.title.$t)*1+" H "+x(d.content.to)*1.025+" "+
+          " V "+y(d.title.$t)*1.25 +" H "+x(d.content.to)*1.05 })
+
+
+          // "M "+x(d.content.to)+" 100 L "+x(d.content.from)+" 200";
+
+
+           
+
+
+          // "H 90 V 90 H 10 L 10 10" 
+
+        // .attr("curve","curveStepBefore")
+        // .attr("curve","step-before")
+        // .attr("x1", function(d) { return x(d.content.to) })  //<<== change your code here
+        // .attr("y1", function(d) { return y(d.title.$t)+10; })
+        // .attr("x2", function(d) { return x(d.content.to)+50 })
+        // .attr("y2", function(d) { return y(d.title.$t)+40; })
 
         .style("stroke-width", "0.5px")
         .style("stroke-opacity", ".95")
         .style("stroke", "#222")
         .style("fill", "none");
+
+
+
+
+
+/////////////DEPEND//////////////////////
+        // svg.selectAll(".depend")
+        // .data(str)
+        // .enter()
+        // .append("line")
+        // .attr("curve","curveStepBefore")
+        // // .attr("curve","step-before")
+        // .attr("x1", function(d) { return x(d.content.to) })  //<<== change your code here
+        // .attr("y1", function(d) { return y(d.title.$t)+10; })
+        // .attr("x2", function(d) { return x(d.content.to)+50 })
+        // .attr("y2", function(d) { return y(d.title.$t)+40; })
+
+        // .style("stroke-width", "0.5px")
+        // .style("stroke-opacity", ".95")
+        // .style("stroke", "#222")
+        // .style("fill", "none")
+        // .interpolate("step-before");
 //////////////DEPEND//////////////////////
 
 
