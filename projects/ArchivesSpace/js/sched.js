@@ -31,31 +31,8 @@ var str = JSON.stringify(blob1.feed.entry);
 
 var parseDate = d3three.time.format("%d-%b-%y").parse;
 
-    // var data=[
-    //  {"category": "Task 1", "from": "1-Jan-17", "to": "15-Jan-17", "progress":100},
-    //  {"category": "Task 2", "from": "13-Jan-17", "to": "1-Feb-17", "progress":60},
-    //  {"category": "Task 3", "from": "1-Feb-17", "to": "15-Feb-17", "progress":70},
-    //  {"category": "Task 4", "from": "10-Feb-17", "to": "1-Mar-17", "progress":10},
-    //  {"category": "Task 5", "from": "13-Jan-17", "to": "1-Feb-17", "progress":60},
-    //  {"category": "Task 6", "from": "1-Feb-17", "to": "15-Feb-17", "progress":70},
-    //  {"category": "Task 41", "from": "10-Feb-17", "to": "1-Mar-17", "progress":10},
-    //  {"category": "Task 22", "from": "13-Jan-17", "to": "1-Feb-17", "progress":60},
-    //  {"category": "Task 33", "from": "1-Feb-17", "to": "15-Feb-17", "progress":70},
-    //  {"category": "Task 24", "from": "13-Jan-17", "to": "1-Feb-17", "progress":60},
-    //  {"category": "Task 35", "from": "1-Feb-17", "to": "15-Feb-17", "progress":70},
-    //  {"category": "Task 46", "from": "10-Feb-17", "to": "1-Mar-17", "progress":10},
-    //  {"category": "Task 27", "from": "13-Jan-17", "to": "1-Feb-17", "progress":60},
-    //  {"category": "Task 38", "from": "1-Feb-17", "to": "15-Feb-17", "progress":70},
-    //  {"category": "Task 49", "from": "10-Feb-17", "to": "1-Mar-17", "progress":10},
-    //  {"category": "Task 20", "from": "13-Jan-17", "to": "1-Feb-17", "progress":60},
-    //  {"category": "Task 355", "from": "1-Feb-17", "to": "15-Feb-17", "progress":70},
-    //  {"category": "Task 466", "from": "10-Feb-17", "to": "1-Mar-17", "progress":10},
-    //  {"category": "Task 477", "from": "10-Feb-17", "to": "1-Mar-17", "progress":10},          
-    //  {"category": "Task 588", "from": "1-Mar-17", "to": "12-Mar-17", "progress":90}
-    // ]
-
     var types_of_statuses = ["Completed","Remaining"];
-    var statuses_color = ["#2ecc71","#e74c3c"];
+    var statuses_color = ["#45BCFC","#9bddff"];
 
     str.forEach(function(d) {
         d.content.from = parseDate(d.content.from);
@@ -78,10 +55,12 @@ var parseDate = d3three.time.format("%d-%b-%y").parse;
         .scale(x)
         .orient("bottom")
         .ticks(15)
+        // .innerTickSize(-height)
         .tickFormat(d3three.time.format("%d%b"));
 
     var yAxis = d3three.svg.axis()
         .scale(y)
+        .innerTickSize(-width)
         .orient("left");
 
     var svg = d3three.select("body").append("svg")
@@ -112,6 +91,8 @@ var parseDate = d3three.time.format("%d-%b-%y").parse;
           .attr("y", function(d) { return y(d.title.$t); })
           .attr("height", y.rangeBand())
           .attr("x", function(d) { return x(d.content.from); })
+          .attr("rx","2")
+          .attr("ry","2")
           .attr("width", function(d) { return x(d.content.to) - x(d.content.from)});
 
       svg.selectAll(".pending")
@@ -121,7 +102,29 @@ var parseDate = d3three.time.format("%d-%b-%y").parse;
           .attr("y", function(d) { return y(d.title.$t); })
           .attr("height", y.rangeBand())
           .attr("x", function(d) { return x(d.content.from) + (x(d.content.to) - x(d.content.from))*d.content.progress/100 })
+          .attr("rx","2")
+          .attr("ry","2")
           .attr("width", function(d) { return (x(d.content.to) - x(d.content.from))*(1-(d.content.progress/100))});
+
+/////////////DEPEND//////////////////////
+        svg.selectAll(".depend")
+        .data(str)
+        .enter()
+        .append("line")
+        .attr("x1", function(d) { return x(d.content.to) })  //<<== change your code here
+        .attr("y1", function(d) { return y(d.title.$t)+10; })
+        .attr("x2", function(d) { return x(d.content.to) })
+        .attr("y2", function(d) { return y(d.title.$t)+40; })
+        .attr("x3", function(d) { return x(d.content.to)+50 })
+        .attr("y3", function(d) { return y(d.title.$t)+40; })
+
+        .style("stroke-width", "0.5px")
+        .style("stroke-opacity", ".95")
+        .style("stroke", "#222")
+        .style("fill", "none");
+//////////////DEPEND//////////////////////
+
+
 
 
         // add legend
@@ -148,33 +151,51 @@ var parseDate = d3three.time.format("%d-%b-%y").parse;
           .attr("y", function(d, i){ return -margin.top/2 + i*20 + 10;})
           .text(function(d,i){return types_of_statuses[i]});
 
+        //CURRENT DATE INIDICATOR
+        var today = new Date();
+        var dd = today.getDate();    //<<===== no need
+        var mm = today.getMonth()+1; //January is 0!   //<<===== no need
+        var yyyy = today.getFullYear();  //<<===== no need
 
-    var tooltip = d3three.select("body")
-    .append('div')
-    .attr('class', 'tooltip');
 
-    tooltip.append('div').attr('class', 'category');
-    tooltip.append('div').attr('class', 'tempRange');
-    tooltip.append('div').attr('class', 'progress');
+        svg.append("line")
+        .attr("x1", x(today))  //<<== change your code here
+        .attr("y1", 0)
+        .attr("x2", x(today))  //<<== and here
+        .attr("y2", height)
+        .style("stroke-width", "5px")
+        .style("stroke-opacity", ".2")
+        .style("stroke", "#FF683C")
+        .style("fill", "none");
+        //END CURRENT DATE INIDICATOR
 
-    svg.selectAll(".bar,.pending")
-    .on('mouseover', function(d) {
+        //TASK TOOLTIP
+        var tooltip = d3three.select("body")
+        .append('div')
+        .attr('class', 'tooltip');
 
-      tooltip.select('.category').html("<b>" + d.title.$t + "</b>");
-      tooltip.select('.tempRange').html(d.content.from.toDateString() + " to " + d.content.to.toDateString());
-      tooltip.select('.progress').html(d.content.progress + "% completed");
+        tooltip.append('div').attr('class', 'category');
+        tooltip.append('div').attr('class', 'tempRange');
+        tooltip.append('div').attr('class', 'progress');
 
-      tooltip.style('display', 'block');
-      tooltip.style('opacity',2);
+        svg.selectAll(".bar,.pending")
+        .on('mouseover', function(d) {
 
-    })
-    .on('mousemove', function(d) {
-      tooltip.style('top', (d3three.event.layerY + 10) + 'px')
-      .style('left', (d3three.event.layerX - 25) + 'px');
-    })
-    .on('mouseout', function() {
-      tooltip.style('display', 'none');
-      tooltip.style('opacity',0);
-    });
+          tooltip.select('.category').html("<b>" + d.title.$t + "</b>");
+          tooltip.select('.tempRange').html(d.content.from.toDateString() + " to " + d.content.to.toDateString());
+          tooltip.select('.progress').html(d.content.progress + "% completed");
+
+          tooltip.style('display', 'block');
+          tooltip.style('opacity',2);
+
+        })
+        .on('mousemove', function(d) {
+          tooltip.style('top', (d3three.event.layerY + 10) + 'px')
+          .style('left', (d3three.event.layerX - 25) + 'px');
+        })
+        .on('mouseout', function() {
+          tooltip.style('display', 'none');
+          tooltip.style('opacity',0);
+        });
 
 });

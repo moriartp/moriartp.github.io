@@ -39,7 +39,7 @@ circle.HIGH{
 
 /*SCHED*/
 .pending {
-  fill: #e74c3c;
+  fill: #9bddff;
 }
 
 #gantt text{
@@ -47,17 +47,22 @@ circle.HIGH{
 }
 
 .bar {
-        fill: #2ecc71;
+        fill: #45BCFC; 
 }
 
 .bar:hover, .pending:hover {
      fill: #3498db;
 }
 
-.axis path,
+.axis path{
+      fill: none;
+      stroke: #111;
+      shape-rendering: crispEdges;
+}
+
 .axis line {
       fill: none;
-      stroke: #000;
+      stroke: #eee;
       shape-rendering: crispEdges;
 }
 
