@@ -63,7 +63,7 @@ var parseDate = d3three.time.format("%d-%b-%y").parse;
         .innerTickSize(-width)
         .orient("left");
 
-    var svg = d3three.select("body").append("svg")
+    var svg = d3three.select("#sched").append("svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
         .attr("id","gantt")
@@ -71,17 +71,17 @@ var parseDate = d3three.time.format("%d-%b-%y").parse;
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
       svg.append("g")
-          .attr("class", "x axis")
+          .attr("class", "shed x axis")
           .attr("transform", "translate(0," + height + ")")
           .call(xAxis)
-          .append("text")
-          .attr("x", width-margin.right)
-          .attr("dx", ".71em")
-          .attr("dy", "-0.2em")
-          .text("Date");
+          // .append("text")
+          // .attr("x", width-margin.right)
+          // .attr("dx", ".71em")
+          // .attr("dy", "-0.2em")
+          // .text("Date");
 
       svg.append("g")
-          .attr("class", "y axis")
+          .attr("class", "sched y axis")
           .call(yAxis);
 
       svg.selectAll(".bar")

@@ -60,7 +60,7 @@ circle.HIGH{
       shape-rendering: crispEdges;
 }
 
-.axis line {
+.sched .axis line {
       fill: none;
       stroke: #eee;
       shape-rendering: crispEdges;
@@ -87,3 +87,8 @@ circle.HIGH{
         display: block;
         opacity: 0;
 }
+
+#cost{
+  background-color: steelblue;
+}
+
