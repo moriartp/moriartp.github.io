@@ -22,13 +22,6 @@ var str = JSON.stringify(blob1.feed.entry);
  str = $.parseJSON(str);
  console.log(str);
 
-
-
-
-
-
-
-
 var parseDate = d3three.time.format("%d-%b-%y").parse;
 
     var types_of_statuses = ["Completed","Remaining"];
@@ -41,7 +34,7 @@ var parseDate = d3three.time.format("%d-%b-%y").parse;
     console.log(str);
     var margin = {top: 50, right: 50, bottom: 50, left: 250},
         width = window.innerWidth - margin.left - margin.right,
-        height = window.innerHeight*0.9 - margin.top - margin.bottom;
+        height = window.innerHeight*0.8 - margin.top - margin.bottom;
 
     var y = d3three.scale.ordinal()
         .rangeRoundBands([0, height], .2);
@@ -53,14 +46,15 @@ var parseDate = d3three.time.format("%d-%b-%y").parse;
 
     var xAxis = d3three.svg.axis()
         .scale(x)
-        .orient("bottom")
+        .orient("top")
         .ticks(15)
-        // .innerTickSize(-height)
+        .innerTickSize(height)
         .tickFormat(d3three.time.format("%d%b"));
 
     var yAxis = d3three.svg.axis()
         .scale(y)
         .innerTickSize(-width)
+        .ticks(5)
         .orient("left");
 
     var svg = d3three.select("#sched").append("svg")
@@ -82,6 +76,7 @@ var parseDate = d3three.time.format("%d-%b-%y").parse;
 
       svg.append("g")
           .attr("class", "sched y axis")
+          // .style("stroke","coral")
           .call(yAxis);
 
       svg.selectAll(".bar")
@@ -106,19 +101,18 @@ var parseDate = d3three.time.format("%d-%b-%y").parse;
           .attr("ry","2")
           .attr("width", function(d) { return (x(d.content.to) - x(d.content.from))*(1-(d.content.progress/100))});
 
-        svg.selectAll(".depend")
-        .data(str)
-        .enter()
-        .append("path")
-        .attr("d", function(d) { return "M "+x(d.content.to)*1+" "+y(d.title.$t)*1+" H "+x(d.content.to)*1.025+" "+
-          " V "+y(d.title.$t)*1.25 +" H "+x(d.content.to)*1.05 })
-        .style("stroke-width", "0.5px")
-        .style("stroke-opacity", ".95")
-        .style("stroke", "#222")
-        .style("fill", "none");
 
 
-
+      // svg.selectAll(".depend")
+      //   .data(str)
+      //   .enter()
+      //   .append("path")
+      //   .attr("d", function(d) { return "M "+x(d.content.to)*1+" "+y(d.title.$t)*1+" H "+x(d.content.to)*1.025+" "+
+      //     " V "+y(d.title.$t)*1.25 +" H "+x(d.content.to)*1.05 })
+      //   .style("stroke-width", "0.5px")
+      //   .style("stroke-opacity", ".95")
+      //   .style("stroke", "#222")
+      //   .style("fill", "none");
 
 
 /////////////DEPEND//////////////////////
@@ -143,29 +137,29 @@ var parseDate = d3three.time.format("%d-%b-%y").parse;
 
 
 
-        // add legend
-        var legend = svg.append("g")
-          .attr("class", "legend")
+        // // add legend
+        // var legend = svg.append("g")
+        //   .attr("class", "legend")
 
-        legend.selectAll(".swatch")
-          .data(types_of_statuses)
-          .enter()
-          .append("rect")
-          .attr("x", width-margin.left-margin.right-25)
-          .attr("y", function(d, i){ return -margin.top/2 + i*20;})
-          .attr("width", 10)
-          .attr("height", 10)
-          .style("fill", function(d,i) {
-            return statuses_color[i];
-          })
+        // legend.selectAll(".swatch")
+        //   .data(types_of_statuses)
+        //   .enter()
+        //   .append("rect")
+        //   .attr("x", width-margin.left-margin.right-25)
+        //   .attr("y", function(d, i){ return -margin.top/2 + i*20;})
+        //   .attr("width", 10)
+        //   .attr("height", 10)
+        //   .style("fill", function(d,i) {
+        //     return statuses_color[i];
+        //   })
 
-        legend.selectAll(".labels")
-          .data(types_of_statuses)
-          .enter()
-          .append("text")
-          .attr("x", width-margin.left-margin.right)
-          .attr("y", function(d, i){ return -margin.top/2 + i*20 + 10;})
-          .text(function(d,i){return types_of_statuses[i]});
+        // legend.selectAll(".labels")
+        //   .data(types_of_statuses)
+        //   .enter()
+        //   .append("text")
+        //   .attr("x", width-margin.left-margin.right)
+        //   .attr("y", function(d, i){ return -margin.top/2 + i*20 + 10;})
+        //   .text(function(d,i){return types_of_statuses[i]});
 
         //CURRENT DATE INIDICATOR
         var today = new Date();

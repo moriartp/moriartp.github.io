@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html>
 
 <!--  
 
@@ -20,6 +19,10 @@
 <!-- <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+<script src="
+https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+
+
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js">
 </script>
 <script>
@@ -27,27 +30,35 @@
 	window.d3 = null
 </script>
 
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+	d3four = d3 ///runs an early version of d3 concurrent to v5
+	window.d3 = null
+</script>
+
 <script src="https://d3js.org/d3.v5.min.js"></script>
-<!-- <script type="text/javascript" src="js/gantt.js"></script>
-<script type="text/javascript" src="js/scatter.js"></script>
-<script type="text/javascript" src="js/sched.js"></script> -->
+
 <body>
 <h1>ArchivesSpace Phase Two</h1>
 
+	 <h2> Requirements</h2>
+	 <div id="req" class="cont" width="960" height="1060"></div>
+
      <h2>Risk Response Planning</h2>
-     <div id="charter"></div>
+     <div id="charter" class="cont" ></div>
 
      <h2>SCHED</h2>
-     <div id="sched"></div>
+     <div id="sched" class="cont" ></div>
 
-     <h2>Cost Forecasting</h2>
-     <div id="cost">hello, world</div>     
+	 <h2>FTE Forecast</h2>
+	 <div id="chart" class="cont" ></div>
+
 </body>
-
-<!-- <script type="text/javascript" src="js/gantt.js"></script> -->
-<!-- <script src="https://d3js.org/d3.v5.min.js"></script> -->
+<script type="text/javascript" src="js/radial.js"></script>
 <script type="text/javascript" src="js/scatter.js"></script>
 <script type="text/javascript" src="js/sched.js"></script>
-<script type="text/javascript" src="js/jsonp.js"></script>
+<script type="text/javascript" src="js/donut.js"></script>
+<script type="text/javascript" src="js/donut2.js"></script>
+
 
 </html>

@@ -50,6 +50,37 @@ var svg = d3.select("#charter").append("svg")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 
+        // gridlines in x axis function
+        function make_x_gridlines() {   
+            return d3.axisBottom(x)
+                .ticks(20)
+        }
+
+        // gridlines in y axis function
+        function make_y_gridlines() {   
+            return d3.axisLeft(y)
+                .ticks(20)
+        }
+
+
+                // add the X gridlines
+        svg.append("g")     
+            .attr("class", "grid")
+            .attr("transform", "translate(0," + height + ")")
+            .call(make_x_gridlines()
+                .tickSize(-height)
+                .tickFormat("")
+            )
+
+        // add the Y gridlines
+        svg.append("g")     
+            .attr("class", "grid")
+            .call(make_y_gridlines()
+                .tickSize(-width)
+                .tickFormat("")
+            )
+
+
 
 
 // Define the div for the tooltip
