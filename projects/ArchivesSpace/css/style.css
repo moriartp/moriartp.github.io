@@ -155,3 +155,21 @@ polyline{
   stroke-width: 0;
 }
 
+/*__________________________________WIERD WBS VIS____________________*/
+
+.node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 3px;
+}
+
+.node text {
+  font: 12px sans-serif;
+  font-weight:bold;
+}
+
+.link {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 6px;
+}

@@ -1,0 +1,35 @@
+id,value,color
+ArchivesSpace,
+ArchivesSpace.Reduce Touchpoints,
+ArchivesSpace.Reduce Touchpoints.Consolidate Processing Systems,
+ArchivesSpace.Reduce Touchpoints.Consolidate processing systems.A,1,#808080
+ArchivesSpace.Reduce Touchpoints.Consolidate processing systems,B,#808080
+ArchivesSpace.Reduce Touchpoints.Version Control Methods,0.5,#2E2575
+ArchivesSpace.Reduce Touchpoints.Control Static File Finding Aids,3,#E54F24
+ArchivesSpace.Reduce Touchpoints.Gain Operational Insight,1.5,#FF9900
+ArchivesSpace.Reduce Touchpoints.Improve Location Management,3,#563B7E
+ArchivesSpace.Reduce Touchpoints.Simplify Container Management,
+ArchivesSpace.Reduce Touchpoints.Preview Finding Aids,3,#D6BA33
+ArchivesSpace.Reduce Touchpoints.Standardized publication method,3,#1169AE
+ArchivesSpace.Reduce Touchpoints.Standardize Finding Aid Format,2.5,#F6854D
+ArchivesSpace.Back-End,
+ArchivesSpace.Back-End.PHP,1.5,#617CBE
+ArchivesSpace.Back-End.C++,1,#0073AD
+ArchivesSpace.Back-End.SQL,1.5,#E58E00
+ArchivesSpace.Back-End.Java World,
+ArchivesSpace.Back-End.Java World.Java SE,3,#EB2C2F
+ArchivesSpace.Back-End.Java World.JSP,2,#EB2C2F
+ArchivesSpace.Back-End.Java World.Hibernate,2.5,#59666C
+ArchivesSpace.Back-End.Java World.Spring MVC / Boot,3,#6DB33F
+ArchivesSpace.Back-End.Java World.Spring Data,2.5,#6DB33F
+ArchivesSpace.Back-End.Java World.Spring Security,2.5,#5FA134
+ArchivesSpace.Back-End.Java World.Thymeleaf,3,#005F0F
+ArchivesSpace.Databases,
+ArchivesSpace.Databases.MySQL,2.5,#00618A
+ArchivesSpace.SysAdmin,
+ArchivesSpace.SysAdmin.VPS & SharedHost,2,#808080
+ArchivesSpace.SysAdmin.Linux,2.5,#040404
+ArchivesSpace.SysAdmin.Apache & ArchivesSpacecat,2,#CA212F
+ArchivesSpace.CMS,
+ArchivesSpace.CMS.Wordpress,1.5,#00A0D2
+ArchivesSpace.CMS.Drupal,1.5,#0678BE
