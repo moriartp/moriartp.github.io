@@ -21,7 +21,7 @@
 
 <script src="
 https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js">
 </script>
@@ -41,9 +41,9 @@ https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></
 <body>
 <h1>ArchivesSpace Phase Two</h1>
 
-<h2>Solution Requirements</h2>
+<!-- <h2>Solution Requirements</h2> -->
 
-    <div id="main">
+<!--     <div id="main">
       <div id="sequence"></div>
       <div id="sun">
         <div id="explanation" style="visibility: hidden;">
@@ -55,28 +55,26 @@ https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></
     <div id="sidebar">
       <input type="checkbox" id="togglelegend"> Legend<br/>
       <div id="legend" style="visibility: hidden;"></div>
+    </div> -->
+
+    <h2> Solution Requirements</h2>
+    <div id="req">
+      <!-- <div id='toggle-button'>Toggle</div> -->
+      <!-- <svg id="dendo" width="900" height="830"></svg> -->
     </div>
-    <!-- <script type="text/javascript" src="sequences.js"></script>
-    <script type="text/javascript">
-      // Hack to make this example display correctly in an iframe on bl.ocks.org
-      d3three.select(self.frameElement).style("height", "700px");
-  </script> 
- -->
 
-	<!--  <h2> Requirements</h2>
-	 <div id="req" class="cont" width="960" height="1060"></div> -->
 
-     <h2>Risk Response Planning</h2>
-     <div id="charter" class="cont" ></div>
+    <h2>Work Breakdown Structure <i>with decomposition</i></h2>
+    <div id="wbs" class="cont" ></div>
 
-     <h2>SCHED</h2>
-     <div id="sched" class="cont" ></div>
+    <h2>SCHED</h2>
+    <div id="sched" class="cont" ></div>
 
-	 <h2>FTE Forecast</h2>
-	 <div id="chart" class="cont" ></div>
+    <h2>Risk Response Planning</h2>
+    <div id="charter" class="cont" ></div>
 
-	 <h2>Work Breakdown Structure <i>with decomposition</i></h2>
-	 <div id="wbs" class="cont" ></div>
+	  <h2>FTE Forecast</h2>
+	  <div id="chart" class="cont" ></div>
 
 </body>
 <!-- <script type="text/javascript" src="js/radial.js"></script> -->
@@ -85,7 +83,8 @@ https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></
 <script type="text/javascript" src="js/donut.js"></script>
 <script type="text/javascript" src="js/donut2.js"></script>
 <script type="text/javascript" src="js/tree.js"></script>
-<script type="text/javascript" src="js/sun.js"></script>
+<script type="text/javascript" src="js/den.js"></script>
+<!-- <script type="text/javascript" src="js/sun.js"></script> -->
 
 
 

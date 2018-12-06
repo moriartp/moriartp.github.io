@@ -1,13 +1,13 @@
-ArchivesSpace-Goal1-account-account-account-account,1061
-ArchivesSpace-Goal2-account-account-account-account,1061
-ArchivesSpace-Goal3-account-account-account-account,1061
-ArchivesSpace-Goal4-account-account-account-account,1061
-ArchivesSpace-account-account-account-account-home,58
-ArchivesSpace-account-account-account-account-other,161
-ArchivesSpace-account-account-account-account-product,335
-ArchivesSpace-account-account-account-account-search,40
-ArchivesSpace-account-account-account-end,407
-ArchivesSpace-account-account-account-home-account,15
-ArchivesSpace-account-account-account-home-end,28
-ArchivesSpace-account-account-account-home-home,9
-ArchivesSpace
+ArchivesSpace-Goal1-BusNeed-SolReq-account-account,1061,Must Have
+ArchivesSpace-Goal2-account-account-account-account,1061,Must Have
+ArchivesSpace-Goal3-account-account-account-account,1061,Must Have
+ArchivesSpace-Goal4-account-account-account-account,1061,Must Have
+ArchivesSpace-account-account-account-account-home,58,Must Have
+ArchivesSpace-account-account-account-account-other,161,Must Have
+ArchivesSpace-account-account-account-account-product,335,Must Have
+ArchivesSpace-account-account-account-account-search,40,Must Have
+ArchivesSpace-account-account-account-end,407,Must Have
+ArchivesSpace-account-account-account-home-account,15,Must Have
+ArchivesSpace-account-account-account-home-end,28,Must Have
+ArchivesSpace-account-account-account-home-home,9,Must Have
+ArchivesSpace,,Must Have

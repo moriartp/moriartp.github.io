@@ -115,24 +115,23 @@ var parseDate = d3three.time.format("%d-%b-%y").parse;
       //   .style("fill", "none");
 
 
-/////////////DEPEND//////////////////////
-        // svg.selectAll(".depend")
-        // .data(str)
-        // .enter()
-        // .append("line")
-        // .attr("curve","curveStepBefore")
-        // // .attr("curve","step-before")
-        // .attr("x1", function(d) { return x(d.content.to) })  //<<== change your code here
-        // .attr("y1", function(d) { return y(d.title.$t)+10; })
-        // .attr("x2", function(d) { return x(d.content.to)+50 })
-        // .attr("y2", function(d) { return y(d.title.$t)+40; })
-
-        // .style("stroke-width", "0.5px")
-        // .style("stroke-opacity", ".95")
-        // .style("stroke", "#222")
-        // .style("fill", "none")
+///////////DEPEND//////////////////////
+        svg.selectAll(".depend")
+        .data(str)
+        .enter()
+        .append("line")
+        .attr("curve","curveStepBefore")
+        // .attr("curve","step-before")
+        .attr("x1", function(d) { return x(d.content.to) })  //<<== change your code here
+        .attr("y1", function(d) { return y(d.title.$t)+10; })
+        .attr("x2", function(d) { return x(d.content.to)+.00675*width })
+        .attr("y2", function(d) { return y(d.title.$t)+.03*height; })
+        .style("stroke-width", "0.75px")
+        .style("stroke-opacity", ".95")
+        .style("stroke", "#222")
+        .style("fill", "none")
         // .interpolate("step-before");
-//////////////DEPEND//////////////////////
+////////////DEPEND//////////////////////
 
 
 

@@ -47,7 +47,7 @@ circle.HIGH{
 }
 
 #gantt text{
-  font-size:1em;
+  font-size:0.75em;
 }
 
 g.tick > line{
@@ -182,8 +182,14 @@ polyline{
   margin:auto;
 }
 
+#explanation {
+  /*float: left;*/
+  width: 100%;
+  margin:auto;
+}
+
 #sidebar {
-  float: right;
+  /*float: right;*/
   width: 100px;
 }
 
@@ -194,6 +200,7 @@ polyline{
 
 #legend {
   padding: 10px 0 0 3px;
+
 }
 
 #sequence text, #legend text {
@@ -209,7 +216,7 @@ polyline{
   stroke: #fff;
 }
 
-#explanation {
+/*#explanation {
   position: absolute;
   top: 260px;
   left: 305px;
@@ -217,12 +224,60 @@ polyline{
   text-align: center;
   color: #666;
   z-index: -1;
-}
+}*/
 
 #percentage {
   font-size: 2.5em;
 }
+/*
+________________________DENDROGRAM_________________________*/
 
+.chart-title {
+  font-size: 1.5em;
+}
+
+.node text {
+  font: 10px sans-serif;
+}
+
+.node--internal text {
+  text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff;
+}
+
+.link {
+  fill: none;
+  stroke: #555;
+  stroke-opacity: 0.4;
+  stroke-width: 1.5px;
+}
+
+#toggle-button{
+  position: inline;
+  bottom: 10px;
+  right: 10px;
+  margin-right: 10px;
+  font-size: 2em;
+  text-align: center;
+  background: #FFF;
+  border-radius: 5px;
+  border: 1px solid #DDD;
+}
+
+#toggle-button:hover {
+  background: #CCC;
+  cursor: pointer;
+}
+
+/*#dend{
+  width:10000px;
+  height:10000px;
+}*/
+svg#dendrogram{
+ /* margin:300px;
+  fill: red;
+  width:10000px;
+  height:10000px;*/
+}
 
 
 

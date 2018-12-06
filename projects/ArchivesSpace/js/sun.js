@@ -15,7 +15,12 @@ var colors = {
   "search": "#de783b",
   "account": "#6ab975",
   "other": "#a173d1",
-  "end": "#22bbbb"
+  "end": "#22bbbb",
+  "Goal1": "#FFD8CD",
+  "Goal2": "#FFAD95",
+  "Goal3": "#FF8A68",
+  "Goal4": "#FF683C",
+  "ArchivesSpace":"#9bddff"
 };
 
 // Total size of all segments; we set this later, after loading the data.
@@ -44,6 +49,7 @@ d3three.text("data/req.csv", function(text) {
   var csv = d3three.csv.parseRows(text);
   var json = buildHierarchy(csv);
   createVisualization(json);
+  console.log(json)
 });
 
 // Main function to draw and set up the visualization, once we have the data.
@@ -157,6 +163,7 @@ function initializeBreadcrumbTrail() {
   // Add the label at the end, for the percentage.
   trail.append("svg:text")
     .attr("id", "endlabel")
+    .style("font-size", "1em")
     .style("fill", "#000");
 }
 
@@ -164,9 +171,9 @@ function initializeBreadcrumbTrail() {
 function breadcrumbPoints(d, i) {
   var points = [];
   points.push("0,0");
-  points.push(b.w + ",0");
-  points.push(b.w + b.t + "," + (b.h / 2));
-  points.push(b.w + "," + b.h);
+  points.push(b.w*2 + ",0");
+  points.push(b.w*2 + b.t + "," + (b.h / 2));
+  points.push(b.w*2 + "," + b.h);
   points.push("0," + b.h);
   if (i > 0) { // Leftmost breadcrumb; don't include 6th vertex.
     points.push(b.t + "," + (b.h / 2));
@@ -190,15 +197,16 @@ function updateBreadcrumbs(nodeArray, percentageString) {
       .style("fill", function(d) { return colors[d.name]; });
 
   entering.append("svg:text")
-      .attr("x", (b.w + b.t) / 2)
+      .attr("x", (b.w*2 + b.t) / 2)
       .attr("y", b.h / 2)
       .attr("dy", "0.35em")
+      .style("font-size","1em")
       .attr("text-anchor", "middle")
-      .text(function(d) { return d.name; });
+      .text(function(d) { return d.name+ " " + d.priority; });
 
   // Set position for entering and updating nodes.
   g.attr("transform", function(d, i) {
-    return "translate(" + i * (b.w + b.s) + ", 0)";
+    return "translate(" + i * (b.w*2 + b.s) + ", 0)";
   });
 
   // Remove exiting nodes.
@@ -269,6 +277,7 @@ function buildHierarchy(csv) {
   for (var i = 0; i < csv.length; i++) {
     var sequence = csv[i][0];
     var size = +csv[i][1];
+    var priority = csv[i][2];
     if (isNaN(size)) { // e.g. if this is a header row
       continue;
     }
