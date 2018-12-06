@@ -15,7 +15,13 @@ var svg = d3three.select("#req").append("svg")
   .attr("width", width + margin.right + margin.left)
   .attr("height", height + margin.top + margin.bottom)
   .append("g")
+  .call(d3.zoom()
+  .on("zoom", zoomed))
   .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+ function zoomed() {
+  svg.attr("transform", d3.event.transform);
+} 
 
 // load the external data
 d3three.csv("data/dendro.csv", function(error, data) {
@@ -73,7 +79,7 @@ function update(source) {
   nodeEnter.append("text")
     .attr("x", function(d) { 
       return d.children || d._children ? -13 : 13; })
-    .attr("dy", "-.435em")
+    .attr("dy", "-.35em")
     .attr("text-anchor", function(d) { 
       return d.children || d._children ? "end" : "start"; })
     .text(function(d) { return d.name; })
