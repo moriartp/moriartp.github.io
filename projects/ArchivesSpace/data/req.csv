@@ -1,6 +1,24 @@
-id,value
-ArchivesSpace
-ArchivesSpace.Centralize Collection Management Systems,
-ArchivesSpace.Centralize Collection Management Systems.Consolidate processing systems,
-ArchivesSpace.Centralize Collection Management Systems.Version Control,
-ArchivesSpace.Centralize Collection Management Systems.Insight,
+id,parentId,size,class
+ArchivesSpace,,10,project
+Reduce Touchpoints,ArchivesSpace,8,goal
+Reduce Backlog,ArchivesSpace,8,goal
+Customer Service,ArchivesSpace,8,goal
+Secure Environment,ArchivesSpace,8,goal
+Consolidate Systems,Reduce Touchpoints,6,biz
+Version Control,Reduce Touchpoints,6,biz
+Control Static Finding Aids,Reduce Touchpoints,6,biz
+Operational Insight,Reduce Touchpoints,6,biz
+Location Management,Reduce Touchpoints,6,biz
+Container Management,Reduce Touchpoints,6,biz
+Preview Finding Aids,Reduce Touchpoints,6,biz
+Standardize publication,Reduce Touchpoints,6,biz
+Standardize Format,Reduce Touchpoints,6,biz
+Streamline workflows,Reduce Backlog,6.biz
+Standardize descriptive formats,Reduce Backlog,6.biz
+Digital Object Management,Reduce Backlog,6.biz
+Reduce Paging Lag,Customer Service,6,biz
+Text Search,Customer Service,6,biz
+Digital Objects Access,Customer Service,6,biz
+Standardize UX,Customer Service,6,biz
+Non-Roman Characters,Customer Service,6,biz
+PHP Version Compliant,Secure Environment,6,biz
