@@ -1,13 +1,6 @@
-ArchivesSpace-Goal1-BusNeed-SolReq-account-account,1061,Must Have
-ArchivesSpace-Goal2-account-account-account-account,1061,Must Have
-ArchivesSpace-Goal3-account-account-account-account,1061,Must Have
-ArchivesSpace-Goal4-account-account-account-account,1061,Must Have
-ArchivesSpace-account-account-account-account-home,58,Must Have
-ArchivesSpace-account-account-account-account-other,161,Must Have
-ArchivesSpace-account-account-account-account-product,335,Must Have
-ArchivesSpace-account-account-account-account-search,40,Must Have
-ArchivesSpace-account-account-account-end,407,Must Have
-ArchivesSpace-account-account-account-home-account,15,Must Have
-ArchivesSpace-account-account-account-home-end,28,Must Have
-ArchivesSpace-account-account-account-home-home,9,Must Have
-ArchivesSpace,,Must Have
+id,value
+ArchivesSpace
+ArchivesSpace.Centralize Collection Management Systems,
+ArchivesSpace.Centralize Collection Management Systems.Consolidate processing systems,
+ArchivesSpace.Centralize Collection Management Systems.Version Control,
+ArchivesSpace.Centralize Collection Management Systems.Insight,

@@ -118,6 +118,7 @@ var treeData;
 var margin = {top: 20, right: 90, bottom: 30, left: 390},
     width = 960 - margin.left - margin.right,
     height = 1000 - margin.top - margin.bottom;
+    height = window.innerHeight;
  var i = 0,
     duration = 750,
     rectH=30,
@@ -127,7 +128,7 @@ var margin = {top: 20, right: 90, bottom: 30, left: 390},
 
 var svg = d3.select("#wbs").append("svg")
     .attr("width","100%")
-    .attr("height", "800")
+    .attr("height", height)
     .call(d3.zoom()
     .scaleExtent([1 / 2, 8])
     .on("zoom", zoomed))

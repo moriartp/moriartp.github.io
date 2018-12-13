@@ -1,88 +1,192 @@
 <!DOCTYPE html>
+<html>
+<head>
 
-<!--  
-
-████████████████████████
-█░░░░░░░░█░░█░░░░░░░░███
-█░░████░░█░░█░░█░░█░░███
-█░░░░░░░░█░░█░░█░░█░░███
-█░░███████░░█░░█░░█░░███
-█░░█░░░░░░░░█░░█░░█░░███
-████████████████████████
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
 
 
+#container{
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 5em;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+/*.active:after {
+  content: "\2212";
+}*/
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+h2{
+	margin-top: .1em;
+	margin-bottom: .1em;	
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+i{
+	font-size: .8em;
+}
+
+h4{
+	margin-bottom: .1em;
+}
 
 
--->
+</style>
 
- <link rel="stylesheet" type="text/css" href="css/style.css">
-<!-- <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> -->
+<!-- JAVASCRIPT -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<script src="
-https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js">
-</script>
-<script>
-	d3three = d3 ///runs an early version of d3 concurrent to v5
-	window.d3 = null
-</script>
-
-<script src="https://d3js.org/d3.v4.min.js"></script>
-<script>
-	d3four = d3 ///runs an early version of d3 concurrent to v5
-	window.d3 = null
-</script>
-
-<script src="https://d3js.org/d3.v5.min.js"></script>
-
+</head>
 <body>
-<h1>ArchivesSpace Phase Two</h1>
 
-<!-- <h2>Solution Requirements</h2> -->
+<!-- NAVIGATION BAR -->
+<ul>
+  <li><a class="active" href="index.html">Charter</a></li>
+  <li><a href="2.html">Requirements</a></li>
+  <li><a href="4.html">Scope</a></li>
+  <li><a href="3.html">WBS</a></li>
+  <li><a href="5.html">Schedule</a></li>
+  <li><a href="6.html">FTE</a></li>
+  <li><a href="7.html">Risk</a></li>
+  <li><a href="8.html">Procurement</a></li>        
+</ul>
+<!-- END NAVIGATION BAR -->
 
-<!--     <div id="main">
-      <div id="sequence"></div>
-      <div id="sun">
-        <div id="explanation" style="visibility: hidden;">
-          <span id="percentage"></span><br/>
-          of visits begin with this sequence of pages
-        </div>
-      </div>
-    </div>
-    <div id="sidebar">
-      <input type="checkbox" id="togglelegend"> Legend<br/>
-      <div id="legend" style="visibility: hidden;"></div>
-    </div> -->
+<!-- CONTAINER(S) -->
+<div id="container">
+	<h1>ArchivesSpace Phase II</h1>
+	<p>Sponsor(s): Jim Cheng, Sean Quimby, Carol Ann Fabian<br>Project Owner: Kevin Schlottman</p>
+	<button class="accordion"><h2>Business Case</h2></button>
+	<div class="panel">
+	  <p>Current library archivists’ workflows relating to records management of archival materials are variously executed and rely on a multitude of records processing systems and touchpoints. This has contributed to the current backlog of archival materials processing. Further, the variousness of workflow routines, touchpoint systems, and finding aid formats has contributed to a lack of standardization, records management capability, and quality control assurances.</p>
+	</div>
 
-    <h2> Solution Requirements</h2>
-    <!-- <div id="req"></div> -->
+	<button class="accordion"><h2>Description of Project</h2></button>
+	<div class="panel">
+	  <p>This project we will aim to better utilize the newly implemented ArchivesSpace hosted platform to increase efficiency, standardization and quality assurance practices as it relates to management of records for the Libraries archival materials.</p>
+	</div>
 
+	<button class="accordion"><h2>Project Goals</h2></button>
+	<div class="panel">
+	  <p>The goals for this project include various aims related to streamlining workflow processes, processing efficiencies and standards:<br>
+		<table>
+		  <tr>
+		    <th>Goal</th>
+		    <th>Description</th>
+		    <th>Priority</th>
+		  </tr>
+		  <tr>
+		    <td>Centralize/Consolidate Collection Management Systems</td>
+		    <td>Reduce system headcount in the processing workflow, simplify archives processing technology ecosystem front-end.</td>
+		    <td>High</td>
+		  </tr>
+		  <tr>
+		    <td>Reduce Archives Backlog</td>
+		    <td>Streamline processes, gain operational insight, and build capacity.</td>
+		    <td>High</td>
+		  </tr>
+		  <tr>
+		    <td>Improve Customer Services</td>
+		    <td>Reduce service lags/increase immediacy of patron access to archival materials.</td>
+		    <td>Low</td>
+		  </tr>
+		  <tr>
+		    <td>Environmental Security</td>
+		    <td>Ensure the integrity and security of archival records.</td>
+		    <td>Medium</td>
+		  </tr>
+		</table>
+	  </p>		
+	</div>
 
-    <h2>Work Breakdown Structure <i>with decomposition</i></h2>
-    <div id="wbs" class="cont" ></div>
+	<button class="accordion"><h2>Strategic Alignment</h2></button>
+	<div class="panel">
+	  <p><h4>Empower Staff</h4><i>Support individual agency and create structures that allow staff to act nimbly, provoke change, and assert our roles in substantive academic endeavor.</i><br>By providing improved tools and technological mechanisms to process archival accessions, this project will directly contribute the the processing capacity of library staff archivists.</p>
 
-    <h2>SCHED</h2>
-    <div id="sched" class="cont" ></div>
+	  <p><h4>Commit to Inclusion</h4><i>Challenge the organization to enable a thriving, inclusive community by embedding support and welcome for all identities and cultural experiences in our efforts, conversations, and actions.</i><br>Implicit in the design and functional capability of the solution is flexible support mechanisms that accommodate the dynamic and varied range of materials held by the libraries. As such the solution allows us to serve the diverse needs for language and character rendering.</p>
 
-    <h2>Risk Response Planning</h2>
-    <div id="charter" class="cont" ></div>
+	  <p><h4>Catalyze Discovery</h4><i>Cultivate a campus research environment that generates a wellspring of expertise, accelerates the production of new knowledge, and amplifies research outcomes.</i><br>By increasing our processing capacity this project will help to introduce an ever-broader range of materials into the university’s research environment, and therefore directly contributes to the production of new knowledge.</p>
 
-	  <h2>FTE Forecast</h2>
-	  <div id="chart" class="cont" ></div>
+	  <p><h4>Advance Knowledge</h4><i>Build, steward, and leverage collections distinguished by scope, quality, and scale to inform memory and enhance scholarship.</i><br>This project directly serves our aims to scale our collection to inform memory and enhance scholarship.</p>
+
+	</div>
+
+	<button class="accordion"><h2>Key Performance Indicator</h2></button>
+	<div class="panel">
+	  <p><b>Processing Capacity</b><br>By centralizing a single source of truth for the processing of Archival materials, and streamlining the workflow necessary to process archival accessions, success for this project would be realized by an increase in the rate of processing for archival materials. This may be assessed by comparing processing volumes over a sixth month period both before and after the project deliverables are deployed to library operations.
+	  </p>
+	</div>
+
+</div>
 
 </body>
-<!-- <script type="text/javascript" src="js/radial.js"></script> -->
-<script type="text/javascript" src="js/scatter.js"></script>
-<script type="text/javascript" src="js/sched.js"></script>
-<script type="text/javascript" src="js/donut.js"></script>
-<script type="text/javascript" src="js/donut2.js"></script>
-<script type="text/javascript" src="js/tree.js"></script>
-<!-- <script type="text/javascript" src="js/den.js"></script> -->
-<!-- <script type="text/javascript" src="js/sun.js"></script> -->
 
+<!-- CUSTOM SCRIPT(S) -->
+<script src="js/script.js"></script>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
 
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
 
 </html>

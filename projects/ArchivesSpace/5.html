@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+<style>
+div.cont{
+  border: 2px solid #222;
+}
+
+div.tooltip { 
+    position: absolute;     
+    text-align: left;     
+    width: 200px;          
+    height: auto;         
+    padding: 5px;       
+    font: 1em sans-serif;    
+    background: lightsteelblue; 
+    border: 0px;    
+    border-radius: 8px;     
+    pointer-events: none;     
+}
+
+text{
+  font-size: 2em;
+}
+
+circle{
+  stroke:#222;
+  stroke-width:0.25;
+  opacity: .8;
+}
+
+circle.LOW{
+  fill: steelblue;
+
+}
+circle.MODERATE{
+  fill: coral;
+}
+circle.HIGH{
+  fill: darkred;
+}
+
+
+/*SCHED*/
+.pending {
+  fill: #9bddff;
+}
+
+#gantt text{
+  font-size:0.75em;
+}
+
+g.tick > line{
+  stroke:#555;
+  stroke-width:0.34;
+  stroke-opacity:0.5;
+}
+
+.bar {
+        fill: #45BCFC; 
+}
+
+.bar:hover, .pending:hover {
+     fill: #3498db;
+}
+
+.axis path{
+      fill: none;
+      stroke: #111;
+      shape-rendering: crispEdges;
+}
+
+.sched .axis line {
+      fill: none;
+      stroke: #eee;
+      shape-rendering: crispEdges;
+}
+
+.legend {
+        padding: 5px;
+        font: 16px sans-serif;
+        background: yellow;
+        box-shadow: 2px 2px 1px #888;
+}
+
+.tooltip {
+        background: #eee;
+        box-shadow: 0 0 5px #999999;
+        color: #333;
+        font-size: 12px;
+        left: 130px;
+        padding: 10px;
+        position: absolute;
+        text-align: center;
+        top: 95px;
+        z-index: 10;
+        display: block;
+        opacity: 0;
+}
+</style>
+
+
+
+
+<!-- JAVASCRIPT -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js">
+</script>
+<script>
+	d3three = d3 ///runs an early version of d3 concurrent to v5
+	window.d3 = null
+</script>
+
+</head>
+<body>
+
+<!-- NAVIGATION BAR -->
+<ul>
+  <li><a href="index.html">Charter</a></li>
+  <li><a href="2.html">Requirements</a></li>
+  <li><a href="4.html">Scope</a></li>
+  <li><a href="3.html">WBS</a></li>
+  <li><a class="active" href="5.html">Schedule</a></li>
+  <li><a href="6.html">FTE</a></li>
+  <li><a href="7.html">Risk</a></li>
+  <li><a href="8.html">Procurement</a></li>        
+</ul>
+<!-- END NAVIGATION BAR -->
+
+<!-- CONTAINER(S) -->
+<div id="sched"></div>
+<svg id="container"></svg>
+
+</body>
+
+<!-- CUSTOM SCRIPT(S) -->
+<script src="js/sched.js"></script>
+
+</html>

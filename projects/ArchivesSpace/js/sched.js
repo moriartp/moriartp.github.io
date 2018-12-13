@@ -34,7 +34,7 @@ var parseDate = d3three.time.format("%d-%b-%y").parse;
     console.log(str);
     var margin = {top: 50, right: 50, bottom: 50, left: 250},
         width = window.innerWidth - margin.left - margin.right,
-        height = window.innerHeight*0.8 - margin.top - margin.bottom;
+        height = window.innerHeight*0.95 - margin.top - margin.bottom;
 
     var y = d3three.scale.ordinal()
         .rangeRoundBands([0, height], .2);
