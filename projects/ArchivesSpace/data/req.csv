@@ -22,3 +22,28 @@ Digital Objects Access,Customer Service,6,biz
 Standardize UX,Customer Service,6,biz
 Non-Roman Characters,Customer Service,6,biz
 PHP Version Compliant,Secure Environment,6,biz
+Eliminate Touchpoints,Consolidate Systems,4,sol
+EAD Migration,Consolidate Systems,4,sol
+Custom Publication Mechanism,Consolidate Systems,4,sol
+On-platform exclusive,Version Control,4,sol
+Audit Finding Aids,Control Static Finding Aids,4,sol
+Make secure/stable/accessible,Control Static Finding Aids,4,sol
+BI Reporting,Operational Insight,4,sol
+Location Xref Table,Location Management,4,sol
+Offsite Ordering,Container Management,4,sol
+Finding Aid Preview,Preview Finding Aids,4,sol
+PUI Delivery,Standardize publication,4,sol
+Transpose/migration Static finding aids,Standardize Format,4,sol
+Offsite ordering,Streamline workflows,4,sol
+Location Table,Streamline workflows,4,sol
+ArchiveGrid/WorldCat Publication,Streamline workflows,4,sol
+BibID Generation,Streamline workflows,4,sol
+QC/Records Auditing,Standardize descriptive formats,4,sol
+Authority Control,Standardize descriptive formats,4,sol
+URI Delivery,Digital Object Management,4,sol
+Location Table,Reduce Paging Lag,4,sol
+Contextualized text search,Text Search,4,sol
+URI Delivery,Digital Objects Access,4,sol
+Transpose/Migrate static finding aids,Standardize UX,4,sol
+Non-Roman Character Set Rendering,Non-Roman Characters,4,sol
+Address/Patch PHP Security vulnerability,PHP Version Compliant,4,sol

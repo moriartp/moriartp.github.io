@@ -1,0 +1,49 @@
+name,department,manager,size
+ArchivesSpace,Project,,10
+Reduce Touchpoints,Strategic Goal,ArchivesSpace,8
+Reduce Backlog,Strategic Goal,ArchivesSpace,8
+Customer Service,Strategic Goal,ArchivesSpace,8
+Secure Environment,Strategic Goal,ArchivesSpace,8
+Consolidate Systems,Business Requirements,Reduce Touchpoints,6
+Version Control,Business Requirements,Reduce Touchpoints,6
+Control Static Finding Aids,Business Requirements,Reduce Touchpoints,6
+Operational Insight,Business Requirements,Reduce Touchpoints,6
+Location Management,Business Requirements,Reduce Touchpoints,6
+Container Management,Business Requirements,Reduce Touchpoints,6
+Preview Finding Aids,Business Requirements,Reduce Touchpoints,6
+Standardize publication,Business Requirements,Reduce Touchpoints,6
+Standardize Format,Business Requirements,Reduce Touchpoints,6
+Streamline workflows,Business Requirements,Reduce Backlog,6
+Standardize descriptive formats,Business Requirements,Reduce Backlog,6
+Digital Object Management,Business Requirements,Reduce Backlog,6
+Reduce Paging Lag,Business Requirements,Customer Service,6
+Text Search,Business Requirements,Customer Service,6
+Digital Objects Access,Business Requirements,Customer Service,6
+Standardize UX,Business Requirements,Customer Service,6
+Non-Roman Characters,Business Requirements,Customer Service,6
+PHP Version Compliant,Business Requirements,Secure Environment,6
+Eliminate Touchpoints,Solution Requirements,Consolidate Systems,4
+EAD Migration,Solution Requirements,Consolidate Systems,4
+Custom Publication Mechanism,Solution Requirements,Consolidate Systems,4
+On-platform exclusive,Solution Requirements,Version Control,4
+Audit Finding Aids,Solution Requirements,Control Static Finding Aids,4
+Make secure/stable/accessible,Solution Requirements,Control Static Finding Aids,4
+BI Reporting,Solution Requirements,Operational Insight,4
+Location Xref Table,Solution Requirements,Location Management,4
+Offsite Ordering,Solution Requirements,Container Management,4
+Finding Aid Preview,Solution Requirements,Preview Finding Aids,4
+PUI Delivery,Solution Requirements,Standardize publication,4
+Transpose/migration Static finding aids,Solution Requirements,Standardize Format,4
+Offsite ordering,Solution Requirements,Streamline workflows,4
+Location Table,Solution Requirements,Streamline workflows,4
+ArchiveGrid/WorldCat Publication,Solution Requirements,Streamline workflows,4
+BibID Generation,Solution Requirements,Streamline workflows,4
+QC/Records Auditing,Solution Requirements,Standardize descriptive formats,4
+Authority Control,Solution Requirements,Standardize descriptive formats,4
+URI Delivery,Solution Requirements,Digital Object Management,4
+Location Table,Solution Requirements,Reduce Paging Lag,4
+Contextualized text search,Solution Requirements,Text Search,4
+URI Delivery,Solution Requirements,Digital Objects Access,4
+Transpose/Migrate static finding aids,Solution Requirements,Standardize UX,4
+Non-Roman Character Set Rendering,Solution Requirements,Non-Roman Characters,4
+Address/Patch PHP Security vulnerability,Solution Requirements,PHP Version Compliant,4

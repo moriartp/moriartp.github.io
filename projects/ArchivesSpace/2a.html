@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<style>
+    circle {
+        fill: #05668D;
+        opacity: 0.6;
+        stroke-width: 2px;
+    }
+
+    line {
+        stroke: #05668D;
+        stroke-opacity: 0.3;
+        stroke-width: 2px;
+    }
+
+    text{
+
+    }
+</style>
+<!-- JAVASCRIPT -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+<body>
+
+<!-- NAVIGATION BAR -->
+<ul>
+  <li><a href="index.html">Charter</a></li>
+  <li><a class="active" href="2.html">Requirements</a></li>
+  <li><a href="4.html">Scope</a></li>
+  <li><a href="3.html">WBS</a></li>
+  <li><a href="5.html">Schedule</a></li>
+  <li><a href="6.html">FTE</a></li>
+  <li><a href="7.html">Risk</a></li>
+  <li><a href="8.html">Procurement</a></li>        
+</ul>
+<!-- END NAVIGATION BAR -->
+
+<!-- CONTAINER(S) -->
+<svg>
+    <g></g>
+</svg>
+
+
+<div><iframe src="https://docs.google.com/a/columbia.edu/spreadsheets/d/e/2PACX-1vSDnMezdoEp7m_gjxd6MYVIRA2JADS7HoIPAbrwwu-NaHiQgr-0TSt1u8qfDqZwXx4w-znoJMAZu8lK/pubhtml?widget=true&amp;headers=false"></iframe>
+</div>
+
+<script>
+    var vWidth = window.innerWidth;
+    var vHeight = window.innerHeight*0.95;
+
+    // Prepare our physical space
+    var g = d3.select('svg').attr('width', vWidth).attr('height', vHeight).select('g');
+
+    // Get the data from our CSV file
+    d3.csv('data/req.csv', function(error, vCsvData) {
+        if (error) throw error;
+		console.log(vCsvData);
+		vCsvData.size = +vCsvData.size
+        vData = d3.stratify()(vCsvData);
+        drawViz(vData);
+        console.log(vData)
+
+    });
+
+    function drawViz(vData) {
+        // Declare d3 layout
+        var vLayout = d3.forceSimulation()
+            .force('link', d3.forceLink().id(function (d) { return d.id; }))
+            .force('charge', d3.forceManyBody())
+            .force('center', d3.forceCenter(vWidth / 2, vHeight / 2));
+
+        // Layout + Data
+        var vRoot = d3.hierarchy(vData);
+        var vNodes = vRoot.descendants();
+        var vLinks = vRoot.links();
+
+        var vLines = g.selectAll('line').data(vLinks).enter().append('line');
+        var vCircles = g.selectAll('circle').data(vNodes).enter().append('circle')
+            .attr('r', 7);
+
+        var label = d3.selectAll('text').data(vNodes).enter().append('text')
+      		.attr("dy", ".35em")
+      		.text(function(d) { return d.id; });    
+
+        // Draw on screen
+        vLayout.nodes(vNodes).on('tick', ticked);
+        vLayout.force('link').links(vLinks);
+
+        // Animate on entry.
+        function ticked() {
+            vLines.attr('x1', function (d) { return d.source.x; })
+                .attr('y1', function (d) { return d.source.y; })
+                .attr('x2', function (d) { return d.target.x; })
+                .attr('y2', function (d) { return d.target.y; });
+
+            vCircles.attr('cx', function (d) { return d.x; })
+                .attr('cy', function (d) { return d.y; });
+        }
+    }
+</script>
+
+</body>
+</html>
