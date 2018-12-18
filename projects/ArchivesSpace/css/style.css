@@ -3,7 +3,7 @@ font-family:helvetica;
 }
 
 div.cont{
-  border: 2px solid #222;
+  /*border: 2px solid #222;*/
 }
 
 div.tooltip { 
@@ -277,6 +277,9 @@ svg#dendrogram{
   fill: red;
   width:10000px;
   height:10000px;*/
+}
+div.risky{
+  display:none;
 }
 
 
