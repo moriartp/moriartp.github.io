@@ -1,4 +1,4 @@
-224// ************** Generate the tree diagram  *****************
+// ************** Generate the tree diagram  *****************
 var margin = {top: 20, right: 120, bottom: 20, left: 120},
   width = window.innerWidth - margin.right - margin.left,
   height = window.innerHeight*0.8 - margin.top - margin.bottom;
