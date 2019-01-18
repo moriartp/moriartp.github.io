@@ -72,12 +72,34 @@ var str = JSON.stringify(blob1.feed.entry);
 	tr.append('td')
 		.attr('class',function(d) { return d.content.state; })
 		.html(function(d) { return d.content.state; });
-	tr.append('td').html(function(d) { return '<a href="'+d.content.link+'">Link</a>'; });
+	tr.append('td').html(function(d) { return '<a href="'+d.content.link+'">'+d.content.projectname+'<i class="fa fa-external-link-square" aria-hidden="true"></i></a>'; });
 	tr.append('td').html(function(d) { return d.content.type; });
-	tr.append('td').html(function(d) { return formatDate(d.content.projectStart); });
-	tr.append('td').html(function(d) { return formatDate(d.content.plannedend); });
-	tr.append('td').html(function(d) { return formatDate(d.content.deadline); });
-	tr.append('td').html(function(d) { return formatPercentage(d.content.progress); });
+	tr.append('td').html(function(d) { 
+		if(d.content.projectStart != null){
+			return formatDate(d.content.projectStart);
+		}
+	});
+	tr.append('td').html(function(d) { 
+		if(d.content.plannedend != null){
+			return formatDate(d.content.plannedend);
+		}
+	})
+	.attr("class", function(d) { 
+		if(d.content.plannedend >= d.content.deadline && d.content.plannedend != null){
+			return "risky";
+		}
+	});	
+	tr.append('td').html(function(d) { 
+		if(d.content.deadline != null){
+			return formatDate(d.content.deadline);
+		}
+	});	
+	// tr.append('td').html(function(d) { return formatDate(d.content.deadline); });
+	tr.append('td').html(function(d) { ///FIX THIS PART ... RETURN NaN for null values
+		if(d.content.progress != null){
+			return formatPercentage(d.content.progress); 
+		}
+	});
 	tr.append('td').html(function(d) { return formatDollars(d.content.budgetestimate); });
 	tr.append('td').html(function(d) { return formatDollars(d.content.actualcost); });	
 	tr.append('td').html(function(d) { return d.content.fteestimate; });	
