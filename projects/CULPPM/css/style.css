@@ -1,5 +1,5 @@
 html{
-	font-family:helvetica;
+	font-family: 'Poppins', sans-serif;
 }
 
 table{
@@ -15,6 +15,11 @@ th{
 tr:nth-child(even) {
 	background-color: #f2f2f2;
 }
+
+tr:hover {
+    background-color: #ffff99;
+}
+
 
 td{
 	padding:0.75em;
