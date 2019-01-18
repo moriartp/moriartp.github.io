@@ -4,8 +4,8 @@ console.log("hello");
 // console.log(blob1.feed.entry);
 
 
+// REGEX CLEANUP TO SET JSON KEY/VALUE PAIRS
 var str = JSON.stringify(blob1.feed.entry);
-// console.log(str);
  str = str.replace(/\"\$t\":\"sponsor: /g,"\"sponsor\":\"");
  str = str.replace(/, businessowner: /g,"\", \"businessowner\":\"");
  str = str.replace(/, projectname: /g,"\", \"projectname\":\"");
@@ -14,45 +14,75 @@ var str = JSON.stringify(blob1.feed.entry);
  str = str.replace(/, type: /g,"\", \"type\":\"");
  str = str.replace(/, state: /g,"\", \"state\":\"");
  str = str.replace(/, manager: /g,"\", \"manager\":\"");
-
- str = str.replace(/, start: /g,"\", \"start\":\"");
+ str = str.replace(/, start: /g,"\", \"projectStart\":\"");
  str = str.replace(/, plannedend: /g,"\", \"plannedend\":\""); 
  str = str.replace(/, deadline: /g,"\", \"deadline\":\"");
-
  str = str.replace(/, progress: /g,"\", \"progress\":\"");
  str = str.replace(/, state: /g,"\", \"state\":\"");
  str = str.replace(/, alignment: /g,"\", \"alignment\":\"");
- str = str.replace(/, value: /g,"\", \"value\":\"");
+ str = str.replace(/, value: /g,"\", \"orgvalue\":\"");
  str = str.replace(/, complexity: /g,"\", \"complexity\":\""); 
  str = str.replace(/, budgetestimate: /g,"\", \"budgetestimate\":\"");
  str = str.replace(/, actualcost: /g,"\", \"actualcost\":\""); 
  str = str.replace(/, fteestimate: /g,"\", \"fteestimate\":\"");
- str = str.replace(/, fteactual: /g,"\", \"fteactrual\":\"");
+ str = str.replace(/, fteactual: /g,"\", \"fteactual\":\"");
  str = str.replace(/, additionalinfo: /g,"\", \"additionalinfo\":\""); 
 
- // console.log(str);
+// CONVERT TO JSON
  ppm = $.parseJSON(str);
- // console.log(str);
+ console.log(ppm);
 
-var parseDate = d3three.time.format("%d-%b-%y").parse;
+// REFORMAT QUANT DATA ELEMENT (DATES,NUMBERS)
+ var dateParser = d3.timeParse("%d-%b-%y");
 
-    var types_of_statuses = ["Completed","Remaining"];
-    var statuses_color = ["#45BCFC","#9bddff"];
-
-    ppm.forEach(function(d) {
-        d.content.deadline = parseDate(d.content.deadline);
-
+     ppm.forEach(function(d) {
+        d.content.deadline = dateParser(d.content.deadline);
+        d.content.projectStart = dateParser(d.content.projectStart);
+        d.content.plannedend = dateParser(d.content.plannedend);
+        d.content.fteestimate = +d.content.fteestimate; 
+        d.content.fteactual = +d.content.fteactual; 
+        d.content.fteestimate = +d.content.fteestimate; 
+        d.content.fteestimate = +d.content.fteestimate;
+        d.content.progress = +d.content.progress;
+        d.content.alignment = +d.content.alignment;
+        d.content.complexity = +d.content.complexity;
+        d.content.orgvalue = +d.content.orgvalue;
+        d.content.budgetestimate = +d.content.budgetestimate;
+        d.content.actualcost = +d.content.actualcost;
+        d.content.progress = +d.content.progress;
     });
-    console.log(ppm);     
 
-   var svg = d3.select('#container').append("svg")
-        .attr("width", "500px")
-        .attr("height", "500px")
-        .attr("id","mySVG");
+  var formatDate = d3.timeFormat("%B %d, %Y");  
+  var formatPercentage = d3.format(",.0%");  
+  var formatDollars = d3.format("($.2f");
 
-    svg.selectAl('div')
-    .data(ppm)
-    .enter().append('div')
+	// var table = d3.select('body').append('table');
+	var table = d3.select('tbody')
+	var tr = table.selectAll('tr')
+	    .data(ppm).enter()
+	    .append('tr');
+
+	tr.append('td').html(function(d) { return d.content.projectname; });
+	tr.append('td').html(function(d) { return d.content.sponsor; });
+	tr.append('td').html(function(d) { return d.content.manager; });
+	tr.append('td').html(function(d) { return formatPercentage(d.content.complexity); });
+	tr.append('td').html(function(d) { return formatPercentage(d.content.alignment); });
+	tr.append('td').html(function(d) { return formatPercentage(d.content.orgvalue); });
+	tr.append('td').html(function(d) { return d.content.businessowner; });
+	tr.append('td')
+		.attr('class',function(d) { return d.content.state; })
+		.html(function(d) { return d.content.state; });
+	tr.append('td').html(function(d) { return '<a href="'+d.content.link+'">Link</a>'; });
+	tr.append('td').html(function(d) { return d.content.type; });
+	tr.append('td').html(function(d) { return formatDate(d.content.projectStart); });
+	tr.append('td').html(function(d) { return formatDate(d.content.plannedend); });
+	tr.append('td').html(function(d) { return formatDate(d.content.deadline); });
+	tr.append('td').html(function(d) { return formatPercentage(d.content.progress); });
+	tr.append('td').html(function(d) { return formatDollars(d.content.budgetestimate); });
+	tr.append('td').html(function(d) { return formatDollars(d.content.actualcost); });	
+	tr.append('td').html(function(d) { return d.content.fteestimate; });	
+	tr.append('td').html(function(d) { return d.content.fteactual; });	
+	tr.append('td').html(function(d) { return d.content.additionalinfor; });	
 
 
 });

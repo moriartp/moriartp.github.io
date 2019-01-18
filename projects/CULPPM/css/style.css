@@ -1,0 +1,46 @@
+html{
+	font-family:helvetica;
+}
+
+table{
+	border-collapse: collapse;
+}
+
+th{
+	text-align: left;
+	background-color: #111;
+	color:#EEE;
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+td{
+	padding:0.75em;
+}
+
+
+td.Initiating{
+	background-color: lightblue;
+}
+
+td.Planning{
+	background-color: seagreen;
+}
+
+td.Executing{
+	background-color: lightgreen;
+}
+
+td.Closing{
+	background-color: steelblue;
+}
+
+td.Archived{
+	background-color: lightgray;
+}
+
+td.Archived{
+	background-color: gray;
+}
