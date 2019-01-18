@@ -8,7 +8,7 @@ table{
 
 th{
 	text-align: left;
-	background-color: #111;
+	background-color: #333;
 	color:#EEE;
 }
 
@@ -54,3 +54,11 @@ td.Archived{
 }
 
 /*///////////////////////////////////////////////////////////*/
+
+thead th { position: sticky; top: 0; }
+
+img{
+	/*margin:auto;*/
+	/*height:30px;*/
+	width:100%px;
+}
