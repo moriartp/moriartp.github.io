@@ -52,6 +52,13 @@ var str = JSON.stringify(blob1.feed.entry);
         d.content.progress = +d.content.progress;
     });
 
+
+	// Define the div for the tooltip
+	var div = d3.select("body").append("div")	
+	    .attr("class", "tooltip")				
+	    .style("opacity", 0);
+
+
   var formatDate = d3.timeFormat("%B %d, %Y");  
   var formatPercentage = d3.format(",.0%");  
   var formatDollars = d3.format("($.2f");
@@ -62,7 +69,20 @@ var str = JSON.stringify(blob1.feed.entry);
 	    .data(ppm).enter()
 	    .append('tr');
 
-	tr.append('td').html(function(d) { return d.content.projectname; });
+	tr.append('td').html(function(d) { return d.content.projectname; })
+		.on("mouseover", function(d) {		
+		            div.transition()		
+		                .duration(200)		
+		                .style("opacity", .9);		
+		            div	.html("<b>"+d.content.projectname+"</b><br/>"  + d.content.description)	
+		                .style("left", (d3.event.pageX) + "px")		
+		                .style("top", (d3.event.pageY - 28) + "px");	
+		            })					
+		        .on("mouseout", function(d) {		
+		            div.transition()		
+		                .duration(500)		
+		                .style("opacity", 0);	
+		        });
 	tr.append('td').html(function(d) { return d.content.sponsor; });
 	tr.append('td').html(function(d) { return d.content.manager; });
 	tr.append('td').html(function(d) { return formatPercentage(d.content.complexity); });
