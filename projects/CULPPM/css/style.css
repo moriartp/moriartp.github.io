@@ -67,12 +67,12 @@ img{
 div.tooltip {	
     position: absolute;			
     text-align: center;			
-    width: 60%;					
+    width: 33%;					
     height: auto;					
     padding: 1em;
     text-align: left;				
     font: 1em sans-serif;		
-    background: lightsteelblue;	
+    background: #cdcdcd;	
     border: 0px;		
     border-radius: 8px;			
     pointer-events: none;			
