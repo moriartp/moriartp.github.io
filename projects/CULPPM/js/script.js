@@ -62,13 +62,15 @@ var str = JSON.stringify(blob1.feed.entry);
    var formatDate = d3.timeFormat("%B %d, %Y");  
    var formatPercentage = d3.format(",.0%");  
    var formatDollars = d3.format("($,.2f");
+   var formatIntegers = d3.format(".2f");
 
 	var table = d3.select('tbody')
 	var tr = table.selectAll('tr')
 	    .data(ppm).enter()
-	    .append('tr');
+	    .append('tr')
+	    .attr('class',function(d) {	return d.content.state; });
 
-	tr.append('td').html(function(d) { return '<a href="'+d.content.link+'">'+d.content.projectname+'<i class="fa fa-external-link-square" aria-hidden="true"></i></a>'; })
+	tr.append('td').html(function(d) { return '<b><a href="'+d.content.link+'">'+d.content.projectname+'<i class="fa fa-external-link-square" aria-hidden="true"></i></a></b>'; })
 		.on("mouseover", function(d) {		
 		            div.transition()		
 		                .duration(200)		
@@ -89,8 +91,8 @@ var str = JSON.stringify(blob1.feed.entry);
 	// tr.append('td').html(function(d) { return formatPercentage(d.content.orgvalue); });
 	tr.append('td').html(function(d) { return d.content.businessowner; }).attr('class','businessowner');
 	tr.append('td')
-		.attr('class',function(d) { return d.content.state; })
-		.html(function(d) { return d.content.state; });
+		// .attr('class',function(d) { return d.content.state; })
+		.html(function(d) { return "<div class='"+d.content.state+"'>"+d.content.state+"<div>"; });
 	// tr.append('td').html(function(d) { return '<a href="'+d.content.link+'">'+d.content.projectname+'<i class="fa fa-external-link-square" aria-hidden="true"></i></a>'; });
 	tr.append('td').html(function(d) { return d.content.type; }).attr('class','type');
 	tr.append('td').html(function(d) { 
@@ -125,21 +127,27 @@ var str = JSON.stringify(blob1.feed.entry);
 	})
 		.attr('class','progress');
 	tr.append('td').html(function(d) { return formatDollars(d.content.budgetestimate); }).attr('class','budget');
-	tr.append('td').html(function(d) { return formatDollars(d.content.actualcost); })
-
-		.attr("class", function(d) { 
+	tr.append('td').html(function(d) {
 			if(d.content.actualcost > d.content.budgetestimate && d.content.budgetestimate != null){
-				return "risky";
+				return "<div class='risky'>"+formatDollars(d.content.actualcost)+"</div>";
 			} else {
-				return "cost";
+				return  "<div class='cost'>"+formatDollars(d.content.actualcost)+"</div>";;
 			}
-		});	
-	tr.append('td').html(function(d) { return d.content.fteestimate; }).attr('class','fte');	
-	tr.append('td').html(function(d) { return d.content.fteactual; }).attr('class','fte');	
+		});
+
+		// .attr("class", function(d) { 
+		// 	if(d.content.actualcost > d.content.budgetestimate && d.content.budgetestimate != null){
+		// 		return "risky";
+		// 	} else {
+		// 		return "cost";
+		// 	}
+		// });	
+	tr.append('td').html(function(d) { return formatIntegers(d.content.fteestimate); }).attr('class','fte');	
+	tr.append('td').html(function(d) { return formatIntegers(d.content.fteactual); }).attr('class','fte');	
 	tr.append('td').html(function(d) { return "<!-- d.content.additionalinfo-->" 
-		+ "<div style='height:13px; margin-bottom:5px; background-color:#B9DAEB;width:"+d.content.complexity*100+"%'>Complexity:</div>"
-		+ "<div style='height:13px; margin-bottom:5px; background-color:#8AB9D2;width:"+d.content.alignment*100+"%'>Alignment</div>"		
-		+ "<div style='height:13px; margin-bottom:5px; background-color:#5C92AF;width:"+d.content.orgvalue*100+"%'>Value</div>"
+		+ "<div style='height:13px; border-radius: .35em; margin-bottom:5px; background-color:#B9DAEB;width:"+d.content.complexity*100+"%'>Complexity</div>"
+		+ "<div style='height:13px; border-radius: .35em; margin-bottom:5px; background-color:#8AB9D2;width:"+d.content.alignment*100+"%'>Alignment</div>"		
+		+ "<div style='height:13px; border-radius: .35em; margin-bottom:5px; background-color:#5C92AF;width:"+d.content.orgvalue*100+"%'>Value</div>"
 		;})
 		.attr('class','addinfo')	
 		.attr('width','300px');

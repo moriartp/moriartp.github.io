@@ -14,15 +14,19 @@ th{
 }
 
 tr{
-	border:.1em solid lightgray;
+	border:0.1em solid #eeeeee;
 }
+
+/*tr.Archived{
+	display: none;
+}*/
 
 tr:nth-child(even) {
 	background-color: #f2f2f2;	
 }
 
 tr:hover {
-    background-color: #ffff99;
+    background-color: #FFE6A3;
 }
 
 
@@ -30,46 +34,80 @@ th, td{
 	padding:0.25em;
 }
 
-.risky{
-	background-color: #FFB8A3;
-	border:.1em solid gray;
+/* unvisited link */
+a {
+  color: #222;
+  text-decoration: none;
 }
 
-td.Initiating{
+/* mouse over link */
+a:hover {
+  text-decoration: underline;
+}
+
+div.risky{
+	background-color: #FFB8A3;
+	text-align:center;
+	padding:.35em;
+	border-radius: .25em;
+}
+
+div.cost{
+	background-color:#8CDBB1;
+	text-align:center;
+	padding:.35em;
+	border-radius: .25em;
+}
+
+
+div.complexity{
+	/*background-color: #B9DAEB;*/
+	/*text-align:center;*/
+	padding:.35em;
+	border-radius: .25em;
+}
+
+div.Initiating{
 	background-color: #B9DAEB;
 	text-align:center;
-	border:.1em solid gray;	
+	padding:.35em;
+	border-radius: .25em;
 }
 
-td.Planning{
+div.Planning{
 	background-color: #8AB9D2;
 	text-align:center;
-	border:.1em solid gray;
+	padding:.35em;	
+	border-radius: .25em;
 }
 
-td.Executing{
+div.Executing{
 	background-color: #5FBF8C;
 	text-align:center;
-	border:.1em solid gray;
+	padding:.35em;	
+	border-radius: .25em;
 }
 
-td.Closing{
+div.Closing{
 	background-color: #5C92AF;
 	text-align:center;
-	border:.1em solid gray;
+	padding:.35em;	
+	border-radius: .25em;
 }
 
-td.Canceled{
+div.Canceled{
 	background-color: lightgray;
 	text-align:center;
-	border:.1em solid gray;
+	padding:.35em;
+	border-radius: .25em;
 }
 
-td.Archived{
+div.Archived{
 	background-color: lightgray;
 	color:gray;
 	text-align:center;
-	border:.1em solid gray;
+	border-radius: .25em;
+	padding:.35em;
 }
 
 .start, .end, .deadline, .progress, .budget, .cost, .fte, .risky{
