@@ -59,17 +59,16 @@ var str = JSON.stringify(blob1.feed.entry);
 	    .style("opacity", 0);
 
 
-  var formatDate = d3.timeFormat("%B %d, %Y");  
-  var formatPercentage = d3.format(",.0%");  
-  var formatDollars = d3.format("($.2f");
+   var formatDate = d3.timeFormat("%B %d, %Y");  
+   var formatPercentage = d3.format(",.0%");  
+   var formatDollars = d3.format("($,.2f");
 
-	// var table = d3.select('body').append('table');
 	var table = d3.select('tbody')
 	var tr = table.selectAll('tr')
 	    .data(ppm).enter()
 	    .append('tr');
 
-	tr.append('td').html(function(d) { return d.content.projectname; })
+	tr.append('td').html(function(d) { return '<a href="'+d.content.link+'">'+d.content.projectname+'<i class="fa fa-external-link-square" aria-hidden="true"></i></a>'; })
 		.on("mouseover", function(d) {		
 		            div.transition()		
 		                .duration(200)		
@@ -83,48 +82,65 @@ var str = JSON.stringify(blob1.feed.entry);
 		                .duration(500)		
 		                .style("opacity", 0);	
 		        });
-	tr.append('td').html(function(d) { return d.content.sponsor; });
-	tr.append('td').html(function(d) { return d.content.manager; });
-	tr.append('td').html(function(d) { return formatPercentage(d.content.complexity); });
-	tr.append('td').html(function(d) { return formatPercentage(d.content.alignment); });
-	tr.append('td').html(function(d) { return formatPercentage(d.content.orgvalue); });
-	tr.append('td').html(function(d) { return d.content.businessowner; });
+	tr.append('td').html(function(d) { return d.content.sponsor; }).attr('class','sponsor');
+	tr.append('td').html(function(d) { return d.content.manager; }).attr('class','pm');
+	// tr.append('td').html(function(d) { return formatPercentage(d.content.complexity); });
+	// tr.append('td').html(function(d) { return formatPercentage(d.content.alignment); });
+	// tr.append('td').html(function(d) { return formatPercentage(d.content.orgvalue); });
+	tr.append('td').html(function(d) { return d.content.businessowner; }).attr('class','businessowner');
 	tr.append('td')
 		.attr('class',function(d) { return d.content.state; })
 		.html(function(d) { return d.content.state; });
-	tr.append('td').html(function(d) { return '<a href="'+d.content.link+'">'+d.content.projectname+'<i class="fa fa-external-link-square" aria-hidden="true"></i></a>'; });
-	tr.append('td').html(function(d) { return d.content.type; });
+	// tr.append('td').html(function(d) { return '<a href="'+d.content.link+'">'+d.content.projectname+'<i class="fa fa-external-link-square" aria-hidden="true"></i></a>'; });
+	tr.append('td').html(function(d) { return d.content.type; }).attr('class','type');
 	tr.append('td').html(function(d) { 
 		if(d.content.projectStart != null){
 			return formatDate(d.content.projectStart);
 		}
-	});
+	})
+		.attr('class','start');
 	tr.append('td').html(function(d) { 
 		if(d.content.plannedend != null){
 			return formatDate(d.content.plannedend);
 		}
 	})
-	.attr("class", function(d) { 
-		if(d.content.plannedend >= d.content.deadline && d.content.plannedend != null){
-			return "risky";
-		}
-	});	
+		.attr('class','end')
+		.attr("class", function(d) { 
+			if(d.content.plannedend >= d.content.deadline && d.content.plannedend != null){
+				return "risky";
+			} else {
+				return "end";
+			}
+		});	
 	tr.append('td').html(function(d) { 
 		if(d.content.deadline != null){
 			return formatDate(d.content.deadline);
 		}
-	});	
-	// tr.append('td').html(function(d) { return formatDate(d.content.deadline); });
-	tr.append('td').html(function(d) { ///FIX THIS PART ... RETURN NaN for null values
-		if(d.content.progress != null){
+	})
+		.attr('class','deadline');	
+	tr.append('td').html(function(d) { 
+		if(d.content.progress > 0){
 			return formatPercentage(d.content.progress); 
 		}
-	});
-	tr.append('td').html(function(d) { return formatDollars(d.content.budgetestimate); });
-	tr.append('td').html(function(d) { return formatDollars(d.content.actualcost); });	
-	tr.append('td').html(function(d) { return d.content.fteestimate; });	
-	tr.append('td').html(function(d) { return d.content.fteactual; });	
-	tr.append('td').html(function(d) { return d.content.additionalinfor; });	
+	})
+		.attr('class','progress');
+	tr.append('td').html(function(d) { return formatDollars(d.content.budgetestimate); }).attr('class','budget');
+	tr.append('td').html(function(d) { return formatDollars(d.content.actualcost); })
 
-
+		.attr("class", function(d) { 
+			if(d.content.actualcost > d.content.budgetestimate && d.content.budgetestimate != null){
+				return "risky";
+			} else {
+				return "cost";
+			}
+		});	
+	tr.append('td').html(function(d) { return d.content.fteestimate; }).attr('class','fte');	
+	tr.append('td').html(function(d) { return d.content.fteactual; }).attr('class','fte');	
+	tr.append('td').html(function(d) { return "<!-- d.content.additionalinfo-->" 
+		+ "<div style='height:13px; margin-bottom:5px; background-color:#B9DAEB;width:"+d.content.complexity*100+"%'>Complexity:</div>"
+		+ "<div style='height:13px; margin-bottom:5px; background-color:#8AB9D2;width:"+d.content.alignment*100+"%'>Alignment</div>"		
+		+ "<div style='height:13px; margin-bottom:5px; background-color:#5C92AF;width:"+d.content.orgvalue*100+"%'>Value</div>"
+		;})
+		.attr('class','addinfo')	
+		.attr('width','300px');
 });

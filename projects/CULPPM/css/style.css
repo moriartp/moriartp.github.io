@@ -4,6 +4,7 @@ html{
 
 table{
 	border-collapse: collapse;
+	width:100%;
 }
 
 th{
@@ -12,9 +13,12 @@ th{
 	color:#EEE;
 }
 
+tr{
+	border:.1em solid lightgray;
+}
 
 tr:nth-child(even) {
-	background-color: #f2f2f2;
+	background-color: #f2f2f2;	
 }
 
 tr:hover {
@@ -23,34 +27,53 @@ tr:hover {
 
 
 th, td{
-	padding:0.75em;
+	padding:0.25em;
 }
+
 .risky{
-	background-color: coral;
+	background-color: #FFB8A3;
+	border:.1em solid gray;
 }
 
 td.Initiating{
-	background-color: lightblue;
+	background-color: #B9DAEB;
+	text-align:center;
+	border:.1em solid gray;	
 }
 
 td.Planning{
-	background-color: seagreen;
+	background-color: #8AB9D2;
+	text-align:center;
+	border:.1em solid gray;
 }
 
 td.Executing{
-	background-color: lightgreen;
+	background-color: #5FBF8C;
+	text-align:center;
+	border:.1em solid gray;
 }
 
 td.Closing{
-	background-color: steelblue;
+	background-color: #5C92AF;
+	text-align:center;
+	border:.1em solid gray;
+}
+
+td.Canceled{
+	background-color: lightgray;
+	text-align:center;
+	border:.1em solid gray;
 }
 
 td.Archived{
 	background-color: lightgray;
+	color:gray;
+	text-align:center;
+	border:.1em solid gray;
 }
 
-td.Archived{
-	background-color: gray;
+.start, .end, .deadline, .progress, .budget, .cost, .fte, .risky{
+	text-align:center;	
 }
 
 /*///////////////////////////////////////////////////////////*/
@@ -76,4 +99,15 @@ div.tooltip {
     border: 0px;		
     border-radius: 8px;			
     pointer-events: none;			
+}
+
+svg{
+	height:10px;
+	width:100%;
+}
+
+.addinfo{
+	font-size: 11px;
+	color:#222;
+	/*opacity:.7;*/
 }
