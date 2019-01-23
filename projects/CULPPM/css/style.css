@@ -75,7 +75,7 @@ i,text.landing{
 table{
 	border-collapse: collapse;
 	width:100vw;
-	font-size: .75em;
+	font-size: 1em;
 }
 
 th{
@@ -97,7 +97,7 @@ tr:nth-child(even) {
 }
 
 tr:hover {
-    background-color: #FFE6A3;
+    background-color: #FFF8E5;
 }
 
 
@@ -118,13 +118,16 @@ a:hover {
 
 div.risky{
 	background-color: #FFB8A3;
+	color:#BC4C2B;
 	text-align:center;
 	padding:.35em;
+	font-weight: bold;
 	border-radius: .25em;
+
 }
 
 div.cost{
-	background-color:#8CDBB1;
+	/*background-color:#8CDBB1;*/
 	text-align:center;
 	padding:.35em;
 	border-radius: .25em;
@@ -135,6 +138,7 @@ div.Initiating{
 	text-align:center;
 	padding:.35em;
 	border-radius: .25em;
+	color:#246283;
 }
 
 div.Planning{
@@ -142,6 +146,7 @@ div.Planning{
 	text-align:center;
 	padding:.35em;	
 	border-radius: .25em;
+	color:#053752;
 }
 
 div.Executing{
@@ -149,6 +154,8 @@ div.Executing{
 	text-align:center;
 	padding:.35em;	
 	border-radius: .25em;
+	font-weight: bold;
+	color:#005C2B;
 }
 
 div.Closing{
@@ -156,6 +163,8 @@ div.Closing{
 	text-align:center;
 	padding:.35em;	
 	border-radius: .25em;
+	font-weight: bold;
+	color:#011521;
 }
 
 div.Canceled{
@@ -171,6 +180,7 @@ div.Archived{
 	text-align:center;
 	border-radius: .25em;
 	padding:.35em;
+	color:#484747;
 }
 
 .start, .end, .deadline, .progress, .budget, .cost, .fte, .risky{
@@ -208,10 +218,55 @@ svg{
 }
 
 .addinfo{
-	font-size: .75em;
+
 	color:#222;
+	/*text-overflow: ellipsis;*/
 	/*opacity:.7;*/
+	transition: width 2s;
+	/*transition: height 2s;*/
 }
+
+.addinfo:hover{
+	transition: width 2s;
+	/*transition: height 2s;*/
+	width:30vw;
+
+	/*height:25vh;*/
+}
+
+
+div.bars{
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: block;
+    overflow: visible;
+    text-align: right;
+	color:#484747;   
+	padding-right:.5em; 
+	/*opacity:.5;*/
+
+	transition: background-color 2s;
+	background-color:#cdcdcd;
+
+	transition: font-size 2s;
+	font-size:0.65em;
+
+	transition: height 2s;
+	height:13px;
+}
+
+.addinfo:hover > div.bars{
+    
+	font-size:1.1em;
+	transition: height 2s;
+	transition: font-size 2s;
+	height:26px;
+
+	transition: background-color 2s;
+	background-color:#5FBF8C;
+
+}
+
 
 
 /*SCATTER PLOT SPECIFC STYLES*/

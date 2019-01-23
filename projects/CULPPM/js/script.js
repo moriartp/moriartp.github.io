@@ -59,7 +59,7 @@ var str = JSON.stringify(blob1.feed.entry);
 	    .style("opacity", 0);
 
 
-   var formatDate = d3.timeFormat("%B %d, %Y");  
+   var formatDate = d3.timeFormat("%b %d, %Y");  
    var formatPercentage = d3.format(",.0%");  
    var formatDollars = d3.format("($,.2f");
    var formatIntegers = d3.format(".2f");
@@ -102,18 +102,12 @@ var str = JSON.stringify(blob1.feed.entry);
 	})
 		.attr('class','start');
 	tr.append('td').html(function(d) { 
-		if(d.content.plannedend != null){
-			return formatDate(d.content.plannedend);
-		}
-	})
-		.attr('class','end')
-		.attr("class", function(d) { 
-			if(d.content.plannedend >= d.content.deadline && d.content.plannedend != null){
-				return "risky";
+			if(d.content.plannedend > d.content.deadline && d.content.deadline != null && (d.content.state == "Executing" || d.content.closing == "Executing")){
+				return "<div class='risky'>"+formatDate(d.content.plannedend)+"</div>";
 			} else {
-				return "end";
+				return  "<div class='cost'>"+formatDate(d.content.plannedend)+"</div>";;
 			}
-		});	
+		});
 	tr.append('td').html(function(d) { 
 		if(d.content.deadline != null){
 			return formatDate(d.content.deadline);
@@ -128,7 +122,7 @@ var str = JSON.stringify(blob1.feed.entry);
 		.attr('class','progress');
 	tr.append('td').html(function(d) { return formatDollars(d.content.budgetestimate); }).attr('class','budget');
 	tr.append('td').html(function(d) {
-			if(d.content.actualcost > d.content.budgetestimate && d.content.budgetestimate != null){
+			if(d.content.actualcost > d.content.budgetestimate && d.content.budgetestimate != null && (d.content.state == "Executing" || d.content.closing == "Executing")){
 				return "<div class='risky'>"+formatDollars(d.content.actualcost)+"</div>";
 			} else {
 				return  "<div class='cost'>"+formatDollars(d.content.actualcost)+"</div>";;
@@ -143,11 +137,20 @@ var str = JSON.stringify(blob1.feed.entry);
 		// 	}
 		// });	
 	tr.append('td').html(function(d) { return formatIntegers(d.content.fteestimate); }).attr('class','fte');	
-	tr.append('td').html(function(d) { return formatIntegers(d.content.fteactual); }).attr('class','fte');	
+	tr.append('td').html(function(d) { 
+			if(d.content.fteactual > d.content.fteestimate && d.content.fteestimate != null && (d.content.state == "Executing" || d.content.closing == "Executing")){
+				return "<div class='risky'>"+formatIntegers(d.content.fteactual)+"</div>";
+			} else {
+				return  "<div class='cost'>"+formatIntegers(d.content.fteactual)+"</div>";;
+			}
+		});
+	
+
 	tr.append('td').html(function(d) { return "<!-- d.content.additionalinfo-->" 
 		// + "<div style='height:13px; padding-left:.5em; border-radius: .35em; margin-bottom:5px; background-color:#ababab;width:"+d.content.complexity*100+"%'>Complexity: "+formatPercentage(d.content.complexity)+"</div>"
-		+ "<div style='height:13px; padding-left:.5em; border-radius: .35em; margin-bottom:5px; background-color:#cdcdcd;width:"+d.content.alignment*100+"%'>Alignment: "+formatPercentage(d.content.alignment)+"</div>"		
-		+ "<div style='height:13px; padding-left:.5em; border-radius: .35em; margin-bottom:5px; background-color:#cdcdcd;width:"+d.content.orgvalue*100+"%'>Value: "+formatPercentage(d.content.orgvalue)+"</div>"
+		+ "<div class='bars'style='padding-left:.5em; border-radius: .35em; margin-bottom:5px; width:"+d.content.alignment*100+"%'>Alignment: "+formatPercentage(d.content.alignment)+"</div>"
+		+ "<div class='bars' style='padding-left:.5em; border-radius: .35em; margin-bottom:5px; width:"+d.content.complexity*100+"%'>Complexity: "+formatPercentage(d.content.complexity)+"</div>"				
+		+ "<div class='bars' style='padding-left:.5em; border-radius: .35em; margin-bottom:5px; width:"+d.content.orgvalue*100+"%'>Value: "+formatPercentage(d.content.orgvalue)+"</div>"
 		;})
 		.attr('class','addinfo')	
 		.attr('width','300px');
