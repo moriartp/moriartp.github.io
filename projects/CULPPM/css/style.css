@@ -3,9 +3,79 @@ html{
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+/*PAGE LOAD*/
+
+#test {
+	height:91.55vh;
+
+    margin-top: 25px;
+    font-size: 1.15em;
+    text-align: center;
+    color:#232323;
+    animation: fadein 5s;
+    -moz-animation: fadein 5s; /* Firefox */
+    -webkit-animation: fadein 5s; /* Safari and Chrome */
+    -o-animation: fadein 5s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+img{
+	width:50vw;
+	margin-left: 25vw;	
+	margin-right: 25vw;	
+	margin-top: 10vw;
+}
+
+i,text.landing{
+	font-family: TrajanProRegular,trajan,georgia,serif;
+	color:#3a6fa2;
+	text-decoration: none;
+	font-size: 2em;
+	font-variant: small-caps; 
+
+}
+
+/*END PAGE LOAD*/
+
+
+
+
+
 table{
 	border-collapse: collapse;
-	width:100%;
+	width:100vw;
+	font-size: .75em;
 }
 
 th{
