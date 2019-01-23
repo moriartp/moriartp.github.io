@@ -1,5 +1,6 @@
 html{
-	font-family: 'Poppins', sans-serif;
+	/*font-family: 'Poppins', sans-serif;*/
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 table{
@@ -55,14 +56,6 @@ div.risky{
 div.cost{
 	background-color:#8CDBB1;
 	text-align:center;
-	padding:.35em;
-	border-radius: .25em;
-}
-
-
-div.complexity{
-	/*background-color: #B9DAEB;*/
-	/*text-align:center;*/
 	padding:.35em;
 	border-radius: .25em;
 }
@@ -148,4 +141,24 @@ svg{
 	font-size: 11px;
 	color:#222;
 	/*opacity:.7;*/
+}
+
+
+/*SCATTER PLOT SPECIFC STYLES*/
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.dot {
+  stroke: #000;
+}
+
+.tooltip {
+	position: absolute;
+	width: 200px;
+	height: 28px;
+	pointer-events: none;
 }

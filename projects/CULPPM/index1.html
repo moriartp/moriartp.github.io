@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body {
+  font: 10px sans-serif;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.dot {
+  stroke: #000;
+}
+
+.tooltip {
+	position: absolute;
+	width: 200px;
+	height: 28px;
+	pointer-events: none;
+}
+
+</style>
+<body>
+<script src="http://d3js.org/d3.v4.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+
+var margin = {top: 20, right: 20, bottom: 30, left: 40},
+    width = window.innerWidth*.95 - margin.left - margin.right,
+    height = window.innerHeight*.95 - margin.top - margin.bottom;
+
+var x = d3.scaleLinear()
+    .range([0, width]);
+
+var y = d3.scaleLinear()
+    .range([height, 0]);
+
+var r = d3.scaleSqrt()
+		.range([1,5]);
+  
+var xAxis = d3.axisBottom()
+		.scale(x);
+
+var yAxis = d3.axisLeft()
+		.scale(y);
+  
+var color = d3.scaleOrdinal(d3.schemeCategory20);
+  //Lorsque d3 construit un color scale, il y a un range et un domaine
+  //on construit ici un range de 20 couleurs et les domaines sont automatiquement   //attribuées. color.domain() renverra la liste des domaines attriuées au range
+  //on peut passer un tableau à couleur.domaine()
+var symbols = d3.scaleOrdinal(d3.symbols);
+
+// creates a generator for symbols
+var symbol = d3.symbol().size(100);  
+  
+var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  	.append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+  var tooltip = d3.select("body").append("div")
+					.attr("class", "tooltip")
+					.style("opacity", 0);
+
+// GET data
+var $url = "https://spreadsheets.google.com/feeds/list/1eewMgqHDN-fIrjZrYBuRaWztac2_Wvv4XZLnlkUpP5M/1/public/basic?alt=json"
+$.getJSON($url,function(blob1){
+console.log("hello");
+// console.log(blob1.feed.entry);
+
+
+// REGEX CLEANUP TO SET JSON KEY/VALUE PAIRS
+var str = JSON.stringify(blob1.feed.entry);
+ str = str.replace(/\"\$t\":\"sponsor: /g,"\"sponsor\":\"");
+ str = str.replace(/, businessowner: /g,"\", \"businessowner\":\"");
+ str = str.replace(/, projectname: /g,"\", \"projectname\":\"");
+ str = str.replace(/, description: /g,"\", \"description\":\"");
+ str = str.replace(/, link: /g,"\", \"link\":\"");
+ str = str.replace(/, type: /g,"\", \"type\":\"");
+ str = str.replace(/, state: /g,"\", \"state\":\"");
+ str = str.replace(/, manager: /g,"\", \"manager\":\"");
+ str = str.replace(/, start: /g,"\", \"projectStart\":\"");
+ str = str.replace(/, plannedend: /g,"\", \"plannedend\":\""); 
+ str = str.replace(/, deadline: /g,"\", \"deadline\":\"");
+ str = str.replace(/, progress: /g,"\", \"progress\":\"");
+ str = str.replace(/, state: /g,"\", \"state\":\"");
+ str = str.replace(/, alignment: /g,"\", \"alignment\":\"");
+ str = str.replace(/, value: /g,"\", \"orgvalue\":\"");
+ str = str.replace(/, complexity: /g,"\", \"complexity\":\""); 
+ str = str.replace(/, budgetestimate: /g,"\", \"budgetestimate\":\"");
+ str = str.replace(/, actualcost: /g,"\", \"actualcost\":\""); 
+ str = str.replace(/, fteestimate: /g,"\", \"fteestimate\":\"");
+ str = str.replace(/, fteactual: /g,"\", \"fteactual\":\"");
+ str = str.replace(/, additionalinfo: /g,"\", \"additionalinfo\":\""); 
+
+// CONVERT TO JSON
+ ppm = $.parseJSON(str);
+ console.log(ppm);
+
+// REFORMAT QUANT DATA ELEMENT (DATES,NUMBERS)
+ var dateParser = d3.timeParse("%d-%b-%y");
+
+     ppm.forEach(function(d) {
+        d.content.deadline = dateParser(d.content.deadline);
+        d.content.projectStart = dateParser(d.content.projectStart);
+        d.content.plannedend = dateParser(d.content.plannedend);
+        d.content.fteestimate = +d.content.fteestimate; 
+        d.content.fteactual = +d.content.fteactual; 
+        d.content.fteestimate = +d.content.fteestimate; 
+        d.content.fteestimate = +d.content.fteestimate;
+        d.content.progress = +d.content.progress;
+        d.content.alignment = +d.content.alignment;
+        d.content.complexity = +d.content.complexity;
+        d.content.orgvalue = +d.content.orgvalue;
+        d.content.budgetestimate = +d.content.budgetestimate;
+        d.content.actualcost = +d.content.actualcost;
+        d.content.progress = +d.content.progress;
+    });
+
+     var data = ppm;
+// GOT DATA
+
+	x.domain(d3.extent(data, function(d){
+		return d.content.alignment;
+	})).nice();
+
+	y.domain(d3.extent(data, function(d){
+		return d.content.orgvalue;
+	})).nice();
+
+	r.domain(d3.extent(data, function(d){
+		return d.fteestimate;
+	})).nice();
+  
+  svg.append('g')
+    .attr('transform', 'translate(0,' + height + ')')
+    .attr('class', 'x axis')
+    .call(xAxis);
+
+  svg.append('g')
+    .attr('transform', 'translate(0,0)')
+    .attr('class', 'y axis')
+    .call(yAxis);
+
+	svg.append('text')
+		.attr('x', 10)
+		.attr('y', 10)
+		.attr('class', 'label')
+		.text('Alignment');
+
+	svg.append('text')
+		.attr('x', width)
+		.attr('y', height - 10)
+		.attr('text-anchor', 'end')
+		.attr('class', 'label')
+		.text('Value');
+  	
+  // we use the ordinal scale symbols to generate symbols
+  // such as d3.symbolCross, etc..
+  // -> symbol.type(d3.symbolCross)()
+    svg.selectAll(".symbol")
+    .data(data)
+ 		.enter().append("path")
+    .attr("class", "symbol")
+    //.attr("class",function(d){return d.species})
+    .attr("d", function(d, i) { return symbol.type(symbols(d.content.type))(); })
+    .style("fill", function(d) { return color(d.content.type); })
+    //Attribution des domaines, le mapping entre le domaine et le range se fait  			//lors du premier appel
+    .attr("transform", function(d) { 
+      return "translate(" + x(d.content.alignment) + "," + y(d.content.orgvalue) +")"; 
+    });
+  
+  var legend = svg.selectAll(".legend")
+    .data(color.domain())
+  	.enter().append("g")
+    .attr("class", "legend")
+    .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+var clicked=null;
+  legend.append("path")
+    .style("fill", function(d) { return color(d); })
+    	.attr("d", function(d, i) { return symbol.type(symbols(d))(); })
+	    .attr("transform", function(d, i) { 
+    		return "translate(" + (width -10) + "," + 10 + ")"; 
+  		})
+  		.on("click", function(d) {
+    	console.log("test " + d);
+       d3.selectAll(".symbol").style("opacity",1)
+       
+       if (clicked !==d){
+       d3.selectAll(".symbol")
+       .filter(function(e){return e.content.type !== d})
+       .transition().duration(500).style("opacity", "0");
+       clicked=d;
+       }
+				else {
+          clicked=null;
+        }
+        });
+ 
+  legend.append("text")
+      .attr("x", width - 24)
+      .attr("y", 9)
+      .attr("dy", ".35em")
+      .style("text-anchor", "end")
+      .text(function(d) { return d; });
+
+});
+  
+</script>
