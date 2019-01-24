@@ -117,6 +117,16 @@ a:hover {
 }
 
 div.risky{
+	/*background-color: #FFB8A3;*/
+	color:#BC4C2B;
+	text-align:center;
+	padding:.35em;
+	font-weight: bold;
+	border-radius: .25em;
+
+}
+
+div.riskyState{
 	background-color: #FFB8A3;
 	color:#BC4C2B;
 	text-align:center;

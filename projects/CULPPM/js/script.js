@@ -91,9 +91,27 @@ var str = JSON.stringify(blob1.feed.entry);
 	// tr.append('td').html(function(d) { return formatPercentage(d.content.orgvalue); });
 	tr.append('td').html(function(d) { return d.content.businessowner; }).attr('class','businessowner');
 	tr.append('td')
-		// .attr('class',function(d) { return d.content.state; })
-		.html(function(d) { return "<div class='"+d.content.state+"'>"+d.content.state+"<div>"; });
-	// tr.append('td').html(function(d) { return '<a href="'+d.content.link+'">'+d.content.projectname+'<i class="fa fa-external-link-square" aria-hidden="true"></i></a>'; });
+		// .html(function(d) { return "<div class='"+d.content.state+"'>"+d.content.state+"<div>"; });
+		.html(function(d) { 
+			if(
+				
+				((d.content.fteactual > d.content.fteestimate && d.content.fteestimate != null)	||
+				(d.content.actualcost > d.content.budgetestimate && d.content.budgetestimate != null) ||
+				(d.content.plannedend > d.content.deadline && d.content.deadline != null)) &&
+				(d.content.state == "Executing" || d.content.state == "Closing")
+				)
+			{
+				// return "<div class='"+d.content.state+"'>"+d.content.state+"<div>";
+				return "<div class='riskyState'>"+d.content.state+"</div>";
+			} else {
+				return "<div class='"+d.content.state+"'>"+d.content.state+"<div>";
+			}
+		});
+
+
+
+
+
 	tr.append('td').html(function(d) { return d.content.type; }).attr('class','type');
 	tr.append('td').html(function(d) { 
 		if(d.content.projectStart != null){
@@ -128,14 +146,7 @@ var str = JSON.stringify(blob1.feed.entry);
 				return  "<div class='cost'>"+formatDollars(d.content.actualcost)+"</div>";;
 			}
 		});
-
-		// .attr("class", function(d) { 
-		// 	if(d.content.actualcost > d.content.budgetestimate && d.content.budgetestimate != null){
-		// 		return "risky";
-		// 	} else {
-		// 		return "cost";
-		// 	}
-		// });	
+	
 	tr.append('td').html(function(d) { return formatIntegers(d.content.fteestimate); }).attr('class','fte');	
 	tr.append('td').html(function(d) { 
 			if(d.content.fteactual > d.content.fteestimate && d.content.fteestimate != null && (d.content.state == "Executing" || d.content.closing == "Executing")){
