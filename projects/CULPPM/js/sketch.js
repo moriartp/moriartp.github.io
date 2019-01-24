@@ -1,6 +1,6 @@
 var $url = "https://spreadsheets.google.com/feeds/list/1eewMgqHDN-fIrjZrYBuRaWztac2_Wvv4XZLnlkUpP5M/1/public/basic?alt=json"
 $.getJSON($url,function(blob1){
-// console.log("hello");
+console.log("hello");
 // console.log(blob1.feed.entry);
 
 
@@ -30,6 +30,7 @@ var str = JSON.stringify(blob1.feed.entry);
 
 // CONVERT TO JSON
  ppm = $.parseJSON(str);
+ console.log(ppm);
 
 // REFORMAT QUANT DATA ELEMENT (DATES,NUMBERS)
  var dateParser = d3.timeParse("%d-%b-%y");
@@ -50,41 +51,28 @@ var str = JSON.stringify(blob1.feed.entry);
         d.content.actualcost = +d.content.actualcost;
         d.content.progress = +d.content.progress;
     });
- console.log(ppm);
 
-var svg = d3.select("#container")    
-    .attr('width','100%')
-    .attr('height','7400px');
+var data = ppm;
+console.log(data);    
 
 
-var circle = svg.selectAll("circle")
-    .data(ppm);
 
-var circleEnter = circle.enter().append("circle");
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+}
 
-circleEnter.attr("cy", function(d, i) { return i * 100 + 30; });
-circleEnter.attr("cx", 60).attr('fill','red');
-circleEnter.attr("r", function(d) { return Math.sqrt(d.content.orgvalue*1100); });
+function draw() {
 
-var rectEnter = circle.enter().append("rect");
+  if (mouseIsPressed) {
+    fill(0);
+  } else {
+    fill(255);
+  }
+  ellipse(mouseX, mouseY, 80, 80);
+}
 
-rectEnter.attr('width', function(d) { return (d.content.orgvalue*100)*1+"%"; }); 
-rectEnter.attr('height', "3vh"); 
-rectEnter.attr('y', function(d, i) { return i * 100 + 40; });
-rectEnter.style('fill', function(d) { return "rgb(0,0,"+d.content.orgvalue*255+")"; });
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
 
-var rectAlign = circle.enter().append("rect");
-
-rectAlign.attr('width', function(d) { return (d.content.alignment*100)*.75+"%"; }); 
-rectAlign.attr('height', "3vh"); 
-rectAlign.attr('y', function(d, i) { return i * 100 + 75; });
-rectAlign.style('fill', function(d) { return "rgb(0,0,"+d.content.alignment*255+")"; });
-
-var textEnter = circle.enter().append("text");
-
-textEnter.attr('x', 50); 
-textEnter.attr('y', function(d, i) { return i * 100 + 60; });
-textEnter.text(function(d) { return d.content.projectname; });
-textEnter.style('fill','yellow');
-
-});
+}); 

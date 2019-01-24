@@ -222,10 +222,10 @@ div.tooltip {
     pointer-events: none;			
 }
 
-svg{
+/*svg{
 	height:10px;
 	width:100%;
-}
+}*/
 
 .addinfo{
 
@@ -254,6 +254,8 @@ div.bars{
 	color:#484747;   
 	padding-right:.5em; 
 	/*opacity:.5;*/
+	margin-left: none;
+	margin-right: none;
 
 	transition: background-color 2s;
 	background-color:#cdcdcd;
