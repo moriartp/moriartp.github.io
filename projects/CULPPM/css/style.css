@@ -299,3 +299,53 @@ div.bars{
 	height: 28px;
 	pointer-events: none;
 }
+
+
+/*SCRIPT3 BULLETS CSS*/
+
+rect.bulletChamber{
+	-webkit-transition: fill .4s ease;
+	-moz-transition: fill .4s ease;
+	-o-transition: fill .4s ease;
+	transition: fill .4s ease;	 
+    fill:#242424;
+
+	-webkit-transition: width .4s ease;
+	-moz-transition: width .4s ease;
+	-o-transition: width .4s ease;
+	transition: width .4s ease;	
+}
+
+rect.bulletChamber:hover{
+    fill:#053752;
+    width:90%;
+
+}
+
+rect.complexityMarker{
+	/*-webkit-transition: translateX .4s ease;
+	-moz-transition: x .4s ease;
+	-o-transition: x .4s ease;
+	transition: x .4s ease;	 
+	*/
+	transition: all 3s ease;
+}
+
+svg:hover > rect.complexityMarker{
+	transform: translateX(150px);
+	transition: all 3s ease;
+
+}
+
+circle.budget{
+	-webkit-transition: stroke-width .4s ease;
+	-moz-transition: stroke-width .4s ease;
+	-o-transition: stroke-width .4s ease;
+	transition: stroke-width .4s ease;	 
+    /*fill:#242424;*/
+ 	stroke-width:0px;
+}
+
+circle.budget:hover{
+	stroke-width:3px;
+}

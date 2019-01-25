@@ -53,38 +53,77 @@ var str = JSON.stringify(blob1.feed.entry);
  console.log(ppm);
 
 var svg = d3.select("#container")    
-    .attr('width','100%')
-    .attr('height','7400px');
+    .attr('width','90%')
+    .attr('height','7400px')
+    // .style('fill','#efefef');
 
 
 var circle = svg.selectAll("circle")
     .data(ppm);
 
+
+var bgEnter = circle.enter().append("rect");
+
+bgEnter.attr('width', "100%"); 
+bgEnter.attr('height', 45); 
+bgEnter.attr('y', function(d, i) { return i * 100 + 30; });
+bgEnter.style('fill', "lightgray");
+
+
+
+var circleCost = circle.enter().append("circle");
+
+circleCost.attr("cy", function(d, i) { return i * 100 + 52.50; });
+// circleEnter.attr("cy","100%")
+circleCost.attr("cx", "97.5%").attr('fill','#5FBF8C');
+circleCost.attr("r", function(d) { return Math.sqrt(d.content.actualcost/100); });
+
+
 var circleEnter = circle.enter().append("circle");
 
-circleEnter.attr("cy", function(d, i) { return i * 100 + 30; });
-circleEnter.attr("cx", 60).attr('fill','red');
-circleEnter.attr("r", function(d) { return Math.sqrt(d.content.orgvalue*1100); });
+circleEnter.attr("cy", function(d, i) { return i * 100 + 52.50; });
+// circleEnter.attr("cy","100%")
+circleEnter.attr("cx", "97.5%").attr('class','budget').attr('fill','#FFB8A3').attr('fill-opacity','.05').attr('stroke','black');
+circleEnter.attr("r", function(d) { return Math.sqrt(d.content.budgetestimate/100); });
 
+
+// ORGVALUE
 var rectEnter = circle.enter().append("rect");
 
 rectEnter.attr('width', function(d) { return (d.content.orgvalue*100)*1+"%"; }); 
-rectEnter.attr('height', "3vh"); 
-rectEnter.attr('y', function(d, i) { return i * 100 + 40; });
-rectEnter.style('fill', function(d) { return "rgb(0,0,"+d.content.orgvalue*255+")"; });
+rectEnter.attr('height', 45); 
+rectEnter.attr('y', function(d, i) { return i * 100 + 30; });
+// rectEnter.attr('x', "10");
+rectEnter.style('fill', "#8AB9D2");
+// rectEnter.style('fill', function(d) { return "rgb(0,0,"+d.content.orgvalue*255+")"; });
 
+// ALIGNMENT
 var rectAlign = circle.enter().append("rect");
 
-rectAlign.attr('width', function(d) { return (d.content.alignment*100)*.75+"%"; }); 
-rectAlign.attr('height', "3vh"); 
-rectAlign.attr('y', function(d, i) { return i * 100 + 75; });
-rectAlign.style('fill', function(d) { return "rgb(0,0,"+d.content.alignment*255+")"; });
+rectAlign.attr('width', function(d) { return (d.content.alignment*100)*1+"%"; }); 
+rectAlign.attr('height', 15); 
+rectAlign.attr('y', function(d, i) { return i * 100 + 45; });
+// rectAlign.style('fill', function(d) { return "rgb(0,0,"+d.content.alignment*255+")"; });
+rectAlign.attr("class","bulletChamber");
+
+// COMPLEXITY
+var rectComplex = circle.enter().append("rect");
+
+rectComplex.attr('width', 10); 
+rectComplex.attr('height', 45); 
+rectComplex.attr('x', function(d) { return (d.content.complexity*100)*1+"%"; }); 
+rectComplex.attr('y', function(d, i) { return i * 100 + 30; }).attr("class","complexityMarker");
+// rectAlign.style('fill', function(d) { return "rgb(0,0,"+d.content.alignment*255+")"; });
+rectComplex.style('fill', "#BC4C2B");
+
+
+
 
 var textEnter = circle.enter().append("text");
 
-textEnter.attr('x', 50); 
-textEnter.attr('y', function(d, i) { return i * 100 + 60; });
+textEnter.attr('x', 0); 
+textEnter.attr('y', function(d, i) { return i * 100 + 29; });
 textEnter.text(function(d) { return d.content.projectname; });
-textEnter.style('fill','yellow');
+textEnter.style('fill','#232323').style('font-size','1.25em');;
 
 });
