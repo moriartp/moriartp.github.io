@@ -122,8 +122,8 @@ var str = JSON.stringify(blob1.feed.entry);
 	tr.append('td').html(function(d) { 
 			if(d.content.plannedend > d.content.deadline && d.content.deadline != null && (d.content.state == "Executing" || d.content.closing == "Executing")){
 				return "<div class='risky'>"+formatDate(d.content.plannedend)+"</div>";
-			} else {
-				return  "<div class='cost'>"+formatDate(d.content.plannedend)+"</div>";;
+			} else if (d.content.plannedend != null){
+				return  "<div class='cost'>"+formatDate(d.content.plannedend)+"</div>";
 			}
 		});
 	tr.append('td').html(function(d) { 
