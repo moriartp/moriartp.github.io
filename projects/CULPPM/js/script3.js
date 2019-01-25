@@ -75,16 +75,16 @@ var circleCost = circle.enter().append("circle");
 
 circleCost.attr("cy", function(d, i) { return i * 100 + 52.50; });
 // circleEnter.attr("cy","100%")
-circleCost.attr("cx", "97.5%").attr('fill','#5FBF8C');
-circleCost.attr("r", function(d) { return Math.sqrt(d.content.actualcost/100); });
+circleCost.attr("cx", "97.5%").attr('fill','#5FBF8C').attr('stroke','#5FBF8C').attr("stroke-width","11px");;
+circleCost.attr("r", function(d) { return Math.sqrt(d.content.actualcost/50); });
 
 
 var circleEnter = circle.enter().append("circle");
 
 circleEnter.attr("cy", function(d, i) { return i * 100 + 52.50; });
 // circleEnter.attr("cy","100%")
-circleEnter.attr("cx", "97.5%").attr('class','budget').attr('fill','#FFB8A3').attr('fill-opacity','.05').attr('stroke','black');
-circleEnter.attr("r", function(d) { return Math.sqrt(d.content.budgetestimate/100); });
+circleEnter.attr("cx", "97.5%").attr('class','budget').attr('fill','#FFB8A3').attr('fill-opacity','.05').attr('stroke','#005C2B');
+circleEnter.attr("r", function(d) { return Math.sqrt(d.content.budgetestimate/50); });
 
 
 // ORGVALUE

@@ -344,8 +344,11 @@ circle.budget{
 	transition: stroke-width .4s ease;	 
     /*fill:#242424;*/
  	stroke-width:0px;
+	stroke-opacity: .25;
 }
 
 circle.budget:hover{
-	stroke-width:3px;
+	stroke-width:11px;
+	stroke-fill:#005C2B;
+	/*stroke-opacity: .33;*/
 }
