@@ -71,8 +71,8 @@ var circle = svg.selectAll("circle")
 
 // myColors
 var myRed = "#F26157";
-var myBlue = "";
-var myGreen = "";
+var myBlue = "#235789";
+var myYellow = "#F1D302";
 
 
 // blue #235789
@@ -85,10 +85,15 @@ var marginTop = 500;
 
 
 // BUDGET// BUDGET// BUDGET// BUDGET// BUDGET// BUDGET// BUDGET
+// BUDGET// BUDGET// BUDGET// BUDGET// BUDGET// BUDGET// BUDGET
+// BUDGET// BUDGET// BUDGET// BUDGET// BUDGET// BUDGET// BUDGET
+// BUDGET// BUDGET// BUDGET// BUDGET// BUDGET// BUDGET// BUDGET
+// BUDGET// BUDGET// BUDGET// BUDGET// BUDGET// BUDGET// BUDGET
+
 var circleBudget = circle.enter().append("circle");
 
 circleBudget.attr("cy", function(d, i) { return i * 250 + 30; });
-circleBudget.attr("cx", "25%").attr('fill','#235789').attr('stroke','#235789').attr("stroke-width","15px");;
+circleBudget.attr("cx", "25%").attr('fill',myBlue).attr('stroke',myBlue).attr("stroke-width","15px");;
 circleBudget.attr("r", function(d) { return Math.sqrt(d.content.budgetestimate/15); });
 circleBudget.attr("class", function(d) { 
     if((+d.content.budgetestimate) < (+d.content.actualcost) ){
@@ -100,58 +105,35 @@ var circleCost = circle.enter().append("circle");
 
 circleCost.attr("cy", function(d, i) { return i * 250 + 30; });
 // circleEnter.attr("cy","100%")
-circleCost.attr("cx", "25%").attr('class','budget').attr('fill','#F1D302').attr('fill-opacity','.0').attr('stroke','#F1D302');
+circleCost.attr("cx", "25%").attr('class','budget').attr('fill',myYellow).attr('fill-opacity','.0').attr('stroke',myYellow);
 circleCost.attr("r", function(d) { return Math.sqrt(d.content.actualcost/15); });
 
+var textBudgetEst = circle.enter().append("text");
 
+textBudgetEst.attr('x', "25%").attr("class","budgetText"); 
+textBudgetEst.attr('y', function(d, i) { return i * 250 + 55 + Math.sqrt(d.content.budgetestimate/15); });
+textBudgetEst.text(function(d) { return "Budget: "+formatDollars(d.content.budgetestimate); });
+textBudgetEst.style('fill','#232323').style('font-size','14px');
 
+var textActualCost = circle.enter().append("text");
 
+textActualCost.attr('x', "25%").attr("class","actuals"); 
+textActualCost.attr('y', function(d, i) { return i * 250 + 75 + Math.sqrt(d.content.budgetestimate/15); });
+textActualCost.text(function(d) { return "Cost: "+formatDollars(d.content.actualcost); });
+textActualCost.style('fill','#232323').style('font-size','14px');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // BUDGET// BUDGET// BUDGET// BUDGET// BUDGET// BUDGET// BUDGET
-// var circleBudget = circle.enter().append("circle");
-
-// circleBudget.attr("cy", function(d, i) { return i * 250 + 30; });
-// circleBudget.attr("cx", "25%").attr('fill','#3DA66E').attr('stroke','#3DA66E').attr("stroke-width","15px");;
-// circleBudget.attr("r", function(d) { return Math.sqrt(d.content.budgetestimate/15); });
-// circleBudget.attr("class", function(d) { 
-//     if((+d.content.budgetestimate) < (+d.content.actualcost) ){
-//         return "atRisk"; 
-//     }
-// }); 
-
-// var circleCost = circle.enter().append("circle");
-
-// circleCost.attr("cy", function(d, i) { return i * 250 + 30; });
-// // circleEnter.attr("cy","100%")
-// circleCost.attr("cx", "25%").attr('class','budget').attr('fill','#3C7695').attr('fill-opacity','.0').attr('stroke','#3C7695');
-// circleCost.attr("r", function(d) { return Math.sqrt(d.content.actualcost/15); });
-
-var textCost = circle.enter().append("text");
-
-textCost.attr('x', "25%").attr("class","budgetText"); 
-textCost.attr('y', function(d, i) { return i * 250 + 55 + Math.sqrt(d.content.budgetestimate/15); });
-textCost.text(function(d) { return "Budget: "+formatDollars(d.content.budgetestimate); });
-textCost.style('fill','#232323').style('font-size','.75em');
 
 
 // FTE// FTE// FTE// FTE// FTE// FTE// FTE// FTE// FTE// FTE// FTE// FTE
+// FTE// FTE// FTE// FTE// FTE// FTE// FTE// FTE// FTE// FTE// FTE// FTE
+// FTE// FTE// FTE// FTE// FTE// FTE// FTE// FTE// FTE// FTE// FTE// FTE
+// FTE// FTE// FTE// FTE// FTE// FTE// FTE// FTE// FTE// FTE// FTE// FTE
+// FTE// FTE// FTE// FTE// FTE// FTE// FTE// FTE// FTE// FTE// FTE// FTE
+
 var circleFTE = circle.enter().append("circle");
 
 circleFTE.attr("cy", function(d, i) { return i * 250 + 30; });
-circleFTE.attr("cx", "45%").attr('fill','#3DA66E').attr('stroke','#3DA66E').attr("stroke-width","15px");;
+circleFTE.attr("cx", "45%").attr('fill',myBlue).attr('stroke',myBlue).attr("stroke-width","15px");;
 circleFTE.attr("r", function(d) { return Math.sqrt(d.content.fteestimate*1500); });
 circleFTE.attr("class", function(d) { 
     if((+d.content.fteestimate) < (+d.content.fteactual) ){
@@ -162,21 +144,33 @@ circleFTE.attr("class", function(d) {
 var circleFTEactual = circle.enter().append("circle");
 
 circleFTEactual.attr("cy", function(d, i) { return i * 250 + 30; });
-circleFTEactual.attr("cx", "45%").attr('class','budget').attr('fill','#3C7695').attr('fill-opacity','.0').attr('stroke','#3C7695');
+circleFTEactual.attr("cx", "45%").attr('class','budget').attr('fill',myYellow).attr('fill-opacity','.0').attr('stroke',myYellow);
 circleFTEactual.attr("r", function(d) { return Math.sqrt(d.content.fteactual*1500); });
 
 var textFTE = circle.enter().append("text");
 
 textFTE.attr('x', "45%").attr("class","fteText"); 
 textFTE.attr('y', function(d, i) { return i * 250 + 55 + Math.sqrt(d.content.fteestimate*1500); });
-textFTE.text(function(d) { return formatIntegers(d.content.fteestimate)+" FTE"; });
-textFTE.style('fill','#232323').style('font-size','.75em');
+textFTE.text(function(d) { return "Estimate: "+formatIntegers(d.content.fteestimate)+" FTE"; });
+textFTE.style('fill','#232323').style('font-size','14px');
 
+var textFTEact = circle.enter().append("text");
+
+textFTEact.attr('x', "45%").attr("class","fteText"); 
+textFTEact.attr('y', function(d, i) { return i * 250 + 75 + Math.sqrt(d.content.fteestimate*1500); });
+textFTEact.text(function(d) { return "Actual: "+formatIntegers(d.content.fteactual)+" FTE"; });
+textFTEact.style('fill','#232323').style('font-size','14px');
+
+
+// VALUE// VALUE// VALUE// VALUE// VALUE// VALUE// VALUE// VALUE// VALUE// VALUE// VALUE
+// VALUE// VALUE// VALUE// VALUE// VALUE// VALUE// VALUE// VALUE// VALUE// VALUE// VALUE
+// VALUE// VALUE// VALUE// VALUE// VALUE// VALUE// VALUE// VALUE// VALUE// VALUE// VALUE
+// VALUE// VALUE// VALUE// VALUE// VALUE// VALUE// VALUE// VALUE// VALUE// VALUE// VALUE
 // VALUE// VALUE// VALUE// VALUE// VALUE// VALUE// VALUE// VALUE// VALUE// VALUE// VALUE
 var circleValue = circle.enter().append("circle");
 
 circleValue.attr("cy", function(d, i) { return i * 250 + 30; });
-circleValue.attr("cx", "65%").attr('fill','#3DA66E').attr('stroke','#3DA66E').attr("stroke-width","15px");;
+circleValue.attr("cx", "65%").attr('fill',myBlue).attr('stroke',myBlue).attr("stroke-width","15px");;
 circleValue.attr("r", function(d) { return Math.sqrt(d.content.orgvalue*2500); });
 circleValue.attr("class", function(d) { 
     if((+d.content.orgvalue) < (+d.content.complexity) ){
@@ -187,7 +181,7 @@ circleValue.attr("class", function(d) {
 var circleComplex = circle.enter().append("circle");
 
 circleComplex.attr("cy", function(d, i) { return i * 250 + 30; });
-circleComplex.attr("cx", "65%").attr('class','budget').attr('fill','#3C7695').attr('fill-opacity','.0').attr('stroke','#3C7695');
+circleComplex.attr("cx", "65%").attr('class','budget').attr('fill',myYellow).attr('fill-opacity','.0').attr('stroke',myYellow);
 circleComplex.attr("r", function(d) { return Math.sqrt(d.content.complexity*2500); });
 
 var textOrgValue = circle.enter().append("text");
@@ -195,13 +189,27 @@ var textOrgValue = circle.enter().append("text");
 textOrgValue.attr('x', "65%").attr("class","orgValueText"); 
 textOrgValue.attr('y', function(d, i) { return i * 250 + 55 + Math.sqrt(d.content.orgvalue*2500); });
 textOrgValue.text(function(d) { return "Value Rating: "+formatPercentage(d.content.orgvalue); });
-textOrgValue.style('fill','#232323').style('font-size','.75em');
+textOrgValue.style('fill','#232323').style('font-size','14px');
+
+var textComplex = circle.enter().append("text");
+
+textComplex.attr('x', "65%").attr("class","complexText"); 
+textComplex.attr('y', function(d, i) { return i * 250 + 75 + Math.sqrt(d.content.orgvalue*2500); });
+textComplex.text(function(d) { return "Complexity Rating: "+formatPercentage(d.content.complexity); });
+textComplex.style('fill','#232323').style('font-size','14px');
+
+
 
 // DURATION// DURATION// DURATION// DURATION// DURATION// DURATION// DURATION// DURATION// DURATION
+// DURATION// DURATION// DURATION// DURATION// DURATION// DURATION// DURATION// DURATION// DURATION
+// DURATION// DURATION// DURATION// DURATION// DURATION// DURATION// DURATION// DURATION// DURATION
+// DURATION// DURATION// DURATION// DURATION// DURATION// DURATION// DURATION// DURATION// DURATION
+// DURATION// DURATION// DURATION// DURATION// DURATION// DURATION// DURATION// DURATION// DURATION
+
 var circleDead = circle.enter().append("circle");
 
 circleDead.attr("cy", function(d, i) { return i * 250 + 30; });
-circleDead.attr("cx", "85%").attr('fill','#3DA66E').attr('stroke','#3DA66E').attr("stroke-width","15px");
+circleDead.attr("cx", "85%").attr('fill',myBlue).attr('stroke',myBlue).attr("stroke-width","15px");
 circleDead.attr("class", function(d) { 
     if((+d.content.deadline - +d.content.projectStart) < (+d.content.plannedend - +d.content.projectStart) ){
         return "atRisk"; 
@@ -215,7 +223,7 @@ circleDead.attr("r", function(d) {
 
 var circleAct = circle.enter().append("circle");
 circleAct.attr("cy", function(d, i) { return i * 250 + 30; });
-circleAct.attr("cx", "85%").attr('class','budget').attr('fill','#3C7695').attr('fill-opacity','.0').attr('stroke','#3C7695');
+circleAct.attr("cx", "85%").attr('class','budget').attr('fill',myYellow).attr('fill-opacity','.0').attr('stroke',myYellow);
 // circleDead.attr("r", function(d) { return Math.sqrt(d.content.deadline); });
 circleAct.attr("r", function(d) { 
     if(d.content.plannedend !=null){
@@ -228,7 +236,7 @@ var textSched = circle.enter().append("text");
 textSched.attr('x', "85%").attr("class","schedText"); 
 textSched.attr('y', function(d, i) { return i * 250 + 55 + ((+d.content.deadline - +d.content.projectStart)*0.00000000251); });
 // textSched.text(function(d) { return formatDate(d.content.projectStart)+" > "+formatDate(d.content.deadline); });
-textSched.style('fill','#232323').style('font-size','.75em');
+textSched.style('fill','#232323').style('font-size','14px');
 textSched.text(function(d) { 
     if(d.content.deadline != null){
         return formatDate(d.content.projectStart)+" - "+formatDate(d.content.deadline); 

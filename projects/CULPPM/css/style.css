@@ -362,7 +362,7 @@ circle.budget:hover{
 	stroke:#C1292E;
 }
 
-.budgetText, .fteText, .orgValueText, .schedText{
+.budgetText, .fteText, .orgValueText, .schedText, .actuals, .complexText{
 	text-anchor:middle;
 }
 
