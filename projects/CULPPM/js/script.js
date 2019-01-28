@@ -70,7 +70,7 @@ var str = JSON.stringify(blob1.feed.entry);
 	    .append('tr')
 	    .attr('class',function(d) {	return d.content.state; });
 
-	tr.append('td').html(function(d) { return '<b><a href="'+d.content.link+'">'+d.content.projectname+'<i class="fa fa-external-link-square" aria-hidden="true"></i></a></b>'; })
+	tr.append('td').html(function(d) { return '<b><a href="'+d.content.link+'">'+d.content.projectname+'</a> <i class="fas fa-external-link-square-alt"></i></b>'; })
 		.on("mouseover", function(d) {		
 		            div.transition()		
 		                .duration(200)		
@@ -138,23 +138,23 @@ var str = JSON.stringify(blob1.feed.entry);
 		}
 	})
 		.attr('class','progress');
-	tr.append('td').html(function(d) { return formatDollars(d.content.budgetestimate); }).attr('class','budget');
-	tr.append('td').html(function(d) {
-			if(d.content.actualcost > d.content.budgetestimate && d.content.budgetestimate != null && (d.content.state == "Executing" || d.content.closing == "Executing")){
-				return "<div class='risky'>"+formatDollars(d.content.actualcost)+"</div>";
-			} else {
-				return  "<div class='cost'>"+formatDollars(d.content.actualcost)+"</div>";;
-			}
-		});
+	// tr.append('td').html(function(d) { return formatDollars(d.content.budgetestimate); }).attr('class','budget');
+	// tr.append('td').html(function(d) {
+	// 		if(d.content.actualcost > d.content.budgetestimate && d.content.budgetestimate != null && (d.content.state == "Executing" || d.content.closing == "Executing")){
+	// 			return "<div class='risky'>"+formatDollars(d.content.actualcost)+"</div>";
+	// 		} else {
+	// 			return  "<div class='cost'>"+formatDollars(d.content.actualcost)+"</div>";;
+	// 		}
+	// 	});
 	
-	tr.append('td').html(function(d) { return formatIntegers(d.content.fteestimate); }).attr('class','fte');	
-	tr.append('td').html(function(d) { 
-			if(d.content.fteactual > d.content.fteestimate && d.content.fteestimate != null && (d.content.state == "Executing" || d.content.closing == "Executing")){
-				return "<div class='risky'>"+formatIntegers(d.content.fteactual)+"</div>";
-			} else {
-				return  "<div class='cost'>"+formatIntegers(d.content.fteactual)+"</div>";;
-			}
-		});
+	// tr.append('td').html(function(d) { return formatIntegers(d.content.fteestimate); }).attr('class','fte');	
+	// tr.append('td').html(function(d) { 
+	// 		if(d.content.fteactual > d.content.fteestimate && d.content.fteestimate != null && (d.content.state == "Executing" || d.content.closing == "Executing")){
+	// 			return "<div class='risky'>"+formatIntegers(d.content.fteactual)+"</div>";
+	// 		} else {
+	// 			return  "<div class='cost'>"+formatIntegers(d.content.fteactual)+"</div>";;
+	// 		}
+	// 	});
 	
 
 	tr.append('td').html(function(d) { return "<!-- d.content.additionalinfo-->" 

@@ -252,6 +252,7 @@ var textEnter = circle.enter().append("text");
 
 textEnter.attr('x', 0); 
 textEnter.attr('y', function(d, i) { return i * 250 + 45; });
+textEnter.attr('class', "projectName" );
 textEnter.text(function(d) { return d.content.projectname; });
 textEnter.style('fill','#232323').style('font-size','1.25em');;
 

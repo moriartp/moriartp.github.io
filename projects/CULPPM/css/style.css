@@ -369,3 +369,75 @@ circle.budget:hover{
 text{
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+
+.fa-external-link-square-alt{
+	font-size: .75em;
+	color:#333;
+}
+
+/*TABLE TOOLTIP*//*TABLE TOOLTIP*//*TABLE TOOLTIP*//*TABLE TOOLTIP*//*TABLE TOOLTIP*//*TABLE TOOLTIP*//*TABLE TOOLTIP*/
+
+.hasTooltip span {
+    display: none;
+    color: #000;
+    text-decoration: none;
+    padding: 3px;
+    width:200px;
+}
+
+.hasTooltip:hover span {
+    display: block;
+    position: absolute;
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    margin: 2px 10px;
+}
+
+i.infoBlurb{
+	color:black;
+	font-size: .75em;
+	font-variant: none;
+	text-decoration: none;
+	font-style: normal;
+	font-family: Arial;
+}
+
+
+.sq1{
+	color:#B9DAEB;
+	font-size: .75em;
+}
+
+.sq2{
+	color:#8AB9D2;
+	font-size: .75em;
+}
+
+.sq3{
+	color:#5FBF8C;
+	font-size: .75em;
+}
+
+.sq4{
+	color:#FFB8A3;
+	font-size: .75em;
+}
+
+.sq5{
+	color:#5C92AF;
+	font-size: .75em;
+}
+
+.sq6{
+	color:gray;
+	font-size: .75em;
+}
+
+.sq7{
+	color:lightgray;
+	font-size: .75em;
+}
+
+
+
+/*TABLE TOOLTIP*//*TABLE TOOLTIP*//*TABLE TOOLTIP*//*TABLE TOOLTIP*//*TABLE TOOLTIP*//*TABLE TOOLTIP*//*TABLE TOOLTIP*/
