@@ -102,6 +102,7 @@ var str = JSON.stringify(blob1.feed.entry);
 		        });
 	tr.append('td').html(function(d) { return d.content.sponsor; }).attr('class','sponsor');
 	tr.append('td').html(function(d) { return d.content.manager; }).attr('class','pm');
+	tr.append('td').html(function(d) { return d.content.businessowner; }).attr('class','businessowner');
 	tr.append('td').html(function(d) { return formatPercentage(
 		(d.content.complexity1+d.content.complexity2+d.content.complexity3)/9
 		); 
@@ -112,12 +113,15 @@ var str = JSON.stringify(blob1.feed.entry);
 		(d.content.value1+d.content.value2+d.content.value3)/9
 		); 
 	});
-	tr.append('td').html(function(d) { return Math.round(formatIntegers(
+
+	// PROJECT TIER// PROJECT TIER// PROJECT TIER// PROJECT TIER// PROJECT TIER// PROJECT TIER
+	tr.append('td').html(function(d) { return "<div class='tiery'>"+Math.round(formatIntegers(
 		(d.content.value1+d.content.value2+d.content.value3+d.content.complexity1+d.content.complexity2+d.content.complexity3)/6
-		)); 
+		))+"<div>"; 
 	});
 
-	tr.append('td').html(function(d) { return d.content.businessowner; }).attr('class','businessowner');
+
+	// tr.append('td').html(function(d) { return d.content.businessowner; }).attr('class','businessowner');
 	tr.append('td')
 		// .html(function(d) { return "<div class='"+d.content.state+"'>"+d.content.state+"<div>"; });
 		.html(function(d) { 

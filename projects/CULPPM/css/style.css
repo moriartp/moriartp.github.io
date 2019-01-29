@@ -121,6 +121,22 @@ a:hover {
   text-decoration: underline;
 }
 
+th.sortable{
+	cursor: pointer;
+}
+
+div.tiery{
+	background-color: #555;
+	border-radius: 50%;
+	color:#fff;
+	font-size: 1em;
+	text-align: center;
+	vertical-align: middle;
+	width:1.5em;
+	height:1.5em;
+	margin:auto;
+}
+
 div.risky{
 	/*background-color: #FFB8A3;*/
 	color:#BC4C2B;

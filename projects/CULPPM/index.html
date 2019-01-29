@@ -32,17 +32,18 @@
 	</div>
 
 
-<table>
+<table id="myTable2">
 	<thead>
 		<tr>
-			<th>Project Name</th>
-			<th>Sponsor</th>
-			<th>Project Manager</th>
+			<th class="sortable"onclick="sortTable(0)">Project Name</th>
+			<th class="sortable"onclick="sortTable(1)">Sponsor</th>
+			<th class="sortable"onclick="sortTable(2)">Project Manager</th>
+			<th class="sortable"onclick="sortTable(3)">Business Owner</th>
 			<th>Complexity</th>			
 			<!-- <th>Alignment</th> -->
 			<th>Value</th>
-			<th>Project Tier</th>			
-			<th>Business Owner</th>
+			<th class="sortable" onclick="sortTable(6)">Project Tier</th>			
+<!-- 			<th>Business Owner</th> -->
 			<!-- <th>State</th> -->
 			<!-- <th>Link</th> -->
 
@@ -83,11 +84,11 @@
                 </span>
             </th>
 
-			<th>Type</th>
+			<th class="sortable" onclick="sortTable(8)">Type</th>
 			<th>Start</th>
 			<th>Planned End</th>			
 			<th>Deadline</th>
-			<th>Progress</th>			
+			<th class="sortable" onclick="sortTable(12)">Progress</th>			
 			<!-- <th>Budget</th>
 			<th>Cost</th>
 			<th>FTE (Est.)</th>
@@ -106,6 +107,8 @@
 
 </body>
  <script src="js/script.js"></script> <!-- TABLE -->
+<script src="js/sort.js"></script> <!-- Table Sorting -->
+
 <!-- <script src="js/script3.js"></script> BULLETS -->
 <script src="js/script4.js"></script> <!-- DOTS -->
 
