@@ -125,6 +125,10 @@ th.sortable{
 	cursor: pointer;
 }
 
+i.fa-check-circle{
+	color: #555;
+}
+
 div.tiery{
 	background-color: #555;
 	border-radius: 50%;

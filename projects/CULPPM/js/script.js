@@ -58,8 +58,8 @@ var str = JSON.stringify(blob1.feed.entry);
         d.content.budgetestimate = +d.content.budgetestimate;
         d.content.actualcost = +d.content.actualcost;
         d.content.progress = +d.content.progress;
-        d.content.grantbased = Boolean(d.content.grantbased);
-        d.content.technical = Boolean(d.content.technical);       
+        d.content.grantbased = Boolean(d.content.grantbased === 'TRUE');
+        d.content.technical = Boolean(d.content.technical === "TRUE");       
         d.content.value1 = +d.content.value1;
         d.content.value2 = +d.content.value2;
         d.content.value3 = +d.content.value3;        
@@ -197,6 +197,15 @@ var str = JSON.stringify(blob1.feed.entry);
 		;})
 		.attr('class','addinfo')	
 		.attr('width','300px');
+
+	tr.append('td').html(function(d) { 
+		if(d.content.grantbased == true){
+			return "<i class='fas fa-check-circle'></i>"; 
+		} else {
+			return null;
+		}
+	});
+
 
 
 }); 
