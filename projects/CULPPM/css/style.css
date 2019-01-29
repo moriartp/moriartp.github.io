@@ -275,7 +275,7 @@ div.bars{
 	height:26px;
 
 	transition: background-color 2s;
-	background-color:#5FBF8C;
+	background-color:#B9DAEB;
 
 }
 
@@ -383,6 +383,7 @@ text{
     text-decoration: none;
     padding: 3px;
     width:200px;
+    z-index: 1000000;
 }
 
 .hasTooltip:hover span {
@@ -405,37 +406,37 @@ i.infoBlurb{
 
 .sq1{
 	color:#B9DAEB;
-	font-size: .75em;
+	font-size: 1em;
 }
 
 .sq2{
 	color:#8AB9D2;
-	font-size: .75em;
+	font-size: 1em;
 }
 
 .sq3{
 	color:#5FBF8C;
-	font-size: .75em;
+	font-size: 1em;
 }
 
 .sq4{
 	color:#FFB8A3;
-	font-size: .75em;
+	font-size: 1em;
 }
 
 .sq5{
 	color:#5C92AF;
-	font-size: .75em;
+	font-size: 1;
 }
 
 .sq6{
 	color:gray;
-	font-size: .75em;
+	font-size: 1em;
 }
 
 .sq7{
 	color:lightgray;
-	font-size: .75em;
+	font-size: 1em;
 }
 
 
