@@ -1,6 +1,6 @@
 var $url = "https://spreadsheets.google.com/feeds/list/1eewMgqHDN-fIrjZrYBuRaWztac2_Wvv4XZLnlkUpP5M/1/public/basic?alt=json"
 $.getJSON($url,function(blob1){
-console.log("hello");
+// console.log("hello");
 // console.log(blob1.feed.entry);
 
 
@@ -27,6 +27,14 @@ var str = JSON.stringify(blob1.feed.entry);
  str = str.replace(/, fteestimate: /g,"\", \"fteestimate\":\"");
  str = str.replace(/, fteactual: /g,"\", \"fteactual\":\"");
  str = str.replace(/, additionalinfo: /g,"\", \"additionalinfo\":\""); 
+ str = str.replace(/, technical: /g,"\", \"technical\":\""); 
+ str = str.replace(/, grantbased: /g,"\", \"grantbased\":\"");
+ str = str.replace(/, value1: /g,"\", \"value1\":\"");  
+ str = str.replace(/, value2: /g,"\", \"value2\":\"");   
+ str = str.replace(/, value3: /g,"\", \"value3\":\"");  
+ str = str.replace(/, complexity1: /g,"\", \"complexity1\":\"");  
+ str = str.replace(/, complexity2: /g,"\", \"complexity2\":\"");  
+ str = str.replace(/, complexity3: /g,"\", \"complexity3\":\"");  
 
 // CONVERT TO JSON
  ppm = $.parseJSON(str);
@@ -50,6 +58,14 @@ var str = JSON.stringify(blob1.feed.entry);
         d.content.budgetestimate = +d.content.budgetestimate;
         d.content.actualcost = +d.content.actualcost;
         d.content.progress = +d.content.progress;
+        d.content.grantbased = Boolean(d.content.grantbased);
+        d.content.technical = Boolean(d.content.technical);       
+        d.content.value1 = +d.content.value1;
+        d.content.value2 = +d.content.value2;
+        d.content.value3 = +d.content.value3;        
+        d.content.complexity1 = +d.content.complexity1;
+        d.content.complexity2 = +d.content.complexity2;
+        d.content.complexity3 = +d.content.complexity3;                
     });
 
 
@@ -86,9 +102,21 @@ var str = JSON.stringify(blob1.feed.entry);
 		        });
 	tr.append('td').html(function(d) { return d.content.sponsor; }).attr('class','sponsor');
 	tr.append('td').html(function(d) { return d.content.manager; }).attr('class','pm');
-	// tr.append('td').html(function(d) { return formatPercentage(d.content.complexity); });
+	tr.append('td').html(function(d) { return formatPercentage(
+		(d.content.complexity1+d.content.complexity2+d.content.complexity3)/9
+		); 
+	});
 	// tr.append('td').html(function(d) { return formatPercentage(d.content.alignment); });
 	// tr.append('td').html(function(d) { return formatPercentage(d.content.orgvalue); });
+	tr.append('td').html(function(d) { return formatPercentage(
+		(d.content.value1+d.content.value2+d.content.value3)/9
+		); 
+	});
+	tr.append('td').html(function(d) { return Math.round(formatIntegers(
+		(d.content.value1+d.content.value2+d.content.value3+d.content.complexity1+d.content.complexity2+d.content.complexity3)/6
+		)); 
+	});
+
 	tr.append('td').html(function(d) { return d.content.businessowner; }).attr('class','businessowner');
 	tr.append('td')
 		// .html(function(d) { return "<div class='"+d.content.state+"'>"+d.content.state+"<div>"; });

@@ -57,13 +57,18 @@ img{
 	margin-top: 10vw;
 }
 
-i,text.landing{
+text.landing{
 	font-family: TrajanProRegular,trajan,georgia,serif;
 	color:#3a6fa2;
 	text-decoration: none;
 	font-size: 2em;
 	font-variant: small-caps; 
+}
 
+i.fa-arrow-alt-circle-down{
+	color:#3a6fa2;
+	text-decoration: none;
+	font-size: 2em;	
 }
 
 /*END PAGE LOAD*/
@@ -382,7 +387,7 @@ text{
     color: #000;
     text-decoration: none;
     padding: 3px;
-    width:200px;
+    width:400px;
     z-index: 1000000;
 }
 
@@ -424,13 +429,13 @@ i.infoBlurb{
 	font-size: 1em;
 }
 
-.sq5{
+.sqClose{
 	color:#5C92AF;
 	font-size: 1;
 }
 
 .sq6{
-	color:gray;
+	color:lightgray;
 	font-size: 1em;
 }
 
@@ -439,6 +444,14 @@ i.infoBlurb{
 	font-size: 1em;
 }
 
+.sq8{
+	color:#959BD9;
+	font-size: 1em;
+}
 
+.sq9{
+	color:#FFE6A3;
+	font-size: 1em;
+}
 
 /*TABLE TOOLTIP*//*TABLE TOOLTIP*//*TABLE TOOLTIP*//*TABLE TOOLTIP*//*TABLE TOOLTIP*//*TABLE TOOLTIP*//*TABLE TOOLTIP*/
