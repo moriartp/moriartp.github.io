@@ -151,7 +151,7 @@ div.risky{
 
 }
 
-div.riskyState{
+div.riskyStatus{
 	background-color: #FFB8A3;
 	color:#BC4C2B;
 	text-align:center;
@@ -160,6 +160,61 @@ div.riskyState{
 	border-radius: .25em;
 
 }
+
+div.breachedStatus{
+	background-color: #BC4C2B;
+	color:#260900;
+	text-align:center;
+	padding:.35em;
+	font-weight: bold;
+	border-radius: .25em;
+
+}
+
+div.futureStatus{
+	background-color: #FFE6A3;
+	color:#BC942B;
+	text-align:center;
+	padding:.35em;
+	font-weight: bold;
+	border-radius: .25em;
+
+}
+
+div.initialStatus{
+	background-color: #B9DAEB;
+	color:#BC942B;
+	text-align:center;
+	padding:.35em;
+	border-radius: .25em;
+	color:#246283;
+}
+
+div.planningStatus{
+	background-color: #8AB9D2;
+	text-align:center;
+	padding:.35em;	
+	border-radius: .25em;
+	color:#053752;
+}
+
+div.holdStatus{
+	background-color: #959BD9;
+	text-align:center;
+	padding:.35em;	
+	border-radius: .25em;
+	color:#1D2574;
+}
+
+div.targetStatus{
+	background-color: #5FBF8C;
+	text-align:center;
+	padding:.35em;	
+	border-radius: .25em;
+	font-weight: bold;
+	color:#005C2B;
+}
+
 
 div.cost{
 	/*background-color:#8CDBB1;*/
@@ -407,7 +462,7 @@ text{
     color: #000;
     text-decoration: none;
     padding: 3px;
-    width:400px;
+    width:450px;
     z-index: 1000000;
 }
 
@@ -416,7 +471,7 @@ text{
     position: absolute;
     background-color: #FFF;
     border: 1px solid #CCC;
-    margin: 2px 10px;
+    margin: 5px 12px;
 }
 
 i.infoBlurb{
@@ -455,7 +510,7 @@ i.infoBlurb{
 }
 
 .sq6{
-	color:lightgray;
+	color:gray;
 	font-size: 1em;
 }
 
@@ -473,5 +528,11 @@ i.infoBlurb{
 	color:#FFE6A3;
 	font-size: 1em;
 }
+
+.sq0{
+	color:#BC4C2B;
+	font-size: 1em;
+}
+
 
 /*TABLE TOOLTIP*//*TABLE TOOLTIP*//*TABLE TOOLTIP*//*TABLE TOOLTIP*//*TABLE TOOLTIP*//*TABLE TOOLTIP*//*TABLE TOOLTIP*/

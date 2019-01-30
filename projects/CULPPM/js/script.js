@@ -27,6 +27,7 @@ var str = JSON.stringify(blob1.feed.entry);
  str = str.replace(/, fteestimate: /g,"\", \"fteestimate\":\"");
  str = str.replace(/, fteactual: /g,"\", \"fteactual\":\"");
  str = str.replace(/, additionalinfo: /g,"\", \"additionalinfo\":\""); 
+ str = str.replace(/, hold: /g,"\", \"hold\":\""); 
  str = str.replace(/, technical: /g,"\", \"technical\":\""); 
  str = str.replace(/, grantbased: /g,"\", \"grantbased\":\"");
  str = str.replace(/, value1: /g,"\", \"value1\":\"");  
@@ -60,6 +61,7 @@ var str = JSON.stringify(blob1.feed.entry);
         d.content.progress = +d.content.progress;
         d.content.grantbased = Boolean(d.content.grantbased === 'TRUE');
         d.content.technical = Boolean(d.content.technical === "TRUE");       
+        d.content.hold = Boolean(d.content.hold === "TRUE");       
         d.content.value1 = +d.content.value1;
         d.content.value2 = +d.content.value2;
         d.content.value3 = +d.content.value3;        
@@ -74,7 +76,8 @@ var str = JSON.stringify(blob1.feed.entry);
 	    .attr("class", "tooltip")				
 	    .style("opacity", 0);
 
-
+   var todaysDate = new Date();
+   console.log(todaysDate);
    var formatDate = d3.timeFormat("%b %d, %Y");  
    var formatPercentage = d3.format(",.0%");  
    var formatDollars = d3.format("($,.2f");
@@ -120,8 +123,25 @@ var str = JSON.stringify(blob1.feed.entry);
 		))+"<div>"; 
 	});
 
+	// tr.append('td')
+	// 	// .html(function(d) { return "<div class='"+d.content.state+"'>"+d.content.state+"<div>"; });
+	// 	.html(function(d) { 
+	// 		if(
+				
+	// 			((d.content.fteactual > d.content.fteestimate && d.content.fteestimate != null)	||
+	// 			(d.content.actualcost > d.content.budgetestimate && d.content.budgetestimate != null) ||
+	// 			(d.content.plannedend > d.content.deadline && d.content.deadline != null)) &&
+	// 			(d.content.state == "Executing" || d.content.state == "Closing")
+	// 			)
+	// 		{
+	// 			// return "<div class='"+d.content.state+"'>"+d.content.state+"<div>";
+	// 			return "<div class='riskyState'>"+d.content.state+"</div>";
+	// 		} else {
+	// 			return "<div class='"+d.content.state+"'>"+d.content.state+"<div>";
+	// 		}
+	// 	});
 
-	// tr.append('td').html(function(d) { return d.content.businessowner; }).attr('class','businessowner');
+	// console.log(Date.now())
 	tr.append('td')
 		// .html(function(d) { return "<div class='"+d.content.state+"'>"+d.content.state+"<div>"; });
 		.html(function(d) { 
@@ -130,14 +150,61 @@ var str = JSON.stringify(blob1.feed.entry);
 				((d.content.fteactual > d.content.fteestimate && d.content.fteestimate != null)	||
 				(d.content.actualcost > d.content.budgetestimate && d.content.budgetestimate != null) ||
 				(d.content.plannedend > d.content.deadline && d.content.deadline != null)) &&
-				(d.content.state == "Executing" || d.content.state == "Closing")
+				(d.content.state == "Executing") && (d.content.projectStart < todaysDate) && (d.content.hold != true)
 				)
 			{
 				// return "<div class='"+d.content.state+"'>"+d.content.state+"<div>";
-				return "<div class='riskyState'>"+d.content.state+"</div>";
-			} else {
-				return "<div class='"+d.content.state+"'>"+d.content.state+"<div>";
-			}
+				return "<div class='riskyStatus'>"+d.content.state+"</div>";
+			} else if(
+				((d.content.fteactual > d.content.fteestimate && d.content.fteestimate != null)	||
+				(d.content.actualcost > d.content.budgetestimate && d.content.budgetestimate != null) ||
+				(d.content.plannedend > d.content.deadline && d.content.deadline != null)) &&
+				(d.content.state == "Closing")
+
+				)
+			{
+				return "<div class='breachedStatus'>"+d.content.state+"<div>";
+				// console.log(Boolean((d.content.projectStart > todaysDate)));
+			} else if(
+				((d.content.fteactual <= d.content.fteestimate && d.content.fteestimate != null)	||
+				(d.content.actualcost <= d.content.budgetestimate && d.content.budgetestimate != null) ||
+				(d.content.plannedend <= d.content.deadline && d.content.deadline != null)) &&
+				(d.content.state == "Executing") && (d.content.projectStart > todaysDate)
+
+				)
+			{
+				return "<div class='futureStatus'>"+d.content.state+"<div>";
+			} else if(
+				(d.content.state == "Initiating")
+
+				)
+			{
+				return "<div class='initialStatus'>"+d.content.state+"<div>";
+			} else if(
+				(d.content.state == "Planning")
+
+				)
+			{
+				return "<div class='planningStatus'>"+d.content.state+"<div>";
+			} else if(
+				(d.content.state == "Executing") && d.content.hold == true
+
+				)
+			{
+				return "<div class='holdStatus'>"+d.content.state+"<div>";
+			} else if(
+				((d.content.fteactual < d.content.fteestimate && d.content.fteestimate != null)	||
+				(d.content.actualcost < d.content.budgetestimate && d.content.budgetestimate != null) ||
+				(d.content.plannedend < d.content.deadline && d.content.deadline != null)) &&
+				(d.content.state == "Executing") && (d.content.projectStart < todaysDate) && (d.content.hold != true)
+
+				)
+			{
+				return "<div class='targetStatus'>"+d.content.state+"<div>";
+			} 
+
+
+
 		});
 
 
