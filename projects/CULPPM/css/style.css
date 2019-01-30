@@ -215,6 +215,32 @@ div.targetStatus{
 	color:#005C2B;
 }
 
+div.completedStatus{
+	background-color: lightgray;
+	color:gray;
+	text-align:center;
+	border-radius: .25em;
+	padding:.35em;
+	/*color:#484747;*/
+}
+
+div.canceledStatus{
+	background-color: gainsboro/*#E0E0E0*/;
+	color:darkgray;
+	text-align:center;
+	border-radius: .25em;
+	padding:.35em;
+	/*color:#484747;*/
+}
+
+div.unknownStatus{
+	background-color: gainsboro;
+	color:darkgray;
+	text-align:center;
+	border-radius: .25em;
+	padding:.35em;
+	/*color:#484747;*/
+}
 
 div.cost{
 	/*background-color:#8CDBB1;*/
@@ -510,12 +536,12 @@ i.infoBlurb{
 }
 
 .sq6{
-	color:gray;
+	color:lightgray;
 	font-size: 1em;
 }
 
 .sq7{
-	color:lightgray;
+	color:gainsboro;
 	font-size: 1em;
 }
 
@@ -533,6 +559,5 @@ i.infoBlurb{
 	color:#BC4C2B;
 	font-size: 1em;
 }
-
 
 /*TABLE TOOLTIP*//*TABLE TOOLTIP*//*TABLE TOOLTIP*//*TABLE TOOLTIP*//*TABLE TOOLTIP*//*TABLE TOOLTIP*//*TABLE TOOLTIP*/
