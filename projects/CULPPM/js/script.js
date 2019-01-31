@@ -1,6 +1,6 @@
 var $url = "https://spreadsheets.google.com/feeds/list/1eewMgqHDN-fIrjZrYBuRaWztac2_Wvv4XZLnlkUpP5M/1/public/basic?alt=json"
 $.getJSON($url,function(blob1){
-// console.log("hello");
+console.log("hello");
 // console.log(blob1.feed.entry);
 
 
@@ -24,6 +24,7 @@ var str = JSON.stringify(blob1.feed.entry);
  str = str.replace(/, complexity: /g,"\", \"complexity\":\""); 
  str = str.replace(/, budgetestimate: /g,"\", \"budgetestimate\":\"");
  str = str.replace(/, actualcost: /g,"\", \"actualcost\":\""); 
+ str = str.replace(/, unanticipatedpurchase: /g,"\", \"unanticipatedpurchase\":\"");
  str = str.replace(/, fteestimate: /g,"\", \"fteestimate\":\"");
  str = str.replace(/, fteactual: /g,"\", \"fteactual\":\"");
  str = str.replace(/, additionalinfo: /g,"\", \"additionalinfo\":\""); 
@@ -61,7 +62,8 @@ var str = JSON.stringify(blob1.feed.entry);
         d.content.progress = +d.content.progress;
         d.content.grantbased = Boolean(d.content.grantbased === 'TRUE');
         d.content.technical = Boolean(d.content.technical === "TRUE");       
-        d.content.hold = Boolean(d.content.hold === "TRUE");       
+        d.content.hold = Boolean(d.content.hold === "TRUE");
+        d.content.unanticipatedpurchase = Boolean(d.content.unanticipatedpurchase === "TRUE");       
         d.content.value1 = +d.content.value1;
         d.content.value2 = +d.content.value2;
         d.content.value3 = +d.content.value3;        
@@ -106,19 +108,19 @@ var str = JSON.stringify(blob1.feed.entry);
 	tr.append('td').html(function(d) { return d.content.sponsor; }).attr('class','sponsor');
 	tr.append('td').html(function(d) { return d.content.manager; }).attr('class','pm');
 	tr.append('td').html(function(d) { return d.content.businessowner; }).attr('class','businessowner');
-	tr.append('td').html(function(d) { return formatPercentage(
-		(d.content.complexity1+d.content.complexity2+d.content.complexity3)/9
-		); 
-	});
-	// tr.append('td').html(function(d) { return formatPercentage(d.content.alignment); });
-	// tr.append('td').html(function(d) { return formatPercentage(d.content.orgvalue); });
-	tr.append('td').html(function(d) { return formatPercentage(
-		(d.content.value1+d.content.value2+d.content.value3)/9
-		); 
-	});
+	
+	// tr.append('td').html(function(d) { return formatPercentage(
+	// 	(d.content.complexity1+d.content.complexity2+d.content.complexity3)/9
+	// 	); 
+	// });
+
+	// tr.append('td').html(function(d) { return formatPercentage(
+	// 	(d.content.value1+d.content.value2+d.content.value3)/9
+	// 	); 
+	// });
 
 	// PROJECT TIER// PROJECT TIER// PROJECT TIER// PROJECT TIER// PROJECT TIER// PROJECT TIER
-	tr.append('td').html(function(d) { return "<div class='tiery'>"+Math.round(formatIntegers(
+	tr.append('td').html(function(d) { return "<div class='tieryStatus'>"+Math.round(formatIntegers(
 		(d.content.value1+d.content.value2+d.content.value3+d.content.complexity1+d.content.complexity2+d.content.complexity3)/6
 		))+"<div>"; 
 	});
@@ -184,11 +186,22 @@ var str = JSON.stringify(blob1.feed.entry);
 				)
 			{
 				return "<div class='initialStatus'>"+d.content.state+"<div>";
+
+			} else if(
+				(d.content.state == "Executing") &&
+				((todaysDate - d.content.projectStart)/(d.content.plannedend - d.content.projectStart)) >
+				(d.content.progress)
+				)
+			{ 
+				return "<div class='riskyStatus'>scope progress execution lag<div>"+
+				formatPercentage(((todaysDate - d.content.projectStart)/(d.content.plannedend - d.content.projectStart)))
+				+" > "+formatPercentage(d.content.progress)
+				;
+
 			} else if(
 				(d.content.state == "Planning")
-
 				)
-			{
+			{ 
 				return "<div class='planningStatus'>"+d.content.state+"<div>";
 			} else if(
 				(d.content.state == "Executing") && d.content.hold == true
@@ -286,14 +299,14 @@ var str = JSON.stringify(blob1.feed.entry);
 	// 	});
 	
 
-	tr.append('td').html(function(d) { return "<!-- d.content.additionalinfo-->" 
-		// + "<div style='height:13px; padding-left:.5em; border-radius: .35em; margin-bottom:5px; background-color:#ababab;width:"+d.content.complexity*100+"%'>Complexity: "+formatPercentage(d.content.complexity)+"</div>"
-		+ "<div class='bars'style='padding-left:.5em; border-radius: .35em; margin-bottom:5px; width:"+d.content.alignment*100+"%'>Alignment: "+formatPercentage(d.content.alignment)+"</div>"
-		+ "<div class='bars' style='padding-left:.5em; border-radius: .35em; margin-bottom:5px; width:"+d.content.complexity*100+"%'>Complexity: "+formatPercentage(d.content.complexity)+"</div>"				
-		+ "<div class='bars' style='padding-left:.5em; border-radius: .35em; margin-bottom:5px; width:"+d.content.orgvalue*100+"%'>Value: "+formatPercentage(d.content.orgvalue)+"</div>"
-		;})
-		.attr('class','addinfo')	
-		.attr('width','300px');
+	// tr.append('td').html(function(d) { return "<!-- d.content.additionalinfo-->" 
+	// 	// + "<div style='height:13px; padding-left:.5em; border-radius: .35em; margin-bottom:5px; background-color:#ababab;width:"+d.content.complexity*100+"%'>Complexity: "+formatPercentage(d.content.complexity)+"</div>"
+	// 	+ "<div class='bars'style='padding-left:.5em; border-radius: .35em; margin-bottom:5px; width:"+d.content.alignment*100+"%'>Alignment: "+formatPercentage(d.content.alignment)+"</div>"
+	// 	+ "<div class='bars' style='padding-left:.5em; border-radius: .35em; margin-bottom:5px; width:"+d.content.complexity*100+"%'>Complexity: "+formatPercentage(d.content.complexity)+"</div>"				
+	// 	+ "<div class='bars' style='padding-left:.5em; border-radius: .35em; margin-bottom:5px; width:"+d.content.orgvalue*100+"%'>Value: "+formatPercentage(d.content.orgvalue)+"</div>"
+	// 	;})
+	// 	.attr('class','addinfo')	
+	// 	.attr('width','300px');
 
 	tr.append('td').html(function(d) { 
 		if(d.content.grantbased == true){
