@@ -91,7 +91,7 @@ var str = JSON.stringify(blob1.feed.entry);
 	    .append('tr')
 	    .attr('class',function(d) {	return d.content.state; });
 
-	tr.append('td').html(function(d) { return '<b><a href="'+d.content.link+'">'+d.content.projectname+'</a> <i class="fas fa-external-link-square-alt"></i></b>'; })
+	tr.append('td').html(function(d) { return '<b><a href="'+d.content.link+'">'+d.content.projectname+'</a> <i class="fas fa-external-link-alt"></i></b>'; })
 		.on("mouseover", function(d) {		
 		            div.transition()		
 		                .duration(200)		
