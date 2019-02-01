@@ -41,18 +41,21 @@
 				</span>
 
 			</th>
-			<th  class="sortable hasTooltip" class="sortable" onclick="sortTable(1)">Sponsor <i class="fa fa-info-circle" aria-hidden="true"></i>
+			<th class="sortable" onclick="sortTable(1)">Grant</th>
+			<th  class="sortable hasTooltip" class="sortable" onclick="sortTable(2)">Sponsor <i class="fa fa-info-circle" aria-hidden="true"></i>
 				<span>
 					<p>The Project Sponsor is responsible for initiating projects, defining project goals, and approbation of planning documents at various validation checkpoints.</p>
 				</span>
-			</th>
-			<th class="sortable hasTooltip" onclick="sortTable(2)">Project Manager <i class="fa fa-info-circle" aria-hidden="true"></i>
-				<span>The Project Manager is responsible for all aspects of a project throughout all lifecycle states, ensuring a proper process flow and effective monitoring and control processes.</span>
 			</th>
 
 			<th class="sortable hasTooltip"onclick="sortTable(3)">Business Owner <i class="fa fa-info-circle" aria-hidden="true"></i>
 				<span>The business owner is responsible for providing functional expertise as it relates to the business impact of a new service or product. The business owner will be key in Scoping processes, the identification of influencer stakeholders, deliverable acceptance, and product service testing. Business owners will reliably contribute directly to project work.</span>
 			</th>
+
+			<th class="sortable hasTooltip" onclick="sortTable(4)">Project Manager <i class="fa fa-info-circle" aria-hidden="true"></i>
+				<span>The Project Manager is responsible for all aspects of a project throughout all lifecycle states, ensuring a proper process flow and effective monitoring and control processes.</span>
+			</th>
+
 <!-- 			<th class="sortable hasTooltip">Complexity <i class="fa fa-info-circle" aria-hidden="true"></i>
 				<span>The Complexity score represents the aggregated evaluation of teh project as it relates to anticipated OCSC expenditure, approximate duration, and cross-functional resource coordination.</span>
 			</th>
@@ -60,14 +63,14 @@
 			<th class="sortable hasTooltip">Value <i class="fa fa-info-circle" aria-hidden="true"></i>
 				<span>The Value score represents the aggregated evaluation of the project as it relates to strtegic alignment, public visibility, and capacity gains.</span>
 			</th> -->
-			<th class="sortable hasTooltip" onclick="sortTable(4)">Project Tier <i class="fa fa-info-circle" aria-hidden="true"></i>
+			<th class="sortable hasTooltip" onclick="sortTable(5)">Class <i class="fa fa-info-circle" aria-hidden="true"></i>
 				<span>Ordinal classification of projects based on relative complexity and value to the Libraries from 1 (smaller projects) to 3 (larger projects).</span>
 			</th>			
 <!-- 			<th>Business Owner</th> -->
 			<!-- <th>State</th> -->
 			<!-- <th>Link</th> -->
 
-			<th class="sortable hasTooltip" onclick="sortTable(5)">State <i class="fa fa-info-circle" aria-hidden="true"></i>
+			<th class="sortable hasTooltip" onclick="sortTable(6)">State <i class="fa fa-info-circle" aria-hidden="true"></i>
                  <span>
                  	<h4>STATES</h4>
 
@@ -118,25 +121,26 @@
 			<th>Scope</th>
 			<th>Time</th>
 			<th>Cost</th>
-			<th class="sortable hasTooltip" onclick="sortTable(9)">Type <i class="fa fa-info-circle" aria-hidden="true"></i>
+<!-- 			<th class="sortable hasTooltip" onclick="sortTable(9)">Type <i class="fa fa-info-circle" aria-hidden="true"></i>
 				<span>
 					<p>Digital Collections - Projects undertaken to create a unique products, services, or results in support of the Library’s preservation interests or the provisioning of presentation/access to digital library assets.</p>
 					<p>Scholarship - Projects undertaken to create a unique products, services, or results that directly serve partnerships with faculty and research scholars for the purposes of curriculum support or contextualization of scholarly assets and content.</p>
 					<p>Infrastructure - Projects undertaken to create a unique products, services, or results that enhance or improve the Libraries’ internal technological ecosystem.</p>
 					<p>Shared Collections - Projects undertaken to create a unique products, services, or results in support of external partnership and coalition development.</p>	
 				</span>
-			</th>			
+			</th> -->			
 			<th>Start</th>
 			<th>Planned End</th>			
 			<th>Deadline</th>
 			<th class="sortable" onclick="sortTable(13)">Progress</th>			
+			<!-- <th>progressB</th> -->
 			<!-- <th>Budget</th>
 			<th>Cost</th>
 			<th>FTE (Est.)</th>
 			<th>FTE (Act.)</th>	 -->
 
 			<!-- <th>Strategic Evaluation</th> -->
-			<th class="sortable" onclick="sortTable(14)">Grant</th>
+			<!-- <th class="sortable" onclick="sortTable(13)">Grant</th> -->
 		</tr>
 	</thead>
 	<tbody class="content">
@@ -150,7 +154,7 @@
 </body>
  <script src="js/script5.js"></script> <!-- TABLE -->
 <script src="js/sort.js"></script> <!-- Table Sorting -->
-
+<!-- <script src="js/percent.js"></script> -->
 <!-- <script src="js/script3.js"></script> BULLETS -->
 <script src="js/script4.js"></script> <!-- DOTS -->
 

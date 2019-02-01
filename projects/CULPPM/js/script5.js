@@ -105,6 +105,13 @@ var str = JSON.stringify(blob1.feed.entry);
 		                .duration(500)		
 		                .style("opacity", 0);	
 		        });
+	tr.append('td').html(function(d) { 
+		if(d.content.grantbased == true){
+			return "<i class='fas fa-check'></i>"; 
+		} else {
+			return null;
+		}
+	}).attr('class','granted');        
 	tr.append('td').html(function(d) { return d.content.sponsor; }).attr('class','sponsor');
 	tr.append('td').html(function(d) { return d.content.manager; }).attr('class','pm');
 	tr.append('td').html(function(d) { return d.content.businessowner; }).attr('class','businessowner');
@@ -193,9 +200,9 @@ var str = JSON.stringify(blob1.feed.entry);
 				(d.content.progress)
 				)
 			{ 
-				return "<div class='riskyStatus'>scope progress execution lag<div>"+
-				formatPercentage(((todaysDate - d.content.projectStart)/(d.content.plannedend - d.content.projectStart)))
-				+" > "+formatPercentage(d.content.progress)
+				return "<div class='riskyStatus'>"+d.content.state+"<div>"
+				// +formatPercentage(((todaysDate - d.content.projectStart)/(d.content.plannedend - d.content.projectStart)))
+				// +" > "+formatPercentage(d.content.progress)
 				;
 
 			} else if(
@@ -257,7 +264,7 @@ var str = JSON.stringify(blob1.feed.entry);
 			return "<i class='fas fa-check-circle blue'></i>"; 			
 		} else if (d.content.state == "Executing"){
 			if(((todaysDate - d.content.projectStart)/(d.content.plannedend - d.content.projectStart)) > (d.content.progress)){
-				return "<div class='hasTooltip'><i class='fas fa-exclamation-circle amber'></i><span>Planned Progress: "+formatPercentage(((todaysDate - d.content.projectStart)/(d.content.plannedend - d.content.projectStart)))+" > Actual Progress: "+formatPercentage(d.content.progress)+"</span></div>";
+				return "<div class='hasTooltip'><i class='fas fa-exclamation-circle amber'></i><span>Actual Progress: "+formatPercentage(d.content.progress)+" < Planned Progress: "+formatPercentage(((todaysDate - d.content.projectStart)/(d.content.plannedend - d.content.projectStart)))+"</span></div>";
 			} else {
 				return "<i class='fas fa-check-circle green'></i>";
 
@@ -326,7 +333,7 @@ var str = JSON.stringify(blob1.feed.entry);
 	}).attr('class','cost');
 
 
-	tr.append('td').html(function(d) { return d.content.type; }).attr('class','type');
+	// tr.append('td').html(function(d) { return d.content.type; }).attr('class','type');
 	tr.append('td').html(function(d) { 
 		if(d.content.projectStart != null){
 			return formatDate(d.content.projectStart);
@@ -346,11 +353,25 @@ var str = JSON.stringify(blob1.feed.entry);
 		}
 	})
 		.attr('class','deadline');	
+	// tr.append('td').html(function(d) { 
+	// 	if(d.content.progress > 0){
+	// 		// return formatPercentage(d.content.progress);
+	// 		return console.log(2 * Math.PI *15); 
+	// 	}
+	// }).attr('class','progress');
+
 	tr.append('td').html(function(d) { 
-		if(d.content.progress > 0){
-			return formatPercentage(d.content.progress); 
+		if(isNaN(d.content.progress)){
+			return null
+		} else {
+			return "<svg class='progresso'><circle class='circley' r='19'/><circle class='circleprogress' r='19' stroke-dasharray='"+(2 * Math.PI *19)+"' stroke-dashoffset='"+(2*Math.PI*19)*(1-d.content.progress)+"'  transform='rotate(270, 25, 25)'/><text class='progressingText' x='25' y='25'>"+formatPercentage(d.content.progress)+"</text></svg>"; 
 		}
-	}).attr('class','progress');
+	});
+
+
+
+
+
 	// tr.append('td').html(function(d) { return formatDollars(d.content.budgetestimate); }).attr('class','budget');
 	// tr.append('td').html(function(d) {
 	// 		if(d.content.actualcost > d.content.budgetestimate && d.content.budgetestimate != null && (d.content.state == "Executing" || d.content.closing == "Executing")){
@@ -379,13 +400,13 @@ var str = JSON.stringify(blob1.feed.entry);
 	// 	.attr('class','addinfo')	
 	// 	.attr('width','300px');
 
-	tr.append('td').html(function(d) { 
-		if(d.content.grantbased == true){
-			return "<i class='fas fa-check-circle'></i>"; 
-		} else {
-			return null;
-		}
-	});
+	// tr.append('td').html(function(d) { 
+	// 	if(d.content.grantbased == true){
+	// 		return "<i class='fas fa-check-circle'></i>"; 
+	// 	} else {
+	// 		return null;
+	// 	}
+	// });
 
 
 

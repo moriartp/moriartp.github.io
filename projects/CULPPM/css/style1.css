@@ -147,7 +147,8 @@ i.fa-check-circle{
 
 div.risky{
 	/*background-color: #FFB8A3;*/
-	color:#BC4C2B;
+	/*color:#BC4C2B;*/
+	color:black;
 	text-align:center;
 	padding:.35em;
 	font-weight: bold;
@@ -267,6 +268,7 @@ div.tieryStatus{
 	text-align:center;
 	border-radius: 5em;
 	padding:.35em;
+	font-size:1.25em;
 	width:10%;
 	font-weight: bold;
 	margin-left:24%;
@@ -287,8 +289,12 @@ td > i{
 
 td > div.hasTooltip i.fas{
 	font-size:1.5em;
-	margin:none;
+	/*padding:none;*/
 	/*text-align:center;*/
+}
+
+td.granted, td.scope, td.time, td.cost{
+	text-align:center;
 }
 
 i.blue{
@@ -580,13 +586,26 @@ td > .hasTooltip span {
     z-index: 1000000;
 }
 
-.hasTooltip:hover span {
+td .hasTooltip:hover span {
     display: block;
     position: absolute;
     background-color: #FFF;
     border: 1px solid #CCC;
-    margin: 5px 12px;
+    margin: -2.1em 2em;
+    padding:1em;
+    border-radius: 5px
 }
+
+th.hasTooltip:hover span {
+    display: block;
+    position: absolute;
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    margin: 1em 2em;
+    padding:1em;
+    border-radius: 5px
+}
+
 
 i.infoBlurb{
 	color:black;
@@ -649,3 +668,34 @@ i.infoBlurb{
 }
 
 /*TABLE TOOLTIP*//*TABLE TOOLTIP*//*TABLE TOOLTIP*//*TABLE TOOLTIP*//*TABLE TOOLTIP*//*TABLE TOOLTIP*//*TABLE TOOLTIP*/
+
+svg.progresso {
+	width:3em;
+	height:3em;
+}
+circle.circley{
+    fill:transparent;
+    stroke:lightgray;
+    stroke-width:7px;
+    r:19;
+    cx:25;
+    cy:25;
+}
+
+circle.circleprogress{
+    fill:transparent;
+    stroke:#248CA4;
+    stroke-width:7px;
+    r:19;
+    cx:25;
+    cy:25;
+}
+
+text.progressingText{
+	fill:black;
+	font-size: 11px;
+	text-anchor:middle;
+	alignment-baseline: central;
+	font-weight: bolder;
+
+}
