@@ -27,7 +27,8 @@ h1{
 }
 
 h2, h3, h4, h5{
-	margin:0px;
+	display:block;
+	margin:auto;
 	font-family: 'Helvetica Neue', monospace;
 	padding: 1vw;
 	padding-top: 2vw;
@@ -37,7 +38,6 @@ h2, h3, h4, h5{
 	font-stretch: ultra-expanded;
 	letter-spacing: 0.25em;
 	background-color: rgba(0,0,0,0.75);
-	margin:0px;
 	color:#AAA;
 
 }
@@ -79,6 +79,9 @@ section#B00, section#B01{
 }
 
 /*///GLOBAL CHIP PROPERTIES*/
+
+
+
 div.chip{
 
   	display:block;
@@ -97,11 +100,17 @@ div.chip{
     transition: all .1s ease-out;
 }
 
+div.Initiating, div.Planning, div.Archived{
+	display:none;
+}
+
 /*div.chip > */
 svg.viz{
-	width:100%);
-	height:100%);
-	border-right:.5 solid black;
+	width:400px;
+	height:100%;
+	border: none;
+	display:block;
+	margin: auto;
 }
 
 /*/////RESPONSIVE PROPERTIES*/
@@ -122,7 +131,7 @@ svg.viz{
 	}	
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1070px) {
 
 	div.chip{
 	  	width: 50vw;
@@ -131,7 +140,7 @@ svg.viz{
 	}
 }
 
-@media only screen and (max-width: 615px) {
+@media only screen and (max-width: 740px) {
 
 	div.chip{
 	  	width: 100vw;
@@ -220,3 +229,33 @@ text.descText{
 	/*alignment-baseline: central;	*/
 }
 
+circle.costBase{
+    fill:transparent;
+    stroke:lightgray;
+    stroke-width:1.25em;
+    r:40;
+    cx:340;
+    cy:60;	
+}
+
+circle.costCirc{
+    fill:transparent;
+    stroke:#248CA4;
+    stroke-width:1.25em;
+    r:40;
+    cx:340;
+    cy:60;	
+}
+text.costLabel{
+	text-anchor:middle;
+	fill:black;
+	/*alignment-baseline: central;	*/
+}
+
+text.costText{
+	fill:black;
+	font-size: 1.25em;
+	text-anchor:middle;
+	alignment-baseline: central;
+	font-weight: bolder;
+}

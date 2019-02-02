@@ -87,11 +87,11 @@ var str = JSON.stringify(blob1.feed.entry);
 	    .data(ppm).enter()
 	    .append('div')
 	    .style('background-color','whitesmoke')
-	    .attr('class','chip')
+	    .attr('class',function(d) {	return 'chip '+ d.content.state; })
 	    .attr('id', function(d) {	return d.title.$t; })
 
 	chip.append('h2')
-		.html(function(d) { return d.content.projectname })
+		.html(function(d) { return d.content.projectname+'<br>'+d.content.state })
 		// .style('background-color','lightpink');
 
 	chip.append('p')
@@ -102,7 +102,7 @@ var str = JSON.stringify(blob1.feed.entry);
 		.attr('class', 'viz')
 		.attr('width','100%')
 		.attr('height','87%')
-		.style('border','.5px solid black')
+		// .style('border','.5px solid black')
 		.html(function(d) { 
 			if(isNaN(d.content.progress)){
 				return null
@@ -114,8 +114,128 @@ var str = JSON.stringify(blob1.feed.entry);
 			}
 		});
 
+	var circs = section.selectAll('.viz')
+		.append('circle')
+		.attr('class','costBase')
+
+	var circs = section.selectAll('.viz')
+		.append('circle')
+		.attr('class','costCirc')
+		.attr('stroke-dasharray', function(d) { return (2 * Math.PI *40) })
+		.attr('stroke-dashoffset', function(d) { return (2 * Math.PI *40)*(1-(d.content.actualcost/d.content.budgetestimate)) })
+		.attr('transform', 'rotate(270, 340, 60)')
+
+	section.selectAll('.viz')
+		.append('text')
+		.attr('class','costText')
+		.html(function(d) { return formatPercentage(d.content.actualcost/d.content.budgetestimate) })
+		.attr('x','340')
+		.attr('y','60');
+
+	section.selectAll('.viz')
+		.append('text')
+		.attr('class','costLabel')
+		.html('cost')
+		.attr('x','340')
+		.attr('y','130');	
 
 
+	section.selectAll('.viz')
+		.append('rect')
+		.attr('class','durationBar')
+		.attr('width','100%')
+		.attr('height','45')
+		.attr('y','175')
+		.style('fill','lightgray')
+
+	section.selectAll('.viz')
+		.append('rect')
+		.attr('class','progressBar')
+		.attr('y','175')
+		.attr('width', function(d) { 
+				return formatPercentage(d.content.progress);
+			}) 
+		.attr('height','45')
+		.style('fill','#248CA4');
+
+	section.selectAll('.viz')
+		.append('rect')
+		.attr('class','todayBar')
+		.attr('y','150')
+		.attr('x', function(d) { 
+			if(((todaysDate - d.content.projectStart)/(d.content.plannedend - d.content.projectStart))>0 
+				&& ((todaysDate - d.content.projectStart)/(d.content.plannedend - d.content.projectStart) <1 )){
+				return formatPercentage((todaysDate - d.content.projectStart)/(d.content.plannedend - d.content.projectStart)) 
+				// return console.log(formatPercentage((todaysDate - d.content.projectStart)/(d.content.plannedend - d.content.projectStart))+" "+d.content.projectname)
+
+			; } else {
+				return '-100px'
+			}
+		}) 
+		.attr('width','5')
+		.attr('height','70')
+		.style('opacity','.5')
+		.style('fill','#26C34F');
+
+	section.selectAll('.viz')
+		.append('rect')
+		.attr('class','plannedEndBar')
+		.attr('y','175')
+		.attr('x', function(d) { 
+			if(console.log(isNaN(((d.content.plannedend - d.content.projectStart)/(d.content.deadline - d.content.projectStart) )))) {
+				return null
+			} else {
+				return formatPercentage((d.content.plannedend - d.content.projectStart)/(d.content.deadline - d.content.projectStart))
+			}
+		})
+		.attr('width','5')
+		.attr('height','70')
+		.style('opacity','.5')
+		.style('fill','coral');
+
+	section.selectAll('.viz')
+		.append('text')
+		.attr('class','barLabel')
+		.attr('x', function(d) { 
+			if(console.log(isNaN(((d.content.plannedend - d.content.projectStart)/(d.content.deadline - d.content.projectStart) )))) {
+				return null
+			} else {
+				return formatPercentage((d.content.plannedend - d.content.projectStart)/(d.content.deadline - d.content.projectStart)-.01)
+			}
+		})		
+		.html('Planned End')
+		.style('font-size','11px')
+		.style('text-anchor','end')
+		.attr('y','245');	
+
+	section.selectAll('.viz')
+		.append('text')
+		.attr('class','todayLabel')
+		.attr('x', function(d) { 
+			if(((todaysDate - d.content.projectStart)/(d.content.plannedend - d.content.projectStart))>0 
+				&& ((todaysDate - d.content.projectStart)/(d.content.plannedend - d.content.projectStart) <1 )){
+				return formatPercentage(0.02+(todaysDate - d.content.projectStart)/(d.content.plannedend - d.content.projectStart)); }
+			})	
+		.html('Today')
+		.style('font-size','11px')
+		.attr('y','160');
+
+	section.selectAll('.viz')
+		.append('text')
+		.attr('class','startLabel')
+		.attr('x', '0')
+		.html(function(d) { return formatDate(d.content.projectStart); })	
+		.style('font-size','11px')
+		.attr('y','170');
+
+	section.selectAll('.viz')
+		.append('text')
+		.attr('class','deadlineLabel')
+		.attr('x', '100%')
+		.html(function(d) { return formatDate(d.content.deadline); })	
+		.style('font-size','11px')
+		.attr('y','230')
+		.style('text-anchor','end');
 
    console.log("made it to the end");
 }); 
