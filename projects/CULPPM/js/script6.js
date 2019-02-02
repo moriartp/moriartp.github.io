@@ -148,28 +148,51 @@ var str = JSON.stringify(blob1.feed.entry);
 		.attr('y','175')
 		.style('fill','lightgray')
 
+	// section.selectAll('.viz')
+	// 	.append('rect')
+	// 	.attr('class','progressBar')
+	// 	.attr('y','175')
+	// 	.attr('width', function(d) { 
+	// 			return formatPercentage(d.content.progress);
+	// 		}) 
+	// 	.attr('height','45')
+	// 	.style('fill','#248CA4');
+
 	section.selectAll('.viz')
 		.append('rect')
-		.attr('class','progressBar')
+		.attr('class','deadBar')
 		.attr('y','175')
-		.attr('width', function(d) { 
-				return formatPercentage(d.content.progress);
-			}) 
-		.attr('height','45')
+		.attr('x', '98.75%')
+		.attr('width','5')
+		.attr('height','55')
+		.style('opacity','.5')
+		.style('fill','#FF4A32');
+
+	section.selectAll('.viz')
+		.append('rect')
+		.attr('class','startBar')
+		.attr('y','160')
+		.attr('x', '0')
+		.attr('width','5')
+		.attr('height','60')
+		.style('opacity','.5')
 		.style('fill','#248CA4');
+
+
+
 
 	section.selectAll('.viz')
 		.append('rect')
 		.attr('class','todayBar')
 		.attr('y','150')
 		.attr('x', function(d) { 
-			if(((todaysDate - d.content.projectStart)/(d.content.plannedend - d.content.projectStart))>0 
-				&& ((todaysDate - d.content.projectStart)/(d.content.plannedend - d.content.projectStart) <1 )){
-				return formatPercentage((todaysDate - d.content.projectStart)/(d.content.plannedend - d.content.projectStart)) 
+			if(((todaysDate - d.content.projectStart)/(d.content.deadline - d.content.projectStart))>0 
+				&& ((todaysDate - d.content.projectStart)/(d.content.deadline - d.content.projectStart) <1 )){
+				return formatPercentage((todaysDate - d.content.projectStart)/(d.content.deadline - d.content.projectStart)) 
 				// return console.log(formatPercentage((todaysDate - d.content.projectStart)/(d.content.plannedend - d.content.projectStart))+" "+d.content.projectname)
 
 			; } else {
-				return '-100px'
+				return '100%'
 			}
 		}) 
 		.attr('width','5')
@@ -212,18 +235,21 @@ var str = JSON.stringify(blob1.feed.entry);
 		.append('text')
 		.attr('class','todayLabel')
 		.attr('x', function(d) { 
-			if(((todaysDate - d.content.projectStart)/(d.content.plannedend - d.content.projectStart))>0 
-				&& ((todaysDate - d.content.projectStart)/(d.content.plannedend - d.content.projectStart) <1 )){
-				return formatPercentage(0.02+(todaysDate - d.content.projectStart)/(d.content.plannedend - d.content.projectStart)); }
-			})	
-		.html('Today')
+			if(((todaysDate - d.content.projectStart)/(d.content.deadline - d.content.projectStart))>0 
+				&& ((todaysDate - d.content.projectStart)/(d.content.deadline - d.content.projectStart) <1 )){
+				return formatPercentage(0.02+(todaysDate - d.content.projectStart)/(d.content.deadline - d.content.projectStart)); 
+			} else {
+				return "100%"
+			}
+		})	
+		.html(function(d) { return "Today "+formatPercentage((todaysDate - d.content.projectStart)/(d.content.plannedend - d.content.projectStart)) })
 		.style('font-size','11px')
 		.attr('y','160');
 
 	section.selectAll('.viz')
 		.append('text')
 		.attr('class','startLabel')
-		.attr('x', '0')
+		.attr('x', '2%')
 		.html(function(d) { return formatDate(d.content.projectStart); })	
 		.style('font-size','11px')
 		.attr('y','170');
@@ -231,7 +257,7 @@ var str = JSON.stringify(blob1.feed.entry);
 	section.selectAll('.viz')
 		.append('text')
 		.attr('class','deadlineLabel')
-		.attr('x', '100%')
+		.attr('x', '98%')
 		.html(function(d) { return formatDate(d.content.deadline); })	
 		.style('font-size','11px')
 		.attr('y','230')
