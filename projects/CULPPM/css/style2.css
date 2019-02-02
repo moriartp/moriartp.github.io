@@ -1,0 +1,222 @@
+*, html {
+    margin:0;
+    padding:0;  
+}
+
+
+body{
+	margin:0px;
+	font-family: 'Source Code Pro', monospace;
+	font-family: 'Montserrat', sans-serif;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+}
+
+
+/*BASE ELEMENT STYLING*/
+
+h1{
+	padding-top: 3vw;
+	margin:0px;
+	font-family: 'Helvetica Neue', monospace;
+	font-size: 2em;
+	font-weight: bolder;
+	text-transform: lowercase;
+	color:#fff;
+	border-bottom:1px solid white;
+}
+
+h2, h3, h4, h5{
+	margin:0px;
+	font-family: 'Helvetica Neue', monospace;
+	padding: 1vw;
+	padding-top: 2vw;
+	padding-bottom: 2vw;
+	font-weight: bolder;
+	text-transform: lowercase;
+	font-stretch: ultra-expanded;
+	letter-spacing: 0.25em;
+	background-color: rgba(0,0,0,0.75);
+	margin:0px;
+	color:#AAA;
+
+}
+
+p{
+	background-color: rgba(0,0,0,0.65);
+	color:#FFF;
+	font-weight: lighter;
+	padding:0px;
+	font-size:0px;
+
+    -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    -ms-transition: all .1s ease;
+    -o-transition: all .1s ease;
+    transition: all .1s ease;
+}
+
+a{
+	color:#F00;
+	text-decoration: none;
+}
+
+/*SECTION ID STYLING*/
+/*section#A00{
+	background-color: #000;
+	width:100vw;
+	height:80vh;
+	overflow: hidden;
+}*/
+
+section#B00, section#B01{
+	margin-top:5vh;
+	background-color: #001;
+	width:100vw;
+	height:auto;
+	margin:0px;
+	overflow: auto;
+}
+
+/*///GLOBAL CHIP PROPERTIES*/
+div.chip{
+
+  	display:block;
+  	float:left;
+  	margin:0px;
+  	overflow: hidden;
+  	background-color: #000;
+  	background-size: cover;
+  	background-position: center;
+  	background-repeat: no-repeat;
+
+    -webkit-transition: all .1s ease-out;
+    -moz-transition: all .1s ease-out;
+    -ms-transition: all .1s ease-out;
+    -o-transition: all .1s ease-out;
+    transition: all .1s ease-out;
+}
+
+/*div.chip > */
+svg.viz{
+	width:100%);
+	height:100%);
+	border-right:.5 solid black;
+}
+
+/*/////RESPONSIVE PROPERTIES*/
+@media only screen and (min-width: 1741px) {
+
+	div.chip{
+	  	width: 25vw;
+	  	height: 25vw;
+	}	
+}
+
+
+@media only screen and (max-width: 1740px) {
+
+	div.chip{
+	  	width: 33.333vw;
+	  	height: 33.333vw;
+	}	
+}
+
+@media only screen and (max-width: 1000px) {
+
+	div.chip{
+	  	width: 50vw;
+	  	height: 50vw;
+
+	}
+}
+
+@media only screen and (max-width: 615px) {
+
+	div.chip{
+	  	width: 100vw;
+	  	height: 100vw;
+
+	}
+}
+
+
+
+/*HOVER ANIMATIONS*/
+.chip:hover > h2.title{
+	color:#FFF;
+}
+
+.chip:hover > p.blurb{
+	font-size:1em;
+	padding:1vw;
+	padding-bottom: 100vw
+}
+
+
+/*SVG CIRCLES*/
+
+svg.progresso{
+	width:60px;
+	height:60px;
+	display:inline-block;	
+}
+circle.circley{
+    fill:transparent;
+    stroke:lightgray;
+    stroke-width:1.25em;
+    r:40;
+    cx:60;
+    cy:60;
+}
+
+circle.circleprogress{
+    fill:transparent;
+    stroke:#248CA4;
+    stroke-width:1.25em;
+    r:40;
+    cx:60;
+    cy:60;
+}
+
+text.progressingText{
+	fill:black;
+	font-size: 1.25em;
+	text-anchor:middle;
+	alignment-baseline: central;
+	font-weight: bolder;
+
+}
+
+circle.circlex{
+    fill:transparent;
+    stroke:lightgray;
+    stroke-width:1.25em;
+    r:40;
+    cx:200;
+    cy:60;
+}
+
+circle.circlesched{
+    fill:transparent;
+    stroke:#248CA4;
+    stroke-width:1.25em;
+    r:40;
+    cx:200;
+    cy:60;
+}
+
+text.schedulingText{
+	fill:black;
+	font-size: 1.25em;
+	text-anchor:middle;
+	alignment-baseline: central;
+	font-weight: bolder;
+
+}
+
+text.descText{
+	text-anchor:middle;
+	/*alignment-baseline: central;	*/
+}
+

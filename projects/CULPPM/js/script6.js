@@ -1,0 +1,122 @@
+var $url = "https://spreadsheets.google.com/feeds/list/1eewMgqHDN-fIrjZrYBuRaWztac2_Wvv4XZLnlkUpP5M/1/public/basic?alt=json"
+$.getJSON($url,function(blob1){
+console.log("hello");
+// console.log(blob1.feed.entry);
+
+
+// REGEX CLEANUP TO SET JSON KEY/VALUE PAIRS
+var str = JSON.stringify(blob1.feed.entry);
+ str = str.replace(/\"\$t\":\"sponsor: /g,"\"sponsor\":\"");
+ str = str.replace(/, businessowner: /g,"\", \"businessowner\":\"");
+ str = str.replace(/, projectname: /g,"\", \"projectname\":\"");
+ str = str.replace(/, description: /g,"\", \"description\":\"");
+ str = str.replace(/, link: /g,"\", \"link\":\"");
+ str = str.replace(/, type: /g,"\", \"type\":\"");
+ str = str.replace(/, state: /g,"\", \"state\":\"");
+ str = str.replace(/, manager: /g,"\", \"manager\":\"");
+ str = str.replace(/, start: /g,"\", \"projectStart\":\"");
+ str = str.replace(/, plannedend: /g,"\", \"plannedend\":\""); 
+ str = str.replace(/, deadline: /g,"\", \"deadline\":\"");
+ str = str.replace(/, progress: /g,"\", \"progress\":\"");
+ str = str.replace(/, state: /g,"\", \"state\":\"");
+ str = str.replace(/, alignment: /g,"\", \"alignment\":\"");
+ str = str.replace(/, value: /g,"\", \"orgvalue\":\"");
+ str = str.replace(/, complexity: /g,"\", \"complexity\":\""); 
+ str = str.replace(/, budgetestimate: /g,"\", \"budgetestimate\":\"");
+ str = str.replace(/, actualcost: /g,"\", \"actualcost\":\""); 
+ str = str.replace(/, unanticipatedpurchase: /g,"\", \"unanticipatedpurchase\":\"");
+ str = str.replace(/, fteestimate: /g,"\", \"fteestimate\":\"");
+ str = str.replace(/, fteactual: /g,"\", \"fteactual\":\"");
+ str = str.replace(/, additionalinfo: /g,"\", \"additionalinfo\":\""); 
+ str = str.replace(/, hold: /g,"\", \"hold\":\""); 
+ str = str.replace(/, technical: /g,"\", \"technical\":\""); 
+ str = str.replace(/, grantbased: /g,"\", \"grantbased\":\"");
+ str = str.replace(/, value1: /g,"\", \"value1\":\"");  
+ str = str.replace(/, value2: /g,"\", \"value2\":\"");   
+ str = str.replace(/, value3: /g,"\", \"value3\":\"");  
+ str = str.replace(/, complexity1: /g,"\", \"complexity1\":\"");  
+ str = str.replace(/, complexity2: /g,"\", \"complexity2\":\"");  
+ str = str.replace(/, complexity3: /g,"\", \"complexity3\":\"");  
+
+// CONVERT TO JSON
+ ppm = $.parseJSON(str);
+ console.log(ppm);
+
+// REFORMAT QUANT DATA ELEMENT (DATES,NUMBERS)
+ var dateParser = d3.timeParse("%d-%b-%y");
+
+     ppm.forEach(function(d) {
+        d.content.deadline = dateParser(d.content.deadline);
+        d.content.projectStart = dateParser(d.content.projectStart);
+        d.content.plannedend = dateParser(d.content.plannedend);
+        d.content.fteestimate = +d.content.fteestimate; 
+        d.content.fteactual = +d.content.fteactual; 
+        d.content.fteestimate = +d.content.fteestimate; 
+        d.content.fteestimate = +d.content.fteestimate;
+        d.content.progress = +d.content.progress;
+        d.content.alignment = +d.content.alignment;
+        d.content.complexity = +d.content.complexity;
+        d.content.orgvalue = +d.content.orgvalue;
+        d.content.budgetestimate = +d.content.budgetestimate;
+        d.content.actualcost = +d.content.actualcost;
+        d.content.progress = +d.content.progress;
+        d.content.grantbased = Boolean(d.content.grantbased === 'TRUE');
+        d.content.technical = Boolean(d.content.technical === "TRUE");       
+        d.content.hold = Boolean(d.content.hold === "TRUE");
+        d.content.unanticipatedpurchase = Boolean(d.content.unanticipatedpurchase === "TRUE");       
+        d.content.value1 = +d.content.value1;
+        d.content.value2 = +d.content.value2;
+        d.content.value3 = +d.content.value3;        
+        d.content.complexity1 = +d.content.complexity1;
+        d.content.complexity2 = +d.content.complexity2;
+        d.content.complexity3 = +d.content.complexity3;                
+    });
+
+
+
+
+   var todaysDate = new Date();
+   // console.log(todaysDate);
+   var formatDate = d3.timeFormat("%b %d, %Y");  
+   var formatPercentage = d3.format(",.0%");  
+   var formatDollars = d3.format("($,.2f");
+   var formatIntegers = d3.format(".2f");
+
+	var section = d3.select('#C00')
+	var chip = section.selectAll('div')
+	    .data(ppm).enter()
+	    .append('div')
+	    .style('background-color','whitesmoke')
+	    .attr('class','chip')
+	    .attr('id', function(d) {	return d.title.$t; })
+
+	chip.append('h2')
+		.html(function(d) { return d.content.projectname })
+		// .style('background-color','lightpink');
+
+	chip.append('p')
+		.html(function(d) { return d.content.description })
+		.attr('class', 'blurb');
+
+	chip.append('svg')
+		.attr('class', 'viz')
+		.attr('width','100%')
+		.attr('height','87%')
+		.style('border','.5px solid black')
+		.html(function(d) { 
+			if(isNaN(d.content.progress)){
+				return null
+			} else {
+			return "<circle class='circley' r='40'/><circle class='circleprogress' r='40' stroke-dasharray='"+(2 * Math.PI *40)+"' stroke-dashoffset='"+(2*Math.PI*40)*(1-d.content.progress)+"'  transform='rotate(270, 60, 60)'/><text class='progressingText' x='60' y='60'>"+formatPercentage(d.content.progress)+"</text><text x='30' y='130'>progress</text>"
+			+"<circle class='circlex' r='40'/><circle class='circlesched' r='40' stroke-dasharray='"+(2 * Math.PI *40)+"' stroke-dashoffset='"+(2*Math.PI*40)*(1-((todaysDate - d.content.projectStart)/(d.content.plannedend - d.content.projectStart)))+"'  transform='rotate(270, 200, 60)'/><text class='schedulingText' x='200' y='60'>"+formatPercentage(((todaysDate - d.content.projectStart)/(d.content.plannedend - d.content.projectStart)))+"</text><text class='descText' x='200' y='130'>schedule</text>"
+
+			; 
+			}
+		});
+
+
+
+
+   console.log("made it to the end");
+}); 
+// LEAVE THIS END BRACKET
