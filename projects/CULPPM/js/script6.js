@@ -107,7 +107,7 @@ var str = JSON.stringify(blob1.feed.entry);
 			if(isNaN(d.content.progress)){
 				return null
 			} else {
-			return "<circle class='circley' r='40'/><circle class='circleprogress' r='40' stroke-dasharray='"+(2 * Math.PI *40)+"' stroke-dashoffset='"+(2*Math.PI*40)*(1-d.content.progress)+"'  transform='rotate(270, 60, 60)'/><text class='progressingText' x='60' y='60'>"+formatPercentage(d.content.progress)+"</text><text x='30' y='130'>progress</text>"
+			return "<circle class='circley' r='40'/><circle class='circleprogress' r='40' stroke-dasharray='"+(2 * Math.PI *40)+"' stroke-dashoffset='"+(2*Math.PI*40)*(1-d.content.progress)+"'  transform='rotate(270, 60, 60)'/><text class='progressingText' x='60' y='60'>"+formatPercentage(d.content.progress)+"</text><text x='30' y='130'>scope</text>"
 			+"<circle class='circlex' r='40'/><circle class='circlesched' r='40' stroke-dasharray='"+(2 * Math.PI *40)+"' stroke-dashoffset='"+(2*Math.PI*40)*(1-((todaysDate - d.content.projectStart)/(d.content.plannedend - d.content.projectStart)))+"'  transform='rotate(270, 200, 60)'/><text class='schedulingText' x='200' y='60'>"+formatPercentage(((todaysDate - d.content.projectStart)/(d.content.plannedend - d.content.projectStart)))+"</text><text class='descText' x='200' y='130'>schedule</text>"
 
 			; 

@@ -31,8 +31,8 @@ h2, h3, h4, h5{
 	margin:auto;
 	font-family: 'Helvetica Neue', monospace;
 	padding: 1vw;
-	padding-top: 2vw;
-	padding-bottom: 2vw;
+/*	padding-top: 2vw;
+	padding-bottom: 2vw;*/
 	font-weight: bolder;
 	text-transform: lowercase;
 	font-stretch: ultra-expanded;
