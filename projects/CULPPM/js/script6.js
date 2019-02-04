@@ -264,5 +264,44 @@ var str = JSON.stringify(blob1.feed.entry);
 		.style('text-anchor','end');
 
    console.log("made it to the end");
-}); 
+
+
+// SPIDER SPIDER SPIDER// SPIDER SPIDER SPIDER// SPIDER SPIDER SPIDER// SPIDER SPIDER SPIDER// SPIDER SPIDER SPIDER
+
+	section.selectAll('.viz')
+		.append('line')
+		.style("stroke", "black")  // colour the line
+    	.attr("x1", '50%')     // x position of the first end of the line
+    	.attr("y1", '85%')      // y position of the first end of the line
+    	.attr("x2", "50%")     // x position of the second end of the line
+    	.attr("y2", '45%');    // y position of the second end of the line
+
+	section.selectAll('.viz')
+		.append('line')
+		.style("stroke", "black")  // colour the line
+    	.attr("x1", '10%')     // x position of the first end of the line
+    	.attr("y1", '65%')      // y position of the first end of the line
+    	.attr("x2", "90%")     // x position of the second end of the line
+    	.attr("y2", '65%');    // y position of the second end of the line
+
+
+
+
+
+
+ // END SPIDER SPIDER SPIDER // END SPIDER SPIDER SPIDER // END SPIDER SPIDER SPIDER // END SPIDER SPIDER SPIDER
+
+
+
+
+
+
+// LEAVE THIS END BRACKET// LEAVE THIS END BRACKET// LEAVE THIS END BRACKET// LEAVE THIS END BRACKET// LEAVE THIS END BRACKET
+});  //<---------------THIS ONE RIGHT HERE
 // LEAVE THIS END BRACKET
+
+
+
+
+
+
