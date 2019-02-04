@@ -91,11 +91,11 @@ var str = JSON.stringify(blob1.feed.entry);
 	    .attr('id', function(d) {	return d.title.$t; })
 
 	chip.append('h2')
-		.html(function(d) { return d.content.projectname+'<br>'+d.content.state })
+		.html(function(d) { return d.content.projectname })
 		// .style('background-color','lightpink');
 
 	chip.append('p')
-		.html(function(d) { return d.content.description })
+		.html(function(d) { return "Sponsor: "+d.content.sponsor +"<br>Business Owner: "+d.content.businessowner+"<br>Project Manager: "+d.content.manager+"<br>Type: "+d.content.type+"<br>State: "+d.content.state+"<br><br> Description: "+d.content.description })
 		.attr('class', 'blurb');
 
 	chip.append('svg')
@@ -164,17 +164,17 @@ var str = JSON.stringify(blob1.feed.entry);
 		.attr('y','175')
 		.attr('x', '98.75%')
 		.attr('width','5')
-		.attr('height','55')
+		.attr('height','70')
 		.style('opacity','.5')
 		.style('fill','#FF4A32');
 
 	section.selectAll('.viz')
 		.append('rect')
 		.attr('class','startBar')
-		.attr('y','160')
+		.attr('y','150')
 		.attr('x', '0')
 		.attr('width','5')
-		.attr('height','60')
+		.attr('height','70')
 		.style('opacity','.5')
 		.style('fill','#248CA4');
 
@@ -184,7 +184,7 @@ var str = JSON.stringify(blob1.feed.entry);
 	section.selectAll('.viz')
 		.append('rect')
 		.attr('class','todayBar')
-		.attr('y','150')
+		.attr('y','160')
 		.attr('x', function(d) { 
 			if(((todaysDate - d.content.projectStart)/(d.content.deadline - d.content.projectStart))>0 
 				&& ((todaysDate - d.content.projectStart)/(d.content.deadline - d.content.projectStart) <1 )){
@@ -196,7 +196,7 @@ var str = JSON.stringify(blob1.feed.entry);
 			}
 		}) 
 		.attr('width','5')
-		.attr('height','70')
+		.attr('height','60')
 		.style('opacity','.5')
 		.style('fill','#26C34F');
 
@@ -212,7 +212,7 @@ var str = JSON.stringify(blob1.feed.entry);
 			}
 		})
 		.attr('width','5')
-		.attr('height','70')
+		.attr('height','60')
 		.style('opacity','.5')
 		.style('fill','coral');
 
@@ -229,7 +229,7 @@ var str = JSON.stringify(blob1.feed.entry);
 		.html('Planned End')
 		.style('font-size','11px')
 		.style('text-anchor','end')
-		.attr('y','245');	
+		.attr('y','235');	
 
 	section.selectAll('.viz')
 		.append('text')
@@ -244,7 +244,7 @@ var str = JSON.stringify(blob1.feed.entry);
 		})	
 		.html(function(d) { return "Today "+formatPercentage((todaysDate - d.content.projectStart)/(d.content.plannedend - d.content.projectStart)) })
 		.style('font-size','11px')
-		.attr('y','160');
+		.attr('y','170');
 
 	section.selectAll('.viz')
 		.append('text')
@@ -252,7 +252,7 @@ var str = JSON.stringify(blob1.feed.entry);
 		.attr('x', '2%')
 		.html(function(d) { return formatDate(d.content.projectStart); })	
 		.style('font-size','11px')
-		.attr('y','170');
+		.attr('y','160');
 
 	section.selectAll('.viz')
 		.append('text')
@@ -260,7 +260,7 @@ var str = JSON.stringify(blob1.feed.entry);
 		.attr('x', '98%')
 		.html(function(d) { return formatDate(d.content.deadline); })	
 		.style('font-size','11px')
-		.attr('y','230')
+		.attr('y','245')
 		.style('text-anchor','end');
 
    console.log("made it to the end");

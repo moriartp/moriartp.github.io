@@ -156,7 +156,7 @@ svg.viz{
 	color:#FFF;
 }
 
-.chip:hover > p.blurb{
+h2:hover + p.blurb{
 	font-size:1em;
 	padding:1vw;
 	padding-bottom: 100vw
