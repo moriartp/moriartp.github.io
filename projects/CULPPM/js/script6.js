@@ -509,6 +509,71 @@ var str = JSON.stringify(blob1.feed.entry);
 		.style('text-anchor','middle');
 
 
+section.selectAll('.viz')
+		.append('rect')
+		.attr('class','valeBar')
+		.attr('width','400') 
+		.attr('height','25')
+		.attr('x','0')
+		.attr('y','650')
+		.style('fill','#ddd')
+
+	section.selectAll('.viz')
+		.append('rect')
+		.attr('class','valeBar')
+		.attr('width',function(d) { return (	(d.content.value1+d.content.value2+d.content.value3)/(d.content.complexity1+d.content.complexity2+d.content.complexity3+d.content.value1+d.content.value2+d.content.value3)
+			 )*200
+		;}) 
+		.attr('height','15')
+		.attr('x','200')
+		.attr('y','655')
+		.style('fill','#26C34F')
+
+	section.selectAll('.viz')
+		.append('rect')
+		.attr('class','valeBar')
+		.attr('width',function(d) { return (	(d.content.complexity1+d.content.complexity2+d.content.complexity3)/(d.content.complexity1+d.content.complexity2+d.content.complexity3+d.content.value1+d.content.value2+d.content.value3)
+			 )*200
+		;}) 
+		.attr('height','15')
+		.attr('x',function(d) { return (	200-((d.content.complexity1+d.content.complexity2+d.content.complexity3)/(d.content.complexity1+d.content.complexity2+d.content.complexity3+d.content.value1+d.content.value2+d.content.value3)
+			 )*200)
+		;}) 
+		.attr('y','655')
+		.style('fill','#FF4A32')		
+
+	section.selectAll('.viz')
+		.append('text')
+		.attr('class','scaleLabel')
+		.attr('x', function(d) { return 200+((	(d.content.value1+d.content.value2+d.content.value3)/(d.content.complexity1+d.content.complexity2+d.content.complexity3+d.content.value1+d.content.value2+d.content.value3)
+			 )*200)
+		// .html(function(d) { return "Visibility: "+d.content.value1; 
+		})	
+		.html(function(d) { return formatPercentage(	(d.content.value1+d.content.value2+d.content.value3)/(d.content.complexity1+d.content.complexity2+d.content.complexity3+d.content.value1+d.content.value2+d.content.value3)
+			 )
+		;}) 	
+		.style('font-size','.75em')
+		// .attr('transform','rotate(30,280,300)')
+		.attr('y','666')
+		.style('text-anchor','start');
+
+	section.selectAll('.viz')
+		.append('text')
+		.attr('class','scaleLabel')
+		.attr('x', function(d) { return 200-((	(d.content.complexity1+d.content.complexity2+d.content.complexity3)/(d.content.complexity1+d.content.complexity2+d.content.complexity3+d.content.value1+d.content.value2+d.content.value3)
+			 )*200)
+		// .html(function(d) { return "Visibility: "+d.content.value1; 
+		})	
+		.html(function(d) { return formatPercentage(	(d.content.complexity1+d.content.complexity2+d.content.complexity3)/(d.content.complexity1+d.content.complexity2+d.content.complexity3+d.content.value1+d.content.value2+d.content.value3)
+			 )
+		;}) 	
+		.style('font-size','.75em')
+		// .attr('transform','rotate(30,280,300)')
+		.attr('y','666')
+		.style('text-anchor','end');
+
+
+
  // END SPIDER SPIDER SPIDER // END SPIDER SPIDER SPIDER // END SPIDER SPIDER SPIDER // END SPIDER SPIDER SPIDER
 
 
