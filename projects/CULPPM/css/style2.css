@@ -114,7 +114,7 @@ svg.viz{
 }
 
 /*/////RESPONSIVE PROPERTIES*/
-@media only screen and (min-width: 1741px) {
+@media only screen and (min-width: 1901px) {
 
 	div.chip{
 	  	width: 25vw;
@@ -123,7 +123,7 @@ svg.viz{
 }
 
 
-@media only screen and (max-width: 1740px) {
+@media only screen and (max-width: 1900px) {
 
 	div.chip{
 	  	width: 33.333vw;
@@ -131,7 +131,7 @@ svg.viz{
 	}	
 }
 
-@media only screen and (max-width: 1070px) {
+@media only screen and (max-width: 1500px) {
 
 	div.chip{
 	  	width: 50vw;

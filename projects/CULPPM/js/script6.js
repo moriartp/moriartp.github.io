@@ -268,25 +268,239 @@ var str = JSON.stringify(blob1.feed.entry);
 
 // SPIDER SPIDER SPIDER// SPIDER SPIDER SPIDER// SPIDER SPIDER SPIDER// SPIDER SPIDER SPIDER// SPIDER SPIDER SPIDER
 
+	// section.selectAll('.viz')
+	// 	.append('line')
+	// 	.style("stroke", "black")  // colour the line
+ //    	.attr("x1", '50%')     // x position of the first end of the line
+ //    	.attr("y1", '86%')      // y position of the first end of the line
+ //    	.attr("x2", "50%")     // x position of the second end of the line
+ //    	.attr("y2", '44%');    // y position of the second end of the line
+
+	// section.selectAll('.viz')
+	// 	.append('line')
+	// 	.style("stroke", "black")  // colour the line
+ //    	.attr("x1", '10%')     // x position of the first end of the line
+ //    	.attr("y1", '66%')      // y position of the first end of the line
+ //    	.attr("x2", "90%")     // x position of the second end of the line
+ //    	.attr("y2", '66%');    // y position of the second end of the line
+
+	// section.selectAll('.viz')
+	// 	.append('line')
+	// 	.style("stroke", "black")  // colour the line
+ //    	.attr("x1", '25%')     // x position of the first end of the line
+ //    	.attr("y1", '50%')      // y position of the first end of the line
+ //    	.attr("x2", "75%")     // x position of the second end of the line
+ //    	.attr("y2", '82%');    // y position of the second end of the line
+
+	// section.selectAll('.viz')
+	// 	.append('line')
+	// 	.style("stroke", "black")  // colour the line
+ //    	.attr("x1", '75%')     // x position of the first end of the line
+ //    	.attr("y1", '50%')      // y position of the first end of the line
+ //    	.attr("x2", "25%")     // x position of the second end of the line
+ //    	.attr("y2", '82%');    // y position of the second end of the line
+	section.selectAll('.viz')
+		.append('circle')
+		.style("stroke", "gray")
+		.style('opacity', '.51')
+		.style('fill','#eee')  // colour the line
+    	.attr("cx", '200')     // x position of the first end of the line
+    	.attr("cy", '425')      // y position of the first end of the line
+  		.attr('r','150');
+
+	section.selectAll('.viz')
+		.append('circle')
+		.style("stroke", "darkgray")
+		// .style('opacity', '.1')
+		.style('fill','none')  // fill
+    	.attr("cx", '200')     // x position of the first end of the line
+    	.attr("cy", '425')      // y position of the first end of the line
+  		.attr('r','100');
+
+	section.selectAll('.viz')
+		.append('circle')
+		.style("stroke", "lightgray")
+		// .style('opacity', '.1')
+		.style('fill','none')  // colour the line
+    	.attr("cx", '200')     // x position of the first end of the line
+    	.attr("cy", '425')      // y position of the first end of the line
+  		.attr('r','50');
+
 	section.selectAll('.viz')
 		.append('line')
-		.style("stroke", "black")  // colour the line
-    	.attr("x1", '50%')     // x position of the first end of the line
-    	.attr("y1", '85%')      // y position of the first end of the line
-    	.attr("x2", "50%")     // x position of the second end of the line
-    	.attr("y2", '45%');    // y position of the second end of the line
+		.style("stroke", "lightgray")  // colour the line
+    	.attr("x1", '50')     // x position of the first end of the line
+    	.attr("y1", '425')      // y position of the first end of the line
+    	.attr("x2", '350')
+    	.attr("y2", '425')
+    	// .html(function(d) { return d.content.value1 *100;});
+    	.attr('transform', "rotate(-60,200,425)");  
 
 	section.selectAll('.viz')
 		.append('line')
-		.style("stroke", "black")  // colour the line
-    	.attr("x1", '10%')     // x position of the first end of the line
-    	.attr("y1", '65%')      // y position of the first end of the line
-    	.attr("x2", "90%")     // x position of the second end of the line
-    	.attr("y2", '65%');    // y position of the second end of the line
+		.style("stroke", "lightgray")  // colour the line
+    	.attr("x1", '50')     // x position of the first end of the line
+    	.attr("y1", '425')      // y position of the first end of the line
+    	.attr("x2", '350')
+    	.attr("y2", '425')
+    	// .html(function(d) { return d.content.value1 *100;});
+    	.attr('transform', "rotate(-120,200,425)"); 
+
+	section.selectAll('.viz')
+		.append('line')
+		.style("stroke", "lightgray")  // colour the line
+    	.attr("x1", '50')     // x position of the first end of the line
+    	.attr("y1", '425')      // y position of the first end of the line
+    	.attr("x2", '350')
+    	.attr("y2", '425')
+    	// .html(function(d) { return d.content.value1 *100;});
+    	.attr('transform', "rotate(120,200,425)");
+
+
+	section.selectAll('.viz')
+		.append('line')
+		.style("stroke", "lightgray")  // colour the line
+    	.attr("x1", '50')     // x position of the first end of the line
+    	.attr("y1", '425')      // y position of the first end of the line
+    	.attr("x2", '350')
+    	.attr("y2", '425');  
 
 
 
+	section.selectAll('.viz')
+		.append('line')
+		.style("stroke", "#248CA4")  // colour the line
+    	.style('stroke-width','5')
+    	.attr("x1", '200')     // x position of the first end of the line
+    	.attr("y1", '425')      // y position of the first end of the line
+    	.attr("x2", function(d) { return 200+d.content.value1 *50;})   // x position of the second end of the line
+    	.attr("y2", '425')
+    	// .html(function(d) { return d.content.value1 *100;});
+    	.attr('transform', "rotate(-60,200,425)");    // y position of the second end of the line
 
+    	section.selectAll('.viz')
+		.append('line')
+		.style("stroke", "#248CA4")  // colour the line
+    	.style('stroke-width','5')
+    	.attr("x1", '200')     // x position of the first end of the line
+    	.attr("y1", '425')      // y position of the first end of the line
+    	.attr("x2", function(d) { return 200+d.content.value2 *50;})   // x position of the second end of the line
+    	.attr("y2", '425')
+    	// .html(function(d) { return d.content.value1 *100;});
+    	.attr('transform', "rotate(0,200,425)");    // y position of the second end of the line	
+
+    	section.selectAll('.viz')
+		.append('line')
+		.style("stroke", "#248CA4")  // colour the line
+    	.style('stroke-width','5')
+    	.attr("x1", '200')     // x position of the first end of the line
+    	.attr("y1", '425')      // y position of the first end of the line
+    	.attr("x2", function(d) { return 200+d.content.value3 *50;})   // x position of the second end of the line
+    	.attr("y2", '425')
+    	// .html(function(d) { return d.content.value1 *100;});
+    	.attr('transform', "rotate(60,200,425)");    // y position of the second end of the line	
+
+	section.selectAll('.viz')
+		.append('line')
+		.style("stroke", "#248CA4")  // colour the line
+    	.style('stroke-width','5')
+    	.attr("x1", '200')     // x position of the first end of the line
+    	.attr("y1", '425')      // y position of the first end of the line
+    	.attr("x2", function(d) { return 200+d.content.complexity1 *50;})   // x position of the second end of the line
+    	.attr("y2", '425')
+    	// .html(function(d) { return d.content.value1 *100;});
+    	.attr('transform', "rotate(-120,200,425)");    // y position of the second end of the line
+
+    	section.selectAll('.viz')
+		.append('line')
+		.style("stroke", "#248CA4")  // colour the line
+		.style('stroke-width','5')
+    	.attr("x1", '200')     // x position of the first end of the line
+    	.attr("y1", '425')      // y position of the first end of the line
+    	.attr("x2", function(d) { return 200+d.content.complexity2 *50;})   // x position of the second end of the line
+    	.attr("y2", '425')
+    	// .html(function(d) { return d.content.value1 *100;});
+    	.attr('transform', "rotate(180,200,425)");    // y position of the second end of the line	
+
+    	section.selectAll('.viz')
+		.append('line')
+		.style("stroke", "#248CA4")  // colour the line
+    	.style('stroke-width','5')
+    	.attr("x1", '200')     // x position of the first end of the line
+    	.attr("y1", '425')      // y position of the first end of the line
+    	.attr("x2", function(d) { return 200+d.content.complexity3 *50;})   // x position of the second end of the line
+    	.attr("y2", '425')
+    	// .html(function(d) { return d.content.value1 *100;});
+    	.attr('transform', "rotate(120,200,425)");    // y position of the second end of the line	
+
+
+
+	section.selectAll('.viz')
+		.append('text')
+		.attr('class','deadlineLabel')
+		.attr('x', '280')
+		// .html(function(d) { return "Visibility: "+d.content.value1; })	
+		.html("Visibility")	
+		.style('font-size','.75em')
+		.attr('transform','rotate(30,280,300)')
+		.attr('y','290')
+		.style('text-anchor','middle');
+
+
+	section.selectAll('.viz')
+		.append('text')
+		.attr('class','deadlineLabel')
+		.attr('x', '355')
+		// .html(function(d) { return "Alignment: "+d.content.value2; })	
+		.html("Alignment")	
+		.style('font-size','.75em')
+		.attr('transform','rotate(90,355,425)')
+		.attr('y','425')
+		.style('text-anchor','middle');
+
+	section.selectAll('.viz')
+		.append('text')
+		.attr('class','deadlineLabel')
+		.attr('x', '275')
+		// .html(function(d) { return "Capacity: "+d.content.value2; })	
+		.html("Capacity")	
+		.style('font-size','.75em')
+		.attr('transform','rotate(-210,275,560)')
+		.attr('y','560')
+		.style('text-anchor','middle');
+
+	section.selectAll('.viz')
+		.append('text')
+		.attr('class','deadlineLabel')
+		.attr('x', '125')
+		// .html(function(d) { return "Cost: "+d.content.complexity3; })	
+		.html("Cost")	
+		.style('font-size','.75em')
+		.attr('transform','rotate(-150,125,560)')
+		.attr('y','560')
+		.style('text-anchor','middle');
+
+	section.selectAll('.viz')
+		.append('text')
+		.attr('class','deadlineLabel')
+		.attr('x', '120')
+		// .html(function(d) { return "Time: "+d.content.complexity1; })	
+		.html("Time")	
+		.style('font-size','.75em')
+		.attr('transform','rotate(-30,120,290)')
+		.attr('y','290')
+		.style('text-anchor','middle');
+
+	section.selectAll('.viz')
+		.append('text')
+		.attr('class','deadlineLabel')
+		.attr('x', '45')
+		// .html(function(d) { return "Resources: "+d.content.value2; })	
+		.html("Resources")	
+		.style('font-size','.75em')
+		.attr('transform','rotate(-90,45,425)')
+		.attr('y','425')
+		.style('text-anchor','middle');
 
 
  // END SPIDER SPIDER SPIDER // END SPIDER SPIDER SPIDER // END SPIDER SPIDER SPIDER // END SPIDER SPIDER SPIDER
