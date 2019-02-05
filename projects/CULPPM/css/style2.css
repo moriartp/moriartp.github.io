@@ -108,6 +108,7 @@ div.Initiating, div.Planning, div.Archived{
 svg.viz{
 	width:400px;
 	height:100%;
+	margin-top: 50px;
 	border: none;
 	display:block;
 	margin: auto;

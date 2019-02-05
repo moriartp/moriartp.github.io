@@ -369,67 +369,73 @@ var str = JSON.stringify(blob1.feed.entry);
 
 	section.selectAll('.viz')
 		.append('line')
-		.style("stroke", "#248CA4")  // colour the line
+		.style("stroke", "#26C34F")  // colour the line
     	.style('stroke-width','5')
     	.attr("x1", '200')     // x position of the first end of the line
     	.attr("y1", '425')      // y position of the first end of the line
     	.attr("x2", function(d) { return 200+d.content.value1 *50;})   // x position of the second end of the line
     	.attr("y2", '425')
+    	.attr('stroke-linecap','round')
     	// .html(function(d) { return d.content.value1 *100;});
     	.attr('transform', "rotate(-60,200,425)");    // y position of the second end of the line
 
     	section.selectAll('.viz')
 		.append('line')
-		.style("stroke", "#248CA4")  // colour the line
+		.style("stroke", "#26C34F")  // colour the line
     	.style('stroke-width','5')
     	.attr("x1", '200')     // x position of the first end of the line
     	.attr("y1", '425')      // y position of the first end of the line
     	.attr("x2", function(d) { return 200+d.content.value2 *50;})   // x position of the second end of the line
     	.attr("y2", '425')
+    	.attr('stroke-linecap','round')
     	// .html(function(d) { return d.content.value1 *100;});
     	.attr('transform', "rotate(0,200,425)");    // y position of the second end of the line	
 
     	section.selectAll('.viz')
 		.append('line')
-		.style("stroke", "#248CA4")  // colour the line
+		.style("stroke", "#26C34F")  // colour the line
     	.style('stroke-width','5')
     	.attr("x1", '200')     // x position of the first end of the line
     	.attr("y1", '425')      // y position of the first end of the line
     	.attr("x2", function(d) { return 200+d.content.value3 *50;})   // x position of the second end of the line
     	.attr("y2", '425')
+    	.attr('stroke-linecap','round')
     	// .html(function(d) { return d.content.value1 *100;});
     	.attr('transform', "rotate(60,200,425)");    // y position of the second end of the line	
 
 	section.selectAll('.viz')
 		.append('line')
-		.style("stroke", "#248CA4")  // colour the line
+		.style("stroke", "#FF4A32")  // colour the line
     	.style('stroke-width','5')
     	.attr("x1", '200')     // x position of the first end of the line
     	.attr("y1", '425')      // y position of the first end of the line
     	.attr("x2", function(d) { return 200+d.content.complexity1 *50;})   // x position of the second end of the line
     	.attr("y2", '425')
+    	.attr('stroke-linecap','round')
     	// .html(function(d) { return d.content.value1 *100;});
     	.attr('transform', "rotate(-120,200,425)");    // y position of the second end of the line
 
     	section.selectAll('.viz')
 		.append('line')
-		.style("stroke", "#248CA4")  // colour the line
+		.style("stroke", "#FF4A32")  // colour the line
 		.style('stroke-width','5')
     	.attr("x1", '200')     // x position of the first end of the line
     	.attr("y1", '425')      // y position of the first end of the line
     	.attr("x2", function(d) { return 200+d.content.complexity2 *50;})   // x position of the second end of the line
     	.attr("y2", '425')
+    	.attr('stroke-linecap','round')
     	// .html(function(d) { return d.content.value1 *100;});
     	.attr('transform', "rotate(180,200,425)");    // y position of the second end of the line	
 
     	section.selectAll('.viz')
 		.append('line')
-		.style("stroke", "#248CA4")  // colour the line
+		.style("stroke", "#FF4A32")  // colour the line
     	.style('stroke-width','5')
     	.attr("x1", '200')     // x position of the first end of the line
     	.attr("y1", '425')      // y position of the first end of the line
     	.attr("x2", function(d) { return 200+d.content.complexity3 *50;})   // x position of the second end of the line
     	.attr("y2", '425')
+    	.attr('stroke-linecap','round')
     	// .html(function(d) { return d.content.value1 *100;});
     	.attr('transform', "rotate(120,200,425)");    // y position of the second end of the line	
 
