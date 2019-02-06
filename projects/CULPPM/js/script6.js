@@ -332,14 +332,13 @@ var str = JSON.stringify(blob1.feed.entry);
 		.attr('class',"avgScore")
 		.style("stroke", "#248CA4")
 		.style("fill", "#248CA4")
-		.style("stroke-width","5")
-		.style('opacity','.25')
-		// .style("fill","none")
-    	.attr("cx", '200')     // x position of the first end of the line
-    	.attr("cy", '425')      // y position of the first end of the line
-  		.attr('r',function(d) { return ((d.content.complexity1+d.content.complexity2+d.content.complexity3+d.content.value1+d.content.value2+d.content.value3)/6)
-			 *50 });
-
+		.style("stroke-width","3")
+		// .style('opacity','.5')
+		.style("fill","none")
+    	.attr("cx", '200') 
+    	.attr("cy", '425')      
+    	.style("stroke-dasharray",10)
+  		.attr('r',function(d) { return ((d.content.complexity1+d.content.complexity2+d.content.complexity3+d.content.value1+d.content.value2+d.content.value3)/6)*50 });
 
 
 
