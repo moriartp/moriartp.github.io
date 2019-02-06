@@ -264,3 +264,10 @@ text.costText{
 .valeBar{
 	border-left: black;
 }
+
+.tierLabel{	
+	font-size:.5em;
+	vertical-align:center;
+	text-anchor:middle;
+	fill:gray;
+}

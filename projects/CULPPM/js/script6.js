@@ -326,6 +326,24 @@ var str = JSON.stringify(blob1.feed.entry);
     	.attr("cy", '425')      // y position of the first end of the line
   		.attr('r','50');
 
+
+	section.selectAll('.viz')
+		.append('circle')
+		.attr('class',"avgScore")
+		.style("stroke", "#248CA4")
+		.style("fill", "#248CA4")
+		.style("stroke-width","5")
+		.style('opacity','.25')
+		// .style("fill","none")
+    	.attr("cx", '200')     // x position of the first end of the line
+    	.attr("cy", '425')      // y position of the first end of the line
+  		.attr('r',function(d) { return ((d.content.complexity1+d.content.complexity2+d.content.complexity3+d.content.value1+d.content.value2+d.content.value3)/6)
+			 *50 });
+
+
+
+
+
 	section.selectAll('.viz')
 		.append('line')
 		.style("stroke", "lightgray")  // colour the line
@@ -500,8 +518,7 @@ var str = JSON.stringify(blob1.feed.entry);
 	section.selectAll('.viz')
 		.append('text')
 		.attr('class','deadlineLabel')
-		.attr('x', '45')
-		// .html(function(d) { return "Resources: "+d.content.value2; })	
+		.attr('x', '45')	
 		.html("Resources")	
 		.style('font-size','.75em')
 		.attr('transform','rotate(-90,45,425)')
@@ -549,7 +566,7 @@ section.selectAll('.viz')
 			 )*200)
 		// .html(function(d) { return "Visibility: "+d.content.value1; 
 		})	
-		.html(function(d) { return formatPercentage(	(d.content.value1+d.content.value2+d.content.value3)/(d.content.complexity1+d.content.complexity2+d.content.complexity3+d.content.value1+d.content.value2+d.content.value3)
+		.html(function(d) { return " "+formatPercentage(	(d.content.value1+d.content.value2+d.content.value3)/(d.content.complexity1+d.content.complexity2+d.content.complexity3+d.content.value1+d.content.value2+d.content.value3)
 			 )
 		;}) 	
 		.style('font-size','.75em')
@@ -560,17 +577,59 @@ section.selectAll('.viz')
 	section.selectAll('.viz')
 		.append('text')
 		.attr('class','scaleLabel')
-		.attr('x', function(d) { return 200-((	(d.content.complexity1+d.content.complexity2+d.content.complexity3)/(d.content.complexity1+d.content.complexity2+d.content.complexity3+d.content.value1+d.content.value2+d.content.value3)
-			 )*200)
-		// .html(function(d) { return "Visibility: "+d.content.value1; 
-		})	
-		.html(function(d) { return formatPercentage(	(d.content.complexity1+d.content.complexity2+d.content.complexity3)/(d.content.complexity1+d.content.complexity2+d.content.complexity3+d.content.value1+d.content.value2+d.content.value3)
-			 )
-		;}) 	
+		.attr('x', function(d) { return 200-((	(d.content.complexity1+d.content.complexity2+d.content.complexity3)/(d.content.complexity1+d.content.complexity2+d.content.complexity3+d.content.value1+d.content.value2+d.content.value3))*200)	})	
+		.html(function(d) { return " "+formatPercentage(	(d.content.complexity1+d.content.complexity2+d.content.complexity3)/(d.content.complexity1+d.content.complexity2+d.content.complexity3+d.content.value1+d.content.value2+d.content.value3)+" ")	;}) 	
 		.style('font-size','.75em')
-		// .attr('transform','rotate(30,280,300)')
 		.attr('y','666')
 		.style('text-anchor','end');
+
+	section.selectAll('.viz')
+		.append('text')
+		.attr('class','scaleLabel')
+		.attr('x', '100%')
+		// .html(function(d) { return "Alignment: "+d.content.value2; })	
+		.html("Value")	
+		.style('font-size','.75em')
+		.attr('y','690')
+		.style('text-anchor','end');
+
+	section.selectAll('.viz')
+		.append('text')
+		.attr('class','scaleLabel')
+		.attr('x', '0')
+		// .html(function(d) { return "Alignment: "+d.content.value2; })	
+		.html("Complexity")	
+		.style('font-size','.75em')
+		.attr('y','690')
+		.style('text-anchor','start');
+
+	section.selectAll('.viz')
+		.append('text')
+    	.attr("x", '200')     // x position of the first end of the line
+    	.attr("y", function(d) { return 443+((d.content.complexity1+d.content.complexity2+d.content.complexity3+d.content.value1+d.content.value2+d.content.value3)/6) *50 })      // y position of the first end of the line
+    	.attr("text-anchor","middle")
+  		.text(function(d) { return formatIntegers((d.content.complexity1+d.content.complexity2+d.content.complexity3+d.content.value1+d.content.value2+d.content.value3)/6) });
+
+	section.selectAll('.viz')
+		.append('text')
+		.attr('class','tierLabel')
+		.text("1")
+		.attr('y','378')
+		.attr('x','200')
+	section.selectAll('.viz')
+		.append('text')
+		.attr('class','tierLabel')
+		.text("2")
+		.attr('y','328')
+		.attr('x','200');
+	section.selectAll('.viz')
+		.append('text')
+		.attr('class','tierLabel')
+		.text("3")
+		.attr('y','278')
+		.attr('x','200');
+
+
 
 
 
