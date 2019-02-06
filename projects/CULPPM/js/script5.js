@@ -240,18 +240,17 @@ var str = JSON.stringify(blob1.feed.entry);
 			} else if(
 				(
 					(d.content.fteactual <= d.content.fteestimate && d.content.fteestimate != null)	&&
-					(d.content.actualcost <= d.content.budgetestimate && d.content.budgetestimate != null) &&
+					(d.content.unanticipatedpurchase == true && d.content.unanticipatedpurchase != null) &&
 					(d.content.plannedend <= d.content.deadline && d.content.deadline != null) &&
 					(d.content.progress == 1)
 
-				) &&
-				(d.content.state == "Closing")
+				) && (d.content.state == "Closing")
 
 				)
 			{
 				return "<div class='targetStatus'>"+d.content.state+"<div>";
 			} else {
-				return "<div class='unknownStatus'>Undetermined..."+d.content.state+"<div>";
+				return "<div class='unknownStatus'>"+d.content.state+"<div>";
 			} 
 
 
