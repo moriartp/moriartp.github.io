@@ -266,14 +266,14 @@ var str = JSON.stringify(blob1.feed.entry);
 			if(((todaysDate - d.content.projectStart)/(d.content.plannedend - d.content.projectStart)) > (d.content.progress)){
 				return "<div class='hasTooltip'><i class='fas fa-exclamation-circle amber'></i><span>Actual Progress: "+formatPercentage(d.content.progress)+" < Planned Progress: "+formatPercentage(((todaysDate - d.content.projectStart)/(d.content.plannedend - d.content.projectStart)))+"</span></div>";
 			} else {
-				return "<i class='fas fa-check-circle green'></i>";
+				return "<div class='hasTooltip'><i class='fas fa-check-circle green'></i><span>On Target</span>";
 
 			}
 		} else if (d.content.state == "Closing"){
 			if(d.content.progress < 1){
 				return "<div class='hasTooltip'><i class='fas fa-exclamation-circle red'></i><span>Actual Progress: "+formatPercentage(d.content.progress)+" < 100%</span></div>";
 			} else {
-				return "<i class='fas fa-check-circle green'></i>";
+				return "<div class='hasTooltip'><i class='fas fa-check-circle green'></i><span>On Target</span>";
 			}
 		} else {
 			return "<i class='fas fa-check-circle gray'></i>";
@@ -285,22 +285,22 @@ var str = JSON.stringify(blob1.feed.entry);
 			return "<i class='fas fa-check-circle blue'></i>" 			
 		} else if (d.content.state == "Executing"){
 			if(todaysDate > d.content.deadline){
-				return "<i class='fas fa-exclamation-circle red'></i>";
+				return "<div class='hasTooltip'><i class='fas fa-exclamation-circle red'></i><span>Breach: Deadline ("+formatDate(d.content.deadline)+") < Today</span></div>";
 			}
 			else if(d.content.plannedend > d.content.deadline){
-				return "<i class='fas fa-exclamation-circle amber'></i>";
+				return "<div class='hasTooltip'><i class='fas fa-exclamation-circle amber'></i><span>At Risk: Deadline ("+formatDate(d.content.deadline)+") < Planned End"+formatDate(d.content.plannedend)+"</span></div>";
 			}
-			else if(d.content.plannedend > d.content.deadline){
-				return "<i class='fas fa-exclamation-circle amber'></i>";
+			else if(d.content.plannedend < todaysDate){
+				return "<div class='hasTooltip'><i class='fas fa-exclamation-circle amber'></i><span>At Risk: Planned End ("+formatDate(d.content.deadline)+") < Today</span></div>";
 			} else {
-				return "<i class='fas fa-check-circle green'></i>";
+				return "<div class='hasTooltip'><i class='fas fa-check-circle green'></i><span>On Target</span></div>";
 
 			}
 		} else if(d.content.state == "Closing"){
 			if(todaysDate > d.content.deadline || d.content.plannedend > d.content.deadline){
-				return "<i class='fas fa-exclamation-circle red'></i>";				
+				return "<div class='hasTooltip'><i class='fas fa-exclamation-circle red'></i><span>Deadline Breach</span>";				
 			} else {
-				return "<i class='fas fa-check-circle green'></i>";
+				return "<div class='hasTooltip'><i class='fas fa-check-circle green'></i><span>On Target</span></div>";
 			}
 		} else {
 			return "<i class='fas fa-check-circle gray'></i>";
@@ -314,16 +314,16 @@ var str = JSON.stringify(blob1.feed.entry);
 			return "<i class='fas fa-check-circle blue'></i>" 			
 		} else if (d.content.state == "Executing"){
 			if(d.content.unanticipatedpurchase == true){
-				return "<i class='fas fa-exclamation-circle amber'></i>";
+				return "<div class='hasTooltip'><i class='fas fa-exclamation-circle amber'></i><span>Unanticipated Purchase Required</span></div>";
 			} else {
-				return "<i class='fas fa-check-circle green'></i>";
+				return "<div class='hasTooltip'><i class='fas fa-check-circle green'></i><span>On Target</span></div>";
 			}
 
 		} else if (d.content.state == "Closing"){
 			if(d.content.unanticipatedpurchase == true){
-				return "<i class='fas fa-exclamation-circle red'></i>"
+				return "<div class='hasTooltip'><i class='fas fa-exclamation-circle red'></i><span>Breach: Unresolved Procurement</span></div>"
 			} else {
-				return "<i class='fas fa-check-circle green'></i>";
+				return "<div class='hasTooltip'><i class='fas fa-check-circle green'></i><span>On Target</span></div>";
 			}
 		} else {
 			return "<i class='fas fa-check-circle gray'></i>";

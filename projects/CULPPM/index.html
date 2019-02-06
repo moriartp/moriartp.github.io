@@ -83,13 +83,13 @@
                     <p>Executing<br>
                     <i class="infoBlurb">Projects in the Executing stage are focussed on value creation efforts, building toward project deliverables. Additionally focused on providing work performance metrics for monitoring and control purposes.</i></p>
 
-                    <p>Closing<br>
+                    <p><b>Closing</b><br>
                     <i class="infoBlurb">Projects in the Closing stage are focused on transitions to service, and gathering insights for future process improvement efforts.</i></p>
 
-                    <p>Archived<br>
+                    <p><b>Archived</b><br>
                     <i class="infoBlurb">Projects in the Archived stage represent that completed effort and may serve of historical records and organization assets for reference in future effort and planning.</i></p>
 
-                    <h4>STATUS</h4>
+                    <!-- <h4>STATUS</h4>
 
                     <i class="fas fa-square sq1"></i><b> Initiating</b><br>
                     <i class="infoBlurb">Articulation and framing of project goals in progress.</i>
@@ -114,13 +114,41 @@
                     <i class="infoBlurb">100% of planned work completed and project has been archived.</i></p>
 
                     <p><i class="fas fa-square sq7"></i> Canceled<br>
-                    <i class="infoBlurb">Archived projects were less than 100% of work is completed, and remaining work will NOT be pursued.</i></p>
+                    <i class="infoBlurb">Archived projects were less than 100% of work is completed, and remaining work will NOT be pursued.</i></p> -->
 
                 </span>
             </th>
-			<th>Scope</th>
-			<th>Time</th>
-			<th>Cost</th>
+			<th class="sortable hasTooltip" onclick="sortTable(7)">Scope <i class="fa fa-info-circle" aria-hidden="true"></i>
+                 <span>
+                 	<p><i class='fas fa-check-circle blue'></i> Pending</br>Project currently being initiated, is currently 'in planning', or has been place 'On Hold'.</p>
+                 	<p><i class='fas fa-check-circle green'></i> On Target</br>Expectations are currently satisfied</p>
+                 	<p><i class='fas fa-exclamation-circle amber'></i> At Risk</br>Work progress is not currently keeping pace with the project schedule.</p>                 	
+                 	<p><i class='fas fa-exclamation-circle red'></i> Breach</br>Project is in Closing state but work is not yet complete.</p>
+                 	<p><i class='fas fa-check-circle gray'></i> Archived</br>Project is in archive, part of historical record.</p>                 	
+                 </span>
+                 </th>
+
+			<th class="sortable hasTooltip" onclick="sortTable(8)">Time <i class="fa fa-info-circle" aria-hidden="true"></i>
+                 <span>
+                 	<p><i class='fas fa-check-circle blue'></i> Pending</br>Project currently being initiated, is currently 'in planning', or has been place 'On Hold'.</p>
+                 	<p><i class='fas fa-check-circle green'></i> On Target</br>Expectations are currently satisfied</p>
+                 	<p><i class='fas fa-exclamation-circle amber'></i> At Risk</br>The planned end is no longer valid. Corrective action is required or deadline will be breached.</p>                 	
+                 	<p><i class='fas fa-exclamation-circle red'></i> Breach</br>Deadline is breached.</p>
+                 	<p><i class='fas fa-check-circle gray'></i> Archived</br>Project is in archive, part of historical record.</p>                 	
+                 </span>
+                 </th>
+
+			<th class="sortable hasTooltip" onclick="sortTable(9)">Cost <i class="fa fa-info-circle" aria-hidden="true"></i>
+                 <span>
+                 	<p><i class='fas fa-check-circle blue'></i> Pending</br>Project currently being initiated, is currently 'in planning', or has been place 'On Hold'.</p>
+                 	<p><i class='fas fa-check-circle green'></i> On Target</br>Expectations are currently satisfied</p>
+                 	<p><i class='fas fa-exclamation-circle amber'></i> At Risk</br>Additional, unplanned procurements may be required.</p>
+                 	<p><i class='fas fa-exclamation-circle red'></i> Breach</br>Project is closing and unanticipated procurement needs are not resolved.</p>
+                 	<p><i class='fas fa-check-circle gray'></i> Archived</br>Project is in archive, part of historical record.</p>                 	
+                 </span>
+                 </th>
+			<!-- <th>Time</th> -->
+			<!-- <th>Cost</th> -->
 <!-- 			<th class="sortable hasTooltip" onclick="sortTable(9)">Type <i class="fa fa-info-circle" aria-hidden="true"></i>
 				<span>
 					<p>Digital Collections - Projects undertaken to create a unique products, services, or results in support of the Library’s preservation interests or the provisioning of presentation/access to digital library assets.</p>

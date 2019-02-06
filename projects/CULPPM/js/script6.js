@@ -102,6 +102,7 @@ var str = JSON.stringify(blob1.feed.entry);
 		.attr('class', 'viz')
 		.attr('width','100%')
 		.attr('height','87%')
+		.attr('margin-top','200px')
 		// .style('border','.5px solid black')
 		.html(function(d) { 
 			if(isNaN(d.content.progress)){

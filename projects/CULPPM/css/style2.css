@@ -108,46 +108,62 @@ div.Initiating, div.Planning, div.Archived{
 svg.viz{
 	width:400px;
 	height:100%;
-	margin-top: 50px;
+	/*margin-top: 50px;*/
 	border: none;
 	display:block;
-	margin: auto;
+	margin: 0 auto;
+	/*margin-top: 50px;*/
 }
 
 /*/////RESPONSIVE PROPERTIES*/
-@media only screen and (min-width: 1901px) {
+@media only screen and (min-width: 1826px) {
 
 	div.chip{
-	  	width: 25vw;
-	  	height: 35vw;
+	  	width: 24.8vw;
+	  	height: 45vw;
+	  	border-right:.05vw solid gray;
 	}	
 }
 
 
-@media only screen and (max-width: 1900px) {
+@media only screen and (max-width: 1825px) {
 
 	div.chip{
-	  	width: 33.333vw;
-	  	height: 43.333vw;
+	  	width: 33.3vw;
+	  	height: 50.333vw;
+	  	border-right:.033vw solid gray;
 	}	
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1550px) {
 
 	div.chip{
-	  	width: 50vw;
+	  	width: 49.9vw;
 	  	height: 60vw;
+	  	border-right:.05vw solid gray;
 
 	}
 }
 
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 1300px) {
 
 	div.chip{
 	  	width: 100vw;
 	  	height: 100vw;
 
 	}
+
+/*@media only screen and (max-width: 750px) {
+
+	div.chip{
+	  	width: 100vw;
+	  	height: 150vw;
+
+	}*/
+
+
+
+
 }
 
 
