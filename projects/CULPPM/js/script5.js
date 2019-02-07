@@ -107,7 +107,7 @@ var str = JSON.stringify(blob1.feed.entry);
 		        });
 	tr.append('td').html(function(d) { 
 		if(d.content.grantbased == true){
-			return "<i class='fas fa-check'></i>"; 
+			return "<i class='fas fa-file-invoice-dollar'></i>"; 
 		} else {
 			return null;
 		}
@@ -287,7 +287,7 @@ var str = JSON.stringify(blob1.feed.entry);
 				return "<div class='hasTooltip'><i class='fas fa-exclamation-circle red'></i><span>Breach: Deadline ("+formatDate(d.content.deadline)+") < Today</span></div>";
 			}
 			else if(d.content.plannedend > d.content.deadline){
-				return "<div class='hasTooltip'><i class='fas fa-exclamation-circle amber'></i><span>At Risk: Deadline ("+formatDate(d.content.deadline)+") < Planned End"+formatDate(d.content.plannedend)+"</span></div>";
+				return "<div class='hasTooltip'><i class='fas fa-exclamation-circle amber'></i><span>At Risk: Deadline ("+formatDate(d.content.deadline)+") < Planned End ("+formatDate(d.content.plannedend)+")</span></div>";
 			}
 			else if(d.content.plannedend < todaysDate){
 				return "<div class='hasTooltip'><i class='fas fa-exclamation-circle amber'></i><span>At Risk: Planned End ("+formatDate(d.content.deadline)+") < Today</span></div>";
@@ -297,7 +297,7 @@ var str = JSON.stringify(blob1.feed.entry);
 			}
 		} else if(d.content.state == "Closing"){
 			if(todaysDate > d.content.deadline || d.content.plannedend > d.content.deadline){
-				return "<div class='hasTooltip'><i class='fas fa-exclamation-circle red'></i><span>Deadline Breach</span>";				
+				return "<div class='hasTooltip'><i class='fas fa-exclamation-circle red'></i><span>Deadline Breached</span>";				
 			} else {
 				return "<div class='hasTooltip'><i class='fas fa-check-circle green'></i><span>On Target</span></div>";
 			}
