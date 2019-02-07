@@ -411,6 +411,7 @@ var str = JSON.stringify(blob1.feed.entry);
 
     	section.selectAll('.viz')
 		.append('line')
+		.attr('id','test')
 		.style("stroke", "#26C34F")  // colour the line
     	.style('stroke-width','5')
     	.attr("x1", '200')     // x position of the first end of the line
