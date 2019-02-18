@@ -5,7 +5,7 @@
 <style>
 
 body {
-  font: 10px sans-serif;
+  font: 7.5px sans-serif;
 }
 
 .axis path,
@@ -46,7 +46,7 @@ body {
 
 .hover-text {
   stroke: none;
-  font-size: 30px;
+  font-size: 10px;
   font-weight: bold;
   fill: #000000;
 }
@@ -101,10 +101,10 @@ var yAxis = d3.svg.axis()
     .orient("left");  
 
 var line = d3.svg.line()
-    .interpolate("basis")
+    .interpolate("linear")
     .x(function(d) { return xScale(d.date); })
-    .y(function(d) { return yScale(d.rating); })
-    .defined(function(d) { return d.rating; });  // Hiding line value defaults of 0 for missing data
+    .y(function(d) { return yScale(d.rating); });
+    // .defined(function(d) { return d.rating; });  // Hiding line value defaults of 0 for missing data
 
 var maxY; // Defined later to update yAxis
 
@@ -139,7 +139,7 @@ svg.append("defs")
 
 //end slider part----------------------------------------------------------------------------------- 
 
-d3.tsv("data.tsv", function(error, data) { 
+d3.tsv("data1.tsv", function(error, data) { 
   color.domain(d3.keys(data[0]).filter(function(key) { // Set the domain of the color ordinal scale to be all the csv headers except "date", matching a color to an issue
     return key !== "date"; 
   }));
@@ -165,7 +165,7 @@ d3.tsv("data.tsv", function(error, data) {
   xScale.domain(d3.extent(data, function(d) { return d.date; })); // extent = highest and lowest points, domain is data, range is bouding box
 
   yScale.domain([0, 100
-    //d3.max(categories, function(c) { return d3.max(c.values, function(v) { return v.rating; }); })
+    // d3.max(categories, function(c) { return d3.max(c.values, function(v) { return v.rating; }); })
   ]);
 
   xScale2.domain(xScale.domain()); // Setting a duplicate xdomain for brushing reference later
@@ -217,7 +217,7 @@ d3.tsv("data.tsv", function(error, data) {
       .attr("x", -10)
       .attr("dy", ".71em")
       .style("text-anchor", "end")
-      .text("Issues Rating");
+      .text("AP Points");
 
   var issue = svg.selectAll(".issue")
       .data(categories) // Select nested data and append to new svg group elements
@@ -237,13 +237,13 @@ d3.tsv("data.tsv", function(error, data) {
       .style("stroke", function(d) { return color(d.name); });
 
   // draw legend
-  var legendSpace = 450 / categories.length; // 450/number of issues (ex. 40)    
+  var legendSpace = 475 / categories.length; // 450/number of issues (ex. 40)    
 
   issue.append("rect")
       .attr("width", 10)
       .attr("height", 10)                                    
       .attr("x", width + (margin.right/3) - 15) 
-      .attr("y", function (d, i) { return (legendSpace)+i*(legendSpace) - 8; })  // spacing
+      .attr("y", function (d, i) { return (legendSpace)+i*(legendSpace) - 7; })  // spacing
       .attr("fill",function(d) {
         return d.visible ? color(d.name) : "#F1F1F2"; // If array key "visible" = true then color rect, if not then make it grey 
       })
