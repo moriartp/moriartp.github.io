@@ -1,6 +1,6 @@
 var URL = "https://app.celoxis.com/psa/api/v2/projects";
 var projects;
-var token = "XXX" // <==== Insert auth token here
+var token = "xxx" // <==== Insert auth token here
 
 $.ajax({
 	url: URL,
@@ -20,7 +20,7 @@ $.ajax({
 		"<h5>planned finish: "+d.plannedFinish+"</h5>"+
 		"<h5>state: "+d.state+"</h5>"+ 
 		"<h5>type: "+d.type +"</h5>"+
-		"<h5>%complete: "+d.actualPercentComplete+"%</h5>"+
+		"<h5>%complete: "+d.actualPercentComplete+"%</h5>"+	
 		"<h5>sched health: "+d.scheduleHealth+"</h5>"+ 
 		"<h5>budget: "+d.budgetHealth+"</h5>"+
 		"<h5>risk: "+d.risk+"</h5>"+
