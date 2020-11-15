@@ -1,0 +1,9 @@
+div#cont02{
+	width: 75%;
+	height:300px;
+	background-color: lightyellow;
+}
+
+rect {
+	fill: green;
+}
