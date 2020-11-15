@@ -9,6 +9,13 @@ $( document ).ready(function() {
 //   });	
 // ///////////////////////
 
+      var div = d3.select("#div_basicResize").append("div")
+          .attr("class", "tooltip")
+          .style("opacity", 0);
+
+
+
+
       // Initialize a SVG area. Note that the width is not specified yet, since unknown
       var Svg = d3.select("#div_basicResize")
         .append("svg")
@@ -22,7 +29,7 @@ $( document ).ready(function() {
 
       // Add X axis. Note that we don't know the range yet, so we cannot draw it.
       var x = d3.scaleLinear()
-        .domain([0, 700])
+        .domain([0, 650])
       var xAxis = Svg.append("g")
         .attr("transform", "translate(0,150)")
 
@@ -37,8 +44,20 @@ $( document ).ready(function() {
           .style("stroke", "#0EAD69")
           .style("opacity", ".5")
           .attr("r", 5)
-          .attr("cy", 100)
-
+          .attr("cy", 140)
+           .on("mouseover", function(event,d) {
+             div.transition()
+               .duration(200)
+               .style("opacity", .9);
+             div.html(d.player + "<br/>" + d.stat+ " yards passing")
+               .style("left", (event.pageX) - 75 +"px")
+               .style("top", (event.pageY - 50) + "px");
+             })
+           .on("mouseout", function(d) {
+             div.transition()
+               .duration(500)
+               .style("opacity", 0);
+             });
 
       // A function that finishes to draw the chart for a specific device size.
       function drawChart() {
@@ -54,10 +73,6 @@ $( document ).ready(function() {
         // Add the last information needed for the circles: their X position
         myCircles
           .attr("cx", function(d){ return x(d.stat)})
-          // .html("<div>hello</div>")
-
-        myText
-          .attr("x", function(d){ return x(d.stat)})
           // .html("<div>hello</div>")
 
         }
