@@ -49,9 +49,9 @@ $( document ).ready(function() {
              div.transition()
                .duration(200)
                .style("opacity", .9);
-             div.html(d.player + "<br/>" + d.stat+ " yards passing")
+             div.html(d.player +"<br>"+d.team +"<br/>" + d.stat+ " yards passing")
                .style("left", (event.pageX) - 75 +"px")
-               .style("top", (event.pageY - 50) + "px");
+               .style("top", (event.pageY - 60) + "px");
              })
            .on("mouseout", function(d) {
              div.transition()
@@ -67,7 +67,7 @@ $( document ).ready(function() {
         Svg.attr("width", currentWidth)
 
         // Update the X scale and Axis (here the 20 is just to have a bit of margin)
-        x.range([ 20, currentWidth-20 ]);
+        x.range([ 50, currentWidth-50 ]);
         xAxis.call(d3.axisBottom(x))
 
         // Add the last information needed for the circles: their X position
