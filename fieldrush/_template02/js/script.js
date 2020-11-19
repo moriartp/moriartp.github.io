@@ -31,7 +31,7 @@ $( document ).ready(function() {
       var x = d3.scaleLinear()
         .domain([0, 650])
       var xAxis = Svg.append("g")
-        .attr("transform", "translate(0,150)")
+        .attr("transform", "translate(0,50)")
 
       // Initialize circles. Note that the X scale is not available yet, so we cannot draw them
       var myCircles = Svg
@@ -44,7 +44,7 @@ $( document ).ready(function() {
           .style("stroke", "#0EAD69")
           .style("opacity", ".5")
           .attr("r", 5)
-          .attr("cy", 140)
+          .attr("cy", 40)
            .on("mouseover", function(event,d) {
              div.transition()
                .duration(200)
