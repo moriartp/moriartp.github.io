@@ -9,30 +9,30 @@ $( document ).ready(function() {
 d3.json("data/secTalent.json", function(error, data) {
   if (error) throw error;
 
-  console.log(data);
+  // console.log(data);
 
-//   d3.select("#chart")
-//     .attr("width","400")
-//     .attr("height","20")
-//     .style("background-color","white")
-//     .selectAll('rect')
-//       .data(data)         
-//       .enter()          
-//       .append('circle')
-//       .attr('r', function(d) {  return d.totalRating/5; })
-//       .attr('cx', function(d) {  return (5-d.averageStars)*(5-d.averageStars) * 100; })
-//       .attr('cy', "150")
-//       .style("opacity", ".2")
-//       .style('fill','seagreen')
+  d3.select("#chart")
+    .attr("width","400")
+    .attr("height","20")
+    .style("background-color","white")
+    .selectAll('rect')
+      .data(data)         
+      .enter()          
+      .append('circle')
+      .attr('r', function(d) {  return d.totalRating/5; })
+      .attr('cx', function(d) {  return (5-d.averageStars)*(5-d.averageStars) * 100; })
+      .attr('cy', "150")
+      .style("opacity", ".2")
+      .style('fill','seagreen')
 
   let group = data.reduce((r, a) => {
-    console.log("a", a);
-    console.log('r', r);
+    // console.log("a", a);
+    // console.log('r', r);
     r[a.team] = [...r[a.team] || [], a];
     return r;
     }, {});
     
-    // console.log("group", group);
+    console.log("group", group);
 
 ////////////////////
   console.log("Defensive Back Rating: "+group.Alabama[0].averageStars);
