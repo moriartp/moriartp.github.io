@@ -1,0 +1,1136 @@
+[
+  {
+    "team": "Alabama",
+    "conference": "SEC",
+    "positionGroup": "Defensive Back",
+    "averageRating": 0.940800008020903,
+    "totalRating": 17.8752,
+    "commits": 19,
+    "averageStars": 3.8947368421052633
+  },
+  {
+    "team": "Alabama",
+    "conference": "SEC",
+    "positionGroup": "Defensive Line",
+    "averageRating": 0.955236003398895,
+    "totalRating": 23.8809,
+    "commits": 25,
+    "averageStars": 4.2
+  },
+  {
+    "team": "Alabama",
+    "conference": "SEC",
+    "positionGroup": "Linebacker",
+    "averageRating": 0.955869239110213,
+    "totalRating": 12.4263,
+    "commits": 13,
+    "averageStars": 4.153846153846154
+  },
+  {
+    "team": "Alabama",
+    "conference": "SEC",
+    "positionGroup": "Offensive Line",
+    "averageRating": 0.935016668505139,
+    "totalRating": 16.8303,
+    "commits": 18,
+    "averageStars": 4
+  },
+  {
+    "team": "Alabama",
+    "conference": "SEC",
+    "positionGroup": "Quarterback",
+    "averageRating": 0.895687505602837,
+    "totalRating": 7.1655,
+    "commits": 8,
+    "averageStars": 3.75
+  },
+  {
+    "team": "Alabama",
+    "conference": "SEC",
+    "positionGroup": "Receiver",
+    "averageRating": 0.918450001213286,
+    "totalRating": 16.5321,
+    "commits": 18,
+    "averageStars": 3.7222222222222223
+  },
+  {
+    "team": "Alabama",
+    "conference": "SEC",
+    "positionGroup": "Running Back",
+    "averageRating": 0.935054546052759,
+    "totalRating": 10.2856,
+    "commits": 11,
+    "averageStars": 3.909090909090909
+  },
+  {
+    "team": "Alabama",
+    "conference": "SEC",
+    "positionGroup": "Special Teams",
+    "averageRating": 0.88135556379954,
+    "totalRating": 7.9322,
+    "commits": 9,
+    "averageStars": 3.444444444444444
+  },
+  {
+    "team": "Arkansas",
+    "conference": "SEC",
+    "positionGroup": "Defensive Back",
+    "averageRating": 0.869770589996787,
+    "totalRating": 14.7861,
+    "commits": 17,
+    "averageStars": 3.2941176470588234
+  },
+  {
+    "team": "Arkansas",
+    "conference": "SEC",
+    "positionGroup": "Defensive Line",
+    "averageRating": 0.8779142839568,
+    "totalRating": 18.4362,
+    "commits": 21,
+    "averageStars": 3.2857142857142856
+  },
+  {
+    "team": "Arkansas",
+    "conference": "SEC",
+    "positionGroup": "Linebacker",
+    "averageRating": 0.85070625692606,
+    "totalRating": 13.6113,
+    "commits": 16,
+    "averageStars": 3.0625
+  },
+  {
+    "team": "Arkansas",
+    "conference": "SEC",
+    "positionGroup": "Offensive Line",
+    "averageRating": 0.848100003268984,
+    "totalRating": 15.2658,
+    "commits": 18,
+    "averageStars": 3
+  },
+  {
+    "team": "Arkansas",
+    "conference": "SEC",
+    "positionGroup": "Quarterback",
+    "averageRating": 0.867657142026084,
+    "totalRating": 6.0736,
+    "commits": 7,
+    "averageStars": 3.4285714285714284
+  },
+  {
+    "team": "Arkansas",
+    "conference": "SEC",
+    "positionGroup": "Receiver",
+    "averageRating": 0.877264282533101,
+    "totalRating": 12.2817,
+    "commits": 14,
+    "averageStars": 3.357142857142857
+  },
+  {
+    "team": "Arkansas",
+    "conference": "SEC",
+    "positionGroup": "Running Back",
+    "averageRating": 0.879183332125346,
+    "totalRating": 5.2751,
+    "commits": 6,
+    "averageStars": 3.1666666666666665
+  },
+  {
+    "team": "Arkansas",
+    "conference": "SEC",
+    "positionGroup": "Special Teams",
+    "averageRating": 0.857400000095367,
+    "totalRating": 5.1444,
+    "commits": 6,
+    "averageStars": 3.1666666666666665
+  },
+  {
+    "team": "Auburn",
+    "conference": "SEC",
+    "positionGroup": "Defensive Back",
+    "averageRating": 0.887033331394196,
+    "totalRating": 13.3055,
+    "commits": 15,
+    "averageStars": 3.466666666666667
+  },
+  {
+    "team": "Auburn",
+    "conference": "SEC",
+    "positionGroup": "Defensive Line",
+    "averageRating": 0.92143683370791,
+    "totalRating": 17.5073,
+    "commits": 19,
+    "averageStars": 3.736842105263158
+  },
+  {
+    "team": "Auburn",
+    "conference": "SEC",
+    "positionGroup": "Linebacker",
+    "averageRating": 0.894859997431437,
+    "totalRating": 13.4229,
+    "commits": 15,
+    "averageStars": 3.6
+  },
+  {
+    "team": "Auburn",
+    "conference": "SEC",
+    "positionGroup": "Offensive Line",
+    "averageRating": 0.900058339039485,
+    "totalRating": 10.8007,
+    "commits": 12,
+    "averageStars": 3.4166666666666665
+  },
+  {
+    "team": "Auburn",
+    "conference": "SEC",
+    "positionGroup": "Quarterback",
+    "averageRating": 0.891124993562698,
+    "totalRating": 3.5645,
+    "commits": 4,
+    "averageStars": 3.75
+  },
+  {
+    "team": "Auburn",
+    "conference": "SEC",
+    "positionGroup": "Receiver",
+    "averageRating": 0.904804995656013,
+    "totalRating": 18.0961,
+    "commits": 20,
+    "averageStars": 3.6
+  },
+  {
+    "team": "Auburn",
+    "conference": "SEC",
+    "positionGroup": "Running Back",
+    "averageRating": 0.917074993252754,
+    "totalRating": 7.3366,
+    "commits": 8,
+    "averageStars": 3.875
+  },
+  {
+    "team": "Auburn",
+    "conference": "SEC",
+    "positionGroup": "Special Teams",
+    "averageRating": 0.894894112558926,
+    "totalRating": 15.2132,
+    "commits": 17,
+    "averageStars": 3.588235294117647
+  },
+  {
+    "team": "Florida",
+    "conference": "SEC",
+    "positionGroup": "Defensive Back",
+    "averageRating": 0.902948000431061,
+    "totalRating": 22.5737,
+    "commits": 25,
+    "averageStars": 3.52
+  },
+  {
+    "team": "Florida",
+    "conference": "SEC",
+    "positionGroup": "Defensive Line",
+    "averageRating": 0.9180500023067,
+    "totalRating": 14.6888,
+    "commits": 16,
+    "averageStars": 4
+  },
+  {
+    "team": "Florida",
+    "conference": "SEC",
+    "positionGroup": "Linebacker",
+    "averageRating": 0.890069241707142,
+    "totalRating": 11.5709,
+    "commits": 13,
+    "averageStars": 3.3846153846153846
+  },
+  {
+    "team": "Florida",
+    "conference": "SEC",
+    "positionGroup": "Offensive Line",
+    "averageRating": 0.889500004053116,
+    "totalRating": 17.79,
+    "commits": 20,
+    "averageStars": 3.5
+  },
+  {
+    "team": "Florida",
+    "conference": "SEC",
+    "positionGroup": "Quarterback",
+    "averageRating": 0.885714284011296,
+    "totalRating": 6.2,
+    "commits": 7,
+    "averageStars": 3.4285714285714284
+  },
+  {
+    "team": "Florida",
+    "conference": "SEC",
+    "positionGroup": "Receiver",
+    "averageRating": 0.917944994568825,
+    "totalRating": 18.3589,
+    "commits": 20,
+    "averageStars": 3.65
+  },
+  {
+    "team": "Florida",
+    "conference": "SEC",
+    "positionGroup": "Running Back",
+    "averageRating": 0.886583318312963,
+    "totalRating": 5.3195,
+    "commits": 6,
+    "averageStars": 3.3333333333333335
+  },
+  {
+    "team": "Florida",
+    "conference": "SEC",
+    "positionGroup": "Special Teams",
+    "averageRating": 0.850675001740456,
+    "totalRating": 3.4027,
+    "commits": 4,
+    "averageStars": 3
+  },
+  {
+    "team": "Georgia",
+    "conference": "SEC",
+    "positionGroup": "Defensive Back",
+    "averageRating": 0.920550006628037,
+    "totalRating": 18.411,
+    "commits": 20,
+    "averageStars": 3.8
+  },
+  {
+    "team": "Georgia",
+    "conference": "SEC",
+    "positionGroup": "Defensive Line",
+    "averageRating": 0.925242861111959,
+    "totalRating": 19.4301,
+    "commits": 21,
+    "averageStars": 3.9523809523809526
+  },
+  {
+    "team": "Georgia",
+    "conference": "SEC",
+    "positionGroup": "Linebacker",
+    "averageRating": 0.94912307537519,
+    "totalRating": 12.3386,
+    "commits": 13,
+    "averageStars": 4.076923076923077
+  },
+  {
+    "team": "Georgia",
+    "conference": "SEC",
+    "positionGroup": "Offensive Line",
+    "averageRating": 0.928777266632427,
+    "totalRating": 20.4331,
+    "commits": 22,
+    "averageStars": 3.8636363636363638
+  },
+  {
+    "team": "Georgia",
+    "conference": "SEC",
+    "positionGroup": "Quarterback",
+    "averageRating": 0.919983337322871,
+    "totalRating": 5.5199,
+    "commits": 6,
+    "averageStars": 4
+  },
+  {
+    "team": "Georgia",
+    "conference": "SEC",
+    "positionGroup": "Receiver",
+    "averageRating": 0.924780953498114,
+    "totalRating": 19.4204,
+    "commits": 21,
+    "averageStars": 3.857142857142857
+  },
+  {
+    "team": "Georgia",
+    "conference": "SEC",
+    "positionGroup": "Running Back",
+    "averageRating": 0.941550001502037,
+    "totalRating": 7.5324,
+    "commits": 8,
+    "averageStars": 4
+  },
+  {
+    "team": "Georgia",
+    "conference": "SEC",
+    "positionGroup": "Special Teams",
+    "averageRating": 0.864924997091293,
+    "totalRating": 6.9194,
+    "commits": 8,
+    "averageStars": 3.375
+  },
+  {
+    "team": "Kentucky",
+    "conference": "SEC",
+    "positionGroup": "Defensive Back",
+    "averageRating": 0.86608125641942,
+    "totalRating": 13.8573,
+    "commits": 16,
+    "averageStars": 3.0625
+  },
+  {
+    "team": "Kentucky",
+    "conference": "SEC",
+    "positionGroup": "Defensive Line",
+    "averageRating": 0.869176194781349,
+    "totalRating": 18.2527,
+    "commits": 21,
+    "averageStars": 3.238095238095238
+  },
+  {
+    "team": "Kentucky",
+    "conference": "SEC",
+    "positionGroup": "Linebacker",
+    "averageRating": 0.862344437175327,
+    "totalRating": 7.7611,
+    "commits": 9,
+    "averageStars": 3.3333333333333335
+  },
+  {
+    "team": "Kentucky",
+    "conference": "SEC",
+    "positionGroup": "Offensive Line",
+    "averageRating": 0.865788886944453,
+    "totalRating": 15.5842,
+    "commits": 18,
+    "averageStars": 3.2222222222222223
+  },
+  {
+    "team": "Kentucky",
+    "conference": "SEC",
+    "positionGroup": "Quarterback",
+    "averageRating": 0.850700012275151,
+    "totalRating": 5.9549,
+    "commits": 7,
+    "averageStars": 3
+  },
+  {
+    "team": "Kentucky",
+    "conference": "SEC",
+    "positionGroup": "Receiver",
+    "averageRating": 0.854570588644813,
+    "totalRating": 14.5277,
+    "commits": 17,
+    "averageStars": 3
+  },
+  {
+    "team": "Kentucky",
+    "conference": "SEC",
+    "positionGroup": "Running Back",
+    "averageRating": 0.872242859431675,
+    "totalRating": 6.1057,
+    "commits": 7,
+    "averageStars": 3.142857142857143
+  },
+  {
+    "team": "Kentucky",
+    "conference": "SEC",
+    "positionGroup": "Special Teams",
+    "averageRating": 0.856230767873617,
+    "totalRating": 11.131,
+    "commits": 13,
+    "averageStars": 3.230769230769231
+  },
+  {
+    "team": "LSU",
+    "conference": "SEC",
+    "positionGroup": "Defensive Back",
+    "averageRating": 0.945677777131399,
+    "totalRating": 17.0222,
+    "commits": 18,
+    "averageStars": 4.055555555555555
+  },
+  {
+    "team": "LSU",
+    "conference": "SEC",
+    "positionGroup": "Defensive Line",
+    "averageRating": 0.913565381215169,
+    "totalRating": 23.7527,
+    "commits": 26,
+    "averageStars": 3.6538461538461537
+  },
+  {
+    "team": "LSU",
+    "conference": "SEC",
+    "positionGroup": "Linebacker",
+    "averageRating": 0.919841676950455,
+    "totalRating": 11.0381,
+    "commits": 12,
+    "averageStars": 3.8333333333333335
+  },
+  {
+    "team": "LSU",
+    "conference": "SEC",
+    "positionGroup": "Offensive Line",
+    "averageRating": 0.901894443564945,
+    "totalRating": 16.2341,
+    "commits": 18,
+    "averageStars": 3.5
+  },
+  {
+    "team": "LSU",
+    "conference": "SEC",
+    "positionGroup": "Quarterback",
+    "averageRating": 0.878871432372502,
+    "totalRating": 6.1521,
+    "commits": 7,
+    "averageStars": 3.4285714285714284
+  },
+  {
+    "team": "LSU",
+    "conference": "SEC",
+    "positionGroup": "Receiver",
+    "averageRating": 0.92264705545762,
+    "totalRating": 15.685,
+    "commits": 17,
+    "averageStars": 3.8823529411764706
+  },
+  {
+    "team": "LSU",
+    "conference": "SEC",
+    "positionGroup": "Running Back",
+    "averageRating": 0.917400010994503,
+    "totalRating": 6.4218,
+    "commits": 7,
+    "averageStars": 3.857142857142857
+  },
+  {
+    "team": "LSU",
+    "conference": "SEC",
+    "positionGroup": "Special Teams",
+    "averageRating": 0.859455565611521,
+    "totalRating": 7.7351,
+    "commits": 9,
+    "averageStars": 3.2222222222222223
+  },
+  {
+    "team": "Mississippi State",
+    "conference": "SEC",
+    "positionGroup": "Defensive Back",
+    "averageRating": 0.870537497103214,
+    "totalRating": 13.9286,
+    "commits": 16,
+    "averageStars": 3.125
+  },
+  {
+    "team": "Mississippi State",
+    "conference": "SEC",
+    "positionGroup": "Defensive Line",
+    "averageRating": 0.883561107847426,
+    "totalRating": 15.9041,
+    "commits": 18,
+    "averageStars": 3.444444444444444
+  },
+  {
+    "team": "Mississippi State",
+    "conference": "SEC",
+    "positionGroup": "Linebacker",
+    "averageRating": 0.886800014972687,
+    "totalRating": 4.434,
+    "commits": 5,
+    "averageStars": 3.2
+  },
+  {
+    "team": "Mississippi State",
+    "conference": "SEC",
+    "positionGroup": "Offensive Line",
+    "averageRating": 0.860946671168009,
+    "totalRating": 12.9142,
+    "commits": 15,
+    "averageStars": 3.1333333333333333
+  },
+  {
+    "team": "Mississippi State",
+    "conference": "SEC",
+    "positionGroup": "Quarterback",
+    "averageRating": 0.881100010871887,
+    "totalRating": 4.4055,
+    "commits": 5,
+    "averageStars": 3.6
+  },
+  {
+    "team": "Mississippi State",
+    "conference": "SEC",
+    "positionGroup": "Receiver",
+    "averageRating": 0.857085717575891,
+    "totalRating": 11.9992,
+    "commits": 14,
+    "averageStars": 3.0714285714285716
+  },
+  {
+    "team": "Mississippi State",
+    "conference": "SEC",
+    "positionGroup": "Running Back",
+    "averageRating": 0.904233336448669,
+    "totalRating": 2.7127,
+    "commits": 3,
+    "averageStars": 3.6666666666666665
+  },
+  {
+    "team": "Mississippi State",
+    "conference": "SEC",
+    "positionGroup": "Special Teams",
+    "averageRating": 0.856792862926211,
+    "totalRating": 11.9951,
+    "commits": 14,
+    "averageStars": 2.9285714285714284
+  },
+  {
+    "team": "Missouri",
+    "conference": "SEC",
+    "positionGroup": "Defensive Back",
+    "averageRating": 0.848073683286968,
+    "totalRating": 16.1134,
+    "commits": 19,
+    "averageStars": 3.0526315789473686
+  },
+  {
+    "team": "Missouri",
+    "conference": "SEC",
+    "positionGroup": "Defensive Line",
+    "averageRating": 0.850241666038831,
+    "totalRating": 10.2029,
+    "commits": 12,
+    "averageStars": 3.0833333333333335
+  },
+  {
+    "team": "Missouri",
+    "conference": "SEC",
+    "positionGroup": "Linebacker",
+    "averageRating": 0.851561532570766,
+    "totalRating": 11.0703,
+    "commits": 13,
+    "averageStars": 3
+  },
+  {
+    "team": "Missouri",
+    "conference": "SEC",
+    "positionGroup": "Offensive Line",
+    "averageRating": 0.857494119335623,
+    "totalRating": 14.5774,
+    "commits": 17,
+    "averageStars": 3.1176470588235294
+  },
+  {
+    "team": "Missouri",
+    "conference": "SEC",
+    "positionGroup": "Quarterback",
+    "averageRating": 0.862049996852875,
+    "totalRating": 3.4482,
+    "commits": 4,
+    "averageStars": 3.25
+  },
+  {
+    "team": "Missouri",
+    "conference": "SEC",
+    "positionGroup": "Receiver",
+    "averageRating": 0.860366668966081,
+    "totalRating": 15.4866,
+    "commits": 18,
+    "averageStars": 3.055555555555556
+  },
+  {
+    "team": "Missouri",
+    "conference": "SEC",
+    "positionGroup": "Running Back",
+    "averageRating": 0.839614289147513,
+    "totalRating": 5.8773,
+    "commits": 7,
+    "averageStars": 3
+  },
+  {
+    "team": "Missouri",
+    "conference": "SEC",
+    "positionGroup": "Special Teams",
+    "averageRating": 0.851549992958705,
+    "totalRating": 5.1093,
+    "commits": 6,
+    "averageStars": 3
+  },
+  {
+    "team": "Ole Miss",
+    "conference": "SEC",
+    "positionGroup": "Defensive Back",
+    "averageRating": 0.856474999338388,
+    "totalRating": 13.7036,
+    "commits": 16,
+    "averageStars": 3
+  },
+  {
+    "team": "Ole Miss",
+    "conference": "SEC",
+    "positionGroup": "Defensive Line",
+    "averageRating": 0.877237495034933,
+    "totalRating": 14.0358,
+    "commits": 16,
+    "averageStars": 3.3125
+  },
+  {
+    "team": "Ole Miss",
+    "conference": "SEC",
+    "positionGroup": "Linebacker",
+    "averageRating": 0.862476921998538,
+    "totalRating": 11.2122,
+    "commits": 13,
+    "averageStars": 3.1538461538461537
+  },
+  {
+    "team": "Ole Miss",
+    "conference": "SEC",
+    "positionGroup": "Offensive Line",
+    "averageRating": 0.871727268804203,
+    "totalRating": 19.178,
+    "commits": 22,
+    "averageStars": 3.1818181818181817
+  },
+  {
+    "team": "Ole Miss",
+    "conference": "SEC",
+    "positionGroup": "Quarterback",
+    "averageRating": 0.884587496519089,
+    "totalRating": 7.0767,
+    "commits": 8,
+    "averageStars": 3.5
+  },
+  {
+    "team": "Ole Miss",
+    "conference": "SEC",
+    "positionGroup": "Receiver",
+    "averageRating": 0.904417648034937,
+    "totalRating": 15.3751,
+    "commits": 17,
+    "averageStars": 3.6470588235294117
+  },
+  {
+    "team": "Ole Miss",
+    "conference": "SEC",
+    "positionGroup": "Running Back",
+    "averageRating": 0.887037500739098,
+    "totalRating": 7.0963,
+    "commits": 8,
+    "averageStars": 3.5
+  },
+  {
+    "team": "Ole Miss",
+    "conference": "SEC",
+    "positionGroup": "Special Teams",
+    "averageRating": 0.887766659259796,
+    "totalRating": 2.6633,
+    "commits": 3,
+    "averageStars": 3.3333333333333335
+  },
+  {
+    "team": "South Carolina",
+    "conference": "SEC",
+    "positionGroup": "Defensive Back",
+    "averageRating": 0.869647057617412,
+    "totalRating": 14.784,
+    "commits": 17,
+    "averageStars": 3.1176470588235294
+  },
+  {
+    "team": "South Carolina",
+    "conference": "SEC",
+    "positionGroup": "Defensive Line",
+    "averageRating": 0.888647828413093,
+    "totalRating": 20.4389,
+    "commits": 23,
+    "averageStars": 3.5217391304347827
+  },
+  {
+    "team": "South Carolina",
+    "conference": "SEC",
+    "positionGroup": "Linebacker",
+    "averageRating": 0.868199998140335,
+    "totalRating": 8.682,
+    "commits": 10,
+    "averageStars": 3.2
+  },
+  {
+    "team": "South Carolina",
+    "conference": "SEC",
+    "positionGroup": "Offensive Line",
+    "averageRating": 0.867609520753225,
+    "totalRating": 18.2198,
+    "commits": 21,
+    "averageStars": 3.142857142857143
+  },
+  {
+    "team": "South Carolina",
+    "conference": "SEC",
+    "positionGroup": "Quarterback",
+    "averageRating": 0.923549999793371,
+    "totalRating": 5.5413,
+    "commits": 6,
+    "averageStars": 3.8333333333333335
+  },
+  {
+    "team": "South Carolina",
+    "conference": "SEC",
+    "positionGroup": "Receiver",
+    "averageRating": 0.874968422086615,
+    "totalRating": 16.6244,
+    "commits": 19,
+    "averageStars": 3.263157894736842
+  },
+  {
+    "team": "South Carolina",
+    "conference": "SEC",
+    "positionGroup": "Running Back",
+    "averageRating": 0.881514276776995,
+    "totalRating": 6.1706,
+    "commits": 7,
+    "averageStars": 3.142857142857143
+  },
+  {
+    "team": "South Carolina",
+    "conference": "SEC",
+    "positionGroup": "Special Teams",
+    "averageRating": 0.859825000166893,
+    "totalRating": 6.8786,
+    "commits": 8,
+    "averageStars": 3.25
+  },
+  {
+    "team": "Tennessee",
+    "conference": "SEC",
+    "positionGroup": "Defensive Back",
+    "averageRating": 0.895616663826836,
+    "totalRating": 16.1211,
+    "commits": 18,
+    "averageStars": 3.444444444444444
+  },
+  {
+    "team": "Tennessee",
+    "conference": "SEC",
+    "positionGroup": "Defensive Line",
+    "averageRating": 0.887138886584176,
+    "totalRating": 15.9685,
+    "commits": 18,
+    "averageStars": 3.388888888888889
+  },
+  {
+    "team": "Tennessee",
+    "conference": "SEC",
+    "positionGroup": "Linebacker",
+    "averageRating": 0.903354541821913,
+    "totalRating": 9.9369,
+    "commits": 11,
+    "averageStars": 3.6363636363636362
+  },
+  {
+    "team": "Tennessee",
+    "conference": "SEC",
+    "positionGroup": "Offensive Line",
+    "averageRating": 0.895117651013767,
+    "totalRating": 15.217,
+    "commits": 17,
+    "averageStars": 3.588235294117647
+  },
+  {
+    "team": "Tennessee",
+    "conference": "SEC",
+    "positionGroup": "Quarterback",
+    "averageRating": 0.899019992351532,
+    "totalRating": 4.4951,
+    "commits": 5,
+    "averageStars": 3.4
+  },
+  {
+    "team": "Tennessee",
+    "conference": "SEC",
+    "positionGroup": "Receiver",
+    "averageRating": 0.876759997010231,
+    "totalRating": 17.5352,
+    "commits": 20,
+    "averageStars": 3.3
+  },
+  {
+    "team": "Tennessee",
+    "conference": "SEC",
+    "positionGroup": "Running Back",
+    "averageRating": 0.87958749383688,
+    "totalRating": 7.0367,
+    "commits": 8,
+    "averageStars": 3.375
+  },
+  {
+    "team": "Tennessee",
+    "conference": "SEC",
+    "positionGroup": "Special Teams",
+    "averageRating": 0.872745459729975,
+    "totalRating": 9.6002,
+    "commits": 11,
+    "averageStars": 3.1818181818181817
+  },
+  {
+    "team": "Texas A&M",
+    "conference": "SEC",
+    "positionGroup": "Defensive Back",
+    "averageRating": 0.915241174838122,
+    "totalRating": 15.5591,
+    "commits": 17,
+    "averageStars": 3.7058823529411766
+  },
+  {
+    "team": "Texas A&M",
+    "conference": "SEC",
+    "positionGroup": "Defensive Line",
+    "averageRating": 0.908629989624023,
+    "totalRating": 18.1726,
+    "commits": 20,
+    "averageStars": 3.65
+  },
+  {
+    "team": "Texas A&M",
+    "conference": "SEC",
+    "positionGroup": "Linebacker",
+    "averageRating": 0.885907143354416,
+    "totalRating": 12.4027,
+    "commits": 14,
+    "averageStars": 3.4285714285714284
+  },
+  {
+    "team": "Texas A&M",
+    "conference": "SEC",
+    "positionGroup": "Offensive Line",
+    "averageRating": 0.885254542935978,
+    "totalRating": 19.4756,
+    "commits": 22,
+    "averageStars": 3.409090909090909
+  },
+  {
+    "team": "Texas A&M",
+    "conference": "SEC",
+    "positionGroup": "Quarterback",
+    "averageRating": 0.875185719558171,
+    "totalRating": 6.1263,
+    "commits": 7,
+    "averageStars": 3.2857142857142856
+  },
+  {
+    "team": "Texas A&M",
+    "conference": "SEC",
+    "positionGroup": "Receiver",
+    "averageRating": 0.908613044282664,
+    "totalRating": 20.8981,
+    "commits": 23,
+    "averageStars": 3.5652173913043477
+  },
+  {
+    "team": "Texas A&M",
+    "conference": "SEC",
+    "positionGroup": "Running Back",
+    "averageRating": 0.885000002384186,
+    "totalRating": 8.85,
+    "commits": 10,
+    "averageStars": 3.4
+  },
+  {
+    "team": "Texas A&M",
+    "conference": "SEC",
+    "positionGroup": "Special Teams",
+    "averageRating": 0.841487519443035,
+    "totalRating": 6.7319,
+    "commits": 8,
+    "averageStars": 3
+  },
+  {
+    "team": "Vanderbilt",
+    "conference": "SEC",
+    "positionGroup": "Defensive Back",
+    "averageRating": 0.857441172880285,
+    "totalRating": 14.5765,
+    "commits": 17,
+    "averageStars": 3.1176470588235294
+  },
+  {
+    "team": "Vanderbilt",
+    "conference": "SEC",
+    "positionGroup": "Defensive Line",
+    "averageRating": 0.828269229485438,
+    "totalRating": 10.7675,
+    "commits": 13,
+    "averageStars": 2.769230769230769
+  },
+  {
+    "team": "Vanderbilt",
+    "conference": "SEC",
+    "positionGroup": "Linebacker",
+    "averageRating": 0.840533336003621,
+    "totalRating": 7.5648,
+    "commits": 9,
+    "averageStars": 2.888888888888889
+  },
+  {
+    "team": "Vanderbilt",
+    "conference": "SEC",
+    "positionGroup": "Offensive Line",
+    "averageRating": 0.847466674115923,
+    "totalRating": 15.2544,
+    "commits": 18,
+    "averageStars": 3
+  },
+  {
+    "team": "Vanderbilt",
+    "conference": "SEC",
+    "positionGroup": "Quarterback",
+    "averageRating": 0.871500015258789,
+    "totalRating": 4.3575,
+    "commits": 5,
+    "averageStars": 3
+  },
+  {
+    "team": "Vanderbilt",
+    "conference": "SEC",
+    "positionGroup": "Receiver",
+    "averageRating": 0.848222222593096,
+    "totalRating": 15.268,
+    "commits": 18,
+    "averageStars": 3.055555555555556
+  },
+  {
+    "team": "Vanderbilt",
+    "conference": "SEC",
+    "positionGroup": "Running Back",
+    "averageRating": 0.843879997730255,
+    "totalRating": 4.2194,
+    "commits": 5,
+    "averageStars": 3
+  },
+  {
+    "team": "Vanderbilt",
+    "conference": "SEC",
+    "positionGroup": "Special Teams",
+    "averageRating": 0.827333337730832,
+    "totalRating": 7.446,
+    "commits": 9,
+    "averageStars": 2.7777777777777777
+  },
+  {
+    "team": "Alabama",
+    "conference": "SEC",
+    "positionGroup": "All Positions",
+    "averageRating": 0.933290086994486,
+    "totalRating": 112.928,
+    "commits": 121,
+    "averageStars": 3.9338842975206614
+  },
+  {
+    "team": "Arkansas",
+    "conference": "SEC",
+    "positionGroup": "All Positions",
+    "averageRating": 0.865468572434925,
+    "totalRating": 90.8742,
+    "commits": 105,
+    "averageStars": 3.2095238095238097
+  },
+  {
+    "team": "Auburn",
+    "conference": "SEC",
+    "positionGroup": "All Positions",
+    "averageRating": 0.902243632620031,
+    "totalRating": 99.2468,
+    "commits": 110,
+    "averageStars": 3.609090909090909
+  },
+  {
+    "team": "Florida",
+    "conference": "SEC",
+    "positionGroup": "All Positions",
+    "averageRating": 0.900040541146253,
+    "totalRating": 99.9045,
+    "commits": 111,
+    "averageStars": 3.5585585585585586
+  },
+  {
+    "team": "Georgia",
+    "conference": "SEC",
+    "positionGroup": "All Positions",
+    "averageRating": 0.924410925191991,
+    "totalRating": 110.005,
+    "commits": 119,
+    "averageStars": 3.8739495798319328
+  },
+  {
+    "team": "Kentucky",
+    "conference": "SEC",
+    "positionGroup": "All Positions",
+    "averageRating": 0.862727779481146,
+    "totalRating": 93.1746,
+    "commits": 108,
+    "averageStars": 3.1574074074074074
+  },
+  {
+    "team": "LSU",
+    "conference": "SEC",
+    "positionGroup": "All Positions",
+    "averageRating": 0.912641229336722,
+    "totalRating": 104.041,
+    "commits": 114,
+    "averageStars": 3.710526315789474
+  },
+  {
+    "team": "Mississippi State",
+    "conference": "SEC",
+    "positionGroup": "All Positions",
+    "averageRating": 0.869926669200261,
+    "totalRating": 78.2934,
+    "commits": 90,
+    "averageStars": 3.2
+  },
+  {
+    "team": "Missouri",
+    "conference": "SEC",
+    "positionGroup": "All Positions",
+    "averageRating": 0.852972916016976,
+    "totalRating": 81.8854,
+    "commits": 96,
+    "averageStars": 3.0625
+  },
+  {
+    "team": "Ole Miss",
+    "conference": "SEC",
+    "positionGroup": "All Positions",
+    "averageRating": 0.877097085262965,
+    "totalRating": 90.341,
+    "commits": 103,
+    "averageStars": 3.3009708737864076
+  },
+  {
+    "team": "South Carolina",
+    "conference": "SEC",
+    "positionGroup": "All Positions",
+    "averageRating": 0.876933332499083,
+    "totalRating": 97.3396,
+    "commits": 111,
+    "averageStars": 3.2882882882882885
+  },
+  {
+    "team": "Tennessee",
+    "conference": "SEC",
+    "positionGroup": "All Positions",
+    "averageRating": 0.888062035595929,
+    "totalRating": 95.9107,
+    "commits": 108,
+    "averageStars": 3.4166666666666665
+  },
+  {
+    "team": "Texas A&M",
+    "conference": "SEC",
+    "positionGroup": "All Positions",
+    "averageRating": 0.894349586372533,
+    "totalRating": 108.216,
+    "commits": 121,
+    "averageStars": 3.487603305785124
+  },
+  {
+    "team": "Vanderbilt",
+    "conference": "SEC",
+    "positionGroup": "All Positions",
+    "averageRating": 0.845256385016949,
+    "totalRating": 79.4541,
+    "commits": 94,
+    "averageStars": 2.9680851063829787
+  }
+]
